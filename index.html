@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta de Valor</title>
+<style>
+  :root {
+    --bg-main: #eae6df;
+    --bg-card: #ffffff;
+    --bg-subbox: #f0f2f5;
+    --primary: #008069;
+    --secondary: #00a884;
+    --text-main: #111b21;
+    --text-muted: #667781;
+    --speech-bg: #d9fdd3;
+    --speech-border: #00a884;
+    --border-color: #e9edef;
+    --neon-green: #1fa855;
+    --danger: #ea0038;
+    --filter-active: #00a884;
+    /* Acento del módulo de Atención al Cliente */
+    --accent2: #0a66c2;
+    --accent2-bg: #e8f1fb;
+    --accent2-light: #dbeafe;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  header {
+    background-color: var(--bg-subbox);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .header-container { max-width: 1500px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+  .header-row-top { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+  .header-row-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+
+  .brand { font-size: 16px; font-weight: bold; letter-spacing: 0.5px; color: var(--text-main); display:flex; align-items:center; gap:8px; }
+  .brand span { color: var(--primary); font-weight: bold; }
+  .brand small { font-size: 10.5px; color: var(--text-muted); font-weight: 500; background: var(--bg-card); padding: 2px 8px; border-radius: 10px; border: 1px solid var(--border-color); }
+
+  /* --- SELECTOR DE MÓDULOS (nivel superior) --- */
+  .module-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+  .module-tab {
+    background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-muted);
+    padding: 9px 18px; border-radius: 22px; cursor: pointer; font-size: 13px; font-weight: 700; transition: 0.2s;
+  }
+  .module-tab:hover { border-color: var(--secondary); }
+  .module-tab.active.mod-propuesta { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .module-tab.active.mod-atencion { background: var(--accent2); color: #fff; border-color: var(--accent2); }
+  .module-tab.active.mod-publicar { background: #444; color: #fff; border-color: #444; }
+
+  .nav-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tab-btn {
+    background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-muted);
+    padding: 6px 16px; border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 500; transition: 0.2s;
+  }
+  .tab-btn:hover, .tab-btn.active { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+  .atencion-panel .tab-btn.active { background: var(--accent2); border-color: var(--accent2); }
+
+  .search-box { flex-grow: 1; max-width: 340px; }
+  .search-box input {
+    width: 100%; background: var(--bg-card); border: 1px solid var(--border-color);
+    color: var(--text-main); padding: 7px 12px; border-radius: 20px; font-size: 12px; box-sizing: border-box;
+  }
+  .search-box input:focus { border-color: var(--secondary); outline: none; }
+
+  .sync-actions { display: flex; gap: 8px; align-items:center; }
+  .btn-sync { padding: 5px 12px; font-size: 11px; border-radius: 4px; cursor: pointer; font-weight: bold; border: none; transition: 0.2s; }
+  .btn-export { background: var(--primary); color: #ffffff; }
+  .btn-import { background: transparent; color: var(--primary); border: 1px solid var(--primary); }
+  .btn-export:hover { opacity: 0.9; }
+  .btn-import:hover { background: rgba(0, 128, 105, 0.05); }
+
+  /* --- CLIENTE TIPO (filtro global del módulo Atención) --- */
+  .client-type-bar { background: var(--accent2-bg); border-bottom: 1px solid var(--border-color); padding: 10px 24px; }
+  .client-type-wrapper { max-width: 1500px; margin: 0 auto; display:flex; align-items:center; gap:10px; flex-wrap: wrap; }
+  .client-type-label { font-size: 11px; font-weight:bold; color: var(--accent2); text-transform: uppercase; letter-spacing: 0.5px; }
+  .client-badge {
+    background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-main);
+    padding: 5px 14px; border-radius: 16px; cursor: pointer; font-size: 12px; font-weight: 600;
+  }
+  .client-badge.active { background: var(--accent2); border-color: var(--accent2); color: #fff; }
+
+  /* --- CONTROLADORES DE FILTROS (Propuesta de Valor) --- */
+  .filter-bar { background: var(--bg-subbox); border-bottom: 1px solid var(--border-color); }
+  .filter-bar summary {
+    max-width: 1500px; margin: 0 auto; padding: 12px 24px; color: var(--primary);
+    font-size: 12px; font-weight: bold; cursor: pointer; outline: none; user-select: none;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .filter-wrapper { max-width: 1500px; margin: 0 auto; padding: 0 24px 14px 24px; display: flex; flex-direction: column; gap: 8px; }
+  .filter-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .filter-label { font-size: 11px; font-weight: bold; color: var(--text-muted); text-transform: uppercase; width: 120px; }
+  .badge-container { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+
+  .badge-filter {
+    background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-main);
+    padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 11px; display: flex; align-items: center; gap: 5px;
+  }
+  .badge-filter:hover { border-color: var(--secondary); }
+  .badge-filter.active { background: var(--secondary); border-color: var(--secondary); color: #fff; }
+  .badge-del { color: var(--danger); font-weight: bold; cursor: pointer; margin-left: 4px; }
+
+  .btn-add-tag { background: transparent; border: 1px dashed var(--secondary); color: var(--primary); padding: 2px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: bold; }
+  .btn-add-tag:hover { background: rgba(0, 168, 132, 0.05); }
+
+  .btn-clear-filters { background: #fff0f0; border: 1px solid var(--danger); color: var(--danger); padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: bold; }
+  .btn-clear-filters:hover { background: var(--danger); color: #fff; }
+
+  /* --- CONTENEDOR PRINCIPAL --- */
+  .main-content { max-width: 1500px; margin: 20px auto; padding: 0 24px; box-sizing: border-box; }
+  .view-panel { display: none; }
+  .view-panel.active { display: block; }
+  .module-panel { display: none; }
+  .module-panel.active { display: block; }
+
+  /* --- GRID DE PROPUESTAS --- */
+  .props-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 15px; margin-bottom: 20px; }
+  .card-prop {
+    background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px;
+    padding: 16px; display: flex; flex-direction: column; justify-content: flex-start; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .card-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
+  .action-left { font-size: 10px; color: var(--text-muted); font-weight: bold; }
+  .btn-action { background: var(--bg-subbox); border: none; color: var(--text-muted); padding: 3px 8px; font-size: 11px; border-radius: 4px; cursor: pointer; }
+  .btn-action:hover { color: #ffffff; background: var(--primary); }
+
+  .editable-title { font-size: 14px; font-weight: bold; color: var(--primary); margin-bottom: 6px; white-space: pre-wrap; }
+  .editable-concept { color: var(--text-main); font-size: 12.5px; margin-bottom: 12px; min-height: 35px; white-space: pre-wrap; }
+
+  .speech-box { background: var(--speech-bg); border-left: 4px solid #53bdeb; border-radius: 6px; padding: 12px; position: relative; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+  .speech-meta { font-size: 10.5px; font-weight: bold; text-transform: uppercase; color: var(--primary); margin-bottom: 4px; }
+  .speech-text { font-style: normal; color: var(--text-main); font-size: 13px; padding-right: 45px; white-space: pre-wrap; }
+  .btn-copy { position: absolute; right: 8px; bottom: 8px; background: var(--primary); border: none; color: white; padding: 3px 6px; font-size: 10px; border-radius: 4px; cursor: pointer; }
+  .btn-copy:hover { background: var(--secondary); }
+
+  .links-collapse { background: var(--bg-subbox); border: 1px solid var(--border-color); border-radius: 6px; margin-bottom: 10px; padding: 6px; }
+  .links-collapse summary { font-size: 11px; color: var(--text-muted); cursor: pointer; font-weight: bold; }
+  .links-content { margin-top: 6px; border-top: 1px dashed var(--border-color); padding-top: 6px; }
+  .editable-links { font-size: 11px; color: #027eb5; min-height: 20px; word-break: break-all; white-space: pre-wrap; }
+
+  .tag-selector-box { background: var(--bg-subbox); border: 1px solid var(--border-color); padding: 6px 8px; border-radius: 6px; margin-top: auto; }
+  .tag-selector-box summary { font-size: 11px; color: var(--text-muted); cursor: pointer; font-weight: bold; }
+  .tag-selector-content { margin-top: 6px; border-top: 1px dashed var(--border-color); padding-top: 6px; }
+  .card-assigned-tags { display: flex; flex-wrap: wrap; gap: 4px; min-height: 16px; }
+  .card-tag-badge { background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-muted); padding: 2px 6px; border-radius: 4px; font-size: 10px; display: inline-flex; align-items: center; gap: 4px; }
+  .card-tag-badge .remove-tag { color: var(--danger); cursor: pointer; }
+  .card-tag-select { background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-main); font-size: 11px; padding: 4px; border-radius: 4px; width: 100%; outline: none; }
+
+  /* --- SECCIÓN PRINCIPAL DE CARRERAS --- */
+  .careers-layout { display: grid; grid-template-columns: 260px 1fr; gap: 20px; }
+  .careers-sidebar { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 10px; height: 70vh; display: flex; flex-direction: column; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .sidebar-list { overflow-y: auto; flex-grow: 1; margin-bottom: 10px; }
+  .sidebar-item { padding: 8px 10px; border-radius: 4px; cursor: pointer; color: var(--text-main); font-weight: 500; margin-bottom: 3px; font-size: 12px; }
+  .sidebar-item:hover { background: var(--bg-subbox); }
+  .sidebar-item.active { background: #e1f3ef; color: var(--primary); border-left: 4px solid var(--primary); }
+
+  .btn-global-add { background: var(--primary); color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 12px; margin-bottom: 15px; }
+  .btn-global-add:hover { background: var(--secondary); }
+  .btn-global-add.accent2 { background: var(--accent2); }
+  .btn-global-add.accent2:hover { background: #084b8f; }
+
+  .career-content-pane { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .career-header-wrapper { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--primary); padding-bottom: 8px; margin-bottom: 15px; }
+  .career-main-title { font-size: 18px; color: var(--text-main); margin: 0; }
+
+  /* --- MÓDULO PROCESO DE ATENCIÓN --- */
+  .paso-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .paso-tab { background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-muted); padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600; }
+  .paso-tab:hover { border-color: var(--accent2); }
+  .paso-tab.active { background: var(--accent2); color: #fff; border-color: var(--accent2); }
+  .paso-tab.objeciones-tab.active { background: var(--danger); border-color: var(--danger); }
+
+  .paso-header { background: var(--accent2-bg); border: 1px solid var(--accent2-light); border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+  .paso-header-title { font-size: 17px; font-weight: bold; color: var(--accent2); margin: 0 0 6px 0; }
+  .paso-objetivo { font-size: 13px; color: var(--text-main); margin-bottom: 6px; }
+  .paso-sla { display: inline-block; font-size: 11px; font-weight: bold; color: #fff; background: var(--accent2); padding: 3px 10px; border-radius: 12px; margin-top: 4px; }
+  .datos-estandar-box { background: var(--bg-card); border: 1px dashed var(--accent2); border-radius: 6px; padding: 10px 14px; margin-top: 10px; font-size: 12.5px; color: var(--text-main); }
+  .datos-estandar-box b { color: var(--accent2); }
+
+  .checklist-box { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 16px; margin-bottom: 18px; }
+  .checklist-box-title { font-size: 12px; font-weight: bold; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; }
+  .checklist-item { font-size: 12.5px; padding: 4px 0; padding-left: 22px; position: relative; color: var(--text-main); }
+  .checklist-item::before { content: "✅"; position: absolute; left: 0; font-size: 11px; }
+
+  .plantilla-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); display:flex; flex-direction:column; }
+  .plantilla-titulo { font-size: 13px; font-weight: bold; color: var(--accent2); margin-bottom: 8px; white-space: pre-wrap; }
+  .plantilla-speech { background: var(--speech-bg); border-left: 4px solid var(--accent2); border-radius: 6px; padding: 12px; position: relative; margin-bottom: 10px; }
+  .plantilla-texto { font-size: 13px; color: var(--text-main); white-space: pre-wrap; padding-right: 45px; }
+  .tagtoggle-row { display:flex; gap:6px; margin-top: 4px; align-items:center; flex-wrap: wrap; }
+  .btn-tagtoggle { font-size: 10.5px; font-weight: bold; padding: 3px 9px; border-radius: 10px; border: 1px solid var(--border-color); background: var(--bg-subbox); color: var(--text-muted); cursor: pointer; }
+  .btn-tagtoggle.on.nl { background: #fff3cd; border-color: #f5c518; color: #7a5c00; }
+  .btn-tagtoggle.on.rm { background: #dbe9ff; border-color: var(--accent2); color: var(--accent2); }
+
+  .objecion-card { background: var(--bg-card); border: 1px solid var(--border-color); border-left: 4px solid var(--danger); border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .objecion-titulo { font-size: 14px; font-weight: bold; color: var(--danger); margin-bottom: 6px; }
+  .frase-cliente { font-style: italic; color: var(--text-muted); font-size: 12.5px; margin-bottom: 10px; background: var(--bg-subbox); padding: 8px 10px; border-radius: 6px; }
+  .mencionar-box { font-size: 12px; margin-bottom: 12px; }
+  .mencionar-item { padding: 2px 0 2px 18px; position: relative; }
+  .mencionar-item::before { content: "▪"; position: absolute; left: 0; color: var(--text-muted); }
+  .respuestas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
+  .respuesta-item { background: var(--speech-bg); border-left: 4px solid var(--secondary); border-radius: 6px; padding: 10px; position: relative; }
+  .respuesta-texto { font-size: 12.5px; white-space: pre-wrap; padding-right: 45px; color: var(--text-main); }
+
+  /* --- PANEL PUBLICAR / RESPALDO --- */
+  .publicar-panel { max-width: 640px; margin: 30px auto; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 28px; text-align:center; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+  .publicar-panel h2 { color: var(--text-main); font-size: 18px; margin-top:0; }
+  .publicar-panel p { color: var(--text-muted); font-size: 13px; line-height: 1.6; }
+  .btn-export-main { background: var(--primary); color: #fff; border: none; padding: 14px 26px; border-radius: 8px; font-weight: bold; font-size: 14px; cursor: pointer; margin: 14px 0; }
+  .btn-export-main:hover { background: var(--secondary); }
+  .publicar-divider { border: none; border-top: 1px dashed var(--border-color); margin: 22px 0; }
+  .publicar-secondary { display:flex; gap: 10px; justify-content:center; flex-wrap: wrap; }
+
+  @media (max-width: 800px) {
+    .careers-layout { grid-template-columns: 1fr; }
+    .careers-sidebar { height: auto; max-height: 240px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="header-row-top">
+      <div class="brand">🟢 Propuesta de Valor<small id="headerCount">cargando…</small></div>
+      <div class="module-tabs">
+        <button class="module-tab mod-propuesta active" id="btnModPropuesta" onclick="switchModule('propuesta', this)">🏛️ Propuesta de Valor</button>
+        <button class="module-tab mod-atencion" id="btnModAtencion" onclick="switchModule('atencion', this)">📞 Proceso de Atención</button>
+        <button class="module-tab mod-publicar" id="btnModPublicar" onclick="switchModule('publicar', this)">⚙️ Publicar / Respaldo</button>
+      </div>
+    </div>
+    <div class="header-row-bottom">
+      <div class="nav-tabs" id="navTabsPropuesta">
+        <button class="tab-btn active" onclick="switchTab('tab-univ', this)">🏛️ Universidad</button>
+        <button class="tab-btn" onclick="switchTab('tab-modalidad', this)">💻 Modalidad Distancia</button>
+        <button class="tab-btn" onclick="switchTab('tab-carreras', this)">🎓 Carreras</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="liveSearchInput" placeholder="🔍 Buscar palabra clave en tiempo real..." oninput="triggerSearch(this.value)">
+      </div>
+    </div>
+  </div>
+</header>
+
+<details class="filter-bar" id="filterBarPropuesta">
+  <summary>🎯 Panel de Filtros Comerciales (Click para expandir / contraer)</summary>
+  <div class="filter-wrapper">
+    <div class="filter-row">
+      <div class="filter-label">🎯 Tipo Cliente:</div>
+      <div class="badge-container" id="container-filtros-clientes"></div>
+      <button class="btn-add-tag" onclick="addNewFilterTag('clientes')">➕ Agregar Tipo</button>
+    </div>
+    <div class="filter-row" style="margin-top: 4px;">
+      <div class="filter-label">🛡️ Objeciones:</div>
+      <div class="badge-container" id="container-filtros-objeciones"></div>
+      <button class="btn-add-tag" onclick="addNewFilterTag('objeciones')">➕ Agregar Objeción</button>
+      <div style="margin-left: auto;">
+        <button class="btn-clear-filters" onclick="clearActiveFilters()">❌ Quitar Filtros</button>
+      </div>
+    </div>
+  </div>
+</details>
+
+<div class="client-type-bar" id="clientTypeBar" style="display:none;">
+  <div class="client-type-wrapper">
+    <div class="client-type-label">👤 Tipo de Cliente:</div>
+    <div class="client-badge active" data-tipo="todos" onclick="setTipoCliente('todos')">👥 Todos</div>
+    <div class="client-badge" data-tipo="nuevo_lead" onclick="setTipoCliente('nuevo_lead')">🆕 Nuevo Lead</div>
+    <div class="client-badge" data-tipo="remarketing" onclick="setTipoCliente('remarketing')">🔁 Remarketing</div>
+  </div>
+</div>
+
+<main class="main-content">
+
+  <!-- ===================== MÓDULO: PROPUESTA DE VALOR ===================== -->
+  <div id="module-propuesta" class="module-panel active">
+    <div id="tab-univ" class="view-panel active">
+      <button class="btn-global-add" onclick="addNewGenericCard('universidad')">➕ Agregar Nueva Propuesta</button>
+      <div class="props-grid" id="container-universidad"></div>
+    </div>
+
+    <div id="tab-modalidad" class="view-panel">
+      <button class="btn-global-add" onclick="addNewGenericCard('modalidad')">➕ Agregar Nueva Propuesta</button>
+      <div class="props-grid" id="container-modalidad"></div>
+    </div>
+
+    <div id="tab-carreras" class="view-panel">
+      <div class="careers-layout">
+        <div class="careers-sidebar">
+          <div style="font-size:11px; font-weight:bold; color:var(--secondary); text-transform:uppercase; margin-bottom:8px; padding-left:5px;">Índice (A-Z)</div>
+          <div class="sidebar-list" id="sidebar-carreras"></div>
+          <button class="btn-global-add" style="width:100%; margin-bottom:0;" onclick="createNewCareer()">➕ Crear Nueva Carrera</button>
+        </div>
+        <div>
+          <button class="btn-global-add" id="btn-add-subcategory-trigger" onclick="addNewSubcategoryToActiveCareer()">➕ Agregar Ficha / Argumento Especial</button>
+          <div class="career-content-pane" id="content-carrera-activa"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== MÓDULO: PROCESO DE ATENCIÓN ===================== -->
+  <div id="module-atencion" class="module-panel">
+    <div class="paso-tabs" id="pasoTabs"></div>
+    <div id="atencion-content"></div>
+  </div>
+
+  <!-- ===================== MÓDULO: PUBLICAR / RESPALDO ===================== -->
+  <div id="module-publicar" class="module-panel">
+    <div class="publicar-panel">
+      <h2>📄 Publicar cambios en GitHub</h2>
+      <p>Descarga el archivo HTML actualizado con todos tus cambios ya integrados en el código. Sube este mismo archivo a tu repositorio de GitHub para que tu equipo vea siempre la última versión, sin reenviar archivos por separado.</p>
+      <button class="btn-export-main" onclick="exportHTML()">⬇️ Exportar HTML Actualizado</button>
+      <hr class="publicar-divider">
+      <p style="font-size:12px;">Opciones adicionales de respaldo:</p>
+      <div class="publicar-secondary">
+        <button class="btn-sync btn-import" onclick="triggerImport()">📥 Importar JSON</button>
+        <button class="btn-sync btn-import" onclick="exportDataJSON()">💾 Descargar solo datos (.json)</button>
+        <input type="file" id="fileImporter" accept=".json" style="display:none" onchange="importDataJSON(event)">
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script id="appScript">
+  let db = {"config_filtros": {"clientes": ["Precio", "Técnico", "Ocupado", "Indeciso"], "objeciones": ["Falta de tiempo", "Precio alto", "Duda de calidad online"]}, "universidad": [{"titulo": "🌟 Respaldo, Certificaciones y Acreditaciones", "concepto": "✅ Respaldo SUNEDU: +28 años de trayectoria y 80k alumnos globales.\n✅ Sello Europeo 'Sofía' y certificación ANECA (España) - Única en Perú.\n✅ 5 estrellas QS Stars en Aprendizaje en Línea y Empleabilidad.\n✅ 6 sedes licenciadas y acreditaciones internacionales (ACBSP / ICACIT).", "speech": "...Justo por eso es clave un respaldo real. En la Continental tienes el aval de SUNEDU, 28 años de trayectoria y 5 estrellas mundiales en QS Stars por educación online. Tu título pesará fuerte en el mercado.", "tags": "técnico, indeciso, duda de calidad online", "links": "https://estudiantes.ucontinental.edu.pe/noticias/uc-comprometida-con-la-excelencia-nuestras-acreditaciones-nos-respaldan/"}, {"titulo": "✈️ Internacionalización (UC Global)", "concepto": "✅ +250 convenios internacionales de intercambio académico.\n✅ Doble Titulación con Continental Florida University (EE.UU.), México y España.\n✅ Clases espejo y pasantías virtuales sin pausar tu trabajo actual.", "speech": "...Con el programa UC Global accedes a más de 250 convenios internacionales y opción de Doble Grado con nuestra sede en EE.UU. Todo de forma flexible desde casa y sin dejar de trabajar. Es el empuje internacional que tu perfil necesita hoy.", "tags": "indeciso, ocupado, falta de tiempo", "links": "https://ucontinental.edu.pe/uc-global/convocatorias/\nhttps://ucontinental.edu.pe/blog/internacionalizacion/convenios-internacionales-universidades/#section-doble-titulacion-o-doble-grado-ee-uu-mexico-espana"}, {"titulo": "🏆 Becas y Apoyo Financiero", "concepto": "✅ Becas por Excelencia: Incentivos y semibecas ciclo a ciclo por alto promedio.\n✅ Prórroga de Pagos: Flexibilidad para extender cuotas sin penalizaciones ni multas.\n✅ Beca Alianza del Pacífico: Financiamiento subvencionado para intercambios.", "speech": "...Cuidamos tu inversión con soluciones reales. Si mantienes buen promedio, aplicas a semibecas cada ciclo. Además, ante cualquier imprevisto, tienes la Prórroga de Pagos sin multas ni intereses. Que el presupuesto no te detenga.", "tags": "precio, precio alto, indeciso", "links": "https://estudiantes.ucontinental.edu.pe/tramites/beneficios-economicos-y-sociales/\nhttps://ucontinental.edu.pe/uc-global/estudiantes/estudiante-uc/"}, {"titulo": "💼 Empleabilidad e Inserción Laboral", "concepto": "✅ Doctor CV: Plataforma con IA que optimiza tu currículum al instante.\n✅ Conexión Directa: Simulacros de entrevistas con directores de RR.HH. top.\n✅ Programa E-Start: Prácticas virtuales en empresas de Madrid, España.\n✅ Bolsa de Trabajo activa desde el 50% de tus créditos aprobados.", "speech": "...Para potenciar tu carrera, te damos 'Doctor CV' con IA para optimizar tu currículum y simulacros de entrevista con gerentes reales. Incluso puedes hacer prácticas virtuales en Europa con el programa E-Start. El cambio en tu perfil será inmediato.", "tags": "indeciso, ocupado, duda de calidad online", "links": "https://empleabilidad.ucontinental.edu.pe/estudiantes/"}, {"titulo": "🔑 Acompañamiento Integral y Tutoría", "concepto": "✅ Asesor de Acompañamiento Integral dedicado desde el día uno hasta graduarte.\n✅ Soporte continuo en rendimiento, gestión del tiempo y trámites rápidos.", "speech": "...Sé que balancear trabajo y estudios preocupa, pero aquí nunca estarás solo. Tendrás un Asesor Integral dedicado a ayudarte con tus horarios y trámites a un solo clic. Es el respaldo ideal para avanzar seguro.", "tags": "indeciso, técnico, falta de tiempo", "links": "https://estudiantes.ucontinental.edu.pe/noticas/asesora-de-acompanamiento-integral-acompanamiento-durante-toda-tu-vida-universitaria/\n://estudiantes.ucontinental.edu.pe/oficinas/mentoria-universitaria/#!/mentor"}, {"titulo": "📚 Hub de Información y Biblioteca Virtual", "concepto": "✅ Ecosistema digital 24/7 con miles de libros y bases de datos científicas.\n✅ Asesoría experta en línea para guiar tus investigaciones y proyectos rápido.", "speech": "...Tendrás acceso 24/7 a nuestro Hub de Información con miles de libros digitales y bases científicas globales desde cualquier dispositivo. Además, hay asesores en vivo para guiar tus trabajos rápido. Toda la biblioteca en tu mano.", "tags": "técnico, ocupado, falta de tiempo", "links": "https://repositorio.continental.edu.pe/\nhttps://hubinformacion.continental.edu.pe/libros-digitales/\nhttps://hubinformacion.continental.edu.pe/biblioteca-virtual/\nhttps://hubinformacion.continental.edu.pe/silabos-materiales-educativos/"}, {"titulo": "🩺 Bienestar Estudiantil (Salud y Psicología)", "concepto": "✅ CAP: Soporte virtual gratuito en salud mental, orientación y manejo del estrés.\n✅ Teleconsultas médicas preventivas y orientación en salud personalizada.", "speech": "...Nos tomamos muy en serio tu tranquilidad. Cuentas con el Centro de Atención Psicológica para manejo del estrés y teleconsultas médicas totalmente gratis y online. Estudiarás con un balance perfecto entre salud y aprendizaje.", "tags": "indeciso, ocupado, precio alto", "links": "https://estudiantes.ucontinental.edu.pe/oficinas/bienestar-universitario/centro-de-atencion-psicologica/\nhttps://estudiantes.ucontinental.edu.pe/oficinas/bienestar-universitario/centro-asistencial-de-salud/"}, {"titulo": "💯 Wichay, Growth Center y FabLab", "concepto": "✅ Wichay: Incubadora con mentores expertos y acceso a capital semilla.\n✅ Growth Center: Cursos cortos y talleres de liderazgo, oratoria y habilidades.\n✅ FabLab: Laboratorios avanzados con impresión 3D para prototipos físicos.", "speech": "...Si buscas emprender, nuestra incubadora Wichay te conecta con mentores y capital semilla. Además, potencias tu liderazgo en el Growth Center y usas tecnología 3D en el FabLab. Es formación corporativa del más alto nivel.", "tags": "técnico, indeciso, duda de calidad online", "links": "https://wichay.pe/\nhttps://growthcenter.pe/\nhttps://fablab.ucontinental.edu.pe/"}, {"titulo": "🎨 Vive Continental (Arte, Deporte y Comunidad)", "concepto": "✅ Talleres artísticos, elencos culturales y clubes de desarrollo de habilidades.\n✅ Selecciones deportivas y redes de voluntariado de impacto social.\n✅ Eventos de integración virtuales y presenciales para potenciar tu networking.", "speech": "...El networking es vital, y en 'Vive Continental' conectas con profesionales de todo el país mediante talleres, deportes y voluntariado presencial o virtual. Es la oportunidad perfecta para expandir tus contactos estratégicos.", "tags": "indeciso, ocupado, precio"}], "modalidad": [{"titulo": "⏱️ Metodología Flexible (Síncrona + Asíncrona) 24/7", "concepto": "✅ Organización Modular: Ciclos divididos en 2 bloques (llevas 3 cursos a la vez).\n✅ Clases en Vivo: 2 a 3 sesiones semanales en horario nocturno (1.5 a 2 horas).\n✅ Cero Penalidades: Todo se graba en el aula virtual; asistes en vivo o la ves luego.\n✅ Recursos Premium: Simuladores avanzados, laboratorios virtuales y licencias completas.", "speech": "...Nuestra modalidad a distancia optimiza tus tiempos. Llevas solo 3 cursos por bloque para enfocarte mejor y las clases son nocturnas. Si no logras conectarte, quedan grabadas 24/7 sin ninguna penalidad. Se adapta 100% a tu ritmo de trabajo.", "tags": "ocupado, falta de tiempo, duda de calidad online"}, {"titulo": "🤝 Networking Estratégico y Contactos Top", "concepto": "✅ Perfil Corporativo: Compañeros que ya laboran como jefes, gerentes y emprendedores.\n✅ Enfoque Práctico: Casos reales de mercado que propician alianzas estratégicas.", "speech": "...Tus compañeros de aula serán profesionales activos: jefes, gerentes y emprendedores de todo el Perú. Las clases se vuelven centros de debate de alto nivel y te abren puertas a alianzas comerciales o ascensos. Es networking estratégico real.", "tags": "indeciso, duda de calidad online"}, {"titulo": "📱 Flexibilidad Digital y Accesibilidad Económica", "concepto": "✅ Ecosistema Responsivo: Clases, simuladores y recursos accesibles desde el celular.\n✅ Cero Costos de Hardware: Plataformas optimizadas.", "speech": "...No necesitas una computadora costosa ni interrumpir tus viajes. Todo nuestro ecosistema digital es responsivo y ligero, optimizado para que estudies o revises tus simuladores desde tu celular de manera fluida en cualquier momento.", "tags": "precio, ocupado, falta de tiempo"}], "carreras": {"administracion": {"nombre": "Administración", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Liderazgo empresarial, planificación estratégica y gestión sostenible internacional.\n\n▪ Dónde trabajar: Emprendimientos propios, negocios familiares o gerencias de empresas privadas y públicas.", "speech": "Esta carrera te enseña a dirigir y hacer crecer negocios de forma estratégica. Podrás trabajar liderando tus propios proyectos, manejando empresas familiares o en gerencias de empresas privadas y públicas.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 9: Mentalidad Ágil\n▪ Ciclo 10: Desarrollo Empresarial Sostenible\n\n⭐ Plus: Inglés gratuito en la malla + Opción de Doble Titulación en EE.UU. con Continental Florida University.", "speech": "Llevarás inglés gratis y sumas dos certificaciones oficiales en Mentalidad Ágil y Desarrollo Sostenible. Además, ¡puedes lograr un doble título en EE.UU.!", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ BOSS y LABSAG: Simuladores internacionales para entrenarte en toma de decisiones gerenciales reales.\n▪ Wichay: Incubadora y startup que asesora y potencia tus ideas de negocio.", "speech": "Vas a practicar con simuladores de nivel mundial como BOSS y LABSAG para tomar decisiones gerenciales, y la incubadora Wichay te guiará paso a paso en tu negocio.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Gestión ágil, innovación y dirección de proyectos según tendencias de mercado.", "speech": "Puedes personalizar tu carrera con cursos súper actuales como Inteligencia Artificial y Sostenibilidad, dándole un peso tremendo a tu perfil.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ Administración y Finanzas es, junto con Tecnología y Logística, una de las 3 áreas que hoy concentran mayor demanda empresarial en el Perú.\n▪ El sueldo básico referencial de un administrador ronda los S/3,700 según el MTPE, con proyección de crecimiento en cargos de jefatura.", "speech": "📊 Dato de mercado: la Administración está entre las 3 áreas con mayor demanda laboral en el Perú hoy, junto a tecnología y logística. Las empresas buscan constantemente perfiles que sepan gestionar y liderar equipos, así que tu empleabilidad al egresar es bastante sólida.", "tags": "indeciso, ocupado"}]}, "administracion_finanzas": {"nombre": "Administración y Finanzas", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Estrategias de gestión administrativa y resolución de problemas financieros corporativos.\n\n▪ Dónde trabajar: Gerencias financieras, analista de inversiones o como intraemprendedor en nuevos negocios.", "speech": "Trata de cómo gestionar administrativamente los recursos de una empresa cuidando su rentabilidad económica. Te prepara para trabajar en gerencias financieras, analizando inversiones o asesorando nuevos negocios.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 6: Gestión de Mercados Financieros\n▪ Ciclo 10: Gestión de Inversiones\n\n⭐ Plus: Inglés 100% gratis dentro de la malla para tu titulación.", "speech": "Desde el sexto ciclo ya ganas la certificación en Mercados Financieros y terminas con otra en Gestión de Inversiones. El inglés está incluido y es gratis.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Simuladores Financieros: Herramientas en la nube para análisis de carteras, inversiones y riesgos.\n▪ Modelo Adaptativo: Aprendizaje personalizado con tutoría e innovación continua.", "speech": "Usarás simuladores financieros avanzados para evaluar inversiones en tiempo real, con un modelo de estudio que se adapta al 100% a tus horarios de trabajo.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Finanzas Corporativas Avanzadas, Mercado de Capitales y Gestión de Riesgos.", "speech": "Podrás elegir cursos electivos de peso como Inteligencia Artificial enfocada en finanzas para perfilarte hacia los mejores sueldos del sector.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ El área de Finanzas es una de las de mayor presión salarial al alza en el Perú para los próximos años, según reportes de Jobint/Bumeran.\n▪ Los perfiles que combinan gestión financiera con visión estratégica de negocio son de los más requeridos por las empresas.", "speech": "📊 Finanzas está entre las áreas con mayor proyección salarial en el Perú de cara a los próximos años. Combinar Administración con especialización financiera te da un perfil muy competitivo en el mercado.", "tags": "indeciso, precio alto"}]}, "administracion_talento_humano": {"nombre": "Administración y Gestión del Talento Humano", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Liderazgo en selección, reclutamiento, evaluación y promoción de personal.\n\n▪ Dónde trabajar: Direcciones de RR.HH., consultorías de clima laboral o emprendimientos de desarrollo de talento.", "speech": "Te prepara para liderar la selección, capacitación y desarrollo de los equipos de trabajo. Podrás desempeñarte como director de Recursos Humanos, consultor de clima laboral o en proyectos de talento.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 8: Contrataciones y Nóminas\n▪ Ciclo 10: Relaciones Laborales\n\n⭐ Plus: Inglés formativo totalmente gratis incluido en el plan de estudios.", "speech": "Antes de egresar sumas dos certificados oficiales gratis: Contrataciones y Nóminas, y Relaciones Laborales. Viene con inglés incluido para acelerar tu titulación.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Simuladores de Clima y Desempeño: Plataformas digitales para evaluación 360° y diseño de puestos.\n▪ Beneficios: Bolsa de trabajo desde el primer día y talleres prácticos de empleabilidad.", "speech": "Practicarás con softwares interactivos de gestión de personal y tendrás acceso a nuestra Bolsa de Trabajo activa desde el día uno para asegurar tu inserción laboral.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Psicología organizacional, coaching ejecutivo y automatización de RR.HH.", "speech": "Tienes electivos muy pedidos como Inteligencia Artificial aplicada a la gestión profesional. Así aseguras que tu perfil esté alineado al futuro del mercado.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ La gestión del talento se ha vuelto estratégica: las empresas peruanas están invirtiendo más en atraer y retener talento en un mercado laboral competitivo.\n▪ Los perfiles de Recursos Humanos con enfoque en gestión y liderazgo tienen alta demanda en organizaciones de todo tamaño.", "speech": "📊 Con la guerra por el talento que viven hoy las empresas peruanas, los especialistas en gestión de personas son cada vez más valorados. Es un área con proyección constante de crecimiento.", "tags": "indeciso, técnico"}]}, "administracion_gestion_publica": {"nombre": "Administración y Gestión Pública", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Especialización en administración gubernamental y optimización del funcionamiento del Estado.\n\n▪ Dónde trabajar: Gerencias públicas en ministerios, municipalidades, consultor independiente o docencia.", "speech": "Se enfoca en planificar y optimizar el presupuesto y los recursos del Estado. Podrás trabajar ocupando cargos directivos en ministerios, municipalidades, o como consultor de proyectos gubernamentales.", "tags": "indeciso, técnico"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 7: Sistemas de Gestión Pública\n▪ Ciclo 9: Políticas Públicas\n▪ Ciclo 10: Modernización del Estado\n\n⭐ Plus: Curso de inglés gratuito incluido en la malla.", "speech": "Vas a obtener 3 certificaciones oficiales sin costo: Sistemas de Gestión, Políticas Públicas y Modernización del Estado. Es el respaldo que exigen hoy para ascender.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Entornos de Simulación Pública: Plataformas interactivas para gestión presupuestal (SIAF, SEACE) e inversión pública.\n▪ Enfoque: Diseñado para profesionales con acompañamiento integral y flexible.", "speech": "Trabajarás con casos reales mediante software especializado del sector público, adaptando el aprendizaje a tu día a día laboral sin problemas.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Contrataciones del Estado, derecho administrativo y gobernanza digital.", "speech": "Puedes potenciar tu perfil con electivos clave como Inteligencia Artificial y Contrataciones del Estado, ganando una gran ventaja en los concursos públicos de mérito.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ El sector público peruano requiere de forma constante profesionales capacitados en gestión, planificación y ejecución de proyectos del Estado.\n▪ La especialización en gestión pública abre puertas tanto en gobiernos regionales/locales como en organismos nacionales.", "speech": "📊 El Estado peruano necesita constantemente profesionales que sepan gestionar proyectos públicos de forma eficiente. Es una carrera con estabilidad y con impacto real en tu comunidad.", "tags": "indeciso, ocupado"}]}, "administracion_marketing": {"nombre": "Administración y Marketing", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Fusión de gestión organizacional con estrategias comerciales, investigación de mercados y publicidad.\n\n▪ Dónde trabajar: Direcciones de marketing, agencias digitales, jefaturas de marca o consultoras de mercadeo.", "speech": "Combina la gestión empresarial con estrategias creativas de ventas y publicidad digital. Podrás trabajar liderando jefaturas de marca, dirigiendo agencias de marketing o como consultor comercial.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 6: Inv. de Mercados / Inbound Marketing / Transf. Digital\n▪ Ciclo 8: Credencial en Innovación\n▪ Ciclo 9: Análisis Empresarial (ECBA) / Mkt Digital y E-commerce\n▪ Ciclo 10: CMS Hub para Marketers / Diseño UX\n\n⭐ Plus: Inglés gratis desde el 4to ciclo.", "speech": "Egresas con un portafolio enorme de certificaciones gratis en Inbound Marketing, E-commerce y Diseño UX, sumado al inglés incluido. Tu CV tendrá un valor increíble.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Markstrat, BOSS y Livemax: Simuladores de alta gerencia para decisiones comerciales.\n▪ Centro de Investigación de Mercados UC: Acceso a herramientas avanzadas como Google Analytics y CRM.", "speech": "Te entrenarás con herramientas reales que usan las grandes marcas, como los simuladores Markstrat y Google Analytics, para liderar campaigns comerciales exitosas.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Neuromarketing, analítica predictiva de datos y growth hacking.", "speech": "Puedes sumar asignaturas de vanguardia como Inteligencia Artificial y Neuromarketing para diseñar el perfil exacto que las empresas buscan hoy.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ La transformación digital acelerada de las empresas peruanas impulsa la demanda de especialistas en marketing y gestión comercial.\n▪ Los perfiles que dominan marketing digital y analítica de datos son de los más buscados en el mercado actual.", "speech": "📊 Con la digitalización de las empresas, el marketing es una de las áreas que más está creciendo en demanda en el Perú. Si te gusta lo comercial y lo creativo, este perfil tiene mucho campo laboral.", "tags": "indeciso, técnico"}]}, "administracion_negocios_digitales": {"nombre": "Administración y Negocios Digitales", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Gestión de estrategias digitales, e-commerce, análisis de datos y tecnologías emergentes (IA, blockchain).\n\n▪ Dónde trabajar: Startups, consultoría en canales digitales, gerencia de transformación digital en empresas.", "speech": "Te enseña a crear, administrar y rentabilizar empresas en entornos virtuales usando comercio electrónico y analítica de datos. Podrás trabajar en startups, liderando la transformación digital o asesorando canales digitales corporativos.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 6: Gestión de Mercados Financieros\n▪ Ciclo 10: Gestión de Inversiones\n\n⭐ Plus: Inglés gratis en la malla + Alianzas, pasantías y mentorías globales.", "speech": "Sumas certificaciones gratis en Mercados Financieros y Gestión de Inversiones, junto con inglés sin costo. Además, accedes a una red de mentoría global excelente.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Labs de Blockchain e IA: Entornos digitales interactivos para decisiones estratégicas y simulación de flujos de comercio electrónico.\n▪ Modelo Adaptativo: Personalización del estudio y acompañamiento continuo.", "speech": "Tendrás laboratorios virtuales para simular la implementación de IA y Big Data aplicados directamente al crecimiento de negocios reales. Todo desde tu computadora.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Ciberseguridad comercial, metodologías ágiles (Scrum) y Big Data.", "speech": "Llevarás electivos estratégicos como Inteligencia Artificial o Big Data para robustecer tus habilidades directivas en el entorno digital.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ Cerca del 90% de la demanda laboral reciente en el Perú tiene un componente tecnológico, según reportes recientes del sector empresarial.\n▪ Los negocios digitales (e-commerce, marketing digital, transformación de procesos) están entre las áreas de mayor crecimiento.", "speech": "📊 Hoy casi 9 de cada 10 nuevas búsquedas laborales en el Perú tienen un componente tecnológico. Estudiar Negocios Digitales te posiciona justo en el centro de esa ola de crecimiento.", "tags": "indeciso, técnico"}]}, "administracion_negocios_internacionales": {"nombre": "Administración y Negocios Internacionales", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Gestión, logística, marketing global y negociación estratégica en mercados internacionales.\n\n▪ Dónde trabajar: Empresas de comercio exterior, aduanas, logística global o tu propio negocio de importación y exportación.", "speech": "Te capacita en logística global, aduanas y tratados comerciales para conectar empresas con el mundo. Podrás laborar en corporaciones de comercio exterior, aduanas o liderando tu propia empresa de importaciones y exportaciones.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 10: Gestión de Operatividad Internacional\n▪ Ciclo 10: Gestión Comercial Internacional\n\n⭐ Plus: Inglés gratis desde el 4to ciclo + Opción de Doble Titulación en EE.UU. con Continental Florida University.", "speech": "Te gradúas con doble certificación oficial en Operatividad y Gestión Comercial Internacional, inglés gratis y la opción de un título válido en EE.UU.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ VeriTrade: Plataforma líder de inteligencia comercial para analizar mercados de importación/exportación.\n▪ Markstrat y BOSS: Simuladores de alta gerencia.\n▪ Fab Labs: Espacios de fabricación digital para prototipar proyectos.", "speech": "Unas marcas de todo el mundo mediante la plataforma líder VeriTrade, la misma que usan los grandes importadores para buscar mercados, complementada con simuladores de gerencia.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Finanzas internacionales, logística de última milla y geopolítica económica.", "speech": "Podrás elegir electivos clave como Inteligencia Artificial aplicada a los negocios globales, potenciando tu CV ante multinacionales.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ El comercio exterior peruano mantiene una proyección de crecimiento sostenido, con demanda de profesionales en exportación, logística internacional y gestión de cadenas de suministro.\n▪ Producción, Abastecimiento y Logística es una de las áreas con mayor presión salarial al alza según Jobint/Bumeran.", "speech": "📊 El comercio exterior sigue en expansión en el Perú, y Logística Internacional es una de las áreas con mayor proyección salarial de los próximos años. Es una carrera con visión global y buen campo laboral.", "tags": "indeciso, precio alto"}]}, "contabilidad_finanzas": {"nombre": "Contabilidad y Finanzas", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Análisis de datos financieros, auditoría integral, consultoría tributaria y aplicación de normas (NIIF).\n\n▪ Dónde trabajar: Director de finanzas (CFO), auditor, asesor tributario senior corporativo o estudio contable propio.", "speech": "Te prepara para analizar las finanzas, planificar impuestos y realizar auditorías estratégicas que cuiden el dinero de las empresas. Podrás trabajar como director de finanzas, auditor corporativo o abriendo tu propio estudio contable.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 5: Power BI (Microsoft)\n▪ Ciclo 7: Contabilidad Financiera y NIIF / Business Analysis (IIBA)\n▪ Ciclo 8: Tributación / PMI Ready\n▪ Ciclo 9: Finanzas / Software Contable\n▪ Ciclo 10: IAI Coso, CIA / Soft Skills Invicta\n\n⭐ Plus: Inglés gratis desde el 4to ciclo.", "speech": "Sumas certificaciones de peso mundial como Power BI de Microsoft y PMI para gestión de proyectos, además de tributación y NIIF, todo gratis. Tu perfil será súper cotizado.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Softwares Contables: Licencias completas para Siscont Online, Concar, Algetec y Contasis.\n▪ Certificaciones ERP: Acceso y aprendizaje en las plataformas líderes SAP y Microsoft Dynamics.", "speech": "Aprenderás operando de forma práctica los programas más pedidos en el país como Siscont y Concar, y te certificarás en el sistema ERP más potente del mundo: SAP.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Auditoría forense, peritaje contable y planeamiento tributario avanzado.", "speech": "Tendrás electivos avanzados en Inteligencia Artificial y Sostenibilidad Financiera para diseñar tu especialidad y liderar consultorías de alto nivel.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ Todas las empresas, sin excepción, requieren profesionales contables, lo que da a esta carrera una demanda constante y estable en el mercado peruano.\n▪ El área de Administración y Finanzas está entre las 3 de mayor demanda empresarial actual junto a tecnología y logística.", "speech": "📊 La Contabilidad es una de las carreras con demanda más estable del mercado: toda empresa, grande o pequeña, necesita un contador. Es una excelente opción si buscas seguridad laboral.", "tags": "indeciso, ocupado"}]}, "ciencias_computacion": {"nombre": "Ciencias de la Computación", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Desarrollo de software complejo, ciberseguridad, cloud computing, machine learning e investigación.\n\n▪ Dónde trabajar: Arquitecto de software, científico de datos, ingeniero de ciberseguridad o desarrollador de IA/videojuegos.", "speech": "Se enfoca en las bases científicas para crear software complejo, ciberseguridad avanzada e Inteligencia Artificial. Podrás laborar en empresas tecnológicas como científico de datos, arquitecto de software o desarrollador de IA y videojuegos.", "tags": "indeciso, técnico"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 6: Gestor de Base de Datos Distribuidas\n▪ Ciclo 9: Computación de Alta Performance (HPC) / Entornos Virtuales\n▪ Ciclo 10: Ciberseguridad / Machine Learning / Transformación Digital\n\n⭐ Plus: Inglés gratis + Doble Titulación en EE.UU. con Continental Florida University.", "speech": "Egresas certificado gratis en las áreas mejor pagadas del mercado: Machine Learning, Ciberseguridad y Alta Performance, con opción a título norteamericano.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Labs de Alta Performance: Servidores en la nube para experimentación de algoritmos y entrenamiento de redes neuronales.\n▪ Modelo Adaptativo: Innovación y acompañamiento personalizado en cada ciclo.", "speech": "Vas a practicar en la nube con infraestructuras diseñadas para simular Big Data, computación paralela y ciberseguridad avanzada de manera 100% remota.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Desarrollo de videojuegos, criptografía aplicada, blockchain y visión computacional.", "speech": "Puedes potenciar tu exigente perfil con electivos enfocados en Inteligencia Artificial aplicada y Sostenibilidad Tecnológica. Es un complemento ideal.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ Tecnología y Sistemas es hoy el sector con mayor presión salarial al alza en el Perú: las jefaturas del área ya superan los S/6,900 mensuales según Jobint.\n▪ Cerca del 90% de la demanda laboral actual en el país tiene un componente tecnológico.", "speech": "📊 Tecnología es hoy el área con mayor crecimiento salarial del país: las jefaturas ya superan los S/6,900 al mes. Con la escasez de talento tech que hay en el Perú, tu empleabilidad al egresar es altísima.", "tags": "indeciso, técnico"}]}, "ingenieria_ambiental": {"nombre": "Ingeniería Ambiental", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Conservación del medio ambiente, mitigación de contaminación y estrategias sostenibles.\n\n▪ Dónde trabajar: Industrias mineras, constructoras, sector energético, consultor en ministerios (MINAM) u ONGs.", "speech": "Te enseña a diseñar soluciones tecnológicas para prevenir la contaminación y asegurar el desarrollo sostenible de las industrias. Podrás trabajar en mineras, constructoras, empresas de energía o como consultor en ministerios u ONGs.", "tags": "indeciso, técnico"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 6: Monitoreo Ambiental\n▪ Ciclo 7: English Course Certification\n▪ Ciclo 9: Gestión del Cambio Climático\n▪ Ciclo 10: Gestión Ambiental y de Recursos Naturales\n\n⭐ Plus: Doble Titulación en EE.UU. con Continental Florida University.", "speech": "La malla te premia ciclo a ciclo con certificaciones clave como Monitoreo Ambiental y Gestión del Cambio Climático, respaldadas con opción a doble grado internacional.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Modelamiento Ambiental Virtual: Herramientas para simular dispersión de contaminantes y sistemas de información geográfica (SIG).\n▪ Enfoque: Aprendizaje internacional en entornos colaborativos y flexibles.", "speech": "Aprenderás con herramientas digitales avanzadas para modelar impactos ambientales en ríos, suelos y atmósfera desde tu computadora, adaptándose por completo a tus horarios.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Energías renovables, bioingeniería, manejo de residuos peligrosos y legislación internacional.", "speech": "Puedes complementar tu carrera llevando materias electivas de peso como Inteligencia Artificial aplicada al monitoreo ambiental y Sostenibilidad Corporativa.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ Sectores como minería, energía y agroexportación —motores de la economía peruana— exigen cada vez más profesionales especializados en gestión ambiental y sostenibilidad.\n▪ La normativa ambiental peruana es cada vez más exigente, lo que impulsa la contratación de especialistas en cumplimiento y sostenibilidad.", "speech": "📊 Con la mayor exigencia ambiental que hoy tienen sectores como minería y energía en el Perú, los especialistas en gestión ambiental son cada vez más buscados. Es una carrera con futuro y con propósito.", "tags": "indeciso, técnico"}]}, "ingenieria_sistemas_informatica": {"nombre": "Ingeniería en Sistemas e Informática", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Diseño, desarrollo y arquitectura de software, sistemas operativos, infraestructura cloud y redes de datos.\n\n▪ Dónde trabajar: Gerente de proyectos de TI, arquitecto de software, gerente de infraestructura cloud o consultor tecnológico.", "speech": "Trata sobre el diseño, desarrollo y gestión de infraestructuras de redes, software avanzado y soluciones de tecnología en la nube. Podrás trabajar dirigiendo proyectos de TI, como arquitecto de software o gerente cloud en grandes corporaciones.", "tags": "indeciso, técnico"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 5: Dev Web / Ciclo 6: Redes / Ciclo 7: Base de Datos / Ciclo 8: Analista de Sistemas\n▪ Ciclo 9: Redes y PMI Ready / Ciclo 10: Dev Móvil y VR / Ciencia de Datos y ML / Arq. Empresarial\n\n⭐ Plus: Inglés gratis + Doble Titulación en EE.UU.", "speech": "Es una de nuestras mallas más completas. Ganas certificaciones gratis en Desarrollo Web, Redes, Ciencia de Datos, Machine Learning y preparación oficial para el PMI.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Cloud Academies: Acceso a plataformas de Google Cloud, AWS (Amazon), Oracle, Azure (Microsoft) y Cisco NetAcad.\n▪ Simuladores: Entornos de Pentesting (Ciberseguridad), bases de datos y Packet Tracert.\n👑 Membresías gratis: OpenGroup, Cisco, PMI, ACM, CLEI.", "speech": "Tu aprendizaje será práctico con laboratorios oficiales de Amazon AWS, Google Cloud y Cisco, junto a simuladores de hackeo ético incluidos sin costo extra.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Desarrollo de videojuegos, blockchain empresarial, metodologías DevOps y gobernanza de TI.", "speech": "Puedes enriquecer tu perfil llevando electivos estratégicos en Inteligencia Artificial y Sostenibilidad, adaptando la carrera a las necesidades mejor pagadas del mercado.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ Según el MTPE, Ingeniería de Sistemas es la segunda carrera mejor remunerada del Perú, después de Medicina.\n▪ Los sueldos van desde S/1,849 hasta más de S/8,100 mensuales según experiencia y especialización, con creciente demanda por la digitalización acelerada de las empresas.", "speech": "📊 Según el MTPE, Ingeniería de Sistemas es la segunda carrera mejor pagada del Perú, solo después de Medicina, con sueldos que pueden superar los S/8,000 mensuales según tu experiencia. La demanda sigue creciendo por la digitalización de las empresas.", "tags": "indeciso, precio alto, técnico"}]}, "ingenieria_empresarial": {"nombre": "Ingeniería Empresarial", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Fusión de ingeniería de procesos, ciencia de datos y metodologías ágiles para liderar la transformación digital empresarial.\n\n▪ Dónde trabajar: Director de transformación digital, gerente de proyectos (PMO), consultor de procesos o arquitecto empresarial.", "speech": "Une la optimización de procesos de negocio con el análisis de datos y la tecnología para guiar la transformación digital corporativa. Te prepara para laborar como director de proyectos, consultor estratégico o arquitecto empresarial.", "tags": "indeciso, técnico"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 4: Analista de Datos\n▪ Ciclo 6: Gestor de Proyectos\n▪ Ciclo 7: English Course Certification\n▪ Ciclo 9: Arquitecto Organizacional\n\n\n⭐ Plus: Inglés gratis en la malla + Doble Titulación en EE.UU. con Continental Florida University.", "speech": "Egresas respaldado por certificaciones oficiales gratuitas en Análisis de Datos, Gestión de Proyectos y Arquitectura Organizacional, sumando inglés gratis y opción de título en EE.UU.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Labs de BI y Modelado: Herramientas de analítica de negocios, minería de procesos y cuadros de mando interactivos.\n▪ Enfoque: Flexible con acompañamiento continuo diseñado para optimizar tu tiempo.", "speech": "▪ Practicarás con herramientas reales de analítica y minería de procesos desde tu laptop o celular, avanzando a tu propio ritmo con nuestro modelo flexible.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Gestión del cambio tecnológico, analítica predictiva de negocios y metodologías ágiles a escala.", "speech": "Aprovecha electivos avanzados en Inteligencia Artificial y Sostenibilidad corporativa para darle un mayor valor salarial a tu perfil en el mercado.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ El perfil híbrido que combina gestión empresarial con herramientas tecnológicas y de datos es cada vez más solicitado por las empresas peruanas.\n▪ Tecnología, Administración/Finanzas y Logística son hoy las 3 áreas de mayor demanda laboral en el país.", "speech": "📊 Las empresas hoy buscan justamente ese perfil híbrido que combina gestión de negocio con tecnología, que es lo que forma Ingeniería Empresarial. Es una carrera pensada para el mercado laboral actual.", "tags": "indeciso, técnico"}]}, "ingenieria_industrial": {"nombre": "Ingeniería Industrial", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Optimización y mejora continua de procesos productivos, logísticos y administrativos para maximizar la rentabilidad.\n\n▪ Dónde trabajar: Gerencias de operaciones, jefaturas de producción, Supply Chain (logística) o consultoría de procesos.", "speech": "Te capacita para optimizar la productividad y rentabilidad de los procesos logísticos, operativos y administrativos. Podrás trabajar liderando gerencias de operaciones, jefaturas de producción o en consultorías de procesos industriales.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 7: Finanzas Empresariales / Ciclo 8: Mantenimiento Industrial / Ciclo 9: Gestión de Producción / Dirección de Proyectos (PMI)\n▪ Ciclo 10: Automatización, SIG, FinTech, Smart Manufacturing, Lean Green Belt\n\n⭐ Plus: Inglés gratis desde el 4to ciclo.", "speech": "Tu perfil será súper buscado por las industrias gracias a certificaciones oficiales gratuitas como Lean Green Belt, Smart Manufacturing y Gestión de Proyectos.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Simuladores Industriales: Acceso completo a Virtual Plant, Labsag, Flexsim 3D, Cyros y Fluidsim.\n▪ Fab Labs: Laboratorios de fabricación digital e impresión 3D para materializar emprendimientos.\n⭐ Beneficios: Bolsa de trabajo desde el día 1.", "speech": "Contamos con simuladores líderes como Flexsim 3D y Virtual Plant, donde modelas líneas de producción complejas idénticas a las reales de forma 100% digital.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Robótica colaborativa, ergonomía avanzada, logística avanzada y automatización industrial SCADA.", "speech": "Puedes llevar materias electivas estratégicas en Inteligencia Artificial aplicada a procesos y Sostenibilidad, dándole una gran ventaja a tu currículum.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ La demanda de ingenieros industriales con habilidades en IA, automatización y análisis de datos crece de forma acelerada en manufactura, logística y minería.\n▪ Es una de las ingenierías con mejor remuneración promedio en el Perú, con sueldos que rondan los S/4,000 mensuales.", "speech": "📊 Los ingenieros industriales con manejo de IA y automatización son de los perfiles más buscados hoy en manufactura, logística y minería en el Perú. Es una carrera con demanda creciente y buena remuneración.", "tags": "indeciso, técnico"}]}, "derecho": {"nombre": "Derecho", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Formación jurídica con enfoque digital para la prevención, solución de conflictos y dominio de litigación oral.\n\n▪ Dónde trabajar: Abogado corporativo, litigante, consultor público, magistrado, fiscal o firma legal propia.", "speech": "Te brinda formación jurídica con un enfoque digital y moderno, dominando la litigación oral y prevención de conflictos. Podrás laborar como abogado corporativo, asesor público, fiscal, magistrado o en tu propio estudio legal.", "tags": "indeciso, técnico"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 8: Analista en Casos Penales / Asistente en Procesos Judiciales\n▪ Ciclo 11: Especialista en Gestión Pública / Analista en Derecho Corporativo\n\n⭐ Plus: Malla moderna apoyada en tecnologías y enfoque internacional.", "speech": "Potencias tu CV mientras estudias con certificaciones gratis en Casos Penales, Procesos Judiciales, Gestión Pública y Derecho Corporativo. Es ideal para destacar rápido.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Contiverso: Clínica jurídica virtual en el metaverso para simulación de audiencias y juicios orales reales.\n▪ Enfoque Digital: Currícula que integra Legal Tech, Inteligencia Artificial jurídica, ciberdelitos y derecho digital.", "speech": "Practicarás juicios y audiencias reales dentro de nuestra clínica en el metaverso (Contiverso), dominando el uso de IA y Legal Tech, que es lo que hoy busca el mercado.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Arbitraje comercial, derecho informático, protección de datos y Compliance corporativo.", "speech": "La modalidad te ofrece electivos de vanguardia como Inteligencia Artificial y Sostenibilidad, dándote una visión moderna y única como abogado.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ El Derecho sigue siendo una de las profesiones con mayor presencia en el mercado laboral peruano, con campo tanto en el sector público como privado.\n▪ La especialización en áreas como LegalTech, derecho corporativo y derecho digital abre oportunidades adicionales frente a la digitalización de los servicios legales.", "speech": "📊 El Derecho sigue siendo una de las profesiones con más campo laboral en el Perú, y quienes se especializan en áreas digitales o corporativas destacan aún más frente a un mercado legal que también se está digitalizando.", "tags": "indeciso, técnico"}]}, "psicologia": {"nombre": "Psicología", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Evaluación, diagnóstico e intervención científica de los procesos mentales, emociones y conductas humanas.\n\n▪ Dónde trabajar: Psicólogo clínico en centros de salud, psicoterapeuta privado, psicólogo organizacional (RR.HH.) o educativo.", "speech": "Trata sobre el estudio científico de la mente, las emociones y el comportamiento humano para promover el bienestar. Podrás laborar en clínicas de salud mental, consultorios privados, colegios o en el área de Recursos Humanos de empresas. ¿Aseguramos tu vacante?", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 7: English Course Certification\n▪ Ciclo 8: Primeros Auxilios Psicológicos (PAP)\n▪ Ciclo 10: Ciberpsicología y Telepsicología / Intervención en Contextos Organizacionales", "speech": "Ganas diplomas clave gratis como Primeros Auxilios Psicológicos y una certificación súper innovadora en Ciberpsicología para atender consultas de forma virtual. ¿Dejamos esto listo?", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Realidad Virtual y Ciberpsicología: Simuladores de exposición gradual para tratamiento clínico de fobias y ansiedad.\n▪ Telepsicología: Infraestructura digital para aplicar protocolos internacionales de salud mental online.", "speech": "Aprenderás a usar tecnología clínica entrenándote con visores de Realidad Virtual para tratar fobias mediante ciberpsicología. Es el futuro de la psicoterapia. ¿Qué te parece?", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Neuropsicología aplicada, terapia cognitivo-conductual digital, psicopedagogía y mediación.", "speech": "Tienes electivos increíbles como Inteligencia Artificial y Sostenibilidad para ampliar tus destrezas hacia los perfiles psicológicos más modernos del entorno corporativo. ¿Matriculamos hoy?", "tags": "technical, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ La atención a la salud mental y el bienestar organizacional ha ganado prioridad creciente en empresas peruanas, ampliando el campo laboral de la Psicología Organizacional.\n▪ Además del ámbito clínico y educativo, cada vez más compañías incorporan psicólogos a sus áreas de Recursos Humanos y bienestar.", "speech": "📊 Cada vez más empresas peruanas están priorizando el bienestar y la salud mental de sus colaboradores, lo que ha ampliado bastante el campo laboral de la Psicología, más allá de lo clínico y educativo.", "tags": "indeciso, ocupado"}]}, "educacion_innovacion_aprendizaje_digital": {"nombre": "Educación con Especialidad en Innovación y Aprendizaje Digital", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Diseño e implementación de experiencias de aprendizaje didácticas usando de forma eficiente la tecnología educativa.\n\n▪ Dónde trabajar: Director de innovación digital en instituciones educativas, diseñador instruccional de capacitación virtual corporativa (e-learning) o consultor EdTech.", "speech": "Te capacita para diseñar programas de formación interactivos y dinámicos combinando pedagogía y tecnología. Podrás trabajar como director de innovación en colegios, diseñador instruccional en plataformas de capacitación (e-learning) o consultor EdTech.", "tags": "indeciso, técnico"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Ciclo 7: Diseñador de Experiencias de Aprendizaje en Escenarios Digitales / English Course Cert.\n▪ Ciclo 8: Gestión de Tecnologías Educativas\n\n⭐ Plus: Inglés gratis incluido en la malla + Modelo adaptativo con bolsa de trabajo.", "speech": "Te gradúas respaldado por certificaciones gratis en Diseño de Experiencias Digitales y Gestión de Tecnologías Educativas, dándole un gran valor directivo a tu perfil.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Entornos E-learning y LMS: Software interactivo avanzado para simulación pedagógica, diseño curricular multimedia y gestión de aulas virtuales.\n▪ Modelo Adaptativo: Personalización del estudio en la nube de forma flexible.", "speech": "Practicarás con plataformas avanzadas para el diseño curricular multimedia y la gestión de aulas virtuales dinámicas, logrando un dominio práctico completo desde casa.", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional.\n▪ Especialidad: Diseño instruccional avanzado, gestión de plataformas EdTech, gamificación, fotografía publicitaria y primeros auxilios.", "speech": "Diseña tu especialidad ideal sumando electivos modernos como Inteligencia Artificial en Educación o Gamificación. Es una formación súper competitiva para el mercado actual.", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ La transformación digital de la educación en el Perú impulsa la demanda de docentes con competencias en tecnología educativa e innovación pedagógica.\n▪ Instituciones públicas y privadas buscan cada vez más perfiles capaces de diseñar experiencias de aprendizaje digitales.", "speech": "📊 La educación en el Perú se está digitalizando rápido, y los docentes con formación en innovación y tecnología educativa son cada vez más solicitados por colegios e instituciones. Es una carrera con proyección de futuro.", "tags": "indeciso, técnico"}]}, "educacion_inicial": {"nombre": "Educación Inicial", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Diseño, gestión y evaluación de experiencias de aprendizaje para niños de 3 a 5 años basadas en el desarrollo infantil, el juego como estrategia central y la atención a la diversidad.\n\n▪ Dónde trabajar: Aulas públicas y privadas, dirección de centros infantiles/programas no escolarizados, proyectos educativos propios, programas sociales/desarrollo infantil y acompañamiento familiar (escuelas de padres).", "speech": "Diseñarás y gestionarás aprendizajes para niños de 3 a 5 años usando el juego y la atención a la diversidad. Podrás laborar en aulas, dirigir centros de primera infancia, emprender tu propio proyecto educativo o trabajar en programas sociales y acompañamiento a familias.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Credenciales: Google Educator L1 (4°), Google Educator L2 (6°), Microsoft Innovative Educator (7°), English Course Certification (9°).\n\n\n▪ Certificaciones: Especialista en Neurodesarrollo y Estimulación Temprana (4°), Educador Inclusivo y Digital (6°), Especialista en Didáctica y Evaluación de Primera Infancia (7°), Especialista en Atención Integral y Familia (9°), Especialista en Gestión y Emprendimiento en Educación Inicial (10°).", "speech": "Sumas credenciales tecnológicas y de inglés de Google y Microsoft. Además, obtienes 5 certificaciones oficiales progresivas desde Neurodesarrollo hasta Gestión y Emprendimiento Educativo para potenciar tu CV antes de egresar.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Entornos Digitales Educativos: Plataformas interactivas para diseño instruccional, gamificación y simulación de gestión pedagógica en la nube[cite: 13].\n▪ Modelo Adaptativo: Flexible y accesible 24/7 con grabaciones en aula virtual sin penalidades por inasistencia[cite: 13].", "speech": "Aprenderás con herramientas digitales interactivas para simular la planificación de sesiones y crear recursos innovadores, con total flexibilidad de horarios para estudiar a tu ritmo[cite: 13].", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional[cite: 13].\n▪ Especialidad: Neuroeducación infantil, herramientas digitales para el aula, estimulación temprana y liderazgo educativo[cite: 13].", "speech": "Podrás personalizar tu carrera eligiendo electivos clave en Inteligencia Artificial y metodologías educativas modernas que te posicionarán a la vanguardia del sector[cite: 13].", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ La Educación Inicial mantiene demanda constante en el Perú, tanto en instituciones públicas (con concursos de nombramiento docente) como en el creciente sector privado.\n▪ Es una etapa educativa clave y priorizada dentro de las políticas del sector educación.", "speech": "📊 La Educación Inicial tiene demanda constante en el Perú, tanto en colegios privados como en el sector público a través de los concursos de nombramiento docente. Es una carrera con estabilidad y vocación de impacto.", "tags": "indeciso, ocupado"}]}, "educacion_primaria": {"nombre": "Educación Primaria", "subcategories": [{"item": "1.1 ¿De qué trata la carrera?", "concepto": "▪ Qué es: Gestión del aprendizaje de niños de 6 a 11 años y liderazgo para la mejora de la escuela, con dominio de la didáctica de las áreas fundamentales del Currículo Nacional y gestión de la calidad educativa.\n\n▪ Dónde trabajar: Aulas públicas/privadas, jefaturas de nivel/direcciones escolares, diseño de propuestas curriculares, instancias de gestión (UGEL/DRE) y escuelas rurales o de educación intercultural bilingüe.", "speech": "Aprenderás a gestionar el aprendizaje de niños de 6 a 11 años y a liderar la calidad de las escuelas dominando el Currículo Nacional. Podrás laborar en aulas, coordinaciones y direcciones escolares, diseñar programas curriculares, trabajar en la UGEL o en proyectos de educación intercultural.", "tags": "indeciso, ocupado"}, {"item": "1.2 Certificaciones Progresivas", "concepto": "▪ Credenciales: Google Educator L1 (4°), Google Educator L2 (6°), Microsoft Innovative Educator (7°), English Course Certification (9°).\n\n▪ Certificaciones: Especialista en Didáctica y Currículo de Educación Primaria (4°), Educador Inclusivo y Digital (6°), Especialista en Evaluación y Programación Curricular (7°), Especialista en Innovación Pedagógica y Liderazgo (9°), Especialista en Gestión Educativa y Transformación Digital (10°).", "speech": "Sumas credenciales internacionales de Google, Microsoft e inglés. Además, obtienes 5 certificaciones oficiales ciclo a ciclo desde Didáctica Curricular hasta Gestión Educativa y Transformación Digital para potenciar tu CV antes de egresar.", "tags": "técnico, precio"}, {"item": "1.3 Laboratorios y Simuladores", "concepto": "▪ Plataformas LMS y Simuladores Curriculares: Herramientas en la nube para simulación de gestión de aula, diseño instruccional y evaluación formativa[cite: 13].\n▪ Modelo Adaptativo: Flexible 24/7 con clases grabadas en aula virtual sin penalidades por inasistencia[cite: 13].", "speech": "Usarás herramientas virtuales para simular la programación de clases e innovar en el aula, con un modelo flexible cuyas clases quedan grabadas para que estudies a tu propio ritmo[cite: 13].", "tags": "técnico, duda de calidad online"}, {"item": "1.4 Cursos Electivos", "concepto": "▪ Generales: Inteligencia Artificial, Sostenibilidad, Desafíos Éticos, Gestión Profesional[cite: 13].\n▪ Especialidad: Liderazgo educativo, evaluación formativa digital, atención a la diversidad e innovación pedagógica[cite: 13].", "speech": "Tendrás acceso a electivos estratégicos como Inteligencia Artificial y Sostenibilidad para actualizar tu perfil pedagógico e impulsar tu línea de carrera[cite: 13].", "tags": "técnico, ocupado"}, {"item": "📊 Perspectiva del Mercado Laboral", "concepto": "▪ La Educación Primaria es una de las especialidades docentes con mayor número de plazas en los concursos públicos de nombramiento a nivel nacional.\n▪ El sector privado educativo también mantiene demanda constante de docentes titulados en esta etapa.", "speech": "📊 La Educación Primaria es una de las especialidades con más plazas disponibles en los concursos de nombramiento docente a nivel nacional. Es una carrera con salida laboral estable tanto en lo público como en lo privado.", "tags": "indeciso, ocupado"}]}}, "atencion": {"tipo_cliente_actual": null, "pasos": [{"id": "paso1", "numero": 1, "titulo": "Saludo y Conexión", "icono": "👋", "objetivo": "Mantener la conexión y ganar confianza", "sla": "30 seg – 2 min desde la derivación (BIDI/Chatbot)", "checklist": ["Revisar CRM/Genesys antes de responder", "Responder dentro del SLA (30 seg – 2 min)", "Cerrar el saludo con una pregunta cerrada, nunca varias a la vez"], "plantillas": [{"titulo": "Contacto inicial", "texto": "🙌 ¡Hola [Nombre del Prospecto]!\nSoy [Tu Nombre], asesor educativo de la Universidad Continental.\n\nFelicitaciones por dar este paso hacia un futuro internacional 🌎. Sé que estás interesado en conocer más sobre nuestras carreras de pregrado 100% a distancia 🎓 y estoy aquí para acompañarte en la decisión, resolviendo tus dudas y guiándote en todo el proceso.\n\n¿Te interesa que te comparta detalles sobre nuestras carreras, beneficios y forma de estudio a distancia?", "tags": "nuevo_lead"}, {"titulo": "Contacto inicial — Remarketing", "texto": "👋 ¡Hola de nuevo, [Nombre del Prospecto]! Soy [Tu Nombre], asesor educativo de la Universidad Continental. 🙌\n\nHace un tiempo conversamos sobre tu interés en [Carrera] y quería retomar el contacto porque seguimos teniendo cupos y beneficios vigentes que podrían interesarte 🎓.\n\n¿Te gustaría que continuemos donde lo dejamos?", "tags": "remarketing"}, {"titulo": "Propuesta de valor UC", "texto": "🙌 Perfecto, [Nombre del Prospecto]. En la Universidad Continental nos gusta acercar el mundo a cada estudiante, sin importar dónde vivas. Nuestra modalidad a distancia te permite estudiar 100% online, con clases síncronas y asíncronas, sin dejar de trabajar.\n\nTenemos más de 27 años de experiencia formando profesionales y más de 80,000 estudiantes confían hoy en nosotros a nivel nacional e internacional 🌎.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Frase de refuerzo — Experiencia internacional", "texto": "😊 Para que puedas tomar la mejor decisión para tu futuro, [Nombre del Prospecto], quiero contarte que en la Universidad Continental ofrecemos experiencias internacionales reales, gracias a nuestros más de 300 convenios con universidades en todo el mundo 🌎", "tags": "nuevo_lead, remarketing"}, {"titulo": "Frase de refuerzo — QS Stars / Sello Sofía", "texto": "✅ [Nombre del Prospecto], hemos sido reconocidos con 5 estrellas en Empleabilidad, Inclusión y Aprendizaje en Línea por QS Stars, y somos la primera universidad del Perú en alcanzar el SELLO SOFÍA, acreditación internacional basada en estándares europeos de calidad.", "tags": "nuevo_lead, remarketing"}]}, {"id": "paso2", "numero": 2, "titulo": "Preguntas Filtro", "icono": "🔎", "objetivo": "Descubrir información puntual para seguir avanzando", "sla": null, "checklist": ["No repetir preguntas cuyo dato ya está en el CRM", "Confirmar que el interés real es por la modalidad a distancia antes de avanzar"], "plantillas": [{"titulo": "Pregunta 1 — Carrera de interés", "texto": "¿Cuál es la carrera que más te interesa explorar en este momento? — Qué buscamos: confirmar el interés real y evitar avanzar con información genérica o de otra carrera.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Pregunta 2 — Disponibilidad", "texto": "¿Actualmente trabajas o llevas otras actividades que te llevaron a elegir la modalidad a distancia? — Qué buscamos: entender su disponibilidad de tiempo y validar que la distancia es realmente la modalidad que necesita.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Pregunta 3 — Nivel de decisión", "texto": "¿Te gustaría que te ayude a reservar tu vacante desde ahora para asegurar tu lugar? — Qué buscamos: medir su nivel de decisión/urgencia y abrir la puerta hacia el cierre.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Refuerzo — Qué es la modalidad a distancia", "texto": "🌐 Clases síncronas y asíncronas · carreras 100% adaptadas a tus horarios · evaluación permanente · actividades presenciales complementarias puntuales · mentoría cercana durante todo el ciclo.", "tags": "nuevo_lead, remarketing"}]}, {"id": "paso3", "numero": 3, "titulo": "Identificar Necesidades", "icono": "🧠", "objetivo": "Comprender a fondo motivaciones y expectativas. No hablar de inversión sin antes entender las necesidades del cliente y haber posicionado la propuesta de valor UC.", "sla": null, "checklist": ["Usar preguntas abiertas, no cerradas, en esta etapa", "Identificar quién financia el estudio antes de pasar a inversión"], "plantillas": [{"titulo": "Driver vocacional", "texto": "🧠 ¿Qué es lo que más te gusta de esta carrera? — Qué buscamos: identificar el driver vocacional/emocional que lo mueve, para reforzarlo más adelante.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Motivación de fondo", "texto": "🎯 ¿Por qué te interesa estudiar esta carrera? — Qué buscamos: entender la motivación de fondo (crecimiento profesional, cambio de rubro, mandato familiar, etc.).", "tags": "nuevo_lead, remarketing"}, {"titulo": "Meta al terminar", "texto": "🎓 ¿Qué esperas lograr al terminar tus estudios? — Qué buscamos: conocer su meta final para conectarla luego con los beneficios concretos de la carrera.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Obstáculos previos", "texto": "🛑 ¿Qué obstáculos has tenido para estudiar antes? — Qué buscamos: anticipar objeciones (tiempo, dinero, distancia) para tenerlas resueltas antes de que aparezcan.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Situación laboral actual", "texto": "👷 ¿Actualmente estás trabajando? / ¿En qué rubro trabajas actualmente? — Qué buscamos: validar que la modalidad a distancia calza con su rutina y estimar su capacidad de pago.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Quién financia el estudio", "texto": "🤝 ¿Alguien te apoya en tu proyecto de estudiar o tú vas a pagar todos tus estudios? — Qué buscamos: identificar quién decide/paga, dato clave antes de hablar de inversión.", "tags": "nuevo_lead, remarketing"}, {"titulo": "Competencia directa", "texto": "🏫 ¿Vienes conversando con otras universidades? ¿Cuáles son? — Qué buscamos: conocer a la competencia directa y preparar los diferenciales de UC frente a ella.", "tags": "nuevo_lead, remarketing"}]}, {"id": "paso4", "numero": 4, "titulo": "Inversión (Distancia)", "icono": "💳", "objetivo": "Presentar la inversión de forma clara y atractiva, usando la escala correcta según el perfil del cliente. No hablar de inversión sin antes posicionar la propuesta de valor UC.", "sla": null, "datos_estandar": "Matrícula S/250 · Seguro médico S/30 · Seguro de accidentes S/36 (estándar en todas las cuotas 1). Carrera, mensualidad, cuotas y fechas quedan en blanco para completar según el caso.", "checklist": ["Usar la escala correcta (Y o Z) según el perfil del cliente", "Confirmar vigencia de la inversión referencial antes de enviarla", "Cerrar siempre con una pregunta de avance"], "preguntas_cierre": ["📢 Cuéntame, hasta aquí, ¿tienes alguna duda o consulta?", "🎓 ¿Deseas saber más detalles del proceso de admisión?", "💪 Entonces, pasemos a tu proceso de preinscripción."], "plantillas": [{"titulo": "Pedir permiso para llamar", "texto": "📢 [Nombre del Prospecto], para poder darte una propuesta y oferta especial 🎯 que realmente se ajuste a lo que necesitas 🙌, me gustaría hacerte unas preguntas adicionales.\n\n¿Me permites llamarte? Será desde nuestro número corporativo ☎️📲 (mencionar número Genesys).", "tags": "nuevo_lead, remarketing"}, {"titulo": "Escala Y — Opción 1 (Propuesta directa)", "texto": "[Nombre del cliente], aquí va tu inversión para estudiar [Carrera] en la UC 🎓👇\n\n📌 Ciclo: Inicio [fecha de inicio]\n📚 [N° créditos] créditos · [N° cursos] cursos · 100% a distancia\n💳 Cuota 1 — S/ [monto cuota 1] (↳ Matrícula S/250 + Seguro médico S/30 + Seguro de accidentes S/36 + 1ra mensualidad S/[monto] ✅)\n📅 Cuotas 2, 3, 4 y 5 — S/ [monto] c/u\n\nLo que nos hace diferentes en UC: cursos en bloques (llevas menos materias a la vez) · tú manejas tus tiempos sin descuidar el trabajo · pagas solo por los créditos que llevas.\n\nAccede a este beneficio de matrícula anticipada, vigente hasta [fecha límite]. ¿Te ayudo hoy mismo a dejar lista tu matrícula?", "tags": "nuevo_lead"}, {"titulo": "Escala Y — Opción 2 (Dato de empleabilidad)", "texto": "[Nombre del cliente], 💡 ¿sabías que según el INEI un profesional universitario en el Perú gana en promedio 122% más que los demás?\n\nUn título en [Carrera] puede subir tu sueldo actual en 30–60% 📈\n\n💳 Cuota 1: S/ [monto cuota 1] (Matrícula S/250 + Seguro médico S/30 + Seguro de accidentes S/36 + 1ra mensualidad S/[monto])\n📅 Cuotas 2 al 5: S/ [monto] cada una\n\nEmpiezas con [N° créditos] créditos · [N° cursos] cursos · tú manejas el ritmo ⏰. ¿Empezamos tu proceso de admisión? 🚀", "tags": "nuevo_lead"}, {"titulo": "💡 Argumento extra — Inversión por día", "texto": "[Nombre del cliente], para que lo veas en perspectiva: tu cuota mensual de [Carrera] equivale a algo así como [monto]/30 al día 📆. Menos de lo que muchos gastan en delivery o streaming al mes, pero esto construye tu título profesional y tu sueldo de por vida 🎓📈. ¿Vemos juntos cómo encaja esto en tu presupuesto?", "tags": "nuevo_lead, remarketing"}, {"titulo": "💡 Argumento extra — Retorno de la inversión", "texto": "[Nombre del cliente], piensa en esto como una inversión con retorno medible: un profesional titulado gana en promedio bastante más que alguien sin título universitario en el Perú 📊. En pocos años de ejercicio profesional recuperas con creces lo invertido en tu carrera, y ese título te acompaña toda la vida 🎓. ¿Seguimos con tu proceso de admisión?", "tags": "nuevo_lead, remarketing"}, {"titulo": "💡 Argumento extra — Beneficio vigente (urgencia)", "texto": "[Nombre del cliente], quiero que aproveches esto: el beneficio de matrícula anticipada que te compartí está vigente solo hasta [fecha límite] y los cupos por carrera son limitados 🔥. Si lo cerramos hoy, aseguras tu vacante con esta condición especial y evitas que se agote o suba el costo más adelante. ¿Te ayudo a dejarlo listo ahora mismo?", "tags": "nuevo_lead, remarketing"}, {"titulo": "Escala Z — Opción 1: Convenios comerciales", "texto": "[Nombre del cliente], para ti como colaborador de [Empresa] con la que tenemos CONVENIO, aquí va tu inversión para estudiar [Carrera] en la UC, modalidad a distancia 🎓👇\n\n📌 Ciclo: [periodo], inversión referencial vigente hasta [fecha límite]\n📚 [N° créditos] créditos · [N° cursos] cursos · 100% a distancia\n💳 Cuota 1 — S/ [monto cuota 1] (Matrícula S/250 + Seguro médico S/30 + Seguro de accidentes S/36 + 1ra mensualidad S/[monto])\n📅 Cuotas 2, 3, 4 y 5 — S/ [monto] c/u\n📚 Descuento por convenio de [%] en las cuotas mensuales. ¿Empezamos con tu admisión? 🚀", "tags": "remarketing"}, {"titulo": "Escala Z — Opción 2: Convalidantes experiencia laboral", "texto": "[Nombre del cliente], en la UC tu experiencia laboral puede convalidar cursos, así puedes graduarte más pronto 🎓.\n\n💳 Cuota 1: S/ [monto cuota 1] (Matrícula S/250 + Seguro médico S/30 + Seguro de accidentes S/36 + 1ra mensualidad S/[monto])\n📅 Cuotas 2 al 5: S/ [monto] cada una\nInversión referencial vigente hasta [fecha límite]. ¿Empezamos tu proceso de admisión? 🚀", "tags": "remarketing"}, {"titulo": "Escala Z — Opción 3: Titulados y/o Segunda carrera", "texto": "[Nombre del cliente], en el Perú hay pocos profesionales con 2 carreras profesionales y eso te convertiría en un perfil más competitivo.\n\n🎓 2do título reconocido nacional e internacionalmente en menos tiempo · sigues trabajando mientras estudias · menos cursos a la vez.\n\n📌 Ciclo: [periodo], vigente hasta [fecha límite]\n💳 Cuota 1 — S/ [monto cuota 1] (Matrícula S/250 + Seguro médico S/30 + Seguro de accidentes S/36 + 1ra mensualidad S/[monto])\n📅 Cuotas 2 al 5 — S/ [monto] c/u. ¿Iniciamos tu proceso admisión? 🚀", "tags": "remarketing"}, {"titulo": "Escala Z — Opción 4: Convalidante / Traslado externo", "texto": "[Nombre del cliente], para ti que deseas convalidar tus estudios previos, aquí va tu inversión para estudiar [Carrera] en la UC, a distancia 🎓👇\n\n💳 Cuota 1: S/ [monto cuota 1] (Matrícula S/250 + Seguro médico S/30 + Seguro de accidentes S/36 + 1ra mensualidad S/[monto])\n📅 Cuotas 2 al 5: S/ [monto] cada una\nInversión referencial vigente hasta [fecha límite]. ¿Estás list@ para tu admisión? 🚀", "tags": "remarketing"}]}, {"id": "paso5", "numero": 5, "titulo": "Cierre y Recordación", "icono": "🎉", "objetivo": "Cerrar la conversación dejando una experiencia positiva y asegurando continuidad de contacto.", "sla": null, "checklist": ["Ejecutar los 3 intentos de recuperación cada 10 min antes de cerrar", "Mencionar siempre el número de WhatsApp corporativo como canal de continuidad", "Registrar el resultado final en CRM"], "plantillas": [{"titulo": "Despedida con cierre (admisión confirmada)", "texto": "🎉 ¡Felicitaciones, [Nombre del Prospecto]! 🎓 Has tomado una gran decisión al elegir una carrera con tanto futuro. Recuerda que soy [Tu Nombre] y estaré acompañándote en todo tu proceso de admisión desde este número 📲. ✨ ¡Que tengas un excelente día y bienvenido a esta nueva etapa!", "tags": "nuevo_lead, remarketing"}, {"titulo": "Intento 1 (10 min sin respuesta)", "texto": "(NOMBRE DEL CLIENTE) ¿Estás en línea?, nos mantenemos atentos a tu respuesta para continuar con la atención 🙋‍♀️", "tags": "nuevo_lead, remarketing"}, {"titulo": "Intento 2 (10 min siguientes)", "texto": "(NOMBRE DEL CLIENTE) Seguimos en espera y atentos a tu respuesta para seguir brindándote la atención y asesoría que requieres. ¿Deseas continuar con la conversación? 🙋‍♀️", "tags": "nuevo_lead, remarketing"}, {"titulo": "Intento 3 (+30 min)", "texto": "(NOMBRE DEL CLIENTE) han transcurrido más de 30 minutos desde nuestra última conversación y queremos seguir en contacto para darte la mejor experiencia. ¿Estás interesado en continuar con la conversación? 🙋‍♀️", "tags": "nuevo_lead, remarketing"}, {"titulo": "Cierre general (sin interés confirmado)", "texto": "(NOMBRE DEL CLIENTE) Gracias por comunicarte con el área de admisión de la Universidad Continental. Fue un gusto estar en contacto y con la información que nos has brindado hasta el momento te volveremos a contactar próximamente. 💻 ¡Qué tengas un buen día! 😊", "tags": "nuevo_lead, remarketing"}, {"titulo": "🔄 Reactivación — Cliente de campaña anterior", "texto": "🔄 ¡Hola [Nombre del Prospecto]! 😊 Vi que hace un tiempo estuviste interesado(a) en estudiar [Carrera] con nosotros. Quería contarte que aún tenemos cupos disponibles y una condición especial vigente hasta [fecha límite] que podría ayudarte a retomar este objetivo 🎓. ¿Seguimos conversando?", "tags": "remarketing"}]}], "objeciones": [{"objecion": "Objeción 1", "frase": "\"No conozco la Universidad Continental\"", "mencionar": ["Top 8 universidades del Perú según SUNEDU, presencia en 6 ciudades, sedes en EE.UU. y México", "+27 años como Universidad Continental (+40 como CIE)", "QS Stars (5 estrellas) y ANECA-AUDIT (España)", "ANECA-ENPHI: certificación específica para programas Semipresenciales y A Distancia, vigente desde julio 2024 — el argumento más directo ante esta objeción en distancia"], "respuestas": ["La Universidad Continental está dentro del Top 8 universidades del Perú según SUNEDU, con presencia en 6 ciudades y sedes internacionales en EE. UU. y México. Nuestra modalidad a distancia cuenta además con una certificación específica, la ANECA-ENPHI (España), que evalúa la calidad de nuestros programas semipresenciales y a distancia. Sumado a esto, contamos con QS Stars (cinco estrellas) y ANECA-AUDIT, que acreditan la excelencia de todas nuestras facultades. Estudias 100% online, con el mismo respaldo académico que un estudiante presencial.", "Entiendo que la modalidad a distancia te genere esa duda, pero justo por eso contamos con la certificación ANECA-ENPHI, exclusiva para programas semipresenciales y a distancia, que garantiza la misma calidad que tendrías estudiando presencialmente. Sumado a que estamos en el Top 8 de SUNEDU y contamos con QS Stars, tu título tendrá el mismo respaldo, estudies donde estudies.", "Aunque aún no nos conocías, Continental está en el Top 8 del ranking SUNEDU, con sedes en Perú, EE. UU. y México. Y para que tengas la tranquilidad de que estudiar a distancia no resta calidad, contamos con la acreditación ANECA-ENPHI, específica para nuestros programas a distancia. Conversemos un poco más sobre el plan de estudios para resolver cualquier duda que tengas."]}, {"objecion": "Objeción 2", "frase": "\"Es muy caro\"", "mencionar": ["No hablar de \"pensión\" — enfatizar inversión en la carrera profesional", "Beneficio propio de la distancia: ahorro en transporte, alojamiento y tiempo", "Mismas acreditaciones que presencial: QS Stars y ANECA-AUDIT, más ANECA-ENPHI específica de distancia", "Simuladores internacionales, bolsa de trabajo desde el día 1 y certificaciones gratuitas en cada ciclo", "Comparar con opciones más económicas: ninguna ofrece ese paquete integral de beneficios"], "respuestas": ["En Continental, estudiar a distancia significa que tu inversión no solo cubre la carrera, sino que además te ahorras gastos de transporte y alojamiento. Contamos con acreditaciones internacionales como QS Stars (cinco estrellas en Empleabilidad) y la certificación ANECA-ENPHI, específica para programas a distancia, que garantiza la misma calidad que la modalidad presencial. Sumado a esto, tienes acceso a simuladores internacionales, bolsa de trabajo desde el primer día y certificaciones gratuitas a lo largo de la carrera. Esa es la diferencia frente a otras opciones más económicas.", "Es válido comparar precios, pero estudiar a distancia en Continental te da más de lo que ves a simple vista: ahorras en transporte y tiempo, mantienes tu trabajo actual, y accedes a la misma calidad académica certificada con QS Stars y ANECA-ENPHI. Tu inversión se traduce en una carrera que puedes avanzar sin pausar tu vida laboral.", "Lo que inviertes en Continental a distancia se refleja en lo que recibes: acreditaciones internacionales, plataformas virtuales de nivel internacional, bolsa de trabajo desde el día 1 y certificaciones gratuitas en cada ciclo, todo sin tener que dejar tu trabajo ni mudarte de ciudad. Esa flexibilidad y respaldo académico es lo que hace la diferencia frente a alternativas más económicas."]}, {"objecion": "Objeción 3", "frase": "\"No sé si pueda llevar mi vida personal/laboral con estudiar actualmente\"", "mencionar": ["La modalidad a distancia fue diseñada justamente para quien ya trabaja", "Cursos en bloques (2–3 a la vez, no todos juntos) y clases síncronas + asíncronas", "Material grabado disponible en plataforma para avanzar a su propio ritmo", "Mentoría cercana durante todo el ciclo — no está solo en el proceso"], "respuestas": ["Entiendo tu preocupación, es normal. Por eso nuestra modalidad a distancia está diseñada para personas que, como tú, ya tienen una vida laboral activa. Llevas los cursos en bloques, no todos a la vez, las clases combinan sesiones síncronas y asíncronas, y tú decides cuándo avanzar con el material grabado. Miles de estudiantes en Continental ya estudian y trabajan al mismo tiempo, con el acompañamiento cercano de un mentor durante todo el ciclo.", "Sabemos que el tiempo es tu recurso más valioso, por eso en Continental la modalidad a distancia te permite estudiar sin dejar de trabajar: llevas menos cursos a la vez, tienes flexibilidad de horarios y todo el material queda disponible en la plataforma para que avances a tu ritmo. No estás solo en el proceso, cuentas con un mentor que te acompaña durante todo el ciclo.", null]}, {"objecion": "Objeción 4", "frase": "\"Por qué pagar ahora si faltan muchos meses para que inicien clases\"", "mencionar": ["Matricularse ahora no significa pagar toda la carrera, solo asegura el cupo", "Beneficio de matrícula anticipada, vigente solo hasta una fecha límite", "Cupos limitados por campus y carrera", "Evita imprevistos de último momento antes del inicio de clases"], "respuestas": ["Entiendo la duda, pero matricularte ahora te permite asegurar tu vacante y acceder al beneficio de matrícula anticipada, que solo está disponible hasta una fecha determinada. Además, los cupos por campus y carrera son limitados, así que aseguras tu lugar sin correr el riesgo de quedarte fuera cuando se acerque el inicio de clases.", "Matricularte ahora no significa pagar toda la carrera, solo estás asegurando tu cupo con el costo de matrícula anticipada, que es más conveniente que si esperas hasta el último momento. Así te evitas imprevistos y llegas tranquilo al inicio de clases, con todo ya listo.", null]}]}};
+
+  let activeFilterGlobal = null;
+  let activeSearchQuery = "";
+  let carreraActivaKey = Object.keys(db.carreras)[0] || "";
+  let activePasoId = "paso1";
+  let tipoClienteActivo = "todos";
+
+  if(localStorage.getItem('cgo_consola_backup')) {
+    try { db = JSON.parse(localStorage.getItem('cgo_consola_backup')); if(!carreraActivaKey) carreraActivaKey = Object.keys(db.carreras)[0] || ""; } catch(e){}
+  }
+  function persistState() {
+    localStorage.setItem('cgo_consola_backup', JSON.stringify(db));
+    updateHeaderCount();
+  }
+
+  function updateHeaderCount() {
+    const totalCarrerasFichas = Object.values(db.carreras).reduce((acc, c) => acc + c.subcategories.length, 0);
+    const totalPlantillasAtencion = db.atencion.pasos.reduce((acc, p) => acc + p.plantillas.length, 0);
+    const total = db.universidad.length + db.modalidad.length + totalCarrerasFichas + totalPlantillasAtencion;
+    document.getElementById('headerCount').innerText = `${total} fichas · ${Object.keys(db.carreras).length} carreras · ${db.atencion.objeciones.length} objeciones`;
+  }
+
+  // ===================== NAVEGACIÓN DE MÓDULOS =====================
+  function switchModule(modId, btn) {
+    document.querySelectorAll('.module-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.module-tab').forEach(b => b.classList.remove('active'));
+    document.getElementById('module-' + modId).classList.add('active');
+    btn.classList.add('active');
+
+    document.getElementById('navTabsPropuesta').style.display = (modId === 'propuesta') ? 'flex' : 'none';
+    document.getElementById('filterBarPropuesta').style.display = (modId === 'propuesta') ? '' : 'none';
+    document.getElementById('clientTypeBar').style.display = (modId === 'atencion') ? '' : 'none';
+  }
+
+  function switchTab(tabId, btn) {
+    document.querySelectorAll('#module-propuesta .view-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('#navTabsPropuesta .tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active'); btn.classList.add('active');
+  }
+
+  // ===================== BÚSQUEDA Y FILTROS (Propuesta de Valor) =====================
+  function renderFilterPanel() {
+    const cc = document.getElementById("container-filtros-clientes");
+    cc.innerHTML = db.config_filtros.clientes.map(c => `
+      <div class="badge-filter ${activeFilterGlobal === c.toLowerCase().trim() ? 'active' : ''}" onclick="toggleFilter('${c}')">
+        👤 ${c} <span class="badge-del" onclick="event.stopPropagation(); deleteFilterTag('clientes', '${c}')">✕</span>
+      </div>
+    `).join('');
+
+    const co = document.getElementById("container-filtros-objeciones");
+    co.innerHTML = db.config_filtros.objeciones.map(o => `
+      <div class="badge-filter ${activeFilterGlobal === o.toLowerCase().trim() ? 'active' : ''}" onclick="toggleFilter('${o}')">
+        🛡️ ${o} <span class="badge-del" onclick="event.stopPropagation(); deleteFilterTag('objeciones', '${o}')">✕</span>
+      </div>
+    `).join('');
+  }
+
+  function toggleFilter(val) {
+    const target = val.toLowerCase().trim();
+    activeFilterGlobal = (activeFilterGlobal === target) ? null : target;
+    renderFilterPanel();
+    renderAllViews();
+  }
+
+  function clearActiveFilters() {
+    activeFilterGlobal = null;
+    activeSearchQuery = "";
+    document.getElementById("liveSearchInput").value = "";
+    renderFilterPanel();
+    renderAllViews();
+  }
+
+  function addNewFilterTag(type) {
+    let name = prompt(`Escribe el nombre del nuevo criterio para [${type}]:`);
+    if(!name || name.trim() === "") return;
+    db.config_filtros[type].push(name.trim());
+    persistState();
+    renderFilterPanel();
+    renderAllViews();
+  }
+
+  function isItemVisible(itemTitle, itemConcept, itemSpeech, itemTags, itemLinks) {
+    let matchesFilter = true;
+    let matchesSearch = true;
+
+    if (activeFilterGlobal) {
+      const tagsArr = itemTags ? itemTags.toLowerCase().split(',').map(t => t.trim()).filter(t => t) : [];
+      if (!tagsArr.includes(activeFilterGlobal)) matchesFilter = false;
+    }
+
+    if (activeSearchQuery) {
+      const compositeText = `${itemTitle} ${itemConcept} ${itemSpeech} ${itemTags} ${itemLinks || ''}`.toLowerCase();
+      if (!compositeText.includes(activeSearchQuery)) matchesSearch = false;
+    }
+
+    return matchesFilter && matchesSearch;
+  }
+
+  function triggerSearch(val) {
+    activeSearchQuery = val.toLowerCase().trim();
+    renderAllViews();
+  }
+
+  function deleteFilterTag(type, val) {
+    if(confirm(`¿Deseas eliminar el criterio "${val}"?`)) {
+      db.config_filtros[type] = db.config_filtros[type].filter(item => item !== val);
+      if(activeFilterGlobal === val.toLowerCase().trim()) activeFilterGlobal = null;
+      persistState();
+      renderFilterPanel();
+      renderAllViews();
+    }
+  }
+
+  function getTagSelectorHTML(section, idx, currentTags, isCareer = false) {
+    const tagsArr = currentTags ? currentTags.split(',').map(t => t.trim()).filter(t => t) : [];
+
+    let badgesHTML = tagsArr.map(t => `
+      <span class="card-tag-badge">
+        ${t} <span class="remove-tag" onclick="removeTagFromCard('${section}', ${idx}, '${t}', ${isCareer})">✕</span>
+      </span>
+    `).join('');
+
+    let optionsHTML = '<option value="" disabled selected>🏷️ Categorizar (Asignar Tipo/Objeción)</option>';
+    optionsHTML += '<optgroup label="👤 Tipos de Cliente">';
+    db.config_filtros.clientes.forEach(c => {
+      const normalized = c.toLowerCase().trim();
+      if (!tagsArr.includes(normalized)) optionsHTML += `<option value="${normalized}">${c}</option>`;
+    });
+    optionsHTML += '</optgroup>';
+
+    optionsHTML += '<optgroup label="🛡️ Objeciones">';
+    db.config_filtros.objeciones.forEach(o => {
+      const normalized = o.toLowerCase().trim();
+      if (!tagsArr.includes(normalized)) optionsHTML += `<option value="${normalized}">${o}</option>`;
+    });
+    optionsHTML += '</optgroup>';
+
+    return `
+      <details class="tag-selector-box">
+        <summary>🏷️ Vincular Filtros / Etiquetas</summary>
+        <div class="tag-selector-content">
+          <div class="card-assigned-tags">${badgesHTML || '<span style="color:#444; font-size:10px;">Sin filtros vinculados</span>'}</div>
+          <select class="card-tag-select" onchange="addTagToCard('${section}', ${idx}, this.value, ${isCareer})">
+            ${optionsHTML}
+          </select>
+        </div>
+      </details>
+    `;
+  }
+
+  function addTagToCard(section, idx, tagValue, isCareer) {
+    if(!tagValue) return;
+    let item = isCareer ? db.carreras[section].subcategories[idx] : db[section][idx];
+    let tagsArr = item.tags ? item.tags.split(',').map(t => t.trim()).filter(t => t) : [];
+    if(!tagsArr.includes(tagValue)) {
+      tagsArr.push(tagValue);
+      item.tags = tagsArr.join(', ');
+      persistState();
+      renderAllViews();
+    }
+  }
+
+  function removeTagFromCard(section, idx, tagValue, isCareer) {
+    let item = isCareer ? db.carreras[section].subcategories[idx] : db[section][idx];
+    let tagsArr = item.tags ? item.tags.split(',').map(t => t.trim()).filter(t => t) : [];
+    tagsArr = tagsArr.filter(t => t !== tagValue);
+    item.tags = tagsArr.join(', ');
+    persistState();
+    renderAllViews();
+  }
+
+  document.addEventListener('change', function(e) {
+    if(e.target && e.target.classList.contains('card-tag-select')) e.target.value = "";
+  });
+
+  function renderUniversidadYModalidad() {
+    const containerUniv = document.getElementById("container-universidad");
+    containerUniv.innerHTML = db.universidad.map((item, idx) => {
+      const visible = isItemVisible(item.titulo, item.concepto, item.speech, item.tags, item.links);
+      return `
+        <div class="card-prop" style="display: ${visible ? 'flex' : 'none'}">
+          <div class="card-actions">
+            <span class="action-left">Ficha #${idx + 1}</span>
+            <div class="action-right">
+              <button class="btn-action" onclick="moveItem('universidad', ${idx}, -1)">◀</button>
+              <button class="btn-action" onclick="moveItem('universidad', ${idx}, 1)">▶</button>
+              <button class="btn-action" style="color:var(--danger);" onclick="deleteItem('universidad', ${idx})">✕</button>
+            </div>
+          </div>
+          <div class="editable-title" contenteditable="true" onblur="updateField('universidad', ${idx}, 'titulo', this.innerText)">${item.titulo}</div>
+          <div class="editable-concept" contenteditable="true" onblur="updateField('universidad', ${idx}, 'concepto', this.innerText)">${item.concepto}</div>
+          <div class="speech-box">
+            <div class="speech-meta">💬 Speech Comercial</div>
+            <div class="speech-text" contenteditable="true" onblur="updateField('universidad', ${idx}, 'speech', this.innerText)">${item.speech}</div>
+            <button class="btn-copy" onclick="copySpeech(this)">Copiar</button>
+          </div>
+          <details class="links-collapse">
+            <summary>🔗 Páginas Web de Referencia</summary>
+            <div class="links-content">
+              <div class="editable-links" contenteditable="true" onblur="updateField('universidad', ${idx}, 'links', this.innerText)">${item.links || 'Clic para añadir enlaces de referencia...'}</div>
+            </div>
+          </details>
+          ${getTagSelectorHTML('universidad', idx, item.tags, false)}
+        </div>
+      `;
+    }).join('') || `<p style="color:var(--text-muted)">No hay elementos registrados.</p>`;
+
+    const containerMod = document.getElementById("container-modalidad");
+    containerMod.innerHTML = db.modalidad.map((item, idx) => {
+      const visible = isItemVisible(item.titulo, item.concepto, item.speech, item.tags, item.links);
+      return `
+        <div class="card-prop" style="display: ${visible ? 'flex' : 'none'}">
+          <div class="card-actions">
+            <span class="action-left">Ficha #${idx + 1}</span>
+            <div class="action-right">
+              <button class="btn-action" onclick="moveItem('modalidad', ${idx}, -1)">◀</button>
+              <button class="btn-action" onclick="moveItem('modalidad', ${idx}, 1)">▶</button>
+              <button class="btn-action" style="color:var(--danger);" onclick="deleteItem('modalidad', ${idx})">✕</button>
+            </div>
+          </div>
+          <div class="editable-title" contenteditable="true" onblur="updateField('modalidad', ${idx}, 'titulo', this.innerText)">${item.titulo}</div>
+          <div class="editable-concept" contenteditable="true" onblur="updateField('modalidad', ${idx}, 'concepto', this.innerText)">${item.concepto}</div>
+          <div class="speech-box">
+            <div class="speech-meta">💬 Speech Comercial</div>
+            <div class="speech-text" contenteditable="true" onblur="updateField('modalidad', ${idx}, 'speech', this.innerText)">${item.speech}</div>
+            <button class="btn-copy" onclick="copySpeech(this)">Copiar</button>
+          </div>
+          <details class="links-collapse">
+            <summary>🔗 Páginas Web de Referencia</summary>
+            <div class="links-content">
+              <div class="editable-links" contenteditable="true" onblur="updateField('modalidad', ${idx}, 'links', this.innerText)">${item.links || 'Clic para añadir enlaces de referencia...'}</div>
+            </div>
+          </details>
+          ${getTagSelectorHTML('modalidad', idx, item.tags, false)}
+        </div>
+      `;
+    }).join('') || `<p style="color:var(--text-muted)">No hay elementos registrados.</p>`;
+  }
+
+  function addNewGenericCard(section) {
+    db[section].unshift({ titulo: "🆕 Nueva Propuesta Corporativa", concepto: "Haz clic para editar la propuesta.", speech: "Speech comercial asignado.", tags: "", links: "" });
+    persistState();
+    renderUniversidadYModalidad();
+  }
+
+  function moveItem(section, index, direction) {
+    const arr = db[section]; const target = index + direction;
+    if (target >= 0 && target < arr.length) {
+      const temp = arr[index]; arr[index] = arr[target]; arr[target] = temp;
+      persistState(); renderUniversidadYModalidad();
+    }
+  }
+
+  function deleteItem(section, index) {
+    if(confirm("¿Eliminar este argumento permanentemente?")) {
+      db[section].splice(index, 1); persistState(); renderUniversidadYModalidad();
+    }
+  }
+
+  function renderSidebarCarreras() {
+    const sidebar = document.getElementById("sidebar-carreras");
+    const sortedKeys = Object.keys(db.carreras).sort((a, b) => db.carreras[a].nombre.localeCompare(db.carreras[b].nombre));
+    sidebar.innerHTML = sortedKeys.map(key => `
+      <div class="sidebar-item ${key === carreraActivaKey ? 'active' : ''}" onclick="selectCareer('${key}')">🎓 ${db.carreras[key].nombre}</div>
+    `).join('');
+  }
+
+  function renderContenidoCarrera() {
+    const data = db.carreras[carreraActivaKey];
+    const container = document.getElementById("content-carrera-activa");
+    if (!data) {
+      container.innerHTML = `<div style="color:var(--text-muted); text-align:center; padding-top:40px;">Crea o selecciona una carrera para empezar.</div>`;
+      return;
+    }
+    container.innerHTML = `
+      <div class="career-header-wrapper">
+        <h3 class="career-main-title" contenteditable="true" onblur="renameCareer('${carreraActivaKey}', this.innerText)">${data.nombre}</h3>
+        <button class="btn-action" style="color:var(--danger); font-weight:bold;" onclick="deleteCareer('${carreraActivaKey}')">✕ Eliminar Carrera</button>
+      </div>
+      <div class="props-grid">
+        ${data.subcategories.map((sub, idx) => {
+          const visible = isItemVisible(sub.item, sub.concepto, sub.speech, sub.tags, sub.links);
+          return `
+            <div class="card-prop" style="display: ${visible ? 'flex' : 'none'}">
+              <div class="card-actions">
+                <span class="action-left">Argumento de Venta #${idx + 1}</span>
+                <button class="btn-action" style="color:var(--danger);" onclick="deleteSubcategory('${carreraActivaKey}', ${idx})">✕</button>
+              </div>
+              <div class="editable-title" contenteditable="true" onblur="updateCareerField('${carreraActivaKey}', ${idx}, 'item', this.innerText)">${sub.item}</div>
+              <div class="editable-concept" contenteditable="true" onblur="updateCareerField('${carreraActivaKey}', ${idx}, 'concepto', this.innerText)">${sub.concepto}</div>
+              <div class="speech-box">
+                <div class="speech-meta">💬 Speech de Impacto</div>
+                <div class="speech-text" contenteditable="true" onblur="updateCareerField('${carreraActivaKey}', ${idx}, 'speech', this.innerText)">${sub.speech}</div>
+                <button class="btn-copy" onclick="copySpeech(this)">Copiar</button>
+              </div>
+              <details class="links-collapse">
+                <summary>🔗 Páginas Web de Referencia</summary>
+                <div class="links-content">
+                  <div class="editable-links" contenteditable="true" onblur="updateCareerField('${carreraActivaKey}', ${idx}, 'links', this.innerText)">${sub.links || 'Clic para añadir enlaces de referencia...'}</div>
+                </div>
+              </details>
+              ${getTagSelectorHTML(carreraActivaKey, idx, sub.tags, true)}
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  function createNewCareer() {
+    let name = prompt("Nombre de la nueva carrera universitaria:");
+    if (!name || name.trim() === "") return;
+    let key = name.toLowerCase().trim().replace(/[^a-z0-9]/g, "_");
+    if(db.carreras[key]) return alert("Esta carrera ya existe.");
+    db.carreras[key] = { nombre: name.trim(), subcategories: [ { item: "📚 Plan de Estudios e Impacto", concepto: "Descripción de la carrera...", speech: "Speech inicial...", tags: "", links: "" } ] };
+    carreraActivaKey = key; persistState(); renderSidebarCarreras(); renderContenidoCarrera();
+  }
+
+  function addNewSubcategoryToActiveCareer() {
+    if(!carreraActivaKey || !db.carreras[carreraActivaKey]) return alert("Selecciona una carrera primero.");
+    db.carreras[carreraActivaKey].subcategories.push({ item: "🆕 Nueva Ficha Especial", concepto: "Detalle técnico / Convenios.", speech: "Speech comercial específico.", tags: "", links: "" });
+    persistState(); renderContenidoCarrera();
+  }
+
+  function deleteSubcategory(careerKey, index) {
+    if(confirm("¿Eliminar este argumento de la carrera?")) { db.carreras[careerKey].subcategories.splice(index, 1); persistState(); renderContenidoCarrera(); }
+  }
+
+  function renameCareer(key, newName) {
+    if(newName.trim() !== "") { db.carreras[key].nombre = newName.trim(); persistState(); renderSidebarCarreras(); }
+  }
+
+  function deleteCareer(key) {
+    if(confirm("¿Seguro que deseas eliminar esta carrera por completo?")) {
+      delete db.carreras[key]; carreraActivaKey = Object.keys(db.carreras)[0] || "";
+      persistState(); renderSidebarCarreras(); renderContenidoCarrera();
+    }
+  }
+
+  function updateField(section, index, field, value) { db[section][index][field] = value.trim(); persistState(); }
+  function updateCareerField(careerKey, index, field, value) { db.carreras[careerKey].subcategories[index][field] = value.trim(); persistState(); }
+  function selectCareer(key) { carreraActivaKey = key; renderSidebarCarreras(); renderContenidoCarrera(); }
+
+  function copySpeech(button) {
+    const textNode = button.previousElementSibling;
+    let txt = textNode.innerText.trim();
+    navigator.clipboard.writeText(txt).then(() => {
+      const prev = button.innerText; button.innerText = "✓";
+      button.style.backgroundColor = "var(--neon-green)"; button.style.color = "#000";
+      setTimeout(() => { button.innerText = prev; button.style.backgroundColor = ""; button.style.color = ""; }, 1000);
+    });
+  }
+
+  // ===================== MÓDULO: PROCESO DE ATENCIÓN =====================
+  function setTipoCliente(tipo) {
+    tipoClienteActivo = tipo;
+    document.querySelectorAll('.client-badge').forEach(b => b.classList.toggle('active', b.dataset.tipo === tipo));
+    renderAtencion();
+  }
+
+  function plantillaVisible(p) {
+    let matchesTipo = true;
+    if (tipoClienteActivo !== 'todos') {
+      const tagsArr = p.tags ? p.tags.toLowerCase().split(',').map(t => t.trim()) : [];
+      matchesTipo = tagsArr.includes(tipoClienteActivo);
+    }
+    let matchesSearch = true;
+    if (activeSearchQuery) {
+      const composite = `${p.titulo} ${p.texto} ${p.tags || ''}`.toLowerCase();
+      matchesSearch = composite.includes(activeSearchQuery);
+    }
+    return matchesTipo && matchesSearch;
+  }
+
+  function renderPasoTabs() {
+    const wrap = document.getElementById('pasoTabs');
+    let html = db.atencion.pasos.map(p => `
+      <div class="paso-tab ${activePasoId === p.id ? 'active' : ''}" onclick="selectPaso('${p.id}')">${p.icono} Paso ${p.numero}: ${p.titulo}</div>
+    `).join('');
+    html += `<div class="paso-tab objeciones-tab ${activePasoId === 'objeciones' ? 'active' : ''}" onclick="selectPaso('objeciones')">🛡️ Objeciones</div>`;
+    wrap.innerHTML = html;
+  }
+
+  function selectPaso(id) { activePasoId = id; renderPasoTabs(); renderAtencion(); }
+
+  function tagToggleHTML(pasoIdx, plaIdx, tags) {
+    const arr = tags ? tags.toLowerCase().split(',').map(t=>t.trim()) : [];
+    const nl = arr.includes('nuevo_lead');
+    const rm = arr.includes('remarketing');
+    return `
+      <div class="tagtoggle-row">
+        <span class="btn-tagtoggle nl ${nl ? 'on' : ''}" onclick="toggleAtencionTag(${pasoIdx}, ${plaIdx}, 'nuevo_lead')">🆕 Nuevo Lead</span>
+        <span class="btn-tagtoggle rm ${rm ? 'on' : ''}" onclick="toggleAtencionTag(${pasoIdx}, ${plaIdx}, 'remarketing')">🔁 Remarketing</span>
+      </div>
+    `;
+  }
+
+  function toggleAtencionTag(pasoIdx, plaIdx, tag) {
+    const p = db.atencion.pasos[pasoIdx].plantillas[plaIdx];
+    let arr = p.tags ? p.tags.toLowerCase().split(',').map(t=>t.trim()).filter(t=>t) : [];
+    if (arr.includes(tag)) arr = arr.filter(t => t !== tag); else arr.push(tag);
+    p.tags = arr.join(', ');
+    persistState(); renderAtencion();
+  }
+
+  function renderAtencion() {
+    const container = document.getElementById('atencion-content');
+
+    if (activePasoId === 'objeciones') {
+      container.innerHTML = `
+        <button class="btn-global-add accent2" onclick="addObjecion()">➕ Agregar Objeción</button>
+        ${db.atencion.objeciones.map((o, oIdx) => {
+          const visible = !activeSearchQuery || `${o.objecion} ${o.frase} ${o.mencionar.join(' ')} ${o.respuestas.join(' ')}`.toLowerCase().includes(activeSearchQuery);
+          if (!visible) return '';
+          return `
+          <div class="objecion-card">
+            <div class="card-actions" style="border:none; margin-bottom:4px;">
+              <div class="objecion-titulo" contenteditable="true" onblur="updateObjecionField(${oIdx}, 'objecion', this.innerText)">${o.objecion}</div>
+              <button class="btn-action" style="color:var(--danger);" onclick="deleteObjecion(${oIdx})">✕</button>
+            </div>
+            <div class="frase-cliente" contenteditable="true" onblur="updateObjecionField(${oIdx}, 'frase', this.innerText)">💬 ${o.frase}</div>
+            <div class="mencionar-box">
+              <b style="font-size:11px; color:var(--text-muted); text-transform:uppercase;">Qué mencionar:</b>
+              ${o.mencionar.map((m, mIdx) => `<div class="mencionar-item" contenteditable="true" onblur="updateMencionarItem(${oIdx}, ${mIdx}, this.innerText)">${m}</div>`).join('')}
+            </div>
+            <div class="respuestas-grid">
+              ${o.respuestas.map((r, rIdx) => `
+                <div class="respuesta-item">
+                  <div class="respuesta-texto" contenteditable="true" onblur="updateRespuesta(${oIdx}, ${rIdx}, this.innerText)">${r}</div>
+                  <button class="btn-copy" onclick="copySpeech(this)">Copiar</button>
+                </div>
+              `).join('')}
+            </div>
+            <button class="btn-action" style="margin-top:10px;" onclick="addRespuesta(${oIdx})">➕ Agregar variante de respuesta</button>
+          </div>
+          `;
+        }).join('')}
+      `;
+      return;
+    }
+
+    const pasoIdx = db.atencion.pasos.findIndex(p => p.id === activePasoId);
+    const paso = db.atencion.pasos[pasoIdx];
+    if (!paso) { container.innerHTML = ''; return; }
+
+    let html = `
+      <div class="paso-header">
+        <div class="paso-header-title">${paso.icono} Paso ${paso.numero}: ${paso.titulo}</div>
+        <div class="paso-objetivo" contenteditable="true" onblur="updatePasoField(${pasoIdx}, 'objetivo', this.innerText)"><b>Objetivo:</b> ${paso.objetivo}</div>
+        ${paso.sla ? `<div class="paso-sla">⏱️ SLA: ${paso.sla}</div>` : ''}
+        ${paso.datos_estandar ? `<div class="datos-estandar-box"><b>💳 Datos estándar:</b> ${paso.datos_estandar}</div>` : ''}
+      </div>
+      <div class="checklist-box">
+        <div class="checklist-box-title">✅ Checklist de calidad</div>
+        ${paso.checklist.map(c => `<div class="checklist-item">${c}</div>`).join('')}
+      </div>
+      <button class="btn-global-add accent2" onclick="addPlantilla(${pasoIdx})">➕ Agregar Plantilla / Argumento</button>
+      <div class="props-grid">
+        ${paso.plantillas.map((p, plaIdx) => {
+          const visible = plantillaVisible(p);
+          return `
+            <div class="plantilla-card" style="display:${visible ? 'flex' : 'none'}">
+              <div class="card-actions">
+                <span class="action-left">Opción #${plaIdx + 1}</span>
+                <div class="action-right">
+                  <button class="btn-action" onclick="movePlantilla(${pasoIdx}, ${plaIdx}, -1)">◀</button>
+                  <button class="btn-action" onclick="movePlantilla(${pasoIdx}, ${plaIdx}, 1)">▶</button>
+                  <button class="btn-action" style="color:var(--danger);" onclick="deletePlantilla(${pasoIdx}, ${plaIdx})">✕</button>
+                </div>
+              </div>
+              <div class="plantilla-titulo" contenteditable="true" onblur="updatePlantillaField(${pasoIdx}, ${plaIdx}, 'titulo', this.innerText)">${p.titulo}</div>
+              <div class="plantilla-speech">
+                <div class="plantilla-texto" contenteditable="true" onblur="updatePlantillaField(${pasoIdx}, ${plaIdx}, 'texto', this.innerText)">${p.texto}</div>
+                <button class="btn-copy" onclick="copySpeech(this)">Copiar</button>
+              </div>
+              ${tagToggleHTML(pasoIdx, plaIdx, p.tags)}
+            </div>
+          `;
+        }).join('')}
+      </div>
+      ${paso.preguntas_cierre ? `
+      <div class="checklist-box" style="margin-top:18px;">
+        <div class="checklist-box-title">📢 Preguntas de cierre parcial</div>
+        ${paso.preguntas_cierre.map(c => `<div class="checklist-item" style="padding-left:0;">${c}</div>`).join('')}
+      </div>` : ''}
+    `;
+    container.innerHTML = html;
+  }
+
+  function updatePasoField(pasoIdx, field, value) { db.atencion.pasos[pasoIdx][field] = value.trim(); persistState(); }
+  function updatePlantillaField(pasoIdx, plaIdx, field, value) { db.atencion.pasos[pasoIdx].plantillas[plaIdx][field] = value.trim(); persistState(); }
+
+  function addPlantilla(pasoIdx) {
+    db.atencion.pasos[pasoIdx].plantillas.push({ titulo: "🆕 Nueva plantilla", texto: "Escribe aquí el mensaje sugerido...", tags: "nuevo_lead, remarketing" });
+    persistState(); renderAtencion();
+  }
+  function deletePlantilla(pasoIdx, plaIdx) {
+    if(confirm("¿Eliminar esta plantilla?")) { db.atencion.pasos[pasoIdx].plantillas.splice(plaIdx, 1); persistState(); renderAtencion(); }
+  }
+  function movePlantilla(pasoIdx, plaIdx, dir) {
+    const arr = db.atencion.pasos[pasoIdx].plantillas; const target = plaIdx + dir;
+    if (target >= 0 && target < arr.length) { const t = arr[plaIdx]; arr[plaIdx] = arr[target]; arr[target] = t; persistState(); renderAtencion(); }
+  }
+
+  function updateObjecionField(oIdx, field, value) { db.atencion.objeciones[oIdx][field] = value.replace(/^💬\s*/, '').trim(); persistState(); }
+  function updateMencionarItem(oIdx, mIdx, value) { db.atencion.objeciones[oIdx].mencionar[mIdx] = value.trim(); persistState(); }
+  function updateRespuesta(oIdx, rIdx, value) { db.atencion.objeciones[oIdx].respuestas[rIdx] = value.trim(); persistState(); }
+  function addRespuesta(oIdx) { db.atencion.objeciones[oIdx].respuestas.push("Nueva variante de respuesta..."); persistState(); renderAtencion(); }
+  function addObjecion() {
+    db.atencion.objeciones.push({ objecion: "Nueva Objeción", frase: "\"Frase textual del prospecto\"", mencionar: ["Punto clave a mencionar"], respuestas: ["Primera variante de respuesta..."] });
+    persistState(); renderAtencion();
+  }
+  function deleteObjecion(oIdx) {
+    if(confirm("¿Eliminar esta objeción?")) { db.atencion.objeciones.splice(oIdx, 1); persistState(); renderAtencion(); }
+  }
+
+  // ===================== EXPORTAR / IMPORTAR =====================
+  function exportDataJSON() {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(db, null, 2));
+    const dl = document.createElement('a'); dl.setAttribute("href", dataStr);
+    dl.setAttribute("download", "Consola_CGO_Datos.json");
+    document.body.appendChild(dl); dl.click(); dl.remove();
+  }
+  function triggerImport() { document.getElementById('fileImporter').click(); }
+  function importDataJSON(e) {
+    const file = e.target.files[0]; if(!file) return;
+    const r = new FileReader();
+    r.onload = function(evt) {
+      try {
+        const parsed = JSON.parse(evt.target.result);
+        if(parsed.universidad && parsed.carreras && parsed.config_filtros) {
+          db = parsed;
+          if(!db.atencion) db.atencion = { pasos: [], objeciones: [] };
+          persistState(); carreraActivaKey = Object.keys(db.carreras)[0] || "";
+          initApp(); alert("¡Consola CGO Distancia Huancayo Sincronizada con Éxito!");
+        } else { alert("Estructura inválida."); }
+      } catch(err){ alert("Error al procesar el JSON."); }
+    };
+    r.readAsText(file);
+  }
+
+  function exportHTML() {
+    const clone = document.documentElement.cloneNode(true);
+
+    clone.querySelector('#container-universidad').innerHTML = '';
+    clone.querySelector('#container-modalidad').innerHTML = '';
+    clone.querySelector('#sidebar-carreras').innerHTML = '';
+    clone.querySelector('#content-carrera-activa').innerHTML = '';
+    clone.querySelector('#atencion-content').innerHTML = '';
+    clone.querySelector('#pasoTabs').innerHTML = '';
+    const searchInput = clone.querySelector('#liveSearchInput'); if (searchInput) searchInput.value = '';
+    clone.querySelectorAll('details').forEach(d => d.removeAttribute('open'));
+
+    const originalScriptText = document.getElementById('appScript').textContent;
+    const freshDataStr = JSON.stringify(db);
+    const startMarker = 'let db = ';
+    const startIdx = originalScriptText.indexOf(startMarker) + startMarker.length;
+    const endIdx = originalScriptText.indexOf(';\n\n  let activeFilterGlobal');
+    const newScriptText = originalScriptText.substring(0, startIdx) + freshDataStr + originalScriptText.substring(endIdx);
+
+    const safeScriptText = newScriptText.replace(/<\/script/gi, '<\\/script');
+    const clonedScript = clone.querySelector('#appScript');
+    clonedScript.textContent = safeScriptText;
+
+    const htmlOut = '<!DOCTYPE html>\n' + clone.outerHTML;
+    const blob = new Blob([htmlOut], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const dl = document.createElement('a');
+    dl.href = url; dl.download = 'Consola_Comercial_CGO_Distancia_HYO.html';
+    document.body.appendChild(dl); dl.click(); dl.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  function renderAllViews() {
+    renderUniversidadYModalidad();
+    renderContenidoCarrera();
+    renderAtencion();
+  }
+
+  function initApp() {
+    renderFilterPanel();
+    renderPasoTabs();
+    renderSidebarCarreras();
+    renderAllViews();
+    updateHeaderCount();
+  }
+  initApp();
+</script>
+</body>
+</html>
