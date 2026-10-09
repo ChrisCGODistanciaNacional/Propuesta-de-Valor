@@ -326,6 +326,39 @@
   .diag-tips summary { cursor: pointer; font-weight: 700; font-size: 13px; color: var(--accent2); outline: none; }
   .diag-tips ul { margin: 10px 0 2px 0; padding-left: 20px; font-size: 13px; color: var(--text-main); line-height: 1.7; }
 
+  /* --- ENCABEZADO GAMIFICADO (Nivel, puntaje combinado, puesto, técnicas) --- */
+  .gami-header { display: flex; align-items: center; gap: 16px; background: linear-gradient(135deg, #0a66c2, #6d28d9); border-radius: 10px; padding: 14px 18px; margin-bottom: 12px; color: #fff; flex-wrap: wrap; }
+  .gami-level-badge { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: rgba(255,255,255,0.18); border-radius: 10px; padding: 8px 14px; font-size: 24px; line-height: 1; min-width: 64px; }
+  .gami-level-badge span { font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; }
+  .gami-score-block { display: flex; flex-direction: column; align-items: center; justify-content: center; border-left: 1px solid rgba(255,255,255,0.3); border-right: 1px solid rgba(255,255,255,0.3); padding: 0 18px; }
+  .gami-score-num { font-size: 30px; font-weight: 800; line-height: 1; }
+  .gami-score-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.4px; opacity: 0.9; margin-top: 2px; }
+  .gami-meta { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; font-weight: 600; flex: 1; }
+  .gami-puesto { font-size: 13.5px; font-weight: 800; }
+  .gami-tecnicas, .gami-cuartil { opacity: 0.95; }
+
+  /* --- % DE LOGRO EN LOS BOTONES DE CADA ETAPA --- */
+  .paso-tab-pct { display: block; margin-top: 3px; font-size: 13px; font-weight: 800; }
+  .paso-tab-pct.diag-green { color: #baf7d2; }
+  .paso-tab-pct.diag-yellow { color: #ffe9a8; }
+  .paso-tab-pct.diag-red { color: #ffc2d1; }
+  .paso-tab-pct.diag-gray { color: inherit; opacity: 0.6; }
+  .paso-tab:not(.active) .paso-tab-pct.diag-green { color: #1fa855; }
+  .paso-tab:not(.active) .paso-tab-pct.diag-yellow { color: #d49b00; }
+  .paso-tab:not(.active) .paso-tab-pct.diag-red { color: var(--danger); }
+
+  /* --- DETALLE DE FORTALEZA / OPORTUNIDAD POR ETAPA (análisis de la llamada) --- */
+  .stage-feedback-box { border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; border: 1px solid; }
+  .stage-feedback-box.fortaleza { background: #eafff2; border-color: #a7e8c0; }
+  .stage-feedback-box.oportunidad { background: #fff8e8; border-color: #f0dba0; }
+  .stage-feedback-title { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 8px; }
+  .stage-feedback-box.fortaleza .stage-feedback-title { color: #1b8a4c; }
+  .stage-feedback-box.oportunidad .stage-feedback-title { color: #a9790a; }
+  .stage-feedback-text { font-size: 13.5px; color: var(--text-main); line-height: 1.55; white-space: pre-wrap; }
+  .stage-speech-box { background: var(--bg-card); border: 1px dashed #a9790a; border-radius: 8px; padding: 10px 12px; margin-top: 10px; }
+  .stage-speech-box b { font-size: 11.5px; color: #a9790a; text-transform: uppercase; letter-spacing: 0.3px; }
+  .stage-speech-text { font-size: 13px; color: var(--text-main); line-height: 1.5; margin-top: 4px; white-space: pre-wrap; }
+
   @media (max-width: 800px) {
     .careers-layout { grid-template-columns: 1fr; }
     .careers-sidebar { height: auto; max-height: 240px; }
@@ -346,6 +379,9 @@
     .diag-chips-row { gap: 6px; }
     .diag-chip { min-width: 0; flex: 1 1 40%; }
     .diag-card { flex-wrap: wrap; }
+    .gami-header { padding: 12px; gap: 10px; }
+    .gami-score-block { padding: 0 10px; }
+    .gami-score-num { font-size: 24px; }
 
     .filter-wrapper, .client-type-wrapper { padding-left: 12px; padding-right: 12px; }
     .filter-bar summary, .client-type-bar summary { padding: 10px 12px; }
@@ -1059,7 +1095,7 @@
   // (qué técnica de venta ya domina cada asesor, según marcó tu supervisor).
   // No se guarda nada de esto en el archivo exportado: se vuelve a pedir cada
   // vez que se abre la página, así siempre se ve lo último sin reenviar nada.
-  let sheetDataCache = { evaluacion: [], tecnicas: [], loaded: false, error: null };
+  let sheetDataCache = { evaluacion: [], tecnicas: [], analisis: {}, loaded: false, error: null };
 
   function normalizarTexto(s) {
     return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
@@ -1092,10 +1128,11 @@
       sheetDataCache = {
         evaluacion: Array.isArray(json.evaluacion) ? json.evaluacion : [],
         tecnicas: Array.isArray(json.tecnicas) ? json.tecnicas : [],
+        analisis: (json.analisis && typeof json.analisis === 'object') ? json.analisis : {},
         loaded: true, error: null
       };
     } catch (e) {
-      sheetDataCache = { evaluacion: [], tecnicas: [], loaded: false, error: (e && e.message) ? e.message : 'fetch_error' };
+      sheetDataCache = { evaluacion: [], tecnicas: [], analisis: {}, loaded: false, error: (e && e.message) ? e.message : 'fetch_error' };
     }
     return sheetDataCache;
   }
@@ -1109,6 +1146,7 @@
   }
   function onAdvisorChange(name) {
     localStorage.setItem('cgo_advisor_name', name || '');
+    renderPasoTabs();
     renderAtencion();
     renderTecnicas();
   }
@@ -1191,6 +1229,24 @@
     return { row: rows[rows.length - 1], count: rows.length };
   }
 
+  // Análisis gamificado precalculado por el proceso automático (stages con
+  // fortaleza/oportunidad + speech, puntaje combinado, nivel y puesto propio).
+  // Se busca por nombre tolerando acentos/mayúsculas, igual que findField.
+  function getAdvisorAnalysis(name) {
+    if (!name || !sheetDataCache.analisis) return null;
+    const target = normalizarTexto(name);
+    const key = Object.keys(sheetDataCache.analisis).find(k => normalizarTexto(k) === target);
+    return key ? sheetDataCache.analisis[key] : null;
+  }
+
+  function nivelEmoji(nivel) {
+    if (nivel >= 9) return '👑';
+    if (nivel >= 7) return '🔥';
+    if (nivel >= 5) return '⭐';
+    if (nivel >= 3) return '🌱';
+    return '🔰';
+  }
+
   function renderAdvisorDiagSummary() {
     const el = document.getElementById('advisorDiagSummary');
     if (!el) return;
@@ -1209,27 +1265,50 @@
       return;
     }
     const row = evalData.row;
+    const analysis = getAdvisorAnalysis(advisor);
     const stages = [['paso1', 'Ganar Confianza'], ['paso2', 'Identificar Necesidades'], ['paso3', 'Solucionar Problemas'], ['paso4', 'Cerrar']];
     const chips = stages.map(([key, label]) => {
-      const pct = parseScorePct(findField(row, STAGE_FIELD_CANDIDATES[key]));
+      const stEntry = analysis && analysis.stages ? analysis.stages[key] : null;
+      const pct = (stEntry && stEntry.pct !== null && stEntry.pct !== undefined) ? stEntry.pct : parseScorePct(findField(row, STAGE_FIELD_CANDIDATES[key]));
       const color = scoreColor(pct);
-      return `<div class="diag-chip diag-${color}"><span>${label}</span><b>${pct !== null ? Math.round(pct) + '%' : '—'}</b></div>`;
+      return `<div class="diag-chip diag-${color}"><span>${label}</span><b>${pct !== null && pct !== undefined ? Math.round(pct) + '%' : '—'}</b></div>`;
     }).join('');
-    const fortaleza = findField(row, ['fortaleza principal']);
-    const brecha = findField(row, ['brecha principal']);
     const evidencia = findField(row, ['evidencia', 'observacion']);
     const scoreGlobal = findField(row, ['score cualitativo']);
     const cuartil = findField(row, ['cuartil']);
+
+    let gamifiedHTML = '';
+    if (analysis && analysis.combinedScore !== undefined && analysis.combinedScore !== null) {
+      const nivel = analysis.nivel || 1;
+      const puestoTxt = (analysis.puesto && analysis.totalAsesores) ? `Puesto ${analysis.puesto} de ${analysis.totalAsesores}` : '';
+      const tecDominadas = analysis.tecnicasDominadas || 0;
+      const tecTotal = analysis.tecnicasTotal || 0;
+      gamifiedHTML = `
+        <div class="gami-header">
+          <div class="gami-level-badge">${nivelEmoji(nivel)}<span>Nivel ${nivel}</span></div>
+          <div class="gami-score-block">
+            <div class="gami-score-num">${analysis.combinedScore}</div>
+            <div class="gami-score-label">Puntaje gamificado</div>
+          </div>
+          <div class="gami-meta">
+            ${puestoTxt ? `<div class="gami-puesto">🏅 ${puestoTxt}</div>` : ''}
+            ${tecTotal ? `<div class="gami-tecnicas">🏆 ${tecDominadas} / ${tecTotal} técnicas de venta dominadas</div>` : ''}
+            ${(cuartil !== undefined && cuartil !== null && cuartil !== '') ? `<div class="gami-cuartil">📈 Cuartil ${cuartil}${scoreGlobal !== undefined ? ` · Score llamada: ${scoreGlobal}` : ''}</div>` : ''}
+          </div>
+        </div>
+      `;
+    }
+
     el.innerHTML = `
       <div class="diag-summary-box">
         <div class="diag-summary-head">
           <div>📊 Diagnóstico de <b>${advisor}</b>${evalData.count > 1 ? ` · ${evalData.count} llamadas evaluadas` : ''}</div>
-          ${scoreGlobal !== undefined ? `<div class="diag-global-score">Score global: ${scoreGlobal}${cuartil !== undefined ? ` · Cuartil ${cuartil}` : ''}</div>` : ''}
+          ${(!gamifiedHTML && scoreGlobal !== undefined) ? `<div class="diag-global-score">Score global: ${scoreGlobal}${cuartil !== undefined ? ` · Cuartil ${cuartil}` : ''}</div>` : ''}
         </div>
+        ${gamifiedHTML}
         <div class="diag-chips-row">${chips}</div>
-        ${fortaleza ? `<div class="diag-row"><b>💪 Fortaleza principal:</b> ${fortaleza}</div>` : ''}
-        ${brecha ? `<div class="diag-row"><b>🎯 Brecha principal:</b> ${brecha}</div>` : ''}
         ${evidencia ? `<div class="diag-row"><b>📝 Evidencia / observación:</b> ${evidencia}</div>` : ''}
+        <div class="diag-row" style="font-size:12px; color:var(--text-muted);">👉 Haz click en cada etapa debajo para ver qué te salió bien y qué speech usar para mejorar.</div>
       </div>
     `;
   }
@@ -1248,13 +1327,42 @@
     }
     const evalData = getAdvisorEvaluation(advisor);
     if (!evalData) return tipsHTML;
-    const pct = parseScorePct(findField(evalData.row, STAGE_FIELD_CANDIDATES[stageKey]));
+    const analysis = getAdvisorAnalysis(advisor);
+    const stEntry = analysis && analysis.stages ? analysis.stages[stageKey] : null;
+    const pct = (stEntry && stEntry.pct !== null && stEntry.pct !== undefined) ? stEntry.pct : parseScorePct(findField(evalData.row, STAGE_FIELD_CANDIDATES[stageKey]));
     const color = scoreColor(pct);
+
+    // Si el supervisor marcó esta etapa como la fortaleza o la brecha principal
+    // de la última llamada, se muestra el texto real que escribió (FORTALEZAS u
+    // OPORTUNIDADES), y en la brecha se agrega un speech de ejemplo de la
+    // técnica más relacionada para que el asesor sepa exactamente qué practicar.
+    let feedbackHTML = '';
+    if (stEntry && stEntry.rol === 'fortaleza' && stEntry.texto) {
+      feedbackHTML = `
+        <div class="stage-feedback-box fortaleza">
+          <div class="stage-feedback-title">💪 Lo que te salió bien aquí</div>
+          <div class="stage-feedback-text">${escapeHtmlPreserveNL(stEntry.texto)}</div>
+        </div>`;
+    } else if (stEntry && stEntry.rol === 'oportunidad' && stEntry.texto) {
+      const tec = stEntry.tecnica;
+      feedbackHTML = `
+        <div class="stage-feedback-box oportunidad">
+          <div class="stage-feedback-title">🎯 Oportunidad de mejora en esta llamada</div>
+          <div class="stage-feedback-text">${escapeHtmlPreserveNL(stEntry.texto)}</div>
+          ${tec ? `
+          <div class="stage-speech-box">
+            <b>🗣️ Speech sugerido · ${tec.titulo}</b>
+            ${tec.ejemplo ? `<div class="stage-speech-text">${escapeHtmlPreserveNL(tec.ejemplo)}</div>` : ''}
+          </div>` : ''}
+        </div>`;
+    }
+
     return `
       <div class="diag-card diag-${color}">
-        <div class="diag-score-badge diag-${color}">${pct !== null ? Math.round(pct) + '%' : '—'}</div>
+        <div class="diag-score-badge diag-${color}">${pct !== null && pct !== undefined ? Math.round(pct) + '%' : '—'}</div>
         <div class="diag-score-label">Tu desempeño evaluado en esta etapa</div>
       </div>
+      ${feedbackHTML}
       ${tipsHTML}
     `;
   }
@@ -1277,6 +1385,7 @@
       else status.innerHTML = `🟢 ${usandoPropia ? 'Conectado a tu Apps Script' : 'Conectado (data.json automático)'} · ${sheetDataCache.evaluacion.length} evaluaciones · ${sheetDataCache.tecnicas.length} registros de técnicas.`;
     }
     renderAdvisorOptions();
+    renderPasoTabs();
     renderAtencion();
     renderTecnicas();
   }
@@ -1304,9 +1413,15 @@
 
   function renderPasoTabs() {
     const wrap = document.getElementById('pasoTabs');
-    let html = db.atencion.pasos.map(p => `
-      <div class="paso-tab ${activePasoId === p.id ? 'active' : ''}" onclick="selectPaso('${p.id}')">${p.icono} Paso ${p.numero}: ${p.titulo}</div>
-    `).join('');
+    const advisor = getSelectedAdvisor();
+    const analysis = (advisor && !sheetDataCache.error) ? getAdvisorAnalysis(advisor) : null;
+    let html = db.atencion.pasos.map(p => {
+      const stEntry = analysis && analysis.stages ? analysis.stages[p.id] : null;
+      const pct = (stEntry && stEntry.pct !== null && stEntry.pct !== undefined) ? Math.round(stEntry.pct) : null;
+      const badge = pct !== null ? `<span class="paso-tab-pct diag-${scoreColor(pct)}">${pct}%</span>` : '';
+      return `
+      <div class="paso-tab ${activePasoId === p.id ? 'active' : ''}" onclick="selectPaso('${p.id}')">${p.icono} Paso ${p.numero}: ${p.titulo}${badge}</div>
+    `; }).join('');
     html += `<div class="paso-tab objeciones-tab ${activePasoId === 'objeciones' ? 'active' : ''}" onclick="selectPaso('objeciones')">🛡️ Objeciones</div>`;
     html += `<div class="paso-tab derivaciones-tab ${activePasoId === 'derivaciones' ? 'active' : ''}" onclick="selectPaso('derivaciones')">📋 Derivaciones</div>`;
     wrap.innerHTML = html;
@@ -1701,6 +1816,7 @@
     // se refresca el diagnóstico, la lista de asesores y las técnicas desbloqueadas.
     fetchSheetData().then(() => {
       renderAdvisorOptions();
+      renderPasoTabs();
       renderAtencion();
       renderTecnicas();
       if (document.getElementById('sheetsConnStatus')) {
