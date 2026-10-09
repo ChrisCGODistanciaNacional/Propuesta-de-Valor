@@ -151,15 +151,21 @@
   .editable-title { font-size: 14px; font-weight: bold; color: var(--primary); margin-bottom: 6px; white-space: pre-wrap; }
   .editable-concept { color: var(--text-main); font-size: 12.5px; margin-bottom: 12px; min-height: 35px; white-space: pre-wrap; }
 
-  .speech-box { background: var(--speech-bg); border-left: 4px solid #53bdeb; border-radius: 6px; padding: 12px; position: relative; margin-bottom: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+  .speech-box { background: var(--speech-bg); border-radius: 7.5px 7.5px 7.5px 2px; padding: 9px 10px 32px; position: relative; margin-bottom: 14px; box-shadow: 0 1px 1.5px rgba(0,0,0,0.13); max-width: 100%; }
   .speech-meta { font-size: 10.5px; font-weight: bold; text-transform: uppercase; color: var(--primary); margin-bottom: 4px; }
   .speech-text { font-style: normal; color: var(--text-main); font-size: 13px; padding-right: 45px; white-space: pre-wrap; }
   .speech-alt-label { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.3px; color: var(--primary); opacity: 0.75; margin: 10px 0 4px; }
   .speech-alt-label:first-of-type { margin-top: 0; }
-  .speech-alt-del { position: absolute; top: 6px; right: 8px; color: var(--danger); font-size: 11px; font-weight: bold; cursor: pointer; opacity: 0.5; }
+  .speech-alt-del { position: absolute; top: 6px; right: 8px; color: var(--danger); font-size: 11px; font-weight: bold; cursor: pointer; opacity: 0.45; z-index: 2; background: rgba(255,255,255,0.6); border-radius: 50%; width: 15px; height: 15px; display: flex; align-items: center; justify-content: center; }
   .speech-alt-del:hover { opacity: 1; }
   .speech-add-alt { margin-top: 2px; background: none; border: 1px dashed var(--primary); color: var(--primary); font-size: 10.5px; font-weight: 700; padding: 4px 10px; border-radius: 12px; cursor: pointer; }
   .speech-add-alt:hover { background: var(--speech-bg); }
+  .speech-bubble { color: #111b21; font-size: 13.5px; line-height: 1.5; white-space: pre-wrap; cursor: text; word-break: break-word; }
+  .speech-bubble strong { font-weight: 700; }
+  .speech-bubble em { font-style: italic; }
+  .speech-bubble.editing { outline: 2px dashed var(--primary); outline-offset: 2px; border-radius: 4px; background: rgba(255,255,255,0.35); }
+  .speech-bubble:not(.editing):hover { background: rgba(255,255,255,0.35); border-radius: 4px; }
+  .speech-edit-hint { font-size: 9px; color: #4a7c59; opacity: 0.65; margin-top: 2px; }
   .btn-copy { position: absolute; right: 8px; bottom: 8px; background: var(--primary); border: none; color: white; padding: 3px 6px; font-size: 10px; border-radius: 4px; cursor: pointer; }
   .btn-copy:hover { background: var(--secondary); }
 
@@ -498,7 +504,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-09T17:30:55.068Z";
+  const DATA_VERSION = "2026-10-09T17:41:18.258Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -903,6 +909,21 @@
   // Cada ficha tiene un arreglo "speeches" (pensado para 2 alternativas de guion,
   // listas para decir en llamada o pegar directo en WhatsApp con formato *negrita*/_cursiva_).
   // "section" es la clave de universidad/modalidad, o la clave de la carrera cuando isCareer=true.
+  //
+  // La burbuja se muestra renderizada (negrita/cursiva reales, como se vería ya pegado en
+  // WhatsApp) en vez del texto crudo con asteriscos. Al hacer clic se vuelve editable
+  // mostrando el texto crudo (con * y _) para poder corregirlo; al salir del campo, se
+  // guarda el texto crudo en el "speech" (con el que funciona "Copiar") y se vuelve a
+  // renderizar la vista previa.
+  function escapeHtmlPreserveNL(s) {
+    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function renderWhatsAppText(raw) {
+    let s = escapeHtmlPreserveNL(raw);
+    s = s.replace(/\*([^\*\n]+)\*/g, '<strong>$1</strong>');
+    s = s.replace(/_([^_\n]+)_/g, '<em>$1</em>');
+    return s;
+  }
   function getSpeechBoxGroupHTML(section, idx, speeches, isCareer) {
     const list = Array.isArray(speeches) ? speeches : [];
     const label = isCareer ? '💬 Speech de Impacto' : '💬 Speech Comercial';
@@ -910,15 +931,53 @@
       <div class="speech-alt-label">Alternativa ${spIdx + 1}</div>
       <div class="speech-box">
         <span class="speech-alt-del" onclick="deleteSpeechAlt('${section}', ${idx}, ${spIdx}, ${isCareer})" title="Eliminar esta alternativa">✕</span>
-        <div class="speech-text" contenteditable="true" onblur="updateSpeechAlt('${section}', ${idx}, ${spIdx}, this.innerText, ${isCareer})">${sp}</div>
-        <button class="btn-copy" onclick="copySpeech(this)">Copiar</button>
+        <div class="speech-bubble" data-section="${section}" data-idx="${idx}" data-spidx="${spIdx}" data-iscareer="${isCareer}" onclick="startEditSpeech(this)" title="Clic para editar el texto">${renderWhatsAppText(sp)}</div>
+        <button class="btn-copy" onclick="copySpeechAlt('${section}', ${idx}, ${spIdx}, ${isCareer}, this)">Copiar</button>
       </div>
     `).join('');
     return `
-      <div class="speech-meta">${label} (lista para WhatsApp o llamada)</div>
+      <div class="speech-meta">${label} · vista previa estilo WhatsApp</div>
       ${altsHTML}
       <button class="speech-add-alt" onclick="addSpeechAlt('${section}', ${idx}, ${isCareer})">➕ Agregar alternativa</button>
     `;
+  }
+  function startEditSpeech(el) {
+    if (el.classList.contains('editing')) return;
+    const section = el.dataset.section;
+    const idx = parseInt(el.dataset.idx, 10);
+    const spIdx = parseInt(el.dataset.spidx, 10);
+    const isCareer = el.dataset.iscareer === 'true';
+    const item = isCareer ? db.carreras[section].subcategories[idx] : db[section][idx];
+    const raw = (item && Array.isArray(item.speeches) && item.speeches[spIdx]) || '';
+
+    el.classList.add('editing');
+    el.contentEditable = 'true';
+    el.innerText = raw;
+    el.focus();
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    range.collapse(false);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+
+    el.onblur = function () {
+      const newRaw = el.innerText.trim();
+      updateSpeechAlt(section, idx, spIdx, newRaw, isCareer);
+      el.contentEditable = 'false';
+      el.classList.remove('editing');
+      el.innerHTML = renderWhatsAppText(newRaw);
+      el.onblur = null;
+    };
+  }
+  function copySpeechAlt(section, index, altIdx, isCareer, button) {
+    const item = isCareer ? db.carreras[section].subcategories[index] : db[section][index];
+    const raw = (item && Array.isArray(item.speeches) && item.speeches[altIdx]) || '';
+    navigator.clipboard.writeText(raw.trim()).then(() => {
+      const prev = button.innerText; button.innerText = "✓";
+      button.style.backgroundColor = "var(--neon-green)"; button.style.color = "#000";
+      setTimeout(() => { button.innerText = prev; button.style.backgroundColor = ""; button.style.color = ""; }, 1000);
+    });
   }
   function updateSpeechAlt(section, index, altIdx, value, isCareer) {
     const item = isCareer ? db.carreras[section].subcategories[index] : db[section][index];
