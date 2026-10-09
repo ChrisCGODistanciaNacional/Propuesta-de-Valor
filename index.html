@@ -531,16 +531,6 @@
       <div class="watermark-note">Herramienta desarrollada por Christopher Huamán — CGO 2025</div>
     </div>
 
-    <div class="publicar-panel" style="margin-top: 16px; text-align: left;">
-      <h2 style="text-align:center;">🔗 Conexión en vivo con el Google Sheet de Evaluaciones</h2>
-      <p style="text-align:center;">Por defecto, esta página lee automáticamente el archivo <code>data.json</code> publicado junto a ella en GitHub (se mantiene al día sin que hagas nada). Este campo es opcional: solo complétalo si tu organización llega a habilitar un Apps Script público y quieres usar esa conexión en vez del archivo automático.</p>
-      <input type="text" id="sheetsApiUrlInput" class="sheets-conn-input" placeholder="https://script.google.com/macros/s/XXXXXXXXXXXX/exec">
-      <div class="publicar-secondary">
-        <button class="btn-sync btn-import" onclick="saveSheetsApiUrl()">💾 Guardar enlace</button>
-        <button class="btn-sync btn-import" onclick="testSheetsConnection()">🔍 Probar conexión</button>
-      </div>
-      <div class="sheets-conn-status" id="sheetsConnStatus">⏳ Cargando...</div>
-    </div>
   </div>
 
 </main>
