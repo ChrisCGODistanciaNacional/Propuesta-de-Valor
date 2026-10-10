@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0E2240">
 <title>Propuesta de Valor</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E2240'/%3E%3Crect x='9' y='9' width='14' height='14' rx='3' fill='%23E8B84A'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E2240'/%3E%3Cpath transform='translate(4 4)' fill='%23E8B84A' d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -260,9 +260,15 @@
   .feedback p { margin: 0; font-size: 14px; white-space: pre-wrap; }
   .speech-suggest { background: var(--card); border: 1px solid #F1D98F; border-radius: 10px; padding: 12px 14px; margin-top: 10px; position: relative; }
   .speech-suggest-title { font-size: 13px; color: var(--gold-deep); font-weight: 600; margin-bottom: 4px; }
-  .speech-suggest-text { font-size: 14px; color: var(--ink); line-height: 1.55; white-space: pre-wrap; padding-bottom: 34px; }
-  .speech-suggest .btn-copy { right: 10px; bottom: 10px; }
-  .speech-suggest .btn-link { position: absolute; right: 86px; bottom: 10px; background: transparent; border: 1px solid var(--line-strong); color: var(--navy); padding: 5px 12px; border-radius: var(--r-pill); font-size: 12px; cursor: pointer; }
+  .speech-suggest-text { font-size: 14px; color: var(--ink); line-height: 1.55; white-space: pre-wrap; }
+  .speech-suggest .btn-copy { position: static; display: inline-block; margin-top: 10px; }
+  .speech-suggest .btn-link { display: inline-block; margin-top: 10px; margin-right: 8px; background: transparent; border: 1px solid var(--line-strong); color: var(--navy); padding: 5px 12px; border-radius: var(--r-pill); font-size: 12px; cursor: pointer; }
+  .caso-porque { font-size: 12.5px; color: var(--ink-2); margin-top: 8px; line-height: 1.5; }
+  .caso-porque b { color: var(--gold-deep); font-weight: 600; }
+  .caso-generic { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
+  .caso-generic summary { cursor: pointer; }
+  .caso-generic div { margin-top: 6px; white-space: pre-wrap; color: var(--ink-2); border-left: 2px solid var(--line-strong); padding-left: 10px; }
+  .focus-tec .caso-generic { color: var(--muted); }
   .eval-none { font-size: 14px; color: var(--ink-2); margin-top: 6px; }
 
   .checklist-box { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 16px 20px; margin-bottom: 14px; }
@@ -1359,15 +1365,43 @@
     });
     return best;
   }
+  // Técnica ligada a la etapa. Si el proceso automático ya eligió una técnica para
+  // el caso concreto del asesor (y escribió un speech a su medida), esa manda;
+  // si no, se usa el mapa fijo por etapa con el ejemplo general de la técnica.
   function tecnicaForStage(stageKey, stEntry) {
+    const caso = (stEntry && stEntry.caso && stEntry.caso.texto) ? stEntry.caso : null;
+    if (caso && caso.tipo === 'accion') return { id: null, titulo: null, ejemplo: '', caso };
     const ids = [];
     if (stEntry && stEntry.tecnica && stEntry.tecnica.id) ids.push(stEntry.tecnica.id);
     (STAGE_TECNICAS[stageKey] || []).forEach(id => { if (!ids.includes(id)) ids.push(id); });
     for (const id of ids) {
       const t = db.tecnicas.find(x => x.id === id);
-      if (t) return { id: t.id, titulo: t.titulo, ejemplo: (Array.isArray(t.ejemplos) && t.ejemplos[0]) || (stEntry && stEntry.tecnica && stEntry.tecnica.ejemplo) || '' };
+      if (t) return { id: t.id, titulo: t.titulo, ejemplo: (Array.isArray(t.ejemplos) && t.ejemplos[0]) || (stEntry && stEntry.tecnica && stEntry.tecnica.ejemplo) || '', caso };
     }
-    return (stEntry && stEntry.tecnica) ? stEntry.tecnica : null;
+    return (stEntry && stEntry.tecnica) ? Object.assign({ caso }, stEntry.tecnica) : (caso ? { id: null, titulo: null, ejemplo: '', caso } : null);
+  }
+  // Bloque "qué decir": el speech escrito para el caso del asesor (si existe) con el
+  // ejemplo general de la técnica como apoyo; si no hay caso, el ejemplo general.
+  function speechBlockHTML(tec, variant) {
+    if (!tec) return '';
+    const caso = tec.caso;
+    const titleCls = variant === 'focus' ? 'focus-tec-title' : 'speech-suggest-title';
+    const textCls = variant === 'focus' ? 'focus-tec-speech' : 'speech-suggest-text';
+    if (caso && caso.tipo === 'accion') {
+      return `<div class="${titleCls}">Acción para tu caso</div><div class="${textCls}">${escapeHtmlPreserveNL(caso.texto)}</div>`;
+    }
+    if (caso) {
+      return `<div class="${titleCls}">Para tu caso, con la técnica ${tec.titulo}</div>
+        <div class="${textCls}">${escapeHtmlPreserveNL(caso.texto)}</div>
+        ${caso.porQue ? `<div class="caso-porque"><b>Por qué esta técnica:</b> ${escapeHtmlPreserveNL(caso.porQue)}</div>` : ''}
+        ${tec.ejemplo ? `<details class="caso-generic"><summary>Ver el ejemplo general de la técnica</summary><div>${escapeHtmlPreserveNL(tec.ejemplo)}</div></details>` : ''}`;
+    }
+    return `<div class="${titleCls}">Técnica para practicar: ${tec.titulo}</div>${tec.ejemplo ? `<div class="${textCls}">${escapeHtmlPreserveNL(tec.ejemplo)}</div>` : ''}`;
+  }
+  function speechTextToCopy(tec) {
+    if (!tec) return '';
+    if (tec.caso && tec.caso.texto && tec.caso.tipo !== 'accion') return tec.caso.texto;
+    return tec.ejemplo || '';
   }
   function getRecommendedTecnicaIds(advisor) {
     if (!advisor || sheetDataCache.error) return [];
@@ -1436,9 +1470,11 @@
       setTimeout(() => card.classList.remove('highlight'), 2200);
     }
   }
+  // Copia el speech del caso (si existe) o el ejemplo general; el texto viaja en
+  // el atributo data-text del botón para no depender de ids.
   function copyTecnicaSpeech(id, button) {
-    const t = db.tecnicas.find(x => x.id === id);
-    const txt = (t && Array.isArray(t.ejemplos) && t.ejemplos[0]) || '';
+    let txt = (button && button.dataset && button.dataset.text) ? button.dataset.text : '';
+    if (!txt) { const t = db.tecnicas.find(x => x.id === id); txt = (t && Array.isArray(t.ejemplos) && t.ejemplos[0]) || ''; }
     navigator.clipboard.writeText(txt.trim()).then(() => {
       const prev = button.innerText; button.innerText = "Copiado ✓"; button.classList.add('copied');
       setTimeout(() => { button.innerText = prev; button.classList.remove('copied'); }, 1200);
@@ -1495,7 +1531,7 @@
           <div class="focus-head"><div class="focus-title">Tu foco ahora</div><div style="font-size:12.5px;color:var(--muted);">${items.length ? 'Brecha principal de tu última llamada evaluada' : 'Tu etapa con menor puntaje'}</div></div>
           <div class="focus-stage">${STAGE_LABELS[fk]} ${pctPill(pct)}</div>
           ${obs ? `<div class="focus-obs"><b>${items.length ? 'Lo que observó tu supervisor:' : 'Para trabajar:'}</b> ${escapeHtmlPreserveNL(obs)}${items.length > 1 ? ` <span style="color:var(--muted);">(+${items.length - 1} más en la etapa)</span>` : ''}</div>` : ''}
-          ${tec ? `<div class="focus-tec"><div class="focus-tec-title">Técnica para practicar: ${tec.titulo}</div>${tec.ejemplo ? `<div class="focus-tec-speech">${escapeHtmlPreserveNL(tec.ejemplo)}</div>` : ''}</div>` : ''}
+          ${tec ? `<div class="focus-tec">${speechBlockHTML(tec, 'focus')}</div>` : ''}
           <div class="focus-actions">
             <button class="btn-primary" onclick="goToStage('${fk}')">Ver la etapa completa</button>
             ${tec ? `<button class="btn-ghost" onclick="goToTecnica('${tec.id}')">Ver la técnica</button>` : ''}
@@ -1546,7 +1582,7 @@
     } else if (st && st.rol === 'oportunidad' && st.texto) {
       const tec = tecnicaForStage(stageKey, st);
       feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Tu oportunidad de mejora en esa llamada</div>${feedbackListHTML(st.texto)}
-        ${tec ? `<div class="speech-suggest"><div class="speech-suggest-title">Técnica para practicar: ${tec.titulo}</div>${tec.ejemplo ? `<div class="speech-suggest-text">${escapeHtmlPreserveNL(tec.ejemplo)}</div>` : ''}<button class="btn-link" onclick="goToTecnica('${tec.id}')">Ver técnica</button><button class="btn-copy" onclick="copyTecnicaSpeech('${tec.id}', this)">Copiar</button></div>` : ''}
+        ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${tec.id ? `<button class="btn-link" onclick="goToTecnica('${tec.id}')">Ver técnica</button>` : ''}${speechTextToCopy(tec) ? `<button class="btn-copy" data-text="${escapeHtmlPreserveNL(speechTextToCopy(tec)).replace(/"/g, '&quot;')}" onclick="copyTecnicaSpeech('${tec.id || ''}', this)">Copiar</button>` : ''}</div>` : ''}
       </div>`;
     } else if (pct === null || pct === undefined) {
       feedbackHTML = `<div class="eval-none">Esta etapa no tiene puntaje en tu última evaluación.</div>`;

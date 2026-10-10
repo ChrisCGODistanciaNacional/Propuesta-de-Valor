@@ -1905,6 +1905,12 @@
 "id": "tec_08",
 "titulo": "🛡️ Mata la Objeción Antes de que Nazca",
 "ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Liz, antes de que me preguntes cuánto te van a convalidar, te explico cómo funciona para que no te lleves sorpresas: el área académica revisa tus sílabos y certificados curso por curso, y recién ahí te dice exactamente qué te reconocen. No te voy a dar un porcentaje al aire, prefiero que tu decisión se base en algo seguro.\n\nLo que sí te puedo asegurar hoy es esto: dejaste de estudiar porque el trabajo no te daba espacio, ¿verdad? Con la modalidad Distancia eso deja de ser un problema: las clases quedan grabadas y avanzas en tus horarios, sin tener que elegir entre tu trabajo y tu carrera.\n\n¿Te parece si vemos juntas qué documentos necesitas enviar para que empiece la revisión de tu convalidación?",
+"porQue": "La expectativa del 70% es una objeción que nace después; la anulas explicando el proceso antes de que Liz pregunte, y usas su motivo real (el trabajo) para que Distancia sea la respuesta.",
+"base": "254f30f028aa"
 }
 },
 "paso4": {
@@ -1986,9 +1992,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Refuerza los cierres parciales comerciales. Obtienes información muy valiosa sobre la principal necesidad de Jordi y presentas beneficios directamente relacionados con ella; aprovecha estos momentos para validar intención y obtener pequeños compromisos que lo acerquen a la postulación.\r\n🟠 No dejes el siguiente contacto únicamente a iniciativa del prospecto. Si indica que revisará la información por WhatsApp, establece una fecha y hora concreta de seguimiento para conocer su decisión y continuar el proceso.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_10",
+"titulo": "✅ Construye Pequeños \"Sí\" (micro-compromisos)",
+"ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Jordi, me dijiste qué era lo más importante para ti, y acabamos de ver cómo la carrera lo cubre. ¿Hasta aquí te hace sentido? Perfecto.\n\nY sobre la inversión, ¿te acomoda la forma de pago que te expliqué? Bien, entonces ya tenemos dos cosas claras.\n\nTe envío el resumen por WhatsApp ahora mismo, pero no lo dejamos en el aire: ¿te llamo mañana a las 6 de la tarde para confirmar tu postulación, o prefieres en la mañana?",
+"porQue": "Ya tienes la necesidad de Jordi y los beneficios conectados a ella: lo que faltó fue convertir cada acuerdo en un pequeño \"sí\" y cerrar con una cita, no con \"me escribes\".",
+"base": "6c1db55f156c"
 }
 },
 "paso4": {
@@ -2033,6 +2045,12 @@
 "id": "tec_08",
 "titulo": "🛡️ Mata la Objeción Antes de que Nazca",
 "ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Te explico cómo funciona la convalidación para que tengas la foto completa desde ahora: se hace por una sola vía según tu caso, por tu carrera anterior, por traslado o por experiencia laboral. No se combinan, así que lo primero es ver cuál te conviene más a ti.\n\nLo que te reconozcan exactamente lo define el área académica cuando revisa tus documentos; por eso no te voy a adelantar ciclos ni años, prefiero que avances con información segura.\n\n¿Qué tienes a la mano: certificados de tu carrera anterior o constancias de trabajo? Con eso te digo por cuál vía empezamos.",
+"porQue": "Las preguntas \"¿puedo sumar las dos vías?\" y \"¿cuántos ciclos me reconocen?\" aparecen tarde y generan expectativas; te adelantas a ambas explicando la regla antes.",
+"base": "3407772dec42"
 }
 },
 "paso4": {
@@ -2062,9 +2080,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Evita anticipar porcentajes o ciclos de convalidación antes de la evaluación formal. Expresiones como “máximo 50%” o “aproximadamente cuatro ciclos” pueden generar expectativas. Refuerza que el resultado dependerá de la revisión de certificado, sílabos y equivalencias por el área correspondiente. 🟠 Aprovecha la necesidad identificada para desarrollar mejor la propuesta de valor. Al conocer que dejó su universidad porque se trasladó por trabajo y no contaba con una alternativa virtual, era una buena oportunidad para conectar esta situación con los diferenciales de la modalidad Distancia.",
 "tecnica": {
-"id": "tec_05",
-"titulo": "👥 Usa Prueba Social Específica",
-"ejemplo": "\"Un postulante con tu misma carrera y horario se matriculó la semana pasada y ya está llevando su primer curso.\""
+"id": "tec_09",
+"titulo": "🪞 Devuelve el Dolor con las Palabras del Cliente",
+"ejemplo": "Si dijo \"siento que se me está yendo el tiempo\": \"te entiendo, sientes que el tiempo se te va y quieres retomar tu carrera ya por eso puedes aplicar bajo este beneficio y sacar el mejor provecho de tu inversión\"."
+},
+"caso": {
+"tipo": "speech",
+"texto": "Me contaste que tuviste que dejar tu universidad porque te trasladaste por trabajo y no tenías una opción virtual. Justo eso es lo que resolvemos acá: estudias desde donde estés, con clases grabadas y en tus horarios, sin volver a dejar la carrera por un cambio de ciudad.\n\nSobre tu convalidación te soy sincera: no te voy a decir un porcentaje ni cuántos ciclos, porque eso lo define el área académica al revisar tu certificado y tus sílabos. Lo que sí hacemos hoy es dejar tus documentos listos para que esa revisión empiece cuanto antes.\n\n¿Me cuentas en qué ciudad estás ahora y qué horario de trabajo manejas, para armarte tu plan de estudio?",
+"porQue": "Ella misma te dio la razón de venta (se trasladó por trabajo y no tenía opción virtual): devuélvesela con sus palabras y recién después hablas de convalidación sin prometer porcentajes.",
+"base": "ecb812966e96"
 }
 },
 "paso2": {
@@ -2112,9 +2136,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Al reforzar la inversión, asegúrate de explicar todos los conceptos correspondientes al pago inicial, para que la prospecta tenga claridad sobre los montos que deberá asumir posteriormente.\r\n🟠 Si mencionas la evaluación de ingreso, refuerza brevemente en qué consiste, su finalidad, que no corresponde a una evaluación de conocimientos y que se desarrolla virtualmente con cámara.\r\n🟠 Finalmente, recuerda utilizar el nombre del prospecto durante la interacción y realizar la derivación a la encuesta de satisfacción al cierre.",
 "tecnica": {
-"id": "tec_09",
-"titulo": "🪞 Devuelve el Dolor con las Palabras del Cliente",
-"ejemplo": "Si dijo \"siento que se me está yendo el tiempo\": \"te entiendo, sientes que el tiempo se te va y quieres retomar tu carrera ya por eso puedes aplicar bajo este beneficio y sacar el mejor provecho de tu inversión\"."
+"id": "tec_08",
+"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
+"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Te adelanto dos cosas que suelen generar dudas, para que las tengas claras desde ahora. Primero, la evaluación de ingreso: no es un examen de conocimientos, es una entrevista virtual con cámara donde conversamos sobre tu motivación y tu compromiso con la carrera, así que no tienes que estudiar nada para rendirla.\n\nSegundo, tu pago inicial: incluye admisión, matrícula, seguro y tu primera cuota. Te los detallo uno por uno para que sepas exactamente cuánto es y cuándo se paga cada uno, sin sorpresas después.\n\n¿Vamos primero con los montos o con la fecha de tu evaluación?",
+"porQue": "Las dudas sobre la evaluación de ingreso y sobre el pago inicial frenan la decisión si quedan sueltas: te adelantas a las dos y las explicas completas. Usa su nombre al abrir y al cerrar.",
+"base": "ced8c75c5730"
 }
 },
 "paso3": {
@@ -2162,9 +2192,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Profundiza un poco más en la necesidad antes de desarrollar toda la propuesta. Recién al final preguntas “¿tú qué estás buscando?, ¿como una beca?”, identificando que este era un factor relevante para su decisión. Conocerlo al inicio habría permitido orientar mejor la argumentación y evitar brindar información que quizá no era determinante para ella. 🟠 El cierre puede quedar aún más sólido: si la prospecta acepta brindar una respuesta por la noche, acuerda una hora específica de seguimiento en lugar de dejar que ella tome nuevamente la iniciativa de escribir. 🟠 Finalmente, recuerda realizar la derivación a la encuesta de satisfacción al finalizar la interacción.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_14",
+"titulo": "❓ Pregunta lo que Falta para Cerrar",
+"ejemplo": "\"Aparte de la convalidación de documentos, ¿qué es lo único que te impediría iniciar tu carrera este ciclo con nosotros?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Antes de contarte todo, quiero asegurarme de hablar de lo que de verdad te importa: ¿qué es lo que estás buscando para decidirte, una beca, un horario que te acomode, un tema de inversión? Dime eso y te explico exactamente cómo lo cubrimos.\n\nAparte de eso, ¿hay algo más que te impida empezar este ciclo? Si no, lo dejamos encaminado hoy.\n\nMe dijiste que me respondes en la noche: ¿te escribo yo a las 8 para confirmar, o prefieres a las 9?",
+"porQue": "La beca era el factor decisivo y lo descubriste al final: pregúntalo al inicio, confirma que no queda otra traba y cierra con hora exacta en vez de esperar que ella escriba.",
+"base": "0d0dcdbfbe31"
 }
 },
 "paso4": {
@@ -2206,9 +2242,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Profundiza en la necesidad antes de argumentar. Sabemos que Kenji es abogado y quiere estudiar Psicología como segunda carrera, pero no conocemos qué lo motiva, qué objetivo profesional tiene ni por qué está considerando esta nueva carrera. 🟠 Cuando señala que incorporarse ahora le resulta complicado, indaga primero qué se lo impide. Recuerda que estamos en campaña 2027-1 y las clases regulares empiezan en marzo de 2027; por ello, la propuesta debe dejar claro que puede reservar ahora los beneficios sin confundir Nexus con el inicio regular de la carrera. 🟠 Refuerza la propuesta de valor más allá del descuento. Incorpora diferenciales de Psicología, Universidad Continental y/o modalidad Distancia conectados con lo que el prospecto busca. 🟠 Cuida expresiones como “las clases están comenzando la próxima semana”. Lo que inicia en octubre corresponde al adelanto/Nexus; las clases regulares de 2027-1 comienzan en marzo de 2027. Esta distinción debe mantenerse clara durante toda la asesoría. 🟠 Recuerda mencionar el envío de información por WhatsApp y realizar la derivación a la encuesta de satisfacción al cierre.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_14",
+"titulo": "❓ Pregunta lo que Falta para Cerrar",
+"ejemplo": "\"Aparte de la convalidación de documentos, ¿qué es lo único que te impediría iniciar tu carrera este ciclo con nosotros?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Kenji, antes de hablar de beneficios quiero entenderte bien: ya eres abogado, ¿qué te está llevando a Psicología ahora? ¿Es para complementar tu práctica legal, para un cambio de rumbo, o algo personal?\n\nMe dices que incorporarte ahora te resulta complicado: ¿qué es exactamente lo que te lo impide, el tiempo, la inversión, o que no tienes claro cómo funcionaría?\n\nTe aclaro algo importante: tus clases regulares de la carrera empiezan en marzo de 2027. Lo que inicia ahora es Nexus, un adelanto para que llegues con ventaja; reservando hoy aseguras los beneficios de esta campaña sin tener que empezar la carrera todavía. ¿Eso cambia la foto?",
+"porQue": "\"Incorporarme ahora es complicado\" esconde la objeción real: pregúntala directo, conoce qué busca Kenji con Psicología y deja clarísimo que las clases regulares son en marzo de 2027 y Nexus es solo el adelanto.",
+"base": "c43f8511ba9b"
 }
 },
 "paso4": {
@@ -2250,9 +2292,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Profundiza en la motivación y meta profesional. Conoces dónde trabaja y su ubicación, pero falta descubrir qué busca conseguir estudiando una carrera universitaria y qué factor sería determinante para elegir entre Distancia y Semipresencial. 🟠 Aprovecha mejor las señales de interés. El prospecto pregunta por fecha de evaluación, inicio de clases y modalidades, lo cual permite avanzar hacia cierres parciales más concretos en lugar de limitarse a “¿qué te parece?”. 🟠 Evita cerrar con “me avisas”. Si señalas que quedan vacantes con beneficios limitados, acompaña esta información con una acción concreta: valida cuándo podría tomar una decisión y deja día y hora de seguimiento. 🟠 Finalmente, recuerda realizar la derivación a la encuesta de satisfacción al cierre.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_04",
+"titulo": "🔀 Promueve la decisión",
+"ejemplo": "\"Ya que tienes todo claro ¿Iniciamos tu proceso para acceder al beneficio y excel? ¿Verdad?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Me preguntas por la fecha de evaluación y el inicio de clases, así que ya estás viendo cómo encajaría esto en tu vida. Antes de eso dime: ¿qué buscas lograr con la carrera, un ascenso donde trabajas, cambiar de rubro? Y entre Distancia y Semipresencial, ¿qué sería determinante para ti: tu horario o tener algunas clases en sede?\n\nCon eso claro, no te voy a decir \"me avisas\". Las vacantes con beneficio son limitadas, así que mejor lo dejamos concreto: ¿tu evaluación la programamos para esta semana o la próxima?\n\nY te llamo el jueves a las 7 de la noche para cerrar la fecha, ¿te acomoda?",
+"porQue": "El prospecto ya preguntaba por fechas e inicio: esas señales se convierten en un \"cuándo\", no en un \"me avisas\". Antes, descubre su meta y qué decide entre Distancia y Semipresencial.",
+"base": "009cf8f43839"
 }
 },
 "paso4": {
@@ -2303,6 +2351,12 @@
 "id": "tec_01",
 "titulo": "🧠 Haz que el Cliente Concluya por Sí Mismo",
 "ejemplo": "\"De todo lo que te conté, ¿qué es lo que más te acomoda a ti?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Antes de avanzar con la ficha quiero que la decisión sea tuya y segura: tú buscabas Ingeniería Mecánica, y en Distancia tenemos Industrial. Con tu experiencia en mantenimiento y seguridad, de lo que te conté de Industrial, ¿qué es lo que más se conecta con lo que haces hoy?\n\nPerfecto. Entonces el camino queda así: me envías la ficha ahorita, yo genero tu inscripción, haces el pago de admisión y te confirmo tu horario de evaluación.\n\n¿Te parece que te escriba apenas me llegue la ficha para pasar al siguiente paso?",
+"porQue": "Él buscaba Mecánica y tú ofrecías Industrial: si la elección la concluye él (desde su experiencia en mantenimiento y seguridad), el pago deja de ser forzado y la ficha avanza con un camino acordado.",
+"base": "bf59930e0046"
 }
 }
 },
@@ -2344,9 +2398,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Cuando el prospecto manifiesta “sí me gustaría ya matricularme”, aprovecha esa señal para conducir el proceso con mayor firmeza. Ya que acepta enviar documentación y completar la ficha, valida directamente el compromiso: cuándo enviará la evidencia y cuándo realizarán la evaluación. 🟠 Finalmente, recuerda realizar la derivación a la encuesta de satisfacción al cierre.",
 "tecnica": {
-"id": "tec_01",
-"titulo": "🧠 Haz que el Cliente Concluya por Sí Mismo",
-"ejemplo": "\"De todo lo que te conté, ¿qué es lo que más te acomoda a ti?\""
+"id": "tec_04",
+"titulo": "🔀 Promueve la decisión",
+"ejemplo": "\"Ya que tienes todo claro ¿Iniciamos tu proceso para acceder al beneficio y excel? ¿Verdad?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Me acabas de decir que ya te gustaría matricularte, así que te tomo la palabra y lo hacemos fácil: ¿me envías tu DNI y tu certificado hoy en la tarde o mañana temprano?\n\nApenas me lleguen, genero tu inscripción. Y para tu evaluación, ¿te acomoda más el turno de la mañana o el de la tarde?\n\nCon eso ya quedas con fecha y solo te faltaría el pago de admisión.",
+"porQue": "\"Sí me gustaría ya matricularme\" es la señal de cierre: en vez de preguntar si avanza, le das a elegir cuándo envía documentos y en qué turno rinde la evaluación.",
+"base": "59b1d79a2306"
 }
 }
 },
@@ -2382,9 +2442,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Recuerda realizar tu presentación completa al inicio de la llamada, indicando tu nombre junto con la Universidad Continental. En esta interacción mencionas tu nombre recién hacia el cierre. 🟠 Al abordar la inversión, recuerda brindar la información de costos de manera completa, incluyendo los conceptos correspondientes a admisión/evaluación, matrícula, primera cuota y seguro. Asimismo, es necesario explicar el proceso de admisión y las características de la evaluación para que el prospecto comprenda claramente qué debe realizar para avanzar. 🟠 Refuerza los cierres parciales durante la conversación. Si bien preguntas directamente si desea continuar con la postulación, es importante direccionar progresivamente la interacción hacia pequeños compromisos que faciliten el avance comercial. 🟠 Cuando el prospecto indique que necesita analizar la propuesta, evita dejar el seguimiento abierto. Acuerda una fecha y hora específica para el próximo contacto; preguntar qué día podría llamarse sin concretarlo no constituye un agendamiento. 🟠 No olvides realizar la derivación a la encuesta de satisfacción al finalizar las llamadas efectivas.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_10",
+"titulo": "✅ Construye Pequeños \"Sí\" (micro-compromisos)",
+"ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Hola, te habla Patricia, de la Universidad Continental.\n\nTe explico todo lo que incluye tu inicio para que no quede ninguna duda: admisión, matrícula, primera cuota y seguro. Y el proceso es sencillo: rindes una evaluación virtual con cámara y listo. ¿Hasta aquí la inversión te parece manejable? ¿Y los horarios te acomodan con tu trabajo? Entonces vamos bien.\n\nSi necesitas analizarlo, perfecto, pero lo dejamos agendado: ¿te llamo el miércoles a las 7 de la noche o el jueves a esa misma hora?",
+"porQue": "Preséntate al inicio, da la inversión completa y convierte la conversación en pequeños acuerdos; \"¿qué día podría llamarte?\" no es una cita, \"¿miércoles o jueves a las 7?\" sí.",
+"base": "81ea3170b3ad"
 }
 },
 "paso4": {
@@ -2463,6 +2529,12 @@
 "id": "tec_09",
 "titulo": "🪞 Devuelve el Dolor con las Palabras del Cliente",
 "ejemplo": "Si dijo \"siento que se me está yendo el tiempo\": \"te entiendo, sientes que el tiempo se te va y quieres retomar tu carrera ya por eso puedes aplicar bajo este beneficio y sacar el mejor provecho de tu inversión\"."
+},
+"caso": {
+"tipo": "speech",
+"texto": "[Nombre], cuéntame, ¿qué te animó a buscar una carrera justo ahora? ¿Estás trabajando? ¿Qué horarios manejas? ¿Y habías estudiado algo antes?\n\nO sea que, como me dices, quieres crecer en tu trabajo pero no tienes tiempo para ir a una universidad. Te entiendo perfecto, [nombre], y justo para eso es esta modalidad.\n\nDéjame mostrarte cómo encajaría en tu semana, [nombre], y me dices si te hace sentido.",
+"porQue": "Tu brecha fue el sondeo: pregunta primero y devuélvele al prospecto su necesidad con sus propias palabras. Y dile por su nombre al menos cuatro veces en la llamada.",
+"base": "34092b50acce"
 }
 },
 "paso3": {
@@ -2510,9 +2582,15 @@
 "rol": "oportunidad",
 "texto": "Incorporar al menos dos diferenciales de la Universidad para generar mayor valor más allá del precio.\nExplicar el proceso de admisión e ingreso.\nRealizar cierres parciales para identificar la intención real de avance.\nEstablecer una fecha y hora concreta para el seguimiento, aunque la comunicación continúe por WhatsApp.\nReforzar el protocolo de cierre y transferencia a la encuesta.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_10",
+"titulo": "✅ Construye Pequeños \"Sí\" (micro-compromisos)",
+"ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Más allá del precio, dos cosas que hacen diferente estudiar acá: tienes el respaldo de SUNEDU y acreditaciones internacionales, y vas sumando certificaciones progresivas mientras avanzas, así tu CV crece desde el primer año. ¿Eso te suma para lo que buscas?\n\nY el ingreso es simple: una evaluación virtual con cámara, sin examen de conocimientos. ¿Hasta aquí te hace sentido?\n\nSeguimos por WhatsApp, pero con una cita: ¿te escribo mañana a las 11 para confirmar tu postulación?",
+"porQue": "Faltaron diferenciales más allá del precio y cierres parciales: cada diferencial termina en una pregunta que suma un \"sí\", y el seguimiento por WhatsApp queda con hora.",
+"base": "cc701b558e5d"
 }
 },
 "paso4": {
@@ -2643,6 +2721,12 @@
 "id": "tec_01",
 "titulo": "🧠 Haz que el Cliente Concluya por Sí Mismo",
 "ejemplo": "\"De todo lo que te conté, ¿qué es lo que más te acomoda a ti?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Dame un segundo que lo reviso en el sistema; mientras tanto te cuento cómo sería tu primer ciclo para que no perdamos el hilo.\n\nYa tienes las dos opciones sobre la mesa. Pensando en tu trabajo y en el tiempo que tienes a la semana, ¿cuál de las dos se ajusta mejor a tu rutina?\n\nPerfecto: te mando el resumen por WhatsApp ahora, y te llamo el lunes a las 6 de la tarde para dejar tu postulación lista. ¿Te acomoda?",
+"porQue": "Los silencios mientras revisas el sistema enfrían la llamada: acompáñalos hablando. Luego, en vez de decidir por él, haz que compare y concluya qué alternativa le encaja, y cierra con cita.",
+"base": "38f05380324c"
 }
 }
 },
@@ -2681,6 +2765,12 @@
 "id": "tec_08",
 "titulo": "🛡️ Mata la Objeción Antes de que Nazca",
 "ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Antes de los montos, cuéntame cómo es tu semana de trabajo: ¿tienes horarios fijos o rotativos? Te lo pregunto porque sé que la mayor duda es \"cómo voy a estudiar si trabajo\", y quiero mostrarte desde ya que con clases grabadas y conexión desde cualquier lugar eso no te va a frenar.\n\nAhora la inversión, ordenada: admisión, matrícula y pensión mensual, uno por uno, para que sepas qué pagas y cuándo. ¿Hasta aquí claro? ¿Y te acomoda esa forma de pago?\n\nEntonces el siguiente paso es tu evaluación: ¿la programamos para esta semana?",
+"porQue": "Primero su disponibilidad laboral; con eso anticipas la objeción \"¿cómo estudio si trabajo?\" antes de que la diga, ordenas los conceptos económicos y cierras con dos pequeños acuerdos.",
+"base": "ab0aa22e7653"
 }
 },
 "paso4": {
@@ -2722,9 +2812,15 @@
 "rol": "oportunidad",
 "texto": "Profundizar en la objeción económica cuando la prospecta manifiesta que necesita tiempo para evaluar su situación.\n- Utilizar argumentos y alternativas que ayuden a la prospecta a avanzar en su decisión.\n- Establecer una fecha y hora concreta para el seguimiento comercial.\n- Utilizar el nombre de la prospecta al menos dos veces durante la llamada.\n- Reforzar el protocolo de cierre y transferencia a la encuesta de satisfacción.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_14",
+"titulo": "❓ Pregunta lo que Falta para Cerrar",
+"ejemplo": "\"Aparte de la convalidación de documentos, ¿qué es lo único que te impediría iniciar tu carrera este ciclo con nosotros?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "[Nombre], te entiendo, quieres evaluar tu situación. Para ayudarte de verdad, dime: ¿lo que te preocupa es el pago inicial, la pensión mensual o cuándo caen las fechas de pago?\n\nSi es el inicio, tenemos el descuento en matrícula de esta campaña; si es el mes a mes, vemos una carga de créditos que te permita pagar menos y avanzar a tu ritmo.\n\nAparte de lo económico, ¿hay algo más que te impida empezar? Si no, lo conversamos con calma el viernes: ¿te llamo a las 6 o a las 7 de la noche, [nombre]?",
+"porQue": "\"Necesito tiempo para evaluar mi situación\" es una objeción económica sin nombre: pregúntale cuál es exactamente, ofrécele una alternativa real y agenda con hora. Usa su nombre al menos dos veces.",
+"base": "9340bd2402fc"
 }
 },
 "paso4": {
@@ -2806,9 +2902,15 @@
 "rol": "oportunidad",
 "texto": "Diagnóstico: Profundizar en las necesidades y motivaciones de Gloria para estudiar Psicología.\n\nInformación económica: Explicar de manera ordenada los conceptos de matrícula, admisión y pensiones, evitando generar confusión.\n\nManejo de objeciones: No se limita a aceptar que la prospecta debe conversar con su pareja; debe indagar y argumentar para mantener el interés.\n\nCierres parciales: Realizar dos cierres que permitan validar la aceptación de la propuesta académica y económica.\n\nSeguimiento: Establecer una fecha y hora concreta para el próximo contacto.",
 "tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"id": "tec_14",
+"titulo": "❓ Pregunta lo que Falta para Cerrar",
+"ejemplo": "\"Aparte de la convalidación de documentos, ¿qué es lo único que te impediría iniciar tu carrera este ciclo con nosotros?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Gloria, me parece bien que lo conversen juntos. Para que esa conversación sea fácil, dime: ¿qué crees que le preocuparía más a tu pareja, la inversión, el tiempo que te va a tomar, o si vas a poder con el trabajo y los estudios?\n\nSi es la inversión, te lo dejo ordenado para que se lo muestres: admisión, matrícula y pensión mensual, cada uno con su monto y su fecha. Y si es el tiempo, cuéntale que las clases quedan grabadas y avanzas en tus horarios.\n\n¿Te parece que los llame a los dos mañana a las 7 de la noche y resolvemos las dudas juntos?",
+"porQue": "\"Lo converso con mi pareja\" no se acepta sin más: averigua qué le preocuparía a la pareja, deja la inversión ordenada para esa conversación y agenda una llamada con los dos.",
+"base": "d8189120554f"
 }
 },
 "paso4": {
@@ -2849,10 +2951,12 @@
 "pct": 63,
 "rol": "oportunidad",
 "texto": "Revisar el arbol de tipificaciones para colocar uno que se adecue a la casuistica.",
-"tecnica": {
-"id": "tec_08",
-"titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-"ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+"tecnica": null,
+"caso": {
+"tipo": "accion",
+"texto": "Después de cada llamada efectiva, elige en el árbol de tipificaciones del CRM la opción que describe exactamente lo que pasó (resultado y motivo), no la más cercana. Si dudas entre dos, revisa la categoría 🖥️ Tipificaciones (CRM) de la Biblioteca de Mensajes, donde está la guía de cada caso.",
+"porQue": "Tu observación de esta llamada no es de speech sino de registro.",
+"base": "34c511e89e83"
 }
 },
 "paso4": {
@@ -2888,9 +2992,15 @@
 "rol": "oportunidad",
 "texto": "🟠 Recuerda brindar información sobre la inversión durante la llamada. En esta interacción mencionas que enviarás el plan por WhatsApp, pero el prospecto también debe conocer los principales conceptos económicos para contar con información suficiente antes del siguiente contacto.\r\n🟠 No olvides explicar el proceso de admisión y las características de la evaluación, incluyendo su finalidad, que no corresponde a una evaluación de conocimientos y que se desarrolla virtualmente con cámara.\r\n🟠 Refuerza los cierres parciales durante la conversación. Además de validar si la información resulta atractiva, busca pequeños compromisos que permitan acercar progresivamente al prospecto hacia la postulación.",
 "tecnica": {
-"id": "tec_09",
-"titulo": "🪞 Devuelve el Dolor con las Palabras del Cliente",
-"ejemplo": "Si dijo \"siento que se me está yendo el tiempo\": \"te entiendo, sientes que el tiempo se te va y quieres retomar tu carrera ya por eso puedes aplicar bajo este beneficio y sacar el mejor provecho de tu inversión\"."
+"id": "tec_10",
+"titulo": "✅ Construye Pequeños \"Sí\" (micro-compromisos)",
+"ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Te voy a enviar el plan completo por WhatsApp, pero antes te adelanto lo principal para que no te quedes con dudas: tu inicio incluye admisión, matrícula, seguro y primera cuota; después solo pagas tu pensión mensual. ¿Hasta aquí te parece manejable?\n\nEl ingreso es una evaluación virtual con cámara: conversamos sobre tu motivación, no es un examen de conocimientos. ¿Te queda claro cómo sería?\n\nEntonces, ¿avanzamos hoy con tu ficha de inscripción para reservar tu vacante?",
+"porQue": "Enviar el plan por WhatsApp no reemplaza explicar la inversión y la evaluación en la llamada: cada explicación termina en una pregunta que suma un pequeño \"sí\" hacia la postulación.",
+"base": "97983bd7b188"
 }
 },
 "paso3": {
@@ -2926,9 +3036,15 @@
 "rol": "oportunidad",
 "texto": "🟠 La llamada tiene bastante información antes de profundizar en la situación personal de Isabel. Identificar desde etapas más tempranas dónde se encuentra, su situación laboral y disponibilidad real de conectividad habría permitido personalizar la propuesta antes y evitar desarrollar beneficios que actualmente no puede aprovechar. 🟠 Trata de avanzar dentro de la campaña actual, busca dejar un seguimiento concreto. En lugar de depender únicamente de que la prospecta escriba cuando tenga disponibilidad, acuerda una fecha tentativa para retomar la comunicación y revisar las condiciones vigentes en ese momento. 🟠 Finalmente, recuerda realizar la derivación a la encuesta de satisfacción al cierre de la interacción.",
 "tecnica": {
-"id": "tec_05",
-"titulo": "👥 Usa Prueba Social Específica",
-"ejemplo": "\"Un postulante con tu misma carrera y horario se matriculó la semana pasada y ya está llevando su primer curso.\""
+"id": "tec_16",
+"titulo": "📅 Si No Confirma al momento Termina con un Próximo Paso",
+"ejemplo": "\"¿Te llamo el martes para conocer si podemos empezar tu proceso de admisión? ¿Te pare? o si decides antes avisame y estaré muy atento. Recuerda hacerlo hasta esta fecha que cierra el beneficio.\""
+},
+"caso": {
+"tipo": "speech",
+"texto": "Isabel, antes de contarte los beneficios, cuéntame tú: ¿desde dónde me hablas, estás trabajando ahora y tienes internet estable para conectarte a clases? Así te explico solo lo que te sirve hoy.\n\nSé que por ahora no tienes disponibilidad, pero no lo dejemos abierto: esta campaña tiene condiciones que pueden cambiar. ¿Te parece que te escriba el próximo lunes para ver cómo estás y qué condiciones siguen vigentes?\n\nY si antes se te acomoda, me avisas y lo adelantamos.",
+"porQue": "Conocer dónde está Isabel, si trabaja y si tiene conectividad antes de explicar beneficios evita hablar de lo que hoy no puede usar; y aunque no tenga disponibilidad, la llamada termina con una fecha, no esperando que ella escriba.",
+"base": "1b1a148aec72"
 }
 },
 "paso2": {
