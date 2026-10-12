@@ -878,7 +878,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-12T14:48:43.000Z";
+  const DATA_VERSION = "2026-10-12T14:55:01.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -916,6 +916,7 @@
       migrateSpeechesArray(db.universidad);
       migrateSpeechesArray(db.modalidad);
       if (db.carreras) Object.keys(db.carreras).forEach(k => migrateSpeechesArray(db.carreras[k].subcategories));
+      migrateKitDePaso(db);
       if (storedVersion !== DATA_VERSION) {
         // Este navegador tenía guardada una versión anterior del archivo: seguimos
         // mostrando lo que tenía guardado, pero avisamos que hay una más reciente.
@@ -2177,6 +2178,22 @@
     else if (!items) legend = 'Lo valida tu supervisor al evaluar tus llamadas.';
     else legend = `✅ validado · 🔸 por reforzar · ◻️ sin evidencia — según tus últimas ${ck.evaluacionesLeidas || 1} ${(ck.evaluacionesLeidas || 1) === 1 ? 'llamada evaluada' : 'llamadas evaluadas'}`;
     return { rows, legend, ok, pend, total: paso.checklist.length, hasItems: !!items };
+  }
+  // Migración: el kit de cada paso (preguntas, práctica e ideas) llegó después que la
+  // página; si este navegador guardó una copia sin esos campos, se completan desde este archivo
+  // (sin pisar lo que el supervisor ya haya editado).
+  function migrateKitDePaso(target) {
+    try {
+      const fresh = (freshEmbeddedData && freshEmbeddedData.atencion && freshEmbeddedData.atencion.pasos) || [];
+      if (!target || !target.atencion || !Array.isArray(target.atencion.pasos)) return;
+      target.atencion.pasos.forEach(p => {
+        const f = fresh.find(x => x.id === p.id);
+        if (!f) return;
+        if (!p.preguntas || !Array.isArray(p.preguntas.items)) p.preguntas = JSON.parse(JSON.stringify(f.preguntas || { titulo: 'Preguntas del paso', nota: '', items: [] }));
+        if (!Array.isArray(p.practica)) p.practica = (f.practica || []).slice();
+        if (!Array.isArray(p.ideas)) p.ideas = (f.ideas || []).slice();
+      });
+    } catch (e) {}
   }
   // Primer ítem del checklist de la etapa que aún no está validado (primero los "por reforzar"),
   // con su ejemplo de práctica. Es el foco cuando el supervisor no dejó observación en esa etapa.
