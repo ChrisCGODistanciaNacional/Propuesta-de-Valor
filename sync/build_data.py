@@ -154,10 +154,42 @@ def stage_from_label(label):
     return None
 
 def stage_col(headers, k):
+    """Columna del % de la etapa (la que empieza con el nombre de la etapa y no es de texto)."""
     cands = [STAGE_LABEL[k]] + STAGE_LABEL_ALT.get(k, [])
     for h in headers:
         nh = norm(h)
-        if any(nh.startswith(norm(c)) for c in cands):
+        if any(nh.startswith(norm(c)) for c in cands) and 'fortaleza' not in nh and 'oportunidad' not in nh:
+            return h
+    return None
+
+def stage_text_col(headers, k, kind):
+    """Columna de texto por etapa del formato nuevo: "Ganar confianza (15%) - Fortaleza" / "... - Oportunidades"."""
+    cands = [STAGE_LABEL[k]] + STAGE_LABEL_ALT.get(k, [])
+    for h in headers:
+        nh = norm(h)
+        if any(nh.startswith(norm(c)) for c in cands) and kind in nh:
+            return h
+    return None
+
+def col_exacta(headers, *names):
+    ns = [norm(x) for x in names]
+    for h in headers:
+        if norm(h) in ns:
+            return h
+    return None
+
+def col_fecha(headers):
+    """Fecha de la evaluación: "Fecha", "FECHA DE EVA." o similar; nunca "Fecha ingreso"."""
+    for h in headers:
+        if norm(h) == 'fecha':
+            return h
+    for h in headers:
+        nh = norm(h)
+        if 'fecha' in nh and 'ingreso' not in nh and ('eva' in nh or 'llamada' in nh):
+            return h
+    for h in headers:
+        nh = norm(h)
+        if 'fecha' in nh and 'ingreso' not in nh:
             return h
     return None
 
@@ -205,20 +237,26 @@ CHECK_HASH = sha12('|'.join(norm(c['texto']) for c in CHECK_ITEMS))
 fb = load_values('feedback.json')
 headers = [str(h) for h in fb[0]]
 H_ASESOR = col(headers, 'asesor')
-H_FECHA = col(headers, 'fecha')
+H_FECHA = col_fecha(headers)
 H_SCORE = col(headers, 'score cualitativo', 'score')
 H_CUARTIL = col(headers, 'cuartil')
 H_SEDE = col(headers, 'sede')
 H_ANTIG = col(headers, 'tramo antiguedad', 'antiguedad')
 H_FORT_P = col(headers, 'fortaleza principal')
 H_BRECHA_P = col(headers, 'brecha principal')
-H_FORTS = col(headers, 'fortalezas')
-H_OPORT = col(headers, 'oportunidades')
+H_FORTS = col_exacta(headers, 'fortalezas')            # formato anterior: un solo texto general
+H_OPORT = col_exacta(headers, 'oportunidades')
 H_EVID = col(headers, 'evidencia / observacion', 'evidencia')
 H_STAGE = {k: stage_col(headers, k) for k in STAGE_KEYS}
+H_FORT_E = {k: stage_text_col(headers, k, 'fortaleza') for k in STAGE_KEYS}      # formato nuevo: texto por etapa
+H_OPOR_E = {k: stage_text_col(headers, k, 'oportunidad') for k in STAGE_KEYS}
+FORMATO_ETAPAS = all(H_FORT_E.values()) and all(H_OPOR_E.values())
+# Desde esta fecha las columnas por etapa se leen tal cual. Antes, un texto que solo esté en las
+# columnas de "Cerrar" es el texto general heredado (FORTALEZAS / OPORTUNIDADES del formato anterior).
+FECHA_FORMATO_ETAPAS = datetime.date(2026, 10, 13)
 missing = [k for k, v in H_STAGE.items() if not v]
-if not H_ASESOR or missing:
-    sys.exit(f'🔰FEEDBACK: no encuentro columnas clave (asesor={H_ASESOR}, etapas faltantes={missing})')
+if not H_ASESOR or missing or not H_FECHA:
+    sys.exit(f'🔰FEEDBACK: no encuentro columnas clave (asesor={H_ASESOR}, fecha={H_FECHA}, etapas faltantes={missing})')
 
 evaluacion = []
 for raw in fb[1:]:
@@ -233,7 +271,35 @@ for raw in fb[1:]:
     if not name:
         continue
     row[H_ASESOR] = ALIASES.get(name, name)
+    if H_FECHA != 'Fecha':
+        row['Fecha'] = str(row.get(H_FECHA, '') or '').strip()   # la página lee "Fecha"
     evaluacion.append(row)
+
+# Respaldo del formato anterior (FORTALEZAS / OPORTUNIDADES generales + fortaleza y brecha principal
+# etiquetadas por el supervisor) para las evaluaciones hechas antes del formato por etapa.
+LEGACY = {}
+_lv = load_json(os.path.join(SYNC, 'legacy_feedback.json'), None)
+if isinstance(_lv, dict) and _lv.get('values'):
+    lh = [str(h) for h in _lv['values'][0]]
+    li = {n: (lh.index(c) if c in lh else None) for n, c in (('asesor', col(lh, 'asesor')), ('fecha', col_fecha(lh)), ('score', col(lh, 'score cualitativo', 'score')),
+                                                            ('fp', col(lh, 'fortaleza principal')), ('bp', col(lh, 'brecha principal')), ('forts', col_exacta(lh, 'fortalezas')), ('oport', col_exacta(lh, 'oportunidades')))}
+    for raw in _lv['values'][1:]:
+        g = lambda key: (str(raw[li[key]]).strip() if li.get(key) is not None and li[key] < len(raw) and raw[li[key]] is not None else '')
+        nm = re.sub(r'\s+', ' ', g('asesor'))
+        if not nm:
+            continue
+        nm = ALIASES.get(nm, nm)
+        LEGACY.setdefault((norm(nm), norm(g('fecha'))), []).append({'score': norm(g('score')), 'fortalezaPrincipal': g('fp'), 'brechaPrincipal': g('bp'), 'fortalezas': g('forts'), 'oportunidades': g('oport')})
+
+def legacy_de(row):
+    lst = LEGACY.get((norm(row.get(H_ASESOR)), norm(row.get(H_FECHA))))
+    if not lst:
+        return None
+    sc = norm(row.get(H_SCORE))
+    for e in lst:
+        if e['score'] == sc:
+            return e
+    return lst[0] if len(lst) == 1 else None
 
 CANON_BY_NORM = {}
 for row in evaluacion:
@@ -462,12 +528,67 @@ def cuadrante_de(qc, qm):
     cal_ok = qc in ('Q1', 'Q2'); mat_ok = qm in ('Q1', 'Q2')
     return 'verde' if (cal_ok and mat_ok) else 'amarillo' if (mat_ok and not cal_ok) else 'naranja' if (cal_ok and not mat_ok) else 'rojo'
 
+def _txt(v):
+    s = str(v or '').strip()
+    return '' if s in ('', '_', '-', '—') else s
+
+def textos_por_etapa(row):
+    """Lee lo que escribió el supervisor y lo reparte por etapa.
+    Devuelve (etapas {k: {'fortaleza','oportunidad'}}, fortaleza principal k, brecha principal k, fortalezas general, oportunidades general, evidencia, modo).
+    modo = 'etapas' (columnas por etapa del formato nuevo) o 'legado' (un texto general: formato anterior)."""
+    evid = _txt(row.get(H_EVID)) if H_EVID else ''
+    per = {k: (_txt(row.get(H_FORT_E[k])) if H_FORT_E[k] else '', _txt(row.get(H_OPOR_E[k])) if H_OPOR_E[k] else '') for k in STAGE_KEYS}
+    llenas = [k for k in STAGE_KEYS if per[k][0] or per[k][1]]
+    fecha = parse_date(row.get(H_FECHA))
+    forts_g = _txt(row.get(H_FORTS)) if H_FORTS else ''
+    oport_g = _txt(row.get(H_OPORT)) if H_OPORT else ''
+    pcts = {k: stage_pct(row, k) for k in STAGE_KEYS}
+    con_pct = [k for k in STAGE_KEYS if pcts[k] is not None]
+    def mas_baja(cands):
+        return min(cands, key=lambda k: (pcts[k] if pcts[k] is not None else 999, STAGE_KEYS.index(k))) if cands else None
+    def mas_alta(cands):
+        return max(cands, key=lambda k: (pcts[k] if pcts[k] is not None else -1, -STAGE_KEYS.index(k))) if cands else None
+    modo = None
+    if llenas and (any(k != 'paso4' for k in llenas) or (fecha and fecha >= FECHA_FORMATO_ETAPAS)):
+        modo = 'etapas'
+    elif llenas == ['paso4']:
+        # solo las columnas de "Cerrar" con texto antes del cambio de formato: es el texto general heredado
+        forts_g = forts_g or per['paso4'][0]; oport_g = oport_g or per['paso4'][1]
+        modo = 'legado'
+    elif forts_g or oport_g:
+        modo = 'legado'
+    fort_k = stage_from_label(row.get(H_FORT_P)) if H_FORT_P else None
+    brecha_k = stage_from_label(row.get(H_BRECHA_P)) if H_BRECHA_P else None
+    if modo != 'etapas':
+        leg = legacy_de(row)
+        if leg and (leg['fortalezas'] or leg['oportunidades']):
+            forts_g = leg['fortalezas'] or forts_g; oport_g = leg['oportunidades'] or oport_g
+            fort_k = fort_k or stage_from_label(leg['fortalezaPrincipal']); brecha_k = brecha_k or stage_from_label(leg['brechaPrincipal'])
+            modo = 'legado'
+    if modo == 'etapas':
+        etapas = {k: {'fortaleza': per[k][0], 'oportunidad': per[k][1]} for k in STAGE_KEYS}
+        if not brecha_k or not etapas[brecha_k]['oportunidad']:
+            brecha_k = mas_baja([k for k in STAGE_KEYS if per[k][1]] or con_pct)
+        if not fort_k or not etapas[fort_k]['fortaleza']:
+            fort_k = mas_alta([k for k in STAGE_KEYS if per[k][0]])
+    else:
+        if oport_g and not brecha_k:
+            brecha_k = mas_baja(con_pct)
+        if forts_g and not fort_k:
+            fort_k = mas_alta([k for k in con_pct if k != brecha_k] or con_pct)
+        etapas = {k: {'fortaleza': forts_g if (k == fort_k and forts_g) else '', 'oportunidad': oport_g if (k == brecha_k and oport_g) else ''} for k in STAGE_KEYS}
+        if not forts_g: fort_k = None
+        if not oport_g: brecha_k = None
+    return etapas, fort_k, brecha_k, forts_g, oport_g, evid, modo
+
 def textos_de(row):
-    forts = str(row.get(H_FORTS, '') or '').strip() if H_FORTS else ''
-    oport = str(row.get(H_OPORT, '') or '').strip() if H_OPORT else ''
-    evid = str(row.get(H_EVID, '') or '').strip() if H_EVID else ''
-    blank = lambda s: s in ('', '_', '-', '—')
-    return ('' if blank(forts) else forts), ('' if blank(oport) else oport), ('' if blank(evid) else evid)
+    """Textos del supervisor como cadenas (para el hash de la llamada y la lectura del checklist)."""
+    etapas, fort_k, brecha_k, forts_g, oport_g, evid, modo = textos_por_etapa(row)
+    if modo == 'etapas':
+        forts = '\n'.join(f'{STAGE_LABEL[k].capitalize()}: {etapas[k]["fortaleza"]}' for k in STAGE_KEYS if etapas[k]['fortaleza'])
+        oport = '\n'.join(f'{STAGE_LABEL[k].capitalize()}: {etapas[k]["oportunidad"]}' for k in STAGE_KEYS if etapas[k]['oportunidad'])
+        return forts, oport, evid
+    return forts_g, oport_g, evid
 
 def row_base(name, row):
     forts, oport, evid = textos_de(row)
@@ -480,8 +601,9 @@ casos_cache = load_json(os.path.join(SYNC, 'casos_cache.json'), {})
 check_cache = load_json(os.path.join(SYNC, 'checklist_cache.json'), {})
 pending = {'casos': [], 'checklist': []}
 
-def caso_base(texto, k):
-    return sha12(norm(texto) + '|' + k)
+def caso_base(fortaleza, oportunidad, k):
+    """Identifica la observación de una etapa: si cambia el texto del supervisor, cambia la base y se vuelve a redactar."""
+    return sha12(norm(fortaleza or '') + '|' + norm(oportunidad or '') + '|' + k)
 
 def leer_checklist_fila(name, row):
     """Estado por ítem de UNA llamada evaluada: desde el caché (lectura de Claude) o todo sin evidencia si no hay texto."""
@@ -498,9 +620,11 @@ def leer_checklist_fila(name, row):
             estado = e.get('estado') if e.get('estado') in ('ok', 'pendiente', 'sin_evidencia') else 'sin_evidencia'
             out[it['id']] = {'estado': estado, 'evidencia': (e.get('evidencia') or '').strip() or None}
         return out, base, False
+    etapas, fort_k, brecha_k, _fg, _og, _ev, modo = textos_por_etapa(row)
     pending['checklist'].append({'asesor': name, 'base': base, 'fecha': fecha,
-                                 'textos': {'fortalezaPrincipal': str(row.get(H_FORT_P, '') or ''), 'brechaPrincipal': str(row.get(H_BRECHA_P, '') or ''),
-                                            'fortalezas': forts, 'oportunidades': oport, 'evidencia': evid},
+                                 'textos': {'fortalezaPrincipal': fort_k or '', 'brechaPrincipal': brecha_k or '',
+                                            'fortalezas': forts, 'oportunidades': oport, 'evidencia': evid,
+                                            'porEtapa': etapas, 'modo': modo},
                                  'items': CHECK_ITEMS})
     return None, base, True
 
@@ -536,28 +660,32 @@ for name, lst in hist.items():
         modo = 'ritmo' if AVANCE_MODO == 'ritmo' else 'mes'
     cuadrante = cuadrante_de(cuartil_cal, cuartil_mat)
 
-    fort_k = stage_from_label(last.get(H_FORT_P)) if H_FORT_P else None
-    brecha_k = stage_from_label(last.get(H_BRECHA_P)) if H_BRECHA_P else None
-    forts, oport, evid = textos_de(last)
+    etapas_last, fort_k, brecha_k, forts, oport, evid, modo_fb = textos_por_etapa(last)
 
     stages = {}
     for k in STAGE_KEYS:
         p = stage_pct(last, k)
         pp = stage_pct(prev, k) if prev else None
+        f_txt = etapas_last[k]['fortaleza'] or None
+        o_txt = etapas_last[k]['oportunidad'] or None
         st = {
             'pct': p,
             'prev': pp,
             'delta': (p - pp) if (p is not None and pp is not None) else None,
             'avg': mean_int([stage_pct(r, k) for r in rows]),
+            'fortaleza': f_txt, 'oportunidad': o_txt, 'conclusion': None,
             'rol': None, 'texto': None, 'tecnica': None, 'caso': None,
         }
-        if k == fort_k and forts:
-            st['rol'] = 'fortaleza'; st['texto'] = forts
-        elif k == brecha_k and oport:
-            st['rol'] = 'oportunidad'; st['texto'] = oport
-            base = caso_base(oport, k)
-            c = casos_cache.get(name)
-            if c and c.get('base') == base and c.get('stage') == k:
+        if o_txt:
+            st['rol'] = 'oportunidad'; st['texto'] = o_txt
+        elif f_txt:
+            st['rol'] = 'fortaleza'; st['texto'] = f_txt
+        if f_txt or o_txt:
+            base = caso_base(f_txt, o_txt, k)
+            c = casos_cache.get(f'{name}|{k}')
+            if c and c.get('base') == base:
+                st['conclusion'] = _txt(c.get('conclusion')) or None
+            if o_txt and c and c.get('base') == base and (c.get('speech') or c.get('dialogo')):
                 tec = TEC_BY_ID.get(c.get('tecId')) if c.get('tecId') else None
                 st['tecnica'] = ({'id': tec['id'], 'titulo': tec['titulo'], 'ejemplo': (tec.get('ejemplos') or [None])[0]} if tec else None)
                 # diálogo tipo WhatsApp (asesor/cliente); el texto para copiar son solo los turnos del asesor
@@ -573,8 +701,9 @@ for name, lst in hist.items():
                         dialogo = None
                 texto = '\n\n'.join(t['texto'] for t in dialogo if t['quien'] == 'asesor') if dialogo else c.get('speech', '')
                 st['caso'] = {'tipo': c.get('tipo', 'speech'), 'texto': texto or c.get('speech', ''), 'porQue': c.get('porQue', ''), 'base': base, 'dialogo': dialogo}
-            else:
-                pending['casos'].append({'asesor': name, 'stage': k, 'base': base, 'oportunidades': oport, 'fortalezas': forts, 'evidencia': evid})
+            if not (c and c.get('base') == base and (st['conclusion'] or not o_txt) and (not o_txt or st['caso'])):
+                pending['casos'].append({'asesor': name, 'stage': k, 'base': base, 'pct': p, 'fortaleza': f_txt or '', 'oportunidad': o_txt or '',
+                                         'evidencia': evid, 'necesita': 'conclusion+caso' if o_txt else 'conclusion'})
         stages[k] = st
 
     # checklist de calidad: ventana de las últimas N llamadas evaluadas; manual (Sheet) manda sobre la lectura
@@ -625,6 +754,7 @@ for name, lst in hist.items():
         'antiguedad': d.get('antiguedad') or (str(last.get(H_ANTIG, '')).strip() if H_ANTIG else None) or None,
         'numEvaluaciones': len(rows),
         'ultimaFecha': str(last.get(H_FECHA, '')).strip() or None,
+        'foco': brecha_k, 'fortalezaPrincipal': fort_k, 'modoFeedback': modo_fb,
         'stages': stages,
         'scoreGlobal': last.get(H_SCORE),
         'callScorePct': scores[-1],
@@ -704,9 +834,17 @@ equipo = {
 }
 
 
+# ----------------------------------------------------------------------------- filas: reparto por etapa listo para la página
+for row in evaluacion:
+    et, fk, bk, _fg, _og, _ev, modo = textos_por_etapa(row)
+    row['_etapas'] = {k: {'fortaleza': et[k]['fortaleza'] or None, 'oportunidad': et[k]['oportunidad'] or None} for k in STAGE_KEYS}
+    row['_foco'] = bk
+    row['_fortalezaPrincipal'] = fk
+    row['_modo'] = modo
+
 # ----------------------------------------------------------------------------- salida
 out = {
-    'version': 7,
+    'version': 8,
     'generado': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
     'evaluacion': evaluacion,
     'tecnicas': tecnicas,

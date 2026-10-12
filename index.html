@@ -564,6 +564,18 @@
   .ev-table tr.cold td:first-child::before { content: '●'; font-size: 8px; margin-right: 6px; vertical-align: middle; }
   .ev-table tr.me td { background: var(--gold-soft); }
   .ev-box .me-tag { font-size: 10.5px; font-weight: 700; color: var(--navy); background: var(--gold); border-radius: var(--r-pill); padding: 1px 6px; margin-left: 4px; vertical-align: middle; }
+
+  /* ===================== v12e: observación del supervisor por etapa (conclusión + texto completo) ===================== */
+  .obs-conclusion { font-size: 14px; color: var(--ink); line-height: 1.55; }
+  .obs-conclusion b { font-weight: 600; }
+  .obs-raw { margin-top: 6px; font-size: 12.5px; color: var(--muted); }
+  .obs-raw summary { cursor: pointer; }
+  .obs-raw-open { margin-top: 4px; }
+  .obs-raw-f, .obs-raw-o { margin-top: 8px; font-size: 13.5px; color: var(--ink-2); }
+  .obs-raw-f > b, .obs-raw-o > b { display: block; font-weight: 600; margin-bottom: 2px; color: var(--ink); }
+  .obs-raw-f ul, .obs-raw-o ul { margin: 0; padding-left: 20px; line-height: 1.5; }
+  .obs-raw-f p, .obs-raw-o p { margin: 0; white-space: pre-wrap; line-height: 1.5; }
+  .feedback .obs-raw-f li, .feedback .obs-raw-o li { font-size: 13.5px; color: var(--ink-2); }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -965,7 +977,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-12T17:25:51.000Z";
+  const DATA_VERSION = "2026-10-12T19:04:12.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1785,20 +1797,28 @@
     const latest = getAdvisorAnalysis(advisor);
     const row = sel.entry.row;
     if (sel.isLatest && latest && latest.stages) return latest;
-    const fk = stageFromLabel(findField(row, ['fortaleza principal']));
-    const bk = stageFromLabel(findField(row, ['brecha principal']));
-    const forts = isBlankValue(getField(row, 'fortalezas')) ? '' : String(getField(row, 'fortalezas')).trim();
-    const oport = isBlankValue(getField(row, 'oportunidades')) ? '' : String(getField(row, 'oportunidades')).trim();
+    const porEtapa = (row && row._etapas && typeof row._etapas === 'object') ? row._etapas : null;
+    const fk = porEtapa ? (row._fortalezaPrincipal || null) : stageFromLabel(findField(row, ['fortaleza principal']));
+    const bk = porEtapa ? (row._foco || null) : stageFromLabel(findField(row, ['brecha principal']));
+    const forts = porEtapa ? '' : (isBlankValue(getField(row, 'fortalezas')) ? '' : String(getField(row, 'fortalezas')).trim());
+    const oport = porEtapa ? '' : (isBlankValue(getField(row, 'oportunidades')) ? '' : String(getField(row, 'oportunidades')).trim());
     const stages = {};
     STAGE_KEYS.forEach(k => {
       const pct = parseScorePct(findField(row, STAGE_FIELD_CANDIDATES[k]));
       const prevPct = sel.prev ? parseScorePct(findField(sel.prev.row, STAGE_FIELD_CANDIDATES[k])) : null;
-      const st = { pct, prev: prevPct, delta: (pct !== null && prevPct !== null) ? pct - prevPct : null, avg: latest && latest.stages && latest.stages[k] ? latest.stages[k].avg : null, rol: null, texto: null, tecnica: null, caso: null };
-      if (k === fk && forts) { st.rol = 'fortaleza'; st.texto = forts; }
-      else if (k === bk && oport) { st.rol = 'oportunidad'; st.texto = oport; }
+      const st = { pct, prev: prevPct, delta: (pct !== null && prevPct !== null) ? pct - prevPct : null, avg: latest && latest.stages && latest.stages[k] ? latest.stages[k].avg : null, fortaleza: null, oportunidad: null, conclusion: null, rol: null, texto: null, tecnica: null, caso: null };
+      if (porEtapa) {
+        const e = porEtapa[k] || {};
+        st.fortaleza = e.fortaleza || null; st.oportunidad = e.oportunidad || null;
+      } else {
+        if (k === fk && forts) st.fortaleza = forts;
+        if (k === bk && oport) st.oportunidad = oport;
+      }
+      if (st.oportunidad) { st.rol = 'oportunidad'; st.texto = st.oportunidad; }
+      else if (st.fortaleza) { st.rol = 'fortaleza'; st.texto = st.fortaleza; }
       stages[k] = st;
     });
-    return Object.assign({}, latest || {}, { stages, _historica: true });
+    return Object.assign({}, latest || {}, { stages, foco: bk, fortalezaPrincipal: fk, _historica: true });
   }
   function stagePctFrom(analysis, row, key) {
     const st = analysis && analysis.stages ? analysis.stages[key] : null;
@@ -1824,6 +1844,7 @@
   // supervisor; si no la hay, la de menor puntaje.
   function getFocusStage(analysis, row) {
     if (analysis && analysis.stages) {
+      if (analysis.foco && analysis.stages[analysis.foco] && analysis.stages[analysis.foco].rol === 'oportunidad') return analysis.foco;
       const k = STAGE_KEYS.find(x => analysis.stages[x] && analysis.stages[x].rol === 'oportunidad');
       if (k) return k;
     }
@@ -1913,6 +1934,15 @@
     const items = splitFeedbackItems(text);
     if (items.length > 1) return `<ul>${items.map(i => `<li>${escapeHtmlPreserveNL(i)}</li>`).join('')}</ul>`;
     return `<p>${escapeHtmlPreserveNL(items[0] || text)}</p>`;
+  }
+  // "Lo que observó tu supervisor" de una etapa: la conclusión (síntesis) y, plegado, el texto completo
+  // (🟢 lo que hizo bien / 🟠 lo que debe mejorar). Sin conclusión aún, se muestra el texto tal cual.
+  function observacionHTML(st) {
+    if (!st || !(st.fortaleza || st.oportunidad)) return '';
+    const conclusion = st.conclusion ? escapeHtmlPreserveNL(st.conclusion) : '';
+    const raw = `${st.fortaleza ? `<div class="obs-raw-f"><b>🟢 Lo que hiciste bien</b>${feedbackListHTML(st.fortaleza)}</div>` : ''}${st.oportunidad ? `<div class="obs-raw-o"><b>🟠 Lo que debes mejorar</b>${feedbackListHTML(st.oportunidad)}</div>` : ''}`;
+    if (conclusion) return `<div class="obs-conclusion"><b>Lo que observó tu supervisor:</b> ${conclusion}</div><details class="obs-raw no-img"><summary>Ver observación completa</summary>${raw}</details>`;
+    return `<div class="obs-conclusion"><b>Lo que observó tu supervisor:</b></div><div class="obs-raw-open">${raw}</div>`;
   }
   function pctPill(pct) {
     const c = scoreColor(pct);
@@ -2152,7 +2182,8 @@
       const items = (st && st.rol === 'oportunidad') ? splitFeedbackItems(st.texto) : [];
       // Sin observación del supervisor en esta etapa: el foco es el ítem del checklist que falta (con su práctica).
       const pend = items.length ? null : pendienteDeChecklist(fk);
-      const obs = items.length ? items[0] : (pend ? pend.texto : (TIPS_POR_ETAPA[fk] || [])[0]);
+      const conclusion = (items.length && st.conclusion) ? st.conclusion : null;
+      const obs = conclusion || (items.length ? items[0] : (pend ? pend.texto : (TIPS_POR_ETAPA[fk] || [])[0]));
       const obsExtra = (!items.length && pend && pend.practica) ? `<span class="focus-practica"><b>Practica así:</b> ${escapeHtmlPreserveNL(pend.practica)}</span>` : '';
       const tec = tecnicaForStage(fk, st);
       focusHTML = `
@@ -2167,7 +2198,7 @@
             ${delta !== null ? `<span class="fm ${deltaClass(delta)}">${deltaPhrase(delta, ' pts')}</span>` : `<span class="fm">Primera evaluación</span>`}
             ${avg !== null && avg !== undefined ? `<span class="fm"><b>${fmtPct(avg)}</b> promedio de ${history.length} ${history.length === 1 ? 'evaluación' : 'evaluaciones'}</span>` : ''}
           </div>
-          ${obs ? `<div class="focus-obs"><b>${items.length ? 'Lo que observó tu supervisor:' : 'Para trabajar:'}</b> ${escapeHtmlPreserveNL(obs)}${items.length > 1 ? ` <span class="focus-more">(+${items.length - 1} más en la etapa)</span>` : ''}${obsExtra}</div>` : ''}
+          ${obs ? `<div class="focus-obs"><b>${items.length ? 'Lo que observó tu supervisor:' : 'Para trabajar:'}</b> ${escapeHtmlPreserveNL(obs)}${(!conclusion && items.length > 1) ? ` <span class="focus-more">(+${items.length - 1} más en la etapa)</span>` : ''}${obsExtra}</div>` : ''}
           ${tec ? `<div class="focus-tec">${speechBlockHTML(tec, 'focus')}${speechActionsHTML(tec)}</div>` : ''}
           <div class="focus-actions no-img"><button class="btn-primary" onclick="goToStage('${fk}')">Ver la etapa completa →</button></div>
           ${imgFootHTML()}
@@ -2225,10 +2256,10 @@
 
     let feedbackHTML = '';
     if (st && st.rol === 'fortaleza' && st.texto) {
-      feedbackHTML = `<div class="feedback fortaleza"><div class="feedback-title">💪 Tu fortaleza principal</div>${feedbackListHTML(st.texto)}</div>`;
+      feedbackHTML = `<div class="feedback fortaleza"><div class="feedback-title">💪 Tu fortaleza en esta etapa</div>${observacionHTML(st)}</div>`;
     } else if (st && st.rol === 'oportunidad' && st.texto) {
       const tec = tecnicaForStage(stageKey, st);
-      feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Tu oportunidad de mejora</div>${feedbackListHTML(st.texto)}
+      feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Tu oportunidad de mejora</div>${observacionHTML(st)}
         ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div>` : ''}
       </div>`;
     } else if (pct === null || pct === undefined) {

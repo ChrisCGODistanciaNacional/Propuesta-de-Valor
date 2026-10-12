@@ -6,7 +6,7 @@ La página lee `data.json` (misma carpeta) para mostrar el diagnóstico por ases
 
 | Archivo de entrada (`sync/inputs/`, no se sube al repo) | Rango que se lee | Spreadsheet |
 |---|---|---|
-| `feedback.json`  | `'🔰FEEDBACK'!A1:R2000` | Archivo I · `1SJAgbcxpVXpRZ6_Vb4_VW1Pl9BJZMyR8cTH-hmvgdEE` |
+| `feedback.json`  | `'🔰FEEDBACK'!A1:AB2000` | Archivo I · `1SJAgbcxpVXpRZ6_Vb4_VW1Pl9BJZMyR8cTH-hmvgdEE` (desde el 12/10/2026 trae una columna de Fortaleza y una de Oportunidades por etapa) |
 | `tecnicas.json`  | `'🏆 TECNICAS'!A1:Z60`  | Archivo I |
 | `gen.json`       | `'🔰GEN'!A24:J56`       | Archivo I (tablero: ranking del mes por asesor — matrículas, % de meta y cuartil por aporte) |
 | `metas.json`     | `'🧮GC'!B130:J159`      | Archivo I (meta mensual de matrículas por asesor y mes) |
@@ -22,6 +22,13 @@ Cada archivo es el JSON tal cual lo devuelve el conector de Google Sheets (`{"ra
 2. `python3 sync/build_data.py` → escribe `data.json` y `sync/pending.json`.
 3. Si `pending.json` trae `casos` o `checklist` pendientes, Claude los escribe en `sync/casos_cache.json` / `sync/checklist_cache.json` (ver formato abajo) y vuelve a correr el paso 2.
 4. Commit y push de `data.json` + los cachés.
+
+## Formato de 🔰FEEDBACK (desde el 12/10/2026)
+
+- Columnas por etapa: `Ganar confianza (15%) - Fortaleza`, `… - Oportunidades` (y lo mismo para Identificar necesidades, Solucionar problemas y Cerrar), más `FECHA DE EVA.` (fecha de la evaluación). Ya no se usan `Fortaleza principal`, `Brecha principal`, `FORTALEZAS` ni `OPORTUNIDADES`.
+- **Regla para el área de calidad**: cada observación va en la columna de SU etapa; el comentario general va en `Evidencia / observación`. Una evaluación con texto solo en las columnas de "Cerrar" se lee como observación de Cerrar.
+- Evaluaciones anteriores al cambio: sus textos generales quedaron en las columnas de "Cerrar"; el script las reconoce (fecha anterior al 13/10/2026 y solo "Cerrar" con texto) y usa `sync/legacy_feedback.json` (copia del formato anterior) para recuperar la fortaleza y brecha principal que etiquetó el supervisor.
+- Por asesor y etapa el script deja `fortaleza`, `oportunidad`, `conclusion` (síntesis escrita por Claude para "Lo que observó tu supervisor"), `foco` (brecha principal: la etapa con oportunidad de menor %) y `fortalezaPrincipal`.
 
 ## Qué calcula `build_data.py`
 
@@ -41,14 +48,16 @@ Cada archivo es el JSON tal cual lo devuelve el conector de Google Sheets (`{"ra
 
 ## Formato de los cachés
 
-`casos_cache.json` (clave: nombre del asesor):
+`casos_cache.json` (clave: `"<nombre del asesor>|<stage>"`, una entrada por etapa con texto del supervisor):
 ```json
-{"stage": "paso3", "tecId": "tec_08", "tipo": "speech", "porQue": "...", "speech": "...", "base": "<12 hex>",
+{"stage": "paso3", "base": "<12 hex>", "conclusion": "síntesis de 1–2 frases de lo que observó el supervisor en esa etapa",
+ "tecId": "tec_08", "tipo": "speech", "porQue": "...", "speech": "...",
  "dialogo": [{"quien": "asesor", "texto": "..."}, {"quien": "cliente", "texto": "..."}, {"quien": "asesor", "texto": "..."}]}
 ```
+Toda etapa con texto necesita `conclusion`; `tecId/porQue/dialogo/speech` solo cuando la etapa tiene oportunidad (`pending.casos[].necesita` = `conclusion` o `conclusion+caso`).
 `dialogo` es la conversación de ejemplo tipo WhatsApp (asesor a la izquierda, cliente a la derecha): 3 turnos del asesor (los párrafos del speech) con 2–3 respuestas cortas y realistas del cliente entre medio, coherentes con la observación del supervisor. `speech` = solo los turnos del asesor unidos por línea en blanco (es lo que copia el botón). Para `tipo: "accion"` no hay diálogo.
 `checklist_cache.json` (clave: `base` de la LLAMADA evaluada = hash de asesor + fecha + textos):
 ```json
 {"asesor": "Diana Carol Taipe Rojas", "fecha": "06/10/2026", "items": {"paso1_1": {"estado": "ok|pendiente|sin_evidencia", "evidencia": "..." }}}
 ```
-`base` lo entrega `pending.json`; si la evaluación cambia, cambia la `base` y esa llamada vuelve a quedar pendiente. Las llamadas sin texto del supervisor no se piden: quedan sin evidencia.
+`base` lo entrega `pending.json`; si la evaluación cambia, cambia la `base` y esa llamada (o etapa) vuelve a quedar pendiente. Las llamadas sin texto del supervisor no se piden: quedan sin evidencia.
