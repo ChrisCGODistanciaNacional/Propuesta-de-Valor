@@ -32,7 +32,7 @@ DRY = '--dry' in sys.argv
 # Avance de matrículas que define el cuartil (y el cuadrante):
 #   'ritmo' → matrículas del mes / meta prorrateada a los días hábiles transcurridos (¿vas al ritmo del mes?)
 #   'mes'   → matrículas del mes / meta completa del mes (el "Logro %" de 🔰DIA/SEM)
-AVANCE_MODO = 'ritmo'
+AVANCE_MODO = 'mes'
 AVANCE_TOPE_INDICE = 150        # en el índice del ranking el avance cuenta hasta este %, para que un pico temprano no distorsione
 VENTANA_CHECKLIST = 3           # un ítem validado se conserva mientras aparezca en alguna de las últimas N llamadas evaluadas
                                 # y ninguna posterior lo marque como pendiente

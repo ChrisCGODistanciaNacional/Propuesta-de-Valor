@@ -440,6 +440,8 @@
   .capturing > .img-head .img-head-title:empty { display: none; }
   .capturing > .img-foot { display: block; margin-top: 14px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); text-align: right; }
   .focus-card.capturing { border-radius: 12px; }
+  .podium-metrics { display: flex; flex-direction: column; gap: 1px; }
+  .podium-metrics b { font-weight: 600; color: var(--ink-2); }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -808,7 +810,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-12T06:01:07.000Z";
+  const DATA_VERSION = "2026-10-12T13:19:23.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1559,8 +1561,9 @@
     const matTxt = (a.matriculas !== null && a.matriculas !== undefined && a.meta) ? `${a.matriculas} de ${a.meta}` : null;
     if (calOk && matOk) return `${L.nivelEmoji} Eres ${L.nivel}: calidad de 85% o más y meta al día. Mantenlo.`;
     if (matOk && !calOk) return `Tu venta va bien. Para ser ${L.nivelEmoji} ${L.nivel} sube tu calidad promedio a 85% (hoy ${fmtPct(cal)}${faltaCal ? ', faltan ' + Math.ceil(faltaCal) + ' pts' : ''}).`;
-    if (calOk && !matOk) return `Tu atención es sólida. Para ser ${L.nivelEmoji} ${L.nivel} llega al 80% del ritmo de tu meta de matrículas (hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''}).`;
-    return `Dos frentes: calidad a 85% (hoy ${fmtPct(cal)}) y 80% del ritmo de tu meta (hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''}). Tu supervisor te acompaña.`;
+    const metaTxt = a.avanceModo === 'ritmo' ? '80% del ritmo de tu meta de matrículas' : '80% de tu meta de matrículas del mes';
+    if (calOk && !matOk) return `Tu atención es sólida. Para ser ${L.nivelEmoji} ${L.nivel} llega al ${metaTxt} (hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''}).`;
+    return `Dos frentes: calidad a 85% (hoy ${fmtPct(cal)}) y ${metaTxt} (hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''}). Tu supervisor te acompaña.`;
   }
   const STAGE_LABELS = { paso1: 'Ganar confianza', paso2: 'Identificar necesidades', paso3: 'Solucionar problemas', paso4: 'Cerrar' };
   const STAGE_KEYS = ['paso1', 'paso2', 'paso3', 'paso4'];
@@ -1949,7 +1952,7 @@
     const tecTot = a.tecnicasTotal || db.tecnicas.length;
     const eq = sheetDataCache.equipo || {};
     const hayMes = a.avanceMeta !== null && a.avanceMeta !== undefined;
-    const matSub = hayMes ? `${a.matriculas} de ${a.meta} este mes${a.avanceModo === 'ritmo' && eq.mes ? ' · ritmo de ' + eq.mes : ''}` : 'Sin matrículas del mes registradas';
+    const matSub = hayMes ? `${a.matriculas} de ${a.meta} ${eq.mes ? 'en ' + eq.mes : 'este mes'}${a.avanceModo === 'ritmo' ? ' · al ritmo del mes' : ''}` : 'Sin matrículas del mes registradas';
 
     // Foco: la brecha principal (o la etapa más baja) de la llamada elegida + la técnica para practicar.
     const fk = getFocusStage(analysis, row);
@@ -2304,14 +2307,14 @@
             ${avatarHTML(r.asesor, i === 0 ? 64 : 52)}
             <div class="podium-name" title="${r.asesor}">${nombreCorto(r.asesor)}${isMe ? ' <span class="me-tag no-img">tú</span>' : ''}</div>
             <div class="podium-cq" style="--cq:${cq.color};--cqbg:${cq.bg}" title="${cq.emoji} ${cq.nombre}">${cq.nivelEmoji}<span class="cq-name">${cq.nivel}</span></div>
-            <div class="podium-metrics">${fmtPct(r.calidad)} calidad${r.avanceMeta !== null && r.avanceMeta !== undefined ? ` · ${fmtPct(r.avanceMeta)} matrículas` : ''}</div>
+            <div class="podium-metrics"><span>${fmtPct(r.calidad)} calidad${r.cuartilCalidad ? ` <b>(${r.cuartilCalidad})</b>` : ''}</span>${r.avanceMeta !== null && r.avanceMeta !== undefined ? `<span>${fmtPct(r.avanceMeta)} matrículas${r.cuartilMatriculas ? ` <b>(${r.cuartilMatriculas})</b>` : ''}</span>` : ''}</div>
           </div>
           <div class="podium-block"><span class="podium-pos">${r.puesto}º</span></div>
         </div>`;
     }).join('');
     const myRow = rk.find(r => normalizarTexto(r.asesor) === meKey);
     const myLine = myRow && myRow.puesto > 5
-      ? `<div class="my-rank no-img">${avatarHTML(myRow.asesor, 36)}<div><b>Tu puesto: ${myRow.puesto}º de ${eq.totalAsesores || rk.length}</b><div class="my-rank-sub">${cuadranteInfo(myRow.cuadrante).nivelEmoji} ${cuadranteInfo(myRow.cuadrante).nivel} · ${fmtPct(myRow.calidad)} calidad${myRow.avanceMeta !== null && myRow.avanceMeta !== undefined ? ' · ' + fmtPct(myRow.avanceMeta) + ' matrículas' : ''}</div></div></div>`
+      ? `<div class="my-rank no-img">${avatarHTML(myRow.asesor, 36)}<div><b>Tu puesto: ${myRow.puesto}º de ${eq.totalAsesores || rk.length}</b><div class="my-rank-sub">${cuadranteInfo(myRow.cuadrante).nivelEmoji} ${cuadranteInfo(myRow.cuadrante).nivel} · ${fmtPct(myRow.calidad)} calidad${myRow.cuartilCalidad ? ' (' + myRow.cuartilCalidad + ')' : ''}${myRow.avanceMeta !== null && myRow.avanceMeta !== undefined ? ' · ' + fmtPct(myRow.avanceMeta) + ' matrículas' + (myRow.cuartilMatriculas ? ' (' + myRow.cuartilMatriculas + ')' : '') : ''}</div></div></div>`
       : (myRow ? `<div class="my-rank top no-img"><span>🎉</span><div><b>¡Estás en el podio!</b><div class="my-rank-sub">${myRow.puesto}º de ${eq.totalAsesores || rk.length}</div></div></div>` : (me ? `<div class="my-rank no-img"><span>👤</span><div><b>Todavía no apareces en el ranking</b><div class="my-rank-sub">Se arma con tus llamadas evaluadas y tus matrículas del mes.</div></div></div>` : ''));
 
     // Cuadrantes: misma disposición que la Matriz (🟡 arriba-izq · 🟢 arriba-der · 🔴 abajo-izq · 🟠 abajo-der)
