@@ -5,26 +5,38 @@ Arma data.json para la página "Propuesta de Valor" (CGO Distancia) a partir de:
 
   sync/inputs/feedback.json   ← '🔰FEEDBACK'!A1:R2000   (archivo I, spreadsheetId 1SJAgbcxpVXpRZ6_Vb4_VW1Pl9BJZMyR8cTH-hmvgdEE)
   sync/inputs/tecnicas.json   ← '🏆 TECNICAS'!A1:Z60    (archivo I)
-  sync/inputs/dashboard.json  ← 'DASHBOARD'!B5:O90      (Matriz_CGO_Distancia_2027-I, spreadsheetId 1MaiDiBNBicpttRJs2oSAyKvbAD0nI963anN9wfYoeOM)
+  sync/inputs/diasem.json     ← '🔰DIA/SEM'!A19:IF23    (archivo I: avance del mes por asesor y su meta de matrículas)
+  sync/inputs/dashboard.json  ← 'DASHBOARD'!B5:O90      (Matriz_CGO_Distancia_2027-I, spreadsheetId 1MaiDiBNBicpttRJs2oSAyKvbAD0nI963anN9wfYoeOM:
+                                                          cuartil de calidad, mapa de calor y focos del equipo)
   sync/inputs/checklist.json  ← '✅ CHECKLIST'!A1:AZ80  (archivo I; OPCIONAL: validación manual del supervisor)
   sync/casos_cache.json       ← speeches escritos por Claude para el caso de cada asesor (se reutilizan mientras no cambie la evaluación)
-  sync/checklist_cache.json   ← lectura de Claude del checklist de calidad por asesor (idem)
+  sync/checklist_cache.json   ← lectura de Claude del checklist de calidad por LLAMADA evaluada (clave = hash de la fila)
   index.html                  ← biblioteca de técnicas (db.tecnicas) y checklist de cada paso (db.atencion.pasos)
 
 Cada archivo de inputs es el JSON tal cual lo devuelve el conector de Google Sheets ({"range": "...", "values": [[...], ...]}).
 Todo lo determinista vive aquí; lo único que requiere criterio (escribir un speech, leer si un ítem del checklist
-se cumplió) queda listado en sync/pending.json para que la tarea programada lo complete y vuelva a correr este script.
+se cumplió en una llamada) queda listado en sync/pending.json para que la tarea programada lo complete y vuelva a correr este script.
 
 Uso:  python3 sync/build_data.py          (desde la raíz del repo; escribe data.json y sync/pending.json)
       python3 sync/build_data.py --dry    (solo reporta, no escribe data.json)
 """
-import json, re, sys, os, hashlib, unicodedata, datetime
+import json, re, sys, os, hashlib, unicodedata, datetime, calendar, copy
 from difflib import SequenceMatcher
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SYNC = os.path.join(ROOT, 'sync')
 INP = os.path.join(SYNC, 'inputs')
 DRY = '--dry' in sys.argv
+
+# ----------------------------------------------------------------------------- parámetros del modelo
+# Avance de matrículas que define el cuartil (y el cuadrante):
+#   'ritmo' → matrículas del mes / meta prorrateada a los días hábiles transcurridos (¿vas al ritmo del mes?)
+#   'mes'   → matrículas del mes / meta completa del mes (el "Logro %" de 🔰DIA/SEM)
+AVANCE_MODO = 'ritmo'
+AVANCE_TOPE_INDICE = 150        # en el índice del ranking el avance cuenta hasta este %, para que un pico temprano no distorsione
+VENTANA_CHECKLIST = 3           # un ítem validado se conserva mientras aparezca en alguna de las últimas N llamadas evaluadas
+                                # y ninguna posterior lo marque como pendiente
+LIMA = datetime.timezone(datetime.timedelta(hours=-5))
 
 # Alias permanentes: el sistema de origen escribe algunos nombres distinto en cada pestaña y no se puede corregir ahí.
 # Clave = como aparece en alguna fuente; valor = nombre canónico (el de 🔰FEEDBACK).
@@ -61,6 +73,15 @@ def pct(v):
 def ipct(v):
     p = pct(v)
     return None if p is None else int(round(p))
+
+def to_int(v):
+    s = str(v if v is not None else '').replace(',', '.').strip()
+    if s in ('', '-', '—'):
+        return None
+    try:
+        return int(round(float(s)))
+    except ValueError:
+        return None
 
 def parse_date(s):
     m = re.match(r'\s*(\d{1,2})/(\d{1,2})/(\d{4})', str(s or ''))
@@ -147,6 +168,14 @@ def col(headers, *names):
             return h
     return None
 
+def dias_habiles(year, month, hasta=None):
+    """Días del mes sin contar domingos (así cuenta 🔰DIA/SEM los días restantes). hasta = último día incluido."""
+    n = calendar.monthrange(year, month)[1]
+    tope = hasta or n
+    total = sum(1 for d in range(1, n + 1) if datetime.date(year, month, d).weekday() != 6)
+    transc = sum(1 for d in range(1, tope + 1) if datetime.date(year, month, d).weekday() != 6)
+    return transc, total
+
 
 # ----------------------------------------------------------------------------- index.html → db
 def read_db_from_index():
@@ -227,23 +256,48 @@ for t in tecnicas:
     tec_count[norm(t['Asesor'])] = tec_count.get(norm(t['Asesor']), 0) + 1
 
 
-# ----------------------------------------------------------------------------- DASHBOARD (Matriz) → cuartiles, matrículas, equipo
+# ----------------------------------------------------------------------------- 🔰DIA/SEM → avance del mes por asesor
+hoy = datetime.datetime.now(LIMA).date()
+DH_TRANSC, DH_TOTAL = dias_habiles(hoy.year, hoy.month, hoy.day)
+FRACCION_MES = DH_TRANSC / DH_TOTAL if DH_TOTAL else 1.0
+mes_by_name = {}
+dv = load_values('diasem.json', required=False)
+if dv and len(dv) >= 5:
+    r_nom, r_hdr, r_val, r_lbl, r_logro = [list(map(str, r)) for r in dv[:5]]
+    g = lambda r, i: (r[i] if i < len(r) else '')
+    meta_global_mat = to_int(g(r_logro, 3))   # columnas A-D fijas: Meta PRE/POS/ING/MAT
+    c = 0
+    while c < max(len(r_nom), len(r_hdr)):
+        if norm(g(r_hdr, c)) == 'preinscritos' and str(g(r_nom, c)).strip():
+            name = canon_name(g(r_nom, c))
+            pre, pos, ing, mat = (to_int(g(r_val, c + i)) or 0 for i in range(4))
+            logro_mat = pct(g(r_logro, c + 3))
+            meta = int(round(mat / (logro_mat / 100.0))) if (mat > 0 and logro_mat) else meta_global_mat
+            mes_by_name[norm(name)] = {'pre': pre, 'pos': pos, 'ing': ing, 'mat': mat, 'meta': meta,
+                                       'logroMes': round(100.0 * mat / meta, 2) if meta else None}
+            c += 7
+        else:
+            c += 1
+
+def cuartil_matriculas(av):
+    if av is None: return None
+    return 'Q1' if av >= 100 else 'Q2' if av >= 80 else 'Q3' if av >= 70 else 'Q4'
+
+
+# ----------------------------------------------------------------------------- DASHBOARD (Matriz) → cuartil de calidad, campaña, equipo
 dash = load_values('dashboard.json', required=False)
 dash_by_name = {}
 equipo_sheet = {'mapaCalor': None, 'focoCualitativo': None, 'oportunidad': None, 'distribucionCuartiles': None}
 if dash:
-    # tabla "DETALLE POR ASESOR": fila de encabezados que empieza con "Asesor"
     hi = next((i for i, r in enumerate(dash) if r and norm(r[0]) == 'asesor'), None)
     if hi is not None:
         dh = [str(x) for x in dash[hi]]
-        # dos columnas "Score"/"Cuartil": la 1ª es calidad, la 2ª matrículas
         idx_score = [i for i, h in enumerate(dh) if norm(h) == 'score']
         idx_cuart = [i for i, h in enumerate(dh) if norm(h) == 'cuartil']
         i_mat = next((i for i, h in enumerate(dh) if norm(h) == 'matriculas'), None)
         i_meta = next((i for i, h in enumerate(dh) if norm(h).startswith('meta')), None)
         i_sede = next((i for i, h in enumerate(dh) if norm(h) == 'sede'), None)
         i_ant = next((i for i, h in enumerate(dh) if norm(h).startswith('antiguedad')), None)
-        i_st = {k: next((i for i, h in enumerate(dh) if norm(h).startswith(norm(STAGE_LABEL[k])) or (k == 'paso4' and norm(h).startswith('cierre'))), None) for k in STAGE_KEYS}
         for raw in dash[hi + 1:]:
             if not raw or not str(raw[0]).strip():
                 continue
@@ -254,13 +308,12 @@ if dash:
                 'antiguedad': str(g(i_ant)).strip() or None,
                 'calidadPromedio': ipct(g(idx_score[0])) if idx_score else None,
                 'cuartilCalidad': (str(g(idx_cuart[0])).strip().upper() or None) if idx_cuart else None,
-                'matriculas': (int(float(str(g(i_mat)).replace(',', '.'))) if str(g(i_mat)).strip() not in ('', '-') else None),
-                'metaCampana': (int(float(str(g(i_meta)).replace(',', '.'))) if str(g(i_meta)).strip() not in ('', '-') else None),
-                'avanceMeta': pct(g(idx_score[1])) if len(idx_score) > 1 else None,
-                'cuartilMatriculas': (str(g(idx_cuart[1])).strip().upper() or None) if len(idx_cuart) > 1 else None,
-                'etapasSheet': {k: ipct(g(i_st[k])) for k in STAGE_KEYS},
+                'campana': {
+                    'matriculas': to_int(g(i_mat)), 'meta': to_int(g(i_meta)),
+                    'avance': pct(g(idx_score[1])) if len(idx_score) > 1 else None,
+                    'cuartil': (str(g(idx_cuart[1])).strip().upper() or None) if len(idx_cuart) > 1 else None,
+                },
             }
-    # resumen: mapa de calor (pauta), focos, distribución por cuartiles
     for i, r in enumerate(dash):
         cells = [str(c) for c in r]
         for j, c in enumerate(cells):
@@ -283,7 +336,7 @@ if dash:
                 m = re.search(r'\n(.+?)\s*\|\s*(\d+)\s*%', c)
                 if m:
                     equipo_sheet['oportunidad'] = {'paso': stage_from_label(m.group(1)), 'pct': int(m.group(2))}
-            if nc == 'cuartil1' and i + 1 < len(dash):
+            if nc == 'cuartil1' and i + 4 < len(dash):
                 try:
                     q1 = int(dash[i + 1][j]); q2 = int(dash[i + 1][j + 1])
                     q3 = int(dash[i + 4][j]); q4 = int(dash[i + 4][j + 1])
@@ -343,6 +396,18 @@ def cuadrante_de(qc, qm):
     cal_ok = qc in ('Q1', 'Q2'); mat_ok = qm in ('Q1', 'Q2')
     return 'verde' if (cal_ok and mat_ok) else 'amarillo' if (mat_ok and not cal_ok) else 'naranja' if (cal_ok and not mat_ok) else 'rojo'
 
+def textos_de(row):
+    forts = str(row.get(H_FORTS, '') or '').strip() if H_FORTS else ''
+    oport = str(row.get(H_OPORT, '') or '').strip() if H_OPORT else ''
+    evid = str(row.get(H_EVID, '') or '').strip() if H_EVID else ''
+    blank = lambda s: s in ('', '_', '-', '—')
+    return ('' if blank(forts) else forts), ('' if blank(oport) else oport), ('' if blank(evid) else evid)
+
+def row_base(name, row):
+    forts, oport, evid = textos_de(row)
+    fecha = str(row.get(H_FECHA, '') or '').strip()
+    return sha12(norm(name) + '|' + norm(fecha) + '|' + norm(forts) + '|' + norm(oport) + '|' + norm(evid) + '|' + CHECK_HASH)
+
 
 # ----------------------------------------------------------------------------- cachés de Claude
 casos_cache = load_json(os.path.join(SYNC, 'casos_cache.json'), {})
@@ -352,25 +417,53 @@ pending = {'casos': [], 'checklist': []}
 def caso_base(texto, k):
     return sha12(norm(texto) + '|' + k)
 
+def leer_checklist_fila(name, row):
+    """Estado por ítem de UNA llamada evaluada: desde el caché (lectura de Claude) o todo sin evidencia si no hay texto."""
+    forts, oport, evid = textos_de(row)
+    base = row_base(name, row)
+    fecha = str(row.get(H_FECHA, '') or '').strip()
+    if not (forts or oport or evid):
+        return {it['id']: {'estado': 'sin_evidencia', 'evidencia': None} for it in CHECK_ITEMS}, base, False
+    cc = check_cache.get(base)
+    if cc and isinstance(cc.get('items'), dict):
+        out = {}
+        for it in CHECK_ITEMS:
+            e = cc['items'].get(it['id']) or {}
+            estado = e.get('estado') if e.get('estado') in ('ok', 'pendiente', 'sin_evidencia') else 'sin_evidencia'
+            out[it['id']] = {'estado': estado, 'evidencia': (e.get('evidencia') or '').strip() or None}
+        return out, base, False
+    pending['checklist'].append({'asesor': name, 'base': base, 'fecha': fecha,
+                                 'textos': {'fortalezaPrincipal': str(row.get(H_FORT_P, '') or ''), 'brechaPrincipal': str(row.get(H_BRECHA_P, '') or ''),
+                                            'fortalezas': forts, 'oportunidades': oport, 'evidencia': evid},
+                                 'items': CHECK_ITEMS})
+    return None, base, True
+
 analisis = {}
 for name, lst in hist.items():
     rows = [x[2] for x in lst]
     last = rows[-1]; prev = rows[-2] if len(rows) > 1 else None
     key = norm(name)
     d = dash_by_name.get(key, {})
+    m = mes_by_name.get(key)
     scores = [ipct(r.get(H_SCORE)) for r in rows]
     calidad_prom = d.get('calidadPromedio')
     if calidad_prom is None:
         calidad_prom = mean_int(scores)
     cuartil_cal = d.get('cuartilCalidad') or cuartil_calidad_local(calidad_prom)
-    cuartil_mat = d.get('cuartilMatriculas')
+
+    # avance de matrículas del mes (🔰DIA/SEM) → cuartil → cuadrante
+    avance_mes = m['logroMes'] if m else None
+    avance_ritmo = None
+    if m and m['meta']:
+        esperado = m['meta'] * FRACCION_MES
+        avance_ritmo = round(100.0 * m['mat'] / esperado, 2) if esperado > 0 else None
+    avance = avance_ritmo if AVANCE_MODO == 'ritmo' else avance_mes
+    cuartil_mat = cuartil_matriculas(avance)
     cuadrante = cuadrante_de(cuartil_cal, cuartil_mat)
 
     fort_k = stage_from_label(last.get(H_FORT_P)) if H_FORT_P else None
     brecha_k = stage_from_label(last.get(H_BRECHA_P)) if H_BRECHA_P else None
-    forts = str(last.get(H_FORTS, '') or '').strip() if H_FORTS else ''
-    oport = str(last.get(H_OPORT, '') or '').strip() if H_OPORT else ''
-    evid = str(last.get(H_EVID, '') or '').strip() if H_EVID else ''
+    forts, oport, evid = textos_de(last)
 
     stages = {}
     for k in STAGE_KEYS:
@@ -388,7 +481,7 @@ for name, lst in hist.items():
         elif k == brecha_k and oport:
             st['rol'] = 'oportunidad'; st['texto'] = oport
             base = caso_base(oport, k)
-            c = casos_cache.get(name) or casos_cache.get(f'{name}|{k}')
+            c = casos_cache.get(name)
             if c and c.get('base') == base and c.get('stage') == k:
                 tec = TEC_BY_ID.get(c.get('tecId')) if c.get('tecId') else None
                 st['tecnica'] = ({'id': tec['id'], 'titulo': tec['titulo'], 'ejemplo': (tec.get('ejemplos') or [None])[0]} if tec else None)
@@ -397,29 +490,47 @@ for name, lst in hist.items():
                 pending['casos'].append({'asesor': name, 'stage': k, 'base': base, 'oportunidades': oport, 'fortalezas': forts, 'evidencia': evid})
         stages[k] = st
 
-    # checklist de calidad: manual (Sheet) > lectura de Claude (caché) > pendiente
-    cbase = sha12(norm(forts) + '|' + norm(oport) + '|' + norm(evid) + '|' + CHECK_HASH)
+    # checklist de calidad: ventana de las últimas N llamadas evaluadas; manual (Sheet) manda sobre la lectura
+    ventana = rows[-VENTANA_CHECKLIST:]
+    lecturas = []   # de la más reciente a la más antigua: (fecha, items|None)
+    faltan = 0
+    for r in reversed(ventana):
+        items_r, base_r, pend = leer_checklist_fila(name, r)
+        if pend:
+            faltan += 1
+        lecturas.append((str(r.get(H_FECHA, '') or '').strip(), items_r))
+    # lecturas más antiguas ya en caché (fuera de la ventana): solo para saber si un check se "retiró"
+    antiguas = []
+    for r in reversed(rows[:-VENTANA_CHECKLIST]):
+        cc = check_cache.get(row_base(name, r))
+        if cc and isinstance(cc.get('items'), dict):
+            antiguas.append((str(r.get(H_FECHA, '') or '').strip(), cc['items']))
     items = {}
-    cc = check_cache.get(name)
-    fuente = None
-    if cc and cc.get('base') == cbase and isinstance(cc.get('items'), dict):
-        for it in CHECK_ITEMS:
-            e = cc['items'].get(it['id']) or {}
-            estado = e.get('estado') if e.get('estado') in ('ok', 'pendiente', 'sin_evidencia') else 'sin_evidencia'
-            items[it['id']] = {'estado': estado, 'evidencia': (e.get('evidencia') or '').strip() or None}
-        fuente = 'analisis'
-    else:
-        for it in CHECK_ITEMS:
-            items[it['id']] = {'estado': 'sin_evidencia', 'evidencia': None}
-        pending['checklist'].append({'asesor': name, 'base': cbase, 'fecha': str(last.get(H_FECHA, '')).strip(),
-                                     'textos': {'fortalezaPrincipal': str(last.get(H_FORT_P, '') or ''), 'brechaPrincipal': str(last.get(H_BRECHA_P, '') or ''),
-                                                'fortalezas': forts, 'oportunidades': oport, 'evidencia': evid},
-                                     'items': CHECK_ITEMS})
+    for it in CHECK_ITEMS:
+        iid = it['id']
+        decidido = None
+        for fecha_r, items_r in lecturas:
+            if not items_r:
+                continue
+            e = items_r.get(iid) or {}
+            if e.get('estado') in ('ok', 'pendiente'):
+                decidido = {'estado': e['estado'], 'evidencia': e.get('evidencia'), 'fecha': fecha_r or None}
+                break
+        if decidido is None:
+            decidido = {'estado': 'sin_evidencia', 'evidencia': None, 'fecha': None}
+            for fecha_r, items_r in antiguas:
+                e = items_r.get(iid) or {}
+                if e.get('estado') == 'ok':
+                    decidido['retirado'] = True
+                    decidido['fechaUltimoOk'] = fecha_r or None
+                    break
+        items[iid] = decidido
+    fuente = 'analisis' if lecturas else None
     manual = check_sheet.get(key)
     if manual:
         for iid, estado in manual.items():
             if iid in items:
-                items[iid] = {'estado': estado, 'evidencia': 'Validado por tu supervisor', 'fuente': 'sheet'}
+                items[iid] = {'estado': estado, 'evidencia': 'Validado por tu supervisor', 'fecha': None, 'fuente': 'sheet'}
         fuente = 'sheet' if fuente is None else fuente + '+sheet'
 
     analisis[name] = {
@@ -435,16 +546,23 @@ for name, lst in hist.items():
         'cuartilUltima': (str(last.get(H_CUARTIL, '')).strip().upper() or None) if H_CUARTIL else None,
         'calidadPromedio': calidad_prom,
         'cuartilCalidad': cuartil_cal,
-        'matriculas': d.get('matriculas'),
-        'metaCampana': d.get('metaCampana'),
-        'avanceMeta': d.get('avanceMeta'),
+        # matrículas del mes (🔰DIA/SEM)
+        'matriculas': m['mat'] if m else None,
+        'meta': m['meta'] if m else None,
+        'avanceMes': avance_mes,
+        'avanceRitmo': avance_ritmo,
+        'avanceMeta': avance,
+        'avanceModo': AVANCE_MODO,
         'cuartilMatriculas': cuartil_mat,
         'cuadrante': cuadrante,
+        'enMes': m is not None,
         'enMatriz': key in dash_by_name,
+        'campana': d.get('campana'),
         'puesto': None, 'totalAsesores': None, 'indice': None,
         'tecnicasDominadas': tec_count.get(key, 0),
         'tecnicasTotal': len(TECNICAS_LIB),
-        'checklist': {'base': cbase, 'fuente': fuente, 'items': items},
+        'checklist': {'fuente': fuente, 'ventana': VENTANA_CHECKLIST, 'evaluacionesLeidas': len([1 for _, x in lecturas if x]),
+                      'pendientes': faltan, 'items': items},
     }
 
 
@@ -453,7 +571,7 @@ def indice_de(a):
     c, m = a.get('calidadPromedio'), a.get('avanceMeta')
     if c is None:
         return None
-    return round((c + m) / 2, 1) if m is not None else float(c)
+    return round((c + min(m, AVANCE_TOPE_INDICE)) / 2, 1) if m is not None else float(c)
 
 ranked = []
 for name, a in analisis.items():
@@ -477,9 +595,13 @@ opor = equipo_sheet['oportunidad'] or {'paso': max(mapa, key=mapa.get), 'pct': i
 dist = equipo_sheet['distribucionCuartiles'] or {q: len([1 for a in analisis.values() if a['cuartilCalidad'] == q]) for q in ('Q1', 'Q2', 'Q3', 'Q4')}
 cuadrantes = {c: [n for n in ranked if analisis[n]['cuadrante'] == c] for c in ('verde', 'amarillo', 'naranja', 'rojo')}
 cuadrantes['sinMatriz'] = [n for n in ranked if analisis[n]['cuadrante'] is None]
+MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 equipo = {
-    'fecha': datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).strftime('%d/%m/%Y'),
-    'fuente': 'Matriz_CGO_Distancia_2027-I · DASHBOARD' if dash else '🔰FEEDBACK (sin Matriz: no hay cuartil de matrículas)',
+    'fecha': hoy.strftime('%d/%m/%Y'),
+    'mes': MESES[hoy.month - 1],
+    'diasHabiles': {'transcurridos': DH_TRANSC, 'total': DH_TOTAL},
+    'avanceModo': AVANCE_MODO,
+    'fuente': ('🔰DIA/SEM (avance del mes)' if mes_by_name else 'sin 🔰DIA/SEM') + ' · ' + ('Matriz DASHBOARD (calidad)' if dash else 'sin Matriz'),
     'mapaCalor': mapa, 'mapaCalorLocal': mapa_local,
     'focoCualitativo': foco, 'oportunidad': opor,
     'distribucionCuartiles': dist,
@@ -488,7 +610,7 @@ equipo = {
     'ranking': [{
         'asesor': n, 'puesto': analisis[n]['puesto'], 'sede': analisis[n]['sede'], 'cuadrante': analisis[n]['cuadrante'],
         'calidad': analisis[n]['calidadPromedio'], 'cuartilCalidad': analisis[n]['cuartilCalidad'],
-        'matriculas': analisis[n]['matriculas'], 'meta': analisis[n]['metaCampana'], 'avanceMeta': analisis[n]['avanceMeta'],
+        'matriculas': analisis[n]['matriculas'], 'meta': analisis[n]['meta'], 'avanceMeta': analisis[n]['avanceMeta'], 'avanceMes': analisis[n]['avanceMes'],
         'cuartilMatriculas': analisis[n]['cuartilMatriculas'], 'indice': analisis[n]['indice'],
         'tecnicas': analisis[n]['tecnicasDominadas'], 'evaluaciones': analisis[n]['numEvaluaciones'],
     } for n in ranked],
@@ -497,7 +619,7 @@ equipo = {
 
 # ----------------------------------------------------------------------------- salida
 out = {
-    'version': 6,
+    'version': 7,
     'generado': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
     'evaluacion': evaluacion,
     'tecnicas': tecnicas,
@@ -507,8 +629,9 @@ out = {
 with open(os.path.join(SYNC, 'pending.json'), 'w', encoding='utf-8') as f:
     json.dump(pending, f, ensure_ascii=False, indent=1)
 
-print(f'asesores: {len(analisis)} · evaluaciones: {len(evaluacion)} · técnicas marcadas: {len(tecnicas)} · en Matriz: {len([a for a in analisis.values() if a["enMatriz"]])}')
-print(f'cuadrantes: ' + ' · '.join(f'{c} {len(v)}' for c, v in cuadrantes.items()))
+print(f'asesores: {len(analisis)} · evaluaciones: {len(evaluacion)} · técnicas marcadas: {len(tecnicas)} · en 🔰DIA/SEM: {len([a for a in analisis.values() if a["enMes"]])} · en Matriz: {len([a for a in analisis.values() if a["enMatriz"]])}')
+print(f'mes: {equipo["mes"]} · días hábiles {DH_TRANSC}/{DH_TOTAL} · avance por {AVANCE_MODO}')
+print('cuadrantes: ' + ' · '.join(f'{c} {len(v)}' for c, v in cuadrantes.items()))
 if UNMATCHED_LOG:
     print('nombres cruzados por parecido / sin cruce:')
     print('\n'.join(sorted(set(UNMATCHED_LOG))))
@@ -516,12 +639,11 @@ print(f'PENDIENTES: casos={len(pending["casos"])} checklist={len(pending["checkl
 if DRY:
     print('(modo --dry: data.json no se escribió)')
 else:
-    # "generado" cambia en cada corrida: para comparar con el data.json anterior se ignora ese campo.
+    # "generado" y la fecha cambian en cada corrida: para comparar con el data.json anterior se ignoran.
     prev_path = os.path.join(ROOT, 'data.json')
     prev = load_json(prev_path, None)
     same = False
     if isinstance(prev, dict):
-        import copy
         a = copy.deepcopy(prev); b = copy.deepcopy(out)
         for x in (a, b):
             x.pop('generado', None)
