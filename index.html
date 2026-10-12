@@ -810,7 +810,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-12T13:19:23.000Z";
+  const DATA_VERSION = "2026-10-12T13:34:17.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1561,9 +1561,18 @@
     const matTxt = (a.matriculas !== null && a.matriculas !== undefined && a.meta) ? `${a.matriculas} de ${a.meta}` : null;
     if (calOk && matOk) return `${L.nivelEmoji} Eres ${L.nivel}: calidad de 85% o más y meta al día. Mantenlo.`;
     if (matOk && !calOk) return `Tu venta va bien. Para ser ${L.nivelEmoji} ${L.nivel} sube tu calidad promedio a 85% (hoy ${fmtPct(cal)}${faltaCal ? ', faltan ' + Math.ceil(faltaCal) + ' pts' : ''}).`;
-    const metaTxt = a.avanceModo === 'ritmo' ? '80% del ritmo de tu meta de matrículas' : '80% de tu meta de matrículas del mes';
-    if (calOk && !matOk) return `Tu atención es sólida. Para ser ${L.nivelEmoji} ${L.nivel} llega al ${metaTxt} (hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''}).`;
-    return `Dos frentes: calidad a 85% (hoy ${fmtPct(cal)}) y ${metaTxt} (hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''}). Tu supervisor te acompaña.`;
+    const eqc = (sheetDataCache.equipo && sheetDataCache.equipo.cortesMatriculas) || null;
+    const corteQ2 = eqc && eqc.Q2 !== null && eqc.Q2 !== undefined ? Math.ceil(eqc.Q2) : null;
+    let metaTxt, hoyTxt;
+    if (a.avanceModo === 'tablero') {
+      metaTxt = `entra al Q2 del equipo en matrículas${corteQ2 !== null ? ` (hoy el corte está en ${corteQ2})` : ''}`;
+      hoyTxt = (a.matriculas !== null && a.matriculas !== undefined) ? `llevas ${a.matriculas}` : fmtPct(av);
+    } else {
+      metaTxt = a.avanceModo === 'ritmo' ? 'llega al 80% del ritmo de tu meta de matrículas' : 'llega al 80% de tu meta de matrículas del mes';
+      hoyTxt = `hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''}`;
+    }
+    if (calOk && !matOk) return `Tu atención es sólida. Para ser ${L.nivelEmoji} ${L.nivel}, ${metaTxt}; ${hoyTxt}.`;
+    return `Dos frentes: calidad a 85% (hoy ${fmtPct(cal)}) y ${metaTxt} (${hoyTxt}). Tu supervisor te acompaña.`;
   }
   const STAGE_LABELS = { paso1: 'Ganar confianza', paso2: 'Identificar necesidades', paso3: 'Solucionar problemas', paso4: 'Cerrar' };
   const STAGE_KEYS = ['paso1', 'paso2', 'paso3', 'paso4'];
@@ -1952,7 +1961,7 @@
     const tecTot = a.tecnicasTotal || db.tecnicas.length;
     const eq = sheetDataCache.equipo || {};
     const hayMes = a.avanceMeta !== null && a.avanceMeta !== undefined;
-    const matSub = hayMes ? `${a.matriculas} de ${a.meta} ${eq.mes ? 'en ' + eq.mes : 'este mes'}${a.avanceModo === 'ritmo' ? ' · al ritmo del mes' : ''}` : 'Sin matrículas del mes registradas';
+    const matSub = hayMes ? `${a.matriculas} de ${a.meta} ${eq.mes ? 'en ' + eq.mes : 'este mes'}${a.avanceModo === 'tablero' && a.cuartilMatriculas ? ' · ' + a.cuartilMatriculas + ' por aporte en el equipo' : (a.avanceModo === 'ritmo' ? ' · al ritmo del mes' : '')}` : 'Sin matrículas del mes registradas';
 
     // Foco: la brecha principal (o la etapa más baja) de la llamada elegida + la técnica para practicar.
     const fk = getFocusStage(analysis, row);
@@ -2333,7 +2342,10 @@
       return `<div class="heat-row ${isFoco ? 'foco' : ''} ${isOpor ? 'opor' : ''}"><span class="heat-lbl">${STAGE_LABELS[k]}</span><span class="heat-track"><span class="heat-fill" style="width:${v ? Math.min(100, v / maxBar * 100) : 0}%"></span></span><span class="heat-val">${v !== undefined ? fmtPct(v, 2) : '—'}</span>${isFoco ? '<span class="heat-tag foco">🎯 foco</span>' : isOpor ? '<span class="heat-tag opor">✨ fortaleza</span>' : ''}</div>`;
     }).join('');
     const dist = eq.distribucionCuartiles || null;
-    const ritmoTxt = eq.avanceModo === 'ritmo' && eq.diasHabiles ? ` Avance = matrículas del mes sobre la meta al ritmo de hoy (día hábil ${eq.diasHabiles.transcurridos} de ${eq.diasHabiles.total}).` : '';
+    const cm = eq.cortesMatriculas || null;
+    const matRule = eq.avanceModo === 'tablero'
+      ? `Matrículas = cuartil por aporte en el equipo este mes, igual que el tablero: Q1 = el 25% que más matrículas lleva${cm && cm.Q1 !== null ? ` (hoy ≥ ${Math.ceil(cm.Q1)})` : ''}, Q2 desde la mitad del equipo${cm && cm.Q2 !== null ? ` (hoy ≥ ${Math.ceil(cm.Q2)})` : ''}, Q4 = los que menos llevan.`
+      : `Matrículas = avance sobre tu meta del mes: Q1 ≥ 100% · Q2 80–99% · Q3 70–79% · Q4 &lt; 70%.${eq.avanceModo === 'ritmo' && eq.diasHabiles ? ` Avance = matrículas del mes sobre la meta al ritmo de hoy (día hábil ${eq.diasHabiles.transcurridos} de ${eq.diasHabiles.total}).` : ''}`;
 
     body.innerHTML = `
       <section class="rk-section" data-capturable>
@@ -2351,7 +2363,7 @@
         <div class="cq-grid">${cell('amarillo')}${cell('verde')}${cell('rojo')}${cell('naranja')}</div>
         <div class="cq-axis-bottom"><span>← Atención por fortalecer (Q3/Q4 de calidad)</span><span>Atención alta (Q1/Q2 de calidad) →</span></div>
         ${sinMatriz}
-        <div class="rk-rule">Calidad = promedio de tus llamadas evaluadas: Q1 ≥ 95% · Q2 85–94% · Q3 75–84% · Q4 ≤ 74%. Matrículas = avance sobre tu meta del mes: Q1 ≥ 100% · Q2 80–99% · Q3 70–79% · Q4 &lt; 70%.${ritmoTxt}</div>
+        <div class="rk-rule">Calidad = promedio de tus llamadas evaluadas: Q1 ≥ 95% · Q2 85–94% · Q3 75–84% · Q4 ≤ 74%. ${matRule}</div>
         ${imgFootHTML()}
       </section>
       <section class="rk-section" data-capturable>

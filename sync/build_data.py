@@ -5,7 +5,9 @@ Arma data.json para la página "Propuesta de Valor" (CGO Distancia) a partir de:
 
   sync/inputs/feedback.json   ← '🔰FEEDBACK'!A1:R2000   (archivo I, spreadsheetId 1SJAgbcxpVXpRZ6_Vb4_VW1Pl9BJZMyR8cTH-hmvgdEE)
   sync/inputs/tecnicas.json   ← '🏆 TECNICAS'!A1:Z60    (archivo I)
-  sync/inputs/diasem.json     ← '🔰DIA/SEM'!A19:IF23    (archivo I: avance del mes por asesor y su meta de matrículas)
+  sync/inputs/gen.json        ← '🔰GEN'!A24:J56         (archivo I, tablero: ranking del mes por asesor: matrículas, % de meta y cuartil por aporte)
+  sync/inputs/metas.json      ← '🧮GC'!B130:J159        (archivo I: meta mensual de matrículas por asesor y mes)
+  sync/inputs/diasem.json     ← '🔰DIA/SEM'!A19:IF23    (archivo I; solo respaldo si falta gen.json)
   sync/inputs/dashboard.json  ← 'DASHBOARD'!B5:O90      (Matriz_CGO_Distancia_2027-I, spreadsheetId 1MaiDiBNBicpttRJs2oSAyKvbAD0nI963anN9wfYoeOM:
                                                           cuartil de calidad, mapa de calor y focos del equipo)
   sync/inputs/checklist.json  ← '✅ CHECKLIST'!A1:AZ80  (archivo I; OPCIONAL: validación manual del supervisor)
@@ -30,9 +32,11 @@ DRY = '--dry' in sys.argv
 
 # ----------------------------------------------------------------------------- parámetros del modelo
 # Avance de matrículas que define el cuartil (y el cuadrante):
-#   'ritmo' → matrículas del mes / meta prorrateada a los días hábiles transcurridos (¿vas al ritmo del mes?)
-#   'mes'   → matrículas del mes / meta completa del mes (el "Logro %" de 🔰DIA/SEM)
-AVANCE_MODO = 'mes'
+#   'tablero' → como el tablero 🔰GEN de Christopher: % = matrículas del mes / meta del mes del asesor, y el cuartil es
+#               RELATIVO al equipo (QUARTILE de las matrículas del mes: Q1 = el 25% que más lleva), justo a cualquier día del mes
+#   'ritmo'   → (respaldo con 🔰DIA/SEM) matrículas / meta prorrateada a los días hábiles transcurridos
+#   'mes'     → (respaldo con 🔰DIA/SEM) matrículas / meta completa del mes, cuartil por umbral fijo
+AVANCE_MODO = 'tablero'
 AVANCE_TOPE_INDICE = 150        # en el índice del ranking el avance cuenta hasta este %, para que un pico temprano no distorsione
 VENTANA_CHECKLIST = 3           # un ítem validado se conserva mientras aparezca en alguna de las últimas N llamadas evaluadas
                                 # y ninguna posterior lo marque como pendiente
@@ -283,6 +287,68 @@ def cuartil_matriculas(av):
     if av is None: return None
     return 'Q1' if av >= 100 else 'Q2' if av >= 80 else 'Q3' if av >= 70 else 'Q4'
 
+def quartile_inc(vals, q):
+    """QUARTILE.INC de Sheets/Excel (interpolación lineal) sobre una lista de números."""
+    v = sorted(float(x) for x in vals)
+    if not v:
+        return None
+    pos = (len(v) - 1) * q / 4.0
+    lo = int(pos); hi = min(lo + 1, len(v) - 1)
+    return v[lo] + (v[hi] - v[lo]) * (pos - lo)
+
+# ----------------------------------------------------------------------------- 🧮GC → meta mensual por asesor
+MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+meta_by_name = {}
+mv = load_values('metas.json', required=False)
+if mv and len(mv) >= 2:
+    mh = [norm(x) for x in mv[0]]
+    ci = next((i for i, h in enumerate(mh) if h == norm(MESES[hoy.month - 1])), None)
+    if ci is not None:
+        for raw in mv[1:]:
+            if not raw or not str(raw[0]).strip() or norm(raw[0]).startswith('div'):
+                continue
+            meta = to_int(raw[ci]) if ci < len(raw) else None
+            if meta:
+                meta_by_name[norm(canon_name(raw[0]))] = meta
+
+# ----------------------------------------------------------------------------- 🔰GEN (tablero) → matrículas del mes, % de meta y cuartil por aporte
+tablero_by_name = {}
+cortes_matriculas = None
+gv = load_values('gen.json', required=False)
+if gv:
+    hi = next((i for i, r in enumerate(gv) if r and norm(r[0]) == 'puesto'), None)
+    if hi is not None:
+        gh = [norm(x) for x in gv[hi]]
+        i_nom = next((i for i, h in enumerate(gh) if h.startswith('usuariodepreinscripcion')), 2)
+        i_q = next((i for i, h in enumerate(gh) if h.startswith('avancedelmesq')), 3)
+        i_pct = next((i for i, h in enumerate(gh) if h.startswith('avancedelmes') and h != gh[i_q]), 4)
+        i_cu = 1
+        filas = []
+        for raw in gv[hi + 1:]:
+            if not raw or len(raw) <= i_nom or not str(raw[i_nom]).strip():
+                continue
+            if norm(raw[0]).startswith('total'):
+                break
+            name = canon_name(raw[i_nom])
+            q = to_int(raw[i_q]) if i_q < len(raw) else None
+            if q is None:
+                continue
+            m = re.match(r'cuartil\s*(\d)', norm(raw[i_cu]).replace('cuartil', 'cuartil ')) if i_cu < len(raw) else None
+            filas.append({'name': name, 'q': q, 'pct': pct(raw[i_pct]) if i_pct < len(raw) else None,
+                          'cuartil': ('Q' + m.group(1)) if m else None, 'puesto': to_int(raw[0])})
+        if filas:
+            qs = [f['q'] for f in filas]
+            p75, p50, p25 = quartile_inc(qs, 3), quartile_inc(qs, 2), quartile_inc(qs, 1)
+            cortes_matriculas = {'Q1': p75, 'Q2': p50, 'Q3': p25}
+            for f in filas:
+                if not f['cuartil']:   # si el tablero muestra otra cosa en esa columna, mismo criterio QUARTILE
+                    f['cuartil'] = 'Q1' if f['q'] >= p75 else 'Q2' if f['q'] >= p50 else 'Q3' if f['q'] >= p25 else 'Q4'
+                meta = meta_by_name.get(norm(f['name']))
+                if not meta and f['q'] and f['pct']:
+                    meta = int(round(f['q'] / (f['pct'] / 100.0)))
+                tablero_by_name[norm(f['name'])] = {'mat': f['q'], 'meta': meta, 'avanceMes': f['pct'] if f['pct'] is not None else (round(100.0 * f['q'] / meta, 2) if meta else None),
+                                                    'cuartil': f['cuartil'], 'puestoTablero': f['puesto']}
+
 
 # ----------------------------------------------------------------------------- DASHBOARD (Matriz) → cuartil de calidad, campaña, equipo
 dash = load_values('dashboard.json', required=False)
@@ -451,14 +517,23 @@ for name, lst in hist.items():
         calidad_prom = mean_int(scores)
     cuartil_cal = d.get('cuartilCalidad') or cuartil_calidad_local(calidad_prom)
 
-    # avance de matrículas del mes (🔰DIA/SEM) → cuartil → cuadrante
-    avance_mes = m['logroMes'] if m else None
-    avance_ritmo = None
-    if m and m['meta']:
-        esperado = m['meta'] * FRACCION_MES
-        avance_ritmo = round(100.0 * m['mat'] / esperado, 2) if esperado > 0 else None
-    avance = avance_ritmo if AVANCE_MODO == 'ritmo' else avance_mes
-    cuartil_mat = cuartil_matriculas(avance)
+    # avance de matrículas del mes → cuartil → cuadrante
+    t = tablero_by_name.get(key)
+    if AVANCE_MODO == 'tablero' and t:
+        m = {'mat': t['mat'], 'meta': t['meta'], 'logroMes': t['avanceMes']}
+        avance_mes = t['avanceMes']; avance_ritmo = None
+        avance = avance_mes
+        cuartil_mat = t['cuartil']
+        modo = 'tablero'
+    else:
+        avance_mes = m['logroMes'] if m else None
+        avance_ritmo = None
+        if m and m['meta']:
+            esperado = m['meta'] * FRACCION_MES
+            avance_ritmo = round(100.0 * m['mat'] / esperado, 2) if esperado > 0 else None
+        avance = avance_ritmo if AVANCE_MODO == 'ritmo' else avance_mes
+        cuartil_mat = cuartil_matriculas(avance)
+        modo = 'ritmo' if AVANCE_MODO == 'ritmo' else 'mes'
     cuadrante = cuadrante_de(cuartil_cal, cuartil_mat)
 
     fort_k = stage_from_label(last.get(H_FORT_P)) if H_FORT_P else None
@@ -552,7 +627,7 @@ for name, lst in hist.items():
         'avanceMes': avance_mes,
         'avanceRitmo': avance_ritmo,
         'avanceMeta': avance,
-        'avanceModo': AVANCE_MODO,
+        'avanceModo': modo,
         'cuartilMatriculas': cuartil_mat,
         'cuadrante': cuadrante,
         'enMes': m is not None,
@@ -595,13 +670,13 @@ opor = equipo_sheet['oportunidad'] or {'paso': max(mapa, key=mapa.get), 'pct': i
 dist = equipo_sheet['distribucionCuartiles'] or {q: len([1 for a in analisis.values() if a['cuartilCalidad'] == q]) for q in ('Q1', 'Q2', 'Q3', 'Q4')}
 cuadrantes = {c: [n for n in ranked if analisis[n]['cuadrante'] == c] for c in ('verde', 'amarillo', 'naranja', 'rojo')}
 cuadrantes['sinMatriz'] = [n for n in ranked if analisis[n]['cuadrante'] is None]
-MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 equipo = {
     'fecha': hoy.strftime('%d/%m/%Y'),
     'mes': MESES[hoy.month - 1],
     'diasHabiles': {'transcurridos': DH_TRANSC, 'total': DH_TOTAL},
-    'avanceModo': AVANCE_MODO,
-    'fuente': ('🔰DIA/SEM (avance del mes)' if mes_by_name else 'sin 🔰DIA/SEM') + ' · ' + ('Matriz DASHBOARD (calidad)' if dash else 'sin Matriz'),
+    'avanceModo': 'tablero' if tablero_by_name else AVANCE_MODO,
+    'cortesMatriculas': cortes_matriculas,
+    'fuente': ('🔰GEN tablero (matrículas del mes, cuartil por aporte)' if tablero_by_name else ('🔰DIA/SEM (avance del mes)' if mes_by_name else 'sin avance del mes')) + ' · ' + ('Matriz DASHBOARD (calidad)' if dash else 'sin Matriz'),
     'mapaCalor': mapa, 'mapaCalorLocal': mapa_local,
     'focoCualitativo': foco, 'oportunidad': opor,
     'distribucionCuartiles': dist,
@@ -629,8 +704,8 @@ out = {
 with open(os.path.join(SYNC, 'pending.json'), 'w', encoding='utf-8') as f:
     json.dump(pending, f, ensure_ascii=False, indent=1)
 
-print(f'asesores: {len(analisis)} · evaluaciones: {len(evaluacion)} · técnicas marcadas: {len(tecnicas)} · en 🔰DIA/SEM: {len([a for a in analisis.values() if a["enMes"]])} · en Matriz: {len([a for a in analisis.values() if a["enMatriz"]])}')
-print(f'mes: {equipo["mes"]} · días hábiles {DH_TRANSC}/{DH_TOTAL} · avance por {AVANCE_MODO}')
+print(f'asesores: {len(analisis)} · evaluaciones: {len(evaluacion)} · técnicas marcadas: {len(tecnicas)} · con avance del mes: {len([a for a in analisis.values() if a["enMes"]])} · en Matriz: {len([a for a in analisis.values() if a["enMatriz"]])}')
+print(f'mes: {equipo["mes"]} · días hábiles {DH_TRANSC}/{DH_TOTAL} · avance por {equipo["avanceModo"]} · cortes de matrículas: {cortes_matriculas}')
 print('cuadrantes: ' + ' · '.join(f'{c} {len(v)}' for c, v in cuadrantes.items()))
 if UNMATCHED_LOG:
     print('nombres cruzados por parecido / sin cruce:')
