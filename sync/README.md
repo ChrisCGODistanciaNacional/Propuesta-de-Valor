@@ -43,8 +43,10 @@ Cada archivo es el JSON tal cual lo devuelve el conector de Google Sheets (`{"ra
 
 `casos_cache.json` (clave: nombre del asesor):
 ```json
-{"stage": "paso3", "tecId": "tec_08", "tipo": "speech", "porQue": "...", "speech": "...", "base": "<12 hex>"}
+{"stage": "paso3", "tecId": "tec_08", "tipo": "speech", "porQue": "...", "speech": "...", "base": "<12 hex>",
+ "dialogo": [{"quien": "asesor", "texto": "..."}, {"quien": "cliente", "texto": "..."}, {"quien": "asesor", "texto": "..."}]}
 ```
+`dialogo` es la conversación de ejemplo tipo WhatsApp (asesor a la izquierda, cliente a la derecha): 3 turnos del asesor (los párrafos del speech) con 2–3 respuestas cortas y realistas del cliente entre medio, coherentes con la observación del supervisor. `speech` = solo los turnos del asesor unidos por línea en blanco (es lo que copia el botón). Para `tipo: "accion"` no hay diálogo.
 `checklist_cache.json` (clave: `base` de la LLAMADA evaluada = hash de asesor + fecha + textos):
 ```json
 {"asesor": "Diana Carol Taipe Rojas", "fecha": "06/10/2026", "items": {"paso1_1": {"estado": "ok|pendiente|sin_evidencia", "evidencia": "..." }}}

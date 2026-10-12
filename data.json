@@ -1,6 +1,6 @@
 {
  "version": 7,
- "generado": "2026-10-12T16:11:09Z",
+ "generado": "2026-10-12T17:14:42Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -1915,9 +1915,31 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "[nombre], antes de hablarte de la inversión quiero entenderte mejor: ya tienes una carrera y hoy decides estudiar Ingeniería de Sistemas. ¿Qué te hizo dar ese paso y qué quieres lograr cuando la termines?\n\nEntonces lo que buscas es [repetir sus palabras: crecer en tu trabajo, cambiar de rubro, tener un título que te abra puertas]. Justamente por eso te conviene Distancia: estudias sin dejar tu trabajo, con clases grabadas si algún día no llegas en vivo, y lo que ya estudiaste pasa por evaluación de sílabos para reconocerte cursos. El ahorro de hoy ayuda, pero lo que te lleva a la meta es eso.\n\n¿Te parece si revisamos juntos tu plan de estudios ahora mismo y te muestro cómo quedaría tu primer ciclo?",
+      "texto": "[nombre], antes de hablarte de la inversión quiero entenderte mejor: ya tienes una carrera y hoy decides estudiar Ingeniería de Sistemas. ¿Qué te hizo dar ese paso y qué quieres lograr cuando la termines?\n\nEntonces lo que buscas es crecer en tu trabajo y tener un título que te abra puertas, no solo pagar menos. Justamente por eso te conviene Distancia: estudias sin dejar tu trabajo, con clases grabadas si algún día no llegas en vivo, y lo que ya estudiaste pasa por evaluación de sílabos para reconocerte cursos. El ahorro de hoy ayuda, pero lo que te lleva a esa meta es esto.\n\n¿Te parece si revisamos juntos tu plan de estudios ahora mismo y te muestro cómo quedaría tu primer ciclo?",
       "porQue": "Devolverle su propia razón para estudiar Sistemas convierte la conversación en una necesidad real y no en una compra por descuento: la propuesta se sostiene aunque la promoción cambie.",
-      "base": "6a7679b277da"
+      "base": "6a7679b277da",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "[nombre], antes de hablarte de la inversión quiero entenderte mejor: ya tienes una carrera y hoy decides estudiar Ingeniería de Sistemas. ¿Qué te hizo dar ese paso y qué quieres lograr cuando la termines?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "En mi trabajo todo se está yendo a sistemas y siento que me estoy quedando. Quiero crecer ahí y, si se puede, tener un título que me abra otras puertas. Pero lo que más me importa ahorita es el descuento."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Entonces lo que buscas es crecer en tu trabajo y tener un título que te abra puertas, no solo pagar menos. Justamente por eso te conviene Distancia: estudias sin dejar tu trabajo, con clases grabadas si algún día no llegas en vivo, y lo que ya estudiaste pasa por evaluación de sílabos para reconocerte cursos. El ahorro de hoy ayuda, pero lo que te lleva a esa meta es esto."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Eso de que me reconozcan cursos no lo sabía. ¿Cómo sería mi primer ciclo?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "¿Te parece si revisamos juntos tu plan de estudios ahora mismo y te muestro cómo quedaría tu primer ciclo?"
+       }
+      ]
      }
     },
     "paso3": {
@@ -1964,7 +1986,7 @@
     "avance": 136.36,
     "cuartil": "Q1"
    },
-   "puesto": 3,
+   "puesto": 4,
    "totalAsesores": 25,
    "indice": 51.6,
    "tecnicasDominadas": 0,
@@ -2138,7 +2160,7 @@
     "avance": 136.36,
     "cuartil": "Q1"
    },
-   "puesto": 13,
+   "puesto": 20,
    "totalAsesores": 25,
    "indice": 33.6,
    "tecnicasDominadas": 0,
@@ -2282,9 +2304,31 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Jordi, me dijiste qué era lo más importante para ti, y acabamos de ver cómo la carrera lo cubre. ¿Hasta aquí te hace sentido? Perfecto.\n\nY sobre la inversión, ¿te acomoda la forma de pago que te expliqué? Bien, entonces ya tenemos dos cosas claras.\n\nTe envío el resumen por WhatsApp ahora mismo, pero no lo dejamos en el aire: ¿te llamo mañana a las 6 de la tarde para confirmar tu postulación, o prefieres en la mañana?",
+      "texto": "Jordi, me dijiste qué era lo más importante para ti, y acabamos de ver cómo la carrera lo cubre. ¿Hasta aquí te hace sentido?\n\nPerfecto. Y sobre la inversión, ¿te acomoda la forma de pago que te expliqué? Entonces ya tenemos dos cosas claras.\n\nTe envío el resumen por WhatsApp ahora mismo, pero no lo dejamos en el aire: ¿te llamo mañana a las 6 de la tarde para confirmar tu postulación, o prefieres en la mañana?",
       "porQue": "Ya tienes la necesidad de Jordi y los beneficios conectados a ella: lo que faltó fue convertir cada acuerdo en un pequeño \"sí\" y cerrar con una cita, no con \"me escribes\".",
-      "base": "6c1db55f156c"
+      "base": "6c1db55f156c",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Jordi, me dijiste qué era lo más importante para ti, y acabamos de ver cómo la carrera lo cubre. ¿Hasta aquí te hace sentido?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, la verdad sí. Me gustó lo de las clases grabadas, porque con mi turno no podría ir a una universidad."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. Y sobre la inversión, ¿te acomoda la forma de pago que te expliqué? Entonces ya tenemos dos cosas claras."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, me acomoda. Igual quiero revisar bien la información; mándamela por WhatsApp y te aviso."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te envío el resumen por WhatsApp ahora mismo, pero no lo dejamos en el aire: ¿te llamo mañana a las 6 de la tarde para confirmar tu postulación, o prefieres en la mañana?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -2321,7 +2365,7 @@
     "avance": 109.09,
     "cuartil": "Q1"
    },
-   "puesto": 5,
+   "puesto": 6,
    "totalAsesores": 25,
    "indice": 49.9,
    "tecnicasDominadas": 0,
@@ -2467,7 +2511,33 @@
       "tipo": "speech",
       "texto": "Te explico cómo funciona la convalidación para que tengas la foto completa desde ahora: se hace por una sola vía según tu caso, por tu carrera anterior, por traslado o por experiencia laboral. No se combinan, así que lo primero es ver cuál te conviene más a ti.\n\nLo que te reconozcan exactamente lo define el área académica cuando revisa tus documentos; por eso no te voy a adelantar ciclos ni años, prefiero que avances con información segura.\n\n¿Qué tienes a la mano: certificados de tu carrera anterior o constancias de trabajo? Con eso te digo por cuál vía empezamos.",
       "porQue": "Las preguntas \"¿puedo sumar las dos vías?\" y \"¿cuántos ciclos me reconocen?\" aparecen tarde y generan expectativas; te adelantas a ambas explicando la regla antes.",
-      "base": "3407772dec42"
+      "base": "3407772dec42",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Yo estudié dos años en un instituto y además tengo cinco años trabajando en el rubro. ¿Me convalidan las dos cosas para terminar más rápido?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te explico cómo funciona la convalidación para que tengas la foto completa desde ahora: se hace por una sola vía según tu caso, por tu carrera anterior, por traslado o por experiencia laboral. No se combinan, así que lo primero es ver cuál te conviene más a ti."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ah, pensé que se sumaban. ¿Y cuántos ciclos me reconocerían?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Lo que te reconozcan exactamente lo define el área académica cuando revisa tus documentos; por eso no te voy a adelantar ciclos ni años, prefiero que avances con información segura."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Me parece bien, prefiero saberlo de verdad."
+       },
+       {
+        "quien": "asesor",
+        "texto": "¿Qué tienes a la mano: certificados de tu carrera anterior o constancias de trabajo? Con eso te digo por cuál vía empezamos."
+       }
+      ]
      }
     },
     "paso4": {
@@ -2494,8 +2564,8 @@
    "avanceRitmo": null,
    "avanceMeta": 5.56,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -2504,7 +2574,7 @@
     "avance": 72.73,
     "cuartil": "Q3"
    },
-   "puesto": 22,
+   "puesto": 17,
    "totalAsesores": 25,
    "indice": 37.3,
    "tecnicasDominadas": 0,
@@ -2650,7 +2720,33 @@
       "tipo": "speech",
       "texto": "[nombre], te escuché y lo que te frena no es la inversión, es que tus horarios van a cambiar y no quieres comprometerte a algo que después no puedas cumplir, ¿cierto?\n\nJusto para eso está pensada la modalidad a distancia: no dependes de un horario fijo, las clases quedan grabadas y las ves cuando tu día lo permita, y avanzas al ritmo de tu trabajo. O sea, si tu turno cambia, tu carrera sigue; tú eliges cuándo estudiar.\n\nCon eso claro, no te voy a dejar la pelota a ti: dime a qué hora exacta te llamo hoy para confirmar, ¿a las 5 o a las 7?",
       "porQue": "La barrera real era el tiempo por cambios laborales: al repetirla con sus palabras y resolverla con la flexibilidad de la modalidad, la decisión deja de depender de esa duda y el cierre tiene base.",
-      "base": "a27d008efd10"
+      "base": "a27d008efd10",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Me interesa, pero en mi trabajo me van a cambiar de horario y no sé si voy a poder. Dame una hora y te respondo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "[nombre], te escuché y lo que te frena no es la inversión, es que tus horarios van a cambiar y no quieres comprometerte a algo que después no puedas cumplir, ¿cierto?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Exacto. No quiero pagar y después no poder entrar a clases."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Justo para eso está pensada la modalidad a distancia: no dependes de un horario fijo, las clases quedan grabadas y las ves cuando tu día lo permita, y avanzas al ritmo de tu trabajo. O sea, si tu turno cambia, tu carrera sigue; tú eliges cuándo estudiar."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, así sí me animo más. Déjame confirmar en una hora."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Con eso claro, no te voy a dejar la pelota a ti: dime a qué hora exacta te llamo hoy para confirmar, ¿a las 5 o a las 7?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -2671,11 +2767,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 75,
    "cuartilCalidad": "Q3",
-   "matriculas": 2,
+   "matriculas": 1,
    "meta": 18,
-   "avanceMes": 11.11,
+   "avanceMes": 5.56,
    "avanceRitmo": null,
-   "avanceMeta": 11.11,
+   "avanceMeta": 5.56,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
@@ -2687,9 +2783,9 @@
     "avance": 54.55,
     "cuartil": "Q4"
    },
-   "puesto": 10,
+   "puesto": 14,
    "totalAsesores": 25,
-   "indice": 43.1,
+   "indice": 40.3,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -2823,7 +2919,33 @@
       "tipo": "speech",
       "texto": "Te adelanto dos cosas que suelen generar dudas, para que las tengas claras desde ahora. Primero, la evaluación de ingreso: no es un examen de conocimientos, es una entrevista virtual con cámara donde conversamos sobre tu motivación y tu compromiso con la carrera, así que no tienes que estudiar nada para rendirla.\n\nSegundo, tu pago inicial: incluye admisión, matrícula, seguro y tu primera cuota. Te los detallo uno por uno para que sepas exactamente cuánto es y cuándo se paga cada uno, sin sorpresas después.\n\n¿Vamos primero con los montos o con la fecha de tu evaluación?",
       "porQue": "Las dudas sobre la evaluación de ingreso y sobre el pago inicial frenan la decisión si quedan sueltas: te adelantas a las dos y las explicas completas. Usa su nombre al abrir y al cerrar.",
-      "base": "ced8c75c5730"
+      "base": "ced8c75c5730",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "¿Y la evaluación de ingreso es difícil? Hace años que no estudio."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te adelanto dos cosas que suelen generar dudas, para que las tengas claras desde ahora. Primero, la evaluación de ingreso: no es un examen de conocimientos, es una entrevista virtual con cámara donde conversamos sobre tu motivación y tu compromiso con la carrera, así que no tienes que estudiar nada para rendirla."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Qué alivio. ¿Y al inicio cuánto tendría que pagar? No quiero sorpresas después."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Segundo, tu pago inicial: incluye admisión, matrícula, seguro y tu primera cuota. Te los detallo uno por uno para que sepas exactamente cuánto es y cuándo se paga cada uno, sin sorpresas después."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, perfecto."
+       },
+       {
+        "quien": "asesor",
+        "texto": "¿Vamos primero con los montos o con la fecha de tu evaluación?"
+       }
+      ]
      }
     },
     "paso3": {
@@ -2854,11 +2976,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 65,
    "cuartilCalidad": "Q4",
-   "matriculas": 9,
+   "matriculas": 8,
    "meta": 18,
-   "avanceMes": 50.0,
+   "avanceMes": 44.44,
    "avanceRitmo": null,
-   "avanceMeta": 50.0,
+   "avanceMeta": 44.44,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -2870,9 +2992,9 @@
     "avance": 90.91,
     "cuartil": "Q2"
    },
-   "puesto": 1,
+   "puesto": 3,
    "totalAsesores": 25,
-   "indice": 57.5,
+   "indice": 54.7,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -3014,9 +3136,31 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Antes de contarte todo, quiero entender qué es lo que más pesa en tu decisión: ¿el tiempo para estudiar, la inversión mensual o el proceso de traslado? Dime eso y me enfoco en lo que de verdad te importa.\n\n[Si te pregunta por becas] Te lo digo con claridad para que no te quedes con dudas: la beca no aplica en el primer ciclo, pero desde el segundo, si mantienes buen promedio, concursas a una semibeca por excelencia ciclo a ciclo. Tu propio rendimiento te ayuda a bajar la cuota.\n\nAparte de eso, ¿hay algo más que te impida empezar este ciclo? Si no, lo dejamos encaminado hoy. Me dijiste que me respondes en la noche: ¿te escribo yo a las 8 para confirmar, o prefieres a las 9?",
+      "texto": "Antes de contarte todo, quiero entender qué es lo que más pesa en tu decisión: ¿el tiempo para estudiar, la inversión mensual o el proceso de traslado? Dime eso y me enfoco en lo que de verdad te importa.\n\nTe lo digo con claridad para que no te quedes con dudas: la beca no aplica en el primer ciclo, pero desde el segundo, si mantienes buen promedio, concursas a una semibeca por excelencia ciclo a ciclo. Tu propio rendimiento te ayuda a bajar la cuota.\n\nAparte de eso, ¿hay algo más que te impida empezar este ciclo? Si no, lo dejamos encaminado hoy. Me dijiste que me respondes en la noche: ¿te escribo yo a las 8 para confirmar, o prefieres a las 9?",
       "porQue": "El factor decisivo apareció recién al final: pregunta desde el inicio qué pesa más en su decisión sin sugerir la beca (no aplica el primer ciclo), responde con claridad si ella la menciona y cierra con hora exacta.",
-      "base": "0d0dcdbfbe31"
+      "base": "0d0dcdbfbe31",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Antes de contarte todo, quiero entender qué es lo que más pesa en tu decisión: ¿el tiempo para estudiar, la inversión mensual o el proceso de traslado? Dime eso y me enfoco en lo que de verdad te importa."
+       },
+       {
+        "quien": "cliente",
+        "texto": "La inversión. Yo quería saber si hay alguna beca, porque con una beca sí me animaría."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te lo digo con claridad para que no te quedes con dudas: la beca no aplica en el primer ciclo, pero desde el segundo, si mantienes buen promedio, concursas a una semibeca por excelencia ciclo a ciclo. Tu propio rendimiento te ayuda a bajar la cuota."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ah, o sea depende de mí. Eso sí me motiva. Déjame pensarlo y te respondo en la noche."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Aparte de eso, ¿hay algo más que te impida empezar este ciclo? Si no, lo dejamos encaminado hoy. Me dijiste que me respondes en la noche: ¿te escribo yo a las 8 para confirmar, o prefieres a las 9?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -3053,7 +3197,7 @@
     "avance": 118.18,
     "cuartil": "Q1"
    },
-   "puesto": 24,
+   "puesto": 25,
    "totalAsesores": 25,
    "indice": 34.5,
    "tecnicasDominadas": 0,
@@ -3197,9 +3341,35 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "[nombre], entonces con los ciclos de verano adelantas cursos y terminas antes de lo que pensabas. Con eso, ¿la duración ya te cuadra? Perfecto.\n\nSobre la inversión, ya vimos que se paga por partes y no todo de golpe, ¿te hace sentido así? Bien. Y para que no te tome por sorpresa: el proceso de admisión no tiene examen de conocimientos; es una evaluación virtual, con cámara, para conocer tus motivaciones y confirmar que la carrera es para ti.\n\nComo ya te cuadran la duración y la inversión, demos el siguiente paso: ¿te llamo mañana a las 10 o a las 4 para dejar iniciado tu proceso?",
+      "texto": "[nombre], entonces con los ciclos de verano adelantas cursos y terminas antes de lo que pensabas. Con eso, ¿la duración ya te cuadra?\n\nSobre la inversión, ya vimos que se paga por partes y no todo de golpe, ¿te hace sentido así? Y para que no te tome por sorpresa: el proceso de admisión no tiene examen de conocimientos; es una evaluación virtual, con cámara, para conocer tus motivaciones y confirmar que la carrera es para ti.\n\nComo ya te cuadran la duración y la inversión, demos el siguiente paso: ¿te llamo mañana a las 10 o a las 4 para dejar iniciado tu proceso?",
       "porQue": "Resolviste bien duración y costo; faltó validar intención después de cada respuesta: los pequeños sí convierten cada alternativa en un paso hacia el proceso y evitan el seguimiento abierto.",
-      "base": "99c4cce42cc0"
+      "base": "99c4cce42cc0",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Me preocupa que la carrera me tome muchos años; yo quiero terminar rápido."
+       },
+       {
+        "quien": "asesor",
+        "texto": "[nombre], entonces con los ciclos de verano adelantas cursos y terminas antes de lo que pensabas. Con eso, ¿la duración ya te cuadra?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, así sí. Lo otro era el costo, pensé que había que pagar todo junto."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Sobre la inversión, ya vimos que se paga por partes y no todo de golpe, ¿te hace sentido así? Y para que no te tome por sorpresa: el proceso de admisión no tiene examen de conocimientos; es una evaluación virtual, con cámara, para conocer tus motivaciones y confirmar que la carrera es para ti."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, me queda claro. Igual lo quiero evaluar un poco más y me comunico contigo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Como ya te cuadran la duración y la inversión, demos el siguiente paso: ¿te llamo mañana a las 10 o a las 4 para dejar iniciado tu proceso?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -3236,7 +3406,7 @@
     "avance": 109.09,
     "cuartil": "Q1"
    },
-   "puesto": 11,
+   "puesto": 13,
    "totalAsesores": 25,
    "indice": 40.6,
    "tecnicasDominadas": 0,
@@ -3380,9 +3550,35 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Me preguntas por la fecha de evaluación y el inicio de clases, así que ya estás viendo cómo encajaría esto en tu vida. Antes de eso dime: ¿qué buscas lograr con la carrera, un ascenso donde trabajas, cambiar de rubro? Y entre Distancia y Semipresencial, ¿qué sería determinante para ti: tu horario o tener algunas clases en sede?\n\nCon eso claro, no te voy a decir \"me avisas\". Las vacantes con beneficio son limitadas, así que mejor lo dejamos concreto: ¿tu evaluación la programamos para esta semana o la próxima?\n\nY te llamo el jueves a las 7 de la noche para cerrar la fecha, ¿te acomoda?",
+      "texto": "Me preguntas por la fecha de evaluación y el inicio de clases, así que ya estás viendo cómo encajaría esto en tu vida. Antes de eso dime: ¿qué buscas lograr con la carrera, un ascenso donde trabajas, cambiar de rubro? Y entre Distancia y Semipresencial, ¿qué sería determinante para ti: tu horario o tener algunas clases en sede?\n\nCon eso claro, no te voy a decir \"me avisas\". Las vacantes con beneficio son limitadas, así que mejor lo dejamos concreto: ¿tu evaluación la programamos para esta semana o la próxima?\n\nPerfecto. Te llamo el jueves a las 7 de la noche para cerrar la fecha, ¿te acomoda?",
       "porQue": "El prospecto ya preguntaba por fechas e inicio: esas señales se convierten en un \"cuándo\", no en un \"me avisas\". Antes, descubre su meta y qué decide entre Distancia y Semipresencial.",
-      "base": "009cf8f43839"
+      "base": "009cf8f43839",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "¿Cuándo sería la evaluación y cuándo empiezan las clases? ¿Y cuál es la diferencia entre Distancia y Semipresencial?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Me preguntas por la fecha de evaluación y el inicio de clases, así que ya estás viendo cómo encajaría esto en tu vida. Antes de eso dime: ¿qué buscas lograr con la carrera, un ascenso donde trabajas, cambiar de rubro? Y entre Distancia y Semipresencial, ¿qué sería determinante para ti: tu horario o tener algunas clases en sede?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Quiero ascender donde trabajo; sin título no me consideran. Por mi horario creo que Distancia, pero avísame y lo pienso."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Con eso claro, no te voy a decir \"me avisas\". Las vacantes con beneficio son limitadas, así que mejor lo dejamos concreto: ¿tu evaluación la programamos para esta semana o la próxima?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "La próxima semana mejor, esta estoy full."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. Te llamo el jueves a las 7 de la noche para cerrar la fecha, ¿te acomoda?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -3565,7 +3761,33 @@
       "tipo": "speech",
       "texto": "Karen, para asegurarme de orientarte correctamente, déjame resumir lo que entendí: tienes estudios técnicos de Contabilidad con el título en trámite, y además estás cursando Educación Inicial. Entonces hay dos caminos: trasladarte desde Inicial o convalidar desde Contabilidad. ¿Lo tengo bien?\n\nAhora dime tú: ¿qué pesa más para ti hoy, terminar más rápido una carrera que ya conoces o cambiar de rumbo con Contabilidad? Según lo que elijas, armamos la ruta. En cualquiera de los dos casos, cuántos cursos se reconocen lo define la revisión de los sílabos, así que prefiero no adelantarte un número y mostrarte el procedimiento real.\n\nMientras lo piensas, te explico lo que hace distinta a la universidad en modalidad a distancia y la inversión completa. ¿Te llamo mañana a las 11 para cerrar tu ruta?",
       "porQue": "Había dos escenarios mezclados; al resumirlos con calma y dejar que Karen elija cuál le importa más, ella misma ordena la llamada y tú evitas prometer años de convalidación que dependen de la revisión de sílabos.",
-      "base": "c5565d5c90b5"
+      "base": "c5565d5c90b5",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Estudié Contabilidad en un instituto, mi título está en trámite, y ahora estoy en Educación Inicial. No sé qué me conviene."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Karen, para asegurarme de orientarte correctamente, déjame resumir lo que entendí: tienes estudios técnicos de Contabilidad con el título en trámite, y además estás cursando Educación Inicial. Entonces hay dos caminos: trasladarte desde Inicial o convalidar desde Contabilidad. ¿Lo tengo bien?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, exacto. ¿Y con cuál avanzaría más rápido? ¿Cuántos años me reconocen?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Ahora dime tú: ¿qué pesa más para ti hoy, terminar más rápido una carrera que ya conoces o cambiar de rumbo con Contabilidad? Según lo que elijas, armamos la ruta. En cualquiera de los dos casos, cuántos cursos se reconocen lo define la revisión de los sílabos, así que prefiero no adelantarte un número y mostrarte el procedimiento real."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Creo que terminar Inicial, que es lo que me gusta. Pero déjame pensarlo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Mientras lo piensas, te explico lo que hace distinta a la universidad en modalidad a distancia y la inversión completa. ¿Te llamo mañana a las 11 para cerrar tu ruta?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -3586,11 +3808,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 59,
    "cuartilCalidad": "Q4",
-   "matriculas": 2,
+   "matriculas": 1,
    "meta": 18,
-   "avanceMes": 11.11,
+   "avanceMes": 5.56,
    "avanceRitmo": null,
-   "avanceMeta": 11.11,
+   "avanceMeta": 5.56,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
@@ -3602,9 +3824,9 @@
     "avance": 36.36,
     "cuartil": "Q4"
    },
-   "puesto": 12,
+   "puesto": 22,
    "totalAsesores": 25,
-   "indice": 35.1,
+   "indice": 32.3,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -3758,7 +3980,33 @@
       "tipo": "speech",
       "texto": "Me acabas de decir que ya te gustaría matricularte, así que te tomo la palabra y lo hacemos fácil: ¿me envías tu DNI y tu certificado hoy en la tarde o mañana temprano?\n\nApenas me lleguen, genero tu inscripción. Y para tu evaluación, ¿te acomoda más el turno de la mañana o el de la tarde?\n\nCon eso ya quedas con fecha y solo te faltaría el pago de admisión.",
       "porQue": "\"Sí me gustaría ya matricularme\" es la señal de cierre: en vez de preguntar si avanza, le das a elegir cuándo envía documentos y en qué turno rinde la evaluación.",
-      "base": "59b1d79a2306"
+      "base": "59b1d79a2306",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Sí, la verdad ya me gustaría matricularme."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Me acabas de decir que ya te gustaría matricularte, así que te tomo la palabra y lo hacemos fácil: ¿me envías tu DNI y tu certificado hoy en la tarde o mañana temprano?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Mañana temprano te los mando; hoy no tengo el certificado a la mano."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Apenas me lleguen, genero tu inscripción. Y para tu evaluación, ¿te acomoda más el turno de la mañana o el de la tarde?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "En la tarde, después del trabajo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Con eso ya quedas con fecha y solo te faltaría el pago de admisión."
+       }
+      ]
      }
     }
    },
@@ -3775,8 +4023,8 @@
    "avanceRitmo": null,
    "avanceMeta": 5.56,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -3785,7 +4033,7 @@
     "avance": 63.64,
     "cuartil": "Q4"
    },
-   "puesto": 23,
+   "puesto": 18,
    "totalAsesores": 25,
    "indice": 36.3,
    "tecnicasDominadas": 0,
@@ -3929,9 +4177,31 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Hola, te habla Patricia, de la Universidad Continental.\n\nTe explico todo lo que incluye tu inicio para que no quede ninguna duda: admisión, matrícula, primera cuota y seguro. Y el proceso es sencillo: rindes una evaluación virtual con cámara y listo. ¿Hasta aquí la inversión te parece manejable? ¿Y los horarios te acomodan con tu trabajo? Entonces vamos bien.\n\nSi necesitas analizarlo, perfecto, pero lo dejamos agendado: ¿te llamo el miércoles a las 7 de la noche o el jueves a esa misma hora?",
+      "texto": "Hola, te habla Patricia, de la Universidad Continental.\n\nTe explico todo lo que incluye tu inicio para que no quede ninguna duda: admisión, matrícula, primera cuota y seguro. Y el proceso es sencillo: rindes una evaluación virtual con cámara y listo. ¿Hasta aquí la inversión te parece manejable? ¿Y los horarios te acomodan con tu trabajo?\n\nEntonces vamos bien. Si necesitas analizarlo, perfecto, pero lo dejamos agendado: ¿te llamo el miércoles a las 7 de la noche o el jueves a esa misma hora?",
       "porQue": "Preséntate al inicio, da la inversión completa y convierte la conversación en pequeños acuerdos; \"¿qué día podría llamarte?\" no es una cita, \"¿miércoles o jueves a las 7?\" sí.",
-      "base": "81ea3170b3ad"
+      "base": "81ea3170b3ad",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Hola, te habla Patricia, de la Universidad Continental."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Hola, Patricia. Sí, yo dejé mis datos. Lo que más quiero saber es cuánto se paga al inicio."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te explico todo lo que incluye tu inicio para que no quede ninguna duda: admisión, matrícula, primera cuota y seguro. Y el proceso es sencillo: rindes una evaluación virtual con cámara y listo. ¿Hasta aquí la inversión te parece manejable? ¿Y los horarios te acomodan con tu trabajo?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, es manejable, y los horarios también. Pero lo quiero analizar con calma."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Entonces vamos bien. Si necesitas analizarlo, perfecto, pero lo dejamos agendado: ¿te llamo el miércoles a las 7 de la noche o el jueves a esa misma hora?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -3968,7 +4238,7 @@
     "avance": 109.09,
     "cuartil": "Q1"
    },
-   "puesto": 14,
+   "puesto": 21,
    "totalAsesores": 25,
    "indice": 33.6,
    "tecnicasDominadas": 0,
@@ -4126,14 +4396,14 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 78,
    "cuartilCalidad": "Q3",
-   "matriculas": 1,
+   "matriculas": 2,
    "meta": 18,
-   "avanceMes": 5.56,
+   "avanceMes": 11.11,
    "avanceRitmo": null,
-   "avanceMeta": 5.56,
+   "avanceMeta": 11.11,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -4142,9 +4412,9 @@
     "avance": 136.36,
     "cuartil": "Q1"
    },
-   "puesto": 17,
+   "puesto": 10,
    "totalAsesores": 25,
-   "indice": 41.8,
+   "indice": 44.6,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -4278,7 +4548,29 @@
       "tipo": "speech",
       "texto": "[Nombre], cuéntame, ¿qué te animó a buscar una carrera justo ahora? ¿Estás trabajando? ¿Qué horarios manejas? ¿Y habías estudiado algo antes?\n\nO sea que, como me dices, quieres crecer en tu trabajo pero no tienes tiempo para ir a una universidad. Te entiendo perfecto, [nombre], y justo para eso es esta modalidad.\n\nDéjame mostrarte cómo encajaría en tu semana, [nombre], y me dices si te hace sentido.",
       "porQue": "Tu brecha fue el sondeo: pregunta primero y devuélvele al prospecto su necesidad con sus propias palabras. Y dile por su nombre al menos cuatro veces en la llamada.",
-      "base": "34092b50acce"
+      "base": "34092b50acce",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "[Nombre], cuéntame, ¿qué te animó a buscar una carrera justo ahora? ¿Estás trabajando? ¿Qué horarios manejas? ¿Y habías estudiado algo antes?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Trabajo en una tienda, de lunes a sábado, y no he estudiado nada después del colegio. Quiero crecer, pero no tengo tiempo para ir a una universidad."
+       },
+       {
+        "quien": "asesor",
+        "texto": "O sea que, como me dices, quieres crecer en tu trabajo pero no tienes tiempo para ir a una universidad. Te entiendo perfecto, [nombre], y justo para eso es esta modalidad."
+       },
+       {
+        "quien": "cliente",
+        "texto": "¿Y cómo haría con mis horarios?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Déjame mostrarte cómo encajaría en tu semana, [nombre], y me dices si te hace sentido."
+       }
+      ]
      }
     },
     "paso3": {
@@ -4325,7 +4617,7 @@
     "avance": 172.73,
     "cuartil": "Q1"
    },
-   "puesto": 6,
+   "puesto": 7,
    "totalAsesores": 25,
    "indice": 48.3,
    "tecnicasDominadas": 0,
@@ -4469,9 +4761,35 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Más allá del precio, dos cosas que hacen diferente estudiar acá: tienes el respaldo de SUNEDU y acreditaciones internacionales, y vas sumando certificaciones progresivas mientras avanzas, así tu CV crece desde el primer año. ¿Eso te suma para lo que buscas?\n\nY el ingreso es simple: una evaluación virtual con cámara, sin examen de conocimientos. ¿Hasta aquí te hace sentido?\n\nSeguimos por WhatsApp, pero con una cita: ¿te escribo mañana a las 11 para confirmar tu postulación?",
+      "texto": "Más allá del precio, dos cosas que hacen diferente estudiar acá: tienes el respaldo de SUNEDU y acreditaciones internacionales, y vas sumando certificaciones progresivas mientras avanzas, así tu CV crece desde el primer año. ¿Eso te suma para lo que buscas?\n\nEl ingreso es simple: una evaluación virtual con cámara, sin examen de conocimientos. ¿Hasta aquí te hace sentido?\n\nSeguimos por WhatsApp, pero con una cita: ¿te escribo mañana a las 11 para confirmar tu postulación?",
       "porQue": "Faltaron diferenciales más allá del precio y cierres parciales: cada diferencial termina en una pregunta que suma un \"sí\", y el seguimiento por WhatsApp queda con hora.",
-      "base": "cc701b558e5d"
+      "base": "cc701b558e5d",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "He visto otras universidades más baratas. ¿Por qué esta?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Más allá del precio, dos cosas que hacen diferente estudiar acá: tienes el respaldo de SUNEDU y acreditaciones internacionales, y vas sumando certificaciones progresivas mientras avanzas, así tu CV crece desde el primer año. ¿Eso te suma para lo que buscas?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, lo de las certificaciones me interesa. ¿Y el examen de ingreso cómo es?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "El ingreso es simple: una evaluación virtual con cámara, sin examen de conocimientos. ¿Hasta aquí te hace sentido?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí. Escríbeme por WhatsApp y lo vemos por ahí."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Seguimos por WhatsApp, pero con una cita: ¿te escribo mañana a las 11 para confirmar tu postulación?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -4498,8 +4816,8 @@
    "avanceRitmo": null,
    "avanceMeta": 5.56,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -4508,7 +4826,7 @@
     "avance": 100.0,
     "cuartil": "Q1"
    },
-   "puesto": 19,
+   "puesto": 15,
    "totalAsesores": 25,
    "indice": 40.3,
    "tecnicasDominadas": 0,
@@ -4682,7 +5000,7 @@
     "avance": 0.0,
     "cuartil": "Q4"
    },
-   "puesto": 21,
+   "puesto": 24,
    "totalAsesores": 25,
    "indice": 39.0,
    "tecnicasDominadas": 0,
@@ -4846,8 +5164,8 @@
    "avanceRitmo": null,
    "avanceMeta": 5.56,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "naranja",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "verde",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -4856,7 +5174,7 @@
     "avance": 9.09,
     "cuartil": "Q4"
    },
-   "puesto": 15,
+   "puesto": 1,
    "totalAsesores": 25,
    "indice": 46.8,
    "tecnicasDominadas": 0,
@@ -5012,7 +5330,33 @@
       "tipo": "speech",
       "texto": "Dame un segundo que lo reviso en el sistema; mientras tanto te cuento cómo sería tu primer ciclo para que no perdamos el hilo.\n\nYa tienes las dos opciones sobre la mesa. Pensando en tu trabajo y en el tiempo que tienes a la semana, ¿cuál de las dos se ajusta mejor a tu rutina?\n\nPerfecto: te mando el resumen por WhatsApp ahora, y te llamo el lunes a las 6 de la tarde para dejar tu postulación lista. ¿Te acomoda?",
       "porQue": "Los silencios mientras revisas el sistema enfrían la llamada: acompáñalos hablando. Luego, en vez de decidir por él, haz que compare y concluya qué alternativa le encaja, y cierra con cita.",
-      "base": "38f05380324c"
+      "base": "38f05380324c",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "¿Y entre las dos carreras que me dijiste, cuál me conviene?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Dame un segundo que lo reviso en el sistema; mientras tanto te cuento cómo sería tu primer ciclo para que no perdamos el hilo."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, dale."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Ya tienes las dos opciones sobre la mesa. Pensando en tu trabajo y en el tiempo que tienes a la semana, ¿cuál de las dos se ajusta mejor a tu rutina?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "La primera, creo. Mándame la información por WhatsApp y lo reviso."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto: te mando el resumen por WhatsApp ahora, y te llamo el lunes a las 6 de la tarde para dejar tu postulación lista. ¿Te acomoda?"
+       }
+      ]
      }
     }
    },
@@ -5029,8 +5373,8 @@
    "avanceRitmo": null,
    "avanceMeta": 5.56,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -5039,7 +5383,7 @@
     "avance": 81.82,
     "cuartil": "Q2"
    },
-   "puesto": 16,
+   "puesto": 12,
    "totalAsesores": 25,
    "indice": 41.8,
    "tecnicasDominadas": 0,
@@ -5185,7 +5529,33 @@
       "tipo": "speech",
       "texto": "Antes de los montos, cuéntame cómo es tu semana de trabajo: ¿tienes horarios fijos o rotativos? Te lo pregunto porque sé que la mayor duda es \"cómo voy a estudiar si trabajo\", y quiero mostrarte desde ya que con clases grabadas y conexión desde cualquier lugar eso no te va a frenar.\n\nAhora la inversión, ordenada: admisión, matrícula y pensión mensual, uno por uno, para que sepas qué pagas y cuándo. ¿Hasta aquí claro? ¿Y te acomoda esa forma de pago?\n\nEntonces el siguiente paso es tu evaluación: ¿la programamos para esta semana?",
       "porQue": "Primero su disponibilidad laboral; con eso anticipas la objeción \"¿cómo estudio si trabajo?\" antes de que la diga, ordenas los conceptos económicos y cierras con dos pequeños acuerdos.",
-      "base": "ab0aa22e7653"
+      "base": "ab0aa22e7653",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "¿Cuánto cuesta? Es lo primero que necesito saber."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Antes de los montos, cuéntame cómo es tu semana de trabajo: ¿tienes horarios fijos o rotativos? Te lo pregunto porque sé que la mayor duda es \"cómo voy a estudiar si trabajo\", y quiero mostrarte desde ya que con clases grabadas y conexión desde cualquier lugar eso no te va a frenar."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Rotativos, cambian cada semana. Por eso dudaba."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Ahora la inversión, ordenada: admisión, matrícula y pensión mensual, uno por uno, para que sepas qué pagas y cuándo. ¿Hasta aquí claro? ¿Y te acomoda esa forma de pago?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, así ordenado se entiende; me acomoda."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Entonces el siguiente paso es tu evaluación: ¿la programamos para esta semana?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -5222,7 +5592,7 @@
     "avance": 100.0,
     "cuartil": "Q1"
    },
-   "puesto": 18,
+   "puesto": 23,
    "totalAsesores": 25,
    "indice": 41.5,
    "tecnicasDominadas": 0,
@@ -5368,7 +5738,33 @@
       "tipo": "speech",
       "texto": "[Nombre], te entiendo, quieres evaluar tu situación. Para ayudarte de verdad, dime: ¿lo que te preocupa es el pago inicial, la pensión mensual o cuándo caen las fechas de pago?\n\nSi es el inicio, tenemos el descuento en matrícula de esta campaña; si es el mes a mes, vemos una carga de créditos que te permita pagar menos y avanzar a tu ritmo.\n\nAparte de lo económico, ¿hay algo más que te impida empezar? Si no, lo conversamos con calma el viernes: ¿te llamo a las 6 o a las 7 de la noche, [nombre]?",
       "porQue": "\"Necesito tiempo para evaluar mi situación\" es una objeción económica sin nombre: pregúntale cuál es exactamente, ofrécele una alternativa real y agenda con hora. Usa su nombre al menos dos veces.",
-      "base": "9340bd2402fc"
+      "base": "9340bd2402fc",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Necesito tiempo para evaluar mi situación; ahorita no puedo decidir."
+       },
+       {
+        "quien": "asesor",
+        "texto": "[Nombre], te entiendo, quieres evaluar tu situación. Para ayudarte de verdad, dime: ¿lo que te preocupa es el pago inicial, la pensión mensual o cuándo caen las fechas de pago?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "El pago inicial, sobre todo. Y después ver si puedo con la mensualidad."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Si es el inicio, tenemos el descuento en matrícula de esta campaña; si es el mes a mes, vemos una carga de créditos que te permita pagar menos y avanzar a tu ritmo."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Eso de menos créditos no lo sabía; me ayudaría."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Aparte de lo económico, ¿hay algo más que te impida empezar? Si no, lo conversamos con calma el viernes: ¿te llamo a las 6 o a las 7 de la noche, [nombre]?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -5395,8 +5791,8 @@
    "avanceRitmo": null,
    "avanceMeta": 5.56,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -5405,7 +5801,7 @@
     "avance": 54.55,
     "cuartil": "Q4"
    },
-   "puesto": 20,
+   "puesto": 16,
    "totalAsesores": 25,
    "indice": 39.3,
    "tecnicasDominadas": 0,
@@ -5579,7 +5975,7 @@
     "avance": 63.64,
     "cuartil": "Q4"
    },
-   "puesto": 7,
+   "puesto": 8,
    "totalAsesores": 25,
    "indice": 46.8,
    "tecnicasDominadas": 0,
@@ -5725,7 +6121,33 @@
       "tipo": "speech",
       "texto": "Gloria, me parece bien que lo conversen juntos. Para que esa conversación sea fácil, dime: ¿qué crees que le preocuparía más a tu pareja, la inversión, el tiempo que te va a tomar, o si vas a poder con el trabajo y los estudios?\n\nSi es la inversión, te lo dejo ordenado para que se lo muestres: admisión, matrícula y pensión mensual, cada uno con su monto y su fecha. Y si es el tiempo, cuéntale que las clases quedan grabadas y avanzas en tus horarios.\n\n¿Te parece que los llame a los dos mañana a las 7 de la noche y resolvemos las dudas juntos?",
       "porQue": "\"Lo converso con mi pareja\" no se acepta sin más: averigua qué le preocuparía a la pareja, deja la inversión ordenada para esa conversación y agenda una llamada con los dos.",
-      "base": "d8189120554f"
+      "base": "d8189120554f",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Me interesa Psicología, pero tengo que conversarlo con mi pareja antes de decidir."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Gloria, me parece bien que lo conversen juntos. Para que esa conversación sea fácil, dime: ¿qué crees que le preocuparía más a tu pareja, la inversión, el tiempo que te va a tomar, o si vas a poder con el trabajo y los estudios?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "La inversión, seguro. Y que no descuide la casa y el trabajo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Si es la inversión, te lo dejo ordenado para que se lo muestres: admisión, matrícula y pensión mensual, cada uno con su monto y su fecha. Y si es el tiempo, cuéntale que las clases quedan grabadas y avanzas en tus horarios."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Así sí se lo puedo explicar mejor."
+       },
+       {
+        "quien": "asesor",
+        "texto": "¿Te parece que los llame a los dos mañana a las 7 de la noche y resolvemos las dudas juntos?"
+       }
+      ]
      }
     },
     "paso4": {
@@ -5752,8 +6174,8 @@
    "avanceRitmo": null,
    "avanceMeta": 5.56,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuartilMatriculas": "Q2",
+   "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -5762,7 +6184,7 @@
     "avance": 81.82,
     "cuartil": "Q2"
    },
-   "puesto": 25,
+   "puesto": 19,
    "totalAsesores": 25,
    "indice": 34.3,
    "tecnicasDominadas": 0,
@@ -5904,7 +6326,8 @@
       "tipo": "accion",
       "texto": "Después de cada llamada efectiva, elige en el árbol de tipificaciones del CRM la opción que describe exactamente lo que pasó (resultado y motivo), no la más cercana. Si dudas entre dos, revisa la categoría 🖥️ Tipificaciones (CRM) de la Biblioteca de Mensajes, donde está la guía de cada caso.",
       "porQue": "Tu observación de esta llamada no es de speech sino de registro.",
-      "base": "34c511e89e83"
+      "base": "34c511e89e83",
+      "dialogo": null
      }
     },
     "paso4": {
@@ -5941,7 +6364,7 @@
     "avance": 81.82,
     "cuartil": "Q2"
    },
-   "puesto": 4,
+   "puesto": 5,
    "totalAsesores": 25,
    "indice": 50.4,
    "tecnicasDominadas": 0,
@@ -6077,7 +6500,33 @@
       "tipo": "speech",
       "texto": "Te voy a enviar el plan completo por WhatsApp, pero antes te adelanto lo principal para que no te quedes con dudas: tu inicio incluye admisión, matrícula, seguro y primera cuota; después solo pagas tu pensión mensual. ¿Hasta aquí te parece manejable?\n\nEl ingreso es una evaluación virtual con cámara: conversamos sobre tu motivación, no es un examen de conocimientos. ¿Te queda claro cómo sería?\n\nEntonces, ¿avanzamos hoy con tu ficha de inscripción para reservar tu vacante?",
       "porQue": "Enviar el plan por WhatsApp no reemplaza explicar la inversión y la evaluación en la llamada: cada explicación termina en una pregunta que suma un pequeño \"sí\" hacia la postulación.",
-      "base": "97983bd7b188"
+      "base": "97983bd7b188",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Mándame el plan por WhatsApp y lo reviso con calma."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te voy a enviar el plan completo por WhatsApp, pero antes te adelanto lo principal para que no te quedes con dudas: tu inicio incluye admisión, matrícula, seguro y primera cuota; después solo pagas tu pensión mensual. ¿Hasta aquí te parece manejable?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, manejable. ¿Y el examen de admisión?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "El ingreso es una evaluación virtual con cámara: conversamos sobre tu motivación, no es un examen de conocimientos. ¿Te queda claro cómo sería?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, claro. Más tranquilo así."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Entonces, ¿avanzamos hoy con tu ficha de inscripción para reservar tu vacante?"
+       }
+      ]
      }
     },
     "paso3": {
@@ -6124,7 +6573,7 @@
     "avance": 163.64,
     "cuartil": "Q1"
    },
-   "puesto": 9,
+   "puesto": 11,
    "totalAsesores": 25,
    "indice": 43.6,
    "tecnicasDominadas": 0,
@@ -6250,7 +6699,29 @@
       "tipo": "speech",
       "texto": "Isabel, antes de contarte los beneficios, cuéntame tú: ¿desde dónde me hablas, estás trabajando ahora y tienes internet estable para conectarte a clases? Así te explico solo lo que te sirve hoy.\n\nSé que por ahora no tienes disponibilidad, pero no lo dejemos abierto: esta campaña tiene condiciones que pueden cambiar. ¿Te parece que te escriba el próximo lunes para ver cómo estás y qué condiciones siguen vigentes?\n\nY si antes se te acomoda, me avisas y lo adelantamos.",
       "porQue": "Conocer dónde está Isabel, si trabaja y si tiene conectividad antes de explicar beneficios evita hablar de lo que hoy no puede usar; y aunque no tenga disponibilidad, la llamada termina con una fecha, no esperando que ella escriba.",
-      "base": "1b1a148aec72"
+      "base": "1b1a148aec72",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Isabel, antes de contarte los beneficios, cuéntame tú: ¿desde dónde me hablas, estás trabajando ahora y tienes internet estable para conectarte a clases? Así te explico solo lo que te sirve hoy."
+       },
+       {
+        "quien": "cliente",
+        "texto": "Estoy en provincia, trabajo todo el día y el internet acá es inestable. Por eso ahorita no podría; yo te escribo cuando pueda."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Sé que por ahora no tienes disponibilidad, pero no lo dejemos abierto: esta campaña tiene condiciones que pueden cambiar. ¿Te parece que te escriba el próximo lunes para ver cómo estás y qué condiciones siguen vigentes?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, el lunes está bien."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Y si antes se te acomoda, me avisas y lo adelantamos."
+       }
+      ]
      }
     },
     "paso2": {
@@ -6302,7 +6773,7 @@
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 8,
+   "puesto": 9,
    "totalAsesores": 25,
    "indice": 45.3,
    "tecnicasDominadas": 0,
@@ -6417,7 +6888,7 @@
   "avanceModo": "tablero",
   "cortesMatriculas": {
    "Q1": 3.0,
-   "Q2": 2.0,
+   "Q2": 1.0,
    "Q3": 1.0
   },
   "fuente": "🔰GEN tablero (matrículas del mes, cuartil por aporte) · Matriz DASHBOARD (calidad)",
@@ -6448,57 +6919,57 @@
    "Q4": 12
   },
   "cuadrantes": {
-   "verde": [],
+   "verde": [
+    "Edgar Sabino Chavez Vizcarra"
+   ],
    "amarillo": [
-    "Milagros Torres Santos",
     "Jorge Luis Valencia Cardenas",
+    "Milagros Torres Santos",
     "Diana Carol Taipe Rojas",
     "Orlando Jesus Pintado Sandoval",
     "Judith Rocio Vila Incaroca",
     "Betsabeth Alexandra Rojas Palacios",
     "Eduardo Alfredo Coaquiera Elguera",
     "Cecilia Esther Aliaga Lapa",
-    "Nicol Alisson Romero Espinoza",
-    "Lucero Ximena Hujaynatis Jacay",
-    "Edward Nelson Gonzales Villaneda",
-    "Jimena del Rosario Vera Osores",
-    "Isai Yuliño Mercado Bravo",
-    "Patricia Roxana Mercado Zacarias"
-   ],
-   "naranja": [
-    "Edgar Sabino Chavez Vizcarra"
-   ],
-   "rojo": [
-    "Angelo Jaime Franco Sarmiento",
     "Juliana Milagros Suarez Atencio",
-    "Melissa Leslie Fernadez Avalos",
+    "Nicol Alisson Romero Espinoza",
+    "Angelo Jaime Franco Sarmiento",
+    "Edward Nelson Gonzales Villaneda",
+    "Lucero Ximena Hujaynatis Jacay",
     "Maria Alejandra Pino Contreras",
     "Rosa Victoria Guzman Bonilla",
-    "Angel Raul Villanueva Fernandez",
     "Ana Maria Padilla Parra",
     "Anyhela Kelly Ordoñez Chavez",
-    "Lisette Valeria Blanco Chuco",
-    "Justyn Flores Solano"
+    "Justyn Flores Solano",
+    "Isai Yuliño Mercado Bravo",
+    "Patricia Roxana Mercado Zacarias",
+    "Jimena del Rosario Vera Osores"
+   ],
+   "naranja": [],
+   "rojo": [
+    "Melissa Leslie Fernadez Avalos",
+    "Angel Raul Villanueva Fernandez",
+    "Lisette Valeria Blanco Chuco"
    ],
    "sinMatriz": []
   },
   "totalAsesores": 25,
   "ranking": [
    {
-    "asesor": "Milagros Torres Santos",
+    "asesor": "Edgar Sabino Chavez Vizcarra",
     "puesto": 1,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 65,
-    "cuartilCalidad": "Q4",
-    "matriculas": 9,
+    "sede": "LIMA",
+    "cuadrante": "verde",
+    "calidad": 88,
+    "cuartilCalidad": "Q2",
+    "matriculas": 1,
     "meta": 18,
-    "avanceMeta": 50.0,
-    "avanceMes": 50.0,
-    "cuartilMatriculas": "Q1",
-    "indice": 57.5,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
+    "cuartilMatriculas": "Q2",
+    "indice": 46.8,
     "tecnicas": 0,
-    "evaluaciones": 3
+    "evaluaciones": 2
    },
    {
     "asesor": "Jorge Luis Valencia Cardenas",
@@ -6517,8 +6988,24 @@
     "evaluaciones": 4
    },
    {
-    "asesor": "Diana Carol Taipe Rojas",
+    "asesor": "Milagros Torres Santos",
     "puesto": 3,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 65,
+    "cuartilCalidad": "Q4",
+    "matriculas": 8,
+    "meta": 18,
+    "avanceMeta": 44.44,
+    "avanceMes": 44.44,
+    "cuartilMatriculas": "Q1",
+    "indice": 54.7,
+    "tecnicas": 0,
+    "evaluaciones": 3
+   },
+   {
+    "asesor": "Diana Carol Taipe Rojas",
+    "puesto": 4,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 81,
@@ -6534,7 +7021,7 @@
    },
    {
     "asesor": "Orlando Jesus Pintado Sandoval",
-    "puesto": 4,
+    "puesto": 5,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 73,
@@ -6550,7 +7037,7 @@
    },
    {
     "asesor": "Judith Rocio Vila Incaroca",
-    "puesto": 5,
+    "puesto": 6,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 72,
@@ -6566,7 +7053,7 @@
    },
    {
     "asesor": "Betsabeth Alexandra Rojas Palacios",
-    "puesto": 6,
+    "puesto": 7,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 80,
@@ -6582,7 +7069,7 @@
    },
    {
     "asesor": "Eduardo Alfredo Coaquiera Elguera",
-    "puesto": 7,
+    "puesto": 8,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 77,
@@ -6598,7 +7085,7 @@
    },
    {
     "asesor": "Cecilia Esther Aliaga Lapa",
-    "puesto": 8,
+    "puesto": 9,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 74,
@@ -6613,8 +7100,24 @@
     "evaluaciones": 2
    },
    {
+    "asesor": "Juliana Milagros Suarez Atencio",
+    "puesto": 10,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 78,
+    "cuartilCalidad": "Q3",
+    "matriculas": 2,
+    "meta": 18,
+    "avanceMeta": 11.11,
+    "avanceMes": 11.11,
+    "cuartilMatriculas": "Q2",
+    "indice": 44.6,
+    "tecnicas": 0,
+    "evaluaciones": 3
+   },
+   {
     "asesor": "Nicol Alisson Romero Espinoza",
-    "puesto": 9,
+    "puesto": 11,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 76,
@@ -6629,24 +7132,24 @@
     "evaluaciones": 4
    },
    {
-    "asesor": "Lucero Ximena Hujaynatis Jacay",
-    "puesto": 10,
-    "sede": "HYO",
+    "asesor": "Angelo Jaime Franco Sarmiento",
+    "puesto": 12,
+    "sede": "LIMA",
     "cuadrante": "amarillo",
-    "calidad": 75,
+    "calidad": 78,
     "cuartilCalidad": "Q3",
-    "matriculas": 2,
+    "matriculas": 1,
     "meta": 18,
-    "avanceMeta": 11.11,
-    "avanceMes": 11.11,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
     "cuartilMatriculas": "Q2",
-    "indice": 43.1,
+    "indice": 41.8,
     "tecnicas": 0,
-    "evaluaciones": 4
+    "evaluaciones": 6
    },
    {
     "asesor": "Edward Nelson Gonzales Villaneda",
-    "puesto": 11,
+    "puesto": 13,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 70,
@@ -6661,24 +7164,104 @@
     "evaluaciones": 4
    },
    {
-    "asesor": "Jimena del Rosario Vera Osores",
-    "puesto": 12,
+    "asesor": "Lucero Ximena Hujaynatis Jacay",
+    "puesto": 14,
     "sede": "HYO",
     "cuadrante": "amarillo",
-    "calidad": 59,
-    "cuartilCalidad": "Q4",
-    "matriculas": 2,
+    "calidad": 75,
+    "cuartilCalidad": "Q3",
+    "matriculas": 1,
     "meta": 18,
-    "avanceMeta": 11.11,
-    "avanceMes": 11.11,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
     "cuartilMatriculas": "Q2",
-    "indice": 35.1,
+    "indice": 40.3,
     "tecnicas": 0,
     "evaluaciones": 4
    },
    {
+    "asesor": "Maria Alejandra Pino Contreras",
+    "puesto": 15,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 75,
+    "cuartilCalidad": "Q3",
+    "matriculas": 1,
+    "meta": 18,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
+    "cuartilMatriculas": "Q2",
+    "indice": 40.3,
+    "tecnicas": 0,
+    "evaluaciones": 5
+   },
+   {
+    "asesor": "Rosa Victoria Guzman Bonilla",
+    "puesto": 16,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 73,
+    "cuartilCalidad": "Q4",
+    "matriculas": 1,
+    "meta": 18,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
+    "cuartilMatriculas": "Q2",
+    "indice": 39.3,
+    "tecnicas": 0,
+    "evaluaciones": 6
+   },
+   {
+    "asesor": "Ana Maria Padilla Parra",
+    "puesto": 17,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 69,
+    "cuartilCalidad": "Q4",
+    "matriculas": 1,
+    "meta": 18,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
+    "cuartilMatriculas": "Q2",
+    "indice": 37.3,
+    "tecnicas": 0,
+    "evaluaciones": 4
+   },
+   {
+    "asesor": "Anyhela Kelly Ordoñez Chavez",
+    "puesto": 18,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 67,
+    "cuartilCalidad": "Q4",
+    "matriculas": 1,
+    "meta": 18,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
+    "cuartilMatriculas": "Q2",
+    "indice": 36.3,
+    "tecnicas": 0,
+    "evaluaciones": 4
+   },
+   {
+    "asesor": "Justyn Flores Solano",
+    "puesto": 19,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 63,
+    "cuartilCalidad": "Q4",
+    "matriculas": 1,
+    "meta": 18,
+    "avanceMeta": 5.56,
+    "avanceMes": 5.56,
+    "cuartilMatriculas": "Q2",
+    "indice": 34.3,
+    "tecnicas": 0,
+    "evaluaciones": 6
+   },
+   {
     "asesor": "Isai Yuliño Mercado Bravo",
-    "puesto": 13,
+    "puesto": 20,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 56,
@@ -6694,7 +7277,7 @@
    },
    {
     "asesor": "Patricia Roxana Mercado Zacarias",
-    "puesto": 14,
+    "puesto": 21,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 56,
@@ -6709,56 +7292,24 @@
     "evaluaciones": 2
    },
    {
-    "asesor": "Edgar Sabino Chavez Vizcarra",
-    "puesto": 15,
-    "sede": "LIMA",
-    "cuadrante": "naranja",
-    "calidad": 88,
-    "cuartilCalidad": "Q2",
+    "asesor": "Jimena del Rosario Vera Osores",
+    "puesto": 22,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 59,
+    "cuartilCalidad": "Q4",
     "matriculas": 1,
     "meta": 18,
     "avanceMeta": 5.56,
     "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 46.8,
+    "cuartilMatriculas": "Q2",
+    "indice": 32.3,
     "tecnicas": 0,
-    "evaluaciones": 2
-   },
-   {
-    "asesor": "Angelo Jaime Franco Sarmiento",
-    "puesto": 16,
-    "sede": "LIMA",
-    "cuadrante": "rojo",
-    "calidad": 78,
-    "cuartilCalidad": "Q3",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 41.8,
-    "tecnicas": 0,
-    "evaluaciones": 6
-   },
-   {
-    "asesor": "Juliana Milagros Suarez Atencio",
-    "puesto": 17,
-    "sede": "LIMA",
-    "cuadrante": "rojo",
-    "calidad": 78,
-    "cuartilCalidad": "Q3",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 41.8,
-    "tecnicas": 0,
-    "evaluaciones": 3
+    "evaluaciones": 4
    },
    {
     "asesor": "Melissa Leslie Fernadez Avalos",
-    "puesto": 18,
+    "puesto": 23,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 83,
@@ -6773,40 +7324,8 @@
     "evaluaciones": 4
    },
    {
-    "asesor": "Maria Alejandra Pino Contreras",
-    "puesto": 19,
-    "sede": "LIMA",
-    "cuadrante": "rojo",
-    "calidad": 75,
-    "cuartilCalidad": "Q3",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 40.3,
-    "tecnicas": 0,
-    "evaluaciones": 5
-   },
-   {
-    "asesor": "Rosa Victoria Guzman Bonilla",
-    "puesto": 20,
-    "sede": "LIMA",
-    "cuadrante": "rojo",
-    "calidad": 73,
-    "cuartilCalidad": "Q4",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 39.3,
-    "tecnicas": 0,
-    "evaluaciones": 6
-   },
-   {
     "asesor": "Angel Raul Villanueva Fernandez",
-    "puesto": 21,
+    "puesto": 24,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 78,
@@ -6821,40 +7340,8 @@
     "evaluaciones": 2
    },
    {
-    "asesor": "Ana Maria Padilla Parra",
-    "puesto": 22,
-    "sede": "HYO",
-    "cuadrante": "rojo",
-    "calidad": 69,
-    "cuartilCalidad": "Q4",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 37.3,
-    "tecnicas": 0,
-    "evaluaciones": 4
-   },
-   {
-    "asesor": "Anyhela Kelly Ordoñez Chavez",
-    "puesto": 23,
-    "sede": "HYO",
-    "cuadrante": "rojo",
-    "calidad": 67,
-    "cuartilCalidad": "Q4",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 36.3,
-    "tecnicas": 0,
-    "evaluaciones": 4
-   },
-   {
     "asesor": "Lisette Valeria Blanco Chuco",
-    "puesto": 24,
+    "puesto": 25,
     "sede": "HYO",
     "cuadrante": "rojo",
     "calidad": 69,
@@ -6867,22 +7354,6 @@
     "indice": 34.5,
     "tecnicas": 0,
     "evaluaciones": 2
-   },
-   {
-    "asesor": "Justyn Flores Solano",
-    "puesto": 25,
-    "sede": "LIMA",
-    "cuadrante": "rojo",
-    "calidad": 63,
-    "cuartilCalidad": "Q4",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q3",
-    "indice": 34.3,
-    "tecnicas": 0,
-    "evaluaciones": 6
    }
   ]
  }

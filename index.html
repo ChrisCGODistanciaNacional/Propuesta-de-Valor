@@ -526,6 +526,18 @@
   #zonaPasos .eval-box { border-color: #D5DEEA; }
   #zonaPasos .section-intro, #zonaPasos .objecion-card, #zonaPasos .plantilla-card { margin-bottom: 14px; }
   .hero .diag-empty { margin: 0 0 12px; }
+
+  /* ===================== v12c: conversación de ejemplo tipo WhatsApp ===================== */
+  .chat { display: flex; flex-direction: column; gap: 8px; background: #E5DDD5; background-image: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)); border-radius: 12px; padding: 12px 12px 12px; margin: 8px 0 2px; }
+  .msg { max-width: 82%; padding: 8px 12px 9px; border-radius: 12px; font-size: 14px; line-height: 1.5; color: var(--ink); position: relative; box-shadow: 0 1px 1px rgba(0,0,0,0.08); white-space: pre-wrap; }
+  .msg.asesor { align-self: flex-start; background: #fff; border-top-left-radius: 4px; }
+  .msg.cliente { align-self: flex-end; background: #DCF8C6; border-top-right-radius: 4px; }
+  .msg-who { display: block; font-size: 11.5px; font-weight: 700; margin-bottom: 2px; letter-spacing: 0.01em; }
+  .msg.asesor .msg-who { color: var(--navy); }
+  .msg.cliente .msg-who { color: #1F7A3E; }
+  .msg-text { display: block; }
+  .focus-tec .chat, .speech-suggest .chat { margin-top: 10px; }
+  .focus-tec-title b, .speech-suggest-title b { font-weight: 700; }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -691,6 +703,8 @@
     .kit-lbl-short { display: inline; }
     .paso-title-row .paso-weight { font-size: 11px; }
     .zone { padding: 14px 12px 14px; border-radius: 14px; }
+    .msg { max-width: 92%; font-size: 13.5px; }
+    .chat { padding: 10px 8px; }
     .zone-title { font-size: 17px; margin-bottom: 12px; }
     .hero .zone-title { margin: -4px 0 12px; }
     .rk-title { gap: 6px 10px; }
@@ -913,7 +927,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-12T17:01:12.000Z";
+  const DATA_VERSION = "2026-10-12T17:15:11.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1808,11 +1822,23 @@
       return `<div class="${titleCls}">Acción para tu caso</div><div class="${textCls}">${escapeHtmlPreserveNL(caso.texto)}</div>`;
     }
     if (caso) {
-      return `<div class="${titleCls}">Para tu caso, con la técnica ${tec.titulo}</div>
-        <div class="${textCls}">${escapeHtmlPreserveNL(caso.texto)}</div>
+      const cuerpo = (Array.isArray(caso.dialogo) && caso.dialogo.length)
+        ? chatHTML(caso.dialogo)
+        : `<div class="${textCls}">${escapeHtmlPreserveNL(caso.texto)}</div>`;
+      return `<div class="${titleCls}">Para tu caso, con la técnica <b>${tec.titulo}</b> podrías resolver mejor la situación. Ejemplo:</div>
+        ${cuerpo}
         ${caso.porQue ? `<div class="caso-porque"><div class="caso-porque-title">🧭 Por qué te recomendamos esta técnica</div><div class="caso-porque-text">${escapeHtmlPreserveNL(caso.porQue)}</div></div>` : ''}`;
     }
     return `<div class="${titleCls}">Técnica para practicar: ${tec.titulo}</div>${tec.ejemplo ? `<div class="${textCls}">${escapeHtmlPreserveNL(tec.ejemplo)}</div>` : ''}`;
+  }
+  // Conversación de ejemplo tipo WhatsApp: lo que dice el asesor a la izquierda, el cliente a la derecha.
+  function chatHTML(dialogo) {
+    const advisor = getSelectedAdvisor();
+    const yo = advisor ? primerNombre(advisor) : 'Tú';
+    return `<div class="chat" role="list">${dialogo.map(t => {
+      const cli = t.quien === 'cliente';
+      return `<div class="msg ${cli ? 'cliente' : 'asesor'}" role="listitem"><span class="msg-who">${cli ? 'Cliente' : yo}</span><span class="msg-text">${escapeHtmlPreserveNL(t.texto)}</span></div>`;
+    }).join('')}</div>`;
   }
   function speechTextToCopy(tec) {
     if (!tec) return '';

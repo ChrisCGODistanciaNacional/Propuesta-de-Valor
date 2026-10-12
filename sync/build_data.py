@@ -560,7 +560,19 @@ for name, lst in hist.items():
             if c and c.get('base') == base and c.get('stage') == k:
                 tec = TEC_BY_ID.get(c.get('tecId')) if c.get('tecId') else None
                 st['tecnica'] = ({'id': tec['id'], 'titulo': tec['titulo'], 'ejemplo': (tec.get('ejemplos') or [None])[0]} if tec else None)
-                st['caso'] = {'tipo': c.get('tipo', 'speech'), 'texto': c['speech'], 'porQue': c.get('porQue', ''), 'base': base}
+                # diálogo tipo WhatsApp (asesor/cliente); el texto para copiar son solo los turnos del asesor
+                dialogo = None
+                if isinstance(c.get('dialogo'), list) and c.get('tipo', 'speech') != 'accion':
+                    dialogo = []
+                    for t in c['dialogo']:
+                        if not isinstance(t, dict) or not str(t.get('texto', '')).strip():
+                            continue
+                        quien = 'cliente' if str(t.get('quien', '')).strip().lower().startswith('c') else 'asesor'
+                        dialogo.append({'quien': quien, 'texto': str(t['texto']).strip()})
+                    if not dialogo:
+                        dialogo = None
+                texto = '\n\n'.join(t['texto'] for t in dialogo if t['quien'] == 'asesor') if dialogo else c.get('speech', '')
+                st['caso'] = {'tipo': c.get('tipo', 'speech'), 'texto': texto or c.get('speech', ''), 'porQue': c.get('porQue', ''), 'base': base, 'dialogo': dialogo}
             else:
                 pending['casos'].append({'asesor': name, 'stage': k, 'base': base, 'oportunidades': oport, 'fortalezas': forts, 'evidencia': evid})
         stages[k] = st
