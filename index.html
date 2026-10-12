@@ -178,32 +178,46 @@
   /* Tarjeta principal del asesor (oscura, como su tablero) */
   .hero { background: var(--navy); color: #fff; border-radius: 16px; padding: 22px 24px; margin-bottom: 18px; }
   .hero-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  .hero-id { display: flex; align-items: center; gap: 14px; min-width: 0; }
   .hero-name { font-size: 22px; font-weight: 600; margin: 0; line-height: 1.25; }
   .hero-sub { font-size: 13px; color: rgba(255,255,255,0.72); margin-top: 4px; }
-  .tier-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border: 1px solid var(--navy-line); border-radius: var(--r-pill); padding: 6px 14px 6px 8px; font-size: 13.5px; font-weight: 500; white-space: nowrap; }
-  .tier-medal { width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; background: var(--tier, var(--gold)); color: var(--navy); }
+  .hero-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .avatar { border-radius: 50%; object-fit: cover; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; }
+  .avatar-ini { background: var(--gold); color: var(--navy); font-weight: 700; letter-spacing: 0.5px; }
+  /* Cuadrante: así mide la universidad (calidad × matrículas) */
+  .cuad-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); border: 1px solid var(--navy-line); border-left: 4px solid var(--cq, var(--gold)); border-radius: 12px; padding: 7px 14px 7px 10px; font-size: 13.5px; line-height: 1.25; }
+  .cuad-badge .cuad-emoji { font-size: 22px; line-height: 1; }
+  .cuad-badge b { display: block; font-weight: 600; }
+  .cuad-badge small { display: block; font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 2px; }
+  .btn-ranking { background: var(--gold); color: var(--navy); border: none; border-radius: var(--r-pill); padding: 10px 16px; font-size: 13.5px; font-weight: 600; cursor: pointer; white-space: nowrap; box-shadow: 0 4px 14px rgba(232,184,74,0.35); }
+  .btn-ranking:hover { background: #F2C65C; }
   .hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 18px; }
   .stat { border-left: 2px solid var(--navy-line); padding-left: 12px; }
   .stat-val { font-size: 22px; font-weight: 600; line-height: 1.1; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
   .stat-val small { font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.72); }
+  .stat-val .q-tag { font-size: 11.5px; font-weight: 600; color: var(--navy); background: var(--gold); border-radius: var(--r-pill); padding: 1px 8px; }
   .stat-lbl { font-size: 12.5px; color: rgba(255,255,255,0.72); margin-top: 3px; }
   .delta-up { color: #7EE2A8; font-size: 13px; font-weight: 500; }
   .delta-down { color: #FF9AA8; font-size: 13px; font-weight: 500; }
   .delta-flat { color: rgba(255,255,255,0.6); font-size: 13px; }
   .spark { vertical-align: middle; margin-left: 6px; }
-  .level-bar { margin-top: 16px; }
-  .level-bar-head { display: flex; justify-content: space-between; font-size: 12.5px; color: rgba(255,255,255,0.78); margin-bottom: 6px; gap: 10px; flex-wrap: wrap; }
-  .level-track { height: 8px; background: rgba(255,255,255,0.12); border-radius: var(--r-pill); overflow: hidden; }
-  .level-fill { height: 100%; background: var(--gold); border-radius: var(--r-pill); transition: width 0.5s ease; }
+  .next-level { margin-top: 16px; display: flex; gap: 10px; align-items: flex-start; background: rgba(255,255,255,0.07); border: 1px solid var(--navy-line); border-radius: 10px; padding: 10px 14px; font-size: 13.5px; line-height: 1.5; color: rgba(255,255,255,0.92); }
+  .next-level-ico { font-size: 18px; line-height: 1.2; }
 
   /* Lo más importante de la página: el foco de hoy */
   .focus-card { margin-top: 18px; background: var(--card); color: var(--ink); border-radius: 12px; padding: 16px 18px; border-left: 6px solid var(--gold); }
-  .focus-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .focus-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
   .focus-title { font-size: 13px; color: var(--gold-deep); font-weight: 600; }
-  .focus-stage { font-size: 18px; font-weight: 600; color: var(--navy); margin: 2px 0 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .focus-stage .pct { font-size: 14px; font-weight: 600; padding: 2px 10px; border-radius: var(--r-pill); }
+  .focus-kicker { font-size: 12.5px; color: var(--muted); }
+  .focus-stage { font-size: 18px; font-weight: 600; color: var(--navy); margin: 6px 0 4px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .focus-metrics, .eval-metrics { display: flex; gap: 6px 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin-bottom: 10px; }
+  .eval-metrics { margin: 4px 0 0; }
+  .fm b { color: var(--ink); font-weight: 600; }
+  .fm em { font-style: normal; font-weight: 400; color: var(--muted); }
+  .fm.up { color: var(--good); font-weight: 500; } .fm.down { color: var(--bad); font-weight: 500; } .fm.flat { color: var(--muted); }
   .focus-obs { font-size: 14px; color: var(--ink-2); margin-bottom: 10px; line-height: 1.55; }
   .focus-obs b { color: var(--ink); font-weight: 600; }
+  .focus-more { color: var(--muted); }
   .focus-tec { background: var(--gold-soft); border-radius: 10px; padding: 12px 14px; }
   .focus-tec-title { font-size: 13.5px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
   .focus-tec-speech { font-size: 14px; color: var(--ink); line-height: 1.55; white-space: pre-wrap; }
@@ -212,6 +226,12 @@
   .btn-primary:hover { background: var(--navy-soft); }
   .btn-ghost { background: transparent; color: var(--navy); border: 1px solid var(--line-strong); border-radius: var(--r-pill); padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer; }
   .btn-ghost:hover { border-color: var(--navy); }
+  /* Desplegable para revisar una llamada evaluada anterior */
+  .eval-select { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--muted); }
+  .eval-select select { font-size: 13px; color: var(--navy); background: var(--card); border: 1px solid var(--line-strong); border-radius: var(--r-pill); padding: 5px 10px; cursor: pointer; max-width: 240px; }
+  .speech-actions { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+  .speech-actions .btn-copy { position: static; }
+  .speech-actions .btn-link { background: transparent; border: none; color: var(--navy); font-size: 12.5px; font-weight: 500; cursor: pointer; padding: 5px 6px; text-decoration: underline; text-underline-offset: 3px; }
 
   /* Las 4 etapas como una secuencia (sí son pasos en orden) */
   .steps-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
@@ -221,12 +241,17 @@
   .step-num { font-size: 12px; color: var(--muted); }
   .step-btn.active .step-num { color: rgba(255,255,255,0.7); }
   .step-title { font-size: 14px; font-weight: 600; line-height: 1.3; }
-  .step-score { display: flex; align-items: baseline; gap: 8px; margin-top: auto; }
-  .step-pct { font-size: 18px; font-weight: 600; }
+  .step-score { display: flex; align-items: baseline; gap: 8px; margin-top: auto; flex-wrap: wrap; }
+  .step-pct { font-size: 20px; font-weight: 600; }
   .step-pct.diag-green { color: var(--good); } .step-pct.diag-yellow { color: var(--warn); } .step-pct.diag-red { color: var(--bad); } .step-pct.diag-gray { color: var(--muted); }
   .step-btn.active .step-pct.diag-green { color: #7EE2A8; } .step-btn.active .step-pct.diag-yellow { color: #FFD57A; } .step-btn.active .step-pct.diag-red { color: #FF9AA8; } .step-btn.active .step-pct.diag-gray { color: rgba(255,255,255,0.6); }
-  .step-delta { font-size: 12px; color: var(--muted); }
-  .step-btn.active .step-delta { color: rgba(255,255,255,0.7); }
+  .step-delta { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+  .step-delta.up { color: var(--good); } .step-delta.down { color: var(--bad); }
+  .step-delta em { font-style: normal; font-weight: 400; color: var(--muted); }
+  .step-btn.active .step-delta.up { color: #7EE2A8; } .step-btn.active .step-delta.down { color: #FF9AA8; } .step-btn.active .step-delta, .step-btn.active .step-delta em { color: rgba(255,255,255,0.75); }
+  .step-avg { font-size: 12px; color: var(--muted); }
+  .step-avg b { color: var(--ink-2); font-weight: 600; }
+  .step-btn.active .step-avg, .step-btn.active .step-avg b { color: rgba(255,255,255,0.78); }
   .step-focus-dot { position: absolute; top: 10px; right: 12px; font-size: 12px; color: var(--gold-deep); font-weight: 600; }
   .step-btn.active .step-focus-dot { color: var(--gold); }
   .support-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 18px; font-size: 13px; color: var(--muted); }
@@ -244,7 +269,8 @@
   .datos-estandar-box b { color: var(--gold-deep); font-weight: 600; }
 
   .eval-box { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 18px 20px; margin-bottom: 14px; }
-  .eval-head { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+  .eval-head { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; flex-wrap: wrap; }
+  .eval-head-text { flex: 1 1 260px; min-width: 0; }
   .eval-score { font-size: 21px; font-weight: 600; width: 66px; height: 66px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; }
   .eval-score.diag-green { background: var(--good); } .eval-score.diag-yellow { background: var(--warn); } .eval-score.diag-red { background: var(--bad); } .eval-score.diag-gray { background: var(--muted); }
   .eval-title { font-size: 15.5px; font-weight: 600; color: var(--navy); }
@@ -261,8 +287,6 @@
   .speech-suggest { background: var(--card); border: 1px solid #F1D98F; border-radius: 10px; padding: 12px 14px; margin-top: 10px; position: relative; }
   .speech-suggest-title { font-size: 13px; color: var(--gold-deep); font-weight: 600; margin-bottom: 4px; }
   .speech-suggest-text { font-size: 14px; color: var(--ink); line-height: 1.55; white-space: pre-wrap; }
-  .speech-suggest .btn-copy { position: static; display: inline-block; margin-top: 10px; }
-  .speech-suggest .btn-link { display: inline-block; margin-top: 10px; margin-right: 8px; background: transparent; border: 1px solid var(--line-strong); color: var(--navy); padding: 5px 12px; border-radius: var(--r-pill); font-size: 12px; cursor: pointer; }
   .caso-porque { font-size: 12.5px; color: var(--ink-2); margin-top: 8px; line-height: 1.5; }
   .caso-porque b { color: var(--gold-deep); font-weight: 600; }
   .caso-generic { margin-top: 8px; font-size: 12.5px; color: var(--muted); }
@@ -271,16 +295,102 @@
   .focus-tec .caso-generic { color: var(--muted); }
   .eval-none { font-size: 14px; color: var(--ink-2); margin-top: 6px; }
 
+  /* Checklist de calidad: lo valida el supervisor; el asesor solo lo lee */
   .checklist-box { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 16px 20px; margin-bottom: 14px; }
-  .checklist-box-title { font-size: 14.5px; font-weight: 600; color: var(--navy); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .checklist-box-title { font-size: 14.5px; font-weight: 600; color: var(--navy); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
   .checklist-box-title small { font-size: 12.5px; color: var(--muted); font-weight: 400; }
-  .checklist-item { font-size: 14px; padding: 5px 0; color: var(--ink); display: flex; gap: 10px; align-items: flex-start; }
-  .checklist-item input { margin-top: 5px; accent-color: var(--navy); width: 16px; height: 16px; flex-shrink: 0; }
-  .checklist-item.done span { color: var(--muted); text-decoration: line-through; }
+  .checklist-item { font-size: 14px; padding: 7px 0; color: var(--ink); display: flex; gap: 10px; align-items: flex-start; border-top: 1px solid var(--line); }
+  .checklist-item:first-of-type { border-top: none; }
+  .check-ico { flex-shrink: 0; font-size: 15px; line-height: 1.4; width: 20px; text-align: center; }
+  .check-body { flex: 1; min-width: 0; }
+  .check-text { display: block; }
+  .checklist-item.ok .check-text { color: var(--ink-2); }
+  .checklist-item.none .check-text { color: var(--ink-2); }
+  .check-evid { display: block; font-size: 12.5px; color: var(--muted); margin-top: 2px; line-height: 1.45; font-style: italic; }
+  .checklist-item.ok .check-evid { color: var(--good); }
+  .checklist-item.pend .check-evid { color: var(--warn); }
+  .check-tag { flex-shrink: 0; font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: var(--r-pill); margin-top: 2px; }
+  .check-tag.ok { background: var(--good-bg); color: var(--good); }
+  .check-tag.pend { background: var(--warn-bg); color: var(--warn); }
+  .checklist-legend { font-size: 12px; color: var(--muted); margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--line); line-height: 1.5; }
   .question-item { font-size: 14px; padding: 5px 0 5px 14px; color: var(--ink); border-left: 2px solid var(--gold); margin: 4px 0; }
   .diag-tips { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 12px 20px; margin-bottom: 14px; }
   .diag-tips summary { cursor: pointer; font-weight: 600; font-size: 14px; color: var(--navy); }
   .diag-tips ul { margin: 10px 0 4px; padding-left: 20px; font-size: 14px; color: var(--ink-2); line-height: 1.65; }
+
+  /* ===================== RANKING DEL EQUIPO (ventana) ===================== */
+  body.modal-open { overflow: hidden; }
+  .modal-backdrop { display: none; position: fixed; inset: 0; background: rgba(9,26,51,0.62); z-index: 300; padding: 20px 12px; overflow: hidden; }
+  .modal-backdrop.open { display: flex; align-items: flex-start; justify-content: center; }
+  .modal { background: var(--paper); border-radius: 16px; width: 100%; max-width: 940px; max-height: calc(100vh - 40px); overflow-y: auto; -webkit-overflow-scrolling: touch; box-shadow: 0 24px 60px rgba(0,0,0,0.35); }
+  .modal-head { background: var(--navy); color: #fff; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; border-bottom: 3px solid var(--gold); position: sticky; top: 0; z-index: 2; }
+  .modal-head h2 { margin: 0; font-size: 18px; font-weight: 600; }
+  .modal-close { background: transparent; border: 1px solid var(--navy-line); color: #fff; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 16px; }
+  .modal-close:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+  .modal-body { padding: 18px 20px 24px; display: flex; flex-direction: column; gap: 16px; }
+  .rk-section { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-card); padding: 18px 20px; }
+  .rk-title { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 12px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .rk-title small { font-size: 12.5px; color: var(--muted); font-weight: 400; }
+  .rk-rule { font-size: 12.5px; color: var(--muted); margin-top: 12px; line-height: 1.5; }
+  /* Podio de carreras: 4º · 2º · 1º · 3º · 5º */
+  .podium { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; align-items: end; padding-top: 6px; }
+  .podium-slot { display: flex; flex-direction: column; align-items: center; min-width: 0; }
+  .podium-person { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; margin-bottom: 8px; min-width: 0; width: 100%; animation: podiumIn 0.5s ease-out both; animation-delay: calc(var(--delay) + 0.35s); }
+  .podium-person .avatar { box-shadow: 0 0 0 3px var(--card), 0 0 0 5px var(--line-strong); }
+  .rank-1 .podium-person .avatar { box-shadow: 0 0 0 3px var(--card), 0 0 0 6px var(--gold); }
+  .rank-2 .podium-person .avatar { box-shadow: 0 0 0 3px var(--card), 0 0 0 5px #B8C2D0; }
+  .rank-3 .podium-person .avatar { box-shadow: 0 0 0 3px var(--card), 0 0 0 5px #D9A066; }
+  .podium-name { font-size: 13px; font-weight: 600; color: var(--navy); line-height: 1.25; max-width: 100%; }
+  .me-tag { font-size: 10.5px; font-weight: 700; color: var(--navy); background: var(--gold); border-radius: var(--r-pill); padding: 1px 7px; vertical-align: middle; }
+  .podium-cq { font-size: 11px; font-weight: 600; color: var(--cq); background: var(--cqbg); border-radius: var(--r-pill); padding: 2px 8px; white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+  .podium-cq .cq-name { margin-left: 3px; }
+  .podium-metrics { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
+  .podium-block { width: 100%; height: var(--h); border-radius: 10px 10px 0 0; background: var(--navy-soft); display: flex; justify-content: center; align-items: flex-start; padding-top: 8px; color: #fff; font-weight: 700; font-size: 20px; animation: podiumRise 0.7s cubic-bezier(.2,.8,.2,1) both; animation-delay: var(--delay); transform-origin: bottom; }
+  .rank-1 .podium-block { background: linear-gradient(180deg, #F2C65C, var(--gold-deep)); color: var(--navy); }
+  .rank-2 .podium-block { background: linear-gradient(180deg, #E3E8EF, #9AA7B8); color: var(--navy); }
+  .rank-3 .podium-block { background: linear-gradient(180deg, #E8B98B, #A8703C); color: #fff; }
+  .podium-slot.me .podium-block { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .podium-pos { font-size: 18px; }
+  .rank-1 .podium-pos { font-size: 24px; }
+  @keyframes podiumRise { from { transform: scaleY(0); opacity: 0.4; } to { transform: scaleY(1); opacity: 1; } }
+  @keyframes podiumIn { from { transform: translateY(10px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .my-rank { margin-top: 14px; display: flex; align-items: center; gap: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: 14px; color: var(--ink); }
+  .my-rank.top { background: var(--gold-soft); border-color: #F1D98F; }
+  .my-rank > span { font-size: 22px; }
+  .my-rank-sub { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+  /* Cuadrantes (misma disposición que la Matriz) */
+  .cq-axis-top { font-size: 12px; color: var(--muted); text-align: right; margin-bottom: 6px; }
+  .cq-axis-bottom { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin-top: 6px; gap: 10px; }
+  .cq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .cq-cell { background: var(--cqbg); border: 1px solid var(--line); border-top: 4px solid var(--cq); border-radius: 10px; padding: 12px 14px; min-height: 120px; }
+  .cq-head { font-size: 12.5px; font-weight: 700; color: var(--cq); letter-spacing: 0.3px; margin-bottom: 8px; }
+  .cq-head small { display: block; font-size: 11.5px; font-weight: 400; color: var(--ink-2); letter-spacing: 0; margin-top: 2px; }
+  .cq-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .cq-chip { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-pill); padding: 3px 10px 3px 4px; font-size: 12.5px; color: var(--ink); }
+  .cq-chip.me { border: 2px solid var(--gold); font-weight: 600; }
+  .cq-empty { font-size: 12.5px; color: var(--muted); font-style: italic; }
+  .cq-note { font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+  /* Calidad del equipo */
+  .heat { display: flex; flex-direction: column; gap: 8px; }
+  .heat-row { display: grid; grid-template-columns: 170px 1fr 64px 96px; gap: 10px; align-items: center; font-size: 13.5px; }
+  .heat-lbl { color: var(--ink); font-weight: 500; }
+  .heat-track { height: 12px; background: var(--paper); border-radius: var(--r-pill); overflow: hidden; border: 1px solid var(--line); }
+  .heat-fill { display: block; height: 100%; background: var(--navy-soft); border-radius: var(--r-pill); transition: width 0.6s ease; }
+  .heat-row.foco .heat-fill { background: var(--bad); } .heat-row.opor .heat-fill { background: var(--good); }
+  .heat-val { font-weight: 600; color: var(--navy); text-align: right; }
+  .heat-tag { font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: var(--r-pill); white-space: nowrap; }
+  .heat-tag.foco { background: var(--bad-bg); color: var(--bad); } .heat-tag.opor { background: var(--good-bg); color: var(--good); }
+  .focos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 14px; }
+  .foco-card { display: flex; gap: 10px; align-items: center; border-radius: 10px; padding: 10px 14px; font-size: 13.5px; color: var(--ink); }
+  .foco-card.foco { background: var(--bad-bg); } .foco-card.opor { background: var(--good-bg); }
+  .foco-card b { display: block; font-size: 12.5px; color: var(--ink-2); font-weight: 600; }
+  .foco-ico { font-size: 22px; }
+  /* Fotos del equipo (panel del supervisor) */
+  .foto-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  .foto-row select { font-size: 13px; padding: 7px 10px; border-radius: var(--r-pill); border: 1px solid var(--line-strong); color: var(--ink); background: var(--card); max-width: 100%; }
+  .fotos-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .foto-chip { display: inline-flex; align-items: center; gap: 6px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-pill); padding: 3px 6px 3px 4px; font-size: 12.5px; }
+  .foto-del { background: transparent; border: none; color: var(--bad); cursor: pointer; font-size: 12px; padding: 0 4px; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
   .objecion-titulo { font-size: 16px; font-weight: 600; color: var(--bad); margin-bottom: 6px; }
@@ -406,6 +516,32 @@
     .speech-suggest .btn-link { position: static; display: inline-block; margin-top: 8px; }
     .speech-suggest-text { padding-bottom: 8px; }
     .speech-suggest .btn-copy { position: static; display: inline-block; margin-top: 8px; margin-left: 6px; }
+    .hero-right { width: 100%; justify-content: space-between; }
+    .cuad-badge { flex: 1 1 auto; }
+    .next-level { font-size: 13px; }
+    .focus-head .eval-select { width: 100%; }
+    .focus-head .eval-select select { flex: 1; max-width: none; }
+    .eval-head .eval-select { width: 100%; }
+    .eval-head .eval-select select { flex: 1; max-width: none; }
+    .modal-backdrop { padding: 8px 6px; }
+    .modal { max-height: calc(100vh - 16px); border-radius: 12px; }
+    .modal-head { padding: 12px 14px; }
+    .modal-body { padding: 10px 8px 16px; gap: 10px; }
+    .rk-section { padding: 14px 12px; }
+    .podium { gap: 4px; }
+    .podium-person .avatar { width: 38px !important; height: 38px !important; font-size: 14px !important; }
+    .podium-name { font-size: 11px; }
+    .podium-cq { font-size: 9.5px; padding: 1px 6px; }
+    .podium-metrics { font-size: 10px; }
+    .podium-block { font-size: 16px; }
+    .cq-cell { padding: 10px; min-height: 90px; }
+    .cq-head { font-size: 11.5px; }
+    .cq-chip { font-size: 11.5px; }
+    .cq-axis-top, .cq-axis-bottom { font-size: 11px; }
+    .heat-row { grid-template-columns: 104px 1fr 54px 72px; gap: 6px; font-size: 12.5px; }
+    .podium-cq .cq-name { display: none; }
+    .podium-cq { padding: 2px 6px; font-size: 12px; }
+    .heat-tag { font-size: 10.5px; padding: 1px 6px; }
     .tecnica-progress { padding: 14px; }
     .card-tag-select, select, input[type="text"] { font-size: 16px; } /* evita zoom automático en iOS */
     .admin-card { padding: 16px; }
@@ -573,6 +709,16 @@
         </div>
       </div>
 
+      <div class="admin-card edit-only">
+        <h2>📸 Fotos del equipo</h2>
+        <p>Para el podio del ranking. Elige al asesor y sube su foto: se recorta en cuadrado, se reduce a 112 px y viaja dentro del HTML exportado. Si no hay foto, se muestran sus iniciales.</p>
+        <div class="foto-row">
+          <select id="fotoAsesorSelect" aria-label="Asesor"><option value="">Elige al asesor...</option></select>
+          <label class="btn-sync" style="cursor:pointer;">Subir foto<input type="file" accept="image/*" style="display:none" onchange="subirFoto(this)"></label>
+        </div>
+        <div class="fotos-list" id="fotosList"></div>
+      </div>
+
       <div class="admin-card danger">
         <h2>♻️ Restablecer en este navegador</h2>
         <p>Descarta los cambios hechos en este navegador y vuelve a la versión oficial publicada en este archivo. No afecta a los demás asesores.</p>
@@ -582,6 +728,13 @@
   </div>
 
 </main>
+
+<div id="rankingModal" class="modal-backdrop" onclick="if (event.target === this) closeRanking()" role="dialog" aria-modal="true" aria-labelledby="rankingTitle">
+  <div class="modal">
+    <div class="modal-head"><h2 id="rankingTitle">🏁 Ranking del equipo</h2><button class="modal-close" onclick="closeRanking()" aria-label="Cerrar">✕</button></div>
+    <div id="rankingBody" class="modal-body"></div>
+  </div>
+</div>
 
 <footer class="app-footer">Herramienta desarrollada por Christopher Huamán · CGO Distancia 2025</footer>
 
@@ -601,7 +754,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-10T01:56:27.000Z";
+  const DATA_VERSION = "2026-10-12T02:42:58.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -718,10 +871,14 @@
     let diag = 'cargando...';
     if (sheetDataCache.error) diag = '⚠️ no se pudo cargar data.json (' + sheetDataCache.error + ')';
     else if (sheetDataCache.loaded) diag = `${sheetDataCache.evaluacion.length} llamadas evaluadas · ${asesores} asesores${ultima ? ' · última evaluación ' + ultima : ''}`;
+    const eq = sheetDataCache.equipo;
+    const cu = eq && eq.cuadrantes ? eq.cuadrantes : null;
+    const equipoTxt = cu ? `🟢 ${(cu.verde || []).length} · 🟡 ${(cu.amarillo || []).length} · 🟠 ${(cu.naranja || []).length} · 🔴 ${(cu.rojo || []).length}${(cu.sinMatriz || []).length ? ' · sin matriz ' + cu.sinMatriz.length : ''}${eq.fecha ? ' · datos al ' + eq.fecha : ''}` : 'sin Matriz del mes todavía';
     el.innerHTML = `
-      <div><b>Contenido:</b> ${fichas} fichas · ${Object.keys(db.carreras).length} carreras · ${db.atencion.objeciones.length} objeciones · ${db.tecnicas.length} técnicas</div>
+      <div><b>Contenido:</b> ${fichas} fichas · ${Object.keys(db.carreras).length} carreras · ${db.atencion.objeciones.length} objeciones · ${db.tecnicas.length} técnicas · ${Object.keys(db.fotos || {}).length} fotos</div>
       <div><b>Diagnóstico:</b> ${diag}</div>
-      <div><b>Origen:</b> data.json publicado junto a esta página; se actualiza solo desde el Google Sheet (🔰FEEDBACK y 🏆 TECNICAS) a las 11:00 y 18:00.</div>
+      <div><b>Cuadrantes:</b> ${equipoTxt}</div>
+      <div><b>Origen:</b> data.json publicado junto a esta página; se actualiza solo a las 11:00 y 18:00 desde 🔰FEEDBACK y 🏆 TECNICAS (archivo I) y la pestaña DASHBOARD de la Matriz CGO (cuartiles de calidad y matrículas). El checklist lo valida el supervisor desde su evaluación o desde la pestaña ✅ CHECKLIST del archivo I.</div>
     `;
   }
 
@@ -734,7 +891,7 @@
     document.getElementById('navTabsPropuesta').style.display = (modId === 'propuesta') ? 'flex' : 'none';
     document.getElementById('filterBarPropuesta').style.display = (modId === 'propuesta') ? '' : 'none';
     document.getElementById('headerRowBottom').style.display = (modId === 'publicar') ? 'none' : '';
-    if (modId === 'publicar') updateHeaderCount();
+    if (modId === 'publicar') { updateHeaderCount(); renderFotosAdmin(); }
     window.scrollTo({ top: 0 });
   }
 
@@ -1142,10 +1299,11 @@
   // ===================== DATOS DEL DIAGNÓSTICO (data.json) =====================
   // La página lee data.json (publicado junto a ella) con la pestaña 🔰FEEDBACK
   // (diagnóstico por llamada), la pestaña 🏆 TECNICAS (qué técnica domina cada
-  // asesor) y un bloque "analisis" ya calculado (nivel, puesto, foco por etapa).
+  // asesor), un bloque "analisis" ya calculado (cuadrante, promedios, foco por etapa,
+  // checklist validado) y un bloque "equipo" (ranking, cuadrantes, mapa de calor).
   // No se guarda nada de esto en el archivo exportado: se vuelve a pedir cada
   // vez que se abre la página, así siempre se ve lo último.
-  let sheetDataCache = { evaluacion: [], tecnicas: [], analisis: {}, loaded: false, error: null };
+  let sheetDataCache = { evaluacion: [], tecnicas: [], analisis: {}, equipo: null, loaded: false, error: null };
 
   function normalizarTexto(s) {
     return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
@@ -1195,10 +1353,11 @@
         evaluacion: Array.isArray(json.evaluacion) ? json.evaluacion : [],
         tecnicas: Array.isArray(json.tecnicas) ? json.tecnicas : [],
         analisis: (json.analisis && typeof json.analisis === 'object') ? json.analisis : {},
+        equipo: (json.equipo && typeof json.equipo === 'object') ? json.equipo : null,
         loaded: true, error: null
       };
     } catch (e) {
-      sheetDataCache = { evaluacion: [], tecnicas: [], analisis: {}, loaded: false, error: (e && e.message) ? e.message : 'fetch_error' };
+      sheetDataCache = { evaluacion: [], tecnicas: [], analisis: {}, equipo: null, loaded: false, error: (e && e.message) ? e.message : 'fetch_error' };
     }
     return sheetDataCache;
   }
@@ -1212,6 +1371,7 @@
   }
   function onAdvisorChange(name) {
     localStorage.setItem('cgo_advisor_name', name || '');
+    selectedEvalIdx = null;
     renderPasoTabs();
     renderAtencion();
     renderTecnicas();
@@ -1220,7 +1380,11 @@
     const names = new Set();
     sheetDataCache.evaluacion.forEach(r => { const n = findField(r, ['asesor']); if (n) names.add(String(n).trim()); });
     sheetDataCache.tecnicas.forEach(r => { const n = findField(r, ['asesor']); if (n) names.add(String(n).trim()); });
-    return Array.from(names).sort((a, b) => a.localeCompare(b, 'es'));
+    Object.keys(sheetDataCache.analisis || {}).forEach(n => names.add(String(n).trim()));
+    // Un mismo asesor puede venir escrito distinto en cada pestaña: se deja una sola versión.
+    const seen = new Map();
+    names.forEach(n => { const k = normalizarTexto(n); if (!seen.has(k)) seen.set(k, n); });
+    return Array.from(seen.values()).sort((a, b) => a.localeCompare(b, 'es'));
   }
   function renderAdvisorOptions() {
     const sel = document.getElementById('advisorSelect');
@@ -1240,7 +1404,7 @@
     paso1: ['ganar confianza'],
     paso2: ['identificar necesidades'],
     paso3: ['solucionar problemas'],
-    paso4: ['cerrar']
+    paso4: ['cerrar', 'cierre']
   };
 
   // Tips genéricos por etapa, basados en la infografía "Pautas de Atención y
@@ -1287,16 +1451,19 @@
     if (pct >= 60) return 'yellow';
     return 'red';
   }
-  function getAdvisorEvaluation(name) {
-    if (!name) return null;
-    const target = normalizarTexto(name);
-    const rows = sheetDataCache.evaluacion.filter(r => normalizarTexto(findField(r, ['asesor'])) === target);
-    if (!rows.length) return null;
-    return { row: rows[rows.length - 1], count: rows.length };
+  function fmtPct(p, dec) {
+    if (p === null || p === undefined || isNaN(p)) return '—';
+    return (dec ? Number(p).toFixed(dec).replace('.', ',') : Math.round(p)) + '%';
+  }
+  function parseFechaDMY(s) {
+    const m = String(s || '').match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    if (!m) return null;
+    const d = new Date(parseInt(m[3], 10), parseInt(m[2], 10) - 1, parseInt(m[1], 10));
+    return isNaN(d.getTime()) ? null : d;
   }
 
-  // Análisis gamificado precalculado por el proceso automático (stages con
-  // fortaleza/oportunidad + speech, puntaje combinado, nivel y puesto propio).
+  // Análisis precalculado por el proceso automático (cuadrante, cuartiles,
+  // promedios por etapa, fortaleza/oportunidad con speech, checklist validado).
   // Se busca por nombre tolerando acentos/mayúsculas, igual que findField.
   function getAdvisorAnalysis(name) {
     if (!name || !sheetDataCache.analisis) return null;
@@ -1305,19 +1472,28 @@
     return key ? sheetDataCache.analisis[key] : null;
   }
 
-  // ---- Niveles con nombre (como rangos): dan sentido al "Nivel 1-10" ----
-  const NIVEL_TIERS = [
-    { max: 2, name: 'Bronce', emoji: '🥉', color: '#D9A066' },
-    { max: 4, name: 'Plata', emoji: '🥈', color: '#D5DCE6' },
-    { max: 6, name: 'Oro', emoji: '🥇', color: '#E8B84A' },
-    { max: 8, name: 'Platino', emoji: '🏅', color: '#A5E3F0' },
-    { max: 10, name: 'Diamante', emoji: '💎', color: '#C3B5FF' }
-  ];
-  function tierInfo(nivel) {
-    const n = Math.max(1, Math.min(10, nivel || 1));
-    const t = NIVEL_TIERS.find(x => n <= x.max) || NIVEL_TIERS[NIVEL_TIERS.length - 1];
-    const sub = (n % 2 === 1) ? 'I' : 'II';
-    return { name: t.name, sub, emoji: t.emoji, color: t.color, label: `${t.name} ${sub}` };
+  // ---- Cuadrantes: así mide la universidad al equipo (calidad de llamada × avance de matrículas) ----
+  const CUADRANTES = {
+    verde:    { emoji: '🟢', nombre: 'Referente Integral',      sub: 'Resultado alto + gestión sólida',            color: '#1E8E5A', bg: '#E6F6EE', orden: 0 },
+    amarillo: { emoji: '🟡', nombre: 'Potencial Comercial',     sub: 'Resultado alto + gestión por fortalecer',    color: '#B57800', bg: '#FFF4DB', orden: 1 },
+    naranja:  { emoji: '🟠', nombre: 'Oportunidad Estratégica', sub: 'Resultado por desarrollar + gestión sólida', color: '#C65A11', bg: '#FDEBDD', orden: 2 },
+    rojo:     { emoji: '🔴', nombre: 'Intervención Prioritaria',sub: 'Resultado bajo + gestión por fortalecer',    color: '#C8283D', bg: '#FDE8EB', orden: 3 }
+  };
+  function cuadranteInfo(key) {
+    return CUADRANTES[key] || { emoji: '⚪', nombre: 'Sin cuadrante aún', sub: 'Todavía no apareces en la matriz del mes', color: '#6B7893', bg: '#EEF1F5', orden: 9 };
+  }
+  // Qué le falta al asesor para pasar al siguiente cuadrante (umbrales oficiales de la Matriz).
+  function siguienteNivelTexto(a) {
+    if (!a) return '';
+    const cal = a.calidadPromedio, av = a.avanceMeta;
+    const calOk = ['Q1', 'Q2'].includes(a.cuartilCalidad), matOk = ['Q1', 'Q2'].includes(a.cuartilMatriculas);
+    if (!a.cuadrante) return cal !== null && cal !== undefined ? `Tu calidad promedio es ${fmtPct(cal)}. Cuando estés en la matriz del mes verás aquí tu cuadrante.` : '';
+    if (calOk && matOk) return '¡Eres referente del equipo! Mantén tu calidad en 85% o más y tu meta de matrículas por encima del 80%.';
+    const faltaCal = (cal === null || cal === undefined) ? null : Math.max(0, 85 - cal);
+    const faltaMat = (av === null || av === undefined) ? null : Math.max(0, 80 - av);
+    if (matOk && !calOk) return `Tu resultado ya está arriba. Para pasar a 🟢 Referente Integral sube tu calidad promedio a 85% (hoy ${fmtPct(cal)}${faltaCal ? ', te faltan ' + Math.ceil(faltaCal) + ' puntos' : ''}).`;
+    if (calOk && !matOk) return `Tu gestión ya es sólida. Para pasar a 🟢 Referente Integral llega al 80% de tu meta de matrículas (hoy ${fmtPct(av)}${a.metaCampana ? ', meta ' + a.metaCampana : ''}).`;
+    return `Prioridad doble: calidad promedio de 85% (hoy ${fmtPct(cal)}) y 80% de tu meta de matrículas (hoy ${fmtPct(av)}). Tu supervisor te acompaña de cerca este mes.`;
   }
   const STAGE_LABELS = { paso1: 'Ganar confianza', paso2: 'Identificar necesidades', paso3: 'Solucionar problemas', paso4: 'Cerrar' };
   const STAGE_KEYS = ['paso1', 'paso2', 'paso3', 'paso4'];
@@ -1330,18 +1506,77 @@
     paso4: ['tec_01', 'tec_04', 'tec_06', 'tec_07', 'tec_11', 'tec_14', 'tec_16']
   };
 
-  // Historial de evaluaciones del asesor, en el orden del Sheet (la última es la más reciente).
+  // ---- Qué llamada evaluada está viendo el asesor (por defecto la más reciente) ----
+  let selectedEvalIdx = null; // índice dentro de sheetDataCache.evaluacion; null = la última
+  function selectEvaluacion(idx) {
+    selectedEvalIdx = (idx === '' || idx === null || idx === undefined) ? null : parseInt(idx, 10);
+    renderPasoTabs();
+    renderAtencion();
+  }
+
+  // Historial de evaluaciones del asesor ordenado por fecha (la última es la más
+  // reciente). Si alguna fecha no se entiende, se respeta el orden del Sheet.
   function getAdvisorHistory(name) {
     if (!name) return [];
     const target = normalizarTexto(name);
-    return sheetDataCache.evaluacion
-      .filter(r => normalizarTexto(findField(r, ['asesor'])) === target)
-      .map(r => ({ row: r, score: parseScorePct(findField(r, ['score cualitativo'])), fecha: isBlankValue(getField(r, 'fecha')) ? null : String(getField(r, 'fecha')).trim() }));
+    const list = [];
+    sheetDataCache.evaluacion.forEach((r, idx) => {
+      if (normalizarTexto(findField(r, ['asesor'])) !== target) return;
+      const fechaRaw = isBlankValue(getField(r, 'fecha')) ? null : String(getField(r, 'fecha')).trim();
+      list.push({ row: r, idx, score: parseScorePct(findField(r, ['score cualitativo'])), fecha: fechaRaw, date: parseFechaDMY(fechaRaw) });
+    });
+    if (list.length && list.every(h => h.date)) list.sort((a, b) => (a.date - b.date) || (a.idx - b.idx));
+    return list;
+  }
+  // La evaluación elegida en el desplegable (o la última) + su anterior cronológica.
+  function getSelectedEval(history) {
+    if (!history.length) return null;
+    let pos = history.length - 1;
+    if (selectedEvalIdx !== null) {
+      const p = history.findIndex(h => h.idx === selectedEvalIdx);
+      if (p >= 0) pos = p;
+    }
+    return { entry: history[pos], prev: pos > 0 ? history[pos - 1] : null, pos, isLatest: pos === history.length - 1 };
+  }
+  // Etapa que marcan "Fortaleza principal" / "Brecha principal" en una fila del Sheet.
+  function stageFromLabel(label) {
+    const nl = normalizarTexto(label);
+    if (!nl) return null;
+    return STAGE_KEYS.find(k => STAGE_FIELD_CANDIDATES[k].some(c => nl.indexOf(normalizarTexto(c)) !== -1)) || null;
+  }
+  // Análisis de UNA evaluación cualquiera (para revisar llamadas anteriores): %,
+  // fortaleza/oportunidad por etapa. Para la última, data.json ya trae además
+  // la técnica elegida y el speech escrito para el caso.
+  function analysisForEval(advisor, sel) {
+    const latest = getAdvisorAnalysis(advisor);
+    const row = sel.entry.row;
+    if (sel.isLatest && latest && latest.stages) return latest;
+    const fk = stageFromLabel(findField(row, ['fortaleza principal']));
+    const bk = stageFromLabel(findField(row, ['brecha principal']));
+    const forts = isBlankValue(getField(row, 'fortalezas')) ? '' : String(getField(row, 'fortalezas')).trim();
+    const oport = isBlankValue(getField(row, 'oportunidades')) ? '' : String(getField(row, 'oportunidades')).trim();
+    const stages = {};
+    STAGE_KEYS.forEach(k => {
+      const pct = parseScorePct(findField(row, STAGE_FIELD_CANDIDATES[k]));
+      const prevPct = sel.prev ? parseScorePct(findField(sel.prev.row, STAGE_FIELD_CANDIDATES[k])) : null;
+      const st = { pct, prev: prevPct, delta: (pct !== null && prevPct !== null) ? pct - prevPct : null, avg: latest && latest.stages && latest.stages[k] ? latest.stages[k].avg : null, rol: null, texto: null, tecnica: null, caso: null };
+      if (k === fk && forts) { st.rol = 'fortaleza'; st.texto = forts; }
+      else if (k === bk && oport) { st.rol = 'oportunidad'; st.texto = oport; }
+      stages[k] = st;
+    });
+    return Object.assign({}, latest || {}, { stages, _historica: true });
   }
   function stagePctFrom(analysis, row, key) {
     const st = analysis && analysis.stages ? analysis.stages[key] : null;
     if (st && st.pct !== null && st.pct !== undefined) return st.pct;
     return parseScorePct(findField(row, STAGE_FIELD_CANDIDATES[key]));
+  }
+  // Promedio de la etapa en todas las evaluaciones del asesor (data.json lo trae; si no, se calcula aquí).
+  function stageAvg(analysis, history, key) {
+    const st = analysis && analysis.stages ? analysis.stages[key] : null;
+    if (st && st.avg !== null && st.avg !== undefined) return st.avg;
+    const vals = history.map(h => parseScorePct(findField(h.row, STAGE_FIELD_CANDIDATES[key]))).filter(v => v !== null && v !== undefined);
+    return vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
   }
   // Peso de la etapa en la evaluación, leído del encabezado "(26%)" del Sheet.
   function stageWeight(row, key) {
@@ -1403,6 +1638,12 @@
     if (tec.caso && tec.caso.texto && tec.caso.tipo !== 'accion') return tec.caso.texto;
     return tec.ejemplo || '';
   }
+  // Botonera mínima del speech: copiar y, si aplica, ir a la técnica (enlace discreto).
+  function speechActionsHTML(tec) {
+    if (!tec) return '';
+    const txt = speechTextToCopy(tec);
+    return `<div class="speech-actions">${txt ? `<button class="btn-copy" data-text="${escapeHtmlPreserveNL(txt).replace(/"/g, '&quot;')}" onclick="copyTecnicaSpeech('${tec.id || ''}', this)">Copiar speech</button>` : ''}${tec.id ? `<button class="btn-link" onclick="goToTecnica('${tec.id}')">Ver la técnica ${tec.titulo ? '' : ''}→</button>` : ''}</div>`;
+  }
   function getRecommendedTecnicaIds(advisor) {
     if (!advisor || sheetDataCache.error) return [];
     const history = getAdvisorHistory(advisor);
@@ -1412,7 +1653,7 @@
     const fk = getFocusStage(analysis, row);
     if (!fk) return [];
     const t = tecnicaForStage(fk, analysis && analysis.stages ? analysis.stages[fk] : null);
-    return t ? [t.id] : [];
+    return t && t.id ? [t.id] : [];
   }
   // Divide el texto de FORTALEZAS/OPORTUNIDADES en ítems legibles (el supervisor
   // suele separar ideas con 🟢/🟠 o con saltos de línea).
@@ -1444,6 +1685,18 @@
     const d = Math.round(delta);
     return d > 0 ? '▲ +' + d : d < 0 ? '▼ ' + d : '= igual';
   }
+  // "▲ +11% vs. evaluación anterior" / "= igual que la evaluación anterior"
+  function deltaPhrase(delta, unit) {
+    if (delta === null || delta === undefined || isNaN(delta)) return '';
+    const d = Math.round(delta);
+    if (d === 0) return '= igual <em>que la evaluación anterior</em>';
+    return (d > 0 ? '▲ +' + d : '▼ ' + d) + (unit || '') + ' <em>vs. evaluación anterior</em>';
+  }
+  function deltaClass(delta) {
+    if (delta === null || delta === undefined || isNaN(delta)) return '';
+    const d = Math.round(delta);
+    return d > 0 ? 'up' : d < 0 ? 'down' : 'flat';
+  }
   // Mini gráfico de la evolución del score (solo si hay 2+ evaluaciones).
   function sparklineSVG(values) {
     const vals = values.filter(v => v !== null && v !== undefined && !isNaN(v)).slice(-8);
@@ -1462,6 +1715,7 @@
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   function goToTecnica(id) {
+    closeRanking();
     switchModule('tecnica', document.getElementById('btnModTecnica'));
     const card = document.querySelector(`.tecnica-card[data-tec-id="${id}"]`);
     if (card) {
@@ -1480,14 +1734,56 @@
       setTimeout(() => { button.innerText = prev; button.classList.remove('copied'); }, 1200);
     });
   }
+  // Desplegable para revisar una llamada evaluada anterior (la más reciente primero).
+  function evalSelectorHTML(history, sel, cls) {
+    if (!history || history.length < 2) return '';
+    const opts = history.slice().reverse().map((h, i) => {
+      const latest = i === 0;
+      const label = `${h.fecha || 'Sin fecha'} · ${h.score !== null ? Math.round(h.score) + '%' : '—'}${latest ? ' · última' : ''}`;
+      return `<option value="${h.idx}" ${h.idx === sel.entry.idx ? 'selected' : ''}>${label}</option>`;
+    }).join('');
+    return `<label class="eval-select ${cls || ''}"><span>Llamada evaluada</span><select onchange="selectEvaluacion(this.value)" aria-label="Elegir qué llamada evaluada revisar">${opts}</select></label>`;
+  }
+  function primerNombre(advisor) {
+    const rawFirst = String(advisor || '').trim().split(/\s+/)[0] || advisor;
+    return rawFirst.charAt(0).toUpperCase() + rawFirst.slice(1).toLowerCase();
+  }
+  // Primer apellido: en Perú lo normal son 2 apellidos, así que con 3 partes es
+  // "Nombre Apellido1 Apellido2" y con 4 o más, los dos últimos son los apellidos.
+  function apellidoIndex(parts) {
+    if (parts.length <= 2) return parts.length - 1;
+    if (parts.length === 3) return 1;
+    return parts.length - 2;
+  }
+  function nombreCorto(advisor) {
+    const parts = String(advisor || '').trim().split(/\s+/);
+    const cap = s => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+    if (parts.length <= 1) return parts.map(cap).join(' ');
+    return cap(parts[0]) + ' ' + cap(parts[apellidoIndex(parts)]);
+  }
+  function iniciales(advisor) {
+    const parts = String(advisor || '').trim().split(/\s+/);
+    return ((parts[0] || '').charAt(0) + (parts[apellidoIndex(parts)] || '').charAt(0)).toUpperCase();
+  }
+  function fotoDe(advisor) {
+    const fotos = db.fotos || {};
+    const target = normalizarTexto(advisor);
+    const k = Object.keys(fotos).find(x => normalizarTexto(x) === target);
+    return k ? fotos[k] : null;
+  }
+  function avatarHTML(advisor, size) {
+    const f = fotoDe(advisor);
+    const s = size || 48;
+    return f ? `<img class="avatar" src="${f}" alt="" width="${s}" height="${s}" style="width:${s}px;height:${s}px">` : `<span class="avatar avatar-ini" style="width:${s}px;height:${s}px;font-size:${Math.round(s * 0.38)}px">${iniciales(advisor)}</span>`;
+  }
 
-  // ---- Tarjeta principal del asesor: nivel, avance y "tu foco ahora" ----
+  // ---- Tarjeta principal del asesor: cuadrante, resultados y "tu foco ahora" ----
   function renderAdvisorDiagSummary() {
     const el = document.getElementById('advisorDiagSummary');
     if (!el) return;
     const advisor = getSelectedAdvisor();
     if (!advisor) {
-      el.innerHTML = `<div class="diag-empty"><span class="big">👤</span><div>Elige tu nombre arriba (junto a ⚙️) para ver <b>tu diagnóstico</b>: tu nivel, tu avance y la técnica que te conviene practicar hoy.</div></div>`;
+      el.innerHTML = `<div class="diag-empty"><span class="big">👤</span><div>Elige tu nombre arriba (junto a ⚙️) para ver <b>tu diagnóstico</b>: tu cuadrante, tus resultados y la técnica que te conviene practicar hoy.</div></div>`;
       return;
     }
     if (sheetDataCache.error) {
@@ -1495,66 +1791,78 @@
       return;
     }
     const history = getAdvisorHistory(advisor);
+    const analysisLatest = getAdvisorAnalysis(advisor);
     if (!history.length) {
-      el.innerHTML = `<div class="diag-empty"><span class="big">🎧</span><div>Todavía no hay una llamada evaluada de <b>${advisor}</b>. En cuanto tu supervisor escuche y califique una, aquí verás tu nivel y en qué enfocarte.</div></div>`;
+      el.innerHTML = `<div class="diag-empty"><span class="big">🎧</span><div>Todavía no hay una llamada evaluada de <b>${advisor}</b>. En cuanto tu supervisor escuche y califique una, aquí verás tu cuadrante y en qué enfocarte.</div></div>`;
       return;
     }
+    const sel = getSelectedEval(history);
+    const analysis = analysisForEval(advisor, sel);
+    const row = sel.entry.row;
     const last = history[history.length - 1];
-    const prev = history.length > 1 ? history[history.length - 2] : null;
-    const row = last.row;
-    const analysis = getAdvisorAnalysis(advisor);
-    const rawFirst = advisor.trim().split(/\s+/)[0] || advisor;
-    const firstName = rawFirst.charAt(0).toUpperCase() + rawFirst.slice(1).toLowerCase();
-    const cuartil = isBlankValue(findField(row, ['cuartil'])) ? null : String(findField(row, ['cuartil'])).trim();
-    const delta = (prev && prev.score !== null && last.score !== null) ? last.score - prev.score : null;
-    const hasGami = !!(analysis && analysis.combinedScore !== undefined && analysis.combinedScore !== null);
-    const nivel = hasGami ? (analysis.nivel || 1) : null;
-    const tier = hasGami ? tierInfo(nivel) : null;
-    const pts = hasGami ? analysis.combinedScore : null;
-    const ptsInLevel = hasGami ? (nivel >= 10 ? 10 : pts % 10) : 0;
-    const ptsToNext = hasGami ? (nivel >= 10 ? 0 : 10 - ptsInLevel) : 0;
-    const tecDom = hasGami ? (analysis.tecnicasDominadas || 0) : db.tecnicas.filter(t => isTecnicaUnlocked(t.id)).length;
-    const tecTot = hasGami ? (analysis.tecnicasTotal || db.tecnicas.length) : db.tecnicas.length;
-    const gap = (hasGami && analysis.puntosParaSubirPuesto !== undefined && analysis.puntosParaSubirPuesto !== null) ? analysis.puntosParaSubirPuesto : null;
+    const prevLast = history.length > 1 ? history[history.length - 2] : null;
+    const deltaLast = (prevLast && prevLast.score !== null && last.score !== null) ? last.score - prevLast.score : null;
+    const a = analysisLatest || {};
+    const cq = cuadranteInfo(a.cuadrante);
+    const hasMatriz = !!a.cuadrante;
+    const calProm = (a.calidadPromedio !== undefined && a.calidadPromedio !== null) ? a.calidadPromedio : (history.filter(h => h.score !== null).length ? history.filter(h => h.score !== null).reduce((s, h) => s + h.score, 0) / history.filter(h => h.score !== null).length : null);
+    const tecDom = a.tecnicasDominadas !== undefined ? (a.tecnicasDominadas || 0) : db.tecnicas.filter(t => isTecnicaUnlocked(t.id)).length;
+    const tecTot = a.tecnicasTotal || db.tecnicas.length;
 
-    // Foco: la brecha principal (o la etapa más baja) + la técnica para practicar.
+    // Foco: la brecha principal (o la etapa más baja) de la llamada elegida + la técnica para practicar.
     const fk = getFocusStage(analysis, row);
     let focusHTML = '';
     if (fk) {
       const st = analysis && analysis.stages ? analysis.stages[fk] : null;
       const pct = stagePctFrom(analysis, row, fk);
+      const prevPct = sel.prev ? parseScorePct(findField(sel.prev.row, STAGE_FIELD_CANDIDATES[fk])) : null;
+      const delta = (pct !== null && pct !== undefined && prevPct !== null && prevPct !== undefined) ? pct - prevPct : null;
+      const avg = stageAvg(analysisLatest, history, fk);
+      const weight = stageWeight(row, fk);
       const items = (st && st.rol === 'oportunidad') ? splitFeedbackItems(st.texto) : [];
       const obs = items.length ? items[0] : (TIPS_POR_ETAPA[fk] || [])[0];
       const tec = tecnicaForStage(fk, st);
       focusHTML = `
         <div class="focus-card">
-          <div class="focus-head"><div class="focus-title">Tu foco ahora</div><div style="font-size:12.5px;color:var(--muted);">${items.length ? 'Brecha principal de tu última llamada evaluada' : 'Tu etapa con menor puntaje'}</div></div>
-          <div class="focus-stage">${STAGE_LABELS[fk]} ${pctPill(pct)}</div>
-          ${obs ? `<div class="focus-obs"><b>${items.length ? 'Lo que observó tu supervisor:' : 'Para trabajar:'}</b> ${escapeHtmlPreserveNL(obs)}${items.length > 1 ? ` <span style="color:var(--muted);">(+${items.length - 1} más en la etapa)</span>` : ''}</div>` : ''}
-          ${tec ? `<div class="focus-tec">${speechBlockHTML(tec, 'focus')}</div>` : ''}
-          <div class="focus-actions">
-            <button class="btn-primary" onclick="goToStage('${fk}')">Ver la etapa completa</button>
-            ${tec ? `<button class="btn-ghost" onclick="goToTecnica('${tec.id}')">Ver la técnica</button>` : ''}
+          <div class="focus-head">
+            <div><div class="focus-title">Tu foco ahora</div><div class="focus-kicker">${items.length ? 'Brecha principal de esta llamada evaluada' : 'Tu etapa con menor puntaje en esta llamada'}${sel.isLatest ? '' : ' · llamada anterior'}</div></div>
+            ${evalSelectorHTML(history, sel, 'on-light')}
           </div>
+          <div class="focus-stage">${STAGE_LABELS[fk]} ${pctPill(pct)}</div>
+          <div class="focus-metrics">
+            ${delta !== null ? `<span class="fm ${deltaClass(delta)}">${deltaPhrase(delta, ' pts')}</span>` : `<span class="fm">Primera evaluación de esta etapa</span>`}
+            ${avg !== null && avg !== undefined ? `<span class="fm">Promedio de tus ${history.length} ${history.length === 1 ? 'evaluación' : 'evaluaciones'}: <b>${fmtPct(avg)}</b></span>` : ''}
+            ${weight ? `<span class="fm">Pesa ${weight}% de tu score</span>` : ''}
+          </div>
+          ${obs ? `<div class="focus-obs"><b>${items.length ? 'Lo que observó tu supervisor:' : 'Para trabajar:'}</b> ${escapeHtmlPreserveNL(obs)}${items.length > 1 ? ` <span class="focus-more">(+${items.length - 1} más en la etapa)</span>` : ''}</div>` : ''}
+          ${tec ? `<div class="focus-tec">${speechBlockHTML(tec, 'focus')}${speechActionsHTML(tec)}</div>` : ''}
+          <div class="focus-actions"><button class="btn-primary" onclick="goToStage('${fk}')">Ver la etapa completa →</button></div>
         </div>`;
     }
 
     el.innerHTML = `
       <section class="hero" aria-label="Tu diagnóstico">
         <div class="hero-top">
-          <div>
-            <h2 class="hero-name">Hola, ${firstName}</h2>
-            <div class="hero-sub">${history.length} ${history.length === 1 ? 'llamada evaluada' : 'llamadas evaluadas'}${last.fecha ? ' · última el ' + last.fecha : ''}${cuartil ? ` · <span title="Q1 es el 25% con mejor score del equipo; Q4, el 25% con más por mejorar">Cuartil ${cuartil}</span>` : ''}</div>
+          <div class="hero-id">
+            ${avatarHTML(advisor, 52)}
+            <div>
+              <h2 class="hero-name">Hola, ${primerNombre(advisor)}</h2>
+              <div class="hero-sub">${history.length} ${history.length === 1 ? 'llamada evaluada' : 'llamadas evaluadas'}${last.fecha ? ' · última el ' + last.fecha : ''}${a.sede ? ' · ' + a.sede : ''}</div>
+            </div>
           </div>
-          ${tier ? `<div class="tier-badge" title="Nivel ${nivel} de 10"><span class="tier-medal" style="--tier:${tier.color}">${tier.emoji}</span>${tier.label} · Nivel ${nivel}</div>` : ''}
+          <div class="hero-right">
+            <div class="cuad-badge" style="--cq:${cq.color}" title="${cq.sub}"><span class="cuad-emoji">${cq.emoji}</span><span><b>${cq.nombre}</b><small>${hasMatriz ? `Q${String(a.cuartilMatriculas || '').replace('Q', '')} de Matrículas · Q${String(a.cuartilCalidad || '').replace('Q', '')} de Calidad` : cq.sub}</small></span></div>
+            <button class="btn-ranking" onclick="openRanking()" title="Podio del equipo, cuadrantes y foco de acción">🏁 Ranking</button>
+          </div>
         </div>
         <div class="hero-stats">
-          <div class="stat"><div class="stat-val">${last.score !== null ? Math.round(last.score) + '%' : '—'} ${deltaHTML(delta, ' pts')}${sparklineSVG(history.map(h => h.score))}</div><div class="stat-lbl">Score de tu última llamada${prev ? ' y tu evolución' : ''}</div></div>
-          ${hasGami ? `<div class="stat"><div class="stat-val">${pts} <small>pts</small></div><div class="stat-lbl">70% llamadas + 30% técnicas</div></div>` : ''}
-          ${hasGami && analysis.puesto ? `<div class="stat"><div class="stat-val">${analysis.puesto}º <small>de ${analysis.totalAsesores}</small></div><div class="stat-lbl">Tu puesto en el equipo${gap !== null ? ` · ${gap === 0 ? 'empatado con el siguiente' : 'a ' + gap + (gap === 1 ? ' punto' : ' puntos') + ' del siguiente'}` : (analysis.puesto === 1 ? ' · vas primero' : '')}</div></div>` : ''}
+          <div class="stat"><div class="stat-val">${fmtPct(calProm)} ${a.cuartilCalidad ? `<small class="q-tag">${a.cuartilCalidad}</small>` : ''}</div><div class="stat-lbl">Calidad promedio de tus llamadas</div></div>
+          ${hasMatriz || a.matriculas !== undefined && a.matriculas !== null ? `<div class="stat"><div class="stat-val">${a.matriculas !== null && a.matriculas !== undefined ? a.matriculas : '—'} <small>de ${a.metaCampana || '—'}</small> ${a.cuartilMatriculas ? `<small class="q-tag">${a.cuartilMatriculas}</small>` : ''}</div><div class="stat-lbl">Matrículas · ${a.avanceMeta !== null && a.avanceMeta !== undefined ? fmtPct(a.avanceMeta) + ' de tu meta' : 'meta de campaña'}</div></div>` : ''}
+          ${a.puesto ? `<div class="stat"><div class="stat-val">${a.puesto}º <small>de ${a.totalAsesores}</small></div><div class="stat-lbl">Tu puesto en el ranking del equipo</div></div>` : ''}
+          <div class="stat"><div class="stat-val">${last.score !== null ? Math.round(last.score) + '%' : '—'} ${deltaHTML(deltaLast, ' pts')}${sparklineSVG(history.map(h => h.score))}</div><div class="stat-lbl">Tu última llamada${prevLast ? ' y tu evolución' : ''}</div></div>
           <div class="stat"><div class="stat-val">${tecDom} <small>de ${tecTot}</small></div><div class="stat-lbl">Técnicas de venta dominadas</div></div>
         </div>
-        ${hasGami ? `<div class="level-bar"><div class="level-bar-head"><span>${tier.label} · Nivel ${nivel}</span><span>${nivel >= 10 ? 'Nivel máximo alcanzado' : `${ptsToNext} ${ptsToNext === 1 ? 'punto' : 'puntos'} para el Nivel ${nivel + 1}`}</span></div><div class="level-track"><div class="level-fill" style="width:${nivel >= 10 ? 100 : ptsInLevel * 10}%"></div></div></div>` : ''}
+        ${siguienteNivelTexto(a) ? `<div class="next-level"><span class="next-level-ico">🎯</span><span>${siguienteNivelTexto(a)}</span></div>` : ''}
         ${focusHTML}
       </section>
     `;
@@ -1566,15 +1874,16 @@
     if (!advisor || sheetDataCache.error) return '';
     const history = getAdvisorHistory(advisor);
     if (!history.length) return '';
-    const last = history[history.length - 1];
-    const prev = history.length > 1 ? history[history.length - 2] : null;
-    const analysis = getAdvisorAnalysis(advisor);
+    const sel = getSelectedEval(history);
+    const analysisLatest = getAdvisorAnalysis(advisor);
+    const analysis = analysisForEval(advisor, sel);
     const st = analysis && analysis.stages ? analysis.stages[stageKey] : null;
-    const pct = stagePctFrom(analysis, last.row, stageKey);
-    const prevPct = prev ? parseScorePct(findField(prev.row, STAGE_FIELD_CANDIDATES[stageKey])) : null;
+    const pct = stagePctFrom(analysis, sel.entry.row, stageKey);
+    const prevPct = sel.prev ? parseScorePct(findField(sel.prev.row, STAGE_FIELD_CANDIDATES[stageKey])) : null;
     const delta = (pct !== null && pct !== undefined && prevPct !== null && prevPct !== undefined) ? pct - prevPct : null;
+    const avg = stageAvg(analysisLatest, history, stageKey);
     const color = scoreColor(pct);
-    const weight = stageWeight(last.row, stageKey);
+    const weight = stageWeight(sel.entry.row, stageKey);
 
     let feedbackHTML = '';
     if (st && st.rol === 'fortaleza' && st.texto) {
@@ -1582,27 +1891,28 @@
     } else if (st && st.rol === 'oportunidad' && st.texto) {
       const tec = tecnicaForStage(stageKey, st);
       feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Tu oportunidad de mejora en esa llamada</div>${feedbackListHTML(st.texto)}
-        ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${tec.id ? `<button class="btn-link" onclick="goToTecnica('${tec.id}')">Ver técnica</button>` : ''}${speechTextToCopy(tec) ? `<button class="btn-copy" data-text="${escapeHtmlPreserveNL(speechTextToCopy(tec)).replace(/"/g, '&quot;')}" onclick="copyTecnicaSpeech('${tec.id || ''}', this)">Copiar</button>` : ''}</div>` : ''}
+        ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div>` : ''}
       </div>`;
     } else if (pct === null || pct === undefined) {
-      feedbackHTML = `<div class="eval-none">Esta etapa no tiene puntaje en tu última evaluación.</div>`;
+      feedbackHTML = `<div class="eval-none">Esta etapa no tiene puntaje en esa evaluación.</div>`;
     } else if (pct >= 80) {
       feedbackHTML = `<div class="eval-none">Buen nivel en esta etapa. Mantén el estándar del checklist en cada llamada.</div>`;
     } else {
       feedbackHTML = `<div class="eval-none">Tu supervisor no marcó esta etapa como fortaleza ni como brecha principal en esa llamada. Revisa el checklist y las ideas de abajo para subir el puntaje.</div>`;
     }
-    const subParts = [];
-    subParts.push(last.fecha ? 'Llamada del ' + last.fecha : 'Última llamada evaluada');
-    if (delta !== null) subParts.push(Math.round(delta) === 0 ? 'igual que la anterior' : deltaText(delta) + ' pts vs. la anterior');
-    if (weight) subParts.push('esta etapa pesa ' + weight + '% de tu score');
     return `
       <div class="eval-box">
         <div class="eval-head">
           <div class="eval-score diag-${color}">${pct !== null && pct !== undefined ? Math.round(pct) + '%' : '—'}</div>
-          <div>
+          <div class="eval-head-text">
             <div class="eval-title">Tu evaluación en esta etapa</div>
-            <div class="eval-sub">${subParts.join(' · ')}</div>
+            <div class="eval-sub">${sel.entry.fecha ? 'Llamada del ' + sel.entry.fecha : 'Llamada evaluada'}${sel.isLatest ? ' (la última)' : ''}${weight ? ' · pesa ' + weight + '% de tu score' : ''}</div>
+            <div class="eval-metrics">
+              ${delta !== null ? `<span class="fm ${deltaClass(delta)}">${deltaPhrase(delta, ' pts')}</span>` : `<span class="fm">Sin evaluación anterior para comparar</span>`}
+              ${avg !== null && avg !== undefined ? `<span class="fm">Promedio de tus ${history.length} ${history.length === 1 ? 'evaluación' : 'evaluaciones'}: <b>${fmtPct(avg)}</b></span>` : ''}
+            </div>
           </div>
+          ${evalSelectorHTML(history, sel, '')}
         </div>
         ${feedbackHTML}
       </div>`;
@@ -1614,23 +1924,54 @@
         <ul>${(TIPS_POR_ETAPA[stageKey] || []).map(t => `<li>${t}</li>`).join('')}</ul>
       </details>`;
   }
+  // Checklist de calidad: lo valida el supervisor (desde su evaluación de la
+  // llamada o desde la pestaña ✅ CHECKLIST del Sheet); el asesor solo lo lee.
+  function renderChecklist(paso) {
+    const advisor = getSelectedAdvisor();
+    const analysis = (advisor && !sheetDataCache.error) ? getAdvisorAnalysis(advisor) : null;
+    const items = analysis && analysis.checklist && analysis.checklist.items ? analysis.checklist.items : null;
+    const fuente = analysis && analysis.checklist ? analysis.checklist.fuente : null;
+    const estados = { ok: { ico: '✅', lbl: 'Validado', cls: 'ok' }, pendiente: { ico: '🔸', lbl: 'Por reforzar', cls: 'pend' }, sin_evidencia: { ico: '◻️', lbl: 'Sin evidencia aún', cls: 'none' } };
+    let ok = 0, pend = 0;
+    const rows = paso.checklist.map((c, i) => {
+      const id = `${paso.id}_${i + 1}`;
+      const it = items ? (items[id] || { estado: 'sin_evidencia' }) : null;
+      const e = it ? (estados[it.estado] || estados.sin_evidencia) : null;
+      if (it && it.estado === 'ok') ok++;
+      if (it && it.estado === 'pendiente') pend++;
+      return `<div class="checklist-item ${e ? e.cls : 'none'}"><span class="check-ico" title="${e ? e.lbl : ''}">${e ? e.ico : '◻️'}</span><div class="check-body"><span class="check-text">${c}</span>${it && it.evidencia && it.estado !== 'sin_evidencia' ? `<span class="check-evid">${it.fuente === 'sheet' ? '✓ ' : ''}${escapeHtmlPreserveNL(it.evidencia)}</span>` : ''}</div>${e && it.estado !== 'sin_evidencia' ? `<span class="check-tag ${e.cls}">${e.lbl}</span>` : ''}</div>`;
+    }).join('');
+    let sub;
+    if (!advisor) sub = 'Elige tu nombre arriba para ver lo que tu supervisor ya validó en tus llamadas';
+    else if (!items) sub = 'Tu supervisor lo valida al evaluar tus llamadas; aquí no se marca a mano';
+    else sub = `${ok} de ${paso.checklist.length} validados${pend ? ` · ${pend} por reforzar` : ''} · según tu última llamada evaluada${fuente && fuente.indexOf('sheet') !== -1 ? ' y la validación de tu supervisor' : ''}`;
+    return `
+      <div class="checklist-box">
+        <div class="checklist-box-title"><span>✅ Checklist de calidad</span><small id="checkCount">${sub}</small></div>
+        ${rows}
+        <div class="checklist-legend">🔒 Lo valida tu supervisor: ✅ se escuchó en tu llamada evaluada · 🔸 lo observó como oportunidad · ◻️ todavía sin evidencia.</div>
+      </div>`;
+  }
 
   // ===================== MÓDULO: ESTRUCTURA DE ATENCIÓN =====================
-  // Las 4 etapas como una secuencia, cada una con el % del asesor y su cambio
-  // frente a la evaluación anterior. Objeciones y Derivaciones van aparte: son
-  // apoyo, no pasos del proceso.
+  // Las 4 etapas como una secuencia, cada una con el % de la llamada evaluada que
+  // se está viendo, su cambio frente a la evaluación anterior y el promedio de
+  // todas sus evaluaciones. Objeciones y Derivaciones van aparte: son apoyo.
   function renderPasoTabs() {
     const wrap = document.getElementById('pasoTabs');
     const advisor = getSelectedAdvisor();
     const history = (advisor && !sheetDataCache.error) ? getAdvisorHistory(advisor) : [];
-    const row = history.length ? history[history.length - 1].row : null;
-    const prevRow = history.length > 1 ? history[history.length - 2].row : null;
-    const analysis = row ? getAdvisorAnalysis(advisor) : null;
+    const sel = history.length ? getSelectedEval(history) : null;
+    const row = sel ? sel.entry.row : null;
+    const prevRow = sel && sel.prev ? sel.prev.row : null;
+    const analysisLatest = row ? getAdvisorAnalysis(advisor) : null;
+    const analysis = sel ? analysisForEval(advisor, sel) : null;
     const focusKey = row ? getFocusStage(analysis, row) : null;
     const steps = db.atencion.pasos.map(p => {
       const pct = row ? stagePctFrom(analysis, row, p.id) : null;
       const prevPct = prevRow ? parseScorePct(findField(prevRow, STAGE_FIELD_CANDIDATES[p.id])) : null;
       const delta = (pct !== null && pct !== undefined && prevPct !== null && prevPct !== undefined) ? pct - prevPct : null;
+      const avg = row ? stageAvg(analysisLatest, history, p.id) : null;
       const color = scoreColor(pct);
       const active = activePasoId === p.id;
       return `
@@ -1638,7 +1979,8 @@
           ${focusKey === p.id ? '<span class="step-focus-dot" title="Tu foco de hoy">★ foco</span>' : ''}
           <span class="step-num">Paso ${p.numero}</span>
           <span class="step-title">${p.icono} ${p.titulo}</span>
-          ${row ? `<span class="step-score"><span class="step-pct diag-${color}">${pct !== null && pct !== undefined ? Math.round(pct) + '%' : '—'}</span>${delta !== null ? `<span class="step-delta">${deltaText(delta)}</span>` : ''}</span>` : ''}
+          ${row ? `<span class="step-score"><span class="step-pct diag-${color}">${pct !== null && pct !== undefined ? Math.round(pct) + '%' : '—'}</span>${delta !== null ? `<span class="step-delta ${deltaClass(delta)}">${deltaPhrase(delta, '%')}</span>` : (history.length === 1 ? '<span class="step-delta"><em>primera evaluación</em></span>' : '')}</span>
+          <span class="step-avg">${avg !== null && avg !== undefined ? `<b>${fmtPct(avg)}</b> promedio de ${history.length} ${history.length === 1 ? 'evaluación' : 'evaluaciones'}` : ''}</span>` : ''}
         </button>`;
     }).join('');
     wrap.innerHTML = `
@@ -1734,10 +2076,7 @@
         ${paso.datos_estandar ? `<div class="datos-estandar-box"><b>💳 Datos estándar:</b> ${paso.datos_estandar}</div>` : ''}
       </div>
       ${renderEvaluacionEtapa(paso.id)}
-      <div class="checklist-box">
-        <div class="checklist-box-title"><span>✅ Checklist de calidad</span><small id="checkCount">Marca lo que ya cubriste en esta llamada</small></div>
-        ${paso.checklist.map(c => `<label class="checklist-item"><input type="checkbox" onchange="this.parentElement.classList.toggle('done', this.checked); updateCheckCount()"><span>${c}</span></label>`).join('')}
-      </div>
+      ${renderChecklist(paso)}
       ${paso.preguntas_cierre ? `
       <div class="checklist-box">
         <div class="checklist-box-title"><span>📢 Preguntas de cierre parcial</span><small>Úsalas a lo largo de la llamada, no solo al final</small></div>
@@ -1746,12 +2085,6 @@
       ${renderTipsEtapa(paso.id, paso.titulo)}
     `;
     applyEditMode(container);
-  }
-  function updateCheckCount() {
-    const boxes = document.querySelectorAll('#atencion-content .checklist-item input');
-    const done = Array.from(boxes).filter(b => b.checked).length;
-    const el = document.getElementById('checkCount');
-    if (el) el.textContent = done ? `${done} de ${boxes.length} cubiertos` : 'Marca lo que ya cubriste en esta llamada';
   }
 
   function updatePasoField(pasoIdx, field, value) { db.atencion.pasos[pasoIdx][field] = value.replace(/^Objetivo:\s*/i, '').trim(); persistState(); }
@@ -1766,6 +2099,144 @@
   }
   function deleteObjecion(oIdx) {
     if(confirm("¿Eliminar esta objeción?")) { db.atencion.objeciones.splice(oIdx, 1); persistState(); renderAtencion(); }
+  }
+
+  // ===================== RANKING DEL EQUIPO (podio + cuadrantes + foco de acción) =====================
+  function openRanking() {
+    const modal = document.getElementById('rankingModal');
+    if (!modal) return;
+    renderRanking();
+    modal.classList.add('open');
+    document.body.classList.add('modal-open');
+    const box = modal.querySelector('.modal');
+    if (box) box.scrollTop = 0;
+  }
+  function closeRanking() {
+    const modal = document.getElementById('rankingModal');
+    if (!modal || !modal.classList.contains('open')) return;
+    modal.classList.remove('open');
+    document.body.classList.remove('modal-open');
+    const body = document.getElementById('rankingBody');
+    if (body) body.innerHTML = '';
+  }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRanking(); });
+  function renderRanking() {
+    const body = document.getElementById('rankingBody');
+    if (!body) return;
+    const eq = sheetDataCache.equipo || null;
+    const me = getSelectedAdvisor();
+    const meKey = normalizarTexto(me);
+    if (!eq || !Array.isArray(eq.ranking) || !eq.ranking.length) {
+      body.innerHTML = `<div class="diag-empty"><span class="big">🏁</span><div>El ranking del equipo todavía no está disponible. Se arma automáticamente con la Matriz de calidad y matrículas del mes.</div></div>`;
+      return;
+    }
+    const rk = eq.ranking;
+    const top = rk.slice(0, 5);
+    const order = [3, 1, 0, 2, 4].filter(i => i < top.length); // 4º · 2º · 1º · 3º · 5º (podio clásico)
+    const heights = { 0: 128, 1: 100, 2: 84, 3: 64, 4: 50 };
+    const podium = order.map(i => {
+      const r = top[i];
+      const cq = cuadranteInfo(r.cuadrante);
+      const isMe = normalizarTexto(r.asesor) === meKey;
+      return `
+        <div class="podium-slot rank-${i + 1} ${isMe ? 'me' : ''}" style="--h:${heights[i]}px; --delay:${(4 - i) * 0.12}s">
+          <div class="podium-person">
+            ${avatarHTML(r.asesor, i === 0 ? 64 : 52)}
+            <div class="podium-name" title="${r.asesor}">${nombreCorto(r.asesor)}${isMe ? ' <span class="me-tag">tú</span>' : ''}</div>
+            <div class="podium-cq" style="--cq:${cq.color};--cqbg:${cq.bg}" title="${cq.nombre}">${cq.emoji}<span class="cq-name">${cq.nombre}</span></div>
+            <div class="podium-metrics">${fmtPct(r.calidad)} calidad${r.avanceMeta !== null && r.avanceMeta !== undefined ? ` · ${fmtPct(r.avanceMeta)} meta` : ''}</div>
+          </div>
+          <div class="podium-block"><span class="podium-pos">${r.puesto}º</span></div>
+        </div>`;
+    }).join('');
+    const myRow = rk.find(r => normalizarTexto(r.asesor) === meKey);
+    const myLine = myRow && myRow.puesto > 5
+      ? `<div class="my-rank">${avatarHTML(myRow.asesor, 36)}<div><b>Tu puesto: ${myRow.puesto}º de ${eq.totalAsesores || rk.length}</b><div class="my-rank-sub">${cuadranteInfo(myRow.cuadrante).emoji} ${cuadranteInfo(myRow.cuadrante).nombre} · ${fmtPct(myRow.calidad)} calidad${myRow.avanceMeta !== null && myRow.avanceMeta !== undefined ? ' · ' + fmtPct(myRow.avanceMeta) + ' de tu meta' : ''}</div></div></div>`
+      : (myRow ? `<div class="my-rank top"><span>🎉</span><div><b>¡Estás en el podio!</b><div class="my-rank-sub">${myRow.puesto}º de ${eq.totalAsesores || rk.length}</div></div></div>` : (me ? `<div class="my-rank"><span>👤</span><div><b>Todavía no apareces en el ranking</b><div class="my-rank-sub">Se arma con tus llamadas evaluadas y la matriz del mes.</div></div></div>` : ''));
+
+    // Cuadrantes: misma disposición que la Matriz (🟡 arriba-izq · 🟢 arriba-der · 🔴 abajo-izq · 🟠 abajo-der)
+    const cu = eq.cuadrantes || {};
+    const chips = key => (cu[key] || []).map(n => `<span class="cq-chip ${normalizarTexto(n) === meKey ? 'me' : ''}" title="${n}">${avatarHTML(n, 22)}${nombreCorto(n)}</span>`).join('') || '<span class="cq-empty">Nadie todavía</span>';
+    const cell = key => { const c = CUADRANTES[key]; return `<div class="cq-cell" style="--cq:${c.color};--cqbg:${c.bg}"><div class="cq-head">${c.emoji} ${c.nombre.toUpperCase()}<small>${c.sub}</small></div><div class="cq-chips">${chips(key)}</div></div>`; };
+    const sinMatriz = (cu.sinMatriz || []).length ? `<div class="cq-note">Sin cuadrante este mes: ${(cu.sinMatriz || []).map(nombreCorto).join(', ')}</div>` : '';
+
+    // Calidad del equipo (pauta) + focos de acción
+    const mc = eq.mapaCalor || {};
+    const maxBar = 100;
+    const foco = eq.focoCualitativo || {}, opor = eq.oportunidad || {};
+    const bars = STAGE_KEYS.map(k => {
+      const v = mc[k];
+      const isFoco = foco.paso === k, isOpor = opor.paso === k;
+      return `<div class="heat-row ${isFoco ? 'foco' : ''} ${isOpor ? 'opor' : ''}"><span class="heat-lbl">${STAGE_LABELS[k]}</span><span class="heat-track"><span class="heat-fill" style="width:${v ? Math.min(100, v / maxBar * 100) : 0}%"></span></span><span class="heat-val">${v !== undefined ? fmtPct(v, 2) : '—'}</span>${isFoco ? '<span class="heat-tag foco">🎯 foco</span>' : isOpor ? '<span class="heat-tag opor">✨ fortaleza</span>' : ''}</div>`;
+    }).join('');
+    const dist = eq.distribucionCuartiles || null;
+
+    body.innerHTML = `
+      <section class="rk-section">
+        <div class="rk-title">🏆 Podio del equipo <small>top 5 · ${eq.fecha ? 'datos al ' + eq.fecha : ''}</small></div>
+        <div class="podium">${podium}</div>
+        ${myLine}
+        <div class="rk-rule">Orden: primero el cuadrante (🟢 › 🟡 › 🟠 › 🔴); dentro del mismo cuadrante, el promedio entre tu calidad y tu avance de meta.</div>
+      </section>
+      <section class="rk-section">
+        <div class="rk-title">🧭 Así nos miden: cuadrantes <small>calidad de llamada × avance de matrículas</small></div>
+        <div class="cq-axis-top">Resultado alto (Q1/Q2 de matrículas) ↑</div>
+        <div class="cq-grid">${cell('amarillo')}${cell('verde')}${cell('rojo')}${cell('naranja')}</div>
+        <div class="cq-axis-bottom"><span>← Calidad por fortalecer (Q3/Q4)</span><span>Calidad sólida (Q1/Q2) →</span></div>
+        ${sinMatriz}
+        <div class="rk-rule">Calidad = promedio de tus llamadas evaluadas: Q1 ≥ 95% · Q2 85–94% · Q3 75–84% · Q4 ≤ 74%. Matrículas = avance sobre tu meta de campaña: Q1 ≥ 100% · Q2 80–99% · Q3 71–79% · Q4 &lt; 70%.</div>
+      </section>
+      <section class="rk-section">
+        <div class="rk-title">🌡️ Calidad del equipo <small>promedio por etapa (pauta)</small></div>
+        <div class="heat">${bars}</div>
+        <div class="focos">
+          ${foco.paso ? `<div class="foco-card foco"><span class="foco-ico">🎯</span><div><b>Foco cualitativo del equipo</b><div>${STAGE_LABELS[foco.paso]} · ${foco.pct}%</div></div></div>` : ''}
+          ${opor.paso ? `<div class="foco-card opor"><span class="foco-ico">✨</span><div><b>Nuestra fortaleza</b><div>${STAGE_LABELS[opor.paso]} · ${opor.pct}%</div></div></div>` : ''}
+        </div>
+        ${dist ? `<div class="rk-rule">Distribución del equipo por cuartil de calidad: Q1 ${dist.Q1} · Q2 ${dist.Q2} · Q3 ${dist.Q3} · Q4 ${dist.Q4}.</div>` : ''}
+      </section>`;
+  }
+
+  // ---- Fotos del equipo (para el podio): las carga el supervisor en modo edición ----
+  function renderFotosAdmin() {
+    const sel = document.getElementById('fotoAsesorSelect');
+    const list = document.getElementById('fotosList');
+    if (!sel || !list) return;
+    const names = getAdvisorNames();
+    const cur = sel.value;
+    sel.innerHTML = `<option value="">Elige al asesor...</option>` + names.map(n => `<option value="${n}" ${n === cur ? 'selected' : ''}>${n}</option>`).join('');
+    const fotos = db.fotos || {};
+    const keys = Object.keys(fotos);
+    list.innerHTML = keys.length ? keys.map(k => `<span class="foto-chip">${avatarHTML(k, 28)}${nombreCorto(k)}<button class="foto-del" title="Quitar foto" onclick="quitarFoto('${k.replace(/'/g, "\\'")}')">✕</button></span>`).join('') : '<span style="color:var(--muted);font-size:13px;">Aún no hay fotos: el podio muestra las iniciales de cada asesor.</span>';
+  }
+  function subirFoto(input) {
+    const sel = document.getElementById('fotoAsesorSelect');
+    const name = sel ? sel.value : '';
+    const file = input.files && input.files[0];
+    if (!name) { alert('Primero elige al asesor.'); input.value = ''; return; }
+    if (!file) return;
+    const img = new Image();
+    const reader = new FileReader();
+    reader.onload = e => {
+      img.onload = () => {
+        // Recorte cuadrado centrado y reducción a 112 px: la foto pesa ~5 KB dentro del archivo.
+        const S = 112, c = document.createElement('canvas'); c.width = S; c.height = S;
+        const m = Math.min(img.width, img.height);
+        const sx = (img.width - m) / 2, sy = (img.height - m) / 2;
+        c.getContext('2d').drawImage(img, sx, sy, m, m, 0, 0, S, S);
+        if (!db.fotos) db.fotos = {};
+        db.fotos[name] = c.toDataURL('image/jpeg', 0.82);
+        persistState(); renderFotosAdmin(); renderAtencion();
+        input.value = '';
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+  function quitarFoto(name) {
+    if (!db.fotos || !db.fotos[name]) return;
+    delete db.fotos[name];
+    persistState(); renderFotosAdmin(); renderAtencion();
   }
 
   // ===================== TÉCNICA DE VENTA (HABILIDADES DESBLOQUEADAS) =====================
@@ -1816,7 +2287,7 @@
     if (fill) fill.style.width = (total ? (count / total * 100) : 0) + '%';
     if (text) text.innerText = `🏆 ${count} de ${total} técnicas dominadas`;
     if (hint) {
-      if (isSheetTecnicaModeActive()) hint.innerText = 'Tu supervisor marca cada técnica cuando la escucha aplicada en tus llamadas. Cada técnica dominada suma 2 puntos a tu nivel.';
+      if (isSheetTecnicaModeActive()) hint.innerText = 'Tu supervisor marca cada técnica cuando la escucha aplicada en tus llamadas. Dominarlas se nota en tu calidad de llamada, que define tu cuadrante.';
       else if (advisor) hint.innerText = 'Marca aquí las técnicas que ya dominas (se guarda solo en este navegador).';
       else hint.innerText = 'Elige tu nombre arriba para ver las técnicas que tu supervisor ya te validó.';
     }
@@ -1976,6 +2447,11 @@
     const adminInfoClone = clone.querySelector('#adminInfo'); if (adminInfoClone) adminInfoClone.innerHTML = 'Cargando...';
     const tecNextClone = clone.querySelector('#tecnicaNext'); if (tecNextClone) { tecNextClone.innerHTML = ''; tecNextClone.style.display = 'none'; }
     const editToggleClone = clone.querySelector('#editModeToggle'); if (editToggleClone) editToggleClone.removeAttribute('checked');
+    clone.querySelector('body').classList.remove('modal-open');
+    const rkModalClone = clone.querySelector('#rankingModal'); if (rkModalClone) rkModalClone.classList.remove('open');
+    const rkBodyClone = clone.querySelector('#rankingBody'); if (rkBodyClone) rkBodyClone.innerHTML = '';
+    const fotosListClone = clone.querySelector('#fotosList'); if (fotosListClone) fotosListClone.innerHTML = '';
+    const fotoSelClone = clone.querySelector('#fotoAsesorSelect'); if (fotoSelClone) fotoSelClone.innerHTML = '<option value="">Elige al asesor...</option>';
 
     clone.querySelector('#container-universidad').innerHTML = '';
     clone.querySelector('#container-modalidad').innerHTML = '';
@@ -2048,6 +2524,7 @@
       renderAtencion();
       renderTecnicas();
       updateHeaderCount();
+      renderFotosAdmin();
     });
   }
   initApp();

@@ -1,0 +1,162 @@
+{
+ "Diana Carol Taipe Rojas": {
+  "stage": "paso2",
+  "tecId": "tec_09",
+  "tipo": "speech",
+  "porQue": "Devolverle su propia razón para estudiar Sistemas convierte la conversación en una necesidad real y no en una compra por descuento: la propuesta se sostiene aunque la promoción cambie.",
+  "speech": "[nombre], antes de hablarte de la inversión quiero entenderte mejor: ya tienes una carrera y hoy decides estudiar Ingeniería de Sistemas. ¿Qué te hizo dar ese paso y qué quieres lograr cuando la termines?\n\nEntonces lo que buscas es [repetir sus palabras: crecer en tu trabajo, cambiar de rubro, tener un título que te abra puertas]. Justamente por eso te conviene Distancia: estudias sin dejar tu trabajo, con clases grabadas si algún día no llegas en vivo, y lo que ya estudiaste pasa por evaluación de sílabos para reconocerte cursos. El ahorro de hoy ayuda, pero lo que te lleva a la meta es eso.\n\n¿Te parece si revisamos juntos tu plan de estudios ahora mismo y te muestro cómo quedaría tu primer ciclo?",
+  "base": "6a7679b277da"
+ },
+ "Judith Rocio Vila Incaroca": {
+  "stage": "paso3",
+  "tecId": "tec_10",
+  "tipo": "speech",
+  "porQue": "Ya tienes la necesidad de Jordi y los beneficios conectados a ella: lo que faltó fue convertir cada acuerdo en un pequeño \"sí\" y cerrar con una cita, no con \"me escribes\".",
+  "speech": "Jordi, me dijiste qué era lo más importante para ti, y acabamos de ver cómo la carrera lo cubre. ¿Hasta aquí te hace sentido? Perfecto.\n\nY sobre la inversión, ¿te acomoda la forma de pago que te expliqué? Bien, entonces ya tenemos dos cosas claras.\n\nTe envío el resumen por WhatsApp ahora mismo, pero no lo dejamos en el aire: ¿te llamo mañana a las 6 de la tarde para confirmar tu postulación, o prefieres en la mañana?",
+  "base": "6c1db55f156c"
+ },
+ "Ana Maria Padilla Parra": {
+  "stage": "paso3",
+  "tecId": "tec_08",
+  "tipo": "speech",
+  "porQue": "Las preguntas \"¿puedo sumar las dos vías?\" y \"¿cuántos ciclos me reconocen?\" aparecen tarde y generan expectativas; te adelantas a ambas explicando la regla antes.",
+  "speech": "Te explico cómo funciona la convalidación para que tengas la foto completa desde ahora: se hace por una sola vía según tu caso, por tu carrera anterior, por traslado o por experiencia laboral. No se combinan, así que lo primero es ver cuál te conviene más a ti.\n\nLo que te reconozcan exactamente lo define el área académica cuando revisa tus documentos; por eso no te voy a adelantar ciclos ni años, prefiero que avances con información segura.\n\n¿Qué tienes a la mano: certificados de tu carrera anterior o constancias de trabajo? Con eso te digo por cuál vía empezamos.",
+  "base": "3407772dec42"
+ },
+ "Lucero Ximena Hujaynatis Jacay": {
+  "stage": "paso3",
+  "tecId": "tec_09",
+  "tipo": "speech",
+  "porQue": "La barrera real era el tiempo por cambios laborales: al repetirla con sus palabras y resolverla con la flexibilidad de la modalidad, la decisión deja de depender de esa duda y el cierre tiene base.",
+  "speech": "[nombre], te escuché y lo que te frena no es la inversión, es que tus horarios van a cambiar y no quieres comprometerte a algo que después no puedas cumplir, ¿cierto?\n\nJusto para eso está pensada la modalidad a distancia: no dependes de un horario fijo, las clases quedan grabadas y las ves cuando tu día lo permita, y avanzas al ritmo de tu trabajo. O sea, si tu turno cambia, tu carrera sigue; tú eliges cuándo estudiar.\n\nCon eso claro, no te voy a dejar la pelota a ti: dime a qué hora exacta te llamo hoy para confirmar, ¿a las 5 o a las 7?",
+  "base": "a27d008efd10"
+ },
+ "Milagros Torres Santos": {
+  "stage": "paso2",
+  "tecId": "tec_08",
+  "tipo": "speech",
+  "porQue": "Las dudas sobre la evaluación de ingreso y sobre el pago inicial frenan la decisión si quedan sueltas: te adelantas a las dos y las explicas completas. Usa su nombre al abrir y al cerrar.",
+  "speech": "Te adelanto dos cosas que suelen generar dudas, para que las tengas claras desde ahora. Primero, la evaluación de ingreso: no es un examen de conocimientos, es una entrevista virtual con cámara donde conversamos sobre tu motivación y tu compromiso con la carrera, así que no tienes que estudiar nada para rendirla.\n\nSegundo, tu pago inicial: incluye admisión, matrícula, seguro y tu primera cuota. Te los detallo uno por uno para que sepas exactamente cuánto es y cuándo se paga cada uno, sin sorpresas después.\n\n¿Vamos primero con los montos o con la fecha de tu evaluación?",
+  "base": "ced8c75c5730"
+ },
+ "Lisette Valeria Blanco Chuco": {
+  "stage": "paso3",
+  "tecId": "tec_14",
+  "tipo": "speech",
+  "porQue": "La beca era el factor decisivo y lo descubriste al final: pregúntalo al inicio, confirma que no queda otra traba y cierra con hora exacta en vez de esperar que ella escriba.",
+  "speech": "Antes de contarte todo, quiero asegurarme de hablar de lo que de verdad te importa: ¿qué es lo que estás buscando para decidirte, una beca, un horario que te acomode, un tema de inversión? Dime eso y te explico exactamente cómo lo cubrimos.\n\nAparte de eso, ¿hay algo más que te impida empezar este ciclo? Si no, lo dejamos encaminado hoy.\n\nMe dijiste que me respondes en la noche: ¿te escribo yo a las 8 para confirmar, o prefieres a las 9?",
+  "base": "0d0dcdbfbe31"
+ },
+ "Edward Nelson Gonzales Villaneda": {
+  "stage": "paso3",
+  "tecId": "tec_10",
+  "tipo": "speech",
+  "porQue": "Resolviste bien duración y costo; faltó validar intención después de cada respuesta: los pequeños sí convierten cada alternativa en un paso hacia el proceso y evitan el seguimiento abierto.",
+  "speech": "[nombre], entonces con los ciclos de verano adelantas cursos y terminas antes de lo que pensabas. Con eso, ¿la duración ya te cuadra? Perfecto.\n\nSobre la inversión, ya vimos que se paga por partes y no todo de golpe, ¿te hace sentido así? Bien. Y para que no te tome por sorpresa: el proceso de admisión no tiene examen de conocimientos; es una evaluación virtual, con cámara, para conocer tus motivaciones y confirmar que la carrera es para ti.\n\nComo ya te cuadran la duración y la inversión, demos el siguiente paso: ¿te llamo mañana a las 10 o a las 4 para dejar iniciado tu proceso?",
+  "base": "99c4cce42cc0"
+ },
+ "Jorge Luis Valencia Cardenas": {
+  "stage": "paso3",
+  "tecId": "tec_04",
+  "tipo": "speech",
+  "porQue": "El prospecto ya preguntaba por fechas e inicio: esas señales se convierten en un \"cuándo\", no en un \"me avisas\". Antes, descubre su meta y qué decide entre Distancia y Semipresencial.",
+  "speech": "Me preguntas por la fecha de evaluación y el inicio de clases, así que ya estás viendo cómo encajaría esto en tu vida. Antes de eso dime: ¿qué buscas lograr con la carrera, un ascenso donde trabajas, cambiar de rubro? Y entre Distancia y Semipresencial, ¿qué sería determinante para ti: tu horario o tener algunas clases en sede?\n\nCon eso claro, no te voy a decir \"me avisas\". Las vacantes con beneficio son limitadas, así que mejor lo dejamos concreto: ¿tu evaluación la programamos para esta semana o la próxima?\n\nY te llamo el jueves a las 7 de la noche para cerrar la fecha, ¿te acomoda?",
+  "base": "009cf8f43839"
+ },
+ "Jimena del Rosario Vera Osores": {
+  "stage": "paso3",
+  "tecId": "tec_01",
+  "tipo": "speech",
+  "porQue": "Había dos escenarios mezclados; al resumirlos con calma y dejar que Karen elija cuál le importa más, ella misma ordena la llamada y tú evitas prometer años de convalidación que dependen de la revisión de sílabos.",
+  "speech": "Karen, para asegurarme de orientarte correctamente, déjame resumir lo que entendí: tienes estudios técnicos de Contabilidad con el título en trámite, y además estás cursando Educación Inicial. Entonces hay dos caminos: trasladarte desde Inicial o convalidar desde Contabilidad. ¿Lo tengo bien?\n\nAhora dime tú: ¿qué pesa más para ti hoy, terminar más rápido una carrera que ya conoces o cambiar de rumbo con Contabilidad? Según lo que elijas, armamos la ruta. En cualquiera de los dos casos, cuántos cursos se reconocen lo define la revisión de los sílabos, así que prefiero no adelantarte un número y mostrarte el procedimiento real.\n\nMientras lo piensas, te explico lo que hace distinta a la universidad en modalidad a distancia y la inversión completa. ¿Te llamo mañana a las 11 para cerrar tu ruta?",
+  "base": "c5565d5c90b5"
+ },
+ "Anyhela Kelly Ordoñez Chavez": {
+  "stage": "paso4",
+  "tecId": "tec_04",
+  "tipo": "speech",
+  "porQue": "\"Sí me gustaría ya matricularme\" es la señal de cierre: en vez de preguntar si avanza, le das a elegir cuándo envía documentos y en qué turno rinde la evaluación.",
+  "speech": "Me acabas de decir que ya te gustaría matricularte, así que te tomo la palabra y lo hacemos fácil: ¿me envías tu DNI y tu certificado hoy en la tarde o mañana temprano?\n\nApenas me lleguen, genero tu inscripción. Y para tu evaluación, ¿te acomoda más el turno de la mañana o el de la tarde?\n\nCon eso ya quedas con fecha y solo te faltaría el pago de admisión.",
+  "base": "59b1d79a2306"
+ },
+ "Patricia Roxana Mercado Zacarias": {
+  "stage": "paso3",
+  "tecId": "tec_10",
+  "tipo": "speech",
+  "porQue": "Preséntate al inicio, da la inversión completa y convierte la conversación en pequeños acuerdos; \"¿qué día podría llamarte?\" no es una cita, \"¿miércoles o jueves a las 7?\" sí.",
+  "speech": "Hola, te habla Patricia, de la Universidad Continental.\n\nTe explico todo lo que incluye tu inicio para que no quede ninguna duda: admisión, matrícula, primera cuota y seguro. Y el proceso es sencillo: rindes una evaluación virtual con cámara y listo. ¿Hasta aquí la inversión te parece manejable? ¿Y los horarios te acomodan con tu trabajo? Entonces vamos bien.\n\nSi necesitas analizarlo, perfecto, pero lo dejamos agendado: ¿te llamo el miércoles a las 7 de la noche o el jueves a esa misma hora?",
+  "base": "81ea3170b3ad"
+ },
+ "Betsabeth Alexandra Rojas Palacios": {
+  "stage": "paso2",
+  "tecId": "tec_09",
+  "tipo": "speech",
+  "porQue": "Tu brecha fue el sondeo: pregunta primero y devuélvele al prospecto su necesidad con sus propias palabras. Y dile por su nombre al menos cuatro veces en la llamada.",
+  "speech": "[Nombre], cuéntame, ¿qué te animó a buscar una carrera justo ahora? ¿Estás trabajando? ¿Qué horarios manejas? ¿Y habías estudiado algo antes?\n\nO sea que, como me dices, quieres crecer en tu trabajo pero no tienes tiempo para ir a una universidad. Te entiendo perfecto, [nombre], y justo para eso es esta modalidad.\n\nDéjame mostrarte cómo encajaría en tu semana, [nombre], y me dices si te hace sentido.",
+  "base": "34092b50acce"
+ },
+ "Maria Alejandra Pino Contreras": {
+  "stage": "paso3",
+  "tecId": "tec_10",
+  "tipo": "speech",
+  "porQue": "Faltaron diferenciales más allá del precio y cierres parciales: cada diferencial termina en una pregunta que suma un \"sí\", y el seguimiento por WhatsApp queda con hora.",
+  "speech": "Más allá del precio, dos cosas que hacen diferente estudiar acá: tienes el respaldo de SUNEDU y acreditaciones internacionales, y vas sumando certificaciones progresivas mientras avanzas, así tu CV crece desde el primer año. ¿Eso te suma para lo que buscas?\n\nY el ingreso es simple: una evaluación virtual con cámara, sin examen de conocimientos. ¿Hasta aquí te hace sentido?\n\nSeguimos por WhatsApp, pero con una cita: ¿te escribo mañana a las 11 para confirmar tu postulación?",
+  "base": "cc701b558e5d"
+ },
+ "Angelo Jaime Franco Sarmiento": {
+  "stage": "paso4",
+  "tecId": "tec_01",
+  "tipo": "speech",
+  "porQue": "Los silencios mientras revisas el sistema enfrían la llamada: acompáñalos hablando. Luego, en vez de decidir por él, haz que compare y concluya qué alternativa le encaja, y cierra con cita.",
+  "speech": "Dame un segundo que lo reviso en el sistema; mientras tanto te cuento cómo sería tu primer ciclo para que no perdamos el hilo.\n\nYa tienes las dos opciones sobre la mesa. Pensando en tu trabajo y en el tiempo que tienes a la semana, ¿cuál de las dos se ajusta mejor a tu rutina?\n\nPerfecto: te mando el resumen por WhatsApp ahora, y te llamo el lunes a las 6 de la tarde para dejar tu postulación lista. ¿Te acomoda?",
+  "base": "38f05380324c"
+ },
+ "Melissa Leslie Fernadez Avalos": {
+  "stage": "paso3",
+  "tecId": "tec_08",
+  "tipo": "speech",
+  "porQue": "Primero su disponibilidad laboral; con eso anticipas la objeción \"¿cómo estudio si trabajo?\" antes de que la diga, ordenas los conceptos económicos y cierras con dos pequeños acuerdos.",
+  "speech": "Antes de los montos, cuéntame cómo es tu semana de trabajo: ¿tienes horarios fijos o rotativos? Te lo pregunto porque sé que la mayor duda es \"cómo voy a estudiar si trabajo\", y quiero mostrarte desde ya que con clases grabadas y conexión desde cualquier lugar eso no te va a frenar.\n\nAhora la inversión, ordenada: admisión, matrícula y pensión mensual, uno por uno, para que sepas qué pagas y cuándo. ¿Hasta aquí claro? ¿Y te acomoda esa forma de pago?\n\nEntonces el siguiente paso es tu evaluación: ¿la programamos para esta semana?",
+  "base": "ab0aa22e7653"
+ },
+ "Rosa Victoria Guzman Bonilla": {
+  "stage": "paso3",
+  "tecId": "tec_14",
+  "tipo": "speech",
+  "porQue": "\"Necesito tiempo para evaluar mi situación\" es una objeción económica sin nombre: pregúntale cuál es exactamente, ofrécele una alternativa real y agenda con hora. Usa su nombre al menos dos veces.",
+  "speech": "[Nombre], te entiendo, quieres evaluar tu situación. Para ayudarte de verdad, dime: ¿lo que te preocupa es el pago inicial, la pensión mensual o cuándo caen las fechas de pago?\n\nSi es el inicio, tenemos el descuento en matrícula de esta campaña; si es el mes a mes, vemos una carga de créditos que te permita pagar menos y avanzar a tu ritmo.\n\nAparte de lo económico, ¿hay algo más que te impida empezar? Si no, lo conversamos con calma el viernes: ¿te llamo a las 6 o a las 7 de la noche, [nombre]?",
+  "base": "9340bd2402fc"
+ },
+ "Justyn Flores Solano": {
+  "stage": "paso3",
+  "tecId": "tec_14",
+  "tipo": "speech",
+  "porQue": "\"Lo converso con mi pareja\" no se acepta sin más: averigua qué le preocuparía a la pareja, deja la inversión ordenada para esa conversación y agenda una llamada con los dos.",
+  "speech": "Gloria, me parece bien que lo conversen juntos. Para que esa conversación sea fácil, dime: ¿qué crees que le preocuparía más a tu pareja, la inversión, el tiempo que te va a tomar, o si vas a poder con el trabajo y los estudios?\n\nSi es la inversión, te lo dejo ordenado para que se lo muestres: admisión, matrícula y pensión mensual, cada uno con su monto y su fecha. Y si es el tiempo, cuéntale que las clases quedan grabadas y avanzas en tus horarios.\n\n¿Te parece que los llame a los dos mañana a las 7 de la noche y resolvemos las dudas juntos?",
+  "base": "d8189120554f"
+ },
+ "Orlando Jesus Pintado Sandoval": {
+  "stage": "paso3",
+  "tecId": null,
+  "tipo": "accion",
+  "porQue": "Tu observación de esta llamada no es de speech sino de registro.",
+  "speech": "Después de cada llamada efectiva, elige en el árbol de tipificaciones del CRM la opción que describe exactamente lo que pasó (resultado y motivo), no la más cercana. Si dudas entre dos, revisa la categoría 🖥️ Tipificaciones (CRM) de la Biblioteca de Mensajes, donde está la guía de cada caso.",
+  "base": "34c511e89e83"
+ },
+ "Nicol Alisson Romero Espinoza": {
+  "stage": "paso2",
+  "tecId": "tec_10",
+  "tipo": "speech",
+  "porQue": "Enviar el plan por WhatsApp no reemplaza explicar la inversión y la evaluación en la llamada: cada explicación termina en una pregunta que suma un pequeño \"sí\" hacia la postulación.",
+  "speech": "Te voy a enviar el plan completo por WhatsApp, pero antes te adelanto lo principal para que no te quedes con dudas: tu inicio incluye admisión, matrícula, seguro y primera cuota; después solo pagas tu pensión mensual. ¿Hasta aquí te parece manejable?\n\nEl ingreso es una evaluación virtual con cámara: conversamos sobre tu motivación, no es un examen de conocimientos. ¿Te queda claro cómo sería?\n\nEntonces, ¿avanzamos hoy con tu ficha de inscripción para reservar tu vacante?",
+  "base": "97983bd7b188"
+ },
+ "Cecilia Esther Aliaga Lapa": {
+  "stage": "paso1",
+  "tecId": "tec_16",
+  "tipo": "speech",
+  "porQue": "Conocer dónde está Isabel, si trabaja y si tiene conectividad antes de explicar beneficios evita hablar de lo que hoy no puede usar; y aunque no tenga disponibilidad, la llamada termina con una fecha, no esperando que ella escriba.",
+  "speech": "Isabel, antes de contarte los beneficios, cuéntame tú: ¿desde dónde me hablas, estás trabajando ahora y tienes internet estable para conectarte a clases? Así te explico solo lo que te sirve hoy.\n\nSé que por ahora no tienes disponibilidad, pero no lo dejemos abierto: esta campaña tiene condiciones que pueden cambiar. ¿Te parece que te escriba el próximo lunes para ver cómo estás y qué condiciones siguen vigentes?\n\nY si antes se te acomoda, me avisas y lo adelantamos.",
+  "base": "1b1a148aec72"
+ }
+}

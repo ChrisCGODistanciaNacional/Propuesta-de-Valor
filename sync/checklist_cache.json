@@ -1,0 +1,1952 @@
+{
+  "Diana Carol Taipe Rojas": {
+    "base": "29df49da8746",
+    "fecha": "06/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "pendiente",
+        "evidencia": "Recuerda utilizar el nombre del prospecto durante la interacción"
+      },
+      "paso1_3": {
+        "estado": "pendiente",
+        "evidencia": "Refuerza la propuesta de valor más allá del descuento; la argumentación se concentra en el ahorro"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "Identificar por qué desea estudiar Ingeniería de Sistemas fortalecería la argumentación"
+      },
+      "paso2_2": {
+        "estado": "pendiente",
+        "evidencia": "Falta identificar qué busca lograr con esta segunda carrera"
+      },
+      "paso2_3": {
+        "estado": "ok",
+        "evidencia": "Orientas la conversación hacia conocer qué está impidiendo el avance del prospecto"
+      },
+      "paso2_4": {
+        "estado": "ok",
+        "evidencia": "Abordas el presupuesto; ya conocías su carrera anterior y presupuesto"
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "pendiente",
+        "evidencia": "Incorpora diferenciales académicos para que la decisión no dependa de la promoción"
+      },
+      "paso3_3": {
+        "estado": "pendiente",
+        "evidencia": "Incorpora diferenciales de la modalidad; la argumentación se concentra en el ahorro económico"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "ok",
+        "evidencia": "Utilizas cierres parciales para validar interés"
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Cuando pide tiempo para decidir, concretas una nueva llamada a las 6:00"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "ok",
+        "evidencia": "No dejas el seguimiento abierto: concretas una nueva llamada a las 6:00"
+      }
+    }
+  },
+  "Isai Yuliño Mercado Bravo": {
+    "base": "028987ab8abf",
+    "fecha": "22/09/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "Deja la gestión abierta, no genera un próximo contacto"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Deja la gestión abierta, no genera un próximo contacto"
+      }
+    }
+  },
+  "Judith Rocio Vila Incaroca": {
+    "base": "5cf9dd69cac9",
+    "fecha": "06/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Presentas diversos elementos de valor: inglés incluido, prácticas, laboratorios, acompañamiento académico"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "ok",
+        "evidencia": "Identificas que trabaja en minería bajo un régimen 14x7"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "ok",
+        "evidencia": "Dejó otra universidad porque sus horarios no eran compatibles con su jornada laboral"
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "ok",
+        "evidencia": "Conectas la carrera con su contexto: su experiencia en minería se relaciona con Ingeniería Ambiental"
+      },
+      "paso3_2": {
+        "estado": "ok",
+        "evidencia": "Inglés incluido, prácticas, laboratorios y simuladores virtuales, acompañamiento académico"
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Personalizas la propuesta resaltando los horarios nocturnos y la flexibilidad de la modalidad"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Refuerza los cierres parciales comerciales para validar intención"
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "No dejes el siguiente contacto únicamente a iniciativa del prospecto"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Si revisará la información por WhatsApp, establece fecha y hora concreta de seguimiento"
+      }
+    }
+  },
+  "Ana Maria Padilla Parra": {
+    "base": "388fdae0a503",
+    "fecha": "01/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Presentas beneficios adicionales como Nexus y el taller de Excel"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "ok",
+        "evidencia": "Reconoces el principal factor de decisión: reducir el tiempo de estudios mediante convalidación"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Aceptas continuar la comunicación mediante WhatsApp, enviando información específica"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "ok",
+        "evidencia": "Atiendes las consultas del familiar y aceptas continuar la comunicación por WhatsApp"
+      }
+    }
+  },
+  "Lucero Ximena Hujaynatis Jacay": {
+    "base": "094bdb8773c7",
+    "fecha": "08/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "pendiente",
+        "evidencia": "Refuerza la propuesta de valor: incorpora diferenciales concretos, no solo modalidad y horarios"
+      },
+      "paso1_4": {
+        "estado": "ok",
+        "evidencia": "Propones inmediatamente avanzar con su proceso de postulación ante la señal de compra"
+      },
+      "paso2_1": {
+        "estado": "ok",
+        "evidencia": "Realizas preguntas que permiten conocer mejor la situación del prospecto"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "ok",
+        "evidencia": "Identificas que antes no avanzó porque no recibió claridad sobre la inversión"
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "pendiente",
+        "evidencia": "Puedes incorporar diferenciales concretos y relacionarlos con la necesidad identificada"
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "pendiente",
+        "evidencia": "Trabaja primero la preocupación de tiempo con argumentos de flexibilidad antes de cerrar"
+      },
+      "paso3_6": {
+        "estado": "ok",
+        "evidencia": "Buena pregunta: '¿De qué depende exactamente tu decisión?'"
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "No dejes el contacto a iniciativa del prospecto"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Convierte 'en una hora' en un agendamiento concreto: acuerda una hora exacta"
+      }
+    }
+  },
+  "Milagros Torres Santos": {
+    "base": "f2397e408bae",
+    "fecha": "06/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "pendiente",
+        "evidencia": "Recuerda utilizar el nombre del prospecto durante la interacción"
+      },
+      "paso1_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_4": {
+        "estado": "ok",
+        "evidencia": "Validas cuándo realizará la inscripción e inicias la ficha de postulación"
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "ok",
+        "evidencia": "Identificas la principal barrera: necesita esperar a su fecha de cobro"
+      },
+      "paso2_4": {
+        "estado": "ok",
+        "evidencia": "Identificas que necesita esperar su fecha de cobro para disponer del dinero"
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "ok",
+        "evidencia": "Buen manejo de la objeción económica: no debe realizar todos los pagos a la vez"
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "ok",
+        "evidencia": "Ante los problemas de comunicación, mantienes la continuidad mediante WhatsApp"
+      }
+    }
+  },
+  "Lisette Valeria Blanco Chuco": {
+    "base": "e6a564849ac9",
+    "fecha": "08/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Presentas elementos de valor: adelanto de un curso sin costo y Excel básico/intermedio"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "Recién al final preguntas '¿tú qué estás buscando?'; profundiza la necesidad antes"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "ok",
+        "evidencia": "Identificas que antes la principal limitación había sido el tiempo"
+      },
+      "paso2_4": {
+        "estado": "pendiente",
+        "evidencia": "Recién al final preguntas '¿como una beca?'; conocerlo al inicio orientaría mejor"
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "Acuerda una hora específica en lugar de dejar que ella tome la iniciativa de escribir"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "El cierre puede ser más sólido: acuerda una hora específica de seguimiento"
+      }
+    }
+  },
+  "Edward Nelson Gonzales Villaneda": {
+    "base": "28242b7ada30",
+    "fecha": "02/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "ok",
+        "evidencia": "Utilizas el nombre de la prospecta durante la interacción"
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Brindas una alternativa concreta mediante los ciclos de verano para adelantar cursos"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "ok",
+        "evidencia": "Identificas correctamente la principal necesidad: busca reducir el tiempo de estudios"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "ok",
+        "evidencia": "Respondes adecuadamente a la preocupación por la duración y posteriormente al costo"
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Refuerza los cierres parciales a medida que presentas alternativas"
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Aseguras el envío de información por WhatsApp para reforzar lo conversado"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Evita dejar el seguimiento en 'me estaré comunicando posteriormente'; acuerda fecha y hora"
+      }
+    }
+  },
+  "Jorge Luis Valencia Cardenas": {
+    "base": "3f30b144432f",
+    "fecha": "01/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Explicas la posibilidad de adelantar un curso y acceder a Excel previamente"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "Conoces dónde trabaja, pero falta descubrir qué busca conseguir estudiando"
+      },
+      "paso2_2": {
+        "estado": "pendiente",
+        "evidencia": "Falta descubrir qué busca conseguir estudiando una carrera universitaria"
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Avanza hacia cierres parciales más concretos en lugar de limitarte a '¿qué te parece?'"
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "Evita cerrar con 'me avisas'"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Valida cuándo podría decidir y deja día y hora de seguimiento"
+      }
+    }
+  },
+  "Jimena del Rosario Vera Osores": {
+    "base": "7d40aaade7fb",
+    "fecha": "08/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "pendiente",
+        "evidencia": "Utiliza el nombre de la prospecta durante la conversación"
+      },
+      "paso1_3": {
+        "estado": "pendiente",
+        "evidencia": "Refuerza la propuesta de valor: la interacción se concentra en convalidación y costos"
+      },
+      "paso1_4": {
+        "estado": "ok",
+        "evidencia": "Preguntas si estaría interesada en iniciar su inscripción"
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "pendiente",
+        "evidencia": "Sin desarrollar diferenciales que ayuden a posicionar a la universidad"
+      },
+      "paso3_3": {
+        "estado": "pendiente",
+        "evidencia": "La interacción se concentra en convalidación y costos sin desarrollar diferenciales"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Resume lo entendido y pide confirmación antes de continuar"
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Mantienes un canal de continuidad mediante WhatsApp"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "ok",
+        "evidencia": "Le indicas desde qué número puede escribir para resolver consultas adicionales"
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Establece una hora concreta de seguimiento"
+      }
+    }
+  },
+  "Anyhela Kelly Ordoñez Chavez": {
+    "base": "42b1480c1412",
+    "fecha": "01/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "ok",
+        "evidencia": "Identificas que no cuenta con el monto de la primera cuota actualmente"
+      },
+      "paso2_4": {
+        "estado": "ok",
+        "evidencia": "Identificas que podría disponer del dinero a fines de octubre"
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "ok",
+        "evidencia": "Buen manejo de la barrera económica: planteas avanzar sin ese desembolso"
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Valida directamente el compromiso: cuándo enviará la evidencia y cuándo rendirá la evaluación"
+      }
+    }
+  },
+  "Patricia Roxana Mercado Zacarias": {
+    "base": "5c085beab562",
+    "fecha": "29/09/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "pendiente",
+        "evidencia": "Mencionas tu nombre recién hacia el cierre; preséntate al inicio con la Universidad Continental"
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Refuerzas beneficios de la modalidad distancia"
+      },
+      "paso1_4": {
+        "estado": "ok",
+        "evidencia": "Preguntas directamente si desea continuar con la postulación"
+      },
+      "paso2_1": {
+        "estado": "ok",
+        "evidencia": "Identificas que trabaja, busca opción económica y culminar Derecho en menor tiempo"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "ok",
+        "evidencia": "Brindas alternativas relacionadas con pensiones, modalidad y duración"
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Atiendes consultas sobre horarios y flexibilidad, reforzando beneficios de la modalidad distancia"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Refuerza los cierres parciales durante la conversación"
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "Evita dejar el seguimiento abierto cuando necesita analizar la propuesta"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "ok",
+        "evidencia": "Mencionas tu nombre hacia el cierre"
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Preguntar qué día podría llamarse sin concretarlo no constituye un agendamiento"
+      }
+    }
+  },
+  "Juliana Milagros Suarez Atencio": {
+    "base": "09ae62784990",
+    "fecha": "21/09/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      }
+    }
+  },
+  "Betsabeth Alexandra Rojas Palacios": {
+    "base": "5359ad1014af",
+    "fecha": "08/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "pendiente",
+        "evidencia": "Debemos dirigirnos la llamada con su nombre mínimo 4 veces"
+      },
+      "paso1_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_4": {
+        "estado": "pendiente",
+        "evidencia": "Debes mejorar el sondeo y hacer preguntas filtro para buscar su necesidad"
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "Búsqueda de la necesidad muy débil; mejorar el sondeo"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      }
+    }
+  },
+  "Maria Alejandra Pino Contreras": {
+    "base": "7c8c7aa01e2a",
+    "fecha": "06/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "pendiente",
+        "evidencia": "Incorporar al menos dos diferenciales de la Universidad para generar valor más allá del precio"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "ok",
+        "evidencia": "Brindas información sobre Ingeniería Ambiental y Derecho"
+      },
+      "paso3_2": {
+        "estado": "pendiente",
+        "evidencia": "Incorporar al menos dos diferenciales de la Universidad"
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Realizar cierres parciales para identificar la intención real de avance"
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Mantienes abierto el canal de comunicación por WhatsApp"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Cuando conversará con su padre, establecer fecha y hora concreta para el seguimiento"
+      }
+    }
+  },
+  "Angel Raul Villanueva Fernandez": {
+    "base": "6391190a77d3",
+    "fecha": "18/09/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "pendiente",
+        "evidencia": "Escuchar activamente y corregir información incorrecta antes de continuar con la propuesta"
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      }
+    }
+  },
+  "Edgar Sabino Chavez Vizcarra": {
+    "base": "9f2f4cf61b24",
+    "fecha": "18/09/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      }
+    }
+  },
+  "Angelo Jaime Franco Sarmiento": {
+    "base": "80470b12dd82",
+    "fecha": "02/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Brinda información sobre los beneficios de la modalidad a distancia"
+      },
+      "paso1_4": {
+        "estado": "ok",
+        "evidencia": "Identifica el interés del prospecto en dos carreras"
+      },
+      "paso2_1": {
+        "estado": "ok",
+        "evidencia": "Identifica las necesidades del prospecto y consulta sobre sus estudios técnicos previos"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Beneficios de la modalidad a distancia: clases en vivo y grabaciones"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "ok",
+        "evidencia": "Logras validar su interés en las opciones consultadas"
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Ofrece enviar información por WhatsApp"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Establecer fecha y hora concreta para el seguimiento, no solo enviar información por WhatsApp"
+      }
+    }
+  },
+  "Melissa Leslie Fernadez Avalos": {
+    "base": "c458b8b4f3e4",
+    "fecha": "02/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Explica los beneficios de la modalidad y las condiciones de la campaña"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "Profundizar en las necesidades y disponibilidad laboral del prospecto"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Explica los beneficios de la modalidad"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "pendiente",
+        "evidencia": "Fortalecer el manejo de objeciones"
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Verifica su comprensión y realiza dos cierres parciales"
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Comparte su WhatsApp corporativo"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "ok",
+        "evidencia": "Comparte su WhatsApp corporativo"
+      },
+      "paso4_4": {
+        "estado": "ok",
+        "evidencia": "Concreta un seguimiento con el prospecto"
+      }
+    }
+  },
+  "Rosa Victoria Guzman Bonilla": {
+    "base": "b3461cdd1ed2",
+    "fecha": "06/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "pendiente",
+        "evidencia": "Utilizar el nombre de la prospecta al menos dos veces durante la llamada"
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Explica el pago por créditos, el adelanto de cursos y las alternativas de becas y semibecas"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "ok",
+        "evidencia": "Identifica que su principal preocupación está relacionada con su capacidad económica"
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "pendiente",
+        "evidencia": "Profundizar en la objeción económica cuando manifiesta que necesita tiempo"
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "Establecer una fecha y hora concreta para el seguimiento comercial"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Establecer una fecha y hora concreta para el seguimiento comercial"
+      }
+    }
+  },
+  "Eduardo Alfredo Coaquiera Elguera": {
+    "base": "76fde41be9d4",
+    "fecha": "23/09/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "pendiente",
+        "evidencia": "La llamada debe también presentar el valor de la universidad"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "La llamada debe también conocer la necesidad del prospecto"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "ok",
+        "evidencia": "Brinda información sobre la carrera"
+      },
+      "paso3_2": {
+        "estado": "pendiente",
+        "evidencia": "Falta presentar el valor de la universidad"
+      },
+      "paso3_3": {
+        "estado": "pendiente",
+        "evidencia": "Falta presentar el valor de la universidad"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "Falta finalizar con un compromiso concreto de seguimiento"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Finalizar con un compromiso concreto de seguimiento, idealmente con fecha y hora"
+      }
+    }
+  },
+  "Justyn Flores Solano": {
+    "base": "6bfe33d816c6",
+    "fecha": "02/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "ok",
+        "evidencia": "Se identifica correctamente con la Universidad Continental"
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Brinda información sobre los beneficios de estudiar en modalidad virtual"
+      },
+      "paso1_4": {
+        "estado": "ok",
+        "evidencia": "Consulta el nivel de interés de la prospecta mediante una escala del 1 al 10"
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "Profundizar en las necesidades y motivaciones de Gloria para estudiar Psicología"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "ok",
+        "evidencia": "Brinda información sobre la duración de la carrera"
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Explica los beneficios de estudiar en modalidad virtual"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "pendiente",
+        "evidencia": "No aceptar sin más que debe conversar con su pareja; indagar y argumentar"
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Realizar dos cierres que validen la aceptación de la propuesta académica y económica"
+      },
+      "paso4_1": {
+        "estado": "pendiente",
+        "evidencia": "Establecer una fecha y hora concreta para el próximo contacto"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Establecer una fecha y hora concreta para el próximo contacto"
+      }
+    }
+  },
+  "Orlando Jesus Pintado Sandoval": {
+    "base": "f405da1628de",
+    "fecha": "06/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "ok",
+        "evidencia": "Mantiene una comunicación cordial, dinámica y personalizada"
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Presenta varios diferenciales de la modalidad a distancia"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "ok",
+        "evidencia": "Buena indagación sobre los estudios previos y experiencia laboral del prospecto"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "ok",
+        "evidencia": "Valida la capacidad económica del prospecto antes de avanzar"
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "ok",
+        "evidencia": "Varios diferenciales: clases en vivo, grabaciones, flexibilidad ante inasistencias e inglés incluido"
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Clases en vivo, grabaciones y flexibilidad ante inasistencias"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_6": {
+        "estado": "ok",
+        "evidencia": "Realiza validaciones progresivas y logra que el prospecto confirme su conformidad"
+      },
+      "paso4_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      }
+    }
+  },
+  "Nicol Alisson Romero Espinoza": {
+    "base": "507d0939d693",
+    "fecha": "30/09/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Refuerzas que la modalidad es 100% virtual y qué hacer si no se conecta en vivo"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Modalidad 100% virtual y alternativa si no logra conectarse a una clase en vivo"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "ok",
+        "evidencia": "Manejas adecuadamente la preocupación relacionada con los horarios"
+      },
+      "paso3_6": {
+        "estado": "pendiente",
+        "evidencia": "Refuerza los cierres parciales: busca pequeños compromisos"
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Confirmas el canal de WhatsApp y acuerdas un nuevo contacto a las 10:30 p. m."
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "ok",
+        "evidencia": "Acuerdas un nuevo contacto a las 10:30 p. m."
+      }
+    }
+  },
+  "Cecilia Esther Aliaga Lapa": {
+    "base": "9632b26a54ae",
+    "fecha": "01/10/2026",
+    "items": {
+      "paso1_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso1_3": {
+        "estado": "ok",
+        "evidencia": "Presentas una propuesta de valor completa: adelanto de curso, Excel certificado y beneficios económicos"
+      },
+      "paso1_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_1": {
+        "estado": "pendiente",
+        "evidencia": "Identificar desde etapas más tempranas su situación laboral y disponibilidad real"
+      },
+      "paso2_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso2_3": {
+        "estado": "pendiente",
+        "evidencia": "Identificar desde etapas más tempranas su disponibilidad real de conectividad"
+      },
+      "paso2_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_1": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_2": {
+        "estado": "ok",
+        "evidencia": "Propuesta de valor completa: adelanto de curso, Excel certificado y beneficios económicos"
+      },
+      "paso3_3": {
+        "estado": "ok",
+        "evidencia": "Desarrollas la modalidad: flexibilidad, clases en vivo y grabadas"
+      },
+      "paso3_4": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso3_5": {
+        "estado": "ok",
+        "evidencia": "Mantienes empatía frente a una barrera que realmente limita el avance"
+      },
+      "paso3_6": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_1": {
+        "estado": "ok",
+        "evidencia": "Dejas habilitado WhatsApp para continuar acompañándola"
+      },
+      "paso4_2": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_3": {
+        "estado": "sin_evidencia",
+        "evidencia": null
+      },
+      "paso4_4": {
+        "estado": "pendiente",
+        "evidencia": "Acuerda una fecha tentativa para retomar la comunicación"
+      }
+    }
+  }
+}
