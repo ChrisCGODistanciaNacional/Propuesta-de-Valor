@@ -34,6 +34,11 @@ Cada archivo es el JSON tal cual lo devuelve el conector de Google Sheets (`{"ra
 - Bloque `equipo`: mapa de calor (pauta), foco cualitativo, oportunidad, distribución por cuartiles, listas por cuadrante, ranking completo.
 - Nombres: alias explícitos (`ALIASES`) + cruce por parecido (p. ej. "JOSTYN FLORES SOLANO" ↔ "Justyn Flores Solano"); el nombre canónico es el de 🔰FEEDBACK.
 
+## Reglas de contenido (speeches de caso y textos de la página)
+
+- **Becas**: no se dan en el primer ciclo; desde el 2.º ciclo son concursables (semibeca por excelencia) solo si el alumno mantiene buen promedio. Nunca abrir ni preguntar por becas como gancho ("¿buscas una beca?") ni ofrecerlas como beneficio del primer ciclo: si el prospecto las menciona, responder con claridad y como motivación ("desde el segundo ciclo, si mantienes buen promedio, concursas a una semibeca"); si no, no tocar el tema.
+- Nunca inventar montos, descuentos, fechas concretas ni beneficios: solo datos de la observación del supervisor o reglas generales presentes en `index.html`.
+
 ## Formato de los cachés
 
 `casos_cache.json` (clave: nombre del asesor):

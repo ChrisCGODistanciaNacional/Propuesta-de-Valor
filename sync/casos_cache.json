@@ -43,8 +43,8 @@
   "stage": "paso3",
   "tecId": "tec_14",
   "tipo": "speech",
-  "porQue": "La beca era el factor decisivo y lo descubriste al final: pregúntalo al inicio, confirma que no queda otra traba y cierra con hora exacta en vez de esperar que ella escriba.",
-  "speech": "Antes de contarte todo, quiero asegurarme de hablar de lo que de verdad te importa: ¿qué es lo que estás buscando para decidirte, una beca, un horario que te acomode, un tema de inversión? Dime eso y te explico exactamente cómo lo cubrimos.\n\nAparte de eso, ¿hay algo más que te impida empezar este ciclo? Si no, lo dejamos encaminado hoy.\n\nMe dijiste que me respondes en la noche: ¿te escribo yo a las 8 para confirmar, o prefieres a las 9?",
+  "porQue": "El factor decisivo apareció recién al final: pregunta desde el inicio qué pesa más en su decisión sin sugerir la beca (no aplica el primer ciclo), responde con claridad si ella la menciona y cierra con hora exacta.",
+  "speech": "Antes de contarte todo, quiero entender qué es lo que más pesa en tu decisión: ¿el tiempo para estudiar, la inversión mensual o el proceso de traslado? Dime eso y me enfoco en lo que de verdad te importa.\n\n[Si te pregunta por becas] Te lo digo con claridad para que no te quedes con dudas: la beca no aplica en el primer ciclo, pero desde el segundo, si mantienes buen promedio, concursas a una semibeca por excelencia ciclo a ciclo. Tu propio rendimiento te ayuda a bajar la cuota.\n\nAparte de eso, ¿hay algo más que te impida empezar este ciclo? Si no, lo dejamos encaminado hoy. Me dijiste que me respondes en la noche: ¿te escribo yo a las 8 para confirmar, o prefieres a las 9?",
   "base": "0d0dcdbfbe31"
  },
  "Edward Nelson Gonzales Villaneda": {
