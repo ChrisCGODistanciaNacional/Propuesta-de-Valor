@@ -538,6 +538,32 @@
   .msg-text { display: block; }
   .focus-tec .chat, .speech-suggest .chat { margin-top: 10px; }
   .focus-tec-title b, .speech-suggest-title b { font-weight: 700; }
+
+  /* ===================== v12d: llamadas evaluadas por calidad ===================== */
+  .btn-icon { background: rgba(255,255,255,0.06); color: var(--gold); border: 1px solid var(--gold); border-radius: var(--r-pill); width: 42px; height: 38px; font-size: 18px; line-height: 1; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+  .btn-icon:hover { background: rgba(232,184,74,0.18); }
+  .ev-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 14px; }
+  .ev-stat { background: var(--paper); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; }
+  .ev-stat b { font-size: 26px; font-weight: 700; color: var(--navy); line-height: 1.1; }
+  .ev-stat span { font-size: 12.5px; color: var(--ink-2); }
+  .ev-stat em { display: block; font-style: normal; font-size: 11.5px; color: var(--muted); }
+  .ev-stat.zero b { color: var(--bad); }
+  .ev-weeks { display: flex; align-items: flex-end; gap: 8px; height: 96px; padding: 0 4px 2px; margin-bottom: 14px; border-bottom: 1px solid var(--line); }
+  .ev-week { flex: 1 1 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 100%; }
+  .ev-week-n { font-size: 12px; font-weight: 700; color: var(--navy); }
+  .ev-week-bar { display: block; width: 70%; max-width: 44px; background: #C9D4E3; border-radius: 6px 6px 2px 2px; }
+  .ev-week.now .ev-week-bar { background: var(--gold); }
+  .ev-week-lbl { font-size: 11px; color: var(--muted); }
+  .ev-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .ev-table th { text-align: left; font-size: 11.5px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  .ev-table td { padding: 7px 8px; border-bottom: 1px solid var(--line); color: var(--ink); }
+  .ev-table th:not(:first-child), .ev-table td:not(:first-child) { text-align: center; white-space: nowrap; }
+  .ev-table td:nth-child(4) { font-weight: 700; color: var(--navy); }
+  .ev-table tr.warm td:nth-child(4) { color: var(--muted); font-weight: 400; }
+  .ev-table tr.cold td { color: var(--bad); }
+  .ev-table tr.cold td:first-child::before { content: '●'; font-size: 8px; margin-right: 6px; vertical-align: middle; }
+  .ev-table tr.me td { background: var(--gold-soft); }
+  .ev-box .me-tag { font-size: 10.5px; font-weight: 700; color: var(--navy); background: var(--gold); border-radius: var(--r-pill); padding: 1px 6px; margin-left: 4px; vertical-align: middle; }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -703,6 +729,11 @@
     .kit-lbl-short { display: inline; }
     .paso-title-row .paso-weight { font-size: 11px; }
     .zone { padding: 14px 12px 14px; border-radius: 14px; }
+    .ev-stats { grid-template-columns: repeat(2, 1fr); }
+    .ev-table th, .ev-table td { padding: 7px 4px; font-size: 12.5px; }
+    .ev-table th:first-child, .ev-table td:first-child { padding-left: 0; }
+    .ev-table td:first-child { font-size: 12.5px; line-height: 1.25; }
+    .ev-weeks { gap: 4px; }
     .msg { max-width: 92%; font-size: 13.5px; }
     .chat { padding: 10px 8px; }
     .zone-title { font-size: 17px; margin-bottom: 12px; }
@@ -909,6 +940,13 @@
   </div>
 </div>
 
+<div id="evalModal" class="modal-backdrop" onclick="if (event.target === this) closeEvaluadas()" role="dialog" aria-modal="true" aria-labelledby="evalTitle">
+  <div class="modal">
+    <div class="modal-head"><h2 id="evalTitle">🎧 Llamadas evaluadas</h2><button class="modal-close" onclick="closeEvaluadas()" aria-label="Cerrar">✕</button></div>
+    <div id="evalBody" class="modal-body"></div>
+  </div>
+</div>
+
 <footer class="app-footer">Herramienta desarrollada por Christopher Huamán · CGO Distancia 2025</footer>
 
 <script id="appScript">
@@ -927,7 +965,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-12T17:15:11.000Z";
+  const DATA_VERSION = "2026-10-12T17:25:51.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -2150,6 +2188,7 @@
           <div class="hero-right">
             <div class="cuad-badge" style="--cq:${cq.color}" title="${cq.sub}"><span class="cuad-emoji">${cq.nivelEmoji}</span><span><b>${cq.nivel}</b><small>${hasCuad ? `${cq.emoji} ${cq.nombre} · Q${String(a.cuartilMatriculas).replace('Q', '')} matrículas · Q${String(a.cuartilCalidad).replace('Q', '')} calidad` : cq.sub}</small></span></div>
             <button class="btn-ranking" onclick="openRanking()" title="Podio del equipo, cuadrantes y foco de acción">🏁 Ranking</button>
+            <button class="btn-icon" onclick="openEvaluadas()" title="Llamadas evaluadas por calidad: total, semana pasada y esta semana, por asesor" aria-label="Llamadas evaluadas por calidad">🎧</button>
           </div>
         </div>
         <div class="hero-stats">
@@ -2558,7 +2597,101 @@
     const body = document.getElementById('rankingBody');
     if (body) body.innerHTML = '';
   }
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRanking(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeRanking(); closeEvaluadas(); } });
+  // ---- Llamadas evaluadas por calidad: total, semana pasada y esta semana, por asesor ----
+  function openEvaluadas() {
+    const modal = document.getElementById('evalModal');
+    if (!modal) return;
+    renderEvaluadas();
+    modal.classList.add('open');
+    document.body.classList.add('modal-open');
+    const box = modal.querySelector('.modal');
+    if (box) box.scrollTop = 0;
+  }
+  function closeEvaluadas() {
+    const modal = document.getElementById('evalModal');
+    if (!modal || !modal.classList.contains('open')) return;
+    modal.classList.remove('open');
+    if (!document.querySelector('.modal-backdrop.open')) document.body.classList.remove('modal-open');
+    const body = document.getElementById('evalBody');
+    if (body) body.innerHTML = '';
+  }
+  const MESES_CORTO = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+  function lunesDe(d) { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x; }
+  function rangoSemana(lunes) {
+    const dom = new Date(lunes); dom.setDate(dom.getDate() + 6);
+    const f = d => String(d.getDate()).padStart(2, '0');
+    return lunes.getMonth() === dom.getMonth() ? `${f(lunes)}–${f(dom)} ${MESES_CORTO[dom.getMonth()]}` : `${f(lunes)} ${MESES_CORTO[lunes.getMonth()]} – ${f(dom)} ${MESES_CORTO[dom.getMonth()]}`;
+  }
+  function renderEvaluadas() {
+    const body = document.getElementById('evalBody');
+    if (!body) return;
+    if (sheetDataCache.error || !Array.isArray(sheetDataCache.evaluacion)) {
+      body.innerHTML = `<div class="diag-empty"><span class="big">⚠️</span><div>No se pudo cargar el diagnóstico (${sheetDataCache.error || 'sin datos'}).</div></div>`;
+      return;
+    }
+    const hoy = new Date();
+    const lunesActual = lunesDe(hoy);
+    const lunesPasado = new Date(lunesActual); lunesPasado.setDate(lunesPasado.getDate() - 7);
+    const sem = d => lunesDe(d).getTime();
+    const porAsesor = {};
+    const porSemana = {};
+    let total = 0, sinFecha = 0;
+    const nombreCanon = {};
+    sheetDataCache.evaluacion.forEach(r => {
+      const nombre = String(findField(r, ['asesor']) || '').trim();
+      if (!nombre) return;
+      const key = normalizarTexto(nombre);
+      if (!nombreCanon[key]) nombreCanon[key] = nombre;
+      const a = porAsesor[key] || (porAsesor[key] = { total: 0, pasada: 0, actual: 0, ultima: null });
+      a.total++; total++;
+      const d = parseFechaDMY(isBlankValue(getField(r, 'fecha')) ? null : String(getField(r, 'fecha')).trim());
+      if (!d) { sinFecha++; return; }
+      if (!a.ultima || d > a.ultima) a.ultima = d;
+      const w = sem(d);
+      porSemana[w] = (porSemana[w] || 0) + 1;
+      if (w === lunesActual.getTime()) a.actual++;
+      else if (w === lunesPasado.getTime()) a.pasada++;
+    });
+    // Asesores del equipo sin ninguna evaluación también cuentan (con 0)
+    const eq = sheetDataCache.equipo || {};
+    (eq.ranking || []).forEach(x => { const key = normalizarTexto(x.asesor); if (!porAsesor[key]) { porAsesor[key] = { total: 0, pasada: 0, actual: 0, ultima: null }; nombreCanon[key] = x.asesor; } });
+    const filas = Object.keys(porAsesor).map(k => Object.assign({ key: k, nombre: nombreCanon[k] }, porAsesor[k]));
+    filas.sort((a, b) => (b.actual - a.actual) || (b.pasada - a.pasada) || (b.total - a.total) || a.nombre.localeCompare(b.nombre));
+    const totalPasada = filas.reduce((s, f) => s + f.pasada, 0);
+    const totalActual = filas.reduce((s, f) => s + f.actual, 0);
+    const sinEstaSemana = filas.filter(f => !f.actual).length;
+    const sinDosSemanas = filas.filter(f => !f.actual && !f.pasada).length;
+    // últimas 6 semanas (incluida la actual) para ver el ritmo del área de calidad
+    const semanas = [];
+    for (let i = 5; i >= 0; i--) { const l = new Date(lunesActual); l.setDate(l.getDate() - 7 * i); semanas.push({ lunes: l, n: porSemana[l.getTime()] || 0 }); }
+    const maxSem = Math.max(1, ...semanas.map(x => x.n));
+    const prom4 = Math.round(semanas.slice(1, 5).reduce((s, x) => s + x.n, 0) / 4 * 10) / 10;
+    const fmtFecha = d => d ? `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}` : '—';
+    const yo = getSelectedAdvisor() ? normalizarTexto(getSelectedAdvisor()) : '';
+    body.innerHTML = `
+      <div class="rk-section ev-box" data-capturable>
+        ${imgHeadHTML()}
+        <div class="rk-title">🎧 Llamadas evaluadas por calidad <small>· datos al ${eq.fecha || hoyDMY()}</small>${btnImgHTML('Llamadas evaluadas por calidad', 'Equipo CGO Distancia')}</div>
+        <div class="ev-stats">
+          <div class="ev-stat"><b>${total}</b><span>evaluadas en total</span></div>
+          <div class="ev-stat"><b>${totalPasada}</b><span>semana pasada<em>${rangoSemana(lunesPasado)}</em></span></div>
+          <div class="ev-stat ${totalActual ? '' : 'zero'}"><b>${totalActual}</b><span>esta semana<em>${rangoSemana(lunesActual)}</em></span></div>
+          <div class="ev-stat"><b>${prom4}</b><span>por semana<em>promedio de las últimas 4</em></span></div>
+        </div>
+        <div class="ev-weeks" aria-label="Evaluaciones por semana, últimas 6 semanas">
+          ${semanas.map((x, i) => `<div class="ev-week ${i === 5 ? 'now' : ''}"><span class="ev-week-n">${x.n}</span><span class="ev-week-bar" style="height:${Math.max(4, Math.round(x.n / maxSem * 56))}px"></span><span class="ev-week-lbl">${fmtFecha(x.lunes)}</span></div>`).join('')}
+        </div>
+        <table class="ev-table">
+          <thead><tr><th>Asesor</th><th>Total</th><th><span class="kit-lbl-long">Sem. pasada</span><span class="kit-lbl-short">Pasada</span></th><th><span class="kit-lbl-long">Esta semana</span><span class="kit-lbl-short">Esta sem.</span></th><th>Última</th></tr></thead>
+          <tbody>
+            ${filas.map(f => `<tr class="${f.key === yo ? 'me' : ''} ${!f.actual && !f.pasada ? 'cold' : (!f.actual ? 'warm' : '')}"><td>${nombreCorto(f.nombre)}${f.key === yo ? ' <span class="me-tag no-img">tú</span>' : ''}</td><td>${f.total}</td><td>${f.pasada}</td><td>${f.actual || '·'}</td><td>${fmtFecha(f.ultima)}</td></tr>`).join('')}
+          </tbody>
+        </table>
+        <div class="rk-rule">${sinEstaSemana} ${sinEstaSemana === 1 ? 'asesor' : 'asesores'} sin evaluación esta semana · ${sinDosSemanas} sin evaluación en las últimas dos semanas (en rojo).${sinFecha ? ` · ${sinFecha} sin fecha` : ''}</div>
+        ${imgFootHTML()}
+      </div>`;
+  }
   function renderRanking() {
     const body = document.getElementById('rankingBody');
     if (!body) return;
@@ -2899,6 +3032,7 @@
     clone.querySelector('body').classList.remove('modal-open');
     clone.querySelectorAll('.capturing').forEach(e => e.classList.remove('capturing'));
     const rkModalClone = clone.querySelector('#rankingModal'); if (rkModalClone) rkModalClone.classList.remove('open');
+    const evModalClone = clone.querySelector('#evalModal'); if (evModalClone) { evModalClone.classList.remove('open'); const eb = evModalClone.querySelector('#evalBody'); if (eb) eb.innerHTML = ''; }
     const rkBodyClone = clone.querySelector('#rankingBody'); if (rkBodyClone) rkBodyClone.innerHTML = '';
     const fotosListClone = clone.querySelector('#fotosList'); if (fotosListClone) fotosListClone.innerHTML = '';
     const fotoSelClone = clone.querySelector('#fotoAsesorSelect'); if (fotoSelClone) fotoSelClone.innerHTML = '<option value="">Elige al asesor...</option>';
