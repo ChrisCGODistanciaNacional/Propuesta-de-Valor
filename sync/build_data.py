@@ -5,7 +5,9 @@ Arma data.json para la página "Propuesta de Valor" (CGO Distancia) a partir de:
 
   sync/inputs/feedback.json   ← '🔰FEEDBACK'!A1:R2000   (archivo I, spreadsheetId 1SJAgbcxpVXpRZ6_Vb4_VW1Pl9BJZMyR8cTH-hmvgdEE)
   sync/inputs/tecnicas.json   ← '🏆 TECNICAS'!A1:Z60    (archivo I)
-  sync/inputs/gen.json        ← '🔰GEN'!A24:J56         (archivo I, tablero: ranking del mes por asesor: matrículas, % de meta y cuartil por aporte)
+  sync/inputs/gen.json        ← '🔰GEN'!A1:J56          (archivo I, tablero: lista de asesores del ranking; su mes en B6)
+  sync/inputs/ingmat.json     ← '🧮ING/MAT'!A1:AW3000   (archivo I, ingresantes/matriculados: de aquí salen las matrículas del MES EN CURSO por asesor;
+                                                          respaldo: una columna por archivo ingmat_E/O/AE/AP/AU.json)
   sync/inputs/metas.json      ← '🧮GC'!B130:J159        (archivo I: meta mensual de matrículas por asesor y mes)
   sync/inputs/diasem.json     ← '🔰DIA/SEM'!A19:IF23    (archivo I; solo respaldo si falta gen.json)
   sync/inputs/dashboard.json  ← 'DASHBOARD'!B5:O90      (Matriz_CGO_Distancia_2027-I, spreadsheetId 1MaiDiBNBicpttRJs2oSAyKvbAD0nI963anN9wfYoeOM:
@@ -377,10 +379,62 @@ if mv and len(mv) >= 2:
             if meta:
                 meta_by_name[norm(canon_name(raw[0]))] = meta
 
-# ----------------------------------------------------------------------------- 🔰GEN (tablero) → matrículas del mes, % de meta y cuartil por aporte
+# ----------------------------------------------------------------------------- 🧮ING/MAT → matrículas del MES EN CURSO por asesor
+# Misma fórmula que la columna "Avance del Mes (Q)" del tablero 🔰GEN, pero siempre con el mes actual (el tablero
+# tiene un selector de mes en B6 y, si alguien lo deja en otro mes, mostraría ese mes):
+#   COUNTIFS(AE<>"PAGO PENDIENTE", O=asesor, AU=mes, E<>"DEVOLUCIÓN") + COUNTIFS(AE<>"PAGO PENDIENTE", O=asesor, AP=mes, E<>"DEVOLUCIÓN")
+MES_ACTUAL = MESES[hoy.month - 1].upper()
+INGMAT_COLS = {'E': 'Subestado Funnel', 'O': 'ASESOR', 'AE': 'MES PAGO FILTRO1 CRM', 'AP': 'MES DE PAGO - HYO', 'AU': 'MES PAGO FILTRO2 / RESPUESTA DIV-INGRESANTE'}
+ingmat_cols = None
+_blk = load_values('ingmat.json', required=False)     # bloque completo 'A1:AW…' (las columnas se ubican por encabezado)
+if _blk:
+    bh = [norm(x) for x in _blk[0]]
+    ingmat_cols = {}
+    for letra, encab in INGMAT_COLS.items():
+        ci = next((i for i, h in enumerate(bh) if h == norm(encab)), None)
+        if ci is None:
+            sys.exit(f'🧮ING/MAT: no encuentro la columna "{encab}" en el encabezado')
+        ingmat_cols[letra] = [str(r[ci]) if ci < len(r) else '' for r in _blk[1:]]
+else:                                                   # respaldo: una columna por archivo (ingmat_E.json, ingmat_O.json, …)
+    ingmat_cols = {}
+    for letra, encab in INGMAT_COLS.items():
+        v = load_values(f'ingmat_{letra}.json', required=False)
+        if not v:
+            ingmat_cols = None
+            break
+        hdr = str(v[0][0]) if v and v[0] else ''
+        if norm(hdr) != norm(encab):
+            sys.exit(f'🧮ING/MAT columna {letra}: encabezado "{hdr}" ≠ "{encab}" (¿se movió la columna en la hoja?)')
+        ingmat_cols[letra] = [str(r[0]) if r else '' for r in v[1:]]
+mat_mes_calc = None
+if ingmat_cols:
+    nfilas = max(len(c) for c in ingmat_cols.values())
+    _g = lambda c, i: (ingmat_cols[c][i] if i < len(ingmat_cols[c]) else '').strip()
+    mat_mes_calc = {}
+    for i in range(nfilas):
+        if norm(_g('AE', i)) == norm('PAGO PENDIENTE') or norm(_g('E', i)) == norm('DEVOLUCIÓN'):
+            continue
+        asesor = _g('O', i)
+        if not asesor:
+            continue
+        hit = (norm(_g('AU', i)) == norm(MES_ACTUAL)) + (norm(_g('AP', i)) == norm(MES_ACTUAL))
+        if hit:
+            k = norm(canon_name(asesor))
+            mat_mes_calc[k] = mat_mes_calc.get(k, 0) + hit
+
+# ----------------------------------------------------------------------------- 🔰GEN (tablero) → roster, matrículas del mes, % de meta y cuartil por aporte
 tablero_by_name = {}
 cortes_matriculas = None
+mes_tablero = None
 gv = load_values('gen.json', required=False)
+if gv:
+    for r in gv[:12]:
+        if r and norm(r[0]) == 'mes' and len(r) > 1 and str(r[1]).strip():
+            mes_tablero = str(r[1]).strip().upper()
+            break
+    if mes_tablero and norm(mes_tablero) != norm(MES_ACTUAL) and mat_mes_calc is None:
+        print(f'⚠️ el tablero 🔰GEN está en {mes_tablero} y no hay 🧮ING/MAT para recalcular {MES_ACTUAL}: se omite el avance del tablero')
+        gv = None
 if gv:
     hi = next((i for i, r in enumerate(gv) if r and norm(r[0]) == 'puesto'), None)
     if hi is not None:
@@ -402,12 +456,29 @@ if gv:
             m = re.match(r'cuartil\s*(\d)', norm(raw[i_cu]).replace('cuartil', 'cuartil ')) if i_cu < len(raw) else None
             filas.append({'name': name, 'q': q, 'pct': pct(raw[i_pct]) if i_pct < len(raw) else None,
                           'cuartil': ('Q' + m.group(1)) if m else None, 'puesto': to_int(raw[0])})
+        if filas and mat_mes_calc is not None:
+            # Matrículas del mes en curso calculadas desde 🧮ING/MAT; el tablero solo aporta la lista de asesores.
+            # Si el tablero está en el mismo mes, sus cifras deben coincidir (se avisa si no).
+            dif = []
+            for f in filas:
+                q_calc = mat_mes_calc.get(norm(f['name']), 0)
+                if mes_tablero and norm(mes_tablero) == norm(MES_ACTUAL) and f['q'] != q_calc:
+                    dif.append(f"{f['name']}: tablero {f['q']} ≠ calculado {q_calc}")
+                f['q'] = q_calc
+                f['pct'] = None          # se recalcula con la meta del mes en curso
+                f['cuartil'] = None      # se recalcula sobre el equipo con el mes en curso
+                f['puesto'] = None
+            if dif:
+                print('⚠️ diferencias con el tablero del mismo mes: ' + ' · '.join(dif))
+            filas.sort(key=lambda f: (-f['q'], f['name']))
+            for i, f in enumerate(filas):
+                f['puesto'] = i + 1 if (i == 0 or filas[i - 1]['q'] != f['q']) else filas[i - 1]['puesto']
         if filas:
             qs = [f['q'] for f in filas]
             p75, p50, p25 = quartile_inc(qs, 3), quartile_inc(qs, 2), quartile_inc(qs, 1)
             cortes_matriculas = {'Q1': p75, 'Q2': p50, 'Q3': p25}
             for f in filas:
-                if not f['cuartil']:   # si el tablero muestra otra cosa en esa columna, mismo criterio QUARTILE
+                if not f['cuartil']:   # mismo criterio QUARTILE.INC de la columna "Cuartil" del tablero
                     f['cuartil'] = 'Q1' if f['q'] >= p75 else 'Q2' if f['q'] >= p50 else 'Q3' if f['q'] >= p25 else 'Q4'
                 meta = meta_by_name.get(norm(f['name']))
                 if not meta and f['q'] and f['pct']:
@@ -818,7 +889,9 @@ equipo = {
     'diasHabiles': {'transcurridos': DH_TRANSC, 'total': DH_TOTAL},
     'avanceModo': 'tablero' if tablero_by_name else AVANCE_MODO,
     'cortesMatriculas': cortes_matriculas,
-    'fuente': ('🔰GEN tablero (matrículas del mes, cuartil por aporte)' if tablero_by_name else ('🔰DIA/SEM (avance del mes)' if mes_by_name else 'sin avance del mes')) + ' · ' + ('Matriz DASHBOARD (calidad)' if dash else 'sin Matriz'),
+    'fuente': (('🧮ING/MAT (matrículas de ' + MES_ACTUAL.lower() + ', cuartil por aporte en el equipo)' if mat_mes_calc is not None else '🔰GEN tablero (matrículas del mes, cuartil por aporte)') if tablero_by_name else ('🔰DIA/SEM (avance del mes)' if mes_by_name else 'sin avance del mes')) + ' · ' + ('Matriz DASHBOARD (calidad)' if dash else 'sin Matriz'),
+    'mesCalculo': MES_ACTUAL.lower(),
+    'mesTablero': mes_tablero.lower() if mes_tablero else None,
     'mapaCalor': mapa, 'mapaCalorLocal': mapa_local,
     'focoCualitativo': foco, 'oportunidad': opor,
     'distribucionCuartiles': dist,

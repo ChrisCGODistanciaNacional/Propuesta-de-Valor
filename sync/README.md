@@ -8,7 +8,8 @@ La página lee `data.json` (misma carpeta) para mostrar el diagnóstico por ases
 |---|---|---|
 | `feedback.json`  | `'🔰FEEDBACK'!A1:AB2000` | Archivo I · `1SJAgbcxpVXpRZ6_Vb4_VW1Pl9BJZMyR8cTH-hmvgdEE` (desde el 12/10/2026 trae una columna de Fortaleza y una de Oportunidades por etapa) |
 | `tecnicas.json`  | `'🏆 TECNICAS'!A1:Z60`  | Archivo I |
-| `gen.json`       | `'🔰GEN'!A24:J56`       | Archivo I (tablero: ranking del mes por asesor — matrículas, % de meta y cuartil por aporte) |
+| `gen.json`       | `'🔰GEN'!A1:J56`        | Archivo I (tablero: lista de asesores del ranking; su mes en B6 solo se usa para avisar) |
+| `ingmat.json`    | `'🧮ING/MAT'!A1:AW3000` | Archivo I (ingresantes/matriculados: matrículas del **mes en curso** por asesor con la misma fórmula del tablero — AE≠"PAGO PENDIENTE", E≠"DEVOLUCIÓN", AU=mes o AP=mes — pero siempre con el mes actual, aunque el tablero esté en otro mes) |
 | `metas.json`     | `'🧮GC'!B130:J159`      | Archivo I (meta mensual de matrículas por asesor y mes) |
 | `diasem.json` (opcional) | `'🔰DIA/SEM'!A19:IF23` | Archivo I (solo respaldo si falta gen.json) |
 | `dashboard.json` | `'DASHBOARD'!B5:O90`    | Matriz_CGO_Distancia_2027-I · `1MaiDiBNBicpttRJs2oSAyKvbAD0nI963anN9wfYoeOM` (cuartil de calidad, mapa de calor, focos) |
@@ -35,7 +36,7 @@ Cada archivo es el JSON tal cual lo devuelve el conector de Google Sheets (`{"ra
 - Historial por asesor ordenado por fecha (la "última llamada" es la más reciente por fecha, no la última fila).
 - Por etapa: `pct` (última), `prev` (anterior), `delta`, `avg` (promedio de todas sus evaluaciones).
 - Calidad promedio y cuartil (Q4 ≤ 74 · Q3 75–84 · Q2 85–94 · Q1 ≥ 95) desde la Matriz (o calculado si el asesor no está en ella).
-- Matrículas del mes, meta y % de avance desde el tablero 🔰GEN (meta por asesor desde 🧮GC); el cuartil de matrículas es **relativo al equipo** (QUARTILE.INC de las matrículas del mes: Q1 ≥ percentil 75, Q2 ≥ mediana, Q3 ≥ percentil 25, Q4 el resto), igual que la columna "Cuartil" del tablero — `AVANCE_MODO = 'tablero'`. Respaldos con 🔰DIA/SEM: `'ritmo'` (meta prorrateada) o `'mes'` (umbral fijo Q1 ≥ 100 % · Q2 80–99 · Q3 70–79 · Q4 < 70). Cuadrante = cruce de ambos (🟢 verde, 🟡 amarillo, 🟠 naranja, 🔴 rojo); nivel gamificado en la página: 🌱 Promesa › ✨ Talento › ⭐ Estrella › 👑 Leyenda.
+- Matrículas del mes en curso contadas desde 🧮ING/MAT (el tablero 🔰GEN solo da la lista de asesores; si su selector de mes quedó en otro mes, no afecta), meta por asesor desde 🧮GC; el cuartil de matrículas es **relativo al equipo** (QUARTILE.INC de las matrículas del mes: Q1 ≥ percentil 75, Q2 ≥ mediana, Q3 ≥ percentil 25, Q4 el resto), igual que la columna "Cuartil" del tablero — `AVANCE_MODO = 'tablero'`. Respaldos con 🔰DIA/SEM: `'ritmo'` (meta prorrateada) o `'mes'` (umbral fijo Q1 ≥ 100 % · Q2 80–99 · Q3 70–79 · Q4 < 70). Cuadrante = cruce de ambos (🟢 verde, 🟡 amarillo, 🟠 naranja, 🔴 rojo); nivel gamificado en la página: 🌱 Promesa › ✨ Talento › ⭐ Estrella › 👑 Leyenda.
 - Ranking: primero el cuadrante (🟢 › 🟡 › 🟠 › 🔴), dentro de cada uno el promedio entre calidad y avance (el avance cuenta hasta 150 %).
 - Checklist: se leen las últimas 3 llamadas evaluadas de cada asesor (`VENTANA_CHECKLIST`); un ítem queda ✅ si la lectura más reciente que lo menciona dice "ok", 🔸 si dice "pendiente", y ◻️ si ninguna de las 3 lo menciona (si estaba ✅ en una llamada más antigua, se marca como retirado).
 - Bloque `equipo`: mapa de calor (pauta), foco cualitativo, oportunidad, distribución por cuartiles, listas por cuadrante, ranking completo.
