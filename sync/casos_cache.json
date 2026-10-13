@@ -471,38 +471,34 @@
  },
  "Melissa Leslie Fernadez Avalos|paso3": {
   "stage": "paso3",
-  "tecId": "tec_08",
+  "base": "e954f411efe9",
+  "conclusion": "Resuelves bien sus dudas sobre la modalidad y los viajes con clases grabadas y flexibilidad. Te falta aplicar al menos dos cierres parciales y, al decidir retomar en noviembre, acordar fecha y hora concretas de seguimiento.",
+  "tecId": "tec_16",
   "tipo": "speech",
-  "porQue": "Primero su disponibilidad laboral; con eso anticipas la objeción \"¿cómo estudio si trabajo?\" antes de que la diga, ordenas los conceptos económicos y cierras con dos pequeños acuerdos.",
-  "speech": "Antes de los montos, cuéntame cómo es tu semana de trabajo: ¿tienes horarios fijos o rotativos? Te lo pregunto porque sé que la mayor duda es \"cómo voy a estudiar si trabajo\", y quiero mostrarte desde ya que con clases grabadas y conexión desde cualquier lugar eso no te va a frenar.\n\nAhora la inversión, ordenada: admisión, matrícula y pensión mensual, uno por uno, para que sepas qué pagas y cuándo. ¿Hasta aquí claro? ¿Y te acomoda esa forma de pago?\n\nEntonces el siguiente paso es tu evaluación: ¿la programamos para esta semana?",
-  "base": "6f765b1e0376",
+  "porQue": "Cuando el prospecto posterga, acordar un día y hora concretos convierte un 'lo veo después' en un seguimiento comprometido.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "¿Cuánto cuesta? Es lo primero que necesito saber."
-   },
-   {
     "quien": "asesor",
-    "texto": "Antes de los montos, cuéntame cómo es tu semana de trabajo: ¿tienes horarios fijos o rotativos? Te lo pregunto porque sé que la mayor duda es \"cómo voy a estudiar si trabajo\", y quiero mostrarte desde ya que con clases grabadas y conexión desde cualquier lugar eso no te va a frenar."
+    "texto": "Entonces, ¿te queda claro que con las clases grabadas puedes seguir aunque estés de viaje? ¿Y que revisando tus documentos podemos ver tu convalidación?"
    },
    {
     "quien": "cliente",
-    "texto": "Rotativos, cambian cada semana. Por eso dudaba."
+    "texto": "Sí, pero prefiero revisar mis documentos y retomar en noviembre."
    },
    {
     "quien": "asesor",
-    "texto": "Ahora la inversión, ordenada: admisión, matrícula y pensión mensual, uno por uno, para que sepas qué pagas y cuándo. ¿Hasta aquí claro? ¿Y te acomoda esa forma de pago?"
+    "texto": "Perfecto, es buen plan. Para no perder el hilo, ¿qué te parece si te llamo la primera semana de noviembre? ¿Qué día y a qué hora te queda mejor?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, así ordenado se entiende; me acomoda."
+    "texto": "Mejor un martes por la tarde."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces el siguiente paso es tu evaluación: ¿la programamos para esta semana?"
+    "texto": "Quedamos el martes de la primera semana de noviembre a las 4 p.m. Te escribo por WhatsApp para confirmar y mientras tanto me envías tus documentos si ya los tienes. ¿Te parece?"
    }
   ],
-  "conclusion": "Faltó profundizar en necesidades y disponibilidad laboral, explicar con claridad los conceptos económicos, manejar mejor las objeciones con dos cierres parciales y cumplir el protocolo de despedida."
+  "speech": "Entonces, ¿te queda claro que con las clases grabadas puedes seguir aunque estés de viaje? ¿Y que revisando tus documentos podemos ver tu convalidación?\n\nPerfecto, es buen plan. Para no perder el hilo, ¿qué te parece si te llamo la primera semana de noviembre? ¿Qué día y a qué hora te queda mejor?\n\nQuedamos el martes de la primera semana de noviembre a las 4 p.m. Te escribo por WhatsApp para confirmar y mientras tanto me envías tus documentos si ya los tienes. ¿Te parece?"
  },
  "Rosa Victoria Guzman Bonilla|paso3": {
   "stage": "paso3",
@@ -541,38 +537,38 @@
  },
  "Justyn Flores Solano|paso3": {
   "stage": "paso3",
-  "base": "0794b00af7c9",
-  "conclusion": "Tú comunicas los beneficios económicos y buscas confirmar su interés. Explica la inversión inicial por partes, detallando qué conceptos incluye y cómo sale el monto promocional.",
-  "tecId": "tec_10",
+  "base": "f0c7a41d2c2b",
+  "conclusion": "Explicas horarios, flexibilidad y convalidación por experiencia. Pero afirmas erróneamente que Derecho dura un año más por ser virtual, omites certificaciones y diferenciales, y desanimas por costo antes de mostrar el ahorro de tiempo.",
+  "tecId": "tec_08",
   "tipo": "speech",
-  "porQue": "Explicar la inversión por partes y validar cada una con un cierre parcial evita confusión y deja claro cómo se forma el monto promocional.",
+  "porQue": "Anticiparse a la duda sobre duración y costo, con certificaciones y convalidación, evita que la objeción nazca y cambia el foco al valor.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "¿Y cuánto tendría que pagar para empezar?"
+    "texto": "¿Derecho a distancia dura más que presencial?"
    },
    {
     "quien": "asesor",
-    "texto": "Te lo explico por partes para que quede claro. El pago inicial incluye admisión, matrícula, seguro y la primera cuota. ¿Hasta aquí te queda claro qué incluye?"
+    "texto": "Buena pregunta, [nombre]. La carrera dura 6 años (12 periodos) porque incluye 4 certificaciones oficiales que potencian tu empleabilidad antes de egresar, no por ser virtual. Y con tu experiencia laboral podemos evaluar tu convalidación para ahorrar tiempo."
    },
    {
     "quien": "cliente",
-    "texto": "Sí, pero no entiendo bien por qué el monto sale distinto al regular."
+    "texto": "Pero me preocupa el costo."
    },
    {
     "quien": "asesor",
-    "texto": "Buena pregunta. El monto regular es el de siempre, y la promoción de la campaña reduce esos conceptos mientras esté vigente; por eso te conviene iniciar dentro de las fechas indicadas. ¿Esa diferencia ya la ves clara?"
+    "texto": "Lo entiendo, por eso quiero que veas el panorama completo. Con la convalidación evaluamos reducir tiempo de estudio, y las clases grabadas te permiten estudiar sin dejar tu trabajo. ¿Revisamos tu caso y luego vemos la inversión por partes?"
    },
    {
     "quien": "cliente",
-    "texto": "Ya, entiendo. Lo veo mejor así."
+    "texto": "Sí, está bien."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto. Entonces, con la inversión clara, ¿te parece si avanzamos con tu preinscripción para asegurar esas condiciones?"
+    "texto": "Perfecto, [nombre]. ¿Me confirmas si ya tienes a la mano tu información de estudios para evaluarla?"
    }
   ],
-  "speech": "Te lo explico por partes para que quede claro. El pago inicial incluye admisión, matrícula, seguro y la primera cuota. ¿Hasta aquí te queda claro qué incluye?\n\nBuena pregunta. El monto regular es el de siempre, y la promoción de la campaña reduce esos conceptos mientras esté vigente; por eso te conviene iniciar dentro de las fechas indicadas. ¿Esa diferencia ya la ves clara?\n\nPerfecto. Entonces, con la inversión clara, ¿te parece si avanzamos con tu preinscripción para asegurar esas condiciones?"
+  "speech": "Buena pregunta, [nombre]. La carrera dura 6 años (12 periodos) porque incluye 4 certificaciones oficiales que potencian tu empleabilidad antes de egresar, no por ser virtual. Y con tu experiencia laboral podemos evaluar tu convalidación para ahorrar tiempo.\n\nLo entiendo, por eso quiero que veas el panorama completo. Con la convalidación evaluamos reducir tiempo de estudio, y las clases grabadas te permiten estudiar sin dejar tu trabajo. ¿Revisamos tu caso y luego vemos la inversión por partes?\n\nPerfecto, [nombre]. ¿Me confirmas si ya tienes a la mano tu información de estudios para evaluarla?"
  },
  "Orlando Jesus Pintado Sandoval|paso3": {
   "stage": "paso3",
@@ -756,10 +752,34 @@
  },
  "Melissa Leslie Fernadez Avalos|paso1": {
   "stage": "paso1",
-  "base": "dda94179d87e",
-  "conclusion": "Tú eres cordial y empática, explicas beneficios y condiciones de campaña, compartes tu WhatsApp y concretas un seguimiento. Falta profundizar necesidades, aclarar costos y hacer cierres parciales.",
-  "tecId": null,
-  "tipo": "speech"
+  "base": "4e73e3a90acd",
+  "conclusion": "Te presentas bien con tu nombre y la Universidad Continental, y validas carrera y modalidad. Te falta usar el nombre del prospecto al menos dos veces para personalizar la atención y generar más conexión.",
+  "tecId": "tec_09",
+  "tipo": "speech",
+  "porQue": "Devolver al prospecto sus propias palabras usando su nombre personaliza la atención y hace que se sienta escuchado desde el inicio.",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Hola [nombre], te saluda Melissa de la Universidad Continental. Veo que te interesa la modalidad a distancia, ¿cierto?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, quiero estudiar pero trabajo todo el día y viajo bastante."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Entiendo, [nombre]: trabajas todo el día y viajas bastante, y necesitas estudiar sin dejar tu trabajo. Justo para eso sirve esta modalidad. ¿Qué carrera tenías en mente?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Administración, me gustaría crecer en mi empresa."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Perfecto, [nombre], Administración para crecer en tu empresa. Te cuento cómo encaja con tus viajes y luego vemos tu caso. ¿Tienes unos minutos ahora?"
+   }
+  ],
+  "speech": "Hola [nombre], te saluda Melissa de la Universidad Continental. Veo que te interesa la modalidad a distancia, ¿cierto?\n\nEntiendo, [nombre]: trabajas todo el día y viajas bastante, y necesitas estudiar sin dejar tu trabajo. Justo para eso sirve esta modalidad. ¿Qué carrera tenías en mente?\n\nPerfecto, [nombre], Administración para crecer en tu empresa. Te cuento cómo encaja con tus viajes y luego vemos tu caso. ¿Tienes unos minutos ahora?"
  },
  "Rosa Victoria Guzman Bonilla|paso1": {
   "stage": "paso1",
@@ -826,107 +846,143 @@
  },
  "Justyn Flores Solano|paso1": {
   "stage": "paso1",
-  "base": "ffc6d7411ddc",
-  "conclusion": "Tú te presentas con tu nombre y la Universidad Continental de forma cordial. Falta preguntar el nombre del prospecto y confirmar la modalidad de estudio desde el inicio.",
-  "tecId": "tec_05",
+  "base": "8674633440ba",
+  "conclusion": "Te identificas con tu nombre y la universidad, y validas carrera y modalidad. Te falta saludar al prospecto por su nombre, dar tu apellido y cargo, y presentar la Propuesta de Valor UC.",
+  "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Identificar al prospecto por su nombre y confirmar su modalidad al inicio personaliza la llamada y orienta todo lo que sigue.",
+  "porQue": "Presentarte completo y dar control al prospecto desde el inicio genera confianza y deja clara la propuesta de valor antes de las preguntas filtro.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "Hola, sí, pedí información sobre una carrera."
-   },
-   {
     "quien": "asesor",
-    "texto": "Hola, buenas tardes, te saluda Justyn de la Universidad Continental. Gracias por contestar. ¿Con quién tengo el gusto de hablar?"
+    "texto": "Hola [nombre], te saluda Justin Flores, asesor de admisión de la Universidad Continental. ¿Tienes unos minutos para conversar sobre Derecho a distancia?"
    },
    {
     "quien": "cliente",
-    "texto": "Con Carlos."
+    "texto": "Sí, dime."
    },
    {
     "quien": "asesor",
-    "texto": "Mucho gusto, Carlos. Veo que consultaste por una carrera. Antes de explicarte, ¿la estás pensando en modalidad Distancia, que es 100% virtual, o en otra modalidad?"
+    "texto": "Gracias, [nombre]. Te cuento rápido por qué nuestra propuesta es distinta: estudias 100% virtual, con clases grabadas y acompañamiento, para que puedas avanzar sin dejar tu trabajo. ¿Eso es lo que buscas?"
    },
    {
     "quien": "cliente",
-    "texto": "Distancia, porque trabajo."
+    "texto": "Sí, necesito algo virtual porque trabajo."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, Carlos, justo esa modalidad te permite estudiar sin dejar tu trabajo. Cuéntame, ¿qué carrera te interesa y qué te motivó a consultarla?"
+    "texto": "Perfecto, [nombre]. Para recomendarte bien, ¿me cuentas en qué trabajas y qué horarios manejas?"
    }
   ],
-  "speech": "Hola, buenas tardes, te saluda Justyn de la Universidad Continental. Gracias por contestar. ¿Con quién tengo el gusto de hablar?\n\nMucho gusto, Carlos. Veo que consultaste por una carrera. Antes de explicarte, ¿la estás pensando en modalidad Distancia, que es 100% virtual, o en otra modalidad?\n\nPerfecto, Carlos, justo esa modalidad te permite estudiar sin dejar tu trabajo. Cuéntame, ¿qué carrera te interesa y qué te motivó a consultarla?"
+  "speech": "Hola [nombre], te saluda Justin Flores, asesor de admisión de la Universidad Continental. ¿Tienes unos minutos para conversar sobre Derecho a distancia?\n\nGracias, [nombre]. Te cuento rápido por qué nuestra propuesta es distinta: estudias 100% virtual, con clases grabadas y acompañamiento, para que puedas avanzar sin dejar tu trabajo. ¿Eso es lo que buscas?\n\nPerfecto, [nombre]. Para recomendarte bien, ¿me cuentas en qué trabajas y qué horarios manejas?"
  },
  "Justyn Flores Solano|paso2": {
   "stage": "paso2",
-  "base": "39ec53dd96f6",
-  "conclusion": "Tú resuelves bien costos, horarios, duración y admisión. Profundiza en sus motivaciones, expectativas y disponibilidad, y presenta al menos dos diferenciales de la propuesta.",
+  "base": "0b5a6f8e3088",
+  "conclusion": "Registras lo que el prospecto menciona, como su trabajo en un estudio jurídico. Pero tu indagación es pasiva: no preguntas su motivación, qué otras universidades evalúa ni quién lo apoya en su decisión.",
   "tecId": "tec_09",
   "tipo": "speech",
-  "porQue": "Preguntar por motivaciones y disponibilidad antes de explicar permite presentar diferenciales que respondan a lo que el prospecto realmente necesita.",
+  "porQue": "Devolver sus palabras (trabajo, falta de tiempo) abre la conversación para indagar motivación, competencia y entorno de decisión.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "¿Cuánto dura la carrera y cuánto cuesta?"
+    "texto": "Llevo 4 años y medio en un estudio jurídico y busco algo virtual porque no tengo tiempo."
    },
    {
     "quien": "asesor",
-    "texto": "Con gusto te lo explico. Antes, para darte la información que te sirva, ¿qué te motiva a estudiar ahora y cuánto tiempo a la semana podrías dedicar?"
+    "texto": "Entiendo, [nombre]: trabajas hace 4 años y medio en un estudio jurídico y el tiempo es lo que más pesa. ¿Qué te motivó a interesarte en Derecho justo ahora?"
    },
    {
     "quien": "cliente",
-    "texto": "Quiero crecer en mi trabajo, pero solo tengo las noches libres."
+    "texto": "Quiero crecer en lo que hago y ya estoy viendo otras universidades."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces lo que buscas es crecer sin dejar tu trabajo. Justamente en Distancia tienes clases en vivo en horarios que se adaptan a las noches y quedan grabadas por si un día no llegas. Además, el inglés va incluido en tu formación."
+    "texto": "Qué bueno que compares, [nombre]. ¿Qué opciones estás evaluando y qué es lo más importante para ti al elegir?"
    },
    {
     "quien": "cliente",
-    "texto": "Eso sí me conviene."
+    "texto": "El tiempo y que sea flexible."
    },
    {
     "quien": "asesor",
-    "texto": "Qué bueno. Con eso claro, te cuento duración e inversión. ¿Te parece si empezamos por la duración de la carrera?"
+    "texto": "Claro. Y para esta decisión, ¿quiénes te apoyan en tu proyecto de estudios? Así te doy la información que cada uno necesita."
    }
   ],
-  "speech": "Con gusto te lo explico. Antes, para darte la información que te sirva, ¿qué te motiva a estudiar ahora y cuánto tiempo a la semana podrías dedicar?\n\nEntonces lo que buscas es crecer sin dejar tu trabajo. Justamente en Distancia tienes clases en vivo en horarios que se adaptan a las noches y quedan grabadas por si un día no llegas. Además, el inglés va incluido en tu formación.\n\nQué bueno. Con eso claro, te cuento duración e inversión. ¿Te parece si empezamos por la duración de la carrera?"
+  "speech": "Entiendo, [nombre]: trabajas hace 4 años y medio en un estudio jurídico y el tiempo es lo que más pesa. ¿Qué te motivó a interesarte en Derecho justo ahora?\n\nQué bueno que compares, [nombre]. ¿Qué opciones estás evaluando y qué es lo más importante para ti al elegir?\n\nClaro. Y para esta decisión, ¿quiénes te apoyan en tu proyecto de estudios? Así te doy la información que cada uno necesita."
  },
  "Justyn Flores Solano|paso4": {
   "stage": "paso4",
-  "base": "4f83643d612c",
-  "conclusion": "Tú orientas la continuidad por WhatsApp y el envío de información. Falta concretar fecha y hora de seguimiento y reforzar el compromiso del prospecto con el siguiente paso.",
+  "base": "7752479064ec",
+  "conclusion": "Envías la información por WhatsApp y mides su interés con la escala del 1 al 10. Pero dejas que postergue sin fijar recontacto y te despides sin tu nombre ni la universidad.",
   "tecId": "tec_16",
   "tipo": "speech",
-  "porQue": "Cerrar con día y hora acordados convierte el envío por WhatsApp en un compromiso y evita que el seguimiento quede abierto.",
+  "porQue": "Ante un 'mándame la información y la leo', fijar día y hora de recontacto y despedirte con tu nombre mantiene el avance del proceso.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Envíame todo por WhatsApp y lo veo."
+    "texto": "Mándame la información y la leo."
    },
    {
     "quien": "asesor",
-    "texto": "Claro, te lo envío ahora. Guarda mi número para que me ubiques fácil. Para ayudarte a decidir, ¿qué día y a qué hora te puedo llamar para resolver tus dudas?"
+    "texto": "Claro, [nombre], ya te la envié por WhatsApp. Como el inicio de clases se acerca, ¿qué te parece si te llamo mañana a las 7 p.m. para resolver tus dudas?"
    },
    {
     "quien": "cliente",
-    "texto": "Mañana por la noche, como a las 8."
+    "texto": "Mejor pasado mañana en la noche."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, mañana a las 8:00 p. m. te llamo. Mientras tanto, revisa la inversión y los horarios que te envié y anota tus dudas."
+    "texto": "Perfecto, quedamos pasado mañana a las 7 p.m. Si antes te surge una duda, escríbeme a este mismo WhatsApp. ¿Te parece?"
    },
    {
     "quien": "cliente",
-    "texto": "Ya, lo reviso."
+    "texto": "Sí, está bien."
    },
    {
     "quien": "asesor",
-    "texto": "Quedamos entonces mañana a las 8:00 p. m., y en esa llamada vemos si avanzamos con tu preinscripción. ¿Te escribo un recordatorio por WhatsApp un rato antes?"
+    "texto": "Genial, [nombre]. Te atendió Justin Flores de la Universidad Continental. Pasado mañana a las 7 p.m. te llamo, que tengas buena noche."
    }
   ],
-  "speech": "Claro, te lo envío ahora. Guarda mi número para que me ubiques fácil. Para ayudarte a decidir, ¿qué día y a qué hora te puedo llamar para resolver tus dudas?\n\nPerfecto, mañana a las 8:00 p. m. te llamo. Mientras tanto, revisa la inversión y los horarios que te envié y anota tus dudas.\n\nQuedamos entonces mañana a las 8:00 p. m., y en esa llamada vemos si avanzamos con tu preinscripción. ¿Te escribo un recordatorio por WhatsApp un rato antes?"
+  "speech": "Claro, [nombre], ya te la envié por WhatsApp. Como el inicio de clases se acerca, ¿qué te parece si te llamo mañana a las 7 p.m. para resolver tus dudas?\n\nPerfecto, quedamos pasado mañana a las 7 p.m. Si antes te surge una duda, escríbeme a este mismo WhatsApp. ¿Te parece?\n\nGenial, [nombre]. Te atendió Justin Flores de la Universidad Continental. Pasado mañana a las 7 p.m. te llamo, que tengas buena noche."
+ },
+ "Melissa Leslie Fernadez Avalos|paso2": {
+  "stage": "paso2",
+  "base": "1452b9465cb6",
+  "conclusion": "Exploras bien su experiencia académica y laboral y explicas la convalidación. Te falta presentar un resumen claro de costos, separando pagos únicos, pagos por ciclo y pensión mensual, y aclarar la campaña si ingresa más adelante.",
+  "tecId": "tec_10",
+  "tipo": "speech",
+  "porQue": "Explicar la inversión por partes con cierres parciales evita confusión y confirma que el prospecto entiende cada pago antes de avanzar.",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Para que tengas claro la inversión, te lo explico por partes. Primero el pago inicial, que se paga una sola vez para ingresar: admisión, matrícula, seguro y la primera cuota. ¿Hasta aquí te queda claro?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, ¿y después qué pago?"
+   },
+   {
+    "quien": "asesor",
+    "texto": "Después pagas la pensión mensual de cada ciclo. Así separamos lo que pagas una vez de lo que pagas mes a mes. ¿Va quedando claro?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí. Pero yo ingresaría recién más adelante, ¿sería lo mismo?"
+   },
+   {
+    "quien": "asesor",
+    "texto": "Las condiciones de la campaña dependen de la fecha de ingreso, así que te confirmo la tarifa vigente para tu fecha y te la envío por escrito. ¿Te la mando hoy por WhatsApp?"
+   }
+  ],
+  "speech": "Para que tengas claro la inversión, te lo explico por partes. Primero el pago inicial, que se paga una sola vez para ingresar: admisión, matrícula, seguro y la primera cuota. ¿Hasta aquí te queda claro?\n\nDespués pagas la pensión mensual de cada ciclo. Así separamos lo que pagas una vez de lo que pagas mes a mes. ¿Va quedando claro?\n\nLas condiciones de la campaña dependen de la fecha de ingreso, así que te confirmo la tarifa vigente para tu fecha y te la envío por escrito. ¿Te la mando hoy por WhatsApp?"
+ },
+ "Melissa Leslie Fernadez Avalos|paso4": {
+  "stage": "paso4",
+  "base": "001193b97099",
+  "conclusion": "Mantienes un trato cordial y confirmas el envío de información por WhatsApp. Te falta cerrar reforzando tu nombre y la Universidad Continental, y transferir a la encuesta de satisfacción según el protocolo.",
+  "tecId": null,
+  "tipo": "accion",
+  "porQue": "Tu observación de esta llamada no es de speech sino de protocolo de cierre.",
+  "speech": "Al despedirte di tu nombre y la universidad (\"Te atendió Melissa de la Universidad Continental, quedo atenta a tus dudas\") y, antes de colgar, transfiere la llamada a la encuesta de satisfacción. Hazlo en todas tus llamadas."
  }
 }

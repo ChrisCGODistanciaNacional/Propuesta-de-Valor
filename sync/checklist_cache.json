@@ -4990,5 +4990,161 @@
     "evidencia": "Concretar una fecha y hora para el seguimiento comercial."
    }
   }
+ },
+ "f54737c58470": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "12/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas con tu nombre y Universidad Continental."
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el uso del nombre del prospecto, al menos dos veces."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Validas la carrera y modalidad de interés del prospecto."
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Exploras su experiencia académica y laboral."
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Respondes sus consultas sobre modalidad y conexión por viajes laborales."
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Aplica al menos dos cierres parciales para validar interés."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Finaliza reforzando tu nombre y el de Universidad Continental."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda fecha y hora específicas para el seguimiento en noviembre."
+   }
+  }
+ },
+ "0458bbcbe94a": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "12/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Se identifica con su nombre y menciona la universidad."
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "No saluda al cliente por su nombre durante toda la llamada."
+   },
+   "paso1_3": {
+    "estado": "pendiente",
+    "evidencia": "Omite presentar la Propuesta de Valor UC."
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Valida la carrera (Derecho) y la modalidad de interés."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indagación débil; no pregunta qué lo motivó a interesarse en la carrera."
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "No pregunta quiénes lo apoyan en su proyecto de estudios."
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "Afirma erróneamente que Derecho dura un año más por ser virtual."
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "No explica ningún diferencial propio de la UC."
+   },
+   "paso3_3": {
+    "estado": "pendiente",
+    "evidencia": "No argumenta frente a la competencia que el cliente evalúa."
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "No menciona las certificaciones progresivas de la carrera."
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Manejo inadecuado de objeciones: desanima por tema económico."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Omite recordar su nombre y la universidad en la despedida."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "No fija hora ni fecha específica para volver a llamar."
+   }
+  }
  }
 }
