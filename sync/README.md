@@ -62,3 +62,7 @@ Toda etapa con texto necesita `conclusion`; `tecId/porQue/dialogo/speech` solo c
 {"asesor": "Diana Carol Taipe Rojas", "fecha": "06/10/2026", "items": {"paso1_1": {"estado": "ok|pendiente|sin_evidencia", "evidencia": "..." }}}
 ```
 `base` lo entrega `pending.json`; si la evaluación cambia, cambia la `base` y esa llamada (o etapa) vuelve a quedar pendiente. Las llamadas sin texto del supervisor no se piden: quedan sin evidencia.
+
+## Tablero DIV-PRE · pestaña «Asesor Prueba» (desde el 14/10/2026)
+
+`python3 sync/export_tablero.py` (después de `build_data.py`) reduce `data.json` a un documento por asesor (`sync/out/tablero/a-<slug>.json`, con etapas, foco, conclusiones, técnica, checklist e historial de evaluaciones) más `equipo.json`, y deja la lista en `sync/out/tablero/_index.json`. La tarea programada los sube con la herramienta ArtifactData (`action: batch`, `op: set`, colección `calidad`, `file_path` de cada archivo) a la base de datos del tablero `https://claude.ai/artifact/A6ZRmsZQJsjgBsE6wKNSXk`. El tablero cruza cada documento con sus asesores por nombre. `sync/out/` no se sube al repo.
