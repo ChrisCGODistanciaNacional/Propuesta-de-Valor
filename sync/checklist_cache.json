@@ -5770,5 +5770,239 @@
     "evidencia": null
    }
   }
+ },
+ "16d1c22dc2b5": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas con tu nombre y mencionas a la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Confirma los datos del prospecto, incluida la modalidad de estudios de interés"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Integra al menos dos diferenciales institucionales en tu propuesta de valor"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece el manejo de objeciones mediante preguntas"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales para validar su interés y disposición"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa el protocolo de despedida mencionando tu nombre y Universidad Continental"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Coordinas una nueva llamada para dar seguimiento al prospecto"
+   }
+  }
+ },
+ "7b686e3f1f0c": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "13/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas con tu nombre y el de Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Confirmas el interés de David por Administración y utilizas su nombre"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmas el interés por Administración y solicitas su disponibilidad"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en la situación académica y motivaciones de David"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Conocer por qué interrumpió sus estudios"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Incorporar al menos dos diferenciales académicos o institucionales"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales buscando compromisos que permitan avanzar"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerdan comunicarse el viernes; establece una hora específica"
+   }
+  }
+ },
+ "d5c5681b9495": {
+  "asesor": "Ruth Alexandra Mauricio Verde",
+  "fecha": "14/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas correctamente e identificas a la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmas la carrera y modalidad de interés de la prospecto"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Indagas sobre su motivación para estudiar Psicología y su situación laboral"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "ok",
+    "evidencia": "Explicas certificados progresivos"
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Brinda una respuesta concreta a la consulta que requiere validación"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa el protocolo de despedida mencionando tu nombre y Universidad Continental"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Acuerdas una devolución de llamada para continuar con la gestión"
+   }
+  }
  }
 }
