@@ -8,7 +8,7 @@ Arma data.json para la página "Propuesta de Valor" (CGO Distancia) a partir de:
   sync/inputs/gen.json        ← '🔰GEN'!A1:J56          (archivo I, tablero: lista de asesores del ranking; su mes en B6)
   sync/inputs/ingmat.json     ← '🧮ING/MAT'!A1:AW3000   (archivo I, ingresantes/matriculados: de aquí salen las matrículas del MES EN CURSO por asesor;
                                                           respaldo: una columna por archivo ingmat_E/O/AE/AP/AU.json)
-  sync/inputs/metas.json      ← '🧮GC'!B130:J159        (archivo I: meta mensual de matrículas por asesor y mes)
+  sync/inputs/metas.json      ← '🧮GC'!A1:J400          (archivo I: tabla METAS POR MES; se ubica sola por su encabezado)
   sync/inputs/diasem.json     ← '🔰DIA/SEM'!A19:IF23    (archivo I; solo respaldo si falta gen.json)
   sync/inputs/dashboard.json  ← 'DASHBOARD'!B5:O90      (Matriz_CGO_Distancia_2027-I, spreadsheetId 1MaiDiBNBicpttRJs2oSAyKvbAD0nI963anN9wfYoeOM:
                                                           cuartil de calidad, mapa de calor y focos del equipo)
@@ -368,16 +368,32 @@ def quartile_inc(vals, q):
 MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 meta_by_name = {}
 mv = load_values('metas.json', required=False)
-if mv and len(mv) >= 2:
-    mh = [norm(x) for x in mv[0]]
-    ci = next((i for i, h in enumerate(mh) if h == norm(MESES[hoy.month - 1])), None)
-    if ci is not None:
-        for raw in mv[1:]:
-            if not raw or not str(raw[0]).strip() or norm(raw[0]).startswith('div'):
+# La tabla "METAS POR MES" de 🧮GC se mueve hacia abajo cuando crecen las tablas de arriba, así que se
+# lee un bloque amplio ('🧮GC'!A1:J400) y se ubica por su encabezado: la fila con "Preinscripción" y
+# los meses. La columna de nombres es la de "Preinscripción"; la tabla termina en DIV-/SUPERVISOR/Suma.
+if mv:
+    hr = next((i for i, r in enumerate(mv) if r and any(norm(x) == norm('Preinscripción') for x in r)
+               and any(norm(x) == norm(MESES[hoy.month - 1]) for x in r)), None)
+    if hr is None:
+        print('⚠️ 🧮GC: no encuentro la tabla "METAS POR MES" (fila con "Preinscripción" y los meses): avance sin meta')
+    else:
+        mh = [norm(x) for x in mv[hr]]
+        cn = mh.index(norm('Preinscripción'))
+        ci = mh.index(norm(MESES[hoy.month - 1]))
+        for raw in mv[hr + 1:]:
+            nombre = str(raw[cn]).strip() if cn < len(raw) else ''
+            if not nombre:
+                if meta_by_name:
+                    break
                 continue
+            k = norm(nombre)
+            if k.startswith('div') or k.startswith('supervisor') or k.startswith('suma') or k.startswith('diferencia'):
+                break
             meta = to_int(raw[ci]) if ci < len(raw) else None
             if meta:
-                meta_by_name[norm(canon_name(raw[0]))] = meta
+                meta_by_name[norm(canon_name(nombre))] = meta
+        if not meta_by_name:
+            print(f'⚠️ 🧮GC: la tabla de metas no trae metas para {MESES[hoy.month - 1]}')
 
 # ----------------------------------------------------------------------------- 🧮ING/MAT → matrículas del MES EN CURSO por asesor
 # Misma fórmula que la columna "Avance del Mes (Q)" del tablero 🔰GEN, pero siempre con el mes actual (el tablero

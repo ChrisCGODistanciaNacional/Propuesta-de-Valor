@@ -10,7 +10,7 @@ La página lee `data.json` (misma carpeta) para mostrar el diagnóstico por ases
 | `tecnicas.json`  | `'🏆 TECNICAS'!A1:Z60`  | Archivo I |
 | `gen.json`       | `'🔰GEN'!A1:J56`        | Archivo I (tablero: lista de asesores del ranking; su mes en B6 solo se usa para avisar) |
 | `ingmat.json`    | `'🧮ING/MAT'!A1:AW3000` | Archivo I (ingresantes/matriculados: matrículas del **mes en curso** por asesor con la misma fórmula del tablero — AE≠"PAGO PENDIENTE", E≠"DEVOLUCIÓN", AU=mes o AP=mes — pero siempre con el mes actual, aunque el tablero esté en otro mes) |
-| `metas.json`     | `'🧮GC'!B130:J159`      | Archivo I (meta mensual de matrículas por asesor y mes) |
+| `metas.json`     | `'🧮GC'!A1:J400`      | Archivo I (meta mensual de matrículas por asesor y mes) |
 | `diasem.json` (opcional) | `'🔰DIA/SEM'!A19:IF23` | Archivo I (solo respaldo si falta gen.json) |
 | `dashboard.json` | `'DASHBOARD'!B5:O90`    | Matriz_CGO_Distancia_2027-I · `1MaiDiBNBicpttRJs2oSAyKvbAD0nI963anN9wfYoeOM` (cuartil de calidad, mapa de calor, focos) |
 | `checklist.json` (opcional) | `'✅ CHECKLIST'!A1:AZ80` | Archivo I (validación manual del supervisor) |
