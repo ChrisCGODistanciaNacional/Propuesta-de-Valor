@@ -977,7 +977,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-12T19:04:12.000Z";
+  const DATA_VERSION = "2026-10-14T13:02:15.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1596,6 +1596,7 @@
   function onAdvisorChange(name) {
     localStorage.setItem('cgo_advisor_name', name || '');
     selectedEvalIdx = null;
+    activarPasoFoco();
     renderPasoTabs();
     renderAtencion();
     renderTecnicas();
@@ -2130,6 +2131,11 @@
     }
   }
 
+  // Matrículas del mes como "Q/meta" (ej. 5/18); sin meta, solo la cantidad.
+  function matCorto(r) {
+    if (!r || r.matriculas === null || r.matriculas === undefined) return '';
+    return r.meta ? `${r.matriculas}/${r.meta}` : String(r.matriculas);
+  }
   // ---- Tarjeta principal del asesor: nivel, resultados y "tu foco ahora" ----
   function renderAdvisorDiagSummary() {
     const el = document.getElementById('advisorDiagSummary');
@@ -2167,43 +2173,14 @@
     const tecTot = a.tecnicasTotal || db.tecnicas.length;
     const eq = sheetDataCache.equipo || {};
     const hayMes = a.avanceMeta !== null && a.avanceMeta !== undefined;
-    const matSub = hayMes ? `${a.matriculas} de ${a.meta} ${eq.mes ? 'en ' + eq.mes : 'este mes'}${a.avanceModo === 'ritmo' ? ' · al ritmo del mes' : ''}` : 'Sin matrículas del mes registradas';
+    // Avance de matrículas del mes como "Q / meta" (ej. 5 / 18); el % de la meta va debajo.
+    const mesTxt = eq.mes ? 'de ' + eq.mes : 'del mes';
+    const hayMat = a.matriculas !== null && a.matriculas !== undefined;
+    const matVal = hayMat ? (a.meta ? `${a.matriculas} <small>/ ${a.meta}</small>` : `${a.matriculas}`) : '—';
+    const matSub = hayMes ? `${fmtPct(a.avanceMeta)} de tu meta ${mesTxt}` : (hayMat ? `Matrículas ${mesTxt} · meta por cargar` : 'Sin matrículas del mes registradas');
 
-    // Foco: la brecha principal (o la etapa más baja) de la llamada elegida + la técnica para practicar.
-    const fk = getFocusStage(analysis, row);
-    let focusHTML = '';
-    if (fk) {
-      const st = analysis && analysis.stages ? analysis.stages[fk] : null;
-      const pct = stagePctFrom(analysis, row, fk);
-      const prevPct = sel.prev ? parseScorePct(findField(sel.prev.row, STAGE_FIELD_CANDIDATES[fk])) : null;
-      const delta = (pct !== null && pct !== undefined && prevPct !== null && prevPct !== undefined) ? pct - prevPct : null;
-      const avg = stageAvg(analysisLatest, history, fk);
-      const weight = stageWeight(row, fk);
-      const items = (st && st.rol === 'oportunidad') ? splitFeedbackItems(st.texto) : [];
-      // Sin observación del supervisor en esta etapa: el foco es el ítem del checklist que falta (con su práctica).
-      const pend = items.length ? null : pendienteDeChecklist(fk);
-      const conclusion = (items.length && st.conclusion) ? st.conclusion : null;
-      const obs = conclusion || (items.length ? items[0] : (pend ? pend.texto : (TIPS_POR_ETAPA[fk] || [])[0]));
-      const obsExtra = (!items.length && pend && pend.practica) ? `<span class="focus-practica"><b>Practica así:</b> ${escapeHtmlPreserveNL(pend.practica)}</span>` : '';
-      const tec = tecnicaForStage(fk, st);
-      focusHTML = `
-        <div class="focus-card" data-capturable>
-          ${imgHeadHTML()}
-          <div class="focus-head">
-            <div class="focus-title">${sel.isLatest ? 'Tu foco ahora' : 'Tu foco en esa llamada'}${sel.entry.fecha ? `<span class="focus-date">· llamada del ${sel.entry.fecha}</span>` : ''}</div>
-            <div class="focus-tools">${evalSelectorHTML(history, sel, 'on-light')}${btnImgHTML('', nombreCorto(advisor))}</div>
-          </div>
-          <div class="focus-stage">${STAGE_LABELS[fk]} ${pctPill(pct)}</div>
-          <div class="focus-metrics">
-            ${delta !== null ? `<span class="fm ${deltaClass(delta)}">${deltaPhrase(delta, ' pts')}</span>` : `<span class="fm">Primera evaluación</span>`}
-            ${avg !== null && avg !== undefined ? `<span class="fm"><b>${fmtPct(avg)}</b> promedio de ${history.length} ${history.length === 1 ? 'evaluación' : 'evaluaciones'}</span>` : ''}
-          </div>
-          ${obs ? `<div class="focus-obs"><b>${items.length ? 'Lo que observó tu supervisor:' : 'Para trabajar:'}</b> ${escapeHtmlPreserveNL(obs)}${(!conclusion && items.length > 1) ? ` <span class="focus-more">(+${items.length - 1} más en la etapa)</span>` : ''}${obsExtra}</div>` : ''}
-          ${tec ? `<div class="focus-tec">${speechBlockHTML(tec, 'focus')}${speechActionsHTML(tec)}</div>` : ''}
-          <div class="focus-actions no-img"><button class="btn-primary" onclick="goToStage('${fk}')">Ver la etapa completa →</button></div>
-          ${imgFootHTML()}
-        </div>`;
-    }
+    // El foco (etapa, observación y técnica) se ve en la Estructura de Atención: al elegir el asesor
+    // se abre solo el paso que necesita foco (activarPasoFoco). Aquí queda solo el encabezado.
 
     el.innerHTML = `
       <section class="hero zone-analisis" aria-label="Tu diagnóstico">
@@ -2224,13 +2201,12 @@
         </div>
         <div class="hero-stats">
           <div class="stat"><div class="stat-val">${fmtPct(calProm)} ${a.cuartilCalidad ? `<small class="q-tag">${a.cuartilCalidad}</small>` : ''}</div><div class="stat-lbl">Calidad promedio de tus llamadas</div></div>
-          <div class="stat"><div class="stat-val">${hayMes ? fmtPct(a.avanceMeta) : '—'} ${a.cuartilMatriculas ? `<small class="q-tag">${a.cuartilMatriculas}</small>` : ''}</div><div class="stat-lbl">Avance de la meta de matrículas<span class="stat-sub">${matSub}</span></div></div>
+          <div class="stat"><div class="stat-val">${matVal} ${a.cuartilMatriculas ? `<small class="q-tag">${a.cuartilMatriculas}</small>` : ''}</div><div class="stat-lbl">Avance de matrículas del mes<span class="stat-sub">${matSub}</span></div></div>
           ${a.puesto ? `<div class="stat"><div class="stat-val">${a.puesto}º <small>de ${a.totalAsesores}</small></div><div class="stat-lbl">Ranking general</div></div>` : ''}
           <div class="stat"><div class="stat-val">${last.score !== null ? Math.round(last.score) + '%' : '—'} ${deltaHTML(deltaLast, ' pts')}${sparklineSVG(history.map(h => h.score))}</div><div class="stat-lbl">Última llamada evaluada</div></div>
           <div class="stat"><div class="stat-val">${tecDom} <small>de ${tecTot}</small></div><div class="stat-lbl">Técnicas dominadas</div></div>
         </div>
         ${siguienteNivelTexto(a) ? `<div class="next-level"><span class="next-level-ico">🎯</span><span>${siguienteNivelTexto(a)}</span></div>` : ''}
-        ${focusHTML}
       </section>
     `;
     applyEditMode(el);
@@ -2495,7 +2471,22 @@
       </div>`;
   }
 
-  function selectPaso(id) { activePasoId = id; renderPasoTabs(); renderAtencion(); }
+  function selectPaso(id) { pasoElegidoManual = true; activePasoId = id; renderPasoTabs(); renderAtencion(); }
+  // Paso que necesita foco para el asesor elegido (según su última llamada evaluada). Se activa solo
+  // al elegir o cambiar de asesor y al cargar los datos; el asesor puede luego moverse a otros pasos.
+  let pasoElegidoManual = false;
+  function pasoFocoDe(advisor) {
+    if (!advisor || sheetDataCache.error) return null;
+    const history = getAdvisorHistory(advisor);
+    if (!history.length) return null;
+    const sel = getSelectedEval(history);
+    return getFocusStage(analysisForEval(advisor, sel), sel.entry.row) || null;
+  }
+  function activarPasoFoco(soloSiNoEligio) {
+    if (soloSiNoEligio && pasoElegidoManual) return;
+    const fk = pasoFocoDe(getSelectedAdvisor());
+    activePasoId = (fk && db.atencion.pasos.some(p => p.id === fk)) ? fk : 'paso1';
+  }
 
   function renderAtencion() {
     const container = document.getElementById('atencion-content');
@@ -2747,14 +2738,14 @@
             ${avatarHTML(r.asesor, i === 0 ? 64 : 52)}
             <div class="podium-name" title="${r.asesor}">${nombreCorto(r.asesor)}${isMe ? ' <span class="me-tag no-img">tú</span>' : ''}</div>
             <div class="podium-cq" style="--cq:${cq.color};--cqbg:${cq.bg}" title="${cq.emoji} ${cq.nombre}">${cq.nivelEmoji}<span class="cq-name">${cq.nivel}</span></div>
-            <div class="podium-metrics"><span>${fmtPct(r.calidad)} calidad${r.cuartilCalidad ? ` <b>(${r.cuartilCalidad})</b>` : ''}</span>${r.avanceMeta !== null && r.avanceMeta !== undefined ? `<span>${fmtPct(r.avanceMeta)} matrículas${r.cuartilMatriculas ? ` <b>(${r.cuartilMatriculas})</b>` : ''}</span>` : ''}</div>
+            <div class="podium-metrics"><span>${fmtPct(r.calidad)} calidad${r.cuartilCalidad ? ` <b>(${r.cuartilCalidad})</b>` : ''}</span>${matCorto(r) ? `<span>${matCorto(r)} matrículas${r.cuartilMatriculas ? ` <b>(${r.cuartilMatriculas})</b>` : ''}</span>` : ''}</div>
           </div>
           <div class="podium-block"><span class="podium-pos">${r.puesto}º</span></div>
         </div>`;
     }).join('');
     const myRow = rk.find(r => normalizarTexto(r.asesor) === meKey);
     const myLine = myRow && myRow.puesto > 5
-      ? `<div class="my-rank no-img">${avatarHTML(myRow.asesor, 36)}<div><b>Tu puesto: ${myRow.puesto}º de ${eq.totalAsesores || rk.length}</b><div class="my-rank-sub">${cuadranteInfo(myRow.cuadrante).nivelEmoji} ${cuadranteInfo(myRow.cuadrante).nivel} · ${fmtPct(myRow.calidad)} calidad${myRow.cuartilCalidad ? ' (' + myRow.cuartilCalidad + ')' : ''}${myRow.avanceMeta !== null && myRow.avanceMeta !== undefined ? ' · ' + fmtPct(myRow.avanceMeta) + ' matrículas' + (myRow.cuartilMatriculas ? ' (' + myRow.cuartilMatriculas + ')' : '') : ''}</div></div></div>`
+      ? `<div class="my-rank no-img">${avatarHTML(myRow.asesor, 36)}<div><b>Tu puesto: ${myRow.puesto}º de ${eq.totalAsesores || rk.length}</b><div class="my-rank-sub">${cuadranteInfo(myRow.cuadrante).nivelEmoji} ${cuadranteInfo(myRow.cuadrante).nivel} · ${fmtPct(myRow.calidad)} calidad${myRow.cuartilCalidad ? ' (' + myRow.cuartilCalidad + ')' : ''}${matCorto(myRow) ? ' · ' + matCorto(myRow) + ' matrículas' + (myRow.cuartilMatriculas ? ' (' + myRow.cuartilMatriculas + ')' : '') : ''}</div></div></div>`
       : (myRow ? `<div class="my-rank top no-img"><span>🎉</span><div><b>¡Estás en el podio!</b><div class="my-rank-sub">${myRow.puesto}º de ${eq.totalAsesores || rk.length}</div></div></div>` : (me ? `<div class="my-rank no-img"><span>👤</span><div><b>Todavía no apareces en el ranking</b><div class="my-rank-sub">Se arma con tus llamadas evaluadas y tus matrículas del mes.</div></div></div>` : ''));
 
     // Cuadrantes: misma disposición que la Matriz (🟡 arriba-izq · 🟢 arriba-der · 🔴 abajo-izq · 🟠 abajo-der)
@@ -3135,6 +3126,7 @@
     // refresca la lista de asesores, el diagnóstico y las técnicas dominadas.
     fetchSheetData().then(() => {
       renderAdvisorOptions();
+      activarPasoFoco(true);
       renderPasoTabs();
       renderAtencion();
       renderTecnicas();
