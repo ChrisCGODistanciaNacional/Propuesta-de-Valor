@@ -616,6 +616,42 @@
   @keyframes vmFade { from { opacity: 0; } to { opacity: 1; } }
   @keyframes vmPop { from { opacity: 0; transform: translateY(14px) scale(.96); } to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { .vm-overlay, .vm-card { animation: none; } }
+
+  /* ===== Hallazgos de calidad ===== */
+  .hz-titular { background: var(--gold-soft); border-left: 4px solid var(--gold); border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.55; color: var(--ink); margin-bottom: 14px; }
+  .hz-sec { margin-top: 16px; }
+  .hz-sec-title { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .hz-sec-title span { font-weight: 700; font-size: 15px; color: var(--navy); }
+  .hz-sec-title small { font-size: 12px; color: var(--muted); }
+  .hz-card { border: 1px solid var(--line); border-left: 4px solid var(--hz, var(--navy)); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: var(--card); }
+  .hz-mania .hz-card { --hz: #C65A11; } .hz-mala_practica .hz-card { --hz: #C8283D; } .hz-mala_costumbre .hz-card { --hz: #B57800; }
+  .hz-buena_practica .hz-card { --hz: #1E8E5A; } .hz-nueva_tecnica .hz-card { --hz: #0B4F8A; }
+  .hz-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .hz-card-head b { font-size: 14.5px; color: var(--navy); }
+  .hz-veces { font-size: 11.5px; font-weight: 600; color: var(--hz, var(--navy)); background: var(--paper); border-radius: 999px; padding: 2px 9px; white-space: nowrap; }
+  .hz-card p { margin: 6px 0; font-size: 13.5px; line-height: 1.55; color: var(--ink-2); }
+  .hz-card blockquote { margin: 8px 0; padding: 6px 10px; border-left: 3px solid var(--line-strong, #C9D2DF); background: var(--paper); font-size: 13px; font-style: italic; color: var(--ink-2); border-radius: 0 6px 6px 0; }
+  .hz-why b, .hz-do b { color: var(--navy); }
+  .hz-do { background: #F4F8FD; border-radius: 8px; padding: 6px 10px; }
+  .hz-foot { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
+  .hz-tec { background: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; font-family: inherit; font-size: 12px; font-weight: 600; color: var(--navy); cursor: pointer; }
+  .hz-tec:hover { border-color: var(--navy); }
+  .hz-names { font-size: 12px; color: var(--muted); }
+  .hz-acciones ol { margin: 0; padding-left: 22px; font-size: 14px; line-height: 1.7; color: var(--ink); }
+  .hz-note { margin-top: 12px; font-size: 12px; color: var(--muted); text-align: center; }
+  .hz-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .hz-col-title { font-weight: 700; color: var(--navy); font-size: 14px; margin-bottom: 8px; }
+  .hz-col-title small { display: block; font-weight: 400; font-size: 11.5px; color: var(--muted); }
+  .hz-bar { display: grid; grid-template-columns: 1fr 70px auto; gap: 8px; align-items: center; font-size: 12.5px; padding: 4px 0; }
+  .hz-bar-lbl { color: var(--ink); }
+  .hz-bar-track { height: 8px; background: var(--paper); border-radius: 999px; overflow: hidden; }
+  .hz-bar-track span { display: block; height: 100%; background: var(--gold); border-radius: 999px; }
+  .hz-bar-n { font-weight: 700; color: var(--navy); white-space: nowrap; }
+  .hz-bar-n small { font-weight: 400; color: var(--muted); }
+  @media (max-width: 640px) { .hz-cols { grid-template-columns: 1fr; } .hz-bar { grid-template-columns: 1fr 50px auto; } }
+
+  #datosToast { position: fixed; left: 50%; bottom: 22px; transform: translate(-50%, 16px); background: var(--navy); color: #fff; padding: 10px 18px; border-radius: 999px; font-size: 13.5px; font-weight: 500; box-shadow: 0 8px 24px rgba(9,26,51,0.3); opacity: 0; pointer-events: none; transition: .25s; z-index: 3000; max-width: 92vw; text-align: center; }
+  #datosToast.show { opacity: 1; transform: translate(-50%, 0); }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -956,6 +992,12 @@
       </div>
 
       <div class="admin-card">
+        <h2>🔎 Hallazgos de calidad</h2>
+        <p>Lo que más se repite en las llamadas evaluadas: manías, malas prácticas, buenas prácticas para replicar y técnicas nuevas. Se renueva cada día con lo acumulado.</p>
+        <button class="btn-export-main" onclick="openHallazgos()">🔎 Ver hallazgos</button>
+      </div>
+
+      <div class="admin-card">
         <h2>💾 Respaldo</h2>
         <p>Guarda una copia de los datos (fichas, speeches, objeciones, técnicas) o restaura una copia anterior.</p>
         <div class="publicar-secondary">
@@ -992,6 +1034,13 @@
   </div>
 </div>
 
+<div id="hallazgosModal" class="modal-backdrop" onclick="if (event.target === this) closeHallazgos()" role="dialog" aria-modal="true" aria-labelledby="hallazgosTitle">
+  <div class="modal">
+    <div class="modal-head"><h2 id="hallazgosTitle">🔎 Hallazgos de calidad</h2><button class="modal-close" onclick="closeHallazgos()" aria-label="Cerrar">✕</button></div>
+    <div id="hallazgosBody" class="modal-body"></div>
+  </div>
+</div>
+
 <div id="evalModal" class="modal-backdrop" onclick="if (event.target === this) closeEvaluadas()" role="dialog" aria-modal="true" aria-labelledby="evalTitle">
   <div class="modal">
     <div class="modal-head"><h2 id="evalTitle">🎧 Llamadas evaluadas</h2><button class="modal-close" onclick="closeEvaluadas()" aria-label="Cerrar">✕</button></div>
@@ -1017,7 +1066,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-15T14:09:27.000Z";
+  const DATA_VERSION = "2026-10-15T17:08:03.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1621,7 +1670,7 @@
     const url = (db.config && db.config.sheets_api_url) ? db.config.sheets_api_url.trim() : '';
     const source = url || './data.json';
     try {
-      const resp = await fetch(source, { cache: force ? 'no-store' : 'default' });
+      const resp = await fetch((force && !url) ? source + '?v=' + Date.now() : source, { cache: force ? 'no-store' : 'default' });
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
       const json = await resp.json();
       sheetDataCache = {
@@ -1629,6 +1678,7 @@
         tecnicas: Array.isArray(json.tecnicas) ? json.tecnicas : [],
         analisis: (json.analisis && typeof json.analisis === 'object') ? json.analisis : {},
         equipo: (json.equipo && typeof json.equipo === 'object') ? json.equipo : null,
+        hallazgos: (json.hallazgos && typeof json.hallazgos === 'object') ? json.hallazgos : null,
         loaded: true, error: null
       };
     } catch (e) {
@@ -2985,9 +3035,124 @@
       applyUpdate();
     }
   }
-  setTimeout(revisarVersionPublicada, 20000);
-  setInterval(revisarVersionPublicada, 5 * 60 * 1000);
-  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') revisarVersionPublicada(); });
+  // Datos del diagnóstico (data.json): la tarea programada los renueva a las 11:00 y 18:00. No hace falta
+  // la ventana de versión nueva: se recargan solos y se avisa con un mensaje breve abajo.
+  let datosUltimaFecha = null, datosPendientes = false;
+  async function revisarDatosPublicados() {
+    if (!/^https?:$/.test(location.protocol) || (db.config && db.config.sheets_api_url)) return;
+    try {
+      if (!datosPendientes) {
+        const h = await fetch('./data.json?v=' + Date.now(), { method: 'HEAD', cache: 'no-store' });
+        const lm = h.ok ? Date.parse(h.headers.get('last-modified') || '') : NaN;
+        if (isNaN(lm)) return;
+        if (datosUltimaFecha === null) { datosUltimaFecha = lm; return; }
+        if (lm <= datosUltimaFecha) return;
+        datosUltimaFecha = lm;
+        datosPendientes = true;
+      }
+      // Si el asesor está leyendo una ventana (ranking, evaluadas, hallazgos), se espera a la próxima vuelta.
+      if (document.querySelector('.modal-backdrop.open') || document.getElementById('versionModal')) return;
+      datosPendientes = false;
+      await fetchSheetData(true);
+      renderAdvisorOptions(); renderPasoTabs(); renderAtencion(); renderTecnicas(); updateHeaderCount();
+      avisoDatos('📊 Se actualizaron los datos del diagnóstico');
+    } catch (e) {}
+  }
+  function avisoDatos(txt) {
+    let t = document.getElementById('datosToast');
+    if (!t) { t = document.createElement('div'); t.id = 'datosToast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.textContent = txt; t.classList.add('show');
+    clearTimeout(avisoDatos._t); avisoDatos._t = setTimeout(() => t.classList.remove('show'), 4000);
+  }
+  function revisarTodo() { revisarVersionPublicada(); revisarDatosPublicados(); }
+  setTimeout(revisarTodo, 20000);
+  setInterval(revisarTodo, 5 * 60 * 1000);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') revisarTodo(); });
+
+  // ===================== HALLAZGOS DE CALIDAD (⚙️ → Ver hallazgos) =====================
+  // Lectura semanal de las llamadas evaluadas (manías, malas prácticas y costumbres, buenas prácticas
+  // para replicar y técnicas nuevas) que escribe la tarea programada, más el conteo automático de los
+  // temas que más se repiten. Los nombres de los asesores solo se ven en modo edición (supervisor).
+  const TIPOS_HALLAZGO = [
+    { id: 'mania',          ico: '🔁', lbl: 'Manías',                 sub: 'Frases o hábitos que se repiten sin darse cuenta' },
+    { id: 'mala_practica',  ico: '⛔', lbl: 'Malas prácticas',        sub: 'Lo que resta en la llamada y hay que cortar ya' },
+    { id: 'mala_costumbre', ico: '⏳', lbl: 'Malas costumbres',       sub: 'Pasos del protocolo que se saltan seguido' },
+    { id: 'buena_practica', ico: '🌟', lbl: 'Para replicar',          sub: 'Lo que funcionó y vale la pena enseñar' },
+    { id: 'nueva_tecnica',  ico: '💡', lbl: 'Técnica nueva',          sub: 'Algo que podríamos sumar a Técnica de Venta' }
+  ];
+  function openHallazgos() {
+    const modal = document.getElementById('hallazgosModal');
+    if (!modal) return;
+    renderHallazgos();
+    modal.classList.add('open');
+    document.body.classList.add('modal-open');
+    const box = modal.querySelector('.modal'); if (box) box.scrollTop = 0;
+  }
+  function closeHallazgos() {
+    const modal = document.getElementById('hallazgosModal');
+    if (!modal || !modal.classList.contains('open')) return;
+    modal.classList.remove('open');
+    if (!document.querySelector('.modal-backdrop.open')) document.body.classList.remove('modal-open');
+    const body = document.getElementById('hallazgosBody'); if (body) body.innerHTML = '';
+  }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeHallazgos(); });
+  function hallazgoTecnicaHTML(id) {
+    const t = id ? (db.tecnicas || []).find(x => x.id === id) : null;
+    return t ? `<button class="hz-tec no-img" onclick="closeHallazgos(); goToTecnica('${t.id}')">Técnica: ${escapeHtmlPreserveNL(t.titulo)} →</button>` : '';
+  }
+  function renderHallazgos() {
+    const body = document.getElementById('hallazgosBody');
+    if (!body) return;
+    const h = sheetDataCache.hallazgos;
+    if (!h || (!h.items && !h.conteos)) {
+      body.innerHTML = '<div class="diag-empty"><span class="big">🔎</span><div>Todavía no hay hallazgos. Se arman con las llamadas evaluadas y se renuevan cada día.</div></div>';
+      return;
+    }
+    const nombres = list => (editMode && list && list.length) ? `<div class="hz-names">👥 ${list.map(n => escapeHtmlPreserveNL(nombreCorto(n))).join(' · ')}</div>` : '';
+    const items = Array.isArray(h.items) ? h.items : [];
+    const secciones = TIPOS_HALLAZGO.map(t => {
+      const lista = items.filter(i => i.tipo === t.id);
+      if (!lista.length) return '';
+      return `<section class="hz-sec hz-${t.id}">
+        <div class="hz-sec-title"><span>${t.ico} ${t.lbl}</span><small>${t.sub}</small></div>
+        ${lista.map(i => `<article class="hz-card">
+          <div class="hz-card-head"><b>${escapeHtmlPreserveNL(i.titulo || '')}</b>${i.veces ? `<span class="hz-veces">${escapeHtmlPreserveNL(i.veces)}</span>` : ''}</div>
+          ${i.queVimos ? `<p>${escapeHtmlPreserveNL(i.queVimos)}</p>` : ''}
+          ${i.ejemplo ? `<blockquote>${escapeHtmlPreserveNL(i.ejemplo)}</blockquote>` : ''}
+          ${i.porQueImporta ? `<p class="hz-why"><b>Por qué importa:</b> ${escapeHtmlPreserveNL(i.porQueImporta)}</p>` : ''}
+          ${i.accion ? `<p class="hz-do"><b>Qué hacer:</b> ${escapeHtmlPreserveNL(i.accion)}</p>` : ''}
+          <div class="hz-foot">${hallazgoTecnicaHTML(i.tecnica)}${nombres(i.asesores)}</div>
+        </article>`).join('')}
+      </section>`;
+    }).join('');
+    const barras = (bloque, titulo) => {
+      if (!bloque || !Array.isArray(bloque.temas) || !bloque.temas.length) return '';
+      const max = Math.max(...bloque.temas.map(t => t.llamadas)) || 1;
+      return `<div class="hz-col"><div class="hz-col-title">${titulo}<small>${bloque.llamadas} llamadas con observaciones${bloque.desde ? ` · ${bloque.desde.slice(0, 5)} al ${String(bloque.hasta || '').slice(0, 5)}` : ''}</small></div>
+        ${bloque.temas.slice(0, 8).map(t => `<div class="hz-bar" title="${editMode && t.nombres ? escapeHtmlPreserveNL(t.nombres.map(nombreCorto).join(', ')) : ''}"><span class="hz-bar-lbl">${escapeHtmlPreserveNL(t.tema)}</span><span class="hz-bar-track"><span style="width:${Math.round(t.llamadas / max * 100)}%"></span></span><span class="hz-bar-n">${t.llamadas}<small> · ${t.asesores} as.</small></span></div>`).join('')}
+      </div>`;
+    };
+    const c = h.conteos || {};
+    const acciones = Array.isArray(h.acciones) && h.acciones.length
+      ? `<section class="hz-sec hz-acciones"><div class="hz-sec-title"><span>✅ Acciones de la semana</span></div><ol>${h.acciones.map(a => `<li>${escapeHtmlPreserveNL(a)}</li>`).join('')}</ol></section>` : '';
+    body.innerHTML = `
+      <section class="rk-section" data-capturable>
+        ${imgHeadHTML()}
+        <div class="rk-title">🔎 Hallazgos de la semana <small>${h.periodo ? `${h.periodo.desde} al ${h.periodo.hasta}` : ''}${h.base ? ` · ${h.base.llamadas} llamadas · ${h.base.asesores} asesores` : ''}${h.actualizado ? ` · actualizado ${h.actualizado}` : ''}</small>${btnImgHTML('', 'Equipo CGO Distancia')}</div>
+        ${h.titular ? `<div class="hz-titular">${escapeHtmlPreserveNL(h.titular)}</div>` : ''}
+        ${acciones}
+        ${secciones}
+        ${!editMode ? '<div class="hz-note no-img">Activa el modo edición para ver qué asesores aparecen en cada hallazgo.</div>' : ''}
+        ${imgFootHTML()}
+      </section>
+      <section class="rk-section" data-capturable>
+        ${imgHeadHTML()}
+        <div class="rk-title">📈 Lo que más se repite <small>conteo automático de las oportunidades que escribe calidad</small>${btnImgHTML('', 'Equipo CGO Distancia')}</div>
+        <div class="hz-cols">${barras(c.ultimos7, 'Últimos 7 días')}${barras(c.acumulado, 'Acumulado')}</div>
+        ${imgFootHTML()}
+      </section>`;
+    applyEditMode(body);
+  }
 
   // ===================== TÉCNICA DE VENTA (HABILIDADES DESBLOQUEADAS) =====================
   // Si el supervisor conectó el Google Sheet (pestaña TECNICAS) y el asesor eligió
@@ -3203,6 +3368,7 @@
     clone.querySelectorAll('.capturing').forEach(e => e.classList.remove('capturing'));
     const rkModalClone = clone.querySelector('#rankingModal'); if (rkModalClone) rkModalClone.classList.remove('open');
     const evModalClone = clone.querySelector('#evalModal'); if (evModalClone) { evModalClone.classList.remove('open'); const eb = evModalClone.querySelector('#evalBody'); if (eb) eb.innerHTML = ''; }
+    const hzModalClone = clone.querySelector('#hallazgosModal'); if (hzModalClone) { hzModalClone.classList.remove('open'); const hb = hzModalClone.querySelector('#hallazgosBody'); if (hb) hb.innerHTML = ''; }
     const rkBodyClone = clone.querySelector('#rankingBody'); if (rkBodyClone) rkBodyClone.innerHTML = '';
     const fotosListClone = clone.querySelector('#fotosList'); if (fotosListClone) fotosListClone.innerHTML = '';
     const fotoSelClone = clone.querySelector('#fotoAsesorSelect'); if (fotoSelClone) fotoSelClone.innerHTML = '<option value="">Elige al asesor...</option>';

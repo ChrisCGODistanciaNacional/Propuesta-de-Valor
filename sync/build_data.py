@@ -924,12 +924,56 @@ equipo = {
 
 
 # ----------------------------------------------------------------------------- filas: reparto por etapa listo para la página
+TEXTOS_OPORTUNIDAD = []   # (fecha, asesor, texto de oportunidades + evidencia) para los hallazgos de calidad
 for row in evaluacion:
     et, fk, bk, _fg, _og, _ev, modo = textos_por_etapa(row)
     row['_etapas'] = {k: {'fortaleza': et[k]['fortaleza'] or None, 'oportunidad': et[k]['oportunidad'] or None} for k in STAGE_KEYS}
     row['_foco'] = bk
     row['_fortalezaPrincipal'] = fk
     row['_modo'] = modo
+    _txt_op = ' '.join([et[k]['oportunidad'] or '' for k in STAGE_KEYS] + [_og or '', _ev or ''])
+    if _txt_op.strip():
+        TEXTOS_OPORTUNIDAD.append((parse_date(row.get("Fecha")), row[H_ASESOR], _txt_op))
+
+# ----------------------------------------------------------------------------- hallazgos de calidad
+# Conteo determinista de los temas que más se repiten en las oportunidades que escribe calidad (acumulado y
+# últimos 7 días) + la lectura cualitativa de la semana (manías, malas prácticas, buenas prácticas, técnica
+# nueva) que la tarea programada escribe en sync/hallazgos_cache.json. La página lo muestra en ⚙️.
+TEMAS_HALLAZGOS = [
+    ('encuesta', 'No deriva a la encuesta de satisfacción', r'encuesta'),
+    ('seguimiento', 'Seguimiento sin día y hora concretos', r'(fecha y hora|hora (especifica|concreta|exacta|definida)|seguimiento (abierto|unicamente)|me avisas|gestion abierta|no genera un proximo|sin agendar|agendamiento|iniciativa del prospecto|retome el contacto|cierres? abiertos?)'),
+    ('admision', 'Proceso de admisión incompleto (evaluación, cámara)', r'(proceso de admision|evaluacion de (conocimiento|ingreso)|con camara|prueba de ingreso)'),
+    ('parciales', 'Faltan cierres parciales', r'cierres? parcial'),
+    ('valor', 'Propuesta de valor débil (sin 2 diferenciales)', r'(diferenciales|propuesta de valor|mas alla del descuento|unicamente en nexus)'),
+    ('indagacion', 'Indagación débil: no se conoce la motivación', r'(indagacion|profundiza(r)? (un poco mas )?en (la )?(necesidad|motivacion|decision|situacion|antecedentes)|sondeo debil|responder preguntas|antes de (presentar|desarrollar|argumentar))'),
+    ('presentacion', 'Presentación tardía / no usa el nombre del prospecto', r'(presentacion completa|no se presenta|presentarte|tu nombre|nombre (de la|del) prospect|utiliza(r)? el nombre|uso del nombre|saluda al cliente por su nombre)'),
+    ('inversion', 'Inversión incompleta (conceptos, seguro)', r'(todos los conceptos|conceptos (correspondientes|que conforman|de inversion|economicos)|seguro contra accidentes|incluyendo el seguro|costos de manera completa|forma clara la inversion|informacion de costos|resumen consolidado de los costos|estructurada la inversion)'),
+    ('convalidacion', 'Anticipa % o ciclos de convalidación', r'(anticipar (un |resultados de )?(porcentaje|porcentajes|cantidades|resultados)|adelantar una cantidad|porcentaje de convalidacion|ciclos (de convalidacion|convalidables)|cursos convalidables)'),
+    ('erronea', 'Información errónea o confusa', r'(informacion (erronea|incorrecta|poco clara)|argumento falso|error tecnico|confus|inconsistencias|terminologia)'),
+    ('tipificacion', 'Tipificación incorrecta', r'tipific'),
+]
+def _plano(s):   # minúsculas sin tildes, conservando espacios (norm() los quita)
+    s = unicodedata.normalize('NFD', str(s or '').lower())
+    return re.sub(r'\s+', ' ', ''.join(c for c in s if unicodedata.category(c) != 'Mn'))
+def _contar_temas(textos):
+    res = []
+    for tid, etiqueta, rx in TEMAS_HALLAZGOS:
+        hits = [t for t in textos if re.search(rx, _plano(t[2]))]
+        if hits:
+            res.append({'id': tid, 'tema': etiqueta, 'llamadas': len(hits), 'asesores': len({norm(t[1]) for t in hits}),
+                        'nombres': sorted({t[1] for t in hits})})
+    return sorted(res, key=lambda r: (-r['llamadas'], -r['asesores']))
+_fechas_op = [t[0] for t in TEXTOS_OPORTUNIDAD if t[0]]
+_ultima = max(_fechas_op) if _fechas_op else None
+_desde7 = (_ultima - datetime.timedelta(days=6)) if _ultima else None
+_ult7 = [t for t in TEXTOS_OPORTUNIDAD if t[0] and _desde7 and t[0] >= _desde7]
+hallazgos = load_json(os.path.join(SYNC, 'hallazgos_cache.json'), {}) or {}
+hallazgos['conteos'] = {
+    'acumulado': {'desde': min(_fechas_op).strftime('%d/%m/%Y') if _fechas_op else None, 'hasta': _ultima.strftime('%d/%m/%Y') if _ultima else None,
+                  'llamadas': len(TEXTOS_OPORTUNIDAD), 'temas': _contar_temas(TEXTOS_OPORTUNIDAD)},
+    'ultimos7': {'desde': _desde7.strftime('%d/%m/%Y') if _desde7 else None, 'hasta': _ultima.strftime('%d/%m/%Y') if _ultima else None,
+                 'llamadas': len(_ult7), 'temas': _contar_temas(_ult7)},
+}
 
 # ----------------------------------------------------------------------------- salida
 out = {
@@ -939,6 +983,7 @@ out = {
     'tecnicas': tecnicas,
     'analisis': analisis,
     'equipo': equipo,
+    'hallazgos': hallazgos,
 }
 with open(os.path.join(SYNC, 'pending.json'), 'w', encoding='utf-8') as f:
     json.dump(pending, f, ensure_ascii=False, indent=1)
