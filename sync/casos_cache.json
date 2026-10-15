@@ -1856,5 +1856,107 @@
    }
   ],
   "speech": "Así es, [nombre]. Te llamo mañana a las 6 p. m. y esta tarde te escribo por WhatsApp con la información. Si necesitas algo antes, me avisas por ahí.\n\nGracias a ti. Te habló Ruth de la Universidad Continental. Ahora te transfiero a una breve encuesta de satisfacción, ¿está bien?\n\nExcelente. Que tengas una linda tarde y hablamos mañana a las 6 p. m."
+ },
+ "Raul Aaron Manuel Ipanaque Escobar|paso1": {
+  "stage": "paso1",
+  "base": "eeab5d410461",
+  "conclusion": "Te presentas bien con tu nombre y el de la Universidad Continental, con un inicio cordial. Te falta usar el nombre de la prospecta durante la conversación para generar más cercanía.",
+  "tecId": "tec_12",
+  "tipo": "speech",
+  "porQue": "Devolverle el control a la prospecta y usar su nombre desde el inicio genera cercanía y la invita a participar.",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Hola, [nombre], te saluda Aaron de la Universidad Continental. Gracias por contestar. Antes de contarte, ¿te parece si empiezo preguntándote qué carrera te interesa y en qué modalidad te gustaría estudiar?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Hola, sí. Me interesa una carrera a distancia, pero no sé bien cómo funciona."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Perfecto, [nombre], tú marcas el ritmo de la conversación. Cuéntame cómo es tu día a día y así te explico lo que realmente te sirve. ¿Trabajas actualmente?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, trabajo en las mañanas."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Gracias por contarme, [nombre]. Con eso ya puedo orientarte mejor. ¿Te parece si te explico cómo se organizan las clases para que se adapten a tu horario y luego me dices qué te parece?"
+   }
+  ],
+  "speech": "Hola, [nombre], te saluda Aaron de la Universidad Continental. Gracias por contestar. Antes de contarte, ¿te parece si empiezo preguntándote qué carrera te interesa y en qué modalidad te gustaría estudiar?\n\nPerfecto, [nombre], tú marcas el ritmo de la conversación. Cuéntame cómo es tu día a día y así te explico lo que realmente te sirve. ¿Trabajas actualmente?\n\nGracias por contarme, [nombre]. Con eso ya puedo orientarte mejor. ¿Te parece si te explico cómo se organizan las clases para que se adapten a tu horario y luego me dices qué te parece?"
+ },
+ "Raul Aaron Manuel Ipanaque Escobar|paso2": {
+  "stage": "paso2",
+  "base": "cd94455fe0a8",
+  "conclusion": "Explicas bien la modalidad a distancia (clases grabadas, cursos por bloques). Valida los importes antes de comunicarlos, indaga su capacidad de pago antes de hablar de descuentos y no ofrezcas la exoneración del seguro por iniciativa propia.",
+  "tecId": "tec_14",
+  "tipo": "speech",
+  "porQue": "Preguntar qué pesa más en su decisión permite trabajar la objeción económica antes de mencionar cualquier descuento.",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Antes de darte los importes, [nombre], quiero entender tu situación para orientarte bien. ¿Quién cubriría los pagos de tus estudios, tú misma o tienes apoyo?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Yo misma, pero tengo que ver que no me quede ajustado."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Tiene todo el sentido, [nombre]. Para no darte cifras al apuro, voy a validarlas y te las confirmo claras. Antes, ¿qué sería lo más importante para ti al elegir: la inversión mensual, el tiempo o el proceso?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Más que nada que las cuotas sean manejables."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Entendido. Primero te muestro el valor de la propuesta académica y cómo se divide el pago inicial en partes, y juntas vemos qué encaja con tu presupuesto. ¿Te parece que empecemos por ahí?"
+   }
+  ],
+  "speech": "Antes de darte los importes, [nombre], quiero entender tu situación para orientarte bien. ¿Quién cubriría los pagos de tus estudios, tú misma o tienes apoyo?\n\nTiene todo el sentido, [nombre]. Para no darte cifras al apuro, voy a validarlas y te las confirmo claras. Antes, ¿qué sería lo más importante para ti al elegir: la inversión mensual, el tiempo o el proceso?\n\nEntendido. Primero te muestro el valor de la propuesta académica y cómo se divide el pago inicial en partes, y juntas vemos qué encaja con tu presupuesto. ¿Te parece que empecemos por ahí?"
+ },
+ "Raul Aaron Manuel Ipanaque Escobar|paso3": {
+  "stage": "paso3",
+  "base": "b1c222f8ae3e",
+  "conclusion": "Ofreces enviar información por WhatsApp y mantienes un trato cordial. Profundiza en las inquietudes de la prospecta, confirma las condiciones de la modalidad semipresencial y fija el seguimiento con fecha y hora exactas.",
+  "tecId": "tec_16",
+  "tipo": "speech",
+  "porQue": "Cerrar con un siguiente paso concreto, con día y hora, evita que el seguimiento quede abierto.",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Veo que te quedó la duda sobre cómo funciona la modalidad semipresencial, [nombre]. Antes de responderte quiero confirmarlo bien. ¿Qué es lo que más te preocupa: la asistencia o los horarios?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Los horarios, porque trabajo y no sé si podré ir."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Gracias por decírmelo. Voy a verificar las condiciones exactas de la modalidad y te respondo con información confirmada, sin darte nada a medias. Así evitamos sorpresas."
+   },
+   {
+    "quien": "cliente",
+    "texto": "Ya, está bien. Pero tampoco quiero que se me pase el tiempo."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Tienes razón. Te escribo por WhatsApp con la información verificada mañana a las 6:00 p. m. y lo conversamos ahí. ¿Te va bien esa hora, [nombre]?"
+   }
+  ],
+  "speech": "Veo que te quedó la duda sobre cómo funciona la modalidad semipresencial, [nombre]. Antes de responderte quiero confirmarlo bien. ¿Qué es lo que más te preocupa: la asistencia o los horarios?\n\nGracias por decírmelo. Voy a verificar las condiciones exactas de la modalidad y te respondo con información confirmada, sin darte nada a medias. Así evitamos sorpresas.\n\nTienes razón. Te escribo por WhatsApp con la información verificada mañana a las 6:00 p. m. y lo conversamos ahí. ¿Te va bien esa hora, [nombre]?"
+ },
+ "Raul Aaron Manuel Ipanaque Escobar|paso4": {
+  "stage": "paso4",
+  "base": "940470ecf6c6",
+  "conclusion": "Mantienes una comunicación respetuosa y disposición a continuar el contacto. Completa la despedida institucional, transfiere a la encuesta de satisfacción y usa el nombre de la prospecta al menos dos veces.",
+  "tecId": null,
+  "tipo": "accion",
+  "porQue": "Tu observación de esta llamada no es de speech sino de protocolo de cierre.",
+  "speech": "Antes de despedirte, di tu nombre y Universidad Continental, menciona el nombre de la prospecta al menos dos veces y transfiere la llamada a la encuesta de satisfacción."
  }
 }
