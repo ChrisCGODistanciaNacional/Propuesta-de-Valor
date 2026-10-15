@@ -576,6 +576,11 @@
   .obs-raw-f ul, .obs-raw-o ul { margin: 0; padding-left: 20px; line-height: 1.5; }
   .obs-raw-f p, .obs-raw-o p { margin: 0; white-space: pre-wrap; line-height: 1.5; }
   .feedback .obs-raw-f li, .feedback .obs-raw-o li { font-size: 13.5px; color: var(--ink-2); }
+
+  /* Siguiente nivel: título + una línea por requisito */
+  .next-level .nl-title { display: block; font-weight: 600; margin-bottom: 2px; }
+  .next-level .nl-line { display: block; }
+  .next-level .nl-line b { color: var(--gold); font-weight: 600; }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -977,7 +982,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-14T13:02:15.000Z";
+  const DATA_VERSION = "2026-10-15T13:35:25.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1716,7 +1721,8 @@
     return `<span class="nivel-tag ${cls || ''}" style="--cq:${c.color};--cqbg:${c.bg}">${c.nivelEmoji} ${c.nivel}</span>`;
   }
   function qShort(q) { return String(q || '').replace('Q', 'Q'); }
-  // Qué le falta al asesor para el siguiente nivel (umbrales oficiales: calidad ≥85% = Q2; avance ≥80% = Q2).
+  // Qué le falta al asesor para subir de nivel, en dos líneas concretas: cuántos puntos de calidad
+  // y cuántas matrículas le faltan para llegar al cuartil que pide 👑 Leyenda (Q2 o mejor en ambos).
   function siguienteNivelTexto(a) {
     if (!a) return '';
     const cal = a.calidadPromedio, av = a.avanceMeta;
@@ -1726,21 +1732,25 @@
       if (cal === null || cal === undefined) return '';
       return 'Tu nivel aparecerá cuando tengas matrículas del mes registradas.';
     }
-    const faltaCal = (cal === null || cal === undefined) ? null : Math.max(0, 85 - cal);
-    const matTxt = (a.matriculas !== null && a.matriculas !== undefined && a.meta) ? `${a.matriculas} de ${a.meta}` : null;
-    if (calOk && matOk) return `${L.nivelEmoji} Eres ${L.nivel}. Mantenlo: calidad de 85% o más y matrículas al día.`;
-    const calTxt = `calidad promedio de 85% (hoy ${fmtPct(cal)}${faltaCal ? ', faltan ' + Math.ceil(faltaCal) + ' pts' : ''})`;
-    if (matOk && !calOk) return `Para ser ${L.nivelEmoji} ${L.nivel}: ${calTxt}.`;
-    const eqc = (sheetDataCache.equipo && sheetDataCache.equipo.cortesMatriculas) || null;
-    const corteQ2 = eqc && eqc.Q2 !== null && eqc.Q2 !== undefined ? Math.ceil(eqc.Q2) : null;
-    let matMeta;
-    if (a.avanceModo === 'tablero') {
-      matMeta = `Q2 del equipo en matrículas${corteQ2 !== null ? ` (corte: ${corteQ2}` : '('}${(a.matriculas !== null && a.matriculas !== undefined) ? `${corteQ2 !== null ? ', ' : ''}llevas ${a.matriculas})` : ')'}`;
-    } else {
-      matMeta = `${a.avanceModo === 'ritmo' ? '80% del ritmo de tu meta' : '80% de tu meta del mes'} (hoy ${fmtPct(av)}${matTxt ? ': ' + matTxt : ''})`;
+    if (calOk && matOk) return `${L.nivelEmoji} Eres <b>${L.nivel}</b>. Mantente en Cuartil 2 o mejor en calidad (85% o más) y en matrículas.`;
+    const lineas = [];
+    if (!calOk && cal !== null && cal !== undefined) {
+      const falta = Math.max(1, Math.ceil(85 - cal));
+      lineas.push(`<b>Calidad:</b> sube ${falta} ${falta === 1 ? 'pt' : 'pts'} en tu promedio (de ${fmtPct(cal)} a 85%) para pasar al Cuartil 2.`);
     }
-    if (calOk && !matOk) return `Para ser ${L.nivelEmoji} ${L.nivel}: ${matMeta}.`;
-    return `Para ser ${L.nivelEmoji} ${L.nivel}: ${calTxt} y ${matMeta}.`;
+    if (!matOk) {
+      const eqc = (sheetDataCache.equipo && sheetDataCache.equipo.cortesMatriculas) || null;
+      const corteQ2 = eqc && eqc.Q2 !== null && eqc.Q2 !== undefined ? Math.ceil(eqc.Q2) : null;
+      const mat = (a.matriculas !== null && a.matriculas !== undefined) ? a.matriculas : null;
+      if (a.avanceModo === 'tablero' && corteQ2 !== null && mat !== null) {
+        const falta = Math.max(1, corteQ2 - mat);
+        lineas.push(`<b>Matrículas:</b> suma ${falta} ${falta === 1 ? 'matrícula' : 'matrículas'} para alcanzar el Cuartil 2.`);
+      } else {
+        lineas.push(`<b>Matrículas:</b> llega al ${a.avanceModo === 'ritmo' ? '80% del ritmo de tu meta' : '80% de tu meta del mes'} para alcanzar el Cuartil 2 (hoy ${fmtPct(av)}).`);
+      }
+    }
+    if (!lineas.length) return '';
+    return `<span class="nl-title">Para subir de nivel a ${L.nivelEmoji} ${L.nivel} necesitas:</span>` + lineas.map(l => `<span class="nl-line">${l}</span>`).join('');
   }
   const STAGE_LABELS = { paso1: 'Ganar confianza', paso2: 'Identificar necesidades', paso3: 'Solucionar problemas', paso4: 'Cerrar' };
   const STAGE_KEYS = ['paso1', 'paso2', 'paso3', 'paso4'];
