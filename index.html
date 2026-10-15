@@ -581,6 +581,24 @@
   .next-level .nl-title { display: block; font-weight: 600; margin-bottom: 2px; }
   .next-level .nl-line { display: block; }
   .next-level .nl-line b { color: var(--gold); font-weight: 600; }
+
+  /* Cuadrantes: requisito de cuartiles + tabla de cómo se calcula cada cuartil */
+  .cq-req { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin-top: 6px; font-size: 12px; color: var(--ink-2); }
+  .cq-req b { color: var(--cq); font-weight: 700; }
+  .cq-req .cq-plus { color: var(--muted); font-weight: 700; }
+  .cq-tabla-wrap { margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--paper); }
+  .cq-tabla-title { font-weight: 700; color: var(--navy); font-size: 14px; margin-bottom: 8px; }
+  .cq-tabla { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .cq-tabla th, .cq-tabla td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: center; }
+  .cq-tabla thead th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .cq-tabla tbody th { text-align: left; color: var(--navy); font-weight: 600; white-space: nowrap; }
+  .cq-tabla tbody th small { display: block; font-weight: 400; color: var(--muted); font-size: 11.5px; white-space: normal; }
+  .cq-tabla td { font-weight: 600; color: var(--ink); }
+  .cq-tabla tbody tr:last-child th, .cq-tabla tbody tr:last-child td { border-bottom: none; }
+  .cq-tabla-nota { margin-top: 8px; font-size: 12px; color: var(--muted); }
+  @media (max-width: 640px) { .cq-tabla { font-size: 12px; } .cq-tabla th, .cq-tabla td { padding: 6px 4px; } }
+  .cq-tabla .cq-short { display: none; }
+  @media (max-width: 640px) { .cq-tabla .cq-long { display: none; } .cq-tabla .cq-short { display: inline; } }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -780,7 +798,7 @@
 
 <div id="updateBanner" style="display: none;">
   <span>Hay una versión más reciente de esta Propuesta de Valor.</span>
-  <button onclick="applyUpdate()">Actualizar ahora</button>
+  <button onclick="actualizarAhora()">Actualizar ahora</button>
 </div>
 
 <div class="edit-banner">✏️ Modo edición activado: los cambios se guardan en este navegador. Para publicarlos, exporta el HTML desde el panel del supervisor.<button onclick="setEditMode(false)">Salir del modo edición</button></div>
@@ -982,7 +1000,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-15T13:35:25.000Z";
+  const DATA_VERSION = "2026-10-15T13:53:23.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -995,6 +1013,17 @@
     });
   }
 
+  // Si el asesor pulsó "Actualizar ahora" desde una pestaña vieja, la página nueva se aplica sola.
+  try {
+    if (sessionStorage.getItem('cgo_auto_update') === '1') {
+      sessionStorage.removeItem('cgo_auto_update');
+      if (localStorage.getItem('cgo_consola_backup_version') !== DATA_VERSION) {
+        localStorage.setItem('cgo_consola_backup', JSON.stringify(freshEmbeddedData));
+        localStorage.setItem('cgo_consola_backup_version', DATA_VERSION);
+      }
+    }
+    if (/[?&]v=\d+/.test(location.search)) history.replaceState(null, '', location.pathname + location.hash);
+  } catch (e) {}
   const storedBackup = localStorage.getItem('cgo_consola_backup');
   const storedVersion = localStorage.getItem('cgo_consola_backup_version');
   let pendingUpdateNotice = false;
@@ -1708,10 +1737,10 @@
   // ---- Cuadrantes (así mide la universidad: calidad de llamada × avance de matrículas) y nivel gamificado ----
   // El nivel es el nombre amigable del cuadrante: 🔴 Promesa › 🟠 Talento › 🟡 Estrella › 🟢 Leyenda.
   const CUADRANTES = {
-    verde:    { emoji: '🟢', nombre: 'Referente Integral',       sub: 'Atención alta + gestión alta',              color: '#1E8E5A', bg: '#E6F6EE', orden: 0, nivel: 'Leyenda',  nivelEmoji: '👑' },
-    amarillo: { emoji: '🟡', nombre: 'Potencial Comercial',      sub: 'Gestión alta + atención por fortalecer',    color: '#B57800', bg: '#FFF4DB', orden: 1, nivel: 'Estrella', nivelEmoji: '⭐' },
-    naranja:  { emoji: '🟠', nombre: 'Oportunidad Estratégica',  sub: 'Atención alta + gestión por desarrollar',   color: '#C65A11', bg: '#FDEBDD', orden: 2, nivel: 'Talento',  nivelEmoji: '✨' },
-    rojo:     { emoji: '🔴', nombre: 'Intervención Prioritaria', sub: 'Atención y gestión por fortalecer',         color: '#C8283D', bg: '#FDE8EB', orden: 3, nivel: 'Promesa',  nivelEmoji: '🌱' }
+    verde:    { emoji: '🟢', nombre: 'Referente Integral',       sub: 'Atención alta + gestión alta',              reqCal: 'Cuartil 1 o 2', reqMat: 'Cuartil 1 o 2', color: '#1E8E5A', bg: '#E6F6EE', orden: 0, nivel: 'Leyenda',  nivelEmoji: '👑' },
+    amarillo: { emoji: '🟡', nombre: 'Potencial Comercial',      sub: 'Gestión alta + atención por fortalecer',    reqCal: 'Cuartil 3 o 4', reqMat: 'Cuartil 1 o 2', color: '#B57800', bg: '#FFF4DB', orden: 1, nivel: 'Estrella', nivelEmoji: '⭐' },
+    naranja:  { emoji: '🟠', nombre: 'Oportunidad Estratégica',  sub: 'Atención alta + gestión por desarrollar',   reqCal: 'Cuartil 1 o 2', reqMat: 'Cuartil 3 o 4', color: '#C65A11', bg: '#FDEBDD', orden: 2, nivel: 'Talento',  nivelEmoji: '✨' },
+    rojo:     { emoji: '🔴', nombre: 'Intervención Prioritaria', sub: 'Atención y gestión por fortalecer',         reqCal: 'Cuartil 3 o 4', reqMat: 'Cuartil 3 o 4', color: '#C8283D', bg: '#FDE8EB', orden: 3, nivel: 'Promesa',  nivelEmoji: '🌱' }
   };
   function cuadranteInfo(key) {
     return CUADRANTES[key] || { emoji: '⚪', nombre: 'Sin cuadrante aún', sub: 'Faltan datos del mes', color: '#6B7893', bg: '#EEF1F5', orden: 9, nivel: 'Sin nivel aún', nivelEmoji: '🎧' };
@@ -1721,36 +1750,36 @@
     return `<span class="nivel-tag ${cls || ''}" style="--cq:${c.color};--cqbg:${c.bg}">${c.nivelEmoji} ${c.nivel}</span>`;
   }
   function qShort(q) { return String(q || '').replace('Q', 'Q'); }
-  // Qué le falta al asesor para subir de nivel, en dos líneas concretas: cuántos puntos de calidad
-  // y cuántas matrículas le faltan para llegar al cuartil que pide 👑 Leyenda (Q2 o mejor en ambos).
+  // Qué le falta al asesor para llegar al Cuartil 1 en calidad y en matrículas, con la misma
+  // frase en ambas líneas: "mejora X / suma Y y pasarás a Cuartil 1".
   function siguienteNivelTexto(a) {
     if (!a) return '';
     const cal = a.calidadPromedio, av = a.avanceMeta;
-    const calOk = ['Q1', 'Q2'].includes(a.cuartilCalidad), matOk = ['Q1', 'Q2'].includes(a.cuartilMatriculas);
     const L = CUADRANTES.verde;
     if (!a.cuadrante) {
       if (cal === null || cal === undefined) return '';
       return 'Tu nivel aparecerá cuando tengas matrículas del mes registradas.';
     }
-    if (calOk && matOk) return `${L.nivelEmoji} Eres <b>${L.nivel}</b>. Mantente en Cuartil 2 o mejor en calidad (85% o más) y en matrículas.`;
+    const esLeyenda = a.cuadrante === 'verde';
     const lineas = [];
-    if (!calOk && cal !== null && cal !== undefined) {
-      const falta = Math.max(1, Math.ceil(85 - cal));
-      lineas.push(`<b>Calidad:</b> sube ${falta} ${falta === 1 ? 'pt' : 'pts'} en tu promedio (de ${fmtPct(cal)} a 85%) para pasar al Cuartil 2.`);
+    if (a.cuartilCalidad !== 'Q1' && cal !== null && cal !== undefined) {
+      const falta = Math.max(1, Math.ceil(95 - cal));
+      lineas.push(`<b>📞 Calidad:</b> mejora ${falta}% en tu promedio (de ${fmtPct(cal)} a 95%) y pasarás a Cuartil 1.`);
     }
-    if (!matOk) {
+    if (a.cuartilMatriculas !== 'Q1') {
       const eqc = (sheetDataCache.equipo && sheetDataCache.equipo.cortesMatriculas) || null;
-      const corteQ2 = eqc && eqc.Q2 !== null && eqc.Q2 !== undefined ? Math.ceil(eqc.Q2) : null;
+      const corteQ1 = eqc && eqc.Q1 !== null && eqc.Q1 !== undefined ? Math.ceil(eqc.Q1) : null;
       const mat = (a.matriculas !== null && a.matriculas !== undefined) ? a.matriculas : null;
-      if (a.avanceModo === 'tablero' && corteQ2 !== null && mat !== null) {
-        const falta = Math.max(1, corteQ2 - mat);
-        lineas.push(`<b>Matrículas:</b> suma ${falta} ${falta === 1 ? 'matrícula' : 'matrículas'} para alcanzar el Cuartil 2.`);
+      if (a.avanceModo === 'tablero' && corteQ1 !== null && mat !== null) {
+        const falta = Math.max(1, corteQ1 - mat);
+        lineas.push(`<b>🎓 Matrículas:</b> suma ${falta} ${falta === 1 ? 'matrícula' : 'matrículas'} más y pasarás a Cuartil 1.`);
       } else {
-        lineas.push(`<b>Matrículas:</b> llega al ${a.avanceModo === 'ritmo' ? '80% del ritmo de tu meta' : '80% de tu meta del mes'} para alcanzar el Cuartil 2 (hoy ${fmtPct(av)}).`);
+        lineas.push(`<b>🎓 Matrículas:</b> llega al 100% de tu meta (hoy ${fmtPct(av)}) y pasarás a Cuartil 1.`);
       }
     }
-    if (!lineas.length) return '';
-    return `<span class="nl-title">Para subir de nivel a ${L.nivelEmoji} ${L.nivel} necesitas:</span>` + lineas.map(l => `<span class="nl-line">${l}</span>`).join('');
+    if (!lineas.length) return `${L.nivelEmoji} Eres <b>${L.nivel}</b> y estás en Cuartil 1 en calidad y matrículas. ¡Mantenlo!`;
+    const titulo = esLeyenda ? `${L.nivelEmoji} Eres ${L.nivel}. Para llegar a lo más alto:` : `Para subir de nivel a ${L.nivelEmoji} ${L.nivel} necesitas:`;
+    return `<span class="nl-title">${titulo}</span>` + lineas.map(l => `<span class="nl-line">${l}</span>`).join('');
   }
   const STAGE_LABELS = { paso1: 'Ganar confianza', paso2: 'Identificar necesidades', paso3: 'Solucionar problemas', paso4: 'Cerrar' };
   const STAGE_KEYS = ['paso1', 'paso2', 'paso3', 'paso4'];
@@ -2146,6 +2175,27 @@
     if (!r || r.matriculas === null || r.matriculas === undefined) return '';
     return r.meta ? `${r.matriculas}/${r.meta}` : String(r.matriculas);
   }
+  // Tabla "¿Cómo se calcula cada cuartil?" del Ranking: calidad por rangos fijos y matrículas por
+  // los cortes del equipo de hoy (se mueven a medida que el equipo vende).
+  function tablaCuartilesHTML(eq) {
+    const cm = (eq && eq.cortesMatriculas) || null;
+    let mat, matNota;
+    if (eq && eq.avanceModo === 'tablero' && cm && cm.Q1 != null && cm.Q2 != null && cm.Q3 != null) {
+      const c1 = Math.ceil(cm.Q1), c2 = Math.ceil(cm.Q2), c3 = Math.ceil(cm.Q3);
+      const rango = (lo, hi) => hi < lo ? '—' : (lo === hi ? String(lo) : `${lo} a ${hi}`);
+      mat = [`${c1} o más`, rango(c2, c1 - 1), rango(c3, c2 - 1), c3 > 0 ? (c3 - 1 === 0 ? '0' : `menos de ${c3}`) : '—'];
+      matNota = 'Matrículas: cuántas llevas este mes frente al resto del equipo, igual que el tablero. Los cortes se mueven a medida que el equipo vende.';
+    } else {
+      mat = ['100% o más', '80–99%', '70–79%', 'menos de 70%'];
+      matNota = 'Matrículas: avance sobre tu meta del mes.';
+    }
+    const cal = ['95% o más', '85–94%', '75–84%', '74% o menos'];
+    const fila = (lbl, sub, vals) => `<tr><th>${lbl}<small>${sub}</small></th>${vals.map(v => `<td>${v}</td>`).join('')}</tr>`;
+    return `<div class="cq-tabla-wrap"><div class="cq-tabla-title">¿Cómo se calcula cada cuartil?</div>
+      <table class="cq-tabla"><thead><tr><th></th>${[1, 2, 3, 4].map(n => `<th><span class="cq-long">Cuartil ${n}</span><span class="cq-short">Q${n}</span></th>`).join('')}</tr></thead>
+      <tbody>${fila('📞 Calidad', 'promedio de tus llamadas evaluadas', cal)}${fila('🎓 Matrículas', 'este mes, frente al equipo', mat)}</tbody></table>
+      <div class="cq-tabla-nota">${matNota}</div></div>`;
+  }
   // ---- Tarjeta principal del asesor: nivel, resultados y "tu foco ahora" ----
   function renderAdvisorDiagSummary() {
     const el = document.getElementById('advisorDiagSummary');
@@ -2474,11 +2524,7 @@
         </button>`;
     }).join('');
     wrap.innerHTML = `
-      <div class="steps-strip">${steps}</div>
-      <div class="support-row"><span>Apoyo:</span>
-        <button class="support-btn ${activePasoId === 'objeciones' ? 'active' : ''}" onclick="selectPaso('objeciones')">🛡️ Objeciones</button>
-        <button class="support-btn ${activePasoId === 'derivaciones' ? 'active' : ''}" onclick="selectPaso('derivaciones')">📋 Derivaciones</button>
-      </div>`;
+      <div class="steps-strip">${steps}</div>`;
   }
 
   function selectPaso(id) { pasoElegidoManual = true; activePasoId = id; renderPasoTabs(); renderAtencion(); }
@@ -2761,7 +2807,7 @@
     // Cuadrantes: misma disposición que la Matriz (🟡 arriba-izq · 🟢 arriba-der · 🔴 abajo-izq · 🟠 abajo-der)
     const cu = eq.cuadrantes || {};
     const chips = key => (cu[key] || []).map(n => `<span class="cq-chip ${normalizarTexto(n) === meKey ? 'me' : ''}" title="${n}">${avatarHTML(n, 22)}${nombreCorto(n)}</span>`).join('') || '<span class="cq-empty">Nadie todavía</span>';
-    const cell = key => { const c = CUADRANTES[key]; return `<div class="cq-cell" style="--cq:${c.color};--cqbg:${c.bg}"><div class="cq-head"><span>${c.emoji} ${c.nombre.toUpperCase()}</span>${nivelTag(key, 'small')}<small>${c.sub}</small></div><div class="cq-chips">${chips(key)}</div></div>`; };
+    const cell = key => { const c = CUADRANTES[key]; return `<div class="cq-cell" style="--cq:${c.color};--cqbg:${c.bg}"><div class="cq-head"><span>${c.emoji} ${c.nombre.toUpperCase()}</span>${nivelTag(key, 'small')}<div class="cq-req"><span>📞 Calidad: <b>${c.reqCal}</b></span><span class="cq-plus">+</span><span>🎓 Matrículas: <b>${c.reqMat}</b></span></div></div><div class="cq-chips">${chips(key)}</div></div>`; };
     const sinMatriz = (cu.sinMatriz || []).length ? `<div class="cq-note">Sin cuadrante este mes: ${(cu.sinMatriz || []).map(nombreCorto).join(', ')}</div>` : '';
 
     // Calidad del equipo (pauta) + focos de acción
@@ -2791,11 +2837,11 @@
       <section class="rk-section" data-capturable>
         ${imgHeadHTML()}
         <div class="rk-title">🧭 Así nos miden: cuadrantes <small>calidad de llamada × avance de matrículas</small>${btnImgHTML('', 'Equipo CGO Distancia')}</div>
-        <div class="cq-axis-top">Gestión alta (Q1/Q2 de matrículas) ↑</div>
+        <div class="cq-axis-top">↑ Más matrículas (Cuartil 1 o 2)</div>
         <div class="cq-grid">${cell('amarillo')}${cell('verde')}${cell('rojo')}${cell('naranja')}</div>
-        <div class="cq-axis-bottom"><span>← Atención por fortalecer (Q3/Q4 de calidad)</span><span>Atención alta (Q1/Q2 de calidad) →</span></div>
+        <div class="cq-axis-bottom"><span>← Calidad en Cuartil 3 o 4</span><span>Calidad en Cuartil 1 o 2 →</span></div>
         ${sinMatriz}
-        <div class="rk-rule">Calidad = promedio de tus llamadas evaluadas: Q1 ≥ 95% · Q2 85–94% · Q3 75–84% · Q4 ≤ 74%. ${matRule}</div>
+        ${tablaCuartilesHTML(eq)}
         ${imgFootHTML()}
       </section>
       <section class="rk-section" data-capturable>
@@ -2852,6 +2898,49 @@
     delete db.fotos[name];
     persistState(); renderFotosAdmin(); renderAtencion();
   }
+
+  // ===================== AVISO DE VERSIÓN NUEVA (pestañas abiertas todo el día) =====================
+  // Un asesor puede dejar la página abierta horas: sin recargar nunca vería lo nuevo. Cada 5 minutos
+  // (y al volver a la pestaña) se pregunta a GitHub, con una consulta liviana (HEAD), si el archivo
+  // publicado cambió; si cambió, se descarga una vez para confirmar que trae otra DATA_VERSION y se
+  // muestra el aviso de arriba. "Actualizar ahora" abre la versión nueva saltando la caché y la aplica.
+  let versionRemotaNueva = false;
+  let vigiaUltimaFecha = null, vigiaRevisando = false;
+  function urlSinCache() { return location.pathname + '?v=' + Date.now(); }
+  async function revisarVersionPublicada() {
+    if (versionRemotaNueva || vigiaRevisando || !/^https?:$/.test(location.protocol)) return;
+    vigiaRevisando = true;
+    try {
+      const h = await fetch(urlSinCache(), { method: 'HEAD', cache: 'no-store' });
+      const lm = h.ok ? Date.parse(h.headers.get('last-modified') || '') : NaN;
+      if (isNaN(lm)) return;
+      const base = vigiaUltimaFecha !== null ? vigiaUltimaFecha : Date.parse(document.lastModified);
+      if (!isNaN(base) && lm <= base + 60000) return;   // el archivo no cambió desde que se abrió
+      vigiaUltimaFecha = lm;
+      const txt = await (await fetch(urlSinCache(), { cache: 'no-store' })).text();
+      const m = txt.match(/const DATA_VERSION = "([^"]+)"/);
+      if (m && m[1] !== DATA_VERSION) {
+        versionRemotaNueva = true;
+        const banner = document.getElementById('updateBanner');
+        if (banner) {
+          const msg = banner.querySelector('span'); if (msg) msg.textContent = 'Se publicó una versión nueva de la Propuesta de Valor.';
+          banner.style.display = 'flex';
+        }
+      }
+    } catch (e) { /* sin conexión: se reintenta en la próxima vuelta */ }
+    finally { vigiaRevisando = false; }
+  }
+  function actualizarAhora() {
+    if (versionRemotaNueva) {
+      try { sessionStorage.setItem('cgo_auto_update', '1'); } catch (e) {}
+      location.replace(urlSinCache() + location.hash);
+    } else {
+      applyUpdate();
+    }
+  }
+  setTimeout(revisarVersionPublicada, 20000);
+  setInterval(revisarVersionPublicada, 5 * 60 * 1000);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') revisarVersionPublicada(); });
 
   // ===================== TÉCNICA DE VENTA (HABILIDADES DESBLOQUEADAS) =====================
   // Si el supervisor conectó el Google Sheet (pestaña TECNICAS) y el asesor eligió
@@ -3053,7 +3142,7 @@
     const filterBarClone = clone.querySelector('#filterBarPropuesta');
     if (filterBarClone) { filterBarClone.style.display = ''; filterBarClone.removeAttribute('open'); }
     const bannerClone = clone.querySelector('#updateBanner');
-    if (bannerClone) bannerClone.style.display = 'none';
+    if (bannerClone) { bannerClone.style.display = 'none'; const bm = bannerClone.querySelector('span'); if (bm) bm.textContent = 'Hay una versión más reciente de esta Propuesta de Valor.'; }
     // El archivo publicado siempre abre en modo lectura y con la fila de búsqueda visible.
     clone.querySelector('body').classList.remove('edit-mode');
     const adminBtnClone = clone.querySelector('#btnModPublicar'); if (adminBtnClone) adminBtnClone.classList.remove('active');
