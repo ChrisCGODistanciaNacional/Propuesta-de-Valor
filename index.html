@@ -599,6 +599,23 @@
   @media (max-width: 640px) { .cq-tabla { font-size: 12px; } .cq-tabla th, .cq-tabla td { padding: 6px 4px; } }
   .cq-tabla .cq-short { display: none; }
   @media (max-width: 640px) { .cq-tabla .cq-long { display: none; } .cq-tabla .cq-short { display: inline; } }
+
+  /* ===== Ventana "Hay una versión nueva" (bloquea la página hasta actualizar) ===== */
+  .vm-overlay { position: fixed; inset: 0; z-index: 9999; background: rgba(9,26,51,0.72); backdrop-filter: blur(3px); display: flex; align-items: center; justify-content: center; padding: 16px; animation: vmFade .25s ease-out; }
+  .vm-card { background: #FFFFFF; color: var(--navy); font-family: 'Lexend', 'Segoe UI', system-ui, sans-serif; width: 100%; max-width: 400px; border-radius: 16px; padding: 28px 24px 22px; text-align: center; box-shadow: 0 24px 60px rgba(9,26,51,0.45); border-top: 5px solid var(--gold); animation: vmPop .3s cubic-bezier(.2,.9,.3,1.2); }
+  .vm-icon { width: 60px; height: 60px; margin: 0 auto 12px; border-radius: 50%; background: var(--navy); color: var(--gold); font-size: 28px; display: flex; align-items: center; justify-content: center; }
+  .vm-card h2 { margin: 0 0 8px; font-size: 20px; font-weight: 700; color: var(--navy); }
+  .vm-card p { margin: 0 0 18px; font-size: 14.5px; line-height: 1.55; color: #3D4B63; }
+  .vm-btn { width: 100%; border: none; border-radius: 999px; background: var(--navy); color: #fff; font-family: inherit; font-size: 15px; font-weight: 700; padding: 13px 18px; cursor: pointer; transition: transform .15s, box-shadow .15s; }
+  .vm-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(9,26,51,0.3); }
+  .vm-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .vm-btn .vm-arrow { color: var(--gold); }
+  .vm-note { display: block; margin-top: 12px; font-size: 12px; color: #3D4B63; }
+  .vm-skip { margin-top: 10px; background: none; border: none; color: #3D4B63; font-family: inherit; font-size: 12.5px; text-decoration: underline; cursor: pointer; }
+  body.vm-lock { overflow: hidden !important; }
+  @keyframes vmFade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes vmPop { from { opacity: 0; transform: translateY(14px) scale(.96); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .vm-overlay, .vm-card { animation: none; } }
   .capturing [contenteditable="true"] { outline: none !important; background: transparent !important; }
 
   .objecion-card { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--bad); border-radius: var(--r-card); padding: 18px; margin-bottom: 14px; }
@@ -1000,7 +1017,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-15T13:53:23.000Z";
+  const DATA_VERSION = "2026-10-15T14:09:27.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -2906,6 +2923,40 @@
   // muestra el aviso de arriba. "Actualizar ahora" abre la versión nueva saltando la caché y la aplica.
   let versionRemotaNueva = false;
   let vigiaUltimaFecha = null, vigiaRevisando = false;
+  // Ventana "Hay una versión nueva": aparece al abrir una copia guardada más antigua o cuando el vigía
+  // detecta que se publicó otra versión. Bloquea la página hasta pulsar "Actualizar versión"; solo el
+  // supervisor en modo edición puede posponerla (para no perder cambios que aún no exportó).
+  function mostrarAvisoVersion() {
+    if (document.getElementById('versionModal')) return;
+    const enEdicion = !!(editMode);
+    const ov = document.createElement('div');
+    ov.id = 'versionModal';
+    ov.className = 'vm-overlay';
+    ov.setAttribute('role', 'dialog');
+    ov.setAttribute('aria-modal', 'true');
+    ov.setAttribute('aria-labelledby', 'vmTitle');
+    ov.innerHTML = '<div class="vm-card">'
+      + '<div class="vm-icon" aria-hidden="true">✨</div>'
+      + '<h2 id="vmTitle">¡Hay una versión nueva!</h2>'
+      + '<p>Se publicaron cambios en la Propuesta de Valor. Actualiza para trabajar con la información más reciente.</p>'
+      + '<button type="button" class="vm-btn" onclick="actualizarAhora()">Actualizar versión <span class="vm-arrow">→</span></button>'
+      + '<span class="vm-note">Toma un segundo. Tu nombre y tu diagnóstico se mantienen.</span>'
+      + (enEdicion ? '<button type="button" class="vm-skip" onclick="cerrarAvisoVersion()">Ahora no: estoy en modo edición y aún no exporto mis cambios</button>' : '')
+      + '</div>';
+    document.body.appendChild(ov);
+    document.body.classList.add('vm-lock');
+    setTimeout(function () { const b = ov.querySelector('.vm-btn'); if (b) b.focus(); }, 60);
+    // Sin modo edición no hay forma de seguir sin actualizar: el foco se queda dentro de la ventana.
+    ov.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { e.stopPropagation(); if (!enEdicion) e.preventDefault(); }
+      if (e.key === 'Tab') { e.preventDefault(); const b = ov.querySelector('.vm-btn'); if (b) b.focus(); }
+    }, true);
+  }
+  function cerrarAvisoVersion() {
+    const ov = document.getElementById('versionModal');
+    if (ov) ov.remove();
+    document.body.classList.remove('vm-lock');
+  }
   function urlSinCache() { return location.pathname + '?v=' + Date.now(); }
   async function revisarVersionPublicada() {
     if (versionRemotaNueva || vigiaRevisando || !/^https?:$/.test(location.protocol)) return;
@@ -2921,11 +2972,7 @@
       const m = txt.match(/const DATA_VERSION = "([^"]+)"/);
       if (m && m[1] !== DATA_VERSION) {
         versionRemotaNueva = true;
-        const banner = document.getElementById('updateBanner');
-        if (banner) {
-          const msg = banner.querySelector('span'); if (msg) msg.textContent = 'Se publicó una versión nueva de la Propuesta de Valor.';
-          banner.style.display = 'flex';
-        }
+        mostrarAvisoVersion();
       }
     } catch (e) { /* sin conexión: se reintenta en la próxima vuelta */ }
     finally { vigiaRevisando = false; }
@@ -3145,6 +3192,8 @@
     if (bannerClone) { bannerClone.style.display = 'none'; const bm = bannerClone.querySelector('span'); if (bm) bm.textContent = 'Hay una versión más reciente de esta Propuesta de Valor.'; }
     // El archivo publicado siempre abre en modo lectura y con la fila de búsqueda visible.
     clone.querySelector('body').classList.remove('edit-mode');
+    clone.querySelector('body').classList.remove('vm-lock');
+    const vmClone = clone.querySelector('#versionModal'); if (vmClone) vmClone.remove();
     const adminBtnClone = clone.querySelector('#btnModPublicar'); if (adminBtnClone) adminBtnClone.classList.remove('active');
     const hrbClone = clone.querySelector('#headerRowBottom'); if (hrbClone) hrbClone.style.display = '';
     const adminInfoClone = clone.querySelector('#adminInfo'); if (adminInfoClone) adminInfoClone.innerHTML = 'Cargando...';
@@ -3216,10 +3265,7 @@
     renderAllViews();
     updateHeaderCount();
     renderAdvisorOptions();
-    if (pendingUpdateNotice) {
-      const banner = document.getElementById('updateBanner');
-      if (banner) banner.style.display = 'flex';
-    }
+    if (pendingUpdateNotice) mostrarAvisoVersion();
     applyEditMode();
     // El diagnóstico (data.json) se pide en segundo plano: cuando llega, se
     // refresca la lista de asesores, el diagnóstico y las técnicas dominadas.
