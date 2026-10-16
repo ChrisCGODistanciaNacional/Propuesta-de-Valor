@@ -32,34 +32,34 @@
  },
  "Judith Rocio Vila Incaroca|paso3": {
   "stage": "paso3",
+  "base": "b4251d849143",
+  "conclusion": "Explicaste bien los pasos de admisión, la documentación y el certificado de estudios. Falta desglosar el importe total (admisión, matrícula, primera pensión, seguro), aclarar que la evaluación virtual no es de conocimientos y confirmar la fecha vigente de Nexus.",
   "tecId": "tec_10",
   "tipo": "speech",
-  "porQue": "Ya tienes la necesidad de Jordi y los beneficios conectados a ella: lo que faltó fue convertir cada acuerdo en un pequeño \"sí\" y cerrar con una cita, no con \"me escribes\".",
-  "speech": "Jordi, me dijiste qué era lo más importante para ti, y acabamos de ver cómo la carrera lo cubre. ¿Hasta aquí te hace sentido?\n\nPerfecto. Y sobre la inversión, ¿te acomoda la forma de pago que te expliqué? Entonces ya tenemos dos cosas claras.\n\nTe envío el resumen por WhatsApp ahora mismo, pero no lo dejamos en el aire: ¿te llamo mañana a las 6 de la tarde para confirmar tu postulación, o prefieres en la mañana?",
-  "base": "cf1d8694e928",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Jordi, me dijiste qué era lo más importante para ti, y acabamos de ver cómo la carrera lo cubre. ¿Hasta aquí te hace sentido?"
+    "texto": "Señora [nombre], le explico el pago inicial por partes: incluye admisión, matrícula, seguro y la primera cuota, y se lo detallo concepto por concepto en el mensaje que le envío. ¿Va quedando claro?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, la verdad sí. Me gustó lo de las clases grabadas, porque con mi turno no podría ir a una universidad."
+    "texto": "Sí, pero no sabía que había varios conceptos."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto. Y sobre la inversión, ¿te acomoda la forma de pago que te expliqué? Entonces ya tenemos dos cosas claras."
+    "texto": "Por eso lo separo. Después viene la evaluación de ingreso: no es un examen de conocimientos, Enrique la rinde de forma virtual desde una computadora o laptop con cámara. ¿Cuenta con ese equipo?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, me acomoda. Igual quiero revisar bien la información; mándamela por WhatsApp y te aviso."
+    "texto": "Sí, tiene laptop con cámara. ¿Y cuándo empiezan las clases?"
    },
    {
     "quien": "asesor",
-    "texto": "Te envío el resumen por WhatsApp ahora mismo, pero no lo dejamos en el aire: ¿te llamo mañana a las 6 de la tarde para confirmar tu postulación, o prefieres en la mañana?"
+    "texto": "Las clases regulares inician en marzo de 2027; el curso Nexus es un adelanto y confirmo con usted su fecha vigente antes de comunicársela. ¿Le parece si le envío hoy el detalle de pagos y lo revisamos mañana a las 5:00 p. m.?"
    }
   ],
-  "conclusion": "Identificaste bien la necesidad de Jordi y conectaste beneficios con ella, pero no validaste su intención con cierres parciales ni dejaste una hora concreta de seguimiento: el siguiente paso quedó en sus manos."
+  "speech": "Señora [nombre], le explico el pago inicial por partes: incluye admisión, matrícula, seguro y la primera cuota, y se lo detallo concepto por concepto en el mensaje que le envío. ¿Va quedando claro?\n\nPor eso lo separo. Después viene la evaluación de ingreso: no es un examen de conocimientos, Enrique la rinde de forma virtual desde una computadora o laptop con cámara. ¿Cuenta con ese equipo?\n\nLas clases regulares inician en marzo de 2027; el curso Nexus es un adelanto y confirmo con usted su fecha vigente antes de comunicársela. ¿Le parece si le envío hoy el detalle de pagos y lo revisamos mañana a las 5:00 p. m.?",
+  "porQue": "Explicar la inversión por partes y validar cada una con un cierre parcial evita confusiones de pago y deja claro el proceso."
  },
  "Ana Maria Padilla Parra|paso3": {
   "stage": "paso3",
@@ -94,34 +94,34 @@
  },
  "Lucero Ximena Hujaynatis Jacay|paso3": {
   "stage": "paso3",
-  "base": "8fe4b3f2dd8d",
-  "conclusion": "Explicaste bien la flexibilidad de Distancia y el HyFlex para quien vive en Pisco. Detalla toda la inversión, aclara que la evaluación no es examen de conocimientos y confirma la vigencia de las promociones antes de ofrecerlas.",
-  "tecId": "tec_14",
+  "base": "636d366d7dc6",
+  "conclusion": "Explicaste bien la flexibilidad y las clases grabadas para su horario. Al hablar de la inversión nombraste matrícula y pensión pero diste un total sin desglosar seguro y examen médico; verifica además la vigencia de la campaña antes de comunicarla.",
+  "tecId": "tec_10",
   "tipo": "speech",
-  "porQue": "Preguntar su presupuesto antes de argumentar con descuentos descubre su límite real y evita ofrecer beneficios que ya no están autorizados.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Elba, entiendo que conversarás con tu esposo. Para ayudarte con información precisa: ¿qué presupuesto mensual podrían destinar a tus estudios?"
+    "texto": "Juan, te detallo el pago inicial concepto por concepto: matrícula S/250, la primera pensión S/560, además del seguro y los demás conceptos del ingreso. Lo ves completo en el mensaje que te envío. ¿Va claro?"
    },
    {
     "quien": "cliente",
-    "texto": "No lo hemos hablado todavía, pero tendría que ser algo moderado."
+    "texto": "Sí, pero el total me parece más de lo que pensé."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto. Te detallo el pago inicial completo: admisión, matrícula, seguro y primera cuota, más el examen médico. Y la evaluación de ingreso es virtual, con PC o laptop con cámara, no es un examen de conocimientos. Las promociones las confirmo con la campaña vigente antes de comprometerme contigo."
+    "texto": "Por eso lo separo, Juan, para que veas qué incluye cada parte. Y antes de hablarte de descuentos, confirmo que estén vigentes, porque no quiero darte información desactualizada. ¿Te parece?"
    },
    {
     "quien": "cliente",
-    "texto": "Me parece bien que me lo digas claro."
+    "texto": "Sí, confírmalo."
    },
    {
     "quien": "asesor",
-    "texto": "Con esa información tú y tu esposo deciden con tranquilidad. ¿Te envío el detalle por WhatsApp para que lo revisen hoy?"
+    "texto": "Listo, lo valido hoy y te escribo. También recuerda que la evaluación de ingreso no es un examen de conocimientos, es virtual y con cámara. ¿Te llamo mañana a las 11:00 a. m. con todo confirmado?"
    }
   ],
-  "speech": "Elba, entiendo que conversarás con tu esposo. Para ayudarte con información precisa: ¿qué presupuesto mensual podrían destinar a tus estudios?\n\nPerfecto. Te detallo el pago inicial completo: admisión, matrícula, seguro y primera cuota, más el examen médico. Y la evaluación de ingreso es virtual, con PC o laptop con cámara, no es un examen de conocimientos. Las promociones las confirmo con la campaña vigente antes de comprometerme contigo.\n\nCon esa información tú y tu esposo deciden con tranquilidad. ¿Te envío el detalle por WhatsApp para que lo revisen hoy?"
+  "speech": "Juan, te detallo el pago inicial concepto por concepto: matrícula S/250, la primera pensión S/560, además del seguro y los demás conceptos del ingreso. Lo ves completo en el mensaje que te envío. ¿Va claro?\n\nPor eso lo separo, Juan, para que veas qué incluye cada parte. Y antes de hablarte de descuentos, confirmo que estén vigentes, porque no quiero darte información desactualizada. ¿Te parece?\n\nListo, lo valido hoy y te escribo. También recuerda que la evaluación de ingreso no es un examen de conocimientos, es virtual y con cámara. ¿Te llamo mañana a las 11:00 a. m. con todo confirmado?",
+  "porQue": "Desglosar la inversión por partes con cierres parciales evita dudas de pago y da seguridad al prospecto."
  },
  "Milagros Torres Santos|paso2": {
   "stage": "paso2",
@@ -191,38 +191,34 @@
  },
  "Edward Nelson Gonzales Villaneda|paso3": {
   "stage": "paso3",
-  "tecId": "tec_10",
+  "base": "251bd816bcd7",
+  "conclusion": "Explicaste los documentos para convalidar y orientaste cómo recuperar su récord de notas. Falta completar con costos y proceso de admisión, y evitar que avance con expectativas sin confirmar.",
+  "tecId": "tec_08",
   "tipo": "speech",
-  "porQue": "Resolviste bien duración y costo; faltó validar intención después de cada respuesta: los pequeños sí convierten cada alternativa en un paso hacia el proceso y evitan el seguimiento abierto.",
-  "speech": "[nombre], entonces con los ciclos de verano adelantas cursos y terminas antes de lo que pensabas. Con eso, ¿la duración ya te cuadra?\n\nSobre la inversión, ya vimos que se paga por partes y no todo de golpe, ¿te hace sentido así? Y para que no te tome por sorpresa: el proceso de admisión no tiene examen de conocimientos; es una evaluación virtual, con cámara, para conocer tus motivaciones y confirmar que la carrera es para ti.\n\nComo ya te cuadran la duración y la inversión, demos el siguiente paso: ¿te llamo mañana a las 10 o a las 4 para dejar iniciado tu proceso?",
-  "base": "455aa6bb3a6c",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "Me preocupa que la carrera me tome muchos años; yo quiero terminar rápido."
-   },
-   {
     "quien": "asesor",
-    "texto": "[nombre], entonces con los ciclos de verano adelantas cursos y terminas antes de lo que pensabas. Con eso, ¿la duración ya te cuadra?"
+    "texto": "[nombre], algo importante: cuántos cursos se reconocen lo define la evaluación de tus sílabos y certificado, no se puede asegurar antes. ¿Va claro?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, así sí. Lo otro era el costo, pensé que había que pagar todo junto."
+    "texto": "Sí, pero igual quisiera una idea del costo y del proceso."
    },
    {
     "quien": "asesor",
-    "texto": "Sobre la inversión, ya vimos que se paga por partes y no todo de golpe, ¿te hace sentido así? Y para que no te tome por sorpresa: el proceso de admisión no tiene examen de conocimientos; es una evaluación virtual, con cámara, para conocer tus motivaciones y confirmar que la carrera es para ti."
+    "texto": "Claro. El pago inicial incluye admisión, matrícula, seguro y la primera cuota, y te lo detallo en un mensaje. La evaluación de ingreso es virtual y con cámara, no es un examen de conocimientos. ¿Qué parte quieres revisar primero?"
    },
    {
     "quien": "cliente",
-    "texto": "Ya, me queda claro. Igual lo quiero evaluar un poco más y me comunico contigo."
+    "texto": "El proceso de admisión."
    },
    {
     "quien": "asesor",
-    "texto": "Como ya te cuadran la duración y la inversión, demos el siguiente paso: ¿te llamo mañana a las 10 o a las 4 para dejar iniciado tu proceso?"
+    "texto": "Te lo explico paso a paso por WhatsApp, [nombre], y mientras consigues tus documentos ya vas con claridad del proceso. ¿Te parece que lo revisemos hoy?"
    }
   ],
-  "conclusion": "Resolviste bien duración y costo, pero sin validar intención en cada avance; faltó explicar el proceso de admisión completo (evaluación virtual con cámara, sin examen) y el seguimiento quedó en \"me comunico después\"."
+  "speech": "[nombre], algo importante: cuántos cursos se reconocen lo define la evaluación de tus sílabos y certificado, no se puede asegurar antes. ¿Va claro?\n\nClaro. El pago inicial incluye admisión, matrícula, seguro y la primera cuota, y te lo detallo en un mensaje. La evaluación de ingreso es virtual y con cámara, no es un examen de conocimientos. ¿Qué parte quieres revisar primero?\n\nTe lo explico paso a paso por WhatsApp, [nombre], y mientras consigues tus documentos ya vas con claridad del proceso. ¿Te parece que lo revisemos hoy?",
+  "porQue": "Aclarar desde el inicio que la convalidación depende de la evaluación y explicar costos y admisión evita expectativas sin sustento."
  },
  "Jorge Luis Valencia Cardenas|paso3": {
   "stage": "paso3",
@@ -288,34 +284,34 @@
  },
  "Anyhela Kelly Ordoñez Chavez|paso4": {
   "stage": "paso4",
-  "base": "74a004c5ad1e",
-  "conclusion": "Mantuviste la continuidad: acordaron retomar el lunes, enviarás la propuesta por tu WhatsApp corporativo y ofreciste la encuesta. Falta un compromiso concreto hacia la preinscripción y una hora específica para el seguimiento.",
-  "tecId": "tec_10",
+  "base": "9b19259cce1e",
+  "conclusion": "Consultaste cuándo decidiría y ofreciste enviar información por WhatsApp. Valida el plazo que él indicó (martes) en vez de proponer llamarlo el lunes, acuerda fecha y hora y deriva a la encuesta de satisfacción.",
+  "tecId": "tec_16",
   "tipo": "speech",
-  "porQue": "Un compromiso pequeño, como revisar sus documentos, y una hora fija para llamar evita que el contacto quede abierto.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Rocío, quedamos en que me das una respuesta el lunes. Para avanzar, ¿cuándo podrías revisar tus documentos académicos?"
+    "texto": "Juan, me dijiste que podrías decidir el martes. ¿Te parece si te llamo ese día para ver tu decisión?"
    },
    {
     "quien": "cliente",
-    "texto": "El sábado los busco."
+    "texto": "Sí, el martes."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto. Y si te parece, el lunes a las 9:00 a. m. te llamo para saber cómo te fue."
+    "texto": "Perfecto. ¿A qué hora te queda mejor, en la mañana o en la tarde?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, a esa hora puedo."
+    "texto": "En la tarde, a las 5."
    },
    {
     "quien": "asesor",
-    "texto": "Listo, Rocío. Te reenvío la propuesta por mi WhatsApp corporativo y el lunes a las 9:00 a. m. te llamo para ver si iniciamos tu preinscripción. ¿Estamos?"
+    "texto": "Quedamos el martes a las 5:00 p. m., Juan. Antes revisas la malla y reúnes tus documentos. Guarda mi contacto de WhatsApp y, antes de despedirme, te transfiero a una breve encuesta de satisfacción."
    }
   ],
-  "speech": "Rocío, quedamos en que me das una respuesta el lunes. Para avanzar, ¿cuándo podrías revisar tus documentos académicos?\n\nPerfecto. Y si te parece, el lunes a las 9:00 a. m. te llamo para saber cómo te fue.\n\nListo, Rocío. Te reenvío la propuesta por mi WhatsApp corporativo y el lunes a las 9:00 a. m. te llamo para ver si iniciamos tu preinscripción. ¿Estamos?"
+  "speech": "Juan, me dijiste que podrías decidir el martes. ¿Te parece si te llamo ese día para ver tu decisión?\n\nPerfecto. ¿A qué hora te queda mejor, en la mañana o en la tarde?\n\nQuedamos el martes a las 5:00 p. m., Juan. Antes revisas la malla y reúnes tus documentos. Guarda mi contacto de WhatsApp y, antes de despedirme, te transfiero a una breve encuesta de satisfacción.",
+  "porQue": "Respetar el plazo del prospecto y acordar día y hora exactos evita confusión y da un seguimiento claro."
  },
  "Patricia Roxana Mercado Zacarias|paso3": {
   "stage": "paso3",
@@ -608,10 +604,34 @@
  },
  "Judith Rocio Vila Incaroca|paso1": {
   "stage": "paso1",
-  "base": "36172db48008",
-  "conclusion": "Tú detectas su necesidad clave (minería 14x7 y horarios incompatibles), personalizas con horarios nocturnos y flexibilidad, conectas su experiencia con Ingeniería Ambiental, das la inversión completa y derivas a la encuesta.",
-  "tecId": null,
-  "tipo": "speech"
+  "base": "e74c9af75815",
+  "conclusion": "Iniciaste a tiempo, te presentaste como asesora de Universidad Continental y retomaste el WhatsApp previo, identificando que hablabas con la madre de Enrique. Te falta conocer su nombre y cómo participa en la decisión.",
+  "tecId": "tec_12",
+  "tipo": "speech",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Buenas tardes, soy Judith, asesora educativa de la Universidad Continental. Le escribí por WhatsApp sobre Ingeniería de Sistemas e Informática para Enrique. ¿Con quién tengo el gusto de hablar?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Con la mamá de Enrique, soy [nombre]."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Mucho gusto, señora [nombre]. Para ayudarles mejor, ¿usted acompaña a Enrique en la decisión de la universidad, o prefiere que también converse con él directamente?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Yo lo apoyo, pero la decisión la toma él, quiero estar informada."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Perfecto, señora [nombre]. Entonces le explico lo principal a usted y coordinamos con Enrique el siguiente paso. ¿Le parece si empiezo por contarle cómo es el proceso de admisión?"
+   }
+  ],
+  "speech": "Buenas tardes, soy Judith, asesora educativa de la Universidad Continental. Le escribí por WhatsApp sobre Ingeniería de Sistemas e Informática para Enrique. ¿Con quién tengo el gusto de hablar?\n\nMucho gusto, señora [nombre]. Para ayudarles mejor, ¿usted acompaña a Enrique en la decisión de la universidad, o prefiere que también converse con él directamente?\n\nPerfecto, señora [nombre]. Entonces le explico lo principal a usted y coordinamos con Enrique el siguiente paso. ¿Le parece si empiezo por contarle cómo es el proceso de admisión?",
+  "porQue": "Preguntar quién participa en la decisión y cómo prefiere avanzar devuelve el control a la familia y te permite coordinar con Enrique."
  },
  "Ana Maria Padilla Parra|paso2": {
   "stage": "paso2",
@@ -646,34 +666,34 @@
  },
  "Lucero Ximena Hujaynatis Jacay|paso4": {
   "stage": "paso4",
-  "base": "dbe08abff67b",
-  "conclusion": "Enviaste la información, lograste que guarde tu contacto y ofreciste la encuesta. Aunque acordaron retomar el lunes, no fijaste hora y luego supiste de sus citas médicas; acuerda un día y hora que le acomoden.",
+  "base": "20b53e2a4c7e",
+  "conclusion": "Consultaste si la inversión se ajusta a su presupuesto y confirmaste el envío por WhatsApp. Cuando Juan dice que responderá mañana, fija una hora concreta y comprométete a llamar, y deriva a la encuesta al terminar.",
   "tecId": "tec_16",
   "tipo": "speech",
-  "porQue": "Fijar un día y hora ajustados a su disponibilidad convierte 'te aviso' en un compromiso real para saber qué decidió con su esposo.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Elba, quedamos en retomar la conversación cuando hables con tu esposo. ¿Qué día de esta semana te queda mejor para que te llame?"
+    "texto": "Juan, ¿cuándo crees que podrías tomar la decisión?"
    },
    {
     "quien": "cliente",
-    "texto": "El lunes y el martes tengo citas médicas, mejor otro día."
+    "texto": "Mañana te respondo."
    },
    {
     "quien": "asesor",
-    "texto": "Gracias por avisarme. ¿Te parece el miércoles? ¿A qué hora estarías más tranquila para conversar?"
+    "texto": "Perfecto. Para no dejarlo abierto, ¿te parece si yo te llamo mañana a las 12:00 p. m., antes de que entres a trabajar, y revisamos tu decisión?"
    },
    {
     "quien": "cliente",
-    "texto": "El miércoles por la tarde, como a las 4."
+    "texto": "Sí, a esa hora puedo."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, el miércoles a las 4:00 p. m. te llamo para conocer lo que conversaron y resolver sus dudas. Ya tienes mi contacto en WhatsApp por cualquier cosa antes. ¿Te parece bien?"
+    "texto": "Quedamos mañana a las 12:00 p. m., Juan. Guarda mi contacto de WhatsApp por si te surge algo. Antes de despedirme, te transfiero a una breve encuesta de satisfacción."
    }
   ],
-  "speech": "Elba, quedamos en retomar la conversación cuando hables con tu esposo. ¿Qué día de esta semana te queda mejor para que te llame?\n\nGracias por avisarme. ¿Te parece el miércoles? ¿A qué hora estarías más tranquila para conversar?\n\nPerfecto, el miércoles a las 4:00 p. m. te llamo para conocer lo que conversaron y resolver sus dudas. Ya tienes mi contacto en WhatsApp por cualquier cosa antes. ¿Te parece bien?"
+  "speech": "Juan, ¿cuándo crees que podrías tomar la decisión?\n\nPerfecto. Para no dejarlo abierto, ¿te parece si yo te llamo mañana a las 12:00 p. m., antes de que entres a trabajar, y revisamos tu decisión?\n\nQuedamos mañana a las 12:00 p. m., Juan. Guarda mi contacto de WhatsApp por si te surge algo. Antes de despedirme, te transfiero a una breve encuesta de satisfacción.",
+  "porQue": "Fijar día y hora de la próxima llamada convierte un 'te aviso' en un seguimiento ordenado."
  },
  "Milagros Torres Santos|paso3": {
   "stage": "paso3",
@@ -691,10 +711,34 @@
  },
  "Edward Nelson Gonzales Villaneda|paso1": {
   "stage": "paso1",
-  "base": "39e7895fbfa4",
-  "conclusion": "Tú identificas que busca acortar su carrera, le propones ciclos de verano, explicas ordenadamente la inversión, usas su nombre y aseguras el envío de información por WhatsApp.",
-  "tecId": null,
-  "tipo": "speech"
+  "base": "8cb9b0494a38",
+  "conclusion": "Te presentaste bien, retomaste lo enviado y confirmaste el interés por Ingeniería Industrial. Usa el nombre del prospecto en toda la llamada, mantén un lenguaje siempre profesional y verifica la expresión inapropiada cerca del minuto 3:50.",
+  "tecId": "tec_12",
+  "tipo": "speech",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Hola, [nombre], soy Edward de la Universidad Continental. Retomo lo que te envié sobre Ingeniería Industrial en modalidad Distancia. ¿Qué te gustaría aclarar hoy?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Quiero saber si me convalidan cursos."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Claro, [nombre]. Eso lo vemos con tus documentos académicos. ¿Prefieres que empecemos por cómo es la evaluación de convalidación o por las clases?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Primero la convalidación."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Perfecto, [nombre]. Te explico qué documentos necesitas y cómo se revisan. ¿Te parece bien?"
+   }
+  ],
+  "speech": "Hola, [nombre], soy Edward de la Universidad Continental. Retomo lo que te envié sobre Ingeniería Industrial en modalidad Distancia. ¿Qué te gustaría aclarar hoy?\n\nClaro, [nombre]. Eso lo vemos con tus documentos académicos. ¿Prefieres que empecemos por cómo es la evaluación de convalidación o por las clases?\n\nPerfecto, [nombre]. Te explico qué documentos necesitas y cómo se revisan. ¿Te parece bien?",
+  "porQue": "Hablarle por su nombre y devolverle la elección de cómo avanzar personaliza la atención y mantiene un tono profesional."
  },
  "Jorge Luis Valencia Cardenas|paso1": {
   "stage": "paso1",
@@ -760,34 +804,34 @@
  },
  "Anyhela Kelly Ordoñez Chavez|paso1": {
   "stage": "paso1",
-  "base": "33cb54463db7",
-  "conclusion": "Bien: te presentaste con tu nombre y Universidad Continental y retomaste la conversación de WhatsApp preguntando si Rocío tenía dudas. Falta usar su nombre durante toda la llamada, no solo al inicio y al cierre.",
+  "base": "fe89f9a9e538",
+  "conclusion": "Iniciaste a tiempo, mencionaste la universidad y confirmaste el interés de Juan en Ingeniería Ambiental. Preséntate con tu nombre desde el inicio y usa el nombre de Juan durante toda la conversación.",
   "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Usar su nombre a lo largo de la conversación y darle opciones refuerza la cercanía y la sensación de control.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Hola, Rocío, soy Anyhela de Universidad Continental. Te escribí por WhatsApp y te llamo para ver si te quedó alguna duda. ¿Tienes unos minutos?"
+    "texto": "Buenas tardes, soy Anyhela, asesora de la Universidad Continental. ¿Hablo con Juan?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, justo tenía una duda."
+    "texto": "Sí, soy yo."
    },
    {
     "quien": "asesor",
-    "texto": "Dime, Rocío. Cuéntame cuál es y la resolvemos."
+    "texto": "Mucho gusto, Juan. Te llamo por tu interés en Ingeniería Ambiental en modalidad Distancia. ¿Quieres empezar desde el primer ciclo o evaluar una convalidación?"
    },
    {
     "quien": "cliente",
-    "texto": "Si me alcanza el tiempo con mi trabajo."
+    "texto": "Evaluar convalidación, soy ingeniero geólogo."
    },
    {
     "quien": "asesor",
-    "texto": "Buena pregunta, Rocío. Veamos cómo organizarías tus horarios con las clases. ¿A qué hora sales de trabajar?"
+    "texto": "Perfecto, Juan. Entonces empecemos por tus estudios previos. ¿Te parece bien?"
    }
   ],
-  "speech": "Hola, Rocío, soy Anyhela de Universidad Continental. Te escribí por WhatsApp y te llamo para ver si te quedó alguna duda. ¿Tienes unos minutos?\n\nDime, Rocío. Cuéntame cuál es y la resolvemos.\n\nBuena pregunta, Rocío. Veamos cómo organizarías tus horarios con las clases. ¿A qué hora sales de trabajar?"
+  "speech": "Buenas tardes, soy Anyhela, asesora de la Universidad Continental. ¿Hablo con Juan?\n\nMucho gusto, Juan. Te llamo por tu interés en Ingeniería Ambiental en modalidad Distancia. ¿Quieres empezar desde el primer ciclo o evaluar una convalidación?\n\nPerfecto, Juan. Entonces empecemos por tus estudios previos. ¿Te parece bien?",
+  "porQue": "Presentarte por tu nombre y usar el suyo con una pregunta de preferencia crea cercanía y control desde el inicio."
  },
  "Patricia Roxana Mercado Zacarias|paso4": {
   "stage": "paso4",
@@ -1281,41 +1325,65 @@
  },
  "Lucero Ximena Hujaynatis Jacay|paso1": {
   "stage": "paso1",
-  "base": "ea6346cb06ae",
-  "conclusion": "Iniciaste a tiempo, confirmaste el interés de Elba por Psicología y usaste su nombre con trato cordial. Te faltó presentarte con tu nombre y Universidad Continental desde el inicio; lo hiciste recién durante la llamada.",
+  "base": "6ce7a829f244",
+  "conclusion": "Te presentaste con tu nombre y la universidad, retomaste lo enviado y confirmaste el interés de Juan en Contabilidad y Finanzas. Úsalo durante toda la conversación, no solo al inicio, para generar cercanía.",
   "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Una presentación completa con permiso para hablar da transparencia y control a la prospecto desde el primer momento.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Buenas tardes, Elba. Soy Lucero, asesora de Universidad Continental. Te llamo por tu consulta sobre Psicología. ¿Tienes unos minutos para conversar?"
+    "texto": "Hola, Juan, soy Lucero de la Universidad Continental. Retomo lo que te envié sobre Contabilidad y Finanzas en modalidad Distancia. ¿Qué dudas te quedaron?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, claro."
+    "texto": "Más que todo el horario, porque trabajo."
    },
    {
     "quien": "asesor",
-    "texto": "Gracias, Elba. Para orientarte bien, cuéntame: ¿qué estudios previos tienes y qué te gustaría lograr con Psicología?"
+    "texto": "Gracias, Juan. Como trabajas, quiero asegurarme de que la propuesta se ajuste a tu tiempo. ¿Prefieres que te cuente primero cómo son las clases o la inversión?"
    },
    {
     "quien": "cliente",
-    "texto": "Soy docente jubilada, tengo una maestría y quiero seguir formándome."
+    "texto": "Primero las clases."
    },
    {
     "quien": "asesor",
-    "texto": "Qué buen perfil, Elba. Con eso en mente te explico cómo funcionaría la modalidad Distancia para ti. ¿Empezamos?"
+    "texto": "Perfecto, Juan. Empiezo por las clases y luego vemos la inversión, así decides con todo claro. ¿Te parece bien?"
    }
   ],
-  "speech": "Buenas tardes, Elba. Soy Lucero, asesora de Universidad Continental. Te llamo por tu consulta sobre Psicología. ¿Tienes unos minutos para conversar?\n\nGracias, Elba. Para orientarte bien, cuéntame: ¿qué estudios previos tienes y qué te gustaría lograr con Psicología?\n\nQué buen perfil, Elba. Con eso en mente te explico cómo funcionaría la modalidad Distancia para ti. ¿Empezamos?"
+  "speech": "Hola, Juan, soy Lucero de la Universidad Continental. Retomo lo que te envié sobre Contabilidad y Finanzas en modalidad Distancia. ¿Qué dudas te quedaron?\n\nGracias, Juan. Como trabajas, quiero asegurarme de que la propuesta se ajuste a tu tiempo. ¿Prefieres que te cuente primero cómo son las clases o la inversión?\n\nPerfecto, Juan. Empiezo por las clases y luego vemos la inversión, así decides con todo claro. ¿Te parece bien?",
+  "porQue": "Llamarlo por su nombre y preguntar cómo prefiere avanzar le da control y personaliza la atención durante toda la llamada."
  },
  "Lucero Ximena Hujaynatis Jacay|paso2": {
   "stage": "paso2",
-  "base": "2420207216e7",
-  "conclusion": "Muy bien: identificaste que Elba es docente jubilada con maestría en Psicología Educativa, vive en Pisco y debe conversar con su esposo antes de decidir, lo que te dio todo su contexto académico, personal y económico.",
-  "tecId": null,
-  "tipo": "speech"
+  "base": "e94122904eca",
+  "conclusion": "Preguntaste por el horario laboral de Juan y detectaste el problema con las clases en vivo. Falta indagar su motivación, objetivos profesionales y qué influye en su decisión para sumar diferenciales más allá de las clases grabadas.",
+  "tecId": "tec_09",
+  "tipo": "speech",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Juan, dijiste que trabajas de 2:00 a 10:00 p. m. Cuéntame: ¿por qué quieres estudiar Contabilidad y Finanzas?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Quiero crecer en mi trabajo, ahora estoy en el área administrativa."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Entiendo, quieres crecer en tu empresa y para eso necesitas el título. ¿Qué pesa más para ti al elegir: el tiempo, el costo o el reconocimiento de la universidad?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "El tiempo y el costo, la verdad."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Gracias, Juan. Para tu tiempo, las clases quedan grabadas y las ves después de tu turno; además la carrera tiene certificaciones progresivas. ¿Quieres que te explique cómo se organiza el pago?"
+   }
+  ],
+  "speech": "Juan, dijiste que trabajas de 2:00 a 10:00 p. m. Cuéntame: ¿por qué quieres estudiar Contabilidad y Finanzas?\n\nEntiendo, quieres crecer en tu empresa y para eso necesitas el título. ¿Qué pesa más para ti al elegir: el tiempo, el costo o el reconocimiento de la universidad?\n\nGracias, Juan. Para tu tiempo, las clases quedan grabadas y las ves después de tu turno; además la carrera tiene certificaciones progresivas. ¿Quieres que te explique cómo se organiza el pago?",
+  "porQue": "Devolverle con sus palabras su meta profesional permite conectar al menos dos diferenciales con su necesidad real."
  },
  "Jorge Luis Valencia Cardenas|paso2": {
   "stage": "paso2",
@@ -1443,65 +1511,65 @@
  },
  "Anyhela Kelly Ordoñez Chavez|paso2": {
   "stage": "paso2",
-  "base": "f921e970cd1e",
-  "conclusion": "Supiste que Rocío estudió en un instituto hace unos diez años y trabaja hasta las 11:00 p. m. Falta saber qué carrera técnica hizo, qué documentos conserva, su motivación y cómo organizaría su tiempo.",
-  "tecId": "tec_14",
+  "base": "4ec24cae1809",
+  "conclusion": "Identificaste que Juan es ingeniero geólogo y busca convalidar. Falta profundizar en su motivación, qué espera del reconocimiento de cursos y qué determinará su decisión, para vincular los diferenciales con su necesidad.",
+  "tecId": "tec_09",
   "tipo": "speech",
-  "porQue": "Preguntar qué falta para decidir revela sus documentos, su motivación y su tiempo real, y orienta la convalidación.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Rocío, me dices que estudiaste en un instituto hace unos diez años. ¿Qué carrera técnica hiciste y qué documentos conservas, como certificados o notas?"
+    "texto": "Juan, ¿por qué quieres estudiar Ingeniería Ambiental después de Geológica?"
    },
    {
     "quien": "cliente",
-    "texto": "Estudié computación y todavía tengo mis certificados."
+    "texto": "Quiero ampliar mi perfil, hay más oportunidades en temas ambientales."
    },
    {
     "quien": "asesor",
-    "texto": "Qué bien. ¿Y qué te motiva hoy a continuar estudiando, más allá del trabajo?"
+    "texto": "Entiendo, quieres ampliar tu perfil. ¿Qué esperas del reconocimiento de cursos: ahorrar tiempo, costo o ambos?"
    },
    {
     "quien": "cliente",
-    "texto": "Quiero un título para mejorar mi puesto."
+    "texto": "Sobre todo tiempo."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces ese título es tu meta. Dime, ¿cómo organizarías tu tiempo después de tu trabajo para cumplir las actividades?"
+    "texto": "Gracias, Juan. Como el tiempo es clave, el proceso permite evaluar tus sílabos para ver qué cursos se reconocen y la modalidad Distancia con clases grabadas te da flexibilidad. ¿Te explico cómo se solicita la evaluación?"
    }
   ],
-  "speech": "Rocío, me dices que estudiaste en un instituto hace unos diez años. ¿Qué carrera técnica hiciste y qué documentos conservas, como certificados o notas?\n\nQué bien. ¿Y qué te motiva hoy a continuar estudiando, más allá del trabajo?\n\nEntonces ese título es tu meta. Dime, ¿cómo organizarías tu tiempo después de tu trabajo para cumplir las actividades?"
+  "speech": "Juan, ¿por qué quieres estudiar Ingeniería Ambiental después de Geológica?\n\nEntiendo, quieres ampliar tu perfil. ¿Qué esperas del reconocimiento de cursos: ahorrar tiempo, costo o ambos?\n\nGracias, Juan. Como el tiempo es clave, el proceso permite evaluar tus sílabos para ver qué cursos se reconocen y la modalidad Distancia con clases grabadas te da flexibilidad. ¿Te explico cómo se solicita la evaluación?",
+  "porQue": "Devolver con sus palabras motivación y expectativa permite relacionar diferenciales con lo que realmente decide."
  },
  "Anyhela Kelly Ordoñez Chavez|paso3": {
   "stage": "paso3",
-  "base": "36c2fc79b518",
-  "conclusion": "Respondiste bien su preocupación por el horario con flexibilidad, clases grabadas y asistencia no calificada. Evita decir que algunos terminan en 4 o 3.5 años sin aclarar condiciones, y completa costos y evaluación virtual.",
+  "base": "bdf042c832d5",
+  "conclusion": "Explicaste los documentos para convalidar y las ventajas de la modalidad. Evita decir hasta el 70 % de convalidación antes de una evaluación formal, orienta el siguiente paso con la malla de Ambiental y completa los costos y la evaluación de ingreso virtual con cámara.",
   "tecId": "tec_08",
   "tipo": "speech",
-  "porQue": "Aclarar las condiciones del adelanto de cursos evita una expectativa de duración que luego se rompa.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Rocío, sobre la duración: terminar antes depende de la disponibilidad de cursos, los prerrequisitos y la planificación académica, así que no es una fecha segura."
+    "texto": "Juan, para ser claro: cuántos cursos se reconocen lo define la evaluación de tus sílabos y certificado; no puedo asegurar un porcentaje. ¿Te parece?"
    },
    {
     "quien": "cliente",
-    "texto": "Ah, pensé que era un hecho."
+    "texto": "Entiendo. Necesito comparar las mallas."
    },
    {
     "quien": "asesor",
-    "texto": "Por eso prefiero decírtelo claro. El pago inicial incluye admisión, matrícula, seguro y primera cuota, más el examen médico. La evaluación de ingreso es virtual, con cámara, y no es examen de conocimientos."
+    "texto": "Claro. Te envío hoy la malla de Ingeniería Ambiental por WhatsApp y te explico cómo solicitar la evaluación de tus documentos. ¿Los tienes a mano?"
    },
    {
     "quien": "cliente",
-    "texto": "Está bien, así me ordeno."
+    "texto": "Los puedo reunir en unos días."
    },
    {
     "quien": "asesor",
-    "texto": "Para la convalidación necesito tus certificados. ¿Me los envías por WhatsApp para revisarlos juntos?"
+    "texto": "Perfecto. Además el pago inicial incluye admisión, matrícula, seguro y primera cuota, y la evaluación de ingreso es virtual con cámara, no de conocimientos. ¿Hablamos mañana a las 4:00 p. m. para revisar la malla juntos?"
    }
   ],
-  "speech": "Rocío, sobre la duración: terminar antes depende de la disponibilidad de cursos, los prerrequisitos y la planificación académica, así que no es una fecha segura.\n\nPor eso prefiero decírtelo claro. El pago inicial incluye admisión, matrícula, seguro y primera cuota, más el examen médico. La evaluación de ingreso es virtual, con cámara, y no es examen de conocimientos.\n\nPara la convalidación necesito tus certificados. ¿Me los envías por WhatsApp para revisarlos juntos?"
+  "speech": "Juan, para ser claro: cuántos cursos se reconocen lo define la evaluación de tus sílabos y certificado; no puedo asegurar un porcentaje. ¿Te parece?\n\nClaro. Te envío hoy la malla de Ingeniería Ambiental por WhatsApp y te explico cómo solicitar la evaluación de tus documentos. ¿Los tienes a mano?\n\nPerfecto. Además el pago inicial incluye admisión, matrícula, seguro y primera cuota, y la evaluación de ingreso es virtual con cámara, no de conocimientos. ¿Hablamos mañana a las 4:00 p. m. para revisar la malla juntos?",
+  "porQue": "Aclarar antes que el reconocimiento depende de la evaluación evita una expectativa falsa y deja un siguiente paso concreto."
  },
  "Angelo Jaime Franco Sarmiento|paso2": {
   "stage": "paso2",
@@ -1605,143 +1673,103 @@
  },
  "Jean Carlos Espinoza Atoc|paso1": {
   "stage": "paso1",
-  "base": "0bb515e9ba7e",
-  "conclusion": "Te presentaste con tu nombre y Continental, confirmaste el interés de David por Administración y usaste su nombre. Procura iniciar la atención dentro de los primeros ocho segundos.",
-  "tecId": "tec_12",
-  "tipo": "speech",
-  "porQue": "Abrir rápido, con tu presentación y el motivo de la llamada, y pedir permiso para continuar da control al prospecto desde el primer momento.",
-  "dialogo": [
-   {
-    "quien": "cliente",
-    "texto": "¿Aló?"
-   },
-   {
-    "quien": "asesor",
-    "texto": "Hola, David, buenas tardes, te habla Jean Carlos de la Universidad Continental. Te llamo por tu interés en Administración."
-   },
-   {
-    "quien": "cliente",
-    "texto": "Ah sí, había pedido información."
-   },
-   {
-    "quien": "asesor",
-    "texto": "Así es. Te robo solo unos minutos: ¿es buen momento para conversar o prefieres que coordinemos otra hora que te acomode?"
-   },
-   {
-    "quien": "cliente",
-    "texto": "Sí, ahora puedo."
-   },
-   {
-    "quien": "asesor",
-    "texto": "Gracias, David. Te hago unas preguntas para orientarte bien y tú me dices si algo no te cuadra. ¿Empezamos?"
-   }
-  ],
-  "speech": "Hola, David, buenas tardes, te habla Jean Carlos de la Universidad Continental. Te llamo por tu interés en Administración.\n\nAsí es. Te robo solo unos minutos: ¿es buen momento para conversar o prefieres que coordinemos otra hora que te acomode?\n\nGracias, David. Te hago unas preguntas para orientarte bien y tú me dices si algo no te cuadra. ¿Empezamos?"
+  "base": "4bb2f871546c",
+  "conclusion": "Iniciaste oportunamente, te presentaste con tu nombre y la universidad, confirmaste el interés de Miguel en Ingeniería de Sistemas y retomaste la propuesta consultando qué necesita aclarar.",
+  "tecId": null,
+  "tipo": "speech"
  },
  "Jean Carlos Espinoza Atoc|paso2": {
   "stage": "paso2",
-  "base": "0e259b3f63a0",
-  "conclusion": "Identificaste que David llegó hasta el séptimo ciclo de Administración. Falta profundizar por qué interrumpió, qué lo motiva a retomar y qué pesa al elegir universidad, para sumar dos diferenciales a su medida.",
+  "base": "4e4c26ab54e9",
+  "conclusion": "Preguntaste por sus estudios técnicos y detectaste que su interés es convalidar. Falta profundizar en su motivación para Ingeniería de Sistemas y su meta, y sumar al menos dos diferenciales.",
   "tecId": "tec_09",
   "tipo": "speech",
-  "porQue": "Devolverle sus propias razones convierte la propuesta en algo hecho a su medida y te da pie para ligar los diferenciales con lo que realmente le importa.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "Estudié Administración hasta el séptimo ciclo."
-   },
-   {
     "quien": "asesor",
-    "texto": "Gracias por contarme, David. Quiero entender bien tu caso: ¿qué pasó para que interrumpieras tus estudios?"
+    "texto": "Miguel, ¿qué quieres lograr con el título de Ingeniería de Sistemas?"
    },
    {
     "quien": "cliente",
-    "texto": "Trabajo y no me daba el tiempo."
+    "texto": "Quiero un mejor puesto, ahora hago redes como técnico."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces el tiempo fue el obstáculo. ¿Y qué te motiva hoy a retomar la carrera?"
+    "texto": "Entiendo: pasar de técnico a un puesto de ingeniero. ¿Cuánto influye el tiempo de estudios en tu decisión?"
    },
    {
     "quien": "cliente",
-    "texto": "Quiero terminar y titularme, pero también estoy comparando universidades."
+    "texto": "Bastante, quiero terminar pronto."
    },
    {
     "quien": "asesor",
-    "texto": "Tiene sentido. Entonces te sirve estudiar sin dejar tu trabajo, con clases grabadas, y que lo que ya llevaste se evalúe por sílabos. ¿Qué es lo que más pesa para ti al elegir universidad?"
+    "texto": "Gracias, Miguel. Con las clases grabadas puedes avanzar a tu ritmo, y la carrera tiene certificaciones progresivas. ¿Te explico cómo se evalúa lo que ya estudiaste?"
    }
   ],
-  "speech": "Gracias por contarme, David. Quiero entender bien tu caso: ¿qué pasó para que interrumpieras tus estudios?\n\nEntonces el tiempo fue el obstáculo. ¿Y qué te motiva hoy a retomar la carrera?\n\nTiene sentido. Entonces te sirve estudiar sin dejar tu trabajo, con clases grabadas, y que lo que ya llevaste se evalúe por sílabos. ¿Qué es lo que más pesa para ti al elegir universidad?"
+  "speech": "Miguel, ¿qué quieres lograr con el título de Ingeniería de Sistemas?\n\nEntiendo: pasar de técnico a un puesto de ingeniero. ¿Cuánto influye el tiempo de estudios en tu decisión?\n\nGracias, Miguel. Con las clases grabadas puedes avanzar a tu ritmo, y la carrera tiene certificaciones progresivas. ¿Te explico cómo se evalúa lo que ya estudiaste?",
+  "porQue": "Devolver sus propias palabras sobre su meta profesional permite conectar al menos dos diferenciales."
  },
  "Jean Carlos Espinoza Atoc|paso3": {
   "stage": "paso3",
-  "base": "ff6edb1d0f71",
-  "conclusion": "Explicaste bien los documentos para convalidar y desglosaste la inversión. Evita dar porcentajes de convalidación sin evaluación formal, valida el procedimiento y aclara que la evaluación de admisión es con cámara y sin prueba de conocimientos.",
+  "base": "91a3715dce61",
+  "conclusion": "Explicaste los documentos para convalidar y la simulación. Evita adelantar 70 %, dos años o tres de carrera sin evaluación formal; aclara que la simulación es referencial, verifica el requisito de matrícula y completa los costos y la evaluación de ingreso.",
   "tecId": "tec_08",
   "tipo": "speech",
-  "porQue": "Corregir a tiempo la expectativa del 70 % y aclarar cómo funciona la admisión evita una objeción o decepción después, cuando David ya esté decidido.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "¿Cuánto me convalidarían? Me comentaste algo como 70 %."
-   },
-   {
     "quien": "asesor",
-    "texto": "David, déjame corregirme: no puedo asegurarte un porcentaje. Eso depende de la revisión de tu certificado de estudios y de tus sílabos firmados y sellados."
+    "texto": "Miguel, la simulación es referencial: el reconocimiento de cursos lo define la evaluación de tus sílabos y certificados. ¿Va claro?"
    },
    {
     "quien": "cliente",
-    "texto": "Ah, entonces no es seguro."
+    "texto": "Entiendo, pero quisiera saber en cuánto tiempo terminaría."
    },
    {
     "quien": "asesor",
-    "texto": "Es una evaluación real, por eso prefiero decírtelo claro. Sobre admisión: es una evaluación virtual con cámara, no una prueba de conocimientos. Y el procedimiento exacto para convalidar te lo confirmo yo. ¿Qué estás comparando entre quedarte en tu universidad anterior o venir a Continental?"
+    "texto": "Lo sabremos con la evaluación formal, no quiero darte un plazo que luego cambie. Confirmo también el procedimiento para presentar tus documentos y te aviso."
    },
    {
     "quien": "cliente",
-    "texto": "El tiempo que me falta y el costo."
+    "texto": "Está bien. ¿Y los costos?"
    },
    {
     "quien": "asesor",
-    "texto": "Con eso claro, primero revisamos tus documentos y recién ahí vemos cuánto te falta. ¿Me los envías hoy por WhatsApp?"
+    "texto": "El pago inicial incluye admisión, matrícula, seguro y primera cuota, y la evaluación de ingreso es virtual con cámara, no de conocimientos. Te envío el detalle por WhatsApp, ¿lo revisamos hoy a las 6:00 p. m.?"
    }
   ],
-  "speech": "David, déjame corregirme: no puedo asegurarte un porcentaje. Eso depende de la revisión de tu certificado de estudios y de tus sílabos firmados y sellados.\n\nEs una evaluación real, por eso prefiero decírtelo claro. Sobre admisión: es una evaluación virtual con cámara, no una prueba de conocimientos. Y el procedimiento exacto para convalidar te lo confirmo yo. ¿Qué estás comparando entre quedarte en tu universidad anterior o venir a Continental?\n\nCon eso claro, primero revisamos tus documentos y recién ahí vemos cuánto te falta. ¿Me los envías hoy por WhatsApp?"
+  "speech": "Miguel, la simulación es referencial: el reconocimiento de cursos lo define la evaluación de tus sílabos y certificados. ¿Va claro?\n\nLo sabremos con la evaluación formal, no quiero darte un plazo que luego cambie. Confirmo también el procedimiento para presentar tus documentos y te aviso.\n\nEl pago inicial incluye admisión, matrícula, seguro y primera cuota, y la evaluación de ingreso es virtual con cámara, no de conocimientos. Te envío el detalle por WhatsApp, ¿lo revisamos hoy a las 6:00 p. m.?",
+  "porQue": "Aclarar que la simulación es referencial y la evaluación decide evita expectativas y protege la confianza."
  },
  "Jean Carlos Espinoza Atoc|paso4": {
   "stage": "paso4",
-  "base": "d7f1bd205603",
-  "conclusion": "Aceptaste retomar el contacto el viernes y mantuviste el WhatsApp abierto. Falta hacer cierres parciales, fijar una hora específica, precisar qué enviarás y derivar a la encuesta de satisfacción.",
+  "base": "ac706ac6600e",
+  "conclusion": "Propusiste que Miguel complete la simulación y confirmaste que recibió tu WhatsApp y guardó tu contacto. Acuerda fecha y hora para revisar los resultados, define cuándo completará la herramienta y deriva a la encuesta.",
   "tecId": "tec_16",
   "tipo": "speech",
-  "porQue": "Fijar día y hora, y decir qué enviarás, convierte un «hablamos el viernes» en un compromiso concreto.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "Entonces hablamos el viernes, cuando consulte en mi universidad."
-   },
-   {
     "quien": "asesor",
-    "texto": "Perfecto, David. Para avanzar: ¿cuándo crees que podrás tener tus documentos o las condiciones de convalidación de tu universidad?"
+    "texto": "Miguel, ¿cuándo podrías completar la simulación?"
    },
    {
     "quien": "cliente",
-    "texto": "Creo que el jueves."
+    "texto": "Hoy en la noche."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces nos llamamos el viernes a las 11 a. m., ¿te parece? Ese día te escribo por WhatsApp con los pasos y la lista de documentos que revisaremos."
+    "texto": "Perfecto. ¿Te parece si te llamo mañana a las 10:00 a. m. para revisar los resultados y ver si sigues con la inscripción?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, a esa hora puedo."
+    "texto": "Sí, a las 10 puedo."
    },
    {
     "quien": "asesor",
-    "texto": "Listo, viernes 11 a. m. Antes de despedirme, te transferiré a una breve encuesta de satisfacción. Gracias por tu tiempo, te habló Jean Carlos de la Universidad Continental."
+    "texto": "Quedamos mañana a las 10:00 a. m., Miguel. Ten a mano tus dudas de la simulación. Antes de despedirme, te transfiero a una breve encuesta de satisfacción."
    }
   ],
-  "speech": "Perfecto, David. Para avanzar: ¿cuándo crees que podrás tener tus documentos o las condiciones de convalidación de tu universidad?\n\nEntonces nos llamamos el viernes a las 11 a. m., ¿te parece? Ese día te escribo por WhatsApp con los pasos y la lista de documentos que revisaremos.\n\nListo, viernes 11 a. m. Antes de despedirme, te transferiré a una breve encuesta de satisfacción. Gracias por tu tiempo, te habló Jean Carlos de la Universidad Continental."
+  "speech": "Miguel, ¿cuándo podrías completar la simulación?\n\nPerfecto. ¿Te parece si te llamo mañana a las 10:00 a. m. para revisar los resultados y ver si sigues con la inscripción?\n\nQuedamos mañana a las 10:00 a. m., Miguel. Ten a mano tus dudas de la simulación. Antes de despedirme, te transfiero a una breve encuesta de satisfacción.",
+  "porQue": "Fijar cuándo completará la simulación y cuándo revisan resultados convierte el seguimiento en compromiso."
  },
  "Ruth Alexandra Mauricio Verde|paso1": {
   "stage": "paso1",
@@ -1958,5 +1986,129 @@
   "tipo": "accion",
   "porQue": "Tu observación de esta llamada no es de speech sino de protocolo de cierre.",
   "speech": "Antes de despedirte, di tu nombre y Universidad Continental, menciona el nombre de la prospecta al menos dos veces y transfiere la llamada a la encuesta de satisfacción."
+ },
+ "Judith Rocio Vila Incaroca|paso2": {
+  "stage": "paso2",
+  "base": "d043c6b3af49",
+  "conclusion": "No profundizaste en lo que motiva a Enrique ni en lo que su familia valora al elegir universidad; tampoco supiste quién asumirá la inversión. Con eso podrías conectar al menos dos diferenciales, no solo la campaña.",
+  "tecId": "tec_09",
+  "tipo": "speech",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Señora [nombre], antes de seguir cuénteme: ¿qué le llamó la atención a Enrique de Ingeniería de Sistemas e Informática?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Desde chico le gustan las computadoras y quiere trabajar en tecnología."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Entiendo, entonces busca una carrera que lo lleve a trabajar en tecnología. ¿Qué es lo más importante para ustedes al elegir universidad: el tiempo, la inversión o el acompañamiento?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Más que todo que pueda trabajar mientras estudia. Yo veré los pagos."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Gracias por contármelo. Como Enrique podría trabajar mientras estudia, las clases quedan grabadas y puede revisarlas cuando pueda; además la carrera tiene certificaciones progresivas. ¿Le parece si le detallo cómo se organizan los pagos para que usted los vea con tranquilidad?"
+   }
+  ],
+  "speech": "Señora [nombre], antes de seguir cuénteme: ¿qué le llamó la atención a Enrique de Ingeniería de Sistemas e Informática?\n\nEntiendo, entonces busca una carrera que lo lleve a trabajar en tecnología. ¿Qué es lo más importante para ustedes al elegir universidad: el tiempo, la inversión o el acompañamiento?\n\nGracias por contármelo. Como Enrique podría trabajar mientras estudia, las clases quedan grabadas y puede revisarlas cuando pueda; además la carrera tiene certificaciones progresivas. ¿Le parece si le detallo cómo se organizan los pagos para que usted los vea con tranquilidad?",
+  "porQue": "Devolver sus propias palabras sobre motivación y prioridades permite enlazar diferenciales reales con lo que ellos mismos dijeron importarles."
+ },
+ "Judith Rocio Vila Incaroca|paso4": {
+  "stage": "paso4",
+  "base": "b16e106a61ad",
+  "conclusion": "Lograste que la madre acepte recibir la ficha por WhatsApp y te mantuviste disponible. Falta acordar fecha y hora para verificar que la complete y recordar la derivación a la encuesta de satisfacción.",
+  "tecId": "tec_16",
+  "tipo": "speech",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Señora [nombre], le envío ahora la ficha de registro por WhatsApp. ¿Le parece si usted y Enrique la completan hoy con los datos y documentos?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, la revisamos en la noche."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Perfecto. Entonces mañana a las 10:00 a. m. la llamo para confirmar que la recibieron y resolver cualquier duda al llenarla. ¿Le va bien esa hora?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "A las 10 está bien, estaré en casa."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Listo, señora [nombre], quedamos mañana a las 10:00 a. m. Guarde mi contacto de WhatsApp por cualquier consulta. Antes de despedirme, la transfiero a una breve encuesta de satisfacción sobre esta atención."
+   }
+  ],
+  "speech": "Señora [nombre], le envío ahora la ficha de registro por WhatsApp. ¿Le parece si usted y Enrique la completan hoy con los datos y documentos?\n\nPerfecto. Entonces mañana a las 10:00 a. m. la llamo para confirmar que la recibieron y resolver cualquier duda al llenarla. ¿Le va bien esa hora?\n\nListo, señora [nombre], quedamos mañana a las 10:00 a. m. Guarde mi contacto de WhatsApp por cualquier consulta. Antes de despedirme, la transfiero a una breve encuesta de satisfacción sobre esta atención.",
+  "porQue": "Cerrar con una fecha y hora concretas convierte un 'me avisa' en un compromiso y evita que el avance dependa solo de la familia."
+ },
+ "Edward Nelson Gonzales Villaneda|paso2": {
+  "stage": "paso2",
+  "base": "db043bbe4a27",
+  "conclusion": "Preguntaste por estudios previos y detectaste que trabaja en Chile y que busca convalidar. Falta indagar objetivos profesionales, disponibilidad desde Chile y qué pesa en su decisión, para presentar al menos dos diferenciales además del adelanto de cursos.",
+  "tecId": "tec_09",
+  "tipo": "speech",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "[nombre], me contaste que terminaste estudios técnicos y trabajas en Chile. ¿Qué quieres lograr con una carrera universitaria?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Subir de puesto y reducir el tiempo con lo que ya estudié."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Entiendo: quieres crecer y no empezar de cero. ¿Qué horarios manejas allá para estudiar, y qué es lo más importante para decidir?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Mis horarios cambian y me importa el tiempo y el costo."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Gracias. Como tus horarios cambian, las clases quedan grabadas y puedes verlas cuando puedas desde Chile, y la carrera tiene certificaciones progresivas. ¿Te explico cómo funciona la evaluación de convalidación?"
+   }
+  ],
+  "speech": "[nombre], me contaste que terminaste estudios técnicos y trabajas en Chile. ¿Qué quieres lograr con una carrera universitaria?\n\nEntiendo: quieres crecer y no empezar de cero. ¿Qué horarios manejas allá para estudiar, y qué es lo más importante para decidir?\n\nGracias. Como tus horarios cambian, las clases quedan grabadas y puedes verlas cuando puedas desde Chile, y la carrera tiene certificaciones progresivas. ¿Te explico cómo funciona la evaluación de convalidación?",
+  "porQue": "Devolver sus palabras sobre trabajo y metas permite conectar diferenciales con su situación en Chile."
+ },
+ "Edward Nelson Gonzales Villaneda|paso4": {
+  "stage": "paso4",
+  "base": "cc1552c1b202",
+  "conclusion": "Mantuviste el canal por WhatsApp y pediste sus documentos académicos. Fija compromisos con fecha y hora, menciona el envío de la propuesta académica y deriva a la encuesta de satisfacción antes de terminar.",
+  "tecId": "tec_16",
+  "tipo": "speech",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "[nombre], ¿cuándo crees que podrías solicitar tu récord de notas?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Creo que en dos o tres días."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Perfecto. Te envío hoy por WhatsApp la propuesta académica. ¿Te parece si te llamo el lunes a las 6:00 p. m. para revisar cómo vas con tus documentos?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, el lunes a esa hora puedo."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Quedamos el lunes a las 6:00 p. m., [nombre]. Guarda mi contacto de WhatsApp. Antes de despedirme, te transfiero a una breve encuesta de satisfacción."
+   }
+  ],
+  "speech": "[nombre], ¿cuándo crees que podrías solicitar tu récord de notas?\n\nPerfecto. Te envío hoy por WhatsApp la propuesta académica. ¿Te parece si te llamo el lunes a las 6:00 p. m. para revisar cómo vas con tus documentos?\n\nQuedamos el lunes a las 6:00 p. m., [nombre]. Guarda mi contacto de WhatsApp. Antes de despedirme, te transfiero a una breve encuesta de satisfacción.",
+  "porQue": "Acordar cuándo pedirá sus documentos y cuándo lo vuelves a llamar convierte la espera en un seguimiento con fecha."
  }
 }

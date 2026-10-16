@@ -6160,5 +6160,629 @@
     "evidencia": "Establece un seguimiento con fecha y hora exactas"
    }
   }
+ },
+ "925ecfe91aae": {
+  "asesor": "Judith Rocio Vila Incaroca",
+  "fecha": "16/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "te presentas como asesora educativa de Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "confirmas el interés por Ingeniería de Sistemas e Informática"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones de Enrique"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas académicas"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "conocer quién asumirá la inversión"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "presentar al menos dos diferenciales conectados con sus necesidades"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "establecer fecha y hora específicas para verificar la ficha"
+   }
+  }
+ },
+ "f9c3a5ccca0a": {
+  "asesor": "Lucero Ximena Hujaynatis Jacay",
+  "fecha": "16/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "te presentas con tu nombre y el de Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "utilizar el nombre de Juan durante la conversación, no solo al inicio"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "preguntas el horario laboral, falta indagar su motivación"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "objetivos profesionales y factores de decisión"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "brindas información sobre la duración de la carrera"
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "integrar al menos dos diferenciales más allá de clases grabadas"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "concretar una hora específica y retomar la comunicación"
+   }
+  }
+ },
+ "1e167a8b0c3a": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "16/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "te presentas con tu nombre y el de Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "utilizar el nombre del prospecto durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "identificas que actualmente trabaja en Chile"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "profundizar en sus objetivos profesionales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "presentar al menos dos diferenciales más allá del adelanto de cursos"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "acordar fecha y hora para revisar su situación"
+   }
+  }
+ },
+ "7a108c8517a7": {
+  "asesor": "Anyhela Kelly Ordoñez Chavez",
+  "fecha": "16/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre desde el inicio"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "utiliza el nombre de Juan durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas respecto al reconocimiento de cursos"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "cuando Juan necesita comparar mallas, orienta el siguiente paso"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "realiza cierres parciales buscando compromisos concretos"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "acordar fecha y hora específicas para el seguimiento"
+   }
+  }
+ },
+ "cb2ebba9279f": {
+  "asesor": "Eduardo Alfredo Coaquiera Elguera",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "presentarte indicando tu nombre y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Te dirigiste al prospecto por su nombre"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "reconociste su necesidad de modalidad virtual por actividades laborales"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "presenta al menos dos diferenciales institucionales verificables"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "ante objeción económica, identifica primero qué condición necesita resolver"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Valida si la propuesta responde a las necesidades identificadas"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "acuerda fecha y hora específica para el seguimiento"
+   }
+  }
+ },
+ "8361bfafc04f": {
+  "asesor": "Eduardo Alfredo Coaquiera Elguera",
+  "fecha": "16/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas con tu nombre y el de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "confirmando que Yuli revisó la propuesta educativa"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Indagas sobre su motivación para estudiar Derecho"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas profesionales de Yuli"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "indaga sobre su situación económica antes de concluir"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "conecta su vocación con los diferenciales de la propuesta"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "acuerdas un horario concreto para continuar la atención"
+   }
+  }
+ },
+ "34f7bde2de54": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "16/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "te presentas con tu nombre y el de Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "confirmas el interés de Miguel por Ingeniería de Sistemas"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "profundizar en las motivaciones de Miguel"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "qué espera lograr con el título universitario"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "incorporar al menos dos diferenciales"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "ok",
+    "evidencia": "le solicitas guardar tu contacto"
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "acordar fecha y hora específicas para revisar los resultados"
+   }
+  }
+ },
+ "58dc2b8d9d81": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "16/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "te presentas con tu nombre y el de Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "utilizas su nombre durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "conocer horarios de servicio y motivación de Óscar"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "acordar una hora específica con Óscar"
+   }
+  }
  }
 }
