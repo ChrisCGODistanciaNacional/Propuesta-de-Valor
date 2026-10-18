@@ -1066,7 +1066,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-10-15T17:08:03.000Z";
+  const DATA_VERSION = "2026-10-18T11:50:20.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1703,6 +1703,8 @@
     renderTecnicas();
   }
   function getAdvisorNames() {
+    const activos = sheetDataCache.equipo && Array.isArray(sheetDataCache.equipo.activos) && sheetDataCache.equipo.activos.length ? sheetDataCache.equipo.activos : null;
+    if (activos) return activos.slice().sort((a, b) => a.localeCompare(b, 'es'));
     const names = new Set();
     sheetDataCache.evaluacion.forEach(r => { const n = findField(r, ['asesor']); if (n) names.add(String(n).trim()); });
     sheetDataCache.tecnicas.forEach(r => { const n = findField(r, ['asesor']); if (n) names.add(String(n).trim()); });
@@ -2768,6 +2770,11 @@
     const f = d => String(d.getDate()).padStart(2, '0');
     return lunes.getMonth() === dom.getMonth() ? `${f(lunes)}–${f(dom)} ${MESES_CORTO[dom.getMonth()]}` : `${f(lunes)} ${MESES_CORTO[lunes.getMonth()]} – ${f(dom)} ${MESES_CORTO[dom.getMonth()]}`;
   }
+  // Asesores activos (data.json → equipo.activos, mantenido en sync/asesores_activos.json); null = todos.
+  function asesoresActivosSet() {
+    const lst = sheetDataCache.equipo && Array.isArray(sheetDataCache.equipo.activos) ? sheetDataCache.equipo.activos : null;
+    return lst && lst.length ? new Set(lst.map(normalizarTexto)) : null;
+  }
   function renderEvaluadas() {
     const body = document.getElementById('evalBody');
     if (!body) return;
@@ -2800,11 +2807,14 @@
     });
     // Asesores del equipo sin ninguna evaluación también cuentan (con 0)
     const eq = sheetDataCache.equipo || {};
-    (eq.ranking || []).forEach(x => { const key = normalizarTexto(x.asesor); if (!porAsesor[key]) { porAsesor[key] = { total: 0, pasada: 0, actual: 0, ultima: null }; nombreCanon[key] = x.asesor; } });
-    const filas = Object.keys(porAsesor).map(k => Object.assign({ key: k, nombre: nombreCanon[k] }, porAsesor[k]));
+    (eq.ranking || []).concat((eq.activos || []).map(n => ({ asesor: n }))).forEach(x => { const key = normalizarTexto(x.asesor); if (!porAsesor[key]) { porAsesor[key] = { total: 0, pasada: 0, actual: 0, ultima: null }; nombreCanon[key] = x.asesor; } });
+    let filas = Object.keys(porAsesor).map(k => Object.assign({ key: k, nombre: nombreCanon[k] }, porAsesor[k]));
     filas.sort((a, b) => (b.actual - a.actual) || (b.pasada - a.pasada) || (b.total - a.total) || a.nombre.localeCompare(b.nombre));
+    // Los totales cuentan todas las llamadas evaluadas; la tabla muestra solo a los asesores activos.
     const totalPasada = filas.reduce((s, f) => s + f.pasada, 0);
     const totalActual = filas.reduce((s, f) => s + f.actual, 0);
+    const activosSet = asesoresActivosSet();
+    if (activosSet) filas = filas.filter(f => activosSet.has(f.key));
     const sinEstaSemana = filas.filter(f => !f.actual).length;
     const sinDosSemanas = filas.filter(f => !f.actual && !f.pasada).length;
     // últimas 6 semanas (incluida la actual) para ver el ritmo del área de calidad

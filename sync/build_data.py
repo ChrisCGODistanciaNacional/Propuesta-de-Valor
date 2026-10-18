@@ -438,6 +438,15 @@ if ingmat_cols:
             k = norm(canon_name(asesor))
             mat_mes_calc[k] = mat_mes_calc.get(k, 0) + hit
 
+# ----------------------------------------------------------------------------- asesores activos
+# sync/asesores_activos.json (lo mantiene Claude a pedido de Christopher): solo ellos van en la lista de nombres,
+# el ranking, los cuadrantes y la base de los cuartiles de matrículas. Sus evaluaciones pasadas no se tocan.
+_act = load_json(os.path.join(SYNC, 'asesores_activos.json'), {}) or {}
+ACTIVOS = {norm(canon_name(n)) for n in (_act.get('activos') or []) if str(n).strip()}
+ACTIVOS_NOMBRES = [canon_name(n) for n in (_act.get('activos') or []) if str(n).strip()]
+def es_activo(name):
+    return (not ACTIVOS) or norm(canon_name(name)) in ACTIVOS or norm(name) in ACTIVOS
+
 # ----------------------------------------------------------------------------- 🔰GEN (tablero) → roster, matrículas del mes, % de meta y cuartil por aporte
 tablero_by_name = {}
 cortes_matriculas = None
@@ -466,6 +475,8 @@ if gv:
             if norm(raw[0]).startswith('total'):
                 break
             name = canon_name(raw[i_nom])
+            if not es_activo(name):
+                continue
             q = to_int(raw[i_q]) if i_q < len(raw) else None
             if q is None:
                 continue
@@ -717,6 +728,8 @@ def leer_checklist_fila(name, row):
 
 analisis = {}
 for name, lst in hist.items():
+    if not es_activo(name):
+        continue
     rows = [x[2] for x in lst]
     last = rows[-1]; prev = rows[-2] if len(rows) > 1 else None
     key = norm(name)
@@ -912,6 +925,7 @@ equipo = {
     'focoCualitativo': foco, 'oportunidad': opor,
     'distribucionCuartiles': dist,
     'cuadrantes': cuadrantes,
+    'activos': sorted(set(ACTIVOS_NOMBRES) | set(ranked), key=norm) if ACTIVOS else None,
     'totalAsesores': len(ranked),
     'ranking': [{
         'asesor': n, 'puesto': analisis[n]['puesto'], 'sede': analisis[n]['sede'], 'cuadrante': analisis[n]['cuadrante'],

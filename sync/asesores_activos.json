@@ -1,0 +1,32 @@
+{
+ "nota": "Asesores activos de preinscripción (los que aparecen en la lista de nombres, el ranking, los cuadrantes y los cuartiles). Quien deja de laborar se quita de aquí; sus evaluaciones pasadas siguen en el historial. Lista vacía = se usan todos.",
+ "actualizado": "18/10/2026",
+ "activos": [
+  "Ana Maria Padilla Parra",
+  "Angelo Jaime Franco Sarmiento",
+  "Anyhela Kelly Ordoñez Chavez",
+  "Betsabeth Alexandra Rojas Palacios",
+  "Cecilia Esther Aliaga Lapa",
+  "Diana Carol Taipe Rojas",
+  "Edgar Sabino Chavez Vizcarra",
+  "Eduardo Alfredo Coaquiera Elguera",
+  "Edward Nelson Gonzales Villaneda",
+  "Isai Yuliño Mercado Bravo",
+  "Jean Carlos Espinoza Atoc",
+  "Jimena del Rosario Vera Osores",
+  "Jorge Luis Valencia Cardenas",
+  "Judith Rocio Vila Incaroca",
+  "Justyn Flores Solano",
+  "Lisette Valeria Blanco Chuco",
+  "Lucero Ximena Hujaynatis Jacay",
+  "Maria Alejandra Pino Contreras",
+  "Melissa Leslie Fernadez Avalos",
+  "Milagros Torres Santos",
+  "Nicol Alisson Romero Espinoza",
+  "Orlando Jesus Pintado Sandoval",
+  "Patricia Roxana Mercado Zacarias",
+  "Raul Aaron Manuel Ipanaque Escobar",
+  "Rosa Victoria Guzman Bonilla",
+  "Ruth Alexandra Mauricio Verde"
+ ]
+}
