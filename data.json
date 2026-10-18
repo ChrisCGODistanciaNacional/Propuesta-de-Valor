@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-10-17T23:09:30Z",
+ "generado": "2026-10-18T11:56:03Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -6554,7 +6554,7 @@
     "cuartil": "Q1"
    },
    "puesto": 4,
-   "totalAsesores": 28,
+   "totalAsesores": 26,
    "indice": 57.2,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -6835,8 +6835,8 @@
     "avance": 89.47,
     "cuartil": "Q2"
    },
-   "puesto": 13,
-   "totalAsesores": 28,
+   "puesto": 11,
+   "totalAsesores": 26,
    "indice": 42.6,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -7149,7 +7149,7 @@
     "cuartil": "Q2"
    },
    "puesto": 3,
-   "totalAsesores": 28,
+   "totalAsesores": 26,
    "indice": 58.2,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -7337,8 +7337,8 @@
     "avance": 47.37,
     "cuartil": "Q4"
    },
-   "puesto": 25,
-   "totalAsesores": 28,
+   "puesto": 24,
+   "totalAsesores": 26,
    "indice": 37.6,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -7516,8 +7516,8 @@
    "avanceRitmo": null,
    "avanceMeta": 16.67,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q2",
-   "cuadrante": "amarillo",
+   "cuartilMatriculas": "Q3",
+   "cuadrante": "rojo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -7526,8 +7526,8 @@
     "avance": 42.11,
     "cuartil": "Q4"
    },
-   "puesto": 9,
-   "totalAsesores": 28,
+   "puesto": 18,
+   "totalAsesores": 26,
    "indice": 47.3,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -7725,8 +7725,8 @@
     "avance": 78.95,
     "cuartil": "Q3"
    },
-   "puesto": 1,
-   "totalAsesores": 28,
+   "puesto": 2,
+   "totalAsesores": 26,
    "indice": 60.3,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -7914,8 +7914,8 @@
     "avance": 68.42,
     "cuartil": "Q4"
    },
-   "puesto": 12,
-   "totalAsesores": 28,
+   "puesto": 10,
+   "totalAsesores": 26,
    "indice": 45.6,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -8103,8 +8103,8 @@
     "avance": 73.68,
     "cuartil": "Q3"
    },
-   "puesto": 24,
-   "totalAsesores": 28,
+   "puesto": 22,
+   "totalAsesores": 26,
    "indice": 40.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -8292,8 +8292,8 @@
     "avance": 42.11,
     "cuartil": "Q4"
    },
-   "puesto": 5,
-   "totalAsesores": 28,
+   "puesto": 6,
+   "totalAsesores": 26,
    "indice": 55.7,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -8471,8 +8471,8 @@
    "avanceRitmo": null,
    "avanceMeta": 16.67,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q2",
-   "cuadrante": "amarillo",
+   "cuartilMatriculas": "Q3",
+   "cuadrante": "rojo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -8481,8 +8481,8 @@
     "avance": 31.58,
     "cuartil": "Q4"
    },
-   "puesto": 15,
-   "totalAsesores": 28,
+   "puesto": 23,
+   "totalAsesores": 26,
    "indice": 38.8,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -8674,8 +8674,8 @@
     "avance": 42.11,
     "cuartil": "Q4"
    },
-   "puesto": 26,
-   "totalAsesores": 28,
+   "puesto": 25,
+   "totalAsesores": 26,
    "indice": 36.8,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -8871,8 +8871,8 @@
     "avance": 78.95,
     "cuartil": "Q3"
    },
-   "puesto": 14,
-   "totalAsesores": 28,
+   "puesto": 13,
+   "totalAsesores": 26,
    "indice": 39.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -8971,230 +8971,6 @@
       "estado": "pendiente",
       "evidencia": "Preguntar qué día podría llamarse sin concretarlo no constituye un agendamiento",
       "fecha": "29/09/2026"
-     }
-    }
-   }
-  },
-  "Juliana Milagros Suarez Atencio": {
-   "sede": "LIMA",
-   "antiguedad": "6 meses a 1 año",
-   "numEvaluaciones": 4,
-   "ultimaFecha": "12/10/2026",
-   "foco": "paso3",
-   "fortalezaPrincipal": "paso2",
-   "modoFeedback": "legado",
-   "stages": {
-    "paso1": {
-     "pct": 80,
-     "prev": 27,
-     "delta": 53,
-     "avg": 61,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": null,
-     "rol": null,
-     "texto": null,
-     "tecnica": null,
-     "caso": null
-    },
-    "paso2": {
-     "pct": 100,
-     "prev": 77,
-     "delta": 23,
-     "avg": 83,
-     "fortaleza": "- Identifica la carrera, modalidad y fecha de inicio de interés del prospecto.\n- Explica el proceso de admisión, los beneficios y los pasos para realizar la inscripción.\n- Gestiona la preinscripción y orienta sobre los medios de pago.\n- Mantiene una comunicación cordial y realiza el cierre con la encuesta de satisfacción.",
-     "oportunidad": null,
-     "conclusion": "Tú identificas carrera, modalidad e inicio de interés, explicas admisión, beneficios e inscripción, gestionas la preinscripción y los medios de pago, y cierras cordial con la encuesta.",
-     "rol": "fortaleza",
-     "texto": "- Identifica la carrera, modalidad y fecha de inicio de interés del prospecto.\n- Explica el proceso de admisión, los beneficios y los pasos para realizar la inscripción.\n- Gestiona la preinscripción y orienta sobre los medios de pago.\n- Mantiene una comunicación cordial y realiza el cierre con la encuesta de satisfacción.",
-     "tecnica": null,
-     "caso": null
-    },
-    "paso3": {
-     "pct": 50,
-     "prev": 68,
-     "delta": -18,
-     "avg": 80,
-     "fortaleza": null,
-     "oportunidad": "Mejorar el manejo de objeciones, identificando qué necesita evaluar el prospecto antes de matricularse.\n\n\n\nEquilibrar la urgencia comercial con una asesoría consultiva, evitando insistir reiteradamente en las vacantes limitadas y la pérdida de beneficios.\n\n\n\nAcordar un seguimiento concreto que permita resolver dudas y mantener el interés del prospecto.",
-     "conclusion": "Tú gestionas bien la admisión, pero ante \"lo reviso y me matriculo más adelante\" te apoyaste en la urgencia. Indaga qué necesita revisar, aporta valor y acuerda fecha y hora de seguimiento.",
-     "rol": "oportunidad",
-     "texto": "Mejorar el manejo de objeciones, identificando qué necesita evaluar el prospecto antes de matricularse.\n\n\n\nEquilibrar la urgencia comercial con una asesoría consultiva, evitando insistir reiteradamente en las vacantes limitadas y la pérdida de beneficios.\n\n\n\nAcordar un seguimiento concreto que permita resolver dudas y mantener el interés del prospecto.",
-     "tecnica": {
-      "id": "tec_14",
-      "titulo": "❓ Pregunta lo que Falta para Cerrar",
-      "ejemplo": "\"Aparte de la convalidación de documentos, ¿qué es lo único que te impediría iniciar tu carrera este ciclo con nosotros?\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Claro, te la envío ahora mismo. Para que la revisión te sirva de verdad, ¿qué es lo que más quisieras evaluar: la inversión, los horarios o el proceso de ingreso?\n\nEntiendo, es importante. En Distancia las clases también quedan grabadas, así que si un día no llegas en vivo igual puedes avanzar. Y la evaluación de ingreso es virtual, con cámara, sin examen de conocimientos.\n\nPerfecto, y para que no se te pase te escribo mañana a las 7:00 p. m. por WhatsApp, ya con la información revisada, y resolvemos cualquier duda que te quede. ¿Te parece bien esa hora?",
-      "porQue": "Preguntar qué necesita revisar convierte la objeción en información concreta y permite resolverla, en lugar de presionar con la urgencia de las vacantes.",
-      "base": "521a50c08d34",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "Mándame la información por WhatsApp, la reviso y más adelante me matriculo."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Claro, te la envío ahora mismo. Para que la revisión te sirva de verdad, ¿qué es lo que más quisieras evaluar: la inversión, los horarios o el proceso de ingreso?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Más que nada el tema de los horarios, trabajo y no sé si podré conectarme."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Entiendo, es importante. En Distancia las clases también quedan grabadas, así que si un día no llegas en vivo igual puedes avanzar. Y la evaluación de ingreso es virtual, con cámara, sin examen de conocimientos."
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ah, eso me tranquiliza un poco. Igual lo quiero pensar."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Perfecto, y para que no se te pase te escribo mañana a las 7:00 p. m. por WhatsApp, ya con la información revisada, y resolvemos cualquier duda que te quede. ¿Te parece bien esa hora?"
-       }
-      ]
-     }
-    },
-    "paso4": {
-     "pct": 100,
-     "prev": 61,
-     "delta": 39,
-     "avg": 82,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": null,
-     "rol": null,
-     "texto": null,
-     "tecnica": null,
-     "caso": null
-    }
-   },
-   "scoreGlobal": "79,00%",
-   "callScorePct": 79,
-   "scorePrev": 63,
-   "scoreDelta": 16,
-   "cuartilUltima": "Q3",
-   "calidadPromedio": 78,
-   "cuartilCalidad": "Q3",
-   "matriculas": 1,
-   "meta": 18,
-   "avanceMes": 5.56,
-   "avanceRitmo": null,
-   "avanceMeta": 5.56,
-   "avanceModo": "tablero",
-   "cuartilMatriculas": "Q4",
-   "cuadrante": "rojo",
-   "enMes": true,
-   "enMatriz": true,
-   "campana": {
-    "matriculas": 16,
-    "meta": 19,
-    "avance": 84.21,
-    "cuartil": "Q2"
-   },
-   "puesto": 23,
-   "totalAsesores": 28,
-   "indice": 41.8,
-   "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
-   "checklist": {
-    "fuente": "analisis",
-    "ventana": 3,
-    "evaluacionesLeidas": 3,
-    "pendientes": 0,
-    "items": {
-     "paso1_1": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso1_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso1_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso1_4": {
-      "estado": "ok",
-      "evidencia": "Identifica la carrera, modalidad y fecha de inicio de interés del prospecto.",
-      "fecha": "12/10/2026"
-     },
-     "paso2_1": {
-      "estado": "pendiente",
-      "evidencia": "No realiza preguntas de indagación, sondeo débil",
-      "fecha": "16/09/2026"
-     },
-     "paso2_2": {
-      "estado": "pendiente",
-      "evidencia": "No realiza preguntas de indagación, sondeo débil",
-      "fecha": "16/09/2026"
-     },
-     "paso2_3": {
-      "estado": "pendiente",
-      "evidencia": "No realiza preguntas de indagación, sondeo débil",
-      "fecha": "16/09/2026"
-     },
-     "paso2_4": {
-      "estado": "pendiente",
-      "evidencia": "No realiza preguntas de indagación, sondeo débil",
-      "fecha": "16/09/2026"
-     },
-     "paso3_1": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_4": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_5": {
-      "estado": "pendiente",
-      "evidencia": "Mejorar el manejo de objeciones, identificando qué necesita evaluar el prospecto.",
-      "fecha": "12/10/2026"
-     },
-     "paso3_6": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_1": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_4": {
-      "estado": "pendiente",
-      "evidencia": "Acordar un seguimiento concreto que permita resolver dudas.",
-      "fecha": "12/10/2026"
      }
     }
    }
@@ -9315,8 +9091,8 @@
     "avance": 121.05,
     "cuartil": "Q1"
    },
-   "puesto": 7,
-   "totalAsesores": 28,
+   "puesto": 8,
+   "totalAsesores": 26,
    "indice": 53.9,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -9494,8 +9270,8 @@
    "avanceRitmo": null,
    "avanceMeta": 16.67,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q2",
-   "cuadrante": "amarillo",
+   "cuartilMatriculas": "Q3",
+   "cuadrante": "rojo",
    "enMes": true,
    "enMatriz": true,
    "campana": {
@@ -9504,8 +9280,8 @@
     "avance": 68.42,
     "cuartil": "Q4"
    },
-   "puesto": 11,
-   "totalAsesores": 28,
+   "puesto": 19,
+   "totalAsesores": 26,
    "indice": 45.8,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -9608,195 +9384,6 @@
     }
    }
   },
-  "Angel Raul Villanueva Fernandez": {
-   "sede": "LIMA",
-   "antiguedad": "6 meses a 1 año",
-   "numEvaluaciones": 2,
-   "ultimaFecha": "18/09/2026",
-   "foco": null,
-   "fortalezaPrincipal": null,
-   "modoFeedback": null,
-   "stages": {
-    "paso1": {
-     "pct": 66,
-     "prev": 68,
-     "delta": -2,
-     "avg": 67,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": null,
-     "rol": null,
-     "texto": null,
-     "tecnica": null,
-     "caso": null
-    },
-    "paso2": {
-     "pct": 76,
-     "prev": 78,
-     "delta": -2,
-     "avg": 77,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": null,
-     "rol": null,
-     "texto": null,
-     "tecnica": null,
-     "caso": null
-    },
-    "paso3": {
-     "pct": 100,
-     "prev": 100,
-     "delta": 0,
-     "avg": 100,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": null,
-     "rol": null,
-     "texto": null,
-     "tecnica": null,
-     "caso": null
-    },
-    "paso4": {
-     "pct": 60,
-     "prev": 67,
-     "delta": -7,
-     "avg": 64,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": null,
-     "rol": null,
-     "texto": null,
-     "tecnica": null,
-     "caso": null
-    }
-   },
-   "scoreGlobal": "78,00%",
-   "callScorePct": 78,
-   "scorePrev": 78,
-   "scoreDelta": 0,
-   "cuartilUltima": "Q3",
-   "calidadPromedio": 78,
-   "cuartilCalidad": "Q3",
-   "matriculas": null,
-   "meta": null,
-   "avanceMes": null,
-   "avanceRitmo": null,
-   "avanceMeta": null,
-   "avanceModo": "mes",
-   "cuartilMatriculas": null,
-   "cuadrante": null,
-   "enMes": false,
-   "enMatriz": true,
-   "campana": {
-    "matriculas": 0,
-    "meta": 19,
-    "avance": 0.0,
-    "cuartil": "Q4"
-   },
-   "puesto": 28,
-   "totalAsesores": 28,
-   "indice": 78.0,
-   "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
-   "checklist": {
-    "fuente": "analisis",
-    "ventana": 3,
-    "evaluacionesLeidas": 2,
-    "pendientes": 0,
-    "items": {
-     "paso1_1": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso1_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso1_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso1_4": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso2_1": {
-      "estado": "ok",
-      "evidencia": "Sondea correctamente, genera necesidad",
-      "fecha": "10/09/2026"
-     },
-     "paso2_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso2_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso2_4": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_1": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_4": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_5": {
-      "estado": "pendiente",
-      "evidencia": "Escuchar activamente y corregir información incorrecta antes de continuar con la propuesta",
-      "fecha": "18/09/2026"
-     },
-     "paso3_6": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_1": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso4_4": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     }
-    }
-   }
-  },
   "Edgar Sabino Chavez Vizcarra": {
    "sede": "LIMA",
    "antiguedad": "Más de 3 años",
@@ -9882,8 +9469,8 @@
     "avance": 10.53,
     "cuartil": "Q4"
    },
-   "puesto": 17,
-   "totalAsesores": 28,
+   "puesto": 14,
+   "totalAsesores": 26,
    "indice": 46.8,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -10055,11 +9642,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 80,
    "cuartilCalidad": "Q3",
-   "matriculas": 2,
+   "matriculas": 3,
    "meta": 18,
-   "avanceMes": 11.11,
+   "avanceMes": 16.67,
    "avanceRitmo": null,
-   "avanceMeta": 11.11,
+   "avanceMeta": 16.67,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q3",
    "cuadrante": "rojo",
@@ -10071,9 +9658,9 @@
     "avance": 57.89,
     "cuartil": "Q4"
    },
-   "puesto": 20,
-   "totalAsesores": 28,
-   "indice": 45.6,
+   "puesto": 17,
+   "totalAsesores": 26,
+   "indice": 48.3,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -10260,8 +9847,8 @@
     "avance": 63.16,
     "cuartil": "Q4"
    },
-   "puesto": 21,
-   "totalAsesores": 28,
+   "puesto": 20,
+   "totalAsesores": 26,
    "indice": 43.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -10455,8 +10042,8 @@
     "avance": 36.84,
     "cuartil": "Q4"
    },
-   "puesto": 22,
-   "totalAsesores": 28,
+   "puesto": 21,
+   "totalAsesores": 26,
    "indice": 42.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -10644,8 +10231,8 @@
     "avance": 42.11,
     "cuartil": "Q4"
    },
-   "puesto": 10,
-   "totalAsesores": 28,
+   "puesto": 9,
+   "totalAsesores": 26,
    "indice": 47.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -10819,11 +10406,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 60,
    "cuartilCalidad": "Q4",
-   "matriculas": 3,
+   "matriculas": 4,
    "meta": 18,
-   "avanceMes": 16.67,
+   "avanceMes": 22.22,
    "avanceRitmo": null,
-   "avanceMeta": 16.67,
+   "avanceMeta": 22.22,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
@@ -10835,9 +10422,9 @@
     "avance": 57.89,
     "cuartil": "Q4"
    },
-   "puesto": 16,
-   "totalAsesores": 28,
-   "indice": 38.3,
+   "puesto": 12,
+   "totalAsesores": 26,
+   "indice": 41.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -11008,11 +10595,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 73,
    "cuartilCalidad": "Q4",
-   "matriculas": 8,
+   "matriculas": 9,
    "meta": 18,
-   "avanceMes": 44.44,
+   "avanceMes": 50.0,
    "avanceRitmo": null,
-   "avanceMeta": 44.44,
+   "avanceMeta": 50.0,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -11024,9 +10611,9 @@
     "avance": 73.68,
     "cuartil": "Q3"
    },
-   "puesto": 2,
-   "totalAsesores": 28,
-   "indice": 58.7,
+   "puesto": 1,
+   "totalAsesores": 26,
+   "indice": 61.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -11275,8 +10862,8 @@
     "avance": 121.05,
     "cuartil": "Q1"
    },
-   "puesto": 6,
-   "totalAsesores": 28,
+   "puesto": 7,
+   "totalAsesores": 26,
    "indice": 55.7,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -11479,20 +11066,20 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 74,
    "cuartilCalidad": "Q4",
-   "matriculas": 6,
+   "matriculas": 7,
    "meta": 18,
-   "avanceMes": 33.33,
+   "avanceMes": 38.89,
    "avanceRitmo": null,
-   "avanceMeta": 33.33,
+   "avanceMeta": 38.89,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 8,
-   "totalAsesores": 28,
-   "indice": 53.7,
+   "puesto": 5,
+   "totalAsesores": 26,
+   "indice": 56.4,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -11767,8 +11354,8 @@
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 19,
-   "totalAsesores": 28,
+   "puesto": 16,
+   "totalAsesores": 26,
    "indice": 49.6,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -12062,8 +11649,8 @@
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 18,
-   "totalAsesores": 28,
+   "puesto": 15,
+   "totalAsesores": 26,
    "indice": 53.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -12345,8 +11932,8 @@
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 27,
-   "totalAsesores": 28,
+   "puesto": 26,
+   "totalAsesores": 26,
    "indice": 31.0,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
@@ -12451,7 +12038,7 @@
   }
  },
  "equipo": {
-  "fecha": "17/10/2026",
+  "fecha": "18/10/2026",
   "mes": "octubre",
   "diasHabiles": {
    "transcurridos": 15,
@@ -12459,8 +12046,8 @@
   },
   "avanceModo": "tablero",
   "cortesMatriculas": {
-   "Q1": 5.25,
-   "Q2": 3.0,
+   "Q1": 5.75,
+   "Q2": 3.5,
    "Q3": 2.0
   },
   "fuente": "🧮ING/MAT (matrículas de octubre, cuartil por aporte en el equipo) · Matriz DASHBOARD (calidad)",
@@ -12473,10 +12060,10 @@
    "paso4": 73.1
   },
   "mapaCalorLocal": {
-   "paso1": 81.82,
-   "paso2": 101.43,
-   "paso3": 294.57,
-   "paso4": 73.54
+   "paso1": 83.19,
+   "paso2": 103.08,
+   "paso3": 310.31,
+   "paso4": 73.58
   },
   "focoCualitativo": {
    "paso": "paso3",
@@ -12495,22 +12082,19 @@
   "cuadrantes": {
    "verde": [],
    "amarillo": [
-    "Milagros Torres Santos",
     "Orlando Jesus Pintado Sandoval",
+    "Milagros Torres Santos",
     "Judith Rocio Vila Incaroca",
     "Diana Carol Taipe Rojas",
+    "Cecilia Esther Aliaga Lapa",
     "Jorge Luis Valencia Cardenas",
     "Nicol Alisson Romero Espinoza",
     "Betsabeth Alexandra Rojas Palacios",
-    "Cecilia Esther Aliaga Lapa",
-    "Lucero Ximena Hujaynatis Jacay",
     "Eduardo Alfredo Coaquiera Elguera",
-    "Maria Alejandra Pino Contreras",
     "Lisette Valeria Blanco Chuco",
     "Isai Yuliño Mercado Bravo",
-    "Patricia Roxana Mercado Zacarias",
-    "Jimena del Rosario Vera Osores",
-    "Justyn Flores Solano"
+    "Justyn Flores Solano",
+    "Patricia Roxana Mercado Zacarias"
    ],
    "naranja": [
     "Edgar Sabino Chavez Vizcarra"
@@ -12519,23 +12103,67 @@
     "Ruth Alexandra Mauricio Verde",
     "Jean Carlos Espinoza Atoc",
     "Angelo Jaime Franco Sarmiento",
+    "Lucero Ximena Hujaynatis Jacay",
+    "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Rosa Victoria Guzman Bonilla",
-    "Juliana Milagros Suarez Atencio",
     "Edward Nelson Gonzales Villaneda",
+    "Jimena del Rosario Vera Osores",
     "Ana Maria Padilla Parra",
     "Anyhela Kelly Ordoñez Chavez",
     "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "sinMatriz": [
-    "Angel Raul Villanueva Fernandez"
-   ]
+   "sinMatriz": []
   },
-  "totalAsesores": 28,
+  "activos": [
+   "Ana Maria Padilla Parra",
+   "Angelo Jaime Franco Sarmiento",
+   "Anyhela Kelly Ordoñez Chavez",
+   "Betsabeth Alexandra Rojas Palacios",
+   "Cecilia Esther Aliaga Lapa",
+   "Diana Carol Taipe Rojas",
+   "Edgar Sabino Chavez Vizcarra",
+   "Eduardo Alfredo Coaquiera Elguera",
+   "Edward Nelson Gonzales Villaneda",
+   "Isai Yuliño Mercado Bravo",
+   "Jean Carlos Espinoza Atoc",
+   "Jimena del Rosario Vera Osores",
+   "Jorge Luis Valencia Cardenas",
+   "Judith Rocio Vila Incaroca",
+   "Justyn Flores Solano",
+   "Lisette Valeria Blanco Chuco",
+   "Lucero Ximena Hujaynatis Jacay",
+   "Maria Alejandra Pino Contreras",
+   "Melissa Leslie Fernadez Avalos",
+   "Milagros Torres Santos",
+   "Nicol Alisson Romero Espinoza",
+   "Orlando Jesus Pintado Sandoval",
+   "Patricia Roxana Mercado Zacarias",
+   "Raul Aaron Manuel Ipanaque Escobar",
+   "Rosa Victoria Guzman Bonilla",
+   "Ruth Alexandra Mauricio Verde"
+  ],
+  "totalAsesores": 26,
   "ranking": [
    {
-    "asesor": "Milagros Torres Santos",
+    "asesor": "Orlando Jesus Pintado Sandoval",
     "puesto": 1,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 73,
+    "cuartilCalidad": "Q4",
+    "matriculas": 9,
+    "meta": 18,
+    "avanceMeta": 50.0,
+    "avanceMes": 50.0,
+    "cuartilMatriculas": "Q1",
+    "indice": 61.5,
+    "tecnicas": 0,
+    "evaluaciones": 7
+   },
+   {
+    "asesor": "Milagros Torres Santos",
+    "puesto": 2,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 65,
@@ -12548,22 +12176,6 @@
     "indice": 60.3,
     "tecnicas": 0,
     "evaluaciones": 4
-   },
-   {
-    "asesor": "Orlando Jesus Pintado Sandoval",
-    "puesto": 2,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 73,
-    "cuartilCalidad": "Q4",
-    "matriculas": 8,
-    "meta": 18,
-    "avanceMeta": 44.44,
-    "avanceMes": 44.44,
-    "cuartilMatriculas": "Q1",
-    "indice": 58.7,
-    "tecnicas": 0,
-    "evaluaciones": 7
    },
    {
     "asesor": "Judith Rocio Vila Incaroca",
@@ -12598,8 +12210,24 @@
     "evaluaciones": 4
    },
    {
-    "asesor": "Jorge Luis Valencia Cardenas",
+    "asesor": "Cecilia Esther Aliaga Lapa",
     "puesto": 5,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 74,
+    "cuartilCalidad": "Q4",
+    "matriculas": 7,
+    "meta": 18,
+    "avanceMeta": 38.89,
+    "avanceMes": 38.89,
+    "cuartilMatriculas": "Q1",
+    "indice": 56.4,
+    "tecnicas": 0,
+    "evaluaciones": 2
+   },
+   {
+    "asesor": "Jorge Luis Valencia Cardenas",
+    "puesto": 6,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 78,
@@ -12615,7 +12243,7 @@
    },
    {
     "asesor": "Nicol Alisson Romero Espinoza",
-    "puesto": 6,
+    "puesto": 7,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 78,
@@ -12631,7 +12259,7 @@
    },
    {
     "asesor": "Betsabeth Alexandra Rojas Palacios",
-    "puesto": 7,
+    "puesto": 8,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 80,
@@ -12646,40 +12274,8 @@
     "evaluaciones": 5
    },
    {
-    "asesor": "Cecilia Esther Aliaga Lapa",
-    "puesto": 8,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 74,
-    "cuartilCalidad": "Q4",
-    "matriculas": 6,
-    "meta": 18,
-    "avanceMeta": 33.33,
-    "avanceMes": 33.33,
-    "cuartilMatriculas": "Q1",
-    "indice": 53.7,
-    "tecnicas": 0,
-    "evaluaciones": 2
-   },
-   {
-    "asesor": "Lucero Ximena Hujaynatis Jacay",
-    "puesto": 9,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 78,
-    "cuartilCalidad": "Q3",
-    "matriculas": 3,
-    "meta": 18,
-    "avanceMeta": 16.67,
-    "avanceMes": 16.67,
-    "cuartilMatriculas": "Q2",
-    "indice": 47.3,
-    "tecnicas": 0,
-    "evaluaciones": 7
-   },
-   {
     "asesor": "Eduardo Alfredo Coaquiera Elguera",
-    "puesto": 10,
+    "puesto": 9,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 72,
@@ -12694,24 +12290,8 @@
     "evaluaciones": 7
    },
    {
-    "asesor": "Maria Alejandra Pino Contreras",
-    "puesto": 11,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 75,
-    "cuartilCalidad": "Q3",
-    "matriculas": 3,
-    "meta": 18,
-    "avanceMeta": 16.67,
-    "avanceMes": 16.67,
-    "cuartilMatriculas": "Q2",
-    "indice": 45.8,
-    "tecnicas": 0,
-    "evaluaciones": 6
-   },
-   {
     "asesor": "Lisette Valeria Blanco Chuco",
-    "puesto": 12,
+    "puesto": 10,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 69,
@@ -12727,7 +12307,7 @@
    },
    {
     "asesor": "Isai Yuliño Mercado Bravo",
-    "puesto": 13,
+    "puesto": 11,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 63,
@@ -12742,8 +12322,24 @@
     "evaluaciones": 3
    },
    {
+    "asesor": "Justyn Flores Solano",
+    "puesto": 12,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 60,
+    "cuartilCalidad": "Q4",
+    "matriculas": 4,
+    "meta": 18,
+    "avanceMeta": 22.22,
+    "avanceMes": 22.22,
+    "cuartilMatriculas": "Q2",
+    "indice": 41.1,
+    "tecnicas": 0,
+    "evaluaciones": 9
+   },
+   {
     "asesor": "Patricia Roxana Mercado Zacarias",
-    "puesto": 14,
+    "puesto": 13,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 56,
@@ -12758,40 +12354,8 @@
     "evaluaciones": 3
    },
    {
-    "asesor": "Jimena del Rosario Vera Osores",
-    "puesto": 15,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 61,
-    "cuartilCalidad": "Q4",
-    "matriculas": 3,
-    "meta": 18,
-    "avanceMeta": 16.67,
-    "avanceMes": 16.67,
-    "cuartilMatriculas": "Q2",
-    "indice": 38.8,
-    "tecnicas": 0,
-    "evaluaciones": 6
-   },
-   {
-    "asesor": "Justyn Flores Solano",
-    "puesto": 16,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 60,
-    "cuartilCalidad": "Q4",
-    "matriculas": 3,
-    "meta": 18,
-    "avanceMeta": 16.67,
-    "avanceMes": 16.67,
-    "cuartilMatriculas": "Q2",
-    "indice": 38.3,
-    "tecnicas": 0,
-    "evaluaciones": 9
-   },
-   {
     "asesor": "Edgar Sabino Chavez Vizcarra",
-    "puesto": 17,
+    "puesto": 14,
     "sede": "LIMA",
     "cuadrante": "naranja",
     "calidad": 88,
@@ -12807,7 +12371,7 @@
    },
    {
     "asesor": "Ruth Alexandra Mauricio Verde",
-    "puesto": 18,
+    "puesto": 15,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 84,
@@ -12823,7 +12387,7 @@
    },
    {
     "asesor": "Jean Carlos Espinoza Atoc",
-    "puesto": 19,
+    "puesto": 16,
     "sede": "HYO",
     "cuadrante": "rojo",
     "calidad": 77,
@@ -12839,23 +12403,55 @@
    },
    {
     "asesor": "Angelo Jaime Franco Sarmiento",
-    "puesto": 20,
+    "puesto": 17,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 80,
     "cuartilCalidad": "Q3",
-    "matriculas": 2,
+    "matriculas": 3,
     "meta": 18,
-    "avanceMeta": 11.11,
-    "avanceMes": 11.11,
+    "avanceMeta": 16.67,
+    "avanceMes": 16.67,
     "cuartilMatriculas": "Q3",
-    "indice": 45.6,
+    "indice": 48.3,
     "tecnicas": 0,
     "evaluaciones": 8
    },
    {
+    "asesor": "Lucero Ximena Hujaynatis Jacay",
+    "puesto": 18,
+    "sede": "HYO",
+    "cuadrante": "rojo",
+    "calidad": 78,
+    "cuartilCalidad": "Q3",
+    "matriculas": 3,
+    "meta": 18,
+    "avanceMeta": 16.67,
+    "avanceMes": 16.67,
+    "cuartilMatriculas": "Q3",
+    "indice": 47.3,
+    "tecnicas": 0,
+    "evaluaciones": 7
+   },
+   {
+    "asesor": "Maria Alejandra Pino Contreras",
+    "puesto": 19,
+    "sede": "LIMA",
+    "cuadrante": "rojo",
+    "calidad": 75,
+    "cuartilCalidad": "Q3",
+    "matriculas": 3,
+    "meta": 18,
+    "avanceMeta": 16.67,
+    "avanceMes": 16.67,
+    "cuartilMatriculas": "Q3",
+    "indice": 45.8,
+    "tecnicas": 0,
+    "evaluaciones": 6
+   },
+   {
     "asesor": "Melissa Leslie Fernadez Avalos",
-    "puesto": 21,
+    "puesto": 20,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 75,
@@ -12871,7 +12467,7 @@
    },
    {
     "asesor": "Rosa Victoria Guzman Bonilla",
-    "puesto": 22,
+    "puesto": 21,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 73,
@@ -12886,24 +12482,8 @@
     "evaluaciones": 7
    },
    {
-    "asesor": "Juliana Milagros Suarez Atencio",
-    "puesto": 23,
-    "sede": "LIMA",
-    "cuadrante": "rojo",
-    "calidad": 78,
-    "cuartilCalidad": "Q3",
-    "matriculas": 1,
-    "meta": 18,
-    "avanceMeta": 5.56,
-    "avanceMes": 5.56,
-    "cuartilMatriculas": "Q4",
-    "indice": 41.8,
-    "tecnicas": 0,
-    "evaluaciones": 4
-   },
-   {
     "asesor": "Edward Nelson Gonzales Villaneda",
-    "puesto": 24,
+    "puesto": 22,
     "sede": "HYO",
     "cuadrante": "rojo",
     "calidad": 69,
@@ -12918,8 +12498,24 @@
     "evaluaciones": 6
    },
    {
+    "asesor": "Jimena del Rosario Vera Osores",
+    "puesto": 23,
+    "sede": "HYO",
+    "cuadrante": "rojo",
+    "calidad": 61,
+    "cuartilCalidad": "Q4",
+    "matriculas": 3,
+    "meta": 18,
+    "avanceMeta": 16.67,
+    "avanceMes": 16.67,
+    "cuartilMatriculas": "Q3",
+    "indice": 38.8,
+    "tecnicas": 0,
+    "evaluaciones": 6
+   },
+   {
     "asesor": "Ana Maria Padilla Parra",
-    "puesto": 25,
+    "puesto": 24,
     "sede": "HYO",
     "cuadrante": "rojo",
     "calidad": 64,
@@ -12935,7 +12531,7 @@
    },
    {
     "asesor": "Anyhela Kelly Ordoñez Chavez",
-    "puesto": 26,
+    "puesto": 25,
     "sede": "HYO",
     "cuadrante": "rojo",
     "calidad": 68,
@@ -12951,7 +12547,7 @@
    },
    {
     "asesor": "Raul Aaron Manuel Ipanaque Escobar",
-    "puesto": 27,
+    "puesto": 26,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 62,
@@ -12964,22 +12560,6 @@
     "indice": 31.0,
     "tecnicas": 0,
     "evaluaciones": 1
-   },
-   {
-    "asesor": "Angel Raul Villanueva Fernandez",
-    "puesto": 28,
-    "sede": "LIMA",
-    "cuadrante": null,
-    "calidad": 78,
-    "cuartilCalidad": "Q3",
-    "matriculas": null,
-    "meta": null,
-    "avanceMeta": null,
-    "avanceMes": null,
-    "cuartilMatriculas": null,
-    "indice": 78.0,
-    "tecnicas": 0,
-    "evaluaciones": 2
    }
   ]
  },
