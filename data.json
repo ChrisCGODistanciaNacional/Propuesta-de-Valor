@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-10-19T20:27:31Z",
+ "generado": "2026-10-19T23:06:10Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -5665,6 +5665,54 @@
    "_foco": null,
    "_fortalezaPrincipal": null,
    "_modo": null
+  },
+  {
+   "Evaluador": "C&C",
+   "ASESOR": "Ruth Alexandra Mauricio Verde",
+   "Sede": "LIMA",
+   "Fecha ingreso": "12/10/2026",
+   "Antigüedad (meses)": "1",
+   "Tramo antigüedad": "0 a 3 meses",
+   "Ganar confianza\n(15%)": "100%",
+   "Identificar necesidades\n(26%)": "100%",
+   "Solucionar problemas\n(36%)": "67%",
+   "Cerrar\n(23%)": "100%",
+   "Score cualitativo": "90,79%",
+   "Cuartil": "Q2",
+   "Fortaleza principal": "",
+   "Brecha principal": "",
+   "Evidencia / observación": "Hola, Ruth 😊, a raíz de la evaluación realizada, comparto contigo los principales hallazgos identificados durante la interacción, con el objetivo de seguir fortaleciendo tu gestión comercial y potenciar tus resultados. ✨\n\n🌟 𝗙𝗢𝗥𝗧𝗔𝗟𝗘𝗭𝗔𝗦\n\n𝟭. 𝗚𝗮𝗻𝗮𝗿 𝗰𝗼𝗻𝗳𝗶𝗮𝗻𝘇𝗮\nTe presentaste correctamente, confirmaste el interés del prospecto por la carrera de Derecho y mantuviste una comunicación cordial durante la llamada.\n\n𝟮. 𝗜𝗱𝗲𝗻𝘁𝗶𝗳𝗶𝗰𝗮𝗿 𝗻𝗲𝗰𝗲𝘀𝗶𝗱𝗮𝗱𝗲𝘀\nIndagaste sobre sus estudios previos, motivación, situación laboral y disponibilidad horaria. Además, identificaste su necesidad de compatibilizar el trabajo con sus estudios y explicaste diferenciales como las clases grabadas, la tutoría y la organización de asignaturas por bloques.\n\n𝟯. 𝗦𝗼𝗹𝘂𝗰𝗶𝗼𝗻𝗮𝗿 𝗽𝗿𝗼𝗯𝗹𝗲𝗺𝗮𝘀\nExplicaste cómo la modalidad a distancia puede adaptarse a sus horarios laborales y ofreciste enviar información complementaria por WhatsApp para continuar orientándolo.\n\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nAcordaste devolver la llamada en una hora y media, estableciendo un compromiso concreto para continuar con la gestión comercial.\n\n🎯 𝗢𝗣𝗢𝗥𝗧𝗨𝗡𝗜𝗗𝗔𝗗𝗘𝗦 𝗗𝗘 𝗠𝗘𝗝𝗢𝗥𝗔\n\n𝟭. 𝗚𝗮𝗻𝗮𝗿 𝗰𝗼𝗻𝗳𝗶𝗮𝗻𝘇𝗮\nContinúa aplicando el protocolo de autorización para la llamada y mantén una presentación clara que genere confianza desde el inicio de la interacción.\n\n𝟮. 𝗜𝗱𝗲𝗻𝘁𝗶𝗳𝗶𝗰𝗮𝗿 𝗻𝗲𝗰𝗲𝘀𝗶𝗱𝗮𝗱𝗲𝘀\nContinúa conectando los diferenciales académicos con las necesidades identificadas y asegúrate de que la información sobre costos, certificaciones y requisitos de titulación sea precisa y comprensible.\n\n𝟯. 𝗦𝗼𝗹𝘂𝗰𝗶𝗼𝗻𝗮𝗿 𝗽𝗿𝗼𝗯𝗹𝗲𝗺𝗮𝘀\nRefuerza los cierres parciales durante la conversación. Confirma progresivamente la aceptación de la modalidad, el interés en la propuesta y la disposición del prospecto para avanzar hacia la inscripción, en lugar de limitarte a explicar los beneficios.\n\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nEn la próxima llamada, cumple el horario acordado, presenta el presupuesto personalizado, resuelve las consultas pendientes y valida si el prospecto está preparado para iniciar su proceso de inscripción.\n\n¡Sigamos fortaleciendo estos puntos para consolidar una gestión comercial consultiva y orientada a resultados! ✨",
+   "Ganar confianza\n(15%) - Fortaleza": "",
+   "Identificar necesidades\n(26%) - Fortaleza": "",
+   "Solucionar problemas\n(36%) - Fortaleza": "",
+   "Cerrar\n(23%) - Fortaleza": "",
+   "Ganar confianza\n(15%) - Oportunidades": "",
+   "Identificar necesidades\n(26%) - Oportunidades": "",
+   "Solucionar problemas\n(36%) - Oportunidades": "",
+   "Cerrar\n(23%) - Oportunidades": "",
+   "FECHA DE EVA.": "",
+   "Fecha": "",
+   "_etapas": {
+    "paso1": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso2": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso3": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso4": {
+     "fortaleza": null,
+     "oportunidad": null
+    }
+   },
+   "_foco": null,
+   "_fortalezaPrincipal": null,
+   "_modo": null
   }
  ],
  "tecnicas": [],
@@ -7529,11 +7577,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 69,
    "cuartilCalidad": "Q4",
-   "matriculas": 4,
+   "matriculas": 5,
    "meta": 18,
-   "avanceMes": 22.22,
+   "avanceMes": 27.78,
    "avanceRitmo": null,
-   "avanceMeta": 22.22,
+   "avanceMeta": 27.78,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
@@ -7545,9 +7593,9 @@
     "avance": 68.42,
     "cuartil": "Q4"
    },
-   "puesto": 10,
+   "puesto": 9,
    "totalAsesores": 26,
-   "indice": 45.6,
+   "indice": 48.4,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
@@ -9720,7 +9768,7 @@
     "avance": 10.53,
     "cuartil": "Q4"
    },
-   "puesto": 15,
+   "puesto": 16,
    "totalAsesores": 26,
    "indice": 46.8,
    "tecnicasDominadas": 0,
@@ -10750,7 +10798,7 @@
     "avance": 42.11,
     "cuartil": "Q4"
    },
-   "puesto": 9,
+   "puesto": 10,
    "totalAsesores": 26,
    "indice": 47.1,
    "tecnicasDominadas": 0,
@@ -12155,183 +12203,72 @@
   "Ruth Alexandra Mauricio Verde": {
    "sede": "LIMA",
    "antiguedad": "0 a 3 meses",
-   "numEvaluaciones": 1,
-   "ultimaFecha": "14/10/2026",
-   "foco": "paso4",
-   "fortalezaPrincipal": "paso1",
-   "modoFeedback": "etapas",
+   "numEvaluaciones": 2,
+   "ultimaFecha": null,
+   "foco": null,
+   "fortalezaPrincipal": null,
+   "modoFeedback": null,
    "stages": {
     "paso1": {
      "pct": 100,
-     "prev": null,
-     "delta": null,
+     "prev": 100,
+     "delta": 0,
      "avg": 100,
-     "fortaleza": "Te presentas correctamente, identificas a la Universidad Continental y confirmas la carrera y modalidad de interés de la prospecto, manteniendo una comunicación cordial.",
-     "oportunidad": "Mantén una comunicación alineada con los protocolos institucionales y utiliza siempre la terminología autorizada para brindar información clara y profesional.",
-     "conclusion": "Te presentaste bien, identificaste a Continental y confirmaste carrera y modalidad con trato cordial. Mantén siempre la terminología autorizada y los protocolos institucionales.",
-     "rol": "oportunidad",
-     "texto": "Mantén una comunicación alineada con los protocolos institucionales y utiliza siempre la terminología autorizada para brindar información clara y profesional.",
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
      "tecnica": null,
-     "caso": {
-      "tipo": "accion",
-      "texto": "Antes de cada llamada, repasa los términos autorizados (por ejemplo «evaluación de admisión», no «examen»). Revisa tu guion de apertura y úsalo siempre igual.",
-      "porQue": "Tu observación de esta llamada no es de speech sino de protocolo y terminología.",
-      "base": "2e1f957cce35",
-      "dialogo": null
-     }
+     "caso": null
     },
     "paso2": {
-     "pct": 85,
-     "prev": null,
-     "delta": null,
-     "avg": 85,
-     "fortaleza": "Indagas sobre su motivación para estudiar Psicología, su situación laboral y sus responsabilidades familiares. Además, explicas beneficios de la modalidad virtual, certificados progresivos y alternativas para organizar su carga académica.",
-     "oportunidad": "Utiliza la expresión «evaluación de admisión» y evita términos como «examen de ingreso» o «examen de admisión». Asimismo, cuando la prospecto consulte por convenios o descuentos, valida la información antes de comunicar las condiciones y asegúrate de brindarle una respuesta precisa.",
-     "conclusion": "Indagaste motivación, situación laboral y carga familiar, y explicaste los beneficios de la modalidad virtual. Usa «evaluación de admisión» y valida convenios y descuentos antes de comunicar condiciones.",
-     "rol": "oportunidad",
-     "texto": "Utiliza la expresión «evaluación de admisión» y evita términos como «examen de ingreso» o «examen de admisión». Asimismo, cuando la prospecto consulte por convenios o descuentos, valida la información antes de comunicar las condiciones y asegúrate de brindarle una respuesta precisa.",
-     "tecnica": {
-      "id": "tec_08",
-      "titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-      "ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Buena pregunta, [nombre]. Prefiero no darte una condición sin confirmarla: voy a validar si existe convenio con el Ministerio Público y qué incluye exactamente.\n\nSe llama evaluación de admisión: es virtual, con cámara y no es una prueba de conocimientos. Mientras valido el convenio, ¿qué inversión mensual sería cómoda para ti?\n\nTe entiendo. Te llamo mañana a las 6 p. m. con la respuesta del convenio y las opciones para tu caso. ¿Te va bien esa hora?",
-      "porQue": "Validar antes de prometer y anticipar la preocupación económica evita dar información imprecisa y te permite volver con una respuesta firme.",
-      "base": "54a8d1a5cedf",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "¿Tienen convenio con el Ministerio Público? Trabajo ahí y quisiera algún descuento."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Buena pregunta, [nombre]. Prefiero no darte una condición sin confirmarla: voy a validar si existe convenio con el Ministerio Público y qué incluye exactamente."
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ok. ¿Y tengo que dar examen de ingreso?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "Se llama evaluación de admisión: es virtual, con cámara y no es una prueba de conocimientos. Mientras valido el convenio, ¿qué inversión mensual sería cómoda para ti?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Algo que pueda pagar sin ahogarme, tengo hijos."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Te entiendo. Te llamo mañana a las 6 p. m. con la respuesta del convenio y las opciones para tu caso. ¿Te va bien esa hora?"
-       }
-      ]
-     }
+     "pct": 100,
+     "prev": 85,
+     "delta": 15,
+     "avg": 92,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     },
     "paso3": {
-     "pct": 81,
-     "prev": null,
-     "delta": null,
-     "avg": 81,
-     "fortaleza": "Mantienes disposición para atender sus consultas y te comprometes a verificar si existe un convenio con el Ministerio Público que pueda responder a su necesidad económica.",
-     "oportunidad": "Ante una consulta que requiera validación, realiza las coordinaciones correspondientes y brinda una respuesta concreta durante el seguimiento acordado, buscando alternativas que respondan a la necesidad económica de la prospecto.",
-     "conclusion": "Mantuviste la disposición y te comprometiste a verificar el convenio con el Ministerio Público. En el seguimiento, trae una respuesta concreta y alternativas que respondan a su necesidad económica.",
-     "rol": "oportunidad",
-     "texto": "Ante una consulta que requiera validación, realiza las coordinaciones correspondientes y brinda una respuesta concreta durante el seguimiento acordado, buscando alternativas que respondan a la necesidad económica de la prospecto.",
-     "tecnica": {
-      "id": "tec_10",
-      "titulo": "✅ Construye Pequeños \"Sí\" (micro-compromisos)",
-      "ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Así es, [nombre]. Hice la consulta del convenio con el Ministerio Público y te traigo una respuesta concreta; si no aplica en tu caso, también te traigo alternativas para tu presupuesto.\n\nEntiendo. Te explico por partes: primero el pago inicial, que incluye admisión, matrícula, seguro y la primera cuota, y luego la cuota mensual. ¿Hasta aquí vamos bien?\n\nGenial. ¿Te envío el resumen por WhatsApp hoy y volvemos a hablar mañana a las 6 p. m. para decidir cómo organizar tu inicio?",
-      "porQue": "Explicar la inversión por partes y confirmar cada una con ella te permite llegar al seguimiento con una respuesta concreta y avanzar con pequeños sí.",
-      "base": "cff0f6a28b9a",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "Hola, sí, me dijeron que me llamarían por lo del convenio."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Así es, [nombre]. Hice la consulta del convenio con el Ministerio Público y te traigo una respuesta concreta; si no aplica en tu caso, también te traigo alternativas para tu presupuesto."
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ok, pero necesito algo accesible por mis gastos."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Entiendo. Te explico por partes: primero el pago inicial, que incluye admisión, matrícula, seguro y la primera cuota, y luego la cuota mensual. ¿Hasta aquí vamos bien?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, voy entendiendo."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Genial. ¿Te envío el resumen por WhatsApp hoy y volvemos a hablar mañana a las 6 p. m. para decidir cómo organizar tu inicio?"
-       }
-      ]
-     }
+     "pct": 67,
+     "prev": 81,
+     "delta": -14,
+     "avg": 74,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     },
     "paso4": {
-     "pct": 78,
-     "prev": null,
-     "delta": null,
-     "avg": 78,
-     "fortaleza": "Ofreces enviar información por WhatsApp y acuerdas una devolución de llamada para continuar con la gestión comercial.",
-     "oportunidad": "Completa el protocolo de despedida mencionando tu nombre y Universidad Continental, y realiza la transferencia a la encuesta de satisfacción para asegurar el cumplimiento de la gestión.",
-     "conclusion": "Ofreciste enviar información por WhatsApp y acordaste una devolución de llamada. Falta completar la despedida con tu nombre y Universidad Continental, y transferir a la encuesta de satisfacción.",
-     "rol": "oportunidad",
-     "texto": "Completa el protocolo de despedida mencionando tu nombre y Universidad Continental, y realiza la transferencia a la encuesta de satisfacción para asegurar el cumplimiento de la gestión.",
-     "tecnica": {
-      "id": "tec_16",
-      "titulo": "📅 Si No Confirma al momento Termina con un Próximo Paso",
-      "ejemplo": "\"¿Te llamo el martes para conocer si podemos empezar tu proceso de admisión? ¿Te pare? o si decides antes avisame y estaré muy atento. Recuerda hacerlo hasta esta fecha que cierra el beneficio.\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Así es, [nombre]. Te llamo mañana a las 6 p. m. y esta tarde te escribo por WhatsApp con la información. Si necesitas algo antes, me avisas por ahí.\n\nGracias a ti. Te habló Ruth de la Universidad Continental. Ahora te transfiero a una breve encuesta de satisfacción, ¿está bien?\n\nExcelente. Que tengas una linda tarde y hablamos mañana a las 6 p. m.",
-      "porQue": "Cerrar con una hora acordada y la despedida completa deja el siguiente paso claro y cumple el protocolo.",
-      "base": "32ec0f650acc",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "Entonces quedamos en que me devuelves la llamada."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Así es, [nombre]. Te llamo mañana a las 6 p. m. y esta tarde te escribo por WhatsApp con la información. Si necesitas algo antes, me avisas por ahí."
-       },
-       {
-        "quien": "cliente",
-        "texto": "Perfecto, gracias."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Gracias a ti. Te habló Ruth de la Universidad Continental. Ahora te transfiero a una breve encuesta de satisfacción, ¿está bien?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, claro."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Excelente. Que tengas una linda tarde y hablamos mañana a las 6 p. m."
-       }
-      ]
-     }
+     "pct": 100,
+     "prev": 78,
+     "delta": 22,
+     "avg": 89,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     }
    },
-   "scoreGlobal": "84,44%",
-   "callScorePct": 84,
-   "scorePrev": null,
-   "scoreDelta": null,
+   "scoreGlobal": "90,79%",
+   "callScorePct": 91,
+   "scorePrev": 84,
+   "scoreDelta": 7,
    "cuartilUltima": "Q2",
-   "calidadPromedio": 84,
-   "cuartilCalidad": "Q3",
+   "calidadPromedio": 88,
+   "cuartilCalidad": "Q2",
    "matriculas": 2,
    "meta": 9,
    "avanceMes": 22.22,
@@ -12339,25 +12276,25 @@
    "avanceMeta": 22.22,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q3",
-   "cuadrante": "rojo",
+   "cuadrante": "naranja",
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 16,
+   "puesto": 15,
    "totalAsesores": 26,
-   "indice": 53.1,
+   "indice": 55.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 15,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
-    "evaluacionesLeidas": 1,
+    "evaluacionesLeidas": 2,
     "pendientes": 0,
     "items": {
      "paso1_1": {
       "estado": "ok",
-      "evidencia": "Te presentas correctamente e identificas a la Universidad Continental",
-      "fecha": "14/10/2026"
+      "evidencia": "Te presentaste correctamente",
+      "fecha": null
      },
      "paso1_2": {
       "estado": "sin_evidencia",
@@ -12376,8 +12313,8 @@
      },
      "paso2_1": {
       "estado": "ok",
-      "evidencia": "Indagas sobre su motivación para estudiar Psicología y su situación laboral",
-      "fecha": "14/10/2026"
+      "evidencia": "Indagaste sobre situación laboral y motivación",
+      "fecha": null
      },
      "paso2_2": {
       "estado": "sin_evidencia",
@@ -12400,8 +12337,8 @@
       "fecha": null
      },
      "paso3_2": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
+      "estado": "ok",
+      "evidencia": "Explicaste clases grabadas, tutoría y asignaturas por bloques",
       "fecha": null
      },
      "paso3_3": {
@@ -12420,8 +12357,8 @@
       "fecha": "14/10/2026"
      },
      "paso3_6": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
+      "estado": "pendiente",
+      "evidencia": "Refuerza los cierres parciales durante la conversación",
       "fecha": null
      },
      "paso4_1": {
@@ -12441,8 +12378,8 @@
      },
      "paso4_4": {
       "estado": "ok",
-      "evidencia": "Acuerdas una devolución de llamada para continuar con la gestión",
-      "fecha": "14/10/2026"
+      "evidencia": "Acordaste devolver la llamada en una hora y media",
+      "fecha": null
      }
     }
    }
@@ -12755,9 +12692,9 @@
   },
   "mapaCalorLocal": {
    "paso1": 83.19,
-   "paso2": 76.23,
-   "paso3": 61.35,
-   "paso4": 73.58
+   "paso2": 76.5,
+   "paso3": 61.08,
+   "paso4": 74.0
   },
   "focoCualitativo": {
    "paso": "paso3",
@@ -12784,18 +12721,18 @@
     "Diana Carol Taipe Rojas",
     "Jorge Luis Valencia Cardenas",
     "Nicol Alisson Romero Espinoza",
-    "Eduardo Alfredo Coaquiera Elguera",
     "Lisette Valeria Blanco Chuco",
+    "Eduardo Alfredo Coaquiera Elguera",
     "Isai Yuliño Mercado Bravo",
     "Justyn Flores Solano",
     "Jimena del Rosario Vera Osores",
     "Patricia Roxana Mercado Zacarias"
    ],
    "naranja": [
+    "Ruth Alexandra Mauricio Verde",
     "Edgar Sabino Chavez Vizcarra"
    ],
    "rojo": [
-    "Ruth Alexandra Mauricio Verde",
     "Jean Carlos Espinoza Atoc",
     "Angelo Jaime Franco Sarmiento",
     "Lucero Ximena Hujaynatis Jacay",
@@ -12968,8 +12905,24 @@
     "evaluaciones": 5
    },
    {
-    "asesor": "Eduardo Alfredo Coaquiera Elguera",
+    "asesor": "Lisette Valeria Blanco Chuco",
     "puesto": 9,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 69,
+    "cuartilCalidad": "Q4",
+    "matriculas": 5,
+    "meta": 18,
+    "avanceMeta": 27.78,
+    "avanceMes": 27.78,
+    "cuartilMatriculas": "Q2",
+    "indice": 48.4,
+    "tecnicas": 0,
+    "evaluaciones": 2
+   },
+   {
+    "asesor": "Eduardo Alfredo Coaquiera Elguera",
+    "puesto": 10,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 72,
@@ -12982,22 +12935,6 @@
     "indice": 47.1,
     "tecnicas": 0,
     "evaluaciones": 6
-   },
-   {
-    "asesor": "Lisette Valeria Blanco Chuco",
-    "puesto": 10,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 69,
-    "cuartilCalidad": "Q4",
-    "matriculas": 4,
-    "meta": 18,
-    "avanceMeta": 22.22,
-    "avanceMes": 22.22,
-    "cuartilMatriculas": "Q2",
-    "indice": 45.6,
-    "tecnicas": 0,
-    "evaluaciones": 2
    },
    {
     "asesor": "Isai Yuliño Mercado Bravo",
@@ -13064,8 +13001,24 @@
     "evaluaciones": 2
    },
    {
-    "asesor": "Edgar Sabino Chavez Vizcarra",
+    "asesor": "Ruth Alexandra Mauricio Verde",
     "puesto": 15,
+    "sede": "LIMA",
+    "cuadrante": "naranja",
+    "calidad": 88,
+    "cuartilCalidad": "Q2",
+    "matriculas": 2,
+    "meta": 9,
+    "avanceMeta": 22.22,
+    "avanceMes": 22.22,
+    "cuartilMatriculas": "Q3",
+    "indice": 55.1,
+    "tecnicas": 0,
+    "evaluaciones": 2
+   },
+   {
+    "asesor": "Edgar Sabino Chavez Vizcarra",
+    "puesto": 16,
     "sede": "LIMA",
     "cuadrante": "naranja",
     "calidad": 88,
@@ -13078,22 +13031,6 @@
     "indice": 46.8,
     "tecnicas": 0,
     "evaluaciones": 2
-   },
-   {
-    "asesor": "Ruth Alexandra Mauricio Verde",
-    "puesto": 16,
-    "sede": "LIMA",
-    "cuadrante": "rojo",
-    "calidad": 84,
-    "cuartilCalidad": "Q3",
-    "matriculas": 2,
-    "meta": 9,
-    "avanceMeta": 22.22,
-    "avanceMes": 22.22,
-    "cuartilMatriculas": "Q3",
-    "indice": 53.1,
-    "tecnicas": 0,
-    "evaluaciones": 1
    },
    {
     "asesor": "Jean Carlos Espinoza Atoc",
@@ -13391,7 +13328,7 @@
    "acumulado": {
     "desde": "02/09/2026",
     "hasta": "16/10/2026",
-    "llamadas": 110,
+    "llamadas": 111,
     "temas": [
      {
       "id": "encuesta",
@@ -13483,8 +13420,8 @@
      {
       "id": "valor",
       "tema": "Propuesta de valor débil (sin 2 diferenciales)",
-      "llamadas": 32,
-      "asesores": 18,
+      "llamadas": 33,
+      "asesores": 19,
       "nombres": [
        "Ana Maria Padilla Parra",
        "Angelo Jaime Franco Sarmiento",
@@ -13503,7 +13440,8 @@
        "Melissa Leslie Fernadez Avalos",
        "Nicol Alisson Romero Espinoza",
        "Orlando Jesus Pintado Sandoval",
-       "Rosa Victoria Guzman Bonilla"
+       "Rosa Victoria Guzman Bonilla",
+       "Ruth Alexandra Mauricio Verde"
       ]
      },
      {
@@ -13561,8 +13499,8 @@
      {
       "id": "parciales",
       "tema": "Faltan cierres parciales",
-      "llamadas": 23,
-      "asesores": 17,
+      "llamadas": 24,
+      "asesores": 18,
       "nombres": [
        "Ana Maria Padilla Parra",
        "Anyhela Kelly Ordoñez Chavez",
@@ -13580,7 +13518,8 @@
        "Milagros Torres Santos",
        "Nicol Alisson Romero Espinoza",
        "Patricia Roxana Mercado Zacarias",
-       "Rosa Victoria Guzman Bonilla"
+       "Rosa Victoria Guzman Bonilla",
+       "Ruth Alexandra Mauricio Verde"
       ]
      },
      {
@@ -13872,6 +13811,15 @@
    },
    {
     "asesor": "Eduardo Alfredo Coaquiera Elguera",
+    "fecha": null,
+    "tipo": "fecha",
+    "campo": "Fecha",
+    "valor": "",
+    "corregido": null,
+    "mensaje": "Evaluación sin fecha: se ordena según su fila en el Drive"
+   },
+   {
+    "asesor": "Ruth Alexandra Mauricio Verde",
     "fecha": null,
     "tipo": "fecha",
     "campo": "Fecha",
