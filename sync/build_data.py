@@ -260,6 +260,48 @@ missing = [k for k, v in H_STAGE.items() if not v]
 if not H_ASESOR or missing or not H_FECHA:
     sys.exit(f'🔰FEEDBACK: no encuentro columnas clave (asesor={H_ASESOR}, fecha={H_FECHA}, etapas faltantes={missing})')
 
+# Revisión de datos antes de publicar: filas en blanco (plantillas sin fecha ni %), % mal tipeados
+# (6538% en vez de 65,38%) y scores que no cuadran con sus etapas. Lo que se puede corregir sin duda se
+# corrige; todo queda en ALERTAS_DATOS (se imprime con ⚠️ y la página lo muestra al supervisor en ⚙️).
+ALERTAS_DATOS = []
+FILAS_VACIAS = 0
+PESO_ETAPA = {}
+for _k, _h in H_STAGE.items():
+    _m = re.search(r'\((\d+(?:[.,]\d+)?)\s*%\)', _h or '')
+    PESO_ETAPA[_k] = float(_m.group(1).replace(',', '.')) / 100 if _m else None
+_CAMPOS_CONTENIDO = [h for h in [H_SCORE, H_FORTS, H_OPORT, H_EVID] + list(H_STAGE.values()) + list(H_FORT_E.values()) + list(H_OPOR_E.values()) if h]
+
+def _vacio(v):
+    return str(v if v is not None else '').strip() in ('', '_', '-', '—')
+
+def _alerta(row, tipo, campo, valor, corregido, mensaje):
+    ALERTAS_DATOS.append({'asesor': row.get(H_ASESOR), 'fecha': str(row.get(H_FECHA, '') or '').strip() or None,
+                          'tipo': tipo, 'campo': campo, 'valor': valor, 'corregido': corregido, 'mensaje': mensaje})
+
+def revisar_fila(row):
+    """Corrige % de etapa imposibles (> 100) y avisa si el score no cuadra con las etapas."""
+    sc = pct(row.get(H_SCORE)) if H_SCORE else None
+    vals = {}
+    for k in STAGE_KEYS:
+        h = H_STAGE[k]; v = pct(row.get(h))
+        if v is not None and v > 100:
+            c = v
+            while c > 100:
+                c = c / 100
+            c = round(c, 2)
+            etiqueta = STAGE_LABEL[k].capitalize()
+            _alerta(row, 'porcentaje', etiqueta, str(row.get(h)), f'{c:g}%'.replace('.', ','),
+                    f'{etiqueta}: dice {row.get(h)}; se tomó como {str(round(c, 2)).replace(".", ",")}% (falta la coma decimal)')
+            row[h] = f'{int(round(c))}%'
+            v = c
+        vals[k] = v
+    if sc is not None and all(vals[k] is not None for k in STAGE_KEYS) and all(PESO_ETAPA.values()):
+        calc = sum(vals[k] * PESO_ETAPA[k] for k in STAGE_KEYS)
+        if abs(calc - sc) > 15:
+            _alerta(row, 'score', 'Score cualitativo', str(row.get(H_SCORE)), None,
+                    'El score (' + str(row.get(H_SCORE)) + ') no cuadra con sus etapas (' + ' / '.join(str(row.get(H_STAGE[k])) for k in STAGE_KEYS)
+                    + f' dan ≈{round(calc)}%): revisa si algún % está mal tipeado')
+
 evaluacion = []
 for raw in fb[1:]:
     if not any(str(c).strip() for c in raw):
@@ -275,6 +317,12 @@ for raw in fb[1:]:
     row[H_ASESOR] = ALIASES.get(name, name)
     if H_FECHA != 'Fecha':
         row['Fecha'] = str(row.get(H_FECHA, '') or '').strip()   # la página lee "Fecha"
+    if all(_vacio(row.get(h)) for h in _CAMPOS_CONTENIDO):
+        FILAS_VACIAS += 1   # fila de plantilla (solo nombre/evaluador): no es una evaluación
+        continue
+    if _vacio(row.get(H_FECHA)):
+        _alerta(row, 'fecha', 'Fecha', '', None, 'Evaluación sin fecha: se ordena según su fila en el Drive')
+    revisar_fila(row)
     evaluacion.append(row)
 
 # Respaldo del formato anterior (FORTALEZAS / OPORTUNIDADES generales + fortaleza y brecha principal
@@ -630,6 +678,38 @@ def _txt(v):
     s = str(v or '').strip()
     return '' if s in ('', '_', '-', '—') else s
 
+# Formato anterior (un texto general de fortalezas y otro de oportunidades): cada viñeta 🟢/🟠 se ubica en
+# la etapa de la que habla, para no cargar todo el texto en una sola etapa y dejar las demás vacías.
+CLAVES_ETAPA = {
+    'paso1': r'(presenta(s|cion|rte)?|tu nombre|su nombre|nombre (del|de la) prospect|saludo|saluda|identificas? (con|al|a la)|universidad continental|rapport|confianza|empat|cordial|amabl|tono de voz)',
+    'paso2': r'(sondeo|sondea|necesidad|situacion (laboral|personal)|motivacion|explora|profundiz|conocer (su|la|sus|donde)|perfil|escucha activa|disponibilidad (real|de tiempo)|etapas mas tempranas)',
+    'paso3': r'(propuesta de valor|modalidad|beneficio|inversion|costo|precio|objecion|convalidacion|certificacion|flexibilidad|clases|grabadas|adelanto|excel|nexus|cierres? parcial|argument|soluciona)',
+    'paso4': r'(seguimiento|fecha y hora|encuesta|despedida|proximo (paso|contacto)|agend|cierre(?!s? parcial)|cerrar|pago|matricul|inscrip|accion concreta|retom|escriba cuando|whatsapp)',
+}
+def _plano_et(t):
+    t = unicodedata.normalize('NFD', str(t or '').lower())
+    return ''.join(c for c in t if unicodedata.category(c) != 'Mn')
+
+def repartir_por_etapa(texto, por_defecto, preferir):
+    """Texto general → {etapa: texto}. Cada viñeta va a la etapa con más palabras clave; si no hay pistas,
+    a la etapa por defecto. En empate gana la etapa preferida (la más baja/alta según el caso)."""
+    out = {}
+    if not texto:
+        return out
+    trozos = [t.strip() for t in re.split(r'(?=[🟢🟠🔴🟡•▪✅❌])', texto) if t.strip()]
+    for t in trozos:
+        pl = _plano_et(t)
+        pts = {k: len(re.findall(CLAVES_ETAPA[k], pl)) for k in STAGE_KEYS}
+        mx = max(pts.values())
+        if mx == 0:
+            k = por_defecto
+        else:
+            empatadas = [k for k in STAGE_KEYS if pts[k] == mx]
+            k = next((x for x in preferir if x in empatadas), empatadas[0])
+        if k:
+            out[k] = (out[k] + ' ' + t).strip() if k in out else t
+    return out
+
 def textos_por_etapa(row):
     """Lee lo que escribió el supervisor y lo reparte por etapa.
     Devuelve (etapas {k: {'fortaleza','oportunidad'}}, fortaleza principal k, brecha principal k, fortalezas general, oportunidades general, evidencia, modo).
@@ -674,9 +754,14 @@ def textos_por_etapa(row):
             brecha_k = mas_baja(con_pct)
         if forts_g and not fort_k:
             fort_k = mas_alta([k for k in con_pct if k != brecha_k] or con_pct)
-        etapas = {k: {'fortaleza': forts_g if (k == fort_k and forts_g) else '', 'oportunidad': oport_g if (k == brecha_k and oport_g) else ''} for k in STAGE_KEYS}
+        orden_bajo = sorted(con_pct, key=lambda k: (pcts[k], STAGE_KEYS.index(k)))
+        rf = repartir_por_etapa(forts_g, fort_k, [fort_k] + orden_bajo[::-1])
+        ro = repartir_por_etapa(oport_g, brecha_k, [brecha_k] + orden_bajo)
+        etapas = {k: {'fortaleza': rf.get(k, ''), 'oportunidad': ro.get(k, '')} for k in STAGE_KEYS}
         if not forts_g: fort_k = None
+        elif fort_k not in rf: fort_k = mas_alta(list(rf)) or fort_k
         if not oport_g: brecha_k = None
+        elif brecha_k not in ro: brecha_k = mas_baja(list(ro)) or brecha_k
     return etapas, fort_k, brecha_k, forts_g, oport_g, evid, modo
 
 def textos_de(row):
@@ -998,6 +1083,7 @@ out = {
     'analisis': analisis,
     'equipo': equipo,
     'hallazgos': hallazgos,
+    'alertasDatos': {'filasVacias': FILAS_VACIAS, 'items': ALERTAS_DATOS},
 }
 with open(os.path.join(SYNC, 'pending.json'), 'w', encoding='utf-8') as f:
     json.dump(pending, f, ensure_ascii=False, indent=1)
@@ -1008,6 +1094,10 @@ print('cuadrantes: ' + ' · '.join(f'{c} {len(v)}' for c, v in cuadrantes.items(
 if UNMATCHED_LOG:
     print('nombres cruzados por parecido / sin cruce:')
     print('\n'.join(sorted(set(UNMATCHED_LOG))))
+if FILAS_VACIAS:
+    print(f'filas en blanco de 🔰FEEDBACK ignoradas: {FILAS_VACIAS}')
+for a in ALERTAS_DATOS:
+    print(f'⚠️ 🔰FEEDBACK {a["asesor"]} {a["fecha"] or "(sin fecha)"}: {a["mensaje"]}')
 print(f'PENDIENTES: casos={len(pending["casos"])} checklist={len(pending["checklist"])}  (ver sync/pending.json)')
 if DRY:
     print('(modo --dry: data.json no se escribió)')
