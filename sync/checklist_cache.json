@@ -6862,5 +6862,161 @@
     "evidencia": "Acordaste devolver la llamada en una hora y media"
    }
   }
+ },
+ "186a1eb8bb7b": {
+  "asesor": "Maria Alejandra Pino Contreras",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Se presenta con su nombre y como asesora educativa de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utiliza el nombre del prospecto durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundizar en las motivaciones para estudiar Ingeniería Ambiental"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundizar en sus objetivos profesionales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Presentar al menos dos diferenciales vinculados con sus necesidades"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Responde sus consultas sobre horarios, modalidad y proceso de convalidación"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Confirmar que comprenda las condiciones económicas y los pasos siguientes"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completar la despedida indicando el nombre de la asesora y de la universidad"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda retomar al día siguiente, pero sin hora específica"
+   }
+  }
+ },
+ "1a813f297c16": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas con tu nombre y mencionas a la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizas el nombre del prospecto durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Respondes consultas sobre horarios, costos y duración estimada de la carrera"
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Comunicas diferenciales, pero falta relacionarlos con sus necesidades"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante su decisión de no inscribirse, explora su objeción antes de insistir"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece una fecha y hora específicas para el seguimiento"
+   }
+  }
  }
 }
