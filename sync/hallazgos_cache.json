@@ -1,131 +1,125 @@
 {
- "actualizado": "21/10/2026",
+ "actualizado": "22/10/2026",
  "periodo": {
-  "desde": "10/10/2026",
-  "hasta": "16/10/2026"
+  "desde": "16/10/2026",
+  "hasta": "22/10/2026"
  },
  "base": {
-  "llamadas": 23,
-  "asesores": 17
+  "llamadas": 15,
+  "asesores": 13
  },
- "titular": "Se repite por segunda semana el adelantar cuánto se convalida («el 70 %», «dos años») y dejar el seguimiento sin hora; además 18 de 23 llamadas no derivan a la encuesta. Lo bueno: aparecen asesores que conectan el horario laboral del prospecto con las clases grabadas y proponen una simulación referencial.",
+ "titular": "Se repiten tres hábitos: dejar el seguimiento sin hora (11 de 15 llamadas), cerrar sin derivar a la encuesta y apoyarse en descuentos o montos no verificados antes de construir valor. Lo bueno: hay quien aclara que la convalidación depende de los sílabos y quien fija la rellamada con hora.",
  "items": [
   {
-   "tipo": "mania",
-   "titulo": "Seguir prometiendo cuánto se convalida",
-   "queVimos": "Antes de evaluar sílabos se adelanta un resultado: «podría reconocerse hasta el 70 %», «unos dos años» o «terminar en tres años».",
-   "veces": "7 llamadas · 6 asesores · 2.ª semana seguida",
+   "tipo": "mala_practica",
+   "titulo": "Vender con el descuento y montos sin verificar",
+   "queVimos": "El descuento aparece como argumento principal antes de indagar, se asegura un beneficio no confirmado o se da un total sin desglosar sus conceptos.",
+   "veces": "8 llamadas · 8 asesores",
    "asesores": [
-    "Jean Carlos Espinoza Atoc",
-    "Anyhela Kelly Ordoñez Chavez",
-    "Ana Maria Padilla Parra",
-    "Jorge Luis Valencia Cardenas",
-    "Nicol Alisson Romero Espinoza",
-    "Jimena del Rosario Vera Osores"
+    "Justyn Flores Solano",
+    "Orlando Jesus Pintado Sandoval",
+    "Maria Alejandra Pino Contreras",
+    "Eduardo Alfredo Coaquiera Elguera",
+    "Judith Rocio Vila Incaroca",
+    "Lucero Ximena Hujaynatis Jacay",
+    "Betsabeth Alexandra Rojas Palacios",
+    "Jean Carlos Espinoza Atoc"
    ],
-   "ejemplo": "«Podría convalidar alrededor del 70 % de los créditos, reconocer dos años y culminar en tres» (16/10).",
-   "porQueImporta": "Si la evaluación formal reconoce menos, el alumno siente que lo engañaron y se pierde la confianza y la matrícula.",
-   "accion": "Frase modelo: «Lo que se convalida lo define la evaluación de tus sílabos; envíame tu certificado y armamos una simulación referencial para que veas tu caso».",
+   "ejemplo": "«Evita asegurar que recibirá descuentos adicionales y pagará menos de S/ 500 si el beneficio no está confirmado oficialmente» (22/10).",
+   "porQueImporta": "Si el monto prometido no se cumple se pierde la confianza; y si solo se vende precio, el prospecto compara por precio y no por valor.",
+   "accion": "Primero 2 diferenciales ligados a su necesidad; luego la inversión desglosada (admisión + matrícula + seguro + primera cuota) y solo promociones vigentes de la Biblioteca. Frase: «Te confirmo por escrito la promoción vigente para que no haya sorpresas».",
+   "tecnica": "tec_14"
+  },
+  {
+   "tipo": "mala_practica",
+   "titulo": "Seguimiento sin hora concreta",
+   "queVimos": "Se acuerda «mañana», «por la tarde» o se espera que el prospecto vuelva a escribir, sin fijar hora ni objetivo de la siguiente llamada.",
+   "veces": "11 llamadas · 10 asesores · 3.ª semana seguida",
+   "asesores": [
+    "Anyhela Kelly Ordoñez Chavez",
+    "Eduardo Alfredo Coaquiera Elguera",
+    "Edward Nelson Gonzales Villaneda",
+    "Jean Carlos Espinoza Atoc",
+    "Judith Rocio Vila Incaroca",
+    "Justyn Flores Solano",
+    "Lucero Ximena Hujaynatis Jacay",
+    "Maria Alejandra Pino Contreras",
+    "Orlando Jesus Pintado Sandoval",
+    "Raul Aaron Manuel Ipanaque Escobar"
+   ],
+   "ejemplo": "«Aunque se acuerda retomar el contacto al día siguiente, establecer una hora específica para asegurar un seguimiento organizado» (22/10).",
+   "porQueImporta": "Sin día y hora no hay compromiso: el lead se enfría y la segunda llamada no se concreta.",
+   "accion": "Regla de cierre: día + hora + qué haremos («el viernes a las 6 p. m. revisamos tu presupuesto y resolvemos lo que falte»).",
+   "tecnica": "tec_16"
+  },
+  {
+   "tipo": "mania",
+   "titulo": "Seguir adelantando cuánto se convalida",
+   "queVimos": "Antes de la evaluación de sílabos se anticipa un resultado («hasta el 70 %», «dos años») o se presenta la simulación como si fuera la convalidación oficial.",
+   "veces": "3 llamadas · 3 asesores · 3.ª semana seguida",
+   "asesores": [
+    "Anyhela Kelly Ordoñez Chavez",
+    "Jean Carlos Espinoza Atoc",
+    "Orlando Jesus Pintado Sandoval"
+   ],
+   "ejemplo": "«Mencionas reiteradamente que podría reconocerse hasta el 70 % de la carrera» (16/10).",
+   "porQueImporta": "Si la evaluación formal reconoce menos, el alumno siente que lo engañaron y se pierde la matrícula.",
+   "accion": "Frase modelo: «Lo que se convalida lo define la evaluación de tus sílabos; la simulación es referencial y te sirve para ver tu caso».",
    "tecnica": "tec_08"
   },
   {
-   "tipo": "mala_practica",
-   "titulo": "Seguimiento con día pero sin hora",
-   "queVimos": "Se acuerda «mañana», «el lunes» o «te escribo» sin fijar hora ni qué se revisará, o se cambia el plazo que dio el prospecto.",
-   "veces": "19 llamadas · 14 asesores · 2.ª semana seguida",
-   "asesores": [
-    "Ana Maria Padilla Parra",
-    "Angelo Jaime Franco Sarmiento",
-    "Anyhela Kelly Ordoñez Chavez",
-    "Edward Nelson Gonzales Villaneda",
-    "Isai Yuliño Mercado Bravo",
-    "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
-    "Jorge Luis Valencia Cardenas",
-    "Judith Rocio Vila Incaroca",
-    "Juliana Milagros Suarez Atencio",
-    "Justyn Flores Solano",
-    "Lucero Ximena Hujaynatis Jacay",
-    "Melissa Leslie Fernadez Avalos",
-    "Raul Aaron Manuel Ipanaque Escobar"
-   ],
-   "ejemplo": "El prospecto dijo que decidiría el martes y se propuso llamarlo el lunes, sin hora (16/10).",
-   "porQueImporta": "Sin día y hora no hay compromiso: el lead se enfría y la segunda llamada no se concreta.",
-   "accion": "Regla de cierre: día + hora + qué haremos en esa llamada («el martes a las 5 p. m. revisamos tu decisión»).",
-   "tecnica": "tec_16"
-  },
-  {
-   "tipo": "mala_practica",
-   "titulo": "Dar fechas o beneficios sin verificar que estén vigentes",
-   "queVimos": "Se comunica un plazo de campaña ya vencido o la fecha del curso Nexus sin confirmarla, y se confunde con el inicio regular de clases.",
-   "veces": "5 llamadas · 5 asesores",
-   "asesores": [
-    "Anyhela Kelly Ordoñez Chavez",
-    "Judith Rocio Vila Incaroca",
-    "Justyn Flores Solano",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Ruth Alexandra Mauricio Verde"
-   ],
-   "ejemplo": "Calidad pide verificar la fecha vigente de Nexus y diferenciarla del inicio regular de marzo de 2027 (16/10).",
-   "porQueImporta": "Un dato vencido o confuso resta credibilidad y abre objeciones que antes no existían.",
-   "accion": "Antes de mencionar campañas o Nexus, revisar la Biblioteca de Mensajes del día y decir: «Confirmo la fecha vigente y te la envío por escrito».",
-   "tecnica": null
-  },
-  {
    "tipo": "mala_costumbre",
-   "titulo": "No derivar a la encuesta de satisfacción",
-   "queVimos": "La llamada termina sin transferir a la encuesta, a veces junto con un cierre sin despedida institucional.",
-   "veces": "18 llamadas · 13 asesores (tema n.º 1 del acumulado: 46 llamadas)",
+   "titulo": "Cerrar sin despedida completa ni encuesta",
+   "queVimos": "La llamada termina sin decir nombre y universidad en la despedida y sin transferir a la encuesta de satisfacción.",
+   "veces": "12 llamadas · 11 asesores · 2.ª semana seguida",
    "asesores": [
-    "Ana Maria Padilla Parra",
-    "Angelo Jaime Franco Sarmiento",
     "Anyhela Kelly Ordoñez Chavez",
+    "Betsabeth Alexandra Rojas Palacios",
     "Edward Nelson Gonzales Villaneda",
-    "Isai Yuliño Mercado Bravo",
     "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
-    "Jorge Luis Valencia Cardenas",
     "Judith Rocio Vila Incaroca",
+    "Justyn Flores Solano",
     "Lucero Ximena Hujaynatis Jacay",
-    "Melissa Leslie Fernadez Avalos",
+    "Maria Alejandra Pino Contreras",
+    "Orlando Jesus Pintado Sandoval",
     "Raul Aaron Manuel Ipanaque Escobar",
-    "Ruth Alexandra Mauricio Verde"
+    "Rosa Victoria Guzman Bonilla"
    ],
-   "ejemplo": "«Recuerda realizar la derivación a la encuesta de satisfacción antes de concluir la atención» (16/10, en varias evaluaciones).",
-   "porQueImporta": "Es un paso obligatorio del protocolo y mide la experiencia del prospecto; omitirlo baja la nota de cierre.",
-   "accion": "Último párrafo fijo: «Guarda mi contacto; ahora te transfiero a una breve encuesta de satisfacción».",
+   "ejemplo": "«Completa el protocolo de cierre mencionando tu nombre, la Universidad Continental y transfiriendo la llamada a la encuesta de satisfacción» (22/10).",
+   "porQueImporta": "Resta puntaje de calidad en cada llamada y se pierde la medición de satisfacción del prospecto.",
+   "accion": "Cierre fijo de 10 segundos: «Te atendió [nombre] de la Universidad Continental; te transfiero a una breve encuesta, gracias».",
    "tecnica": null
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Conectar el horario laboral con las clases grabadas",
-   "queVimos": "Pregunta el horario de trabajo y orienta la propuesta a la alternativa que le calza, relacionando las clases grabadas con su turno.",
-   "veces": "Lucero (82 %, 16/10)",
+   "titulo": "Aclarar que la convalidación depende de los sílabos y validar la cuota",
+   "queVimos": "Se explica que el reconocimiento depende de la revisión de documentos y sílabos, se valida si la cuota entra en el presupuesto y se deriva a la encuesta.",
+   "veces": "Maria Alejandra (22/10)",
    "asesores": [
-    "Lucero Ximena Hujaynatis Jacay"
+    "Maria Alejandra Pino Contreras"
    ],
-   "ejemplo": "Identifica que trabaja de 2:00 a 10:00 p. m. y orienta la propuesta hacia una alternativa compatible (16/10).",
-   "porQueImporta": "Responde a la necesidad real del prospecto y vuelve el beneficio de la modalidad en un argumento propio.",
-   "accion": "Pedir a Lucero que lo comparta en el briefing y sumarle una pregunta de motivación.",
-   "tecnica": "tec_09"
+   "ejemplo": "«Aclara que la convalidación depende de la revisión de los documentos académicos y los sílabos correspondientes» (22/10).",
+   "porQueImporta": "Es justo lo contrario de la manía del 70 %: da confianza sin crear expectativas y deja la decisión económica validada.",
+   "accion": "Usarla como ejemplo en el briefing junto con la frase única de convalidación.",
+   "tecnica": "tec_10"
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Ofrecer una simulación referencial y pedir guardar el contacto",
-   "queVimos": "Propone completar una simulación de convalidación, confirma que recibió el WhatsApp y le pide guardar su contacto.",
-   "veces": "Jean Carlos (84 %, 16/10)",
+   "titulo": "Conectar el trabajo con la modalidad y fijar la rellamada",
+   "queVimos": "Se indaga motivación, trabajo y horario, se conectan clases grabadas, tutoría y bloques con esa necesidad y se acuerda volver a llamar en un plazo concreto.",
+   "veces": "Ruth (19/10)",
    "asesores": [
-    "Jean Carlos Espinoza Atoc"
+    "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "Propone que complete la simulación y guarde el contacto antes de seguir con el proceso (16/10).",
-   "porQueImporta": "Da un siguiente paso concreto sin prometer porcentajes si se acompaña de la frase de evaluación formal.",
-   "accion": "Usarla como base del speech de convalidación, añadiendo día y hora para revisar el resultado.",
-   "tecnica": "tec_16"
+   "ejemplo": "«Acordaste devolver la llamada en una hora y media, estableciendo un compromiso concreto» (19/10).",
+   "porQueImporta": "Une propuesta de valor personalizada y seguimiento con compromiso, los dos puntos más débiles del equipo esta semana.",
+   "accion": "Replicar: devolver la necesidad con sus palabras y cerrar con plazo concreto y qué se revisará.",
+   "tecnica": "tec_09"
   }
  ],
  "acciones": [
-  "Frase única de convalidación + simulación referencial (nadie da porcentajes ni años).",
-  "Toda llamada termina con día + hora + qué haremos, y con la derivación a la encuesta.",
-  "Briefing: presentación en 8 segundos con nombre y verificar fechas vigentes (campaña y Nexus) en la Biblioteca."
+  "Valor antes que precio: 2 diferenciales ligados a la necesidad y solo promociones vigentes, con la inversión desglosada.",
+  "Toda llamada termina con día + hora + qué haremos, despedida con nombre y universidad, y encuesta.",
+  "Frase única de convalidación: la define la evaluación de sílabos; la simulación es referencial."
  ]
 }
