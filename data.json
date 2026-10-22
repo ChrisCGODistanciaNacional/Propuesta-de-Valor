@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-10-21T23:10:54Z",
+ "generado": "2026-10-22T14:15:02Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -5970,7 +5970,7 @@
    "totalAsesores": 26,
    "indice": 68.6,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -6252,7 +6252,7 @@
    "totalAsesores": 26,
    "indice": 50.2,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -6565,7 +6565,7 @@
    "totalAsesores": 26,
    "indice": 79.8,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -6878,7 +6878,7 @@
    "totalAsesores": 26,
    "indice": 44.5,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -7191,7 +7191,7 @@
    "totalAsesores": 26,
    "indice": 48.4,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -7442,7 +7442,7 @@
    "totalAsesores": 26,
    "indice": 63.8,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -7693,7 +7693,7 @@
    "totalAsesores": 26,
    "indice": 56.4,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -8006,7 +8006,7 @@
    "totalAsesores": 26,
    "indice": 47.0,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -8315,11 +8315,11 @@
     "avance": 42.11,
     "cuartil": "Q4"
    },
-   "puesto": 3,
+   "puesto": 4,
    "totalAsesores": 26,
    "indice": 70.2,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -8632,7 +8632,7 @@
    "totalAsesores": 26,
    "indice": 43.0,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -8945,7 +8945,7 @@
    "totalAsesores": 26,
    "indice": 40.2,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -9235,7 +9235,7 @@
    "totalAsesores": 26,
    "indice": 40.5,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -9455,7 +9455,7 @@
    "totalAsesores": 26,
    "indice": 65.0,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -9644,7 +9644,7 @@
    "totalAsesores": 26,
    "indice": 47.9,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -9833,7 +9833,7 @@
    "totalAsesores": 26,
    "indice": 47.1,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -10121,7 +10121,7 @@
    "totalAsesores": 26,
    "indice": 58.8,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -10450,7 +10450,7 @@
    "totalAsesores": 26,
    "indice": 43.8,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -10674,7 +10674,7 @@
    "totalAsesores": 26,
    "indice": 42.8,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -10863,7 +10863,7 @@
    "totalAsesores": 26,
    "indice": 48.5,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -11188,7 +11188,7 @@
    "totalAsesores": 26,
    "indice": 48.8,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -11373,11 +11373,11 @@
     "avance": 73.68,
     "cuartil": "Q3"
    },
-   "puesto": 2,
+   "puesto": 3,
    "totalAsesores": 26,
    "indice": 75.0,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -11628,7 +11628,7 @@
    "totalAsesores": 26,
    "indice": 60.9,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -11878,7 +11878,7 @@
    "totalAsesores": 26,
    "indice": 65.1,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -12140,22 +12140,22 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 77,
    "cuartilCalidad": "Q3",
-   "matriculas": 5,
+   "matriculas": 6,
    "meta": 8,
-   "avanceMes": 62.5,
+   "avanceMes": 75.0,
    "avanceRitmo": null,
-   "avanceMeta": 62.5,
+   "avanceMeta": 75.0,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 4,
+   "puesto": 2,
    "totalAsesores": 26,
-   "indice": 69.8,
+   "indice": 76.0,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -12339,7 +12339,7 @@
    "totalAsesores": 26,
    "indice": 56.5,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -12622,7 +12622,7 @@
    "totalAsesores": 26,
    "indice": 31.0,
    "tecnicasDominadas": 0,
-   "tecnicasTotal": 15,
+   "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
@@ -12724,16 +12724,16 @@
   }
  },
  "equipo": {
-  "fecha": "21/10/2026",
+  "fecha": "22/10/2026",
   "mes": "octubre",
   "diasHabiles": {
-   "transcurridos": 18,
+   "transcurridos": 19,
    "total": 27
   },
   "avanceModo": "tablero",
   "cortesMatriculas": {
    "Q1": 7.75,
-   "Q2": 4.5,
+   "Q2": 5.0,
    "Q3": 3.0
   },
   "fuente": "🧮ING/MAT (matrículas de octubre, cuartil por aporte en el equipo) · Matriz DASHBOARD (calidad)",
@@ -12769,9 +12769,9 @@
    "verde": [],
    "amarillo": [
     "Judith Rocio Vila Incaroca",
+    "Jean Carlos Espinoza Atoc",
     "Orlando Jesus Pintado Sandoval",
     "Jorge Luis Valencia Cardenas",
-    "Jean Carlos Espinoza Atoc",
     "Diana Carol Taipe Rojas",
     "Cecilia Esther Aliaga Lapa",
     "Betsabeth Alexandra Rojas Palacios",
@@ -12848,8 +12848,24 @@
     "evaluaciones": 3
    },
    {
-    "asesor": "Orlando Jesus Pintado Sandoval",
+    "asesor": "Jean Carlos Espinoza Atoc",
     "puesto": 2,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 77,
+    "cuartilCalidad": "Q3",
+    "matriculas": 6,
+    "meta": 8,
+    "avanceMeta": 75.0,
+    "avanceMes": 75.0,
+    "cuartilMatriculas": "Q2",
+    "indice": 76.0,
+    "tecnicas": 0,
+    "evaluaciones": 3
+   },
+   {
+    "asesor": "Orlando Jesus Pintado Sandoval",
+    "puesto": 3,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 75,
@@ -12865,7 +12881,7 @@
    },
    {
     "asesor": "Jorge Luis Valencia Cardenas",
-    "puesto": 3,
+    "puesto": 4,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 78,
@@ -12878,22 +12894,6 @@
     "indice": 70.2,
     "tecnicas": 0,
     "evaluaciones": 5
-   },
-   {
-    "asesor": "Jean Carlos Espinoza Atoc",
-    "puesto": 4,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 77,
-    "cuartilCalidad": "Q3",
-    "matriculas": 5,
-    "meta": 8,
-    "avanceMeta": 62.5,
-    "avanceMes": 62.5,
-    "cuartilMatriculas": "Q2",
-    "indice": 69.8,
-    "tecnicas": 0,
-    "evaluaciones": 3
    },
    {
     "asesor": "Diana Carol Taipe Rojas",
