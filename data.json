@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-10-23T14:11:19Z",
+ "generado": "2026-10-23T23:11:27Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -6049,6 +6049,54 @@
    "_foco": null,
    "_fortalezaPrincipal": null,
    "_modo": null
+  },
+  {
+   "Evaluador": "Supervisor Luis",
+   "ASESOR": "Jean Carlos Espinoza Atoc",
+   "Sede": "HYO",
+   "Fecha ingreso": "14/09/2026",
+   "Antigüedad (meses)": "1",
+   "Tramo antigüedad": "0 a 3 meses",
+   "Ganar confianza\n(15%)": "25%",
+   "Identificar necesidades\n(26%)": "38%",
+   "Solucionar problemas\n(36%)": "58%",
+   "Cerrar\n(23%)": "6%",
+   "Score cualitativo": "53,61%",
+   "Cuartil": "Q4",
+   "Fortaleza principal": "",
+   "Brecha principal": "",
+   "Evidencia / observación": "",
+   "Ganar confianza\n(15%) - Fortaleza": "",
+   "Identificar necesidades\n(26%) - Fortaleza": "",
+   "Solucionar problemas\n(36%) - Fortaleza": "",
+   "Cerrar\n(23%) - Fortaleza": "",
+   "Ganar confianza\n(15%) - Oportunidades": "",
+   "Identificar necesidades\n(26%) - Oportunidades": "",
+   "Solucionar problemas\n(36%) - Oportunidades": "",
+   "Cerrar\n(23%) - Oportunidades": "",
+   "FECHA DE EVA.": "",
+   "Fecha": "",
+   "_etapas": {
+    "paso1": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso2": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso3": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso4": {
+     "fortaleza": null,
+     "oportunidad": null
+    }
+   },
+   "_foco": null,
+   "_fortalezaPrincipal": null,
+   "_modo": null
   }
  ],
  "tecnicas": [],
@@ -6785,11 +6833,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 72,
    "cuartilCalidad": "Q4",
-   "matriculas": 14,
+   "matriculas": 15,
    "meta": 16,
-   "avanceMes": 87.5,
+   "avanceMes": 93.75,
    "avanceRitmo": null,
-   "avanceMeta": 87.5,
+   "avanceMeta": 93.75,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -6803,7 +6851,7 @@
    },
    "puesto": 1,
    "totalAsesores": 26,
-   "indice": 79.8,
+   "indice": 82.9,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -8868,7 +8916,7 @@
     "avance": 31.58,
     "cuartil": "Q4"
    },
-   "puesto": 23,
+   "puesto": 24,
    "totalAsesores": 26,
    "indice": 43.0,
    "tecnicasDominadas": 0,
@@ -9455,11 +9503,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 56,
    "cuartilCalidad": "Q4",
-   "matriculas": 4,
+   "matriculas": 5,
    "meta": 16,
-   "avanceMes": 25.0,
+   "avanceMes": 31.25,
    "avanceRitmo": null,
-   "avanceMeta": 25.0,
+   "avanceMeta": 31.25,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q3",
    "cuadrante": "rojo",
@@ -9471,9 +9519,9 @@
     "avance": 78.95,
     "cuartil": "Q3"
    },
-   "puesto": 24,
+   "puesto": 23,
    "totalAsesores": 26,
-   "indice": 40.5,
+   "indice": 43.6,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -11411,7 +11459,7 @@
     "avance": 73.68,
     "cuartil": "Q3"
    },
-   "puesto": 2,
+   "puesto": 3,
    "totalAsesores": 26,
    "indice": 79.8,
    "tecnicasDominadas": 0,
@@ -11901,11 +11949,11 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 74,
    "cuartilCalidad": "Q4",
-   "matriculas": 9,
+   "matriculas": 10,
    "meta": 16,
-   "avanceMes": 56.25,
+   "avanceMes": 62.5,
    "avanceRitmo": null,
-   "avanceMeta": 56.25,
+   "avanceMeta": 62.5,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -11914,7 +11962,7 @@
    "campana": null,
    "puesto": 6,
    "totalAsesores": 26,
-   "indice": 65.1,
+   "indice": 68.2,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -12019,179 +12067,86 @@
   "Jean Carlos Espinoza Atoc": {
    "sede": "HYO",
    "antiguedad": "0 a 3 meses",
-   "numEvaluaciones": 3,
-   "ultimaFecha": "16/10/2026",
-   "foco": "paso2",
-   "fortalezaPrincipal": "paso1",
-   "modoFeedback": "etapas",
+   "numEvaluaciones": 4,
+   "ultimaFecha": null,
+   "foco": null,
+   "fortalezaPrincipal": null,
+   "modoFeedback": null,
    "stages": {
     "paso1": {
-     "pct": 100,
+     "pct": 25,
      "prev": 100,
-     "delta": 0,
-     "avg": 100,
-     "fortaleza": "Inicias la atención oportunamente, te presentas con tu nombre y el de Universidad Continental y confirmas el interés de Miguel por Ingeniería de Sistemas. Asimismo, retomas la propuesta previamente brindada y consultas qué aspectos necesita aclarar para continuar evaluando su ingreso.",
+     "delta": -75,
+     "avg": 81,
+     "fortaleza": null,
      "oportunidad": null,
-     "conclusion": "Iniciaste oportunamente, te presentaste con tu nombre y la universidad, confirmaste el interés de Miguel en Ingeniería de Sistemas y retomaste la propuesta consultando qué necesita aclarar.",
-     "rol": "fortaleza",
-     "texto": "Inicias la atención oportunamente, te presentas con tu nombre y el de Universidad Continental y confirmas el interés de Miguel por Ingeniería de Sistemas. Asimismo, retomas la propuesta previamente brindada y consultas qué aspectos necesita aclarar para continuar evaluando su ingreso.",
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
      "tecnica": null,
      "caso": null
     },
     "paso2": {
-     "pct": 50,
-     "prev": 100,
-     "delta": -50,
-     "avg": 75,
-     "fortaleza": "Realizas preguntas sobre los antecedentes académicos de Miguel, identificando que cuenta con estudios técnicos relacionados con redes y comunicaciones y que su principal interés es conocer las posibilidades de convalidación. Esto permite orientar la conversación hacia un aspecto determinante para su decisión de continuar estudios universitarios.",
-     "oportunidad": "Complementa la indagación académica profundizando en las motivaciones de Miguel para continuar Ingeniería de Sistemas, qué espera lograr con el título universitario y cuánto influye el tiempo de estudios en su decisión. Esto permitirá personalizar la propuesta e incorporar al menos dos diferenciales académicos o institucionales relacionados con sus objetivos profesionales.",
-     "conclusion": "Preguntaste por sus estudios técnicos y detectaste que su interés es convalidar. Falta profundizar en su motivación para Ingeniería de Sistemas y su meta, y sumar al menos dos diferenciales.",
-     "rol": "oportunidad",
-     "texto": "Complementa la indagación académica profundizando en las motivaciones de Miguel para continuar Ingeniería de Sistemas, qué espera lograr con el título universitario y cuánto influye el tiempo de estudios en su decisión. Esto permitirá personalizar la propuesta e incorporar al menos dos diferenciales académicos o institucionales relacionados con sus objetivos profesionales.",
-     "tecnica": {
-      "id": "tec_09",
-      "titulo": "🪞 Devuelve el Dolor con las Palabras del Cliente",
-      "ejemplo": "Si dijo \"siento que se me está yendo el tiempo\": \"te entiendo, sientes que el tiempo se te va y quieres retomar tu carrera ya por eso puedes aplicar bajo este beneficio y sacar el mejor provecho de tu inversión\"."
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Miguel, ¿qué quieres lograr con el título de Ingeniería de Sistemas?\n\nEntiendo: pasar de técnico a un puesto de ingeniero. ¿Cuánto influye el tiempo de estudios en tu decisión?\n\nGracias, Miguel. Con las clases grabadas puedes avanzar a tu ritmo, y la carrera tiene certificaciones progresivas. ¿Te explico cómo se evalúa lo que ya estudiaste?",
-      "porQue": "Devolver sus propias palabras sobre su meta profesional permite conectar al menos dos diferenciales.",
-      "base": "4e4c26ab54e9",
-      "dialogo": [
-       {
-        "quien": "asesor",
-        "texto": "Miguel, ¿qué quieres lograr con el título de Ingeniería de Sistemas?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Quiero un mejor puesto, ahora hago redes como técnico."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Entiendo: pasar de técnico a un puesto de ingeniero. ¿Cuánto influye el tiempo de estudios en tu decisión?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Bastante, quiero terminar pronto."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Gracias, Miguel. Con las clases grabadas puedes avanzar a tu ritmo, y la carrera tiene certificaciones progresivas. ¿Te explico cómo se evalúa lo que ya estudiaste?"
-       }
-      ]
-     }
+     "pct": 38,
+     "prev": 50,
+     "delta": -12,
+     "avg": 66,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     },
     "paso3": {
-     "pct": 87,
-     "prev": 58,
-     "delta": 29,
-     "avg": 64,
-     "fortaleza": "Explicas los documentos requeridos para una evaluación de convalidación, como los sílabos firmados y sellados y el certificado de estudios superiores. Además, ofreces una herramienta de simulación para que Miguel pueda revisar posibles equivalencias, lo orientas sobre su utilización y confirmas el envío del enlace por WhatsApp, brindándole una alternativa concreta para avanzar con su consulta.",
-     "oportunidad": "Evita anticipar porcentajes, créditos o años de estudios convalidables sin una evaluación académica formal. Durante la llamada mencionas que Miguel podría convalidar alrededor del 70 % de los créditos, reconocer aproximadamente dos años y culminar la carrera en tres años, generando expectativas que todavía no cuentan con validación documental. Recuerda que la simulación es referencial y que el reconocimiento definitivo dependerá de la revisión de sílabos, certificados y equivalencias académicas. Asimismo, verifica el procedimiento institucional antes de afirmar que necesariamente debe estar matriculado para presentar sus documentos. Complementa también la orientación con los costos completos de admisión, matrícula, primera cuota, seguro y examen médico, además de explicar la finalidad y las condiciones de la evaluación de ingreso.",
-     "conclusion": "Explicaste los documentos para convalidar y la simulación. Evita adelantar 70 %, dos años o tres de carrera sin evaluación formal; aclara que la simulación es referencial, verifica el requisito de matrícula y completa los costos y la evaluación de ingreso.",
-     "rol": "oportunidad",
-     "texto": "Evita anticipar porcentajes, créditos o años de estudios convalidables sin una evaluación académica formal. Durante la llamada mencionas que Miguel podría convalidar alrededor del 70 % de los créditos, reconocer aproximadamente dos años y culminar la carrera en tres años, generando expectativas que todavía no cuentan con validación documental. Recuerda que la simulación es referencial y que el reconocimiento definitivo dependerá de la revisión de sílabos, certificados y equivalencias académicas. Asimismo, verifica el procedimiento institucional antes de afirmar que necesariamente debe estar matriculado para presentar sus documentos. Complementa también la orientación con los costos completos de admisión, matrícula, primera cuota, seguro y examen médico, además de explicar la finalidad y las condiciones de la evaluación de ingreso.",
-     "tecnica": {
-      "id": "tec_08",
-      "titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-      "ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Miguel, la simulación es referencial: el reconocimiento de cursos lo define la evaluación de tus sílabos y certificados. ¿Va claro?\n\nLo sabremos con la evaluación formal, no quiero darte un plazo que luego cambie. Confirmo también el procedimiento para presentar tus documentos y te aviso.\n\nEl pago inicial incluye admisión, matrícula, seguro y primera cuota, y la evaluación de ingreso es virtual con cámara, no de conocimientos. Te envío el detalle por WhatsApp, ¿lo revisamos hoy a las 6:00 p. m.?",
-      "porQue": "Aclarar que la simulación es referencial y la evaluación decide evita expectativas y protege la confianza.",
-      "base": "91a3715dce61",
-      "dialogo": [
-       {
-        "quien": "asesor",
-        "texto": "Miguel, la simulación es referencial: el reconocimiento de cursos lo define la evaluación de tus sílabos y certificados. ¿Va claro?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Entiendo, pero quisiera saber en cuánto tiempo terminaría."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Lo sabremos con la evaluación formal, no quiero darte un plazo que luego cambie. Confirmo también el procedimiento para presentar tus documentos y te aviso."
-       },
-       {
-        "quien": "cliente",
-        "texto": "Está bien. ¿Y los costos?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "El pago inicial incluye admisión, matrícula, seguro y primera cuota, y la evaluación de ingreso es virtual con cámara, no de conocimientos. Te envío el detalle por WhatsApp, ¿lo revisamos hoy a las 6:00 p. m.?"
-       }
-      ]
-     }
+     "pct": 58,
+     "prev": 87,
+     "delta": -29,
+     "avg": 62,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     },
     "paso4": {
-     "pct": 78,
-     "prev": 100,
-     "delta": -22,
-     "avg": 85,
-     "fortaleza": "Propones que Miguel complete la simulación y evalúe sus resultados antes de continuar con el proceso. Asimismo, confirmas que recibió tu mensaje por WhatsApp, le solicitas guardar tu contacto y manifiestas disposición para acompañarlo en los siguientes pasos de su inscripción.",
-     "oportunidad": "Aunque propones retomar la comunicación por la tarde o al día siguiente, procura acordar una fecha y hora específicas para revisar los resultados de la simulación. Asimismo, establece un compromiso concreto sobre cuándo Miguel completará la herramienta y qué información necesitará para decidir si continúa con la inscripción. Finalmente, recuerda realizar la derivación a la encuesta de satisfacción antes de finalizar la atención.",
-     "conclusion": "Propusiste que Miguel complete la simulación y confirmaste que recibió tu WhatsApp y guardó tu contacto. Acuerda fecha y hora para revisar los resultados, define cuándo completará la herramienta y deriva a la encuesta.",
-     "rol": "oportunidad",
-     "texto": "Aunque propones retomar la comunicación por la tarde o al día siguiente, procura acordar una fecha y hora específicas para revisar los resultados de la simulación. Asimismo, establece un compromiso concreto sobre cuándo Miguel completará la herramienta y qué información necesitará para decidir si continúa con la inscripción. Finalmente, recuerda realizar la derivación a la encuesta de satisfacción antes de finalizar la atención.",
-     "tecnica": {
-      "id": "tec_16",
-      "titulo": "📅 Si No Confirma al momento Termina con un Próximo Paso",
-      "ejemplo": "\"¿Te llamo el martes para conocer si podemos empezar tu proceso de admisión? ¿Te pare? o si decides antes avisame y estaré muy atento. Recuerda hacerlo hasta esta fecha que cierra el beneficio.\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Miguel, ¿cuándo podrías completar la simulación?\n\nPerfecto. ¿Te parece si te llamo mañana a las 10:00 a. m. para revisar los resultados y ver si sigues con la inscripción?\n\nQuedamos mañana a las 10:00 a. m., Miguel. Ten a mano tus dudas de la simulación. Antes de despedirme, te transfiero a una breve encuesta de satisfacción.",
-      "porQue": "Fijar cuándo completará la simulación y cuándo revisan resultados convierte el seguimiento en compromiso.",
-      "base": "ac706ac6600e",
-      "dialogo": [
-       {
-        "quien": "asesor",
-        "texto": "Miguel, ¿cuándo podrías completar la simulación?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Hoy en la noche."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Perfecto. ¿Te parece si te llamo mañana a las 10:00 a. m. para revisar los resultados y ver si sigues con la inscripción?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, a las 10 puedo."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Quedamos mañana a las 10:00 a. m., Miguel. Ten a mano tus dudas de la simulación. Antes de despedirme, te transfiero a una breve encuesta de satisfacción."
-       }
-      ]
-     }
+     "pct": 6,
+     "prev": 78,
+     "delta": -72,
+     "avg": 66,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     }
    },
-   "scoreGlobal": "78,00%",
-   "callScorePct": 78,
-   "scorePrev": 84,
-   "scoreDelta": -6,
-   "cuartilUltima": "Q3",
-   "calidadPromedio": 77,
-   "cuartilCalidad": "Q3",
-   "matriculas": 6,
+   "scoreGlobal": "53,61%",
+   "callScorePct": 54,
+   "scorePrev": 78,
+   "scoreDelta": -24,
+   "cuartilUltima": "Q4",
+   "calidadPromedio": 72,
+   "cuartilCalidad": "Q4",
+   "matriculas": 7,
    "meta": 8,
-   "avanceMes": 75.0,
+   "avanceMes": 87.5,
    "avanceRitmo": null,
-   "avanceMeta": 75.0,
+   "avanceMeta": 87.5,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 3,
+   "puesto": 2,
    "totalAsesores": 26,
-   "indice": 76.0,
+   "indice": 79.8,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -12216,9 +12171,11 @@
       "fecha": null
      },
      "paso1_4": {
-      "estado": "ok",
-      "evidencia": "Confirmas el interés por Administración y solicitas su disponibilidad",
-      "fecha": "13/10/2026"
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null,
+      "retirado": true,
+      "fechaUltimoOk": "13/10/2026"
      },
      "paso2_1": {
       "estado": "pendiente",
@@ -12231,9 +12188,9 @@
       "fecha": "16/10/2026"
      },
      "paso2_3": {
-      "estado": "pendiente",
-      "evidencia": "Conocer por qué interrumpió sus estudios",
-      "fecha": "13/10/2026"
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null
      },
      "paso2_4": {
       "estado": "sin_evidencia",
@@ -12266,9 +12223,9 @@
       "fecha": null
      },
      "paso3_6": {
-      "estado": "pendiente",
-      "evidencia": "Realiza cierres parciales buscando compromisos que permitan avanzar",
-      "fecha": "13/10/2026"
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null
      },
      "paso4_1": {
       "estado": "ok",
@@ -12685,10 +12642,10 @@
    "paso4": 73.4
   },
   "mapaCalorLocal": {
-   "paso1": 82.54,
-   "paso2": 77.35,
-   "paso3": 60.81,
-   "paso4": 74.54
+   "paso1": 81.81,
+   "paso2": 77.0,
+   "paso3": 60.73,
+   "paso4": 73.81
   },
   "focoCualitativo": {
    "paso": "paso3",
@@ -12708,8 +12665,8 @@
    "verde": [],
    "amarillo": [
     "Judith Rocio Vila Incaroca",
-    "Orlando Jesus Pintado Sandoval",
     "Jean Carlos Espinoza Atoc",
+    "Orlando Jesus Pintado Sandoval",
     "Jorge Luis Valencia Cardenas",
     "Diana Carol Taipe Rojas",
     "Cecilia Esther Aliaga Lapa",
@@ -12733,8 +12690,8 @@
     "Rosa Victoria Guzman Bonilla",
     "Ana Maria Padilla Parra",
     "Melissa Leslie Fernadez Avalos",
-    "Jimena del Rosario Vera Osores",
     "Patricia Roxana Mercado Zacarias",
+    "Jimena del Rosario Vera Osores",
     "Anyhela Kelly Ordoñez Chavez",
     "Raul Aaron Manuel Ipanaque Escobar"
    ],
@@ -12777,18 +12734,34 @@
     "cuadrante": "amarillo",
     "calidad": 72,
     "cuartilCalidad": "Q4",
-    "matriculas": 14,
+    "matriculas": 15,
     "meta": 16,
-    "avanceMeta": 87.5,
-    "avanceMes": 87.5,
+    "avanceMeta": 93.75,
+    "avanceMes": 93.75,
     "cuartilMatriculas": "Q1",
-    "indice": 79.8,
+    "indice": 82.9,
     "tecnicas": 0,
     "evaluaciones": 3
    },
    {
-    "asesor": "Orlando Jesus Pintado Sandoval",
+    "asesor": "Jean Carlos Espinoza Atoc",
     "puesto": 2,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 72,
+    "cuartilCalidad": "Q4",
+    "matriculas": 7,
+    "meta": 8,
+    "avanceMeta": 87.5,
+    "avanceMes": 87.5,
+    "cuartilMatriculas": "Q2",
+    "indice": 79.8,
+    "tecnicas": 0,
+    "evaluaciones": 4
+   },
+   {
+    "asesor": "Orlando Jesus Pintado Sandoval",
+    "puesto": 3,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 72,
@@ -12801,22 +12774,6 @@
     "indice": 79.8,
     "tecnicas": 0,
     "evaluaciones": 8
-   },
-   {
-    "asesor": "Jean Carlos Espinoza Atoc",
-    "puesto": 3,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 77,
-    "cuartilCalidad": "Q3",
-    "matriculas": 6,
-    "meta": 8,
-    "avanceMeta": 75.0,
-    "avanceMes": 75.0,
-    "cuartilMatriculas": "Q2",
-    "indice": 76.0,
-    "tecnicas": 0,
-    "evaluaciones": 3
    },
    {
     "asesor": "Jorge Luis Valencia Cardenas",
@@ -12857,12 +12814,12 @@
     "cuadrante": "amarillo",
     "calidad": 74,
     "cuartilCalidad": "Q4",
-    "matriculas": 9,
+    "matriculas": 10,
     "meta": 16,
-    "avanceMeta": 56.25,
-    "avanceMes": 56.25,
+    "avanceMeta": 62.5,
+    "avanceMes": 62.5,
     "cuartilMatriculas": "Q1",
-    "indice": 65.1,
+    "indice": 68.2,
     "tecnicas": 0,
     "evaluaciones": 2
    },
@@ -13123,8 +13080,24 @@
     "evaluaciones": 6
    },
    {
-    "asesor": "Jimena del Rosario Vera Osores",
+    "asesor": "Patricia Roxana Mercado Zacarias",
     "puesto": 23,
+    "sede": "HYO",
+    "cuadrante": "rojo",
+    "calidad": 56,
+    "cuartilCalidad": "Q4",
+    "matriculas": 5,
+    "meta": 16,
+    "avanceMeta": 31.25,
+    "avanceMes": 31.25,
+    "cuartilMatriculas": "Q3",
+    "indice": 43.6,
+    "tecnicas": 0,
+    "evaluaciones": 2
+   },
+   {
+    "asesor": "Jimena del Rosario Vera Osores",
+    "puesto": 24,
     "sede": "HYO",
     "cuadrante": "rojo",
     "calidad": 61,
@@ -13137,22 +13110,6 @@
     "indice": 43.0,
     "tecnicas": 0,
     "evaluaciones": 5
-   },
-   {
-    "asesor": "Patricia Roxana Mercado Zacarias",
-    "puesto": 24,
-    "sede": "HYO",
-    "cuadrante": "rojo",
-    "calidad": 56,
-    "cuartilCalidad": "Q4",
-    "matriculas": 4,
-    "meta": 16,
-    "avanceMeta": 25.0,
-    "avanceMes": 25.0,
-    "cuartilMatriculas": "Q3",
-    "indice": 40.5,
-    "tecnicas": 0,
-    "evaluaciones": 2
    },
    {
     "asesor": "Anyhela Kelly Ordoñez Chavez",
@@ -13189,7 +13146,7 @@
   ]
  },
  "hallazgos": {
-  "actualizado": "22/10/2026",
+  "actualizado": "23/10/2026",
   "periodo": {
    "desde": "16/10/2026",
    "hasta": "22/10/2026"
@@ -13774,6 +13731,33 @@
     "valor": "",
     "corregido": null,
     "mensaje": "Evaluación sin fecha: se ordena según su fila en el Drive"
+   },
+   {
+    "asesor": "Jean Carlos Espinoza Atoc",
+    "fecha": null,
+    "tipo": "fecha",
+    "campo": "Fecha",
+    "valor": "",
+    "corregido": null,
+    "mensaje": "Evaluación sin fecha: se ordena según su fila en el Drive"
+   },
+   {
+    "asesor": "Jean Carlos Espinoza Atoc",
+    "fecha": null,
+    "tipo": "porcentaje",
+    "campo": "Cerrar",
+    "valor": "578%",
+    "corregido": "5,78%",
+    "mensaje": "Cerrar: dice 578%; se tomó como 5,78% (falta la coma decimal)"
+   },
+   {
+    "asesor": "Jean Carlos Espinoza Atoc",
+    "fecha": null,
+    "tipo": "score",
+    "campo": "Score cualitativo",
+    "valor": "53,61%",
+    "corregido": null,
+    "mensaje": "El score (53,61%) no cuadra con sus etapas (25% / 38% / 58% / 6% dan ≈36%): revisa si algún % está mal tipeado"
    }
   ]
  }
