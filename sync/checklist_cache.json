@@ -7720,5 +7720,161 @@
     "evidencia": "Acordaste seguimiento al día siguiente; establece una hora concreta"
    }
   }
+ },
+ "69f4308d971f": {
+  "asesor": "Angelo Jaime Franco Sarmiento",
+  "fecha": "23/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas al inicio con tu nombre y mencionas a la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de Richard respecto al doble grado académico"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ofreces descuento directo sin explorar su objeción económica ni su capacidad de pago"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Trabaja cierres parciales progresivos hacia un compromiso concreto"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa la despedida con tu nombre y el de la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Si confirmará en unas horas, establece una hora específica para retomar contacto"
+   }
+  }
+ },
+ "04a31d9e8e70": {
+  "asesor": "Eduardo Alfredo Coaquiera Elguera",
+  "fecha": "23/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas al inicio con tu nombre y mencionas a la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece tu propuesta de valor con al menos dos diferenciales de la UC"
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Indagas sobre la motivación de Marisela para estudiar Derecho"
+   },
+   "paso2_2": {
+    "estado": "ok",
+    "evidencia": "Exploras sus expectativas laborales y su disposición a estudiar a distancia"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Integra al menos dos diferenciales de la Universidad Continental según sus objetivos"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante su duda de trabajar y estudiar, profundiza y brinda argumentos concretos"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Aplica cierres parciales progresivos para confirmar su interés"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa la despedida con tu nombre y el de la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda una fecha y hora específicas para el seguimiento"
+   }
+  }
  }
 }
