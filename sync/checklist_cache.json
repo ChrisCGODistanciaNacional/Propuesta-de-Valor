@@ -7642,5 +7642,83 @@
     "evidencia": "Convierte el retomar por la tarde en una hora concreta"
    }
   }
+ },
+ "d3440337d36b": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "23/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentas al inicio como Melisa y mencionas a la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda dirigirte a la prospecto por su nombre al menos dos veces"
+   },
+   "paso1_3": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece tu propuesta de valor con al menos dos diferenciales de la UC"
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Integra al menos dos diferenciales de la Universidad Continental según sus necesidades"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante dudas de créditos y pensiones, compréndela y responde directo antes del discurso"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Trabaja cierres parciales progresivos hacia un siguiente paso concreto"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa la despedida con tu nombre y el de la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acordaste seguimiento al día siguiente; establece una hora concreta"
+   }
+  }
  }
 }
