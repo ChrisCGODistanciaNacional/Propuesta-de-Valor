@@ -1,39 +1,60 @@
 {
- "actualizado": "25/10/2026",
+ "actualizado": "26/10/2026",
  "periodo": {
-  "desde": "17/10/2026",
-  "hasta": "23/10/2026"
+  "desde": "20/10/2026",
+  "hasta": "26/10/2026"
  },
  "base": {
-  "llamadas": 10,
-  "asesores": 10
+  "llamadas": 11,
+  "asesores": 9
  },
- "titular": "Se repiten la despedida sin encuesta (9 de 10 llamadas), la propuesta sin dos diferenciales (8) y el seguimiento sin hora (8, 4.ª semana seguida); el descuento sigue saliendo antes de explorar la objeción. Lo bueno: aclarar que la convalidación depende de los sílabos y fijar la rellamada con plazo.",
+ "titular": "Lo que más se repite es aceptar el «lo pienso», «por WhatsApp» o «en diciembre» sin explorar la objeción (8 llamadas) y cerrar sin hora ni encuesta (5.ª semana seguida); el descuento sigue saliendo antes de tiempo. Lo bueno: sondeos completos de motivación y conectar el trabajo con bloques y certificaciones.",
  "items": [
   {
    "tipo": "mala_practica",
-   "titulo": "Descuento antes de explorar la objeción y montos sin verificar",
-   "queVimos": "El descuento o la promoción se ofrece como argumento principal antes de indagar la objeción, se insiste en la promoción cuando el prospecto pide tiempo y se dan pensiones o totales distintos en la misma llamada.",
-   "veces": "5 llamadas · 5 asesores · 2.ª semana seguida",
+   "titulo": "Aceptar el aplazamiento sin explorar la objeción",
+   "queVimos": "Cuando el prospecto dice que lo consultará con sus padres, que prefiere recibir todo por WhatsApp o que se inscribirá más adelante, se acepta y se envía información sin preguntar qué le falta resolver.",
+   "veces": "8 llamadas · 7 asesores",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
+    "Eduardo Alfredo Coaquiera Elguera",
     "Justyn Flores Solano",
-    "Melissa Leslie Fernadez Avalos",
-    "Orlando Jesus Pintado Sandoval"
+    "Orlando Jesus Pintado Sandoval",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Rosa Victoria Guzman Bonilla"
    ],
-   "ejemplo": "«Ofreces directamente un descuento del 10% en la pensión, condicionado a que pueda realizar el pago hasta el fin de semana, sin explorar previamente su objeción económica» (23/10).",
-   "porQueImporta": "Si se vende solo precio, el prospecto compara por precio; y un monto que luego cambia rompe la confianza y frena la matrícula.",
-   "accion": "Primero pregunta qué le preocupa y conecta 2 diferenciales; luego la inversión desglosada (admisión + matrícula + seguro + primera cuota) y solo promociones vigentes de la Biblioteca. Frase: «Antes de hablarte de la promoción, ¿qué es lo que más te hace dudar hoy?».",
+   "ejemplo": "«Ante la decisión de postergar la inscripción, evita aceptar la fecha sin explorar primero la situación del prospecto» (26/10).",
+   "porQueImporta": "La objeción real (inversión, tiempo, equipo, permiso de los padres) queda oculta y el lead se enfría sin que se haya trabajado.",
+   "accion": "Antes de enviar información, pregunta qué falta: «¿Qué punto te gustaría revisar con ellos para que puedan tomar una decisión?» o «¿Qué te impide avanzar hoy?», y responde esa duda en la misma llamada.",
    "tecnica": "tec_14"
   },
   {
    "tipo": "mala_practica",
-   "titulo": "Seguimiento sin hora concreta",
-   "queVimos": "Se acuerda «mañana», «por la tarde» o «en unas horas», o se deja que el prospecto lo piense, sin fijar hora ni objetivo de la siguiente llamada.",
-   "veces": "8 llamadas · 8 asesores · 4.ª semana seguida",
+   "titulo": "Descuento anticipado y datos sin verificar",
+   "queVimos": "El descuento se ofrece como primer argumento sin una objeción económica identificada, y se dan montos, carrera o condiciones de programas que no cuadran o no están confirmados.",
+   "veces": "7 llamadas · 6 asesores · 3.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
+    "Betsabeth Alexandra Rojas Palacios",
+    "Justyn Flores Solano",
+    "Maria Alejandra Pino Contreras",
+    "Melissa Leslie Fernadez Avalos",
+    "Orlando Jesus Pintado Sandoval"
+   ],
+   "ejemplo": "«Evita ofrecer el descuento del 10 % de manera anticipada. Primero identifica si existe una dificultad económica» (26/10); «se mencionan pensiones de S/ 630 y S/ 650» (23/10).",
+   "porQueImporta": "Vender por precio abarata la propuesta, y un dato que luego cambia (monto, carrera, idioma del programa) rompe la confianza y frena la matrícula.",
+   "accion": "Orden fijo: valor → objeción → capacidad de pago → recién el beneficio vigente. Verifica carrera e importes en la Biblioteca antes de darlos y nunca prometas descuentos o montos no confirmados.",
+   "tecnica": "tec_08"
+  },
+  {
+   "tipo": "mala_costumbre",
+   "titulo": "Cerrar sin hora concreta ni despedida completa",
+   "queVimos": "Se acuerda retomar «mañana» o «por la tarde» sin hora, y la llamada termina sin nombre, Unidad CIE ni transferencia a la encuesta de satisfacción.",
+   "veces": "11 llamadas · 9 asesores · 5.ª semana seguida",
+   "asesores": [
+    "Angelo Jaime Franco Sarmiento",
+    "Betsabeth Alexandra Rojas Palacios",
     "Eduardo Alfredo Coaquiera Elguera",
     "Justyn Flores Solano",
     "Maria Alejandra Pino Contreras",
@@ -42,82 +63,60 @@
     "Raul Aaron Manuel Ipanaque Escobar",
     "Rosa Victoria Guzman Bonilla"
    ],
-   "ejemplo": "«Convierte el compromiso de retomar el contacto por la tarde en una hora concreta y confirma el objetivo de la siguiente llamada» (22/10).",
-   "porQueImporta": "Sin día y hora no hay compromiso: el lead se enfría y la segunda llamada no se concreta.",
-   "accion": "Regla de cierre: día + hora + qué haremos («mañana a las 6 p. m. revisamos juntos el cuadro de costos y resolvemos lo que falte»).",
+   "ejemplo": "«Al acordar el seguimiento para el día siguiente, establece una hora concreta para retomar el contacto» (23/10).",
+   "porQueImporta": "Sin día y hora no hay compromiso, y la despedida incompleta resta puntaje de calidad en casi todas las llamadas.",
+   "accion": "Cierre fijo: «Te llamo el [día] a las [hora] para revisar [tema]. Te atendió [nombre], de la Unidad CIE de la Universidad Continental; te transfiero a una breve encuesta».",
    "tecnica": "tec_16"
   },
   {
    "tipo": "mala_costumbre",
-   "titulo": "Cerrar sin despedida completa ni encuesta",
-   "queVimos": "La llamada termina sin decir nombre, universidad o Unidad CIE en la despedida y sin transferir a la encuesta de satisfacción.",
-   "veces": "9 llamadas · 9 asesores · 3.ª semana seguida",
+   "titulo": "Propuesta de valor sin dos diferenciales ligados a la necesidad",
+   "queVimos": "Se responde sobre costos, horarios o proceso, pero no se conectan al menos dos diferenciales de la universidad con lo que el prospecto contó.",
+   "veces": "8 llamadas · 7 asesores · 2.ª semana seguida",
    "asesores": [
-    "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
     "Eduardo Alfredo Coaquiera Elguera",
     "Justyn Flores Solano",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Orlando Jesus Pintado Sandoval",
-    "Raul Aaron Manuel Ipanaque Escobar",
     "Rosa Victoria Guzman Bonilla"
    ],
-   "ejemplo": "«Recuerda completar el protocolo de despedida con tu nombre, el de la Unidad CIE y la transferencia a la encuesta de satisfacción» (23/10).",
-   "porQueImporta": "Resta puntaje de calidad en casi todas las llamadas y se pierde la medición de satisfacción del prospecto.",
-   "accion": "Cierre fijo de 10 segundos: «Te atendió [nombre] de la Unidad CIE de la Universidad Continental; te transfiero a una breve encuesta, gracias».",
-   "tecnica": null
-  },
-  {
-   "tipo": "mala_costumbre",
-   "titulo": "Propuesta de valor sin dos diferenciales ligados a la necesidad",
-   "queVimos": "Se explica la modalidad o el proceso, pero no se conectan al menos dos diferenciales de la universidad con lo que el prospecto contó (trabajo, convalidación, tiempo).",
-   "veces": "8 llamadas · 8 asesores",
-   "asesores": [
-    "Betsabeth Alexandra Rojas Palacios",
-    "Eduardo Alfredo Coaquiera Elguera",
-    "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
-    "Melissa Leslie Fernadez Avalos",
-    "Orlando Jesus Pintado Sandoval",
-    "Rosa Victoria Guzman Bonilla",
-    "Ruth Alexandra Mauricio Verde"
-   ],
-   "ejemplo": "«Integra al menos dos diferenciales de la Universidad Continental en tu propuesta de valor, relacionándolos con las necesidades del prospecto» (22/10).",
+   "ejemplo": "«Presentar al menos dos diferenciales institucionales vinculados con sus necesidades... Evitar concentrar la propuesta comercial principalmente en los costos» (22/10).",
    "porQueImporta": "Sin diferenciales propios la oferta se parece a cualquier otra y la conversación termina en precio.",
-   "accion": "Después del sondeo, devuelve su necesidad con sus palabras y une 2 diferenciales (clases grabadas, certificaciones progresivas, convalidación por sílabos) a esa necesidad; cierra con un sí parcial («¿esto te resuelve lo del horario?»).",
+   "accion": "Tras el sondeo, devuelve su necesidad con sus palabras y une 2 diferenciales (clases grabadas, certificaciones progresivas, convalidación por sílabos); valida con un sí parcial («¿esto te resuelve lo del horario?»).",
    "tecnica": "tec_09"
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Aclarar que la convalidación depende de los sílabos y validar la cuota",
-   "queVimos": "Se explica que el reconocimiento depende de la revisión de documentos y sílabos, se valida si la cuota entra en el presupuesto y se deriva a la encuesta.",
-   "veces": "Maria Alejandra (22/10)",
+   "titulo": "Sondeo completo de motivación y contexto",
+   "queVimos": "Se indaga por qué quiere estudiar la carrera, su etapa académica, ubicación y expectativas laborales antes de presentar la modalidad.",
+   "veces": "Eduardo (23/10)",
    "asesores": [
-    "Maria Alejandra Pino Contreras"
+    "Eduardo Alfredo Coaquiera Elguera"
    ],
-   "ejemplo": "«Aclara que la convalidación depende de la revisión de los documentos académicos y los sílabos correspondientes» (22/10).",
-   "porQueImporta": "Da confianza sin crear expectativas de convalidación y deja la decisión económica validada.",
-   "accion": "Usarla como ejemplo en el briefing junto con la frase única de convalidación.",
-   "tecnica": "tec_10"
+   "ejemplo": "«Indagas sobre la motivación de Marisela para estudiar Derecho... También exploras sus expectativas laborales y su disposición a estudiar en la modalidad a distancia» (23/10).",
+   "porQueImporta": "Con la motivación clara, los diferenciales y el cierre se pueden conectar con lo que de verdad le importa al prospecto.",
+   "accion": "Usarlo como modelo de sondeo en el briefing y completarlo con dos diferenciales ligados a esa motivación.",
+   "tecnica": "tec_09"
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Conectar el trabajo con la modalidad y fijar la rellamada",
-   "queVimos": "Se indaga motivación, trabajo y horario, se conectan clases grabadas, tutoría y bloques con esa necesidad y se acuerda volver a llamar en un plazo concreto.",
-   "veces": "Ruth (19/10)",
+   "titulo": "Conectar el trabajo con bloques y certificaciones progresivas",
+   "queVimos": "Se identifica que el prospecto necesita estudiar sin dejar su trabajo y convalidar su carrera técnica, y se le explican bloques académicos y certificaciones progresivas.",
+   "veces": "Raul (22/10)",
    "asesores": [
-    "Ruth Alexandra Mauricio Verde"
+    "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "ejemplo": "«Acordaste devolver la llamada en una hora y media, estableciendo un compromiso concreto» (19/10).",
-   "porQueImporta": "Une propuesta de valor personalizada y seguimiento con compromiso, dos de los puntos más débiles del equipo esta semana.",
-   "accion": "Replicar: devolver la necesidad con sus palabras y cerrar con plazo concreto y qué se revisará.",
+   "ejemplo": "«Identificas que Roger busca convalidar su carrera técnica... y necesita una modalidad compatible con sus responsabilidades laborales. Además, explicas beneficios como los bloques académicos, las certificaciones progresivas» (22/10).",
+   "porQueImporta": "Es la propuesta de valor bien hecha: la necesidad del prospecto unida a diferenciales concretos.",
+   "accion": "Replicar y cerrar con hora concreta de rellamada, que fue lo que faltó en esa llamada.",
    "tecnica": "tec_09"
   }
  ],
  "acciones": [
+  "Ante «lo pienso», «por WhatsApp» o «en diciembre»: preguntar qué falta resolver antes de enviar información.",
   "Toda llamada termina con día + hora + qué haremos, despedida con nombre, Unidad CIE y encuesta.",
-  "Valor antes que precio: explorar la objeción, 2 diferenciales ligados a la necesidad y solo promociones vigentes con la inversión desglosada.",
-  "Cierres parciales durante la llamada para confirmar interés antes de proponer el siguiente paso."
+  "Valor antes que precio: 2 diferenciales ligados a la necesidad, beneficio solo tras la objeción y datos verificados en la Biblioteca."
  ]
 }

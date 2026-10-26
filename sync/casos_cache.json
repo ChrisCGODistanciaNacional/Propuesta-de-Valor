@@ -467,38 +467,38 @@
  },
  "Justyn Flores Solano|paso3": {
   "stage": "paso3",
-  "base": "b2caffea7f0d",
-  "conclusion": "Explicaste el costo de la evaluación y los pasos de ingreso, e intentaste reactivarlo con información por WhatsApp. Atiende primero su preocupación técnica con orientación concreta, no priorices urgencia ni descuento, usa cierres parciales y fija fecha y hora con despedida completa.",
-  "tecId": "tec_14",
+  "base": "f005945212cd",
+  "conclusion": "Explicas el curso opcional de noviembre y mantienes un trato cordial. Ante la decisión de postergar, indaga qué le impide avanzar, usa cierres parciales y acuerda fecha y hora de seguimiento; completa la despedida con tu nombre, la Unidad CIE y la encuesta.",
+  "tecId": "tec_10",
   "tipo": "speech",
-  "porQue": "Preguntar qué falta para avanzar resuelve la preocupación real del prospecto antes de hablar de campaña o descuentos.",
+  "porQue": "Los pequeños sí sobre lo que ya le gustó convierten un aplazamiento abierto en un siguiente paso concreto con fecha y hora.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Lo voy a pensar unos días, todavía tengo que ver lo de la cámara y el audio."
+    "texto": "Prefiero esperar a diciembre para inscribirme."
    },
    {
     "quien": "asesor",
-    "texto": "Me parece bien que lo pienses. Para ayudarte, ¿qué te faltaría resolver exactamente para sentirte listo?\n\n¿Es solo el equipo o hay algo más?"
+    "texto": "Te entiendo, [nombre]. Antes de dejarlo así, ¿qué es lo que te impide avanzar ahora? Quizá es algo que podemos resolver juntos."
    },
    {
     "quien": "cliente",
-    "texto": "Solo el equipo, lo demás me gusta."
+    "texto": "Más que nada quiero juntar para el pago."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, entonces lo académico ya te convence. Te envío por WhatsApp los requisitos técnicos de la modalidad virtual para que sepas exactamente qué necesitas.\n\nRecuerda que hay tiempo antes del inicio de clases regulares para organizarte.\n\n¿Cuándo podrías tener lista la cámara?"
+    "texto": "Claro, tiene sentido. Entonces, si lo económico estuviera claro, la carrera y la modalidad sí te convencen, ¿verdad?\n\nY el curso de noviembre te serviría para ir avanzando antes del ciclo regular de marzo 2027, ¿cierto?"
    },
    {
     "quien": "cliente",
-    "texto": "Creo que el fin de semana."
+    "texto": "Sí, la carrera me gusta y lo del curso suena bien."
    },
    {
     "quien": "asesor",
-    "texto": "Genial. Te llamo el lunes a las 6:00 p. m. para confirmar que tu equipo está listo y avanzar con tu evaluación.\n\nTe atendió Justyn, de la Universidad Continental. Ahora te transfiero a una breve encuesta de satisfacción."
+    "texto": "Perfecto. Te envío por WhatsApp la información académica, los costos y las condiciones de los descuentos para que planifiques el pago.\n\nTe llamo el viernes a las 6:00 p. m. para revisarlo. Te atendió Justyn, de la Unidad CIE de la Universidad Continental; te transfiero a una breve encuesta, ¿de acuerdo?"
    }
   ],
-  "speech": "Me parece bien que lo pienses. Para ayudarte, ¿qué te faltaría resolver exactamente para sentirte listo?\n\n¿Es solo el equipo o hay algo más?\n\nPerfecto, entonces lo académico ya te convence. Te envío por WhatsApp los requisitos técnicos de la modalidad virtual para que sepas exactamente qué necesitas.\n\nRecuerda que hay tiempo antes del inicio de clases regulares para organizarte.\n\n¿Cuándo podrías tener lista la cámara?\n\nGenial. Te llamo el lunes a las 6:00 p. m. para confirmar que tu equipo está listo y avanzar con tu evaluación.\n\nTe atendió Justyn, de la Universidad Continental. Ahora te transfiero a una breve encuesta de satisfacción."
+  "speech": "Te entiendo, [nombre]. Antes de dejarlo así, ¿qué es lo que te impide avanzar ahora? Quizá es algo que podemos resolver juntos.\n\nClaro, tiene sentido. Entonces, si lo económico estuviera claro, la carrera y la modalidad sí te convencen, ¿verdad?\n\nY el curso de noviembre te serviría para ir avanzando antes del ciclo regular de marzo 2027, ¿cierto?\n\nPerfecto. Te envío por WhatsApp la información académica, los costos y las condiciones de los descuentos para que planifiques el pago.\n\nTe llamo el viernes a las 6:00 p. m. para revisarlo. Te atendió Justyn, de la Unidad CIE de la Universidad Continental; te transfiero a una breve encuesta, ¿de acuerdo?"
  },
  "Orlando Jesus Pintado Sandoval|paso3": {
   "stage": "paso3",
@@ -943,38 +943,34 @@
  },
  "Angelo Jaime Franco Sarmiento|paso1": {
   "stage": "paso1",
-  "base": "4bd373f679a2",
-  "conclusion": "Te presentas con tu nombre y la Universidad Continental y validas el interés de Richard en Ciencia de la Computación y el doble grado. Al presentar programas internacionales, explica sus condiciones con precisión para no generar expectativas que luego debas corregir.",
-  "tecId": "tec_08",
+  "base": "90af834ea70f",
+  "conclusion": "Mantienes un trato cordial y das espacio para que la prospecto consulte sobre su convalidación. Refuerza la personalización usando su nombre al menos dos veces y cierra con tu nombre, la Universidad Continental y la transferencia a la encuesta.",
+  "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Anticipar las condiciones reales del doble grado evita prometer de más y protege la confianza antes de que surja la objeción.",
+  "porQue": "Llamar a Nathalie por su nombre y darle control sobre el orden de la conversación genera confianza; el cierre de protocolo deja una atención completa y profesional.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "Me dijeron por el chat que puedo sacar dos títulos, ¿es así?"
-   },
-   {
     "quien": "asesor",
-    "texto": "Qué bueno que lo preguntes, Richard, así lo dejamos claro desde ahora. El doble grado tiene condiciones específicas y prefiero explicártelas tal cual son para que no haya sorpresas después.\n\nAntes, cuéntame: ¿qué te atrae más del doble grado?"
+    "texto": "Hola, Nathalie, buenas tardes. Te saluda Ángelo, asesor de la Universidad Continental, modalidad a distancia.\n\nTe llamo por tu interés en continuar Contabilidad y convalidar tu formación técnica.\n\n¿Tienes unos minutos para conversarlo?"
    },
    {
     "quien": "cliente",
-    "texto": "Tener un título internacional para trabajar afuera."
+    "texto": "Sí, justo quería saber cómo funciona lo de la convalidación."
    },
    {
     "quien": "asesor",
-    "texto": "Entiendo, quieres abrirte puertas fuera del país. Te envío por WhatsApp la información oficial del doble grado con sus requisitos y condiciones, porque no quiero darte un dato de memoria que luego tenga que corregir.\n\n¿Te parece si la revisas y la comentamos juntos?"
+    "texto": "Claro, Nathalie, vamos a tu ritmo. Primero te cuento cómo es la convalidación y luego vemos el proceso de admisión, ¿te parece?\n\nLa convalidación se hace con la evaluación de los sílabos de tu instituto: el área académica revisa cada curso y define cuáles se reconocen.\n\n¿Tienes a la mano tus sílabos o tu certificado de estudios?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, me parece bien."
+    "texto": "Tengo el certificado, los sílabos tendría que pedirlos."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, Richard. Te la envío ahora y te llamo mañana a las 6:00 p. m. para revisar cada condición y ver si encaja con tu plan.\n\n¿Te queda bien esa hora?"
+    "texto": "Perfecto, Nathalie, con eso ya podemos avanzar. Te envío por WhatsApp la lista de documentos para que los vayas reuniendo.\n\nTe atendió Ángelo, de la Universidad Continental. Antes de terminar, te transfiero a una breve encuesta sobre mi atención.\n\n¿Te escribo ahora mismo a este número?"
    }
   ],
-  "speech": "Qué bueno que lo preguntes, Richard, así lo dejamos claro desde ahora. El doble grado tiene condiciones específicas y prefiero explicártelas tal cual son para que no haya sorpresas después.\n\nAntes, cuéntame: ¿qué te atrae más del doble grado?\n\nEntiendo, quieres abrirte puertas fuera del país. Te envío por WhatsApp la información oficial del doble grado con sus requisitos y condiciones, porque no quiero darte un dato de memoria que luego tenga que corregir.\n\n¿Te parece si la revisas y la comentamos juntos?\n\nPerfecto, Richard. Te la envío ahora y te llamo mañana a las 6:00 p. m. para revisar cada condición y ver si encaja con tu plan.\n\n¿Te queda bien esa hora?"
+  "speech": "Hola, Nathalie, buenas tardes. Te saluda Ángelo, asesor de la Universidad Continental, modalidad a distancia.\n\nTe llamo por tu interés en continuar Contabilidad y convalidar tu formación técnica.\n\n¿Tienes unos minutos para conversarlo?\n\nClaro, Nathalie, vamos a tu ritmo. Primero te cuento cómo es la convalidación y luego vemos el proceso de admisión, ¿te parece?\n\nLa convalidación se hace con la evaluación de los sílabos de tu instituto: el área académica revisa cada curso y define cuáles se reconocen.\n\n¿Tienes a la mano tus sílabos o tu certificado de estudios?\n\nPerfecto, Nathalie, con eso ya podemos avanzar. Te envío por WhatsApp la lista de documentos para que los vayas reuniendo.\n\nTe atendió Ángelo, de la Universidad Continental. Antes de terminar, te transfiero a una breve encuesta sobre mi atención.\n\n¿Te escribo ahora mismo a este número?"
  },
  "Melissa Leslie Fernadez Avalos|paso1": {
   "stage": "paso1",
@@ -1120,69 +1116,69 @@
  },
  "Justyn Flores Solano|paso1": {
   "stage": "paso1",
-  "base": "5fa6fc2cceb7",
-  "conclusion": "Te identificas con tu nombre y la Universidad Continental y usas el nombre del prospecto. Confirma la carrera y modalidad antes de presentar la propuesta: mencionaste Ingeniería cuando le interesa Derecho.",
-  "tecId": "tec_01",
+  "base": "2cf258b394ab",
+  "conclusion": "Te presentas con tu nombre y la Universidad Continental, retomas la comunicación previa y confirmas su interés en Contabilidad. Refuerza la atención personalizada confirmando sus datos y llamándolo por su nombre durante la conversación.",
+  "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Confirmar la carrera con el propio prospecto antes de proponer evita errores y le deja concluir qué busca.",
+  "porQue": "Confirmar datos y usar el nombre del prospecto le hace sentir una atención hecha para él y le da control sobre cómo avanza la conversación.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Hola, [nombre], te saluda Justyn, de la Universidad Continental. Antes de darte información, confirmo contigo: ¿qué carrera te interesa y en qué modalidad?"
+    "texto": "Hola, buenas tardes. Te saluda Justyn, asesor de la Universidad Continental.\n\nTe llamo para retomar nuestra conversación sobre la carrera de Contabilidad.\n\nPara atenderte mejor, ¿me confirmas tu nombre completo, por favor?"
    },
    {
     "quien": "cliente",
-    "texto": "Derecho, a distancia."
+    "texto": "Sí, soy [nombre]."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, Derecho a distancia. Entonces todo lo que te comente será específico de esa carrera, para que no te llegue información que no te sirva.\n\n¿Qué te llevó a elegir Derecho?"
+    "texto": "Gracias, [nombre]. Confirmo también que este número es tu WhatsApp para enviarte la información, ¿correcto?\n\nY sigues interesado en Contabilidad a distancia, ¿verdad?"
    },
    {
     "quien": "cliente",
-    "texto": "Siempre me gustó y ahora tengo tiempo para estudiar."
+    "texto": "Sí, ese es mi número y sí, sigo interesado."
    },
    {
     "quien": "asesor",
-    "texto": "Qué bueno, [nombre]. Con lo que me dices, te explico cómo funciona Derecho a distancia y cómo se adapta a tu tiempo.\n\n¿Prefieres que empecemos por las clases o por el proceso de admisión?"
+    "texto": "Excelente, [nombre]. Entonces vamos a lo que más te importa, tú me dices por dónde empezamos.\n\n¿Prefieres que veamos primero las fechas de inicio o el proceso de admisión?"
    }
   ],
-  "speech": "Hola, [nombre], te saluda Justyn, de la Universidad Continental. Antes de darte información, confirmo contigo: ¿qué carrera te interesa y en qué modalidad?\n\nPerfecto, Derecho a distancia. Entonces todo lo que te comente será específico de esa carrera, para que no te llegue información que no te sirva.\n\n¿Qué te llevó a elegir Derecho?\n\nQué bueno, [nombre]. Con lo que me dices, te explico cómo funciona Derecho a distancia y cómo se adapta a tu tiempo.\n\n¿Prefieres que empecemos por las clases o por el proceso de admisión?"
+  "speech": "Hola, buenas tardes. Te saluda Justyn, asesor de la Universidad Continental.\n\nTe llamo para retomar nuestra conversación sobre la carrera de Contabilidad.\n\nPara atenderte mejor, ¿me confirmas tu nombre completo, por favor?\n\nGracias, [nombre]. Confirmo también que este número es tu WhatsApp para enviarte la información, ¿correcto?\n\nY sigues interesado en Contabilidad a distancia, ¿verdad?\n\nExcelente, [nombre]. Entonces vamos a lo que más te importa, tú me dices por dónde empezamos.\n\n¿Prefieres que veamos primero las fechas de inicio o el proceso de admisión?"
  },
  "Justyn Flores Solano|paso2": {
   "stage": "paso2",
-  "base": "5bb643893b0f",
-  "conclusion": "Escuchaste su preocupación por la computadora, cámara y audio. Evita ofrecer el descuento desde el inicio: primero indaga sus necesidades, profundiza en esa preocupación, presenta diferenciales y verifica importes y condiciones antes de comunicarlos.",
+  "base": "496828da1994",
+  "conclusion": "Identificas que el prospecto piensa iniciar en 2027 e inscribirse en diciembre, y le explicas la opción de adelantar un curso en noviembre. Profundiza en por qué espera hasta diciembre, retoma los descuentos con sus condiciones y presenta dos diferenciales ligados a su necesidad.",
   "tecId": "tec_09",
   "tipo": "speech",
-  "porQue": "Devolverle su preocupación por los equipos y resolverla primero hace que la propuesta no dependa del descuento.",
+  "porQue": "Devolverle con sus propias palabras el motivo de esperar a diciembre hace visible la necesidad real y permite conectar los diferenciales con ella.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Lo que me preocupa es que mi computadora es antigua y no sé si la cámara funciona bien."
+    "texto": "Creo que me voy a inscribir recién en diciembre."
    },
    {
     "quien": "asesor",
-    "texto": "Te entiendo, [nombre]: quieres asegurarte de tener tu equipo listo antes de comprometerte. Es una preocupación muy razonable.\n\n¿Qué es lo que más te falta resolver: la computadora, la cámara o el audio?"
+    "texto": "Entiendo, [nombre]. Para orientarte bien, ¿qué te hace preferir diciembre?\n\n¿Hay algo que necesites resolver antes, como el trabajo, el tiempo o la inversión?"
    },
    {
     "quien": "cliente",
-    "texto": "Más que nada la cámara, la compu funciona."
+    "texto": "Es que trabajo y no sé si me va a dar el tiempo para estudiar."
    },
    {
     "quien": "asesor",
-    "texto": "Bien, entonces es algo puntual. Te envío por WhatsApp los requisitos técnicos oficiales para que verifiques tu cámara con calma.\n\nAdemás, las clases son grabadas, así que puedes organizarte a tu ritmo, y vas obteniendo certificaciones progresivas mientras avanzas.\n\n¿Qué más necesitarías para sentirte listo?"
+    "texto": "Entonces lo que te preocupa es poder estudiar sin descuidar tu trabajo, ¿cierto?\n\nJustamente para eso, en la modalidad a distancia las clases quedan grabadas, así que las ves en el horario que te acomode. Y al avanzar en la carrera vas obteniendo certificaciones progresivas que ya suman en tu trabajo.\n\n¿Eso te ayudaría a organizarte?"
    },
    {
     "quien": "cliente",
-    "texto": "Solo eso, creo."
+    "texto": "Sí, lo de las clases grabadas me sirve."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto. Revisa la cámara con la guía y te llamo el miércoles a las 7:00 p. m. para ver cómo te fue y, si todo está listo, vemos el siguiente paso de tu admisión."
+    "texto": "Me alegra, [nombre]. Te envío por WhatsApp la malla de Contabilidad y las condiciones de los descuentos que te comenté, para que veas qué aplica a tu caso.\n\n¿Te llamo el miércoles a las 7:00 p. m. para revisarlo juntos?"
    }
   ],
-  "speech": "Te entiendo, [nombre]: quieres asegurarte de tener tu equipo listo antes de comprometerte. Es una preocupación muy razonable.\n\n¿Qué es lo que más te falta resolver: la computadora, la cámara o el audio?\n\nBien, entonces es algo puntual. Te envío por WhatsApp los requisitos técnicos oficiales para que verifiques tu cámara con calma.\n\nAdemás, las clases son grabadas, así que puedes organizarte a tu ritmo, y vas obteniendo certificaciones progresivas mientras avanzas.\n\n¿Qué más necesitarías para sentirte listo?\n\nPerfecto. Revisa la cámara con la guía y te llamo el miércoles a las 7:00 p. m. para ver cómo te fue y, si todo está listo, vemos el siguiente paso de tu admisión."
+  "speech": "Entiendo, [nombre]. Para orientarte bien, ¿qué te hace preferir diciembre?\n\n¿Hay algo que necesites resolver antes, como el trabajo, el tiempo o la inversión?\n\nEntonces lo que te preocupa es poder estudiar sin descuidar tu trabajo, ¿cierto?\n\nJustamente para eso, en la modalidad a distancia las clases quedan grabadas, así que las ves en el horario que te acomode. Y al avanzar en la carrera vas obteniendo certificaciones progresivas que ya suman en tu trabajo.\n\n¿Eso te ayudaría a organizarte?\n\nMe alegra, [nombre]. Te envío por WhatsApp la malla de Contabilidad y las condiciones de los descuentos que te comenté, para que veas qué aplica a tu caso.\n\n¿Te llamo el miércoles a las 7:00 p. m. para revisarlo juntos?"
  },
  "Justyn Flores Solano|paso4": {
   "stage": "paso4",
@@ -1705,73 +1701,69 @@
  },
  "Angelo Jaime Franco Sarmiento|paso2": {
   "stage": "paso2",
-  "base": "287e053430d6",
-  "conclusion": "Atendiste las consultas de Richard sobre el doble grado, idioma, costos, fechas y admisión. Profundiza en sus expectativas del doble grado, verifica importes, moneda y condiciones de descuentos, y distingue el idioma de enseñanza del idioma de los contenidos.",
+  "base": "d77f6cc80c97",
+  "conclusion": "Identificas bien que Nathalie busca continuar Contabilidad y convalidar su formación técnica. Cuando dice que lo consultará con sus padres, indaga qué punto quiere revisar con ellos para encontrar la objeción real.",
   "tecId": "tec_14",
   "tipo": "speech",
-  "porQue": "Preguntar qué necesita saber para decidir enfoca la llamada en sus dudas reales y evita soltar datos sin verificar.",
+  "porQue": "Preguntar qué necesita revisar con sus padres saca a la luz la objeción real (inversión, tiempo o proceso) y permite resolverla antes de que se enfríe.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "¿Y las clases son en inglés? ¿Cuánto cuesta en total?"
+    "texto": "Me interesa, pero primero lo tengo que consultar con mis papás."
    },
    {
     "quien": "asesor",
-    "texto": "Te respondo con precisión, Richard. Hay que distinguir dos cosas: el idioma en que se dictan las clases y el idioma de algunos contenidos o materiales. Te envío la información oficial para que lo veas por escrito.\n\nSobre los costos, prefiero confirmarte importes y moneda exactos antes de dártelos.\n\n¿Qué más necesitas saber para tomar tu decisión?"
+    "texto": "Me parece muy bien que lo converses con ellos, Nathalie, es una decisión importante.\n\nPara que esa conversación les sirva, ¿qué punto te gustaría revisar con ellos para que puedan tomar una decisión?\n\n¿Es más el tema de la inversión, del tiempo o del proceso de convalidación?"
    },
    {
     "quien": "cliente",
-    "texto": "Saber si puedo entrar al doble grado desde el inicio y cuánto me costaría."
+    "texto": "Más que nada la inversión, ellos me van a apoyar con el pago."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, entonces esas son las dos claves: acceso al doble grado desde el inicio y la inversión total.\n\nTe envío ambas cosas verificadas por WhatsApp, con sus condiciones.\n\nSi esas dos quedan resueltas a tu favor, ¿estarías listo para programar tu evaluación de admisión?"
+    "texto": "Entiendo, entonces lo clave es que tus papás tengan claro cuánto es y qué incluye.\n\nEl pago inicial reúne la admisión, la matrícula, el seguro y la primera cuota, y luego sigues con tus cuotas del ciclo.\n\n¿Te ayudaría que te envíe ese detalle ordenado por WhatsApp para que lo revisen juntos?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, si me cuadra, sí."
+    "texto": "Sí, eso me ayudaría bastante."
    },
    {
     "quien": "asesor",
-    "texto": "Excelente. Te llamo mañana a las 6:00 p. m. para revisarlo juntos y, si todo cuadra, dejamos programada tu evaluación virtual."
+    "texto": "Listo, Nathalie, te lo envío ahora con tu malla de Contabilidad.\n\n¿Cuándo podrían revisarlo con tus papás?\n\nSi te parece, te llamo el jueves a las 7:00 p. m. para resolver lo que ellos pregunten, ¿te acomoda ese horario?"
    }
   ],
-  "speech": "Te respondo con precisión, Richard. Hay que distinguir dos cosas: el idioma en que se dictan las clases y el idioma de algunos contenidos o materiales. Te envío la información oficial para que lo veas por escrito.\n\nSobre los costos, prefiero confirmarte importes y moneda exactos antes de dártelos.\n\n¿Qué más necesitas saber para tomar tu decisión?\n\nPerfecto, entonces esas son las dos claves: acceso al doble grado desde el inicio y la inversión total.\n\nTe envío ambas cosas verificadas por WhatsApp, con sus condiciones.\n\nSi esas dos quedan resueltas a tu favor, ¿estarías listo para programar tu evaluación de admisión?\n\nExcelente. Te llamo mañana a las 6:00 p. m. para revisarlo juntos y, si todo cuadra, dejamos programada tu evaluación virtual."
+  "speech": "Me parece muy bien que lo converses con ellos, Nathalie, es una decisión importante.\n\nPara que esa conversación les sirva, ¿qué punto te gustaría revisar con ellos para que puedan tomar una decisión?\n\n¿Es más el tema de la inversión, del tiempo o del proceso de convalidación?\n\nEntiendo, entonces lo clave es que tus papás tengan claro cuánto es y qué incluye.\n\nEl pago inicial reúne la admisión, la matrícula, el seguro y la primera cuota, y luego sigues con tus cuotas del ciclo.\n\n¿Te ayudaría que te envíe ese detalle ordenado por WhatsApp para que lo revisen juntos?\n\nListo, Nathalie, te lo envío ahora con tu malla de Contabilidad.\n\n¿Cuándo podrían revisarlo con tus papás?\n\nSi te parece, te llamo el jueves a las 7:00 p. m. para resolver lo que ellos pregunten, ¿te acomoda ese horario?"
  },
  "Angelo Jaime Franco Sarmiento|paso3": {
   "stage": "paso3",
-  "base": "6b4b4e5f32a6",
-  "conclusion": "Explicaste el doble grado, la admisión y la evaluación virtual. Ofreciste el 10% de descuento sin explorar la objeción ni validar capacidad de pago: primero comunica valor e indaga, usa el beneficio después, trabaja cierres parciales y fija una hora concreta de seguimiento.",
-  "tecId": "tec_14",
+  "base": "cc3513507005",
+  "conclusion": "Explicas bien documentos, etapas de admisión y costos, y acuerdas un horario para retomar. Al hablar de costos, resume y confirma que Nathalie entendió, valida la convalidación y no ofrezcas el descuento antes de identificar una dificultad económica.",
+  "tecId": "tec_10",
   "tipo": "speech",
-  "porQue": "Identificar la objeción real antes de ofrecer un beneficio convierte el descuento en solución y no en presión; los cierres parciales llevan al compromiso.",
+  "porQue": "Resumir la inversión por partes y validar cada una con pequeños sí asegura comprensión y evita adelantar el descuento sin una objeción real.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "Mejor sigamos por WhatsApp, lo voy a pensar."
-   },
-   {
     "quien": "asesor",
-    "texto": "Claro, Richard, seguimos por WhatsApp. Antes, para enviarte lo que realmente necesitas, ¿qué es lo que más te hace pensarlo?\n\n¿Es la inversión, el doble grado o los tiempos?"
+    "texto": "Nathalie, para que quede claro, te hago un resumen rápido de la inversión.\n\nEl pago inicial incluye la admisión, la matrícula, el seguro y la primera cuota; después continúas con tus cuotas mensuales del ciclo.\n\nHasta aquí, ¿está claro cómo se compone?"
    },
    {
     "quien": "cliente",
-    "texto": "La verdad, el tema económico."
+    "texto": "Sí, eso sí entendí."
    },
    {
     "quien": "asesor",
-    "texto": "Gracias por decírmelo. Para ayudarte bien, ¿qué cuota mensual sería manejable para ti?\n\nY dime, sin contar el dinero, ¿la carrera y el doble grado son lo que buscas?"
+    "texto": "Perfecto. Sobre la convalidación, el número exacto de cursos lo define el área académica cuando evalúa tus sílabos, así que no te adelanto una cifra que aún no está confirmada.\n\n¿Te parece bien que primero avancemos con esa evaluación?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, eso sí me gusta. Una cuota cómoda para mí sería algo menor a lo que vimos."
+    "texto": "Sí, pero igual me preocupa un poco el monto."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, entonces lo académico ya te convence y lo que falta es ajustar la parte económica. Voy a revisar qué beneficios vigentes aplican a tu caso y te los envío por WhatsApp junto con el cuadro de costos.\n\n¿Te llamo hoy a las 7:00 p. m. para revisarlo juntos y ver si podemos programar tu evaluación?"
+    "texto": "Te entiendo, Nathalie. Cuéntame, ¿qué parte te preocupa más: el pago inicial o las cuotas mensuales?\n\nAsí vemos juntas la alternativa que mejor se adapte a ti.\n\nTe envío por WhatsApp el detalle académico y económico, y te llamo el jueves a las 7:00 p. m. para revisarlo, ¿de acuerdo?"
    }
   ],
-  "speech": "Claro, Richard, seguimos por WhatsApp. Antes, para enviarte lo que realmente necesitas, ¿qué es lo que más te hace pensarlo?\n\n¿Es la inversión, el doble grado o los tiempos?\n\nGracias por decírmelo. Para ayudarte bien, ¿qué cuota mensual sería manejable para ti?\n\nY dime, sin contar el dinero, ¿la carrera y el doble grado son lo que buscas?\n\nPerfecto, entonces lo académico ya te convence y lo que falta es ajustar la parte económica. Voy a revisar qué beneficios vigentes aplican a tu caso y te los envío por WhatsApp junto con el cuadro de costos.\n\n¿Te llamo hoy a las 7:00 p. m. para revisarlo juntos y ver si podemos programar tu evaluación?"
+  "speech": "Nathalie, para que quede claro, te hago un resumen rápido de la inversión.\n\nEl pago inicial incluye la admisión, la matrícula, el seguro y la primera cuota; después continúas con tus cuotas mensuales del ciclo.\n\nHasta aquí, ¿está claro cómo se compone?\n\nPerfecto. Sobre la convalidación, el número exacto de cursos lo define el área académica cuando evalúa tus sílabos, así que no te adelanto una cifra que aún no está confirmada.\n\n¿Te parece bien que primero avancemos con esa evaluación?\n\nTe entiendo, Nathalie. Cuéntame, ¿qué parte te preocupa más: el pago inicial o las cuotas mensuales?\n\nAsí vemos juntas la alternativa que mejor se adapte a ti.\n\nTe envío por WhatsApp el detalle académico y económico, y te llamo el jueves a las 7:00 p. m. para revisarlo, ¿de acuerdo?"
  },
  "Nicol Alisson Romero Espinoza|paso3": {
   "stage": "paso3",
