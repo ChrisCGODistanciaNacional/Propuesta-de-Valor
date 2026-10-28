@@ -10138,5 +10138,161 @@
     "evidencia": "Establece fecha y hora específicas para revisar la propuesta"
    }
   }
+ },
+ "60627b31b4e6": {
+  "asesor": "Anyhela Kelly Ordoñez Chavez",
+  "fecha": "27/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre desde el inicio de la llamada"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Procura utilizar su nombre durante la conversación para generar cercanía"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece las preguntas filtro: estudios previos, situación académica y modalidad"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus motivaciones para estudiar Derecho y su situación laboral"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga sus expectativas profesionales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "Verifica la duración oficial de Derecho"
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora al menos dos diferenciales académicos relacionados con sus objetivos"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Frente a la objeción económica, prioriza resolver sus dudas"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora cierres parciales para confirmar la información económica"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece fecha y hora específicas de seguimiento"
+   }
+  }
+ },
+ "c3b922946d2c": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "27/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Inicias la atención presentándote por tu nombre (Jostin)"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Valida antes los datos del usuario real para personalizar con su nombre"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en la indagación de sus motivaciones e historia personal"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga sus expectativas profesionales o proyectos a futuro con Derecho"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Aclaras dudas sobre la duración de la carrera (6 años)"
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita afirmaciones absolutas como no desaprobamos por faltas"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Acuerdas un compromiso con hora específica (8:00 p. m.)"
+   }
+  }
  }
 }
