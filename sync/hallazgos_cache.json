@@ -1,20 +1,20 @@
 {
- "actualizado": "28/10/2026",
+ "actualizado": "29/10/2026",
  "periodo": {
-  "desde": "22/10/2026",
-  "hasta": "28/10/2026"
+  "desde": "23/10/2026",
+  "hasta": "29/10/2026"
  },
  "base": {
-  "llamadas": 31,
-  "asesores": 15
+  "llamadas": 26,
+  "asesores": 14
  },
- "titular": "Lo que más se repite es cerrar sin día y hora ni encuesta (7.ª semana seguida) y una propuesta centrada en precio sin dos diferenciales. Sigue el pago inicial sin desglose y se suma asegurar plazos de convalidación. Lo bueno: seguimientos con día y hora y la admisión bien explicada.",
+ "titular": "Lo que más se repite es cerrar sin día y hora ni encuesta (7.ª semana seguida) y presentarse sin nombre ni Unidad CIE. Siguen el pago inicial sin desglose con descuentos ofrecidos de entrada y la propuesta centrada en precio. Lo bueno: seguimientos con día y hora y la admisión bien explicada.",
  "items": [
   {
    "tipo": "mala_costumbre",
    "titulo": "Cerrar sin día y hora ni derivar a la encuesta",
    "queVimos": "Se pregunta «¿cuándo te llamo?» o se deja la respuesta al WhatsApp del prospecto sin fijar día y hora, y la llamada termina sin transferir a la encuesta de satisfacción.",
-   "veces": "29 llamadas · 15 asesores · 7.ª semana seguida",
+   "veces": "26 llamadas · 14 asesores · 7.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -29,10 +29,9 @@
     "Melissa Leslie Fernadez Avalos",
     "Orlando Jesus Pintado Sandoval",
     "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Concreta un siguiente paso con la prospecto y acuerda una fecha y hora para el seguimiento comercial» (28/10); «procura concretar una fecha y hora específicas de seguimiento» (27/10).",
+   "ejemplo": "«Busca un compromiso concreto, confirma el envío de la información y acuerda una fecha y hora de seguimiento. Recuerda realizar la despedida formal según el protocolo» (29/10); «acuerda una fecha y hora para el seguimiento comercial» (28/10).",
    "porQueImporta": "Sin día y hora no hay compromiso y el lead se enfría; además la encuesta omitida resta puntaje de calidad en casi todas las llamadas.",
    "accion": "Cierre fijo: «Te llamo el [día] a las [hora] para revisar [tema]. Te atendió [nombre], de la Universidad Continental; te transfiero a una breve encuesta».",
    "tecnica": "tec_16"
@@ -57,24 +56,26 @@
   },
   {
    "tipo": "mala_practica",
-   "titulo": "Pago inicial sin desglose y salidas económicas improvisadas",
-   "queVimos": "Se dan montos que no cuadran con lo informado antes, no se desglosan admisión, matrícula, seguro y primera cuota, y ante la objeción económica se insiste en el descuento o se sugiere tarjeta o préstamo.",
-   "veces": "20 llamadas · 12 asesores · 3.ª semana seguida",
+   "titulo": "Pago inicial sin desglose y descuentos ofrecidos de entrada",
+   "queVimos": "Se dan montos que no cuadran con lo informado antes, no se desglosan admisión, matrícula, seguro y primera cuota, y ante la objeción económica se justifica el precio o se ofrece el descuento sin indagar qué limita la decisión.",
+   "veces": "23 llamadas · 14 asesores · 3.ª semana seguida",
    "asesores": [
-    "Orlando Jesus Pintado Sandoval",
-    "Justyn Flores Solano",
-    "Melissa Leslie Fernadez Avalos",
+    "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
-    "Maria Alejandra Pino Contreras",
+    "Anyhela Kelly Ordoñez Chavez",
+    "Betsabeth Alexandra Rojas Palacios",
+    "Eduardo Alfredo Coaquiera Elguera",
+    "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
     "Jimena del Rosario Vera Osores",
-    "Ana Maria Padilla Parra",
-    "Edward Nelson Gonzales Villaneda",
-    "Anyhela Kelly Ordoñez Chavez",
+    "Justyn Flores Solano",
+    "Maria Alejandra Pino Contreras",
+    "Melissa Leslie Fernadez Avalos",
+    "Orlando Jesus Pintado Sandoval",
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Le informaron anteriormente un costo de S/ 540, mientras que tú comunicas S/ 948 como primer pago. Verifica y aclara la diferencia» (28/10); «evita recomendar el uso de tarjetas de crédito o préstamos» (27/10).",
+   "ejemplo": "«Evita justificar el precio sin explorar primero la necesidad y no ofrezcas descuentos de manera automática» (29/10); «le informaron anteriormente un costo de S/ 540, mientras que tú comunicas S/ 948 como primer pago» (28/10).",
    "porQueImporta": "Un monto que no cuadra rompe la confianza, y empujar a endeudarse sin conocer la situación del prospecto es una mala práctica grave que genera reclamos y desistimientos.",
    "accion": "Desglosa siempre por partes (admisión + matrícula + seguro + primera cuota) con los montos de la Biblioteca; ante «es elevado» pregunta «¿qué parte te pesa más?» y nunca sugieras préstamos ni tarjetas.",
    "tecnica": "tec_14"
@@ -83,24 +84,20 @@
    "tipo": "mala_costumbre",
    "titulo": "Propuesta de valor sin dos diferenciales ligados a la necesidad",
    "queVimos": "La conversación se centra en costos, descuentos y horarios sin indagar la motivación ni conectar al menos dos diferenciales con lo que el prospecto contó.",
-   "veces": "23 llamadas · 14 asesores · 4.ª semana seguida",
+   "veces": "18 llamadas · 10 asesores · 4.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Anyhela Kelly Ordoñez Chavez",
-    "Betsabeth Alexandra Rojas Palacios",
     "Eduardo Alfredo Coaquiera Elguera",
     "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
     "Jimena del Rosario Vera Osores",
     "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
-    "Orlando Jesus Pintado Sandoval",
     "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Presenta al menos dos diferenciales de la Universidad Continental vinculados con sus necesidades» (28/10); «en lugar de concentrar la propuesta principalmente en los costos y descuentos» (27/10).",
+   "ejemplo": "«Profundiza en las motivaciones de la prospecta para estudiar Psicología y relaciona la propuesta académica con sus objetivos» (29/10); «presenta al menos dos diferenciales de la Universidad Continental vinculados con sus necesidades» (28/10).",
    "porQueImporta": "Sin diferenciales propios la oferta se parece a cualquier otra y la decisión termina en precio.",
    "accion": "Pregunta «¿qué te gustaría lograr al terminar la carrera?», devuelve la respuesta con sus palabras y une dos diferenciales (clases grabadas, certificaciones progresivas, convalidación por sílabos).",
    "tecnica": "tec_09"
@@ -109,7 +106,7 @@
    "tipo": "mala_costumbre",
    "titulo": "Presentación incompleta y nombre del prospecto mal usado",
    "queVimos": "La llamada arranca sin nombre, unidad o universidad completos, no se confirma el motivo real de la consulta y el nombre del prospecto se usa poco o de forma inconsistente.",
-   "veces": "29 llamadas · 15 asesores",
+   "veces": "24 llamadas · 14 asesores · 2.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -124,10 +121,9 @@
     "Melissa Leslie Fernadez Avalos",
     "Orlando Jesus Pintado Sandoval",
     "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Durante la conversación lo llamas Yover y al cierre Javier» (28/10); «Menciona expresamente la Unidad CIE al presentarte» (28/10).",
+   "ejemplo": "«Recuerda presentarte con tu nombre y la Unidad CIE, identificar el nombre de la prospecta y utilizarlo durante la conversación» (29/10); «durante la conversación lo llamas Yover y al cierre Javier» (28/10).",
    "porQueImporta": "Los primeros segundos definen la confianza: equivocar el nombre o no saber por qué llama hace que el prospecto sienta una atención genérica.",
    "accion": "Apertura fija: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental. ¿Me confirmas si te interesa la carrera, la convalidación o el ingreso?» y repite su nombre al cierre.",
    "tecnica": "tec_12"
@@ -163,8 +159,8 @@
   }
  ],
  "acciones": [
-  "Toda llamada termina con día + hora + qué haremos, y transferencia a la encuesta.",
-  "Pago inicial siempre desglosado con montos de la Biblioteca; si el prospecto trae otro monto, verificar antes de seguir y nunca sugerir préstamos.",
-  "Convalidación y trámites: nunca dar cifras, límites ni plazos; pedir certificado y sílabos y agendar el resultado."
+  "Toda llamada termina con día + hora + qué haremos, despedida de protocolo y transferencia a la encuesta.",
+  "Ante «se me complica el pago»: preguntar qué parte pesa (monto o fecha) antes de hablar de descuentos; desglosar el pago inicial con montos de la Biblioteca y nunca sugerir préstamos.",
+  "Apertura fija con nombre + Unidad CIE + nombre del prospecto, y convalidación sin cifras ni plazos: pedir certificado y sílabos y agendar el resultado."
  ]
 }

@@ -1122,69 +1122,69 @@
  },
  "Justyn Flores Solano|paso1": {
   "stage": "paso1",
-  "base": "919d6c72541e",
-  "conclusion": "Te presentas con tu nombre y el de la Universidad Continental, confirmas el interés de Julio y mantienes un trato cordial. Ordena la información antes de comunicarla para que entienda con claridad los beneficios y las condiciones.",
-  "tecId": "tec_10",
+  "base": "563163de0d1c",
+  "conclusion": "Iniciaste la atención a tiempo y mantuviste una conversación activa con la prospecta. Te faltó presentarte con tu nombre y la Unidad CIE, y pedir y usar su nombre durante la llamada para personalizar la atención.",
+  "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Anunciar el orden y confirmar cada parte con un pequeño sí evita saturar a Julio y asegura que entienda beneficios y condiciones antes de avanzar.",
+  "porQue": "Presentarte bien, usar su nombre y dejar que ella marque el ritmo baja la defensa desde el inicio y hace la llamada más personal y profesional.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Hola, Julio, te saluda Justyn de la Universidad Continental.\n\nPara que no se te mezcle la información, te la cuento en tres partes: la carrera, la modalidad y el ingreso.\n\n¿Te parece bien?"
+    "texto": "Hola, ¿hablo con [nombre]? Buenas tardes, te saluda Justyn, asesor de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque registraste tu interés en la carrera de Psicología a distancia.\n\n¿Tienes unos minutos para conversar? Así resuelvo tus dudas y tú decides con calma si es lo que buscas."
    },
    {
     "quien": "cliente",
-    "texto": "Sí, dale, porque me han dicho varias cosas."
+    "texto": "Sí, dime, tengo unos minutos."
    },
    {
     "quien": "asesor",
-    "texto": "Empecemos por la carrera: Educación Primaria es 100 % virtual, con clases grabadas para que estudies a tu ritmo.\n\n¿Hasta aquí todo claro, Julio?"
+    "texto": "Gracias, [nombre]. Para no darte información de más, primero quiero entender tu caso.\n\nCuéntame, ¿qué te llevó a interesarte en Psicología?\n\nAsí te explico solo lo que te sirve y tú me dices hasta dónde quieres avanzar hoy."
    },
    {
     "quien": "cliente",
-    "texto": "Sí, eso me interesa. ¿Y cómo ingreso?"
+    "texto": "Tengo estudios técnicos y quiero seguir creciendo, pero todavía estoy viendo opciones."
    },
    {
     "quien": "asesor",
-    "texto": "Con una evaluación de ingreso virtual, con cámara y sin examen de conocimientos.\n\nLuego vemos juntos la inversión, paso por paso.\n\n¿La revisamos ahora o te la envío por WhatsApp y la vemos mañana a las 6 p. m.?"
+    "texto": "Perfecto, [nombre], tiene mucho sentido comparar antes de decidir.\n\nCon lo que me cuentas, te explico cómo funciona la modalidad a distancia y la evaluación de tus estudios técnicos para la convalidación.\n\n¿Te parece si empezamos por ahí y al final tú me dices qué te falta para tomar tu decisión?"
    }
   ],
-  "speech": "Hola, Julio, te saluda Justyn de la Universidad Continental.\n\nPara que no se te mezcle la información, te la cuento en tres partes: la carrera, la modalidad y el ingreso.\n\n¿Te parece bien?\n\nEmpecemos por la carrera: Educación Primaria es 100 % virtual, con clases grabadas para que estudies a tu ritmo.\n\n¿Hasta aquí todo claro, Julio?\n\nCon una evaluación de ingreso virtual, con cámara y sin examen de conocimientos.\n\nLuego vemos juntos la inversión, paso por paso.\n\n¿La revisamos ahora o te la envío por WhatsApp y la vemos mañana a las 6 p. m.?"
+  "speech": "Hola, ¿hablo con [nombre]? Buenas tardes, te saluda Justyn, asesor de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque registraste tu interés en la carrera de Psicología a distancia.\n\n¿Tienes unos minutos para conversar? Así resuelvo tus dudas y tú decides con calma si es lo que buscas.\n\nGracias, [nombre]. Para no darte información de más, primero quiero entender tu caso.\n\nCuéntame, ¿qué te llevó a interesarte en Psicología?\n\nAsí te explico solo lo que te sirve y tú me dices hasta dónde quieres avanzar hoy.\n\nPerfecto, [nombre], tiene mucho sentido comparar antes de decidir.\n\nCon lo que me cuentas, te explico cómo funciona la modalidad a distancia y la evaluación de tus estudios técnicos para la convalidación.\n\n¿Te parece si empezamos por ahí y al final tú me dices qué te falta para tomar tu decisión?"
  },
  "Justyn Flores Solano|paso2": {
   "stage": "paso2",
-  "base": "6a98bea96f53",
-  "conclusion": "Identificas la carrera de Educación Primaria, explicas que la modalidad es 100 % virtual y consultas su ubicación. Cuando Julio dice que debe evaluar su presupuesto, profundiza en qué le impide decidir y vincula los diferenciales con su necesidad.",
-  "tecId": "tec_14",
+  "base": "83df1aaf361f",
+  "conclusion": "Indagaste sobre sus estudios técnicos, su situación laboral y ubicación, lo que te dio contexto. Te faltó profundizar en por qué quiere estudiar Psicología, conectar la propuesta con sus objetivos y explorar qué limitaba su pago antes de justificar el precio.",
+  "tecId": "tec_09",
   "tipo": "speech",
-  "porQue": "Preguntar qué pesa más en su duda de presupuesto revela el freno real y te permite responder con información concreta en lugar de insistir en beneficios.",
+  "porQue": "Repetir su necesidad con sus propias palabras le muestra que la entendiste y te permite descubrir qué frena realmente su decisión antes de hablar de precio.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Me interesa, pero tengo que evaluar mi presupuesto y resolver algunas dudas."
+    "texto": "La matrícula sí la puedo pagar, pero la primera mensualidad se me complica."
    },
    {
     "quien": "asesor",
-    "texto": "Claro, Julio, es una decisión importante.\n\nPara ayudarte bien, ¿qué pesa más ahora: el monto mensual, el pago inicial o alguna duda sobre la carrera?"
+    "texto": "Te entiendo, [nombre]. Me dices que la matrícula sí la puedes cubrir, pero que la primera mensualidad se te complica.\n\nAntes de hablar de números, quiero entender bien tu caso.\n\n¿Qué te motiva a estudiar Psicología justo ahora, con tus estudios técnicos y tu trabajo actual?"
    },
    {
     "quien": "cliente",
-    "texto": "El pago inicial, este mes estoy algo ajustado."
+    "texto": "Quiero trabajar en orientación, ahora hago algo administrativo y no me llena."
    },
    {
     "quien": "asesor",
-    "texto": "Gracias por contármelo.\n\nEl pago inicial incluye admisión, matrícula, seguro y la primera cuota, y te lo dejo detallado por escrito.\n\nAparte del monto, ¿hay algo de la carrera que aún no te convence?"
+    "texto": "O sea que hoy haces algo administrativo que no te llena y quieres llegar a la orientación. Esa es una meta clara.\n\nPara ayudarte de verdad, cuéntame: ¿qué es exactamente lo que se te complica de esa primera cuota, el monto o la fecha en que cae?"
    },
    {
     "quien": "cliente",
-    "texto": "No, la carrera sí me gusta, sobre todo que sea virtual."
+    "texto": "Más que todo la fecha, porque me pagan a fin de mes."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces la carrera sí encaja contigo, y con clases grabadas te organizas a tu ritmo.\n\nTe envío el detalle por WhatsApp ahora.\n\n¿Lo revisamos juntos el jueves a las 7 p. m.?"
+    "texto": "Gracias por decírmelo, [nombre], así sí puedo ayudarte.\n\nVoy a validar con el área las condiciones de pago autorizadas para tu caso y te lo confirmo por WhatsApp junto con la información de la sede en Ayacucho y la convalidación.\n\n¿Te llamo mañana a las 6 p. m. para revisarlo juntos y ver tu siguiente paso?"
    }
   ],
-  "speech": "Claro, Julio, es una decisión importante.\n\nPara ayudarte bien, ¿qué pesa más ahora: el monto mensual, el pago inicial o alguna duda sobre la carrera?\n\nGracias por contármelo.\n\nEl pago inicial incluye admisión, matrícula, seguro y la primera cuota, y te lo dejo detallado por escrito.\n\nAparte del monto, ¿hay algo de la carrera que aún no te convence?\n\nEntonces la carrera sí encaja contigo, y con clases grabadas te organizas a tu ritmo.\n\nTe envío el detalle por WhatsApp ahora.\n\n¿Lo revisamos juntos el jueves a las 7 p. m.?"
+  "speech": "Te entiendo, [nombre]. Me dices que la matrícula sí la puedes cubrir, pero que la primera mensualidad se te complica.\n\nAntes de hablar de números, quiero entender bien tu caso.\n\n¿Qué te motiva a estudiar Psicología justo ahora, con tus estudios técnicos y tu trabajo actual?\n\nO sea que hoy haces algo administrativo que no te llena y quieres llegar a la orientación. Esa es una meta clara.\n\nPara ayudarte de verdad, cuéntame: ¿qué es exactamente lo que se te complica de esa primera cuota, el monto o la fecha en que cae?\n\nGracias por decírmelo, [nombre], así sí puedo ayudarte.\n\nVoy a validar con el área las condiciones de pago autorizadas para tu caso y te lo confirmo por WhatsApp junto con la información de la sede en Ayacucho y la convalidación.\n\n¿Te llamo mañana a las 6 p. m. para revisarlo juntos y ver tu siguiente paso?"
  },
  "Justyn Flores Solano|paso4": {
   "stage": "paso4",

@@ -10606,5 +10606,83 @@
     "evidencia": "Acuerda una fecha y hora para revisar la documentación"
    }
   }
+ },
+ "8c0284de5b68": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "29/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre y la Unidad CIE desde el inicio"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Identificar el nombre de la prospecta y utilizarlo durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indagaste su situación laboral; falta profundizar en sus motivaciones para estudiar Psicología"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Relaciona la propuesta académica con sus objetivos"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante la objeción económica, indaga qué limitaba su decisión antes de justificar el precio"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda una fecha y hora de seguimiento"
+   }
+  }
  }
 }
