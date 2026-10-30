@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-10-29T23:11:36Z",
+ "generado": "2026-10-30T14:12:21Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -14607,10 +14607,10 @@
   }
  },
  "equipo": {
-  "fecha": "29/10/2026",
+  "fecha": "30/10/2026",
   "mes": "octubre",
   "diasHabiles": {
-   "transcurridos": 25,
+   "transcurridos": 26,
    "total": 27
   },
   "avanceModo": "tablero",
