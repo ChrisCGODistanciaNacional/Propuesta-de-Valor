@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-10-30T14:12:21Z",
+ "generado": "2026-10-30T23:13:05Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -7345,6 +7345,150 @@
    "_foco": "paso2",
    "_fortalezaPrincipal": "paso1",
    "_modo": "etapas"
+  },
+  {
+   "Evaluador": "C&C",
+   "ASESOR": "Maria Alejandra Pino Contreras",
+   "Sede": "",
+   "Fecha ingreso": "",
+   "Antigüedad (meses)": "",
+   "Tramo antigüedad": "",
+   "Ganar confianza\n(15%)": "67%",
+   "Identificar necesidades\n(26%)": "100%",
+   "Solucionar problemas\n(36%)": "100%",
+   "Cerrar\n(23%)": "61%",
+   "Score cualitativo": "83,53%",
+   "Cuartil": "Q3",
+   "Fortaleza principal": "",
+   "Brecha principal": "",
+   "Evidencia / observación": "Hola, María. Te comparto los principales hallazgos de la evaluación de tu llamada con Milton, interesado en Ingeniería Ambiental, con el objetivo de fortalecer tu gestión comercial.\n\n🌟 𝗙𝗢𝗥𝗧𝗔𝗟𝗘𝗭𝗔𝗦\n\n1. Ganar confianza\n\nIniciaste la atención oportunamente y confirmaste que el prospecto había solicitado información mediante WhatsApp. Lograste identificar sus estudios previos y orientar la conversación hacia una alternativa académica.\n\n2. Identificar necesidades\n\nIndagaste sobre sus estudios anteriores, documentos para convalidación, disponibilidad y presupuesto. Además, explicaste los beneficios de la modalidad a distancia, las clases grabadas y la posibilidad de adelantar cursos.\n\n3. Solución de problemas\n\nRealizaste preguntas para validar si la inversión estaba dentro de su presupuesto y buscaste confirmar su disposición para iniciar el proceso. También ofreciste enviar la información por WhatsApp y acordaste un seguimiento.\n\n4. Cerrar\n\nLograste establecer un compromiso de contacto para el día siguiente a las 11:00 a. m., lo que permite mantener activa la oportunidad comercial.\n\n🎯 𝗢𝗣𝗢𝗥𝗧𝗨𝗡𝗜𝗗𝗔𝗗𝗘𝗦 𝗗𝗘 𝗠𝗘𝗝𝗢𝗥𝗔\n\n1. Ganar confianza\n\nRecuerda iniciar la llamada presentándote con tu nombre y mencionando a la Unidad CIE. También es importante utilizar el nombre del prospecto durante la conversación para generar mayor cercanía.\n\n2. Identificar necesidades\n\nAunque brindaste información sobre la inversión y el proceso de ingreso, debes validar que el prospecto comprenda los pasos y las condiciones de convalidación. Confirma también su carrera de interés inicial antes de orientar la propuesta académica.\n\n3. Solución de problemas\n\nAunque el prospecto indicó que la cuota estaba dentro de su presupuesto, era importante confirmar si tenía alguna otra condición pendiente antes de iniciar el proceso. Refuerza la confirmación de requisitos y el avance hacia la preinscripción cuando corresponda.\n\n4. Cerrar\n\nDebes utilizar un lenguaje comercial más preciso y evitar expresiones como «encontrar tu déficit». Finalmente, recuerda mencionar la Unidad CIE durante la despedida y realizar la transferencia a la encuesta de satisfacción.\n\nPara tus próximas llamadas, enfócate en convertir el interés del prospecto en un compromiso concreto de ingreso, manteniendo claridad en la información y un cierre alineado al protocolo.",
+   "Ganar confianza\n(15%) - Fortaleza": "Iniciaste la atención oportunamente y confirmaste que el prospecto había solicitado información mediante WhatsApp. Lograste identificar sus estudios previos y orientar la conversación hacia una alternativa académica.",
+   "Identificar necesidades\n(26%) - Fortaleza": "Indagaste sobre sus estudios anteriores, documentos para convalidación, disponibilidad y presupuesto. Además, explicaste los beneficios de la modalidad a distancia, las clases grabadas y la posibilidad de adelantar cursos.\n3. Solución de problemas\nRealizaste preguntas para validar si la inversión estaba dentro de su presupuesto y buscaste confirmar su disposición para iniciar el proceso. También ofreciste enviar la información por WhatsApp y acordaste un seguimiento.\n4. Cerrar\nLograste establecer un compromiso de contacto para el día siguiente a las 11:00 a. m., lo que permite mantener activa la oportunidad comercial.",
+   "Solucionar problemas\n(36%) - Fortaleza": "",
+   "Cerrar\n(23%) - Fortaleza": "",
+   "Ganar confianza\n(15%) - Oportunidades": "Recuerda iniciar la llamada presentándote con tu nombre y mencionando a la Unidad CIE. También es importante utilizar el nombre del prospecto durante la conversación para generar mayor cercanía.",
+   "Identificar necesidades\n(26%) - Oportunidades": "Aunque brindaste información sobre la inversión y el proceso de ingreso, debes validar que el prospecto comprenda los pasos y las condiciones de convalidación. Confirma también su carrera de interés inicial antes de orientar la propuesta académica.\n3. Solución de problemas\nAunque el prospecto indicó que la cuota estaba dentro de su presupuesto, era importante confirmar si tenía alguna otra condición pendiente antes de iniciar el proceso. Refuerza la confirmación de requisitos y el avance hacia la preinscripción cuando corresponda.\n4. Cerrar\nDebes utilizar un lenguaje comercial más preciso y evitar expresiones como «encontrar tu déficit». Finalmente, recuerda mencionar la Unidad CIE durante la despedida y realizar la transferencia a la encuesta de satisfacción.\nPara tus próximas llamadas, enfócate en convertir el interés del prospecto en un compromiso concreto de ingreso, manteniendo claridad en la información y un cierre alineado al protocolo.",
+   "Solucionar problemas\n(36%) - Oportunidades": "",
+   "Cerrar\n(23%) - Oportunidades": "",
+   "FECHA DE EVA.": "30/10/2026",
+   "Fecha": "30/10/2026",
+   "_etapas": {
+    "paso1": {
+     "fortaleza": "Iniciaste la atención oportunamente y confirmaste que el prospecto había solicitado información mediante WhatsApp. Lograste identificar sus estudios previos y orientar la conversación hacia una alternativa académica.",
+     "oportunidad": "Recuerda iniciar la llamada presentándote con tu nombre y mencionando a la Unidad CIE. También es importante utilizar el nombre del prospecto durante la conversación para generar mayor cercanía."
+    },
+    "paso2": {
+     "fortaleza": "Indagaste sobre sus estudios anteriores, documentos para convalidación, disponibilidad y presupuesto. Además, explicaste los beneficios de la modalidad a distancia, las clases grabadas y la posibilidad de adelantar cursos.\n3. Solución de problemas\nRealizaste preguntas para validar si la inversión estaba dentro de su presupuesto y buscaste confirmar su disposición para iniciar el proceso. También ofreciste enviar la información por WhatsApp y acordaste un seguimiento.\n4. Cerrar\nLograste establecer un compromiso de contacto para el día siguiente a las 11:00 a. m., lo que permite mantener activa la oportunidad comercial.",
+     "oportunidad": "Aunque brindaste información sobre la inversión y el proceso de ingreso, debes validar que el prospecto comprenda los pasos y las condiciones de convalidación. Confirma también su carrera de interés inicial antes de orientar la propuesta académica.\n3. Solución de problemas\nAunque el prospecto indicó que la cuota estaba dentro de su presupuesto, era importante confirmar si tenía alguna otra condición pendiente antes de iniciar el proceso. Refuerza la confirmación de requisitos y el avance hacia la preinscripción cuando corresponda.\n4. Cerrar\nDebes utilizar un lenguaje comercial más preciso y evitar expresiones como «encontrar tu déficit». Finalmente, recuerda mencionar la Unidad CIE durante la despedida y realizar la transferencia a la encuesta de satisfacción.\nPara tus próximas llamadas, enfócate en convertir el interés del prospecto en un compromiso concreto de ingreso, manteniendo claridad en la información y un cierre alineado al protocolo."
+    },
+    "paso3": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso4": {
+     "fortaleza": null,
+     "oportunidad": null
+    }
+   },
+   "_foco": "paso1",
+   "_fortalezaPrincipal": "paso2",
+   "_modo": "etapas"
+  },
+  {
+   "Evaluador": "C&C",
+   "ASESOR": "Orlando Jesus Pintado Sandoval",
+   "Sede": "",
+   "Fecha ingreso": "",
+   "Antigüedad (meses)": "",
+   "Tramo antigüedad": "",
+   "Ganar confianza\n(15%)": "67%",
+   "Identificar necesidades\n(26%)": "100%",
+   "Solucionar problemas\n(36%)": "100%",
+   "Cerrar\n(23%)": "78%",
+   "Score cualitativo": "87,50%",
+   "Cuartil": "Q2",
+   "Fortaleza principal": "",
+   "Brecha principal": "",
+   "Evidencia / observación": "Hola, Orlando Te comparto los principales hallazgos de la evaluación de tu llamada con Iván Enrique Grandeza, con el objetivo de fortalecer tu gestión comercial.\n\n🌟 𝗙𝗢𝗥𝗧𝗔𝗟𝗘𝗭𝗔𝗦\n\n1. Ganar confianza: Iniciaste la llamada dentro del tiempo establecido y confirmaste que el prospecto había solicitado información sobre la carrera de Administración y Finanzas.\n\n2. Identificar necesidades: Consultaste sobre sus estudios previos y disponibilidad horaria, identificando que necesita estudiar en horario nocturno debido a sus actividades laborales.\n\n3. Solución de problemas: Explicaste las características de la modalidad a distancia, las clases en vivo, los horarios nocturnos y la disponibilidad de grabaciones. También brindaste información sobre los requisitos y el proceso de evaluación de ingreso.\n\n4. Cerrar: Identificaste la disponibilidad del prospecto para realizar su evaluación y acordaste continuar la coordinación por WhatsApp a las 3:30 p. m.\n\n🎯 𝗢𝗣𝗢𝗥𝗧𝗨𝗡𝗜𝗗𝗔𝗗𝗘𝗦 𝗗𝗘 𝗠𝗘𝗝𝗢𝗥𝗔\n\n1. Ganar confianza: Recuerda presentarte indicando tu nombre y mencionando a Unidad CIE desde el inicio de la llamada.\n\n2. Identificar necesidades: Cuando el prospecto consulta cómo puede realizar su matrícula, es importante brindarle información completa sobre la inversión, incluyendo el costo de matrícula y las pensiones, para que tenga claridad sobre el proceso.\n\n3. Solución de problemas: Aprovecha las señales de interés del prospecto para explicarle los pasos siguientes y orientarlo hacia el inicio de su proceso de admisión. No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos correspondientes.\n\n4. Cerrar: Refuerza el compromiso del prospecto confirmando una hora específica para su evaluación de ingreso. Asimismo, cumple con el protocolo de despedida, mencionando tu nombre, Unidad CIE y realizando la transferencia a la encuesta de satisfacción.\n\nConsideración: Durante la llamada se presentaron interrupciones debido a que el prospecto no contaba con buena señal. Esta situación debe tenerse en cuenta y no atribuirse como una deficiencia del asesor. Es importante mantener la orientación comercial y aprovechar las oportunidades de interés para avanzar hacia la matrícula.",
+   "Ganar confianza\n(15%) - Fortaleza": "Iniciaste la llamada dentro del tiempo establecido y confirmaste que el prospecto había solicitado información sobre la carrera de Administración y Finanzas.",
+   "Identificar necesidades\n(26%) - Fortaleza": "Consultaste sobre sus estudios previos y disponibilidad horaria, identificando que necesita estudiar en horario nocturno debido a sus actividades laborales.\n3. Solución de problemas: Explicaste las características de la modalidad a distancia, las clases en vivo, los horarios nocturnos y la disponibilidad de grabaciones. También brindaste información sobre los requisitos y el proceso de evaluación de ingreso.\n4. Cerrar: Identificaste la disponibilidad del prospecto para realizar su evaluación y acordaste continuar la coordinación por WhatsApp a las 3:30 p. m.",
+   "Solucionar problemas\n(36%) - Fortaleza": "",
+   "Cerrar\n(23%) - Fortaleza": "",
+   "Ganar confianza\n(15%) - Oportunidades": "Recuerda presentarte indicando tu nombre y mencionando a Unidad CIE desde el inicio de la llamada.",
+   "Identificar necesidades\n(26%) - Oportunidades": "Cuando el prospecto consulta cómo puede realizar su matrícula, es importante brindarle información completa sobre la inversión, incluyendo el costo de matrícula y las pensiones, para que tenga claridad sobre el proceso.\n3. Solución de problemas: Aprovecha las señales de interés del prospecto para explicarle los pasos siguientes y orientarlo hacia el inicio de su proceso de admisión. No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos correspondientes.\n4. Cerrar: Refuerza el compromiso del prospecto confirmando una hora específica para su evaluación de ingreso. Asimismo, cumple con el protocolo de despedida, mencionando tu nombre, Unidad CIE y realizando la transferencia a la encuesta de satisfacción.\nConsideración: Durante la llamada se presentaron interrupciones debido a que el prospecto no contaba con buena señal. Esta situación debe tenerse en cuenta y no atribuirse como una deficiencia del asesor. Es importante mantener la orientación comercial y aprovechar las oportunidades de interés para avanzar hacia la matrícula.",
+   "Solucionar problemas\n(36%) - Oportunidades": "",
+   "Cerrar\n(23%) - Oportunidades": "",
+   "FECHA DE EVA.": "30/10/2026",
+   "Fecha": "30/10/2026",
+   "_etapas": {
+    "paso1": {
+     "fortaleza": "Iniciaste la llamada dentro del tiempo establecido y confirmaste que el prospecto había solicitado información sobre la carrera de Administración y Finanzas.",
+     "oportunidad": "Recuerda presentarte indicando tu nombre y mencionando a Unidad CIE desde el inicio de la llamada."
+    },
+    "paso2": {
+     "fortaleza": "Consultaste sobre sus estudios previos y disponibilidad horaria, identificando que necesita estudiar en horario nocturno debido a sus actividades laborales.\n3. Solución de problemas: Explicaste las características de la modalidad a distancia, las clases en vivo, los horarios nocturnos y la disponibilidad de grabaciones. También brindaste información sobre los requisitos y el proceso de evaluación de ingreso.\n4. Cerrar: Identificaste la disponibilidad del prospecto para realizar su evaluación y acordaste continuar la coordinación por WhatsApp a las 3:30 p. m.",
+     "oportunidad": "Cuando el prospecto consulta cómo puede realizar su matrícula, es importante brindarle información completa sobre la inversión, incluyendo el costo de matrícula y las pensiones, para que tenga claridad sobre el proceso.\n3. Solución de problemas: Aprovecha las señales de interés del prospecto para explicarle los pasos siguientes y orientarlo hacia el inicio de su proceso de admisión. No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos correspondientes.\n4. Cerrar: Refuerza el compromiso del prospecto confirmando una hora específica para su evaluación de ingreso. Asimismo, cumple con el protocolo de despedida, mencionando tu nombre, Unidad CIE y realizando la transferencia a la encuesta de satisfacción.\nConsideración: Durante la llamada se presentaron interrupciones debido a que el prospecto no contaba con buena señal. Esta situación debe tenerse en cuenta y no atribuirse como una deficiencia del asesor. Es importante mantener la orientación comercial y aprovechar las oportunidades de interés para avanzar hacia la matrícula."
+    },
+    "paso3": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso4": {
+     "fortaleza": null,
+     "oportunidad": null
+    }
+   },
+   "_foco": "paso1",
+   "_fortalezaPrincipal": "paso2",
+   "_modo": "etapas"
+  },
+  {
+   "Evaluador": "C&C",
+   "ASESOR": "Betsabeth Alexandra Rojas Palacios",
+   "Sede": "",
+   "Fecha ingreso": "",
+   "Antigüedad (meses)": "",
+   "Tramo antigüedad": "",
+   "Ganar confianza\n(15%)": "100%",
+   "Identificar necesidades\n(26%)": "73%",
+   "Solucionar problemas\n(36%)": "58%",
+   "Cerrar\n(23%)": "78%",
+   "Score cualitativo": "74,42%",
+   "Cuartil": "Q3",
+   "Fortaleza principal": "",
+   "Brecha principal": "",
+   "Evidencia / observación": "Hola, Betsabeth. Te comparto los principales hallazgos de la evaluación de tu llamada con Bania, con el objetivo de fortalecer tu gestión comercial.\n\n🌟 𝗙𝗢𝗥𝗧𝗔𝗟𝗘𝗭𝗔𝗦\n\n1. Ganar confianza: Iniciaste la llamada dentro del tiempo establecido, te identificaste y confirmaste que la prospecto había solicitado información sobre Educación Inicial mediante TikTok.\n\n2. Identificar necesidades: Indagaste sobre su situación académica, el instituto donde estudia, el ciclo que cursa y los motivos por los que desea cambiarse. Lograste identificar que su principal preocupación es la situación del licenciamiento de su institución actual.\n\n3. Solución de problemas: Ante la consulta sobre traslado y convalidación, evitaste asegurar una respuesta sin validar previamente el caso. Te comprometiste a consultar la situación específica del instituto para brindar información más precisa.\n\n4. Cerrar: Identificaste el interés de la prospecto en conocer la modalidad virtual y te comprometiste a enviar la malla curricular y los horarios por WhatsApp.\n\n🎯 𝗢𝗣𝗢𝗥𝗧𝗨𝗡𝗜𝗗𝗔𝗗𝗘𝗦 𝗗𝗘 𝗠𝗘𝗝𝗢𝗥A\n\n1. Ganar confianza: Mantén la presentación protocolar desde el inicio, identificando claramente tu nombre y Unidad CIE.\n\n2. Identificar necesidades: Es importante profundizar en la situación académica de la prospecto antes de brindar conclusiones sobre el reconocimiento de sus estudios. Evita realizar afirmaciones sobre el licenciamiento o la validez de su formación sin contar con información verificada. Recuerda que la prospecto explicó que cursa una carrera pedagógica de cinco años y que su instituto le ha informado sobre un proceso de licenciamiento.\n\n3. Solución de problemas: Cuando un prospecto manifiesta preocupación por la continuidad de sus estudios, debes convertir esa preocupación en una oportunidad comercial. Explica las alternativas disponibles, valida la posibilidad de traslado o convalidación y presenta los beneficios de estudiar en Universidad Continental. Además, desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad virtual.\n\n4. Cerrar: No te limites a comprometerte a enviar información. Establece una fecha y hora para retomar el contacto, comunicar el resultado de la validación y avanzar con el proceso de admisión. También debes cumplir con el protocolo de despedida y transferencia a la encuesta de satisfacción.\n\nEs importante que una consulta sobre traslado o convalidación tenga una orientación precisa. No debemos generar expectativas ni descartar posibilidades sin una validación previa. Aprovecha esta necesidad para brindar una asesoría completa y conducir a la prospecto hacia una decisión.la encuesta de satisfacción.",
+   "Ganar confianza\n(15%) - Fortaleza": "Iniciaste la llamada dentro del tiempo establecido, te identificaste y confirmaste que la prospecto había solicitado información sobre Educación Inicial mediante TikTok.",
+   "Identificar necesidades\n(26%) - Fortaleza": "Indagaste sobre su situación académica, el instituto donde estudia, el ciclo que cursa y los motivos por los que desea cambiarse. Lograste identificar que su principal preocupación es la situación del licenciamiento de su institución actual.\n3. Solución de problemas: Ante la consulta sobre traslado y convalidación, evitaste asegurar una respuesta sin validar previamente el caso. Te comprometiste a consultar la situación específica del instituto para brindar información más precisa.\n4. Cerrar: Identificaste el interés de la prospecto en conocer la modalidad virtual y te comprometiste a enviar la malla curricular y los horarios por WhatsApp.",
+   "Solucionar problemas\n(36%) - Fortaleza": "",
+   "Cerrar\n(23%) - Fortaleza": "",
+   "Ganar confianza\n(15%) - Oportunidades": "Mantén la presentación protocolar desde el inicio, identificando claramente tu nombre y Unidad CIE.",
+   "Identificar necesidades\n(26%) - Oportunidades": "Es importante profundizar en la situación académica de la prospecto antes de brindar conclusiones sobre el reconocimiento de sus estudios. Evita realizar afirmaciones sobre el licenciamiento o la validez de su formación sin contar con información verificada. Recuerda que la prospecto explicó que cursa una carrera pedagógica de cinco años y que su instituto le ha informado sobre un proceso de licenciamiento.\n3. Solución de problemas: Cuando un prospecto manifiesta preocupación por la continuidad de sus estudios, debes convertir esa preocupación en una oportunidad comercial. Explica las alternativas disponibles, valida la posibilidad de traslado o convalidación y presenta los beneficios de estudiar en Universidad Continental. Además, desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad virtual.\n4. Cerrar: No te limites a comprometerte a enviar información. Establece una fecha y hora para retomar el contacto, comunicar el resultado de la validación y avanzar con el proceso de admisión. También debes cumplir con el protocolo de despedida y transferencia a la encuesta de satisfacción.\nEs importante que una consulta sobre traslado o convalidación tenga una orientación precisa. No debemos generar expectativas ni descartar posibilidades sin una validación previa. Aprovecha esta necesidad para brindar una asesoría completa y conducir a la prospecto hacia una decisión.la encuesta de satisfacción.",
+   "Solucionar problemas\n(36%) - Oportunidades": "",
+   "Cerrar\n(23%) - Oportunidades": "",
+   "FECHA DE EVA.": "30/10/2026",
+   "Fecha": "30/10/2026",
+   "_etapas": {
+    "paso1": {
+     "fortaleza": "Iniciaste la llamada dentro del tiempo establecido, te identificaste y confirmaste que la prospecto había solicitado información sobre Educación Inicial mediante TikTok.",
+     "oportunidad": "Mantén la presentación protocolar desde el inicio, identificando claramente tu nombre y Unidad CIE."
+    },
+    "paso2": {
+     "fortaleza": "Indagaste sobre su situación académica, el instituto donde estudia, el ciclo que cursa y los motivos por los que desea cambiarse. Lograste identificar que su principal preocupación es la situación del licenciamiento de su institución actual.\n3. Solución de problemas: Ante la consulta sobre traslado y convalidación, evitaste asegurar una respuesta sin validar previamente el caso. Te comprometiste a consultar la situación específica del instituto para brindar información más precisa.\n4. Cerrar: Identificaste el interés de la prospecto en conocer la modalidad virtual y te comprometiste a enviar la malla curricular y los horarios por WhatsApp.",
+     "oportunidad": "Es importante profundizar en la situación académica de la prospecto antes de brindar conclusiones sobre el reconocimiento de sus estudios. Evita realizar afirmaciones sobre el licenciamiento o la validez de su formación sin contar con información verificada. Recuerda que la prospecto explicó que cursa una carrera pedagógica de cinco años y que su instituto le ha informado sobre un proceso de licenciamiento.\n3. Solución de problemas: Cuando un prospecto manifiesta preocupación por la continuidad de sus estudios, debes convertir esa preocupación en una oportunidad comercial. Explica las alternativas disponibles, valida la posibilidad de traslado o convalidación y presenta los beneficios de estudiar en Universidad Continental. Además, desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad virtual.\n4. Cerrar: No te limites a comprometerte a enviar información. Establece una fecha y hora para retomar el contacto, comunicar el resultado de la validación y avanzar con el proceso de admisión. También debes cumplir con el protocolo de despedida y transferencia a la encuesta de satisfacción.\nEs importante que una consulta sobre traslado o convalidación tenga una orientación precisa. No debemos generar expectativas ni descartar posibilidades sin una validación previa. Aprovecha esta necesidad para brindar una asesoría completa y conducir a la prospecto hacia una decisión.la encuesta de satisfacción."
+    },
+    "paso3": {
+     "fortaleza": null,
+     "oportunidad": null
+    },
+    "paso4": {
+     "fortaleza": null,
+     "oportunidad": null
+    }
+   },
+   "_foco": "paso2",
+   "_fortalezaPrincipal": "paso1",
+   "_modo": "etapas"
   }
  ],
  "tecnicas": [],
@@ -7492,7 +7636,7 @@
    "avanceRitmo": null,
    "avanceMeta": 68.75,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q1",
+   "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
@@ -7502,7 +7646,7 @@
     "avance": 105.26,
     "cuartil": "Q1"
    },
-   "puesto": 6,
+   "puesto": 7,
    "totalAsesores": 26,
    "indice": 74.9,
    "tecnicasDominadas": 0,
@@ -8109,7 +8253,7 @@
     "avance": 84.21,
     "cuartil": "Q2"
    },
-   "puesto": 2,
+   "puesto": 3,
    "totalAsesores": 26,
    "indice": 92.2,
    "tecnicasDominadas": 0,
@@ -9004,7 +9148,7 @@
     "avance": 78.95,
     "cuartil": "Q3"
    },
-   "puesto": 7,
+   "puesto": 9,
    "totalAsesores": 26,
    "indice": 73.1,
    "tecnicasDominadas": 0,
@@ -9239,11 +9383,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 69,
    "cuartilCalidad": "Q4",
-   "matriculas": 11,
+   "matriculas": 12,
    "meta": 16,
-   "avanceMes": 68.75,
+   "avanceMes": 75.0,
    "avanceRitmo": null,
-   "avanceMeta": 68.75,
+   "avanceMeta": 75.0,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -9257,7 +9401,7 @@
    },
    "puesto": 10,
    "totalAsesores": 26,
-   "indice": 68.9,
+   "indice": 72.0,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -9533,11 +9677,11 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 71,
    "cuartilCalidad": "Q4",
-   "matriculas": 12,
+   "matriculas": 13,
    "meta": 16,
-   "avanceMes": 75.0,
+   "avanceMes": 81.25,
    "avanceRitmo": null,
-   "avanceMeta": 75.0,
+   "avanceMeta": 81.25,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -9549,9 +9693,9 @@
     "avance": 73.68,
     "cuartil": "Q3"
    },
-   "puesto": 8,
+   "puesto": 6,
    "totalAsesores": 26,
-   "indice": 73.0,
+   "indice": 76.1,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -9854,11 +9998,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 78,
    "cuartilCalidad": "Q3",
-   "matriculas": 13,
+   "matriculas": 14,
    "meta": 16,
-   "avanceMes": 81.25,
+   "avanceMes": 87.5,
    "avanceRitmo": null,
-   "avanceMeta": 81.25,
+   "avanceMeta": 87.5,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -9872,7 +10016,7 @@
    },
    "puesto": 5,
    "totalAsesores": 26,
-   "indice": 79.6,
+   "indice": 82.8,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -10888,22 +11032,22 @@
   "Betsabeth Alexandra Rojas Palacios": {
    "sede": "LIMA",
    "antiguedad": "3 a 6 meses",
-   "numEvaluaciones": 7,
-   "ultimaFecha": "26/10/2026",
-   "foco": "paso3",
+   "numEvaluaciones": 8,
+   "ultimaFecha": "30/10/2026",
+   "foco": "paso2",
    "fortalezaPrincipal": "paso1",
    "modoFeedback": "etapas",
    "stages": {
     "paso1": {
-     "pct": 67,
-     "prev": 100,
-     "delta": -33,
-     "avg": 82,
-     "fortaleza": "Mantienes un tono cordial durante la conversación y permites que Santos plantee sus consultas sobre la carrera de Psicología, la convalidación y los costos asociados al proceso.",
-     "oportunidad": "Recuerda presentarte con tu nombre y el de la Universidad Continental desde el inicio. Esto permite que el prospecto identifique claramente quién lo atiende y genera mayor confianza durante la interacción.",
-     "conclusion": "Mantienes un tono cordial y dejas que Santos plantee sus dudas sobre Psicología, convalidación y costos. Te faltó presentarte con tu nombre y el de la Universidad Continental desde el inicio para generar confianza.",
+     "pct": 100,
+     "prev": 67,
+     "delta": 33,
+     "avg": 84,
+     "fortaleza": "Iniciaste la llamada dentro del tiempo establecido, te identificaste y confirmaste que la prospecto había solicitado información sobre Educación Inicial mediante TikTok.",
+     "oportunidad": "Mantén la presentación protocolar desde el inicio, identificando claramente tu nombre y Unidad CIE.",
+     "conclusion": "Iniciaste a tiempo, te identificaste y confirmaste que Bania pidió información de Educación Inicial por TikTok. Te faltó la presentación protocolar completa desde el inicio: tu nombre y Unidad CIE.",
      "rol": "oportunidad",
-     "texto": "Recuerda presentarte con tu nombre y el de la Universidad Continental desde el inicio. Esto permite que el prospecto identifique claramente quién lo atiende y genera mayor confianza durante la interacción.",
+     "texto": "Mantén la presentación protocolar desde el inicio, identificando claramente tu nombre y Unidad CIE.",
      "tecnica": {
       "id": "tec_12",
       "titulo": "🕊️ Dar la Sensación de Control",
@@ -10911,43 +11055,47 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Hola, Santos, buenos días. Te saluda Betsabeth, asesora de la Universidad Continental, modalidad a distancia.\n\nTe llamo por tu interés en la carrera de Psicología.\n\n¿Tienes unos minutos para conversar?\n\nQué bueno que lo comentas, Santos, eso es importante.\n\nPara aprovechar bien tu tiempo, cuéntame tú: ¿por dónde prefieres empezar, por la convalidación, por la duración de la carrera o por la inversión?\n\nAsí vamos en el orden que más te sirve.\n\nPerfecto, empezamos por ahí.\n\nLa convalidación se define con una evaluación de tus sílabos, así que te explico cómo funciona y qué documentos se revisan.\n\nY al terminar vemos los costos con calma, ¿te parece?",
-      "porQue": "Presentarte con nombre e institución y darle el control de la agenda hace que el prospecto sepa quién lo atiende y se abra a contar sus dudas.",
-      "base": "f3e864809e06",
+      "texto": "Hola, Bania, buenas tardes. Te saluda Betsabeth, asesora de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque dejaste tus datos en TikTok para recibir información de Educación Inicial.\n\n¿Tienes unos minutos para conversar ahora o prefieres que te llame en otro momento?\n\nClaro, Bania, lo vamos a hacer breve y tú decides hasta dónde avanzamos.\n\nPara orientarte bien, me gustaría hacerte un par de preguntas sobre lo que estudias ahora.\n\n¿Te parece bien empezar por ahí?\n\nPerfecto, gracias por tu tiempo.\n\nCon lo que me cuentes te diré con claridad qué opción te conviene, sin compromiso.\n\n¿Actualmente estás estudiando o ya terminaste algún estudio?",
+      "porQue": "Presentarte completa y pedirle permiso para preguntar le da a Bania el control de la llamada y te posiciona como asesora formal desde el primer minuto.",
+      "base": "a23aa1d0b91c",
       "dialogo": [
        {
+        "quien": "cliente",
+        "texto": "¿Aló? ¿Quién habla?"
+       },
+       {
         "quien": "asesor",
-        "texto": "Hola, Santos, buenos días. Te saluda Betsabeth, asesora de la Universidad Continental, modalidad a distancia.\n\nTe llamo por tu interés en la carrera de Psicología.\n\n¿Tienes unos minutos para conversar?"
+        "texto": "Hola, Bania, buenas tardes. Te saluda Betsabeth, asesora de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque dejaste tus datos en TikTok para recibir información de Educación Inicial.\n\n¿Tienes unos minutos para conversar ahora o prefieres que te llame en otro momento?"
        },
        {
         "quien": "cliente",
-        "texto": "Sí, justo quería saber si me convalidan algo, porque ya estudié Educación Primaria."
+        "texto": "Sí, ahora puedo, pero rápido porque estoy saliendo."
        },
        {
         "quien": "asesor",
-        "texto": "Qué bueno que lo comentas, Santos, eso es importante.\n\nPara aprovechar bien tu tiempo, cuéntame tú: ¿por dónde prefieres empezar, por la convalidación, por la duración de la carrera o por la inversión?\n\nAsí vamos en el orden que más te sirve."
+        "texto": "Claro, Bania, lo vamos a hacer breve y tú decides hasta dónde avanzamos.\n\nPara orientarte bien, me gustaría hacerte un par de preguntas sobre lo que estudias ahora.\n\n¿Te parece bien empezar por ahí?"
        },
        {
         "quien": "cliente",
-        "texto": "Primero la convalidación, y luego los costos."
+        "texto": "Ya, dale."
        },
        {
         "quien": "asesor",
-        "texto": "Perfecto, empezamos por ahí.\n\nLa convalidación se define con una evaluación de tus sílabos, así que te explico cómo funciona y qué documentos se revisan.\n\nY al terminar vemos los costos con calma, ¿te parece?"
+        "texto": "Perfecto, gracias por tu tiempo.\n\nCon lo que me cuentes te diré con claridad qué opción te conviene, sin compromiso.\n\n¿Actualmente estás estudiando o ya terminaste algún estudio?"
        }
       ]
      }
     },
     "paso2": {
-     "pct": 62,
-     "prev": 77,
-     "delta": -15,
+     "pct": 73,
+     "prev": 62,
+     "delta": 11,
      "avg": 75,
-     "fortaleza": "Identificas que el prospecto estudió Educación Primaria y desea conocer las posibilidades de convalidación para Psicología. También reconoces sus principales dudas sobre la duración de los estudios y la inversión económica.",
-     "oportunidad": "Profundiza en las razones por las que Santos desea estudiar Psicología y qué espera de esta nueva carrera. Identifica qué necesita resolver para tomar una decisión, ya sea la convalidación, el tiempo de estudios o el presupuesto.",
-     "conclusion": "Identificas que Santos estudió Educación Primaria y que sus dudas son convalidación, duración e inversión. Te faltó profundizar en por qué quiere estudiar Psicología, qué espera de la carrera y qué necesita resolver para decidir.",
+     "fortaleza": "Indagaste sobre su situación académica, el instituto donde estudia, el ciclo que cursa y los motivos por los que desea cambiarse. Lograste identificar que su principal preocupación es la situación del licenciamiento de su institución actual.\n3. Solución de problemas: Ante la consulta sobre traslado y convalidación, evitaste asegurar una respuesta sin validar previamente el caso. Te comprometiste a consultar la situación específica del instituto para brindar información más precisa.\n4. Cerrar: Identificaste el interés de la prospecto en conocer la modalidad virtual y te comprometiste a enviar la malla curricular y los horarios por WhatsApp.",
+     "oportunidad": "Es importante profundizar en la situación académica de la prospecto antes de brindar conclusiones sobre el reconocimiento de sus estudios. Evita realizar afirmaciones sobre el licenciamiento o la validez de su formación sin contar con información verificada. Recuerda que la prospecto explicó que cursa una carrera pedagógica de cinco años y que su instituto le ha informado sobre un proceso de licenciamiento.\n3. Solución de problemas: Cuando un prospecto manifiesta preocupación por la continuidad de sus estudios, debes convertir esa preocupación en una oportunidad comercial. Explica las alternativas disponibles, valida la posibilidad de traslado o convalidación y presenta los beneficios de estudiar en Universidad Continental. Además, desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad virtual.\n4. Cerrar: No te limites a comprometerte a enviar información. Establece una fecha y hora para retomar el contacto, comunicar el resultado de la validación y avanzar con el proceso de admisión. También debes cumplir con el protocolo de despedida y transferencia a la encuesta de satisfacción.\nEs importante que una consulta sobre traslado o convalidación tenga una orientación precisa. No debemos generar expectativas ni descartar posibilidades sin una validación previa. Aprovecha esta necesidad para brindar una asesoría completa y conducir a la prospecto hacia una decisión.la encuesta de satisfacción.",
+     "conclusion": "Indagaste su situación académica, su instituto, ciclo y motivos, y detectaste que le preocupa el licenciamiento. Te faltó profundizar más antes de concluir y evitar afirmaciones sobre el licenciamiento o la validez de sus estudios sin información verificada.",
      "rol": "oportunidad",
-     "texto": "Profundiza en las razones por las que Santos desea estudiar Psicología y qué espera de esta nueva carrera. Identifica qué necesita resolver para tomar una decisión, ya sea la convalidación, el tiempo de estudios o el presupuesto.",
+     "texto": "Es importante profundizar en la situación académica de la prospecto antes de brindar conclusiones sobre el reconocimiento de sus estudios. Evita realizar afirmaciones sobre el licenciamiento o la validez de su formación sin contar con información verificada. Recuerda que la prospecto explicó que cursa una carrera pedagógica de cinco años y que su instituto le ha informado sobre un proceso de licenciamiento.\n3. Solución de problemas: Cuando un prospecto manifiesta preocupación por la continuidad de sus estudios, debes convertir esa preocupación en una oportunidad comercial. Explica las alternativas disponibles, valida la posibilidad de traslado o convalidación y presenta los beneficios de estudiar en Universidad Continental. Además, desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad virtual.\n4. Cerrar: No te limites a comprometerte a enviar información. Establece una fecha y hora para retomar el contacto, comunicar el resultado de la validación y avanzar con el proceso de admisión. También debes cumplir con el protocolo de despedida y transferencia a la encuesta de satisfacción.\nEs importante que una consulta sobre traslado o convalidación tenga una orientación precisa. No debemos generar expectativas ni descartar posibilidades sin una validación previa. Aprovecha esta necesidad para brindar una asesoría completa y conducir a la prospecto hacia una decisión.la encuesta de satisfacción.",
      "tecnica": {
       "id": "tec_09",
       "titulo": "🪞 Devuelve el Dolor con las Palabras del Cliente",
@@ -10955,139 +11103,69 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Claro, Santos, lo vemos.\n\nAntes, cuéntame: ya eres docente de Primaria, ¿qué te motiva a estudiar Psicología ahora?\n\nQuiero entender qué esperas lograr con esta carrera.\n\nEntonces lo que buscas es ayudar de verdad a los niños con los casos de conducta que ves en el aula.\n\nPara decidir, ¿qué pesa más para ti: cuánto te convaliden, el tiempo que te tome o el presupuesto mensual?\n\nEntendido, el tiempo es lo principal.\n\nTe explico cómo la modalidad a distancia y la convalidación pueden ayudarte a avanzar sin dejar tu trabajo.\n\n¿Te parece si empezamos por ahí?",
-      "porQue": "Preguntar por su motivo y devolvérselo con sus palabras revela qué pesa en su decisión y orienta toda la explicación posterior.",
-      "base": "980abf6e0ead",
+      "texto": "Te entiendo, Bania. Lo que me dices es que llevas años en una carrera pedagógica de cinco años y no quieres que ese esfuerzo se pierda, ¿es así?\n\nPara orientarte bien necesito conocer tu caso completo.\n\n¿En qué ciclo estás y qué te ha comunicado exactamente tu instituto?\n\nGracias por contarme. No te voy a asegurar nada sobre tu instituto sin verificarlo, porque sería generarte una expectativa falsa.\n\nLo que sí te puedo explicar es cómo funciona aquí: la convalidación se hace por evaluación de sílabos de los cursos que ya llevaste.\n\n¿Tienes a la mano tus certificados o sílabos de los ciclos aprobados?\n\nPerfecto, con eso avanzamos. Pide tus sílabos y yo consulto tu caso específico para darte una respuesta precisa.\n\n¿Te parece si te llamo el jueves a las 6 p. m. para contarte el resultado y ver los siguientes pasos?",
+      "porQue": "Devolverle su preocupación con sus propias palabras y seguir preguntando te permite profundizar sin afirmar nada sobre su licenciamiento que no esté validado.",
+      "base": "e7e2dce14a7d",
       "dialogo": [
        {
         "quien": "cliente",
-        "texto": "Lo que quiero saber es cuánto me convalidan y cuánto me cuesta."
+        "texto": "Lo que me preocupa es que mi instituto está en proceso de licenciamiento y no sé qué pasará con mis estudios."
        },
        {
         "quien": "asesor",
-        "texto": "Claro, Santos, lo vemos.\n\nAntes, cuéntame: ya eres docente de Primaria, ¿qué te motiva a estudiar Psicología ahora?\n\nQuiero entender qué esperas lograr con esta carrera."
+        "texto": "Te entiendo, Bania. Lo que me dices es que llevas años en una carrera pedagógica de cinco años y no quieres que ese esfuerzo se pierda, ¿es así?\n\nPara orientarte bien necesito conocer tu caso completo.\n\n¿En qué ciclo estás y qué te ha comunicado exactamente tu instituto?"
        },
        {
         "quien": "cliente",
-        "texto": "Trabajo con niños y veo muchos casos de conducta; quiero poder ayudarlos de verdad."
+        "texto": "Estoy en cuarto ciclo. Solo nos dijeron que están en proceso, nada más."
        },
        {
         "quien": "asesor",
-        "texto": "Entonces lo que buscas es ayudar de verdad a los niños con los casos de conducta que ves en el aula.\n\nPara decidir, ¿qué pesa más para ti: cuánto te convaliden, el tiempo que te tome o el presupuesto mensual?"
+        "texto": "Gracias por contarme. No te voy a asegurar nada sobre tu instituto sin verificarlo, porque sería generarte una expectativa falsa.\n\nLo que sí te puedo explicar es cómo funciona aquí: la convalidación se hace por evaluación de sílabos de los cursos que ya llevaste.\n\n¿Tienes a la mano tus certificados o sílabos de los ciclos aprobados?"
        },
        {
         "quien": "cliente",
-        "texto": "El tiempo, porque trabajo todo el día."
+        "texto": "Tengo mis notas, los sílabos tendría que pedirlos."
        },
        {
         "quien": "asesor",
-        "texto": "Entendido, el tiempo es lo principal.\n\nTe explico cómo la modalidad a distancia y la convalidación pueden ayudarte a avanzar sin dejar tu trabajo.\n\n¿Te parece si empezamos por ahí?"
+        "texto": "Perfecto, con eso avanzamos. Pide tus sílabos y yo consulto tu caso específico para darte una respuesta precisa.\n\n¿Te parece si te llamo el jueves a las 6 p. m. para contarte el resultado y ver los siguientes pasos?"
        }
       ]
      }
     },
     "paso3": {
-     "pct": 27,
-     "prev": 45,
-     "delta": -18,
-     "avg": 71,
-     "fortaleza": "Brindas orientación sobre los documentos que podrían solicitarse para evaluar la convalidación y explicas los principales conceptos económicos vinculados con el proceso de admisión.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nBuscas avanzar hacia el proceso de admisión al consultar si los importes se encuentran dentro del presupuesto del prospecto y presentar los beneficios económicos disponibles.",
-     "oportunidad": "Explica de manera ordenada el proceso de admisión y convalidación, diferenciando una proyección preliminar de una evaluación oficial. También confirma las condiciones de los beneficios económicos y la continuidad del descuento entre ciclos, para que el prospecto pueda tomar una decisión con información clara.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿",
-     "conclusion": "Orientas sobre los documentos para evaluar la convalidación y explicas los conceptos económicos de admisión. Te faltó ordenar el proceso: diferenciar una proyección preliminar de la evaluación oficial y confirmar condiciones y continuidad de los beneficios.",
-     "rol": "oportunidad",
-     "texto": "Explica de manera ordenada el proceso de admisión y convalidación, diferenciando una proyección preliminar de una evaluación oficial. También confirma las condiciones de los beneficios económicos y la continuidad del descuento entre ciclos, para que el prospecto pueda tomar una decisión con información clara.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿",
-     "tecnica": {
-      "id": "tec_08",
-      "titulo": "🛡️ Mata la Objeción Antes de que Nazca",
-      "ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Buena pregunta, Santos, y quiero ser claro contigo.\n\nLo que te puedo dar ahora es solo una orientación preliminar; la convalidación oficial se define cuando se evalúan tus sílabos de Educación Primaria.\n\nAsí no te llevas una expectativa que luego cambie.\n\nTe lo explico en orden: primero te inscribes, luego rindes la evaluación de ingreso virtual y presentas tus sílabos para la evaluación de convalidación.\n\nSobre la inversión, el pago inicial incluye admisión, matrícula, seguro y primera cuota; las condiciones de los beneficios te las confirmo por escrito.\n\n¿Hasta aquí está claro?\n\nEs justo lo que hay que confirmar antes de que decidas.\n\nTe envío por WhatsApp las condiciones oficiales del beneficio y su continuidad entre ciclos.\n\n¿Te llamo mañana a las 6 p. m. para revisarlo juntos?",
-      "porQue": "Aclarar desde el inicio que la convalidación final depende de la evaluación oficial evita expectativas sin fundamento y una objeción posterior.",
-      "base": "b2d38c981865",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "Entonces, ¿cuántos cursos me van a convalidar?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "Buena pregunta, Santos, y quiero ser claro contigo.\n\nLo que te puedo dar ahora es solo una orientación preliminar; la convalidación oficial se define cuando se evalúan tus sílabos de Educación Primaria.\n\nAsí no te llevas una expectativa que luego cambie."
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ah, ya. ¿Y qué tengo que hacer para eso?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "Te lo explico en orden: primero te inscribes, luego rindes la evaluación de ingreso virtual y presentas tus sílabos para la evaluación de convalidación.\n\nSobre la inversión, el pago inicial incluye admisión, matrícula, seguro y primera cuota; las condiciones de los beneficios te las confirmo por escrito.\n\n¿Hasta aquí está claro?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, pero quiero saber si el descuento se mantiene en los siguientes ciclos."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Es justo lo que hay que confirmar antes de que decidas.\n\nTe envío por WhatsApp las condiciones oficiales del beneficio y su continuidad entre ciclos.\n\n¿Te llamo mañana a las 6 p. m. para revisarlo juntos?"
-       }
-      ]
-     }
+     "pct": 58,
+     "prev": 27,
+     "delta": 31,
+     "avg": 70,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     },
     "paso4": {
-     "pct": 61,
-     "prev": 78,
-     "delta": -17,
+     "pct": 78,
+     "prev": 61,
+     "delta": 17,
      "avg": 73,
      "fortaleza": null,
-     "oportunidad": "únicamente en la vigencia de los beneficios. Primero explora las dudas del prospecto y después acuerda un siguiente paso concreto. Si necesita evaluar la propuesta, ofrece enviar un resumen de costos y coordina una fecha y hora para retomar el contacto.\nSigamos fortaleciendo estos puntos para lograr una gestión más consultiva, clara y orientada al cierre comercial. 💪",
-     "conclusion": "Buscas avanzar a la admisión validando si los importes entran en su presupuesto. Evita centrar el cierre solo en la vigencia de los beneficios: explora sus dudas y acuerda un siguiente paso concreto con fecha y hora.",
-     "rol": "oportunidad",
-     "texto": "únicamente en la vigencia de los beneficios. Primero explora las dudas del prospecto y después acuerda un siguiente paso concreto. Si necesita evaluar la propuesta, ofrece enviar un resumen de costos y coordina una fecha y hora para retomar el contacto.\nSigamos fortaleciendo estos puntos para lograr una gestión más consultiva, clara y orientada al cierre comercial. 💪",
-     "tecnica": {
-      "id": "tec_16",
-      "titulo": "📅 Si No Confirma al momento Termina con un Próximo Paso",
-      "ejemplo": "\"¿Te llamo el martes para conocer si podemos empezar tu proceso de admisión? ¿Te pare? o si decides antes avisame y estaré muy atento. Recuerda hacerlo hasta esta fecha que cierra el beneficio.\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Me parece bien, Santos, es una decisión importante.\n\nPara ayudarte a pensarlo, ¿qué es lo que todavía te genera duda: la convalidación, el tiempo o la inversión?\n\nEntiendo. Te envío ahora por WhatsApp un resumen de costos con cada concepto, para que lo revises con calma.\n\n¿Cuándo crees que podrás revisarlo?\n\nPerfecto. Entonces te llamo el jueves a las 7 p. m. para resolver lo que te surja al revisarlo.\n\nTe atendió Betsabeth, de la Universidad Continental. ¿Te parece bien ese horario?",
-      "porQue": "Explorar la duda y cerrar con un próximo paso con fecha y hora mantiene viva la oportunidad sin presionar con la vigencia.",
-      "base": "eae025c7a989",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "Lo voy a pensar, no quiero apurarme."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Me parece bien, Santos, es una decisión importante.\n\nPara ayudarte a pensarlo, ¿qué es lo que todavía te genera duda: la convalidación, el tiempo o la inversión?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "La inversión, quiero ver si me alcanza."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Entiendo. Te envío ahora por WhatsApp un resumen de costos con cada concepto, para que lo revises con calma.\n\n¿Cuándo crees que podrás revisarlo?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Mañana en la noche."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Perfecto. Entonces te llamo el jueves a las 7 p. m. para resolver lo que te surja al revisarlo.\n\nTe atendió Betsabeth, de la Universidad Continental. ¿Te parece bien ese horario?"
-       }
-      ]
-     }
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     }
    },
-   "scoreGlobal": "52,22%",
-   "callScorePct": 52,
-   "scorePrev": 72,
-   "scoreDelta": -20,
-   "cuartilUltima": "Q4",
+   "scoreGlobal": "74,42%",
+   "callScorePct": 74,
+   "scorePrev": 52,
+   "scoreDelta": 22,
+   "cuartilUltima": "Q3",
    "calidadPromedio": 74,
    "cuartilCalidad": "Q4",
    "matriculas": 9,
@@ -11119,18 +11197,18 @@
     "items": {
      "paso1_1": {
       "estado": "pendiente",
-      "evidencia": "Recuerda presentarte con tu nombre y el de la Universidad Continental desde el inicio",
-      "fecha": "26/10/2026"
+      "evidencia": "Mantén la presentación protocolar desde el inicio con tu nombre y Unidad CIE",
+      "fecha": "30/10/2026"
      },
      "paso1_2": {
-      "estado": "pendiente",
-      "evidencia": "Debemos dirigirnos la llamada con su nombre mínimo 4 veces",
-      "fecha": "08/10/2026"
-     },
-     "paso1_3": {
       "estado": "sin_evidencia",
       "evidencia": null,
       "fecha": null
+     },
+     "paso1_3": {
+      "estado": "pendiente",
+      "evidencia": "Presenta los beneficios de estudiar en Universidad Continental",
+      "fecha": "30/10/2026"
      },
      "paso1_4": {
       "estado": "ok",
@@ -11138,9 +11216,9 @@
       "fecha": "22/10/2026"
      },
      "paso2_1": {
-      "estado": "pendiente",
-      "evidencia": "Profundiza en las razones por las que desea estudiar Psicología",
-      "fecha": "26/10/2026"
+      "estado": "ok",
+      "evidencia": "Indagaste los motivos por los que desea cambiarse",
+      "fecha": "30/10/2026"
      },
      "paso2_2": {
       "estado": "pendiente",
@@ -11148,9 +11226,9 @@
       "fecha": "26/10/2026"
      },
      "paso2_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
+      "estado": "ok",
+      "evidencia": "Identificaste que su principal preocupación es el licenciamiento de su instituto",
+      "fecha": "30/10/2026"
      },
      "paso2_4": {
       "estado": "sin_evidencia",
@@ -11164,8 +11242,8 @@
      },
      "paso3_2": {
       "estado": "pendiente",
-      "evidencia": "Integra al menos dos diferenciales de la Universidad Continental",
-      "fecha": "22/10/2026"
+      "evidencia": "Desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad",
+      "fecha": "30/10/2026"
      },
      "paso3_3": {
       "estado": "sin_evidencia",
@@ -11179,8 +11257,8 @@
      },
      "paso3_5": {
       "estado": "pendiente",
-      "evidencia": "Indaga qué aspectos necesita revisar antes de insistir en la promoción",
-      "fecha": "22/10/2026"
+      "evidencia": "Explica alternativas y valida traslado o convalidación ante su preocupación",
+      "fecha": "30/10/2026"
      },
      "paso3_6": {
       "estado": "sin_evidencia",
@@ -11199,13 +11277,13 @@
      },
      "paso4_3": {
       "estado": "pendiente",
-      "evidencia": "Cierra mencionando tu nombre y la Universidad Continental",
-      "fecha": "22/10/2026"
+      "evidencia": "Cumple con el protocolo de despedida",
+      "fecha": "30/10/2026"
      },
      "paso4_4": {
       "estado": "pendiente",
-      "evidencia": "Ofrece enviar un resumen de costos y coordina fecha y hora para retomar",
-      "fecha": "26/10/2026"
+      "evidencia": "Establece fecha y hora para retomar el contacto, no solo enviar información",
+      "fecha": "30/10/2026"
      }
     }
    }
@@ -11213,22 +11291,22 @@
   "Maria Alejandra Pino Contreras": {
    "sede": "LIMA",
    "antiguedad": "3 a 6 meses",
-   "numEvaluaciones": 7,
-   "ultimaFecha": "26/10/2026",
+   "numEvaluaciones": 8,
+   "ultimaFecha": "30/10/2026",
    "foco": "paso1",
-   "fortalezaPrincipal": "paso3",
+   "fortalezaPrincipal": "paso2",
    "modoFeedback": "etapas",
    "stages": {
     "paso1": {
      "pct": 67,
-     "prev": 100,
-     "delta": -33,
-     "avg": 83,
-     "fortaleza": "Mantienes un trato cordial y verificas que John haya recibido la información enviada por WhatsApp, lo que permite dar continuidad al contacto comercial.",
-     "oportunidad": "Preséntate con tu nombre y el de la Universidad Continental desde el inicio. Cuando el prospecto confirme que desea estudiar Ingeniería Ambiental, enfoca la conversación en esa carrera y evita insistir en información de Psicología que él no reconoce haber solicitado. Recuerda utilizar su nombre al menos dos veces y completar la despedida institucional.",
-     "conclusion": "Eres cordial y verificas que John recibió la información por WhatsApp. Te faltó presentarte con tu nombre y la universidad, enfocarte en Ingeniería Ambiental cuando él lo confirmó, usar su nombre al menos dos veces y completar la despedida institucional.",
+     "prev": 67,
+     "delta": 0,
+     "avg": 81,
+     "fortaleza": "Iniciaste la atención oportunamente y confirmaste que el prospecto había solicitado información mediante WhatsApp. Lograste identificar sus estudios previos y orientar la conversación hacia una alternativa académica.",
+     "oportunidad": "Recuerda iniciar la llamada presentándote con tu nombre y mencionando a la Unidad CIE. También es importante utilizar el nombre del prospecto durante la conversación para generar mayor cercanía.",
+     "conclusion": "Iniciaste la atención a tiempo, confirmaste que Milton pidió información por WhatsApp e identificaste sus estudios previos. Te faltó presentarte con tu nombre y Unidad CIE al inicio, y usar el nombre del prospecto durante la conversación.",
      "rol": "oportunidad",
-     "texto": "Preséntate con tu nombre y el de la Universidad Continental desde el inicio. Cuando el prospecto confirme que desea estudiar Ingeniería Ambiental, enfoca la conversación en esa carrera y evita insistir en información de Psicología que él no reconoce haber solicitado. Recuerda utilizar su nombre al menos dos veces y completar la despedida institucional.",
+     "texto": "Recuerda iniciar la llamada presentándote con tu nombre y mencionando a la Unidad CIE. También es importante utilizar el nombre del prospecto durante la conversación para generar mayor cercanía.",
      "tecnica": {
       "id": "tec_12",
       "titulo": "🕊️ Dar la Sensación de Control",
@@ -11236,77 +11314,81 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Hola, John, buenas tardes. Te saluda María, asesora de la Universidad Continental, modalidad a distancia.\n\nTe escribí por WhatsApp con información; ¿pudiste recibirla?\n\nGracias por aclararlo, John.\n\nCuéntame entonces, ¿qué carrera es la que te interesa?\n\nPerfecto, nos enfocamos en Ingeniería Ambiental.\n\nTe cuento cómo funciona la modalidad a distancia y luego resolvemos tus dudas.\n\n¿Qué te gustaría saber primero?",
-      "porQue": "Presentarte bien y seguir la carrera que el prospecto confirma le da el control y evita insistir en un interés que no reconoce.",
-      "base": "85bd81277a76",
+      "texto": "Hola, Milton, buenas tardes. Te saluda María Alejandra, asesora de la Unidad CIE de la Universidad Continental.\n\nTe contacto porque nos escribiste por WhatsApp pidiendo información.\n\n¿Es un buen momento para conversar unos minutos?\n\nQué bueno, Milton. Para darte la información que de verdad te sirva, quiero entender primero tu caso.\n\nTú me dices qué es lo que más te interesa saber y lo vemos juntos.\n\n¿Ya llevaste estudios antes en alguna carrera o instituto?\n\nExcelente, Milton, eso nos puede ayudar.\n\nCuéntame qué estudiaste y cuántos ciclos aprobaste, así te explico qué opción te conviene.\n\n¿Tienes tus certificados a la mano?",
+      "porQue": "Presentarte formalmente y llamarlo por su nombre mientras le das la opción de decidir el ritmo genera cercanía y confianza desde el primer minuto.",
+      "base": "a908f301efba",
       "dialogo": [
        {
+        "quien": "cliente",
+        "texto": "¿Sí, aló?"
+       },
+       {
         "quien": "asesor",
-        "texto": "Hola, John, buenas tardes. Te saluda María, asesora de la Universidad Continental, modalidad a distancia.\n\nTe escribí por WhatsApp con información; ¿pudiste recibirla?"
+        "texto": "Hola, Milton, buenas tardes. Te saluda María Alejandra, asesora de la Unidad CIE de la Universidad Continental.\n\nTe contacto porque nos escribiste por WhatsApp pidiendo información.\n\n¿Es un buen momento para conversar unos minutos?"
        },
        {
         "quien": "cliente",
-        "texto": "Sí, pero me hablaban de Psicología y yo no pedí eso."
+        "texto": "Sí, justo quería saber sobre Ingeniería Ambiental."
        },
        {
         "quien": "asesor",
-        "texto": "Gracias por aclararlo, John.\n\nCuéntame entonces, ¿qué carrera es la que te interesa?"
+        "texto": "Qué bueno, Milton. Para darte la información que de verdad te sirva, quiero entender primero tu caso.\n\nTú me dices qué es lo que más te interesa saber y lo vemos juntos.\n\n¿Ya llevaste estudios antes en alguna carrera o instituto?"
        },
        {
         "quien": "cliente",
-        "texto": "Ingeniería Ambiental, a distancia."
+        "texto": "Sí, estudié unos ciclos en un instituto."
        },
        {
         "quien": "asesor",
-        "texto": "Perfecto, nos enfocamos en Ingeniería Ambiental.\n\nTe cuento cómo funciona la modalidad a distancia y luego resolvemos tus dudas.\n\n¿Qué te gustaría saber primero?"
+        "texto": "Excelente, Milton, eso nos puede ayudar.\n\nCuéntame qué estudiaste y cuántos ciclos aprobaste, así te explico qué opción te conviene.\n\n¿Tienes tus certificados a la mano?"
        }
       ]
      }
     },
     "paso2": {
-     "pct": 81,
-     "prev": 77,
-     "delta": 4,
-     "avg": 75,
-     "fortaleza": "Confirmas que su interés es Ingeniería Ambiental en modalidad a distancia y atiendes sus consultas sobre la virtualidad, las cuotas y la duración de la carrera.",
-     "oportunidad": "Profundiza en las prioridades del prospecto y procura que la conversación responda directamente a sus consultas. Puedes preguntarle qué espera de la modalidad virtual y qué factores necesita evaluar para avanzar con su decisión.",
-     "conclusion": "Confirmas su interés en Ingeniería Ambiental a distancia y atiendes sus consultas sobre virtualidad, cuotas y duración. Te faltó profundizar en sus prioridades: qué espera de la modalidad virtual y qué factores necesita evaluar para decidir.",
+     "pct": 100,
+     "prev": 81,
+     "delta": 19,
+     "avg": 78,
+     "fortaleza": "Indagaste sobre sus estudios anteriores, documentos para convalidación, disponibilidad y presupuesto. Además, explicaste los beneficios de la modalidad a distancia, las clases grabadas y la posibilidad de adelantar cursos.\n3. Solución de problemas\nRealizaste preguntas para validar si la inversión estaba dentro de su presupuesto y buscaste confirmar su disposición para iniciar el proceso. También ofreciste enviar la información por WhatsApp y acordaste un seguimiento.\n4. Cerrar\nLograste establecer un compromiso de contacto para el día siguiente a las 11:00 a. m., lo que permite mantener activa la oportunidad comercial.",
+     "oportunidad": "Aunque brindaste información sobre la inversión y el proceso de ingreso, debes validar que el prospecto comprenda los pasos y las condiciones de convalidación. Confirma también su carrera de interés inicial antes de orientar la propuesta académica.\n3. Solución de problemas\nAunque el prospecto indicó que la cuota estaba dentro de su presupuesto, era importante confirmar si tenía alguna otra condición pendiente antes de iniciar el proceso. Refuerza la confirmación de requisitos y el avance hacia la preinscripción cuando corresponda.\n4. Cerrar\nDebes utilizar un lenguaje comercial más preciso y evitar expresiones como «encontrar tu déficit». Finalmente, recuerda mencionar la Unidad CIE durante la despedida y realizar la transferencia a la encuesta de satisfacción.\nPara tus próximas llamadas, enfócate en convertir el interés del prospecto en un compromiso concreto de ingreso, manteniendo claridad en la información y un cierre alineado al protocolo.",
+     "conclusion": "Indagaste sus estudios anteriores, documentos para convalidación, disponibilidad y presupuesto, y explicaste beneficios como las clases grabadas. Te faltó validar que Milton comprenda los pasos y condiciones de convalidación y confirmar su carrera de interés antes de orientar la propuesta.",
      "rol": "oportunidad",
-     "texto": "Profundiza en las prioridades del prospecto y procura que la conversación responda directamente a sus consultas. Puedes preguntarle qué espera de la modalidad virtual y qué factores necesita evaluar para avanzar con su decisión.",
+     "texto": "Aunque brindaste información sobre la inversión y el proceso de ingreso, debes validar que el prospecto comprenda los pasos y las condiciones de convalidación. Confirma también su carrera de interés inicial antes de orientar la propuesta académica.\n3. Solución de problemas\nAunque el prospecto indicó que la cuota estaba dentro de su presupuesto, era importante confirmar si tenía alguna otra condición pendiente antes de iniciar el proceso. Refuerza la confirmación de requisitos y el avance hacia la preinscripción cuando corresponda.\n4. Cerrar\nDebes utilizar un lenguaje comercial más preciso y evitar expresiones como «encontrar tu déficit». Finalmente, recuerda mencionar la Unidad CIE durante la despedida y realizar la transferencia a la encuesta de satisfacción.\nPara tus próximas llamadas, enfócate en convertir el interés del prospecto en un compromiso concreto de ingreso, manteniendo claridad en la información y un cierre alineado al protocolo.",
      "tecnica": {
-      "id": "tec_14",
-      "titulo": "❓ Pregunta lo que Falta para Cerrar",
-      "ejemplo": "\"Aparte de la convalidación de documentos, ¿qué es lo único que te impediría iniciar tu carrera este ciclo con nosotros?\""
+      "id": "tec_01",
+      "titulo": "🧠 Haz que el Cliente Concluya por Sí Mismo",
+      "ejemplo": "\"De todo lo que te conté, ¿qué es lo que más te acomoda a ti?\""
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Sí, John, todo es virtual y las clases quedan grabadas.\n\nPara orientarte mejor, ¿qué esperas de la modalidad virtual?\n\n¿Trabajas actualmente?\n\nEntonces la flexibilidad es lo clave para ti.\n\nAdemás del horario, ¿qué más necesitas evaluar para tomar tu decisión: las cuotas, la duración o el proceso de admisión?\n\nPerfecto, entonces vemos las cuotas en detalle y cómo encajan con tu presupuesto.\n\n¿Te parece si empezamos por ahí?",
-      "porQue": "Preguntar qué necesita evaluar para avanzar ubica la prioridad real de John y permite responder directo a eso.",
-      "base": "9a15e90e0b1e",
+      "texto": "Milton, antes de avanzar quiero asegurarme de que todo quede claro.\n\nLa convalidación se hace por evaluación de sílabos: revisamos los cursos que aprobaste y se determina cuáles se reconocen. No se define antes de esa evaluación.\n\n¿Me podrías contar con tus palabras cómo entendiste el proceso?\n\nExacto, así es.\n\nAhora, para orientarte bien la propuesta: al inicio me comentaste de Ingeniería Ambiental.\n\n¿Sigue siendo la carrera que quieres o estás evaluando alguna otra?\n\nPerfecto, entonces tú mismo lo tienes claro: Ingeniería Ambiental, con convalidación por sílabos y clases grabadas para tu horario.\n\n¿Te parece si mañana a las 11 a. m. revisamos juntos tus sílabos y vemos el siguiente paso?",
+      "porQue": "Resumir y dejar que Milton confirme con sus palabras su carrera y los pasos de convalidación asegura que la decisión sea suya y que entendió el proceso.",
+      "base": "23bc5ff73d04",
       "dialogo": [
        {
         "quien": "cliente",
-        "texto": "¿Y las clases cómo son? ¿Todo virtual?"
+        "texto": "Entonces, ¿con mis cursos del instituto ya me convalidan?"
        },
        {
         "quien": "asesor",
-        "texto": "Sí, John, todo es virtual y las clases quedan grabadas.\n\nPara orientarte mejor, ¿qué esperas de la modalidad virtual?\n\n¿Trabajas actualmente?"
+        "texto": "Milton, antes de avanzar quiero asegurarme de que todo quede claro.\n\nLa convalidación se hace por evaluación de sílabos: revisamos los cursos que aprobaste y se determina cuáles se reconocen. No se define antes de esa evaluación.\n\n¿Me podrías contar con tus palabras cómo entendiste el proceso?"
        },
        {
         "quien": "cliente",
-        "texto": "Sí, trabajo de lunes a sábado, por eso necesito algo flexible."
+        "texto": "O sea, envío mis sílabos y ustedes revisan qué cursos me reconocen."
        },
        {
         "quien": "asesor",
-        "texto": "Entonces la flexibilidad es lo clave para ti.\n\nAdemás del horario, ¿qué más necesitas evaluar para tomar tu decisión: las cuotas, la duración o el proceso de admisión?"
+        "texto": "Exacto, así es.\n\nAhora, para orientarte bien la propuesta: al inicio me comentaste de Ingeniería Ambiental.\n\n¿Sigue siendo la carrera que quieres o estás evaluando alguna otra?"
        },
        {
         "quien": "cliente",
-        "texto": "Las cuotas, sobre todo."
+        "texto": "Sí, Ingeniería Ambiental es la que quiero."
        },
        {
         "quien": "asesor",
-        "texto": "Perfecto, entonces vemos las cuotas en detalle y cómo encajan con tu presupuesto.\n\n¿Te parece si empezamos por ahí?"
+        "texto": "Perfecto, entonces tú mismo lo tienes claro: Ingeniería Ambiental, con convalidación por sílabos y clases grabadas para tu horario.\n\n¿Te parece si mañana a las 11 a. m. revisamos juntos tus sílabos y vemos el siguiente paso?"
        }
       ]
      }
@@ -11315,55 +11397,20 @@
      "pct": 100,
      "prev": 100,
      "delta": 0,
-     "avg": 78,
-     "fortaleza": "Explicas los documentos requeridos, la evaluación de admisión y la posibilidad de adelantar cursos para reducir el tiempo de estudios.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nConfirmas que el prospecto desea continuar, consultas por el medio de pago y solicitas los documentos necesarios para avanzar con el proceso.",
-     "oportunidad": "Es importante validar la información económica antes de comunicarla. Durante la llamada se mencionan S/ 200 y luego S/ 100 como importe de preinscripción. Confirma el monto vigente y explica de manera ordenada cada concepto de pago y los pasos del proceso de admisión para evitar confusiones.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nCuando solicites documentos, acuerda una fecha y hora para verificar su recepción y continuar con el proceso. Establece un compromiso concreto de seguimiento, resume los pasos pendientes y confirma que el prospecto comprenda qué debe realizar.\nSigamos fortaleciendo estos puntos para lograr una gestión más clara, personalizada y orientada al cierre comercial. 💪",
-     "conclusion": "Explicas bien los documentos, la evaluación de admisión y la opción de adelantar cursos. Te faltó validar el monto de preinscripción antes de comunicarlo (se mencionaron dos importes) y ordenar cada concepto de pago y los pasos del proceso.",
-     "rol": "oportunidad",
-     "texto": "Es importante validar la información económica antes de comunicarla. Durante la llamada se mencionan S/ 200 y luego S/ 100 como importe de preinscripción. Confirma el monto vigente y explica de manera ordenada cada concepto de pago y los pasos del proceso de admisión para evitar confusiones.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nCuando solicites documentos, acuerda una fecha y hora para verificar su recepción y continuar con el proceso. Establece un compromiso concreto de seguimiento, resume los pasos pendientes y confirma que el prospecto comprenda qué debe realizar.\nSigamos fortaleciendo estos puntos para lograr una gestión más clara, personalizada y orientada al cierre comercial. 💪",
-     "tecnica": {
-      "id": "tec_10",
-      "titulo": "✅ Construye Pequeños \"Sí\" (micro-compromisos)",
-      "ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Te explico por partes, John, para que quede claro.\n\nPrimero, el monto de preinscripción vigente te lo confirmo por escrito en este momento, para no darte un dato equivocado.\n\n¿Hasta ahí vamos bien?\n\nSegundo, el pago inicial incluye admisión, matrícula, seguro y primera cuota.\n\nTercero, los pasos: inscripción, envío de documentos y evaluación de ingreso virtual con cámara, sin examen de conocimientos.\n\n¿Alguno de estos pasos te genera duda?\n\nPerfecto. Te envío ahora por WhatsApp el detalle de cada concepto con el monto confirmado.\n\n¿Lo revisamos juntos mañana a las 10 a. m.?",
-      "porQue": "Explicar inversión y proceso por partes, confirmando cada una, evita confusiones con los montos y construye pequeños sí hacia el cierre.",
-      "base": "69c9205276f0",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "Entonces, ¿cuánto pago para inscribirme?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "Te explico por partes, John, para que quede claro.\n\nPrimero, el monto de preinscripción vigente te lo confirmo por escrito en este momento, para no darte un dato equivocado.\n\n¿Hasta ahí vamos bien?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, está bien."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Segundo, el pago inicial incluye admisión, matrícula, seguro y primera cuota.\n\nTercero, los pasos: inscripción, envío de documentos y evaluación de ingreso virtual con cámara, sin examen de conocimientos.\n\n¿Alguno de estos pasos te genera duda?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "No, todo claro."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Perfecto. Te envío ahora por WhatsApp el detalle de cada concepto con el monto confirmado.\n\n¿Lo revisamos juntos mañana a las 10 a. m.?"
-       }
-      ]
-     }
+     "avg": 80,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
     },
     "paso4": {
      "pct": 61,
-     "prev": 78,
-     "delta": -17,
-     "avg": 73,
+     "prev": 61,
+     "delta": 0,
+     "avg": 71,
      "fortaleza": null,
      "oportunidad": null,
      "conclusion": null,
@@ -11373,12 +11420,12 @@
      "caso": null
     }
    },
-   "scoreGlobal": "77,91%",
-   "callScorePct": 78,
-   "scorePrev": 87,
-   "scoreDelta": -9,
+   "scoreGlobal": "83,53%",
+   "callScorePct": 84,
+   "scorePrev": 78,
+   "scoreDelta": 6,
    "cuartilUltima": "Q3",
-   "calidadPromedio": 77,
+   "calidadPromedio": 78,
    "cuartilCalidad": "Q3",
    "matriculas": 4,
    "meta": 16,
@@ -11398,7 +11445,7 @@
    },
    "puesto": 19,
    "totalAsesores": 26,
-   "indice": 51.0,
+   "indice": 51.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -11409,23 +11456,23 @@
     "items": {
      "paso1_1": {
       "estado": "pendiente",
-      "evidencia": "Preséntate con tu nombre y el de la Universidad Continental desde el inicio",
-      "fecha": "26/10/2026"
+      "evidencia": "Recuerda presentarte con tu nombre y mencionar la Unidad CIE",
+      "fecha": "30/10/2026"
      },
      "paso1_2": {
       "estado": "pendiente",
-      "evidencia": "Recuerda utilizar su nombre al menos dos veces y enfocarte en Ingeniería Ambiental",
-      "fecha": "26/10/2026"
+      "evidencia": "Utiliza el nombre del prospecto durante la conversación",
+      "fecha": "30/10/2026"
      },
      "paso1_3": {
-      "estado": "pendiente",
-      "evidencia": "Incorporar al menos dos diferenciales de la Universidad para generar valor más allá del precio",
-      "fecha": "06/10/2026"
+      "estado": "ok",
+      "evidencia": "Explicaste beneficios de la modalidad: clases grabadas y adelantar cursos",
+      "fecha": "30/10/2026"
      },
      "paso1_4": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
+      "estado": "pendiente",
+      "evidencia": "Confirma su carrera de interés inicial antes de orientar la propuesta",
+      "fecha": "30/10/2026"
      },
      "paso2_1": {
       "estado": "pendiente",
@@ -11448,14 +11495,16 @@
       "fecha": "22/10/2026"
      },
      "paso3_1": {
-      "estado": "ok",
-      "evidencia": "Brindas información sobre Ingeniería Ambiental y Derecho",
-      "fecha": "06/10/2026"
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null,
+      "retirado": true,
+      "fechaUltimoOk": "06/10/2026"
      },
      "paso3_2": {
-      "estado": "pendiente",
-      "evidencia": "Presentar al menos dos diferenciales vinculados con sus necesidades",
-      "fecha": "22/10/2026"
+      "estado": "ok",
+      "evidencia": "Explicaste clases grabadas y la posibilidad de adelantar cursos",
+      "fecha": "30/10/2026"
      },
      "paso3_3": {
       "estado": "sin_evidencia",
@@ -11474,13 +11523,15 @@
      },
      "paso3_6": {
       "estado": "pendiente",
-      "evidencia": "Resume los pasos pendientes y confirma que el prospecto comprenda qué debe realizar",
-      "fecha": "26/10/2026"
+      "evidencia": "Valida que comprenda los pasos y condiciones de convalidación",
+      "fecha": "30/10/2026"
      },
      "paso4_1": {
-      "estado": "ok",
-      "evidencia": "Mantienes abierto el canal de comunicación por WhatsApp",
-      "fecha": "06/10/2026"
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null,
+      "retirado": true,
+      "fechaUltimoOk": "06/10/2026"
      },
      "paso4_2": {
       "estado": "sin_evidencia",
@@ -11489,13 +11540,13 @@
      },
      "paso4_3": {
       "estado": "pendiente",
-      "evidencia": "Recuerda completar la despedida institucional",
-      "fecha": "26/10/2026"
+      "evidencia": "Recuerda mencionar la Unidad CIE durante la despedida",
+      "fecha": "30/10/2026"
      },
      "paso4_4": {
-      "estado": "pendiente",
-      "evidencia": "Acuerda una fecha y hora para verificar la recepción de documentos",
-      "fecha": "26/10/2026"
+      "estado": "ok",
+      "evidencia": "Compromiso de contacto para el día siguiente a las 11:00 a. m.",
+      "fecha": "30/10/2026"
      }
     }
    }
@@ -11855,11 +11906,11 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 80,
    "cuartilCalidad": "Q3",
-   "matriculas": 16,
+   "matriculas": 18,
    "meta": 16,
-   "avanceMes": 100.0,
+   "avanceMes": 112.5,
    "avanceRitmo": null,
-   "avanceMeta": 100.0,
+   "avanceMeta": 112.5,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -11871,9 +11922,9 @@
     "avance": 57.89,
     "cuartil": "Q4"
    },
-   "puesto": 3,
+   "puesto": 2,
    "totalAsesores": 26,
-   "indice": 90.0,
+   "indice": 96.2,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -13121,22 +13172,22 @@
   "Orlando Jesus Pintado Sandoval": {
    "sede": "LIMA",
    "antiguedad": "0 a 3 meses",
-   "numEvaluaciones": 9,
-   "ultimaFecha": "26/10/2026",
-   "foco": "paso3",
-   "fortalezaPrincipal": "paso1",
+   "numEvaluaciones": 10,
+   "ultimaFecha": "30/10/2026",
+   "foco": "paso1",
+   "fortalezaPrincipal": "paso2",
    "modoFeedback": "etapas",
    "stages": {
     "paso1": {
-     "pct": 100,
-     "prev": 47,
-     "delta": 53,
-     "avg": 83,
-     "fortaleza": "Mantienes una conversación activa con Carlos y verificas que reciba la información por WhatsApp. Además, te ofreces a orientarlo sobre los requisitos tecnológicos para rendir la evaluación virtual.",
-     "oportunidad": "Refuerza la personalización utilizando el nombre del prospecto al menos dos veces. Mantén una comunicación consultiva y evita que la vigencia de una promoción se perciba como presión. Recuerda completar la despedida institucional y transferir a la encuesta de satisfacción.",
-     "conclusion": "Mantienes una conversación activa con Carlos, verificas que reciba la información y lo orientas sobre los requisitos de la evaluación virtual. Usa su nombre al menos dos veces, evita que la vigencia de la promoción suene a presión y completa la despedida y la encuesta.",
+     "pct": 67,
+     "prev": 100,
+     "delta": -33,
+     "avg": 81,
+     "fortaleza": "Iniciaste la llamada dentro del tiempo establecido y confirmaste que el prospecto había solicitado información sobre la carrera de Administración y Finanzas.",
+     "oportunidad": "Recuerda presentarte indicando tu nombre y mencionando a Unidad CIE desde el inicio de la llamada.",
+     "conclusion": "Iniciaste la llamada a tiempo y confirmaste que Iván pidió información de Administración y Finanzas. Te faltó presentarte con tu nombre y mencionar la Unidad CIE desde el inicio.",
      "rol": "oportunidad",
-     "texto": "Refuerza la personalización utilizando el nombre del prospecto al menos dos veces. Mantén una comunicación consultiva y evita que la vigencia de una promoción se perciba como presión. Recuerda completar la despedida institucional y transferir a la encuesta de satisfacción.",
+     "texto": "Recuerda presentarte indicando tu nombre y mencionando a Unidad CIE desde el inicio de la llamada.",
      "tecnica": {
       "id": "tec_12",
       "titulo": "🕊️ Dar la Sensación de Control",
@@ -13144,91 +13195,47 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Carlos, te comento que el beneficio tiene una vigencia, pero lo importante es que tomes la decisión que te convenga.\n\nNo quiero que sientas presión.\n\n¿Qué te parece si vemos con calma qué opción encaja contigo?\n\nTe entiendo, Carlos, y respeto tu ritmo.\n\nTú decides cuándo es el mejor momento; mientras tanto te dejo la información para que la tengas a la mano.\n\n¿Te parece bien?\n\nMuchas gracias por tu tiempo, Carlos. Te atendió Orlando, de la Universidad Continental.\n\nAntes de terminar, te transfiero a una breve encuesta de satisfacción sobre mi atención.",
-      "porQue": "Dar la sensación de control, en vez de presionar con la vigencia, mantiene la confianza y abre espacio para una nueva oportunidad.",
-      "base": "19d44f4e0f34",
+      "texto": "Hola, Iván, buenas tardes. Te saluda Orlando, asesor de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque solicitaste información de la carrera de Administración y Finanzas.\n\n¿Tienes unos minutos ahora o prefieres que te llame en otro momento?\n\nNo te preocupes, Iván, si se corta te vuelvo a llamar.\n\nPara orientarte bien, me gustaría conocer un poco tu situación y tú me dices qué te interesa más saber.\n\n¿Te parece bien?\n\nPerfecto, gracias.\n\nEmpecemos por lo principal para recomendarte el horario adecuado.\n\n¿Actualmente trabajas? ¿En qué horario tendrías tiempo para estudiar?",
+      "porQue": "Una presentación completa y darle a Iván la opción de elegir el momento lo hace sentir en control y te da la formalidad que genera confianza.",
+      "base": "b2e4622ba707",
       "dialogo": [
        {
+        "quien": "cliente",
+        "texto": "¿Aló?"
+       },
+       {
         "quien": "asesor",
-        "texto": "Carlos, te comento que el beneficio tiene una vigencia, pero lo importante es que tomes la decisión que te convenga.\n\nNo quiero que sientas presión.\n\n¿Qué te parece si vemos con calma qué opción encaja contigo?"
+        "texto": "Hola, Iván, buenas tardes. Te saluda Orlando, asesor de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque solicitaste información de la carrera de Administración y Finanzas.\n\n¿Tienes unos minutos ahora o prefieres que te llame en otro momento?"
        },
        {
         "quien": "cliente",
-        "texto": "Gracias, porque ahorita no tengo mucho tiempo para estudiar."
+        "texto": "Ahorita puedo, pero la señal está un poco mala."
        },
        {
         "quien": "asesor",
-        "texto": "Te entiendo, Carlos, y respeto tu ritmo.\n\nTú decides cuándo es el mejor momento; mientras tanto te dejo la información para que la tengas a la mano.\n\n¿Te parece bien?"
+        "texto": "No te preocupes, Iván, si se corta te vuelvo a llamar.\n\nPara orientarte bien, me gustaría conocer un poco tu situación y tú me dices qué te interesa más saber.\n\n¿Te parece bien?"
        },
        {
         "quien": "cliente",
-        "texto": "Sí, perfecto."
+        "texto": "Sí, claro."
        },
        {
         "quien": "asesor",
-        "texto": "Muchas gracias por tu tiempo, Carlos. Te atendió Orlando, de la Universidad Continental.\n\nAntes de terminar, te transfiero a una breve encuesta de satisfacción sobre mi atención."
+        "texto": "Perfecto, gracias.\n\nEmpecemos por lo principal para recomendarte el horario adecuado.\n\n¿Actualmente trabajas? ¿En qué horario tendrías tiempo para estudiar?"
        }
       ]
      }
     },
     "paso2": {
      "pct": 100,
-     "prev": 38,
-     "delta": 62,
-     "avg": 77,
-     "fortaleza": "Indagas por qué Carlos no desea iniciar estudios por el momento e identificas que el tiempo es su principal limitación. También detectas una nueva oportunidad comercial al conocer el interés de su esposa por una carrera del área de Administración.",
-     "oportunidad": "Profundiza en las necesidades de la esposa de Carlos: sus preferencias dentro de Administración, sus objetivos profesionales y su disponibilidad horaria. Esto te permitirá recomendar opciones alineadas con su perfil y facilitar una decisión informada.",
-     "conclusion": "Indagas por qué Carlos no quiere iniciar ahora y detectas que el tiempo es su límite, además del interés de su esposa en Administración. Te faltó profundizar en ella: sus preferencias en Administración, objetivos profesionales y disponibilidad horaria.",
+     "prev": 100,
+     "delta": 0,
+     "avg": 79,
+     "fortaleza": "Consultaste sobre sus estudios previos y disponibilidad horaria, identificando que necesita estudiar en horario nocturno debido a sus actividades laborales.\n3. Solución de problemas: Explicaste las características de la modalidad a distancia, las clases en vivo, los horarios nocturnos y la disponibilidad de grabaciones. También brindaste información sobre los requisitos y el proceso de evaluación de ingreso.\n4. Cerrar: Identificaste la disponibilidad del prospecto para realizar su evaluación y acordaste continuar la coordinación por WhatsApp a las 3:30 p. m.",
+     "oportunidad": "Cuando el prospecto consulta cómo puede realizar su matrícula, es importante brindarle información completa sobre la inversión, incluyendo el costo de matrícula y las pensiones, para que tenga claridad sobre el proceso.\n3. Solución de problemas: Aprovecha las señales de interés del prospecto para explicarle los pasos siguientes y orientarlo hacia el inicio de su proceso de admisión. No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos correspondientes.\n4. Cerrar: Refuerza el compromiso del prospecto confirmando una hora específica para su evaluación de ingreso. Asimismo, cumple con el protocolo de despedida, mencionando tu nombre, Unidad CIE y realizando la transferencia a la encuesta de satisfacción.\nConsideración: Durante la llamada se presentaron interrupciones debido a que el prospecto no contaba con buena señal. Esta situación debe tenerse en cuenta y no atribuirse como una deficiencia del asesor. Es importante mantener la orientación comercial y aprovechar las oportunidades de interés para avanzar hacia la matrícula.",
+     "conclusion": "Consultaste sus estudios previos y disponibilidad, e identificaste que necesita estudiar de noche por su trabajo. Cuando Iván preguntó cómo matricularse, te faltó darle la información completa de la inversión: matrícula y pensiones.",
      "rol": "oportunidad",
-     "texto": "Profundiza en las necesidades de la esposa de Carlos: sus preferencias dentro de Administración, sus objetivos profesionales y su disponibilidad horaria. Esto te permitirá recomendar opciones alineadas con su perfil y facilitar una decisión informada.",
-     "tecnica": {
-      "id": "tec_14",
-      "titulo": "❓ Pregunta lo que Falta para Cerrar",
-      "ejemplo": "\"Aparte de la convalidación de documentos, ¿qué es lo único que te impediría iniciar tu carrera este ciclo con nosotros?\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "Qué buena noticia, Carlos.\n\nPara recomendarle la opción correcta, cuéntame: ¿qué le gustaría hacer a ella al terminar la carrera?\n\nEntonces busca formarse para emprender.\n\n¿Y cuánto tiempo al día podría dedicarle a sus estudios? ¿Trabaja actualmente?\n\nPerfecto, con las tardes libres y clases grabadas puede organizarse bien.\n\n¿Te parece si coordinamos una llamada con ella el sábado a las 10 a. m. para orientarla directamente?",
-      "porQue": "Preguntar qué falta saber del perfil de su esposa convierte la nueva oportunidad en una recomendación concreta y alineada.",
-      "base": "8e67bb24b656",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "Mi esposa sí está interesada en algo de Administración."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Qué buena noticia, Carlos.\n\nPara recomendarle la opción correcta, cuéntame: ¿qué le gustaría hacer a ella al terminar la carrera?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Quiere poner su propio negocio."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Entonces busca formarse para emprender.\n\n¿Y cuánto tiempo al día podría dedicarle a sus estudios? ¿Trabaja actualmente?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Trabaja medio tiempo, en las tardes estaría libre."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Perfecto, con las tardes libres y clases grabadas puede organizarse bien.\n\n¿Te parece si coordinamos una llamada con ella el sábado a las 10 a. m. para orientarla directamente?"
-       }
-      ]
-     }
-    },
-    "paso3": {
-     "pct": 65,
-     "prev": 78,
-     "delta": -13,
-     "avg": 69,
-     "fortaleza": "Explicas la flexibilidad de la modalidad a distancia, la posibilidad de revisar clases grabadas y las condiciones generales para rendir la evaluación de admisión virtual.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nCompartes las opciones académicas disponibles por WhatsApp, verificas su recepción y buscas avanzar hacia la identificación de la carrera que podría interesarle a la esposa de Carlos.",
-     "oportunidad": "Cuando el prospecto solicite mensualidades y costos, brinda una orientación clara y facilita los importes correspondientes a las carreras que está evaluando. Puedes enviar un cuadro comparativo con los costos vigentes y las condiciones de los beneficios promocionales, para que pueda revisarlo con su esposa.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nEvita solicitar una respuesta inmediata sin acordar previamente un seguimiento. Establece día y hora concretos para retomar el contacto, resolver las dudas que surjan al revisar la información y ayudar a elegir la alternativa más conveniente.\nSigamos fortaleciendo estos puntos para lograr una gestión más consultiva, personalizada y orientada al cierre comercial. 💪",
-     "conclusion": "Explicas la flexibilidad de la modalidad, las clases grabadas y la evaluación virtual. Cuando Carlos pidió mensualidades y costos, te faltó darle los importes de las carreras que evalúa, idealmente en un cuadro comparativo para revisarlo con su esposa.",
-     "rol": "oportunidad",
-     "texto": "Cuando el prospecto solicite mensualidades y costos, brinda una orientación clara y facilita los importes correspondientes a las carreras que está evaluando. Puedes enviar un cuadro comparativo con los costos vigentes y las condiciones de los beneficios promocionales, para que pueda revisarlo con su esposa.\n𝟰. 𝗖𝗲𝗿𝗿𝗮𝗿\nEvita solicitar una respuesta inmediata sin acordar previamente un seguimiento. Establece día y hora concretos para retomar el contacto, resolver las dudas que surjan al revisar la información y ayudar a elegir la alternativa más conveniente.\nSigamos fortaleciendo estos puntos para lograr una gestión más consultiva, personalizada y orientada al cierre comercial. 💪",
+     "texto": "Cuando el prospecto consulta cómo puede realizar su matrícula, es importante brindarle información completa sobre la inversión, incluyendo el costo de matrícula y las pensiones, para que tenga claridad sobre el proceso.\n3. Solución de problemas: Aprovecha las señales de interés del prospecto para explicarle los pasos siguientes y orientarlo hacia el inicio de su proceso de admisión. No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos correspondientes.\n4. Cerrar: Refuerza el compromiso del prospecto confirmando una hora específica para su evaluación de ingreso. Asimismo, cumple con el protocolo de despedida, mencionando tu nombre, Unidad CIE y realizando la transferencia a la encuesta de satisfacción.\nConsideración: Durante la llamada se presentaron interrupciones debido a que el prospecto no contaba con buena señal. Esta situación debe tenerse en cuenta y no atribuirse como una deficiencia del asesor. Es importante mantener la orientación comercial y aprovechar las oportunidades de interés para avanzar hacia la matrícula.",
      "tecnica": {
       "id": "tec_10",
       "titulo": "✅ Construye Pequeños \"Sí\" (micro-compromisos)",
@@ -13236,42 +13243,55 @@
      },
      "caso": {
       "tipo": "speech",
-      "texto": "Claro, Carlos, te lo detallo.\n\nTe preparo ahora un cuadro comparativo con los costos vigentes de las carreras de Administración que vimos, con cada concepto separado.\n\nAsí lo revisan juntos con tu esposa. ¿Te parece útil?\n\nPerfecto. En el cuadro verás el pago inicial, que incluye admisión, matrícula, seguro y primera cuota, y luego las cuotas del ciclo.\n\nTambién las condiciones de los beneficios vigentes.\n\n¿Alguna carrera que quieras que incluya además de esas?\n\nListo, te lo envío por WhatsApp en unos minutos.\n\n¿Lo revisamos juntos mañana a las 7 p. m., cuando ya lo hayan visto?",
-      "porQue": "Responder la consulta de costos por partes y con un comparativo genera pequeños sí y facilita la decisión en pareja.",
-      "base": "f50694a5f15b",
+      "texto": "Buena pregunta, Iván. Te lo explico por partes para que tengas todo claro.\n\nPrimero, el pago inicial incluye la admisión, la matrícula, el seguro y tu primera cuota. Después pagas tus pensiones mensuales durante el ciclo.\n\n¿Hasta aquí está claro cómo se compone?\n\nTe paso el detalle exacto de cada concepto por WhatsApp ahora mismo, con los montos oficiales, para que lo revises con calma.\n\nLo importante es que ya sabes qué incluye cada pago y que las clases nocturnas y grabadas se ajustan a tu trabajo.\n\n¿Eso es lo que buscabas para tu horario?\n\nPerfecto. Entonces el siguiente paso es tu evaluación de ingreso virtual, con cámara y sin examen de conocimientos.\n\n¿La agendamos hoy a las 3:30 p. m., cuando coordinemos por WhatsApp?",
+      "porQue": "Explicar la inversión por partes y validar cada una con un pequeño sí le da a Iván claridad completa del proceso y lo acerca a la matrícula.",
+      "base": "e2d2450f4760",
       "dialogo": [
        {
         "quien": "cliente",
-        "texto": "¿Y cuánto serían las mensualidades?"
+        "texto": "¿Y cómo hago para matricularme?"
        },
        {
         "quien": "asesor",
-        "texto": "Claro, Carlos, te lo detallo.\n\nTe preparo ahora un cuadro comparativo con los costos vigentes de las carreras de Administración que vimos, con cada concepto separado.\n\nAsí lo revisan juntos con tu esposa. ¿Te parece útil?"
+        "texto": "Buena pregunta, Iván. Te lo explico por partes para que tengas todo claro.\n\nPrimero, el pago inicial incluye la admisión, la matrícula, el seguro y tu primera cuota. Después pagas tus pensiones mensuales durante el ciclo.\n\n¿Hasta aquí está claro cómo se compone?"
        },
        {
         "quien": "cliente",
-        "texto": "Sí, eso me sirve."
+        "texto": "Sí, pero ¿cuánto sería en total?"
        },
        {
         "quien": "asesor",
-        "texto": "Perfecto. En el cuadro verás el pago inicial, que incluye admisión, matrícula, seguro y primera cuota, y luego las cuotas del ciclo.\n\nTambién las condiciones de los beneficios vigentes.\n\n¿Alguna carrera que quieras que incluya además de esas?"
+        "texto": "Te paso el detalle exacto de cada concepto por WhatsApp ahora mismo, con los montos oficiales, para que lo revises con calma.\n\nLo importante es que ya sabes qué incluye cada pago y que las clases nocturnas y grabadas se ajustan a tu trabajo.\n\n¿Eso es lo que buscabas para tu horario?"
        },
        {
         "quien": "cliente",
-        "texto": "No, con esas está bien."
+        "texto": "Sí, de noche me acomoda."
        },
        {
         "quien": "asesor",
-        "texto": "Listo, te lo envío por WhatsApp en unos minutos.\n\n¿Lo revisamos juntos mañana a las 7 p. m., cuando ya lo hayan visto?"
+        "texto": "Perfecto. Entonces el siguiente paso es tu evaluación de ingreso virtual, con cámara y sin examen de conocimientos.\n\n¿La agendamos hoy a las 3:30 p. m., cuando coordinemos por WhatsApp?"
        }
       ]
      }
     },
+    "paso3": {
+     "pct": 100,
+     "prev": 65,
+     "delta": 35,
+     "avg": 72,
+     "fortaleza": null,
+     "oportunidad": null,
+     "conclusion": null,
+     "rol": null,
+     "texto": null,
+     "tecnica": null,
+     "caso": null
+    },
     "paso4": {
-     "pct": 61,
-     "prev": 50,
-     "delta": 11,
-     "avg": 66,
+     "pct": 78,
+     "prev": 61,
+     "delta": 17,
+     "avg": 67,
      "fortaleza": null,
      "oportunidad": null,
      "conclusion": null,
@@ -13281,13 +13301,13 @@
      "caso": null
     }
    },
-   "scoreGlobal": "80,00%",
-   "callScorePct": 80,
-   "scorePrev": 56,
-   "scoreDelta": 24,
-   "cuartilUltima": "Q3",
-   "calidadPromedio": 73,
-   "cuartilCalidad": "Q4",
+   "scoreGlobal": "87,50%",
+   "callScorePct": 88,
+   "scorePrev": 80,
+   "scoreDelta": 8,
+   "cuartilUltima": "Q2",
+   "calidadPromedio": 75,
+   "cuartilCalidad": "Q3",
    "matriculas": 16,
    "meta": 16,
    "avanceMes": 100.0,
@@ -13306,7 +13326,7 @@
    },
    "puesto": 4,
    "totalAsesores": 26,
-   "indice": 86.5,
+   "indice": 87.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -13316,9 +13336,9 @@
     "pendientes": 0,
     "items": {
      "paso1_1": {
-      "estado": "ok",
-      "evidencia": "Te presentas con tu nombre y mencionas a la Universidad Continental",
-      "fecha": "22/10/2026"
+      "estado": "pendiente",
+      "evidencia": "Recuerda presentarte con tu nombre y Unidad CIE desde el inicio",
+      "fecha": "30/10/2026"
      },
      "paso1_2": {
       "estado": "pendiente",
@@ -13333,16 +13353,14 @@
       "fechaUltimoOk": "06/10/2026"
      },
      "paso1_4": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
+      "estado": "ok",
+      "evidencia": "Consultaste estudios previos y disponibilidad horaria",
+      "fecha": "30/10/2026"
      },
      "paso2_1": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null,
-      "retirado": true,
-      "fechaUltimoOk": "06/10/2026"
+      "estado": "ok",
+      "evidencia": "Identificaste que necesita horario nocturno por sus actividades laborales",
+      "fecha": "30/10/2026"
      },
      "paso2_2": {
       "estado": "sin_evidencia",
@@ -13368,8 +13386,8 @@
      },
      "paso3_2": {
       "estado": "ok",
-      "evidencia": "Comunicas clases en vivo y acompañamiento de mentoría",
-      "fecha": "22/10/2026"
+      "evidencia": "Explicaste clases en vivo, horarios nocturnos y grabaciones",
+      "fecha": "30/10/2026"
      },
      "paso3_3": {
       "estado": "sin_evidencia",
@@ -13384,9 +13402,11 @@
       "fecha": null
      },
      "paso3_5": {
-      "estado": "pendiente",
-      "evidencia": "Explora su objeción antes de insistir; evita prometer descuentos no confirmados",
-      "fecha": "22/10/2026"
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null,
+      "retirado": true,
+      "fechaUltimoOk": "02/10/2026"
      },
      "paso3_6": {
       "estado": "sin_evidencia",
@@ -13407,13 +13427,13 @@
      },
      "paso4_3": {
       "estado": "pendiente",
-      "evidencia": "Recuerda completar la despedida institucional",
-      "fecha": "26/10/2026"
+      "evidencia": "Cumple la despedida mencionando tu nombre y Unidad CIE",
+      "fecha": "30/10/2026"
      },
      "paso4_4": {
-      "estado": "pendiente",
-      "evidencia": "Establece día y hora concretos para retomar el contacto",
-      "fecha": "26/10/2026"
+      "estado": "ok",
+      "evidencia": "Acordaste continuar la coordinación por WhatsApp a las 3:30 p. m.",
+      "fecha": "30/10/2026"
      }
     }
    }
@@ -13804,20 +13824,20 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 74,
    "cuartilCalidad": "Q4",
-   "matriculas": 11,
+   "matriculas": 12,
    "meta": 16,
-   "avanceMes": 68.75,
+   "avanceMes": 75.0,
    "avanceRitmo": null,
-   "avanceMeta": 68.75,
+   "avanceMeta": 75.0,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": false,
    "campana": null,
-   "puesto": 9,
+   "puesto": 8,
    "totalAsesores": 26,
-   "indice": 71.4,
+   "indice": 74.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -13988,11 +14008,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 72,
    "cuartilCalidad": "Q4",
-   "matriculas": 9,
+   "matriculas": 10,
    "meta": 8,
-   "avanceMes": 112.5,
+   "avanceMes": 125.0,
    "avanceRitmo": null,
-   "avanceMeta": 112.5,
+   "avanceMeta": 125.0,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
@@ -14001,7 +14021,7 @@
    "campana": null,
    "puesto": 1,
    "totalAsesores": 26,
-   "indice": 92.2,
+   "indice": 98.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -14615,7 +14635,7 @@
   },
   "avanceModo": "tablero",
   "cortesMatriculas": {
-   "Q1": 11.0,
+   "Q1": 12.0,
    "Q2": 7.5,
    "Q3": 5.0
   },
@@ -14623,20 +14643,20 @@
   "mesCalculo": "octubre",
   "mesTablero": "octubre",
   "mapaCalor": {
-   "paso1": 80.84,
-   "paso2": 76.6,
-   "paso3": 61.41,
-   "paso4": 74.15
+   "paso1": 80.78,
+   "paso2": 76.82,
+   "paso3": 61.59,
+   "paso4": 74.17
   },
   "mapaCalorLocal": {
-   "paso1": 82.65,
-   "paso2": 76.35,
-   "paso3": 60.0,
-   "paso4": 74.81
+   "paso1": 82.58,
+   "paso2": 76.54,
+   "paso3": 60.15,
+   "paso4": 74.77
   },
   "focoCualitativo": {
    "paso": "paso3",
-   "pct": 61
+   "pct": 62
   },
   "oportunidad": {
    "paso": "paso1",
@@ -14645,21 +14665,21 @@
   "distribucionCuartiles": {
    "Q1": 0,
    "Q2": 1,
-   "Q3": 9,
-   "Q4": 14
+   "Q3": 10,
+   "Q4": 13
   },
   "cuadrantes": {
    "verde": [],
    "amarillo": [
     "Jean Carlos Espinoza Atoc",
-    "Judith Rocio Vila Incaroca",
     "Angelo Jaime Franco Sarmiento",
+    "Judith Rocio Vila Incaroca",
     "Orlando Jesus Pintado Sandoval",
     "Jorge Luis Valencia Cardenas",
-    "Diana Carol Taipe Rojas",
-    "Milagros Torres Santos",
     "Edward Nelson Gonzales Villaneda",
+    "Diana Carol Taipe Rojas",
     "Cecilia Esther Aliaga Lapa",
+    "Milagros Torres Santos",
     "Lisette Valeria Blanco Chuco",
     "Betsabeth Alexandra Rojas Palacios",
     "Nicol Alisson Romero Espinoza",
@@ -14721,18 +14741,34 @@
     "cuadrante": "amarillo",
     "calidad": 72,
     "cuartilCalidad": "Q4",
-    "matriculas": 9,
+    "matriculas": 10,
     "meta": 8,
-    "avanceMeta": 112.5,
-    "avanceMes": 112.5,
+    "avanceMeta": 125.0,
+    "avanceMes": 125.0,
     "cuartilMatriculas": "Q2",
-    "indice": 92.2,
+    "indice": 98.5,
     "tecnicas": 0,
     "evaluaciones": 4
    },
    {
-    "asesor": "Judith Rocio Vila Incaroca",
+    "asesor": "Angelo Jaime Franco Sarmiento",
     "puesto": 2,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 80,
+    "cuartilCalidad": "Q3",
+    "matriculas": 18,
+    "meta": 16,
+    "avanceMeta": 112.5,
+    "avanceMes": 112.5,
+    "cuartilMatriculas": "Q1",
+    "indice": 96.2,
+    "tecnicas": 0,
+    "evaluaciones": 9
+   },
+   {
+    "asesor": "Judith Rocio Vila Incaroca",
+    "puesto": 3,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 72,
@@ -14747,36 +14783,20 @@
     "evaluaciones": 3
    },
    {
-    "asesor": "Angelo Jaime Franco Sarmiento",
-    "puesto": 3,
+    "asesor": "Orlando Jesus Pintado Sandoval",
+    "puesto": 4,
     "sede": "LIMA",
     "cuadrante": "amarillo",
-    "calidad": 80,
+    "calidad": 75,
     "cuartilCalidad": "Q3",
     "matriculas": 16,
     "meta": 16,
     "avanceMeta": 100.0,
     "avanceMes": 100.0,
     "cuartilMatriculas": "Q1",
-    "indice": 90.0,
+    "indice": 87.5,
     "tecnicas": 0,
-    "evaluaciones": 9
-   },
-   {
-    "asesor": "Orlando Jesus Pintado Sandoval",
-    "puesto": 4,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 73,
-    "cuartilCalidad": "Q4",
-    "matriculas": 16,
-    "meta": 16,
-    "avanceMeta": 100.0,
-    "avanceMes": 100.0,
-    "cuartilMatriculas": "Q1",
-    "indice": 86.5,
-    "tecnicas": 0,
-    "evaluaciones": 9
+    "evaluaciones": 10
    },
    {
     "asesor": "Jorge Luis Valencia Cardenas",
@@ -14785,18 +14805,34 @@
     "cuadrante": "amarillo",
     "calidad": 78,
     "cuartilCalidad": "Q3",
+    "matriculas": 14,
+    "meta": 16,
+    "avanceMeta": 87.5,
+    "avanceMes": 87.5,
+    "cuartilMatriculas": "Q1",
+    "indice": 82.8,
+    "tecnicas": 0,
+    "evaluaciones": 5
+   },
+   {
+    "asesor": "Edward Nelson Gonzales Villaneda",
+    "puesto": 6,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 71,
+    "cuartilCalidad": "Q4",
     "matriculas": 13,
     "meta": 16,
     "avanceMeta": 81.25,
     "avanceMes": 81.25,
     "cuartilMatriculas": "Q1",
-    "indice": 79.6,
+    "indice": 76.1,
     "tecnicas": 0,
-    "evaluaciones": 5
+    "evaluaciones": 7
    },
    {
     "asesor": "Diana Carol Taipe Rojas",
-    "puesto": 6,
+    "puesto": 7,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 81,
@@ -14805,14 +14841,30 @@
     "meta": 16,
     "avanceMeta": 68.75,
     "avanceMes": 68.75,
-    "cuartilMatriculas": "Q1",
+    "cuartilMatriculas": "Q2",
     "indice": 74.9,
     "tecnicas": 0,
     "evaluaciones": 4
    },
    {
+    "asesor": "Cecilia Esther Aliaga Lapa",
+    "puesto": 8,
+    "sede": "HYO",
+    "cuadrante": "amarillo",
+    "calidad": 74,
+    "cuartilCalidad": "Q4",
+    "matriculas": 12,
+    "meta": 16,
+    "avanceMeta": 75.0,
+    "avanceMes": 75.0,
+    "cuartilMatriculas": "Q1",
+    "indice": 74.5,
+    "tecnicas": 0,
+    "evaluaciones": 2
+   },
+   {
     "asesor": "Milagros Torres Santos",
-    "puesto": 7,
+    "puesto": 9,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 65,
@@ -14827,50 +14879,18 @@
     "evaluaciones": 3
    },
    {
-    "asesor": "Edward Nelson Gonzales Villaneda",
-    "puesto": 8,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 71,
-    "cuartilCalidad": "Q4",
-    "matriculas": 12,
-    "meta": 16,
-    "avanceMeta": 75.0,
-    "avanceMes": 75.0,
-    "cuartilMatriculas": "Q1",
-    "indice": 73.0,
-    "tecnicas": 0,
-    "evaluaciones": 7
-   },
-   {
-    "asesor": "Cecilia Esther Aliaga Lapa",
-    "puesto": 9,
-    "sede": "HYO",
-    "cuadrante": "amarillo",
-    "calidad": 74,
-    "cuartilCalidad": "Q4",
-    "matriculas": 11,
-    "meta": 16,
-    "avanceMeta": 68.75,
-    "avanceMes": 68.75,
-    "cuartilMatriculas": "Q1",
-    "indice": 71.4,
-    "tecnicas": 0,
-    "evaluaciones": 2
-   },
-   {
     "asesor": "Lisette Valeria Blanco Chuco",
     "puesto": 10,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 69,
     "cuartilCalidad": "Q4",
-    "matriculas": 11,
+    "matriculas": 12,
     "meta": 16,
-    "avanceMeta": 68.75,
-    "avanceMes": 68.75,
+    "avanceMeta": 75.0,
+    "avanceMes": 75.0,
     "cuartilMatriculas": "Q1",
-    "indice": 68.9,
+    "indice": 72.0,
     "tecnicas": 0,
     "evaluaciones": 2
    },
@@ -14888,7 +14908,7 @@
     "cuartilMatriculas": "Q2",
     "indice": 65.1,
     "tecnicas": 0,
-    "evaluaciones": 7
+    "evaluaciones": 8
    },
    {
     "asesor": "Nicol Alisson Romero Espinoza",
@@ -15007,16 +15027,16 @@
     "puesto": 19,
     "sede": "LIMA",
     "cuadrante": "rojo",
-    "calidad": 77,
+    "calidad": 78,
     "cuartilCalidad": "Q3",
     "matriculas": 4,
     "meta": 16,
     "avanceMeta": 25.0,
     "avanceMes": 25.0,
     "cuartilMatriculas": "Q4",
-    "indice": 51.0,
+    "indice": 51.5,
     "tecnicas": 0,
-    "evaluaciones": 7
+    "evaluaciones": 8
    },
    {
     "asesor": "Justyn Flores Solano",
@@ -15133,28 +15153,27 @@
   ]
  },
  "hallazgos": {
-  "actualizado": "29/10/2026",
+  "actualizado": "30/10/2026",
   "periodo": {
-   "desde": "23/10/2026",
-   "hasta": "29/10/2026"
+   "desde": "24/10/2026",
+   "hasta": "30/10/2026"
   },
   "base": {
    "llamadas": 26,
-   "asesores": 14
+   "asesores": 13
   },
-  "titular": "Lo que más se repite es cerrar sin día y hora ni encuesta (7.ª semana seguida) y presentarse sin nombre ni Unidad CIE. Siguen el pago inicial sin desglose con descuentos ofrecidos de entrada y la propuesta centrada en precio. Lo bueno: seguimientos con día y hora y la admisión bien explicada.",
+  "titular": "Lo que más se repite es presentarse sin nombre ni Unidad CIE y cerrar sin día y hora ni encuesta (8.ª semana seguida). Siguen la inversión sin desglose con descuentos como argumento y la convalidación anticipada. Lo bueno: más seguimientos con hora fija y casos validados antes de prometer.",
   "items": [
    {
     "tipo": "mala_costumbre",
-    "titulo": "Cerrar sin día y hora ni derivar a la encuesta",
-    "queVimos": "Se pregunta «¿cuándo te llamo?» o se deja la respuesta al WhatsApp del prospecto sin fijar día y hora, y la llamada termina sin transferir a la encuesta de satisfacción.",
-    "veces": "26 llamadas · 14 asesores · 7.ª semana seguida",
+    "titulo": "Presentación incompleta y nombre del prospecto poco usado",
+    "queVimos": "La llamada arranca sin nombre del asesor o sin mencionar la Unidad CIE, y el nombre del prospecto casi no se usa o se cambia durante la conversación.",
+    "veces": "24 llamadas · 13 asesores · 3.ª semana seguida",
     "asesores": [
      "Ana Maria Padilla Parra",
      "Angelo Jaime Franco Sarmiento",
      "Anyhela Kelly Ordoñez Chavez",
      "Betsabeth Alexandra Rojas Palacios",
-     "Eduardo Alfredo Coaquiera Elguera",
      "Edward Nelson Gonzales Villaneda",
      "Isai Yuliño Mercado Bravo",
      "Jimena del Rosario Vera Osores",
@@ -15165,148 +15184,143 @@
      "Raul Aaron Manuel Ipanaque Escobar",
      "Ruth Alexandra Mauricio Verde"
     ],
-    "ejemplo": "«Busca un compromiso concreto, confirma el envío de la información y acuerda una fecha y hora de seguimiento. Recuerda realizar la despedida formal según el protocolo» (29/10); «acuerda una fecha y hora para el seguimiento comercial» (28/10).",
-    "porQueImporta": "Sin día y hora no hay compromiso y el lead se enfría; además la encuesta omitida resta puntaje de calidad en casi todas las llamadas.",
-    "accion": "Cierre fijo: «Te llamo el [día] a las [hora] para revisar [tema]. Te atendió [nombre], de la Universidad Continental; te transfiero a una breve encuesta».",
+    "ejemplo": "«Recuerda presentarte indicando tu nombre y mencionando a Unidad CIE desde el inicio de la llamada» (30/10); «durante la conversación lo llamas Yover y al cierre Javier» (28/10).",
+    "porQueImporta": "Los primeros segundos definen la confianza: una apertura genérica o un nombre equivocado hacen que el prospecto sienta que es uno más.",
+    "accion": "Apertura fija: «Hola, [nombre], te saluda [tu nombre], asesor de la Unidad CIE de la Universidad Continental» y repite su nombre al menos dos veces y en la despedida.",
+    "tecnica": "tec_12"
+   },
+   {
+    "tipo": "mala_costumbre",
+    "titulo": "Cerrar sin día y hora ni derivar a la encuesta",
+    "queVimos": "Se cierra con «te envío la información» o «coordinamos por WhatsApp» sin fijar día y hora, y la despedida termina sin nombre, Unidad CIE ni transferencia a la encuesta de satisfacción.",
+    "veces": "23 llamadas · 13 asesores · 8.ª semana seguida",
+    "asesores": [
+     "Ana Maria Padilla Parra",
+     "Angelo Jaime Franco Sarmiento",
+     "Anyhela Kelly Ordoñez Chavez",
+     "Betsabeth Alexandra Rojas Palacios",
+     "Edward Nelson Gonzales Villaneda",
+     "Isai Yuliño Mercado Bravo",
+     "Jimena del Rosario Vera Osores",
+     "Justyn Flores Solano",
+     "Maria Alejandra Pino Contreras",
+     "Melissa Leslie Fernadez Avalos",
+     "Orlando Jesus Pintado Sandoval",
+     "Raul Aaron Manuel Ipanaque Escobar",
+     "Ruth Alexandra Mauricio Verde"
+    ],
+    "ejemplo": "«No te limites a comprometerte a enviar información. Establece una fecha y hora para retomar el contacto» (30/10); «recuerda mencionar la Unidad CIE durante la despedida y realizar la transferencia a la encuesta de satisfacción» (30/10).",
+    "porQueImporta": "Sin día y hora el lead se enfría, y la encuesta omitida resta puntaje de calidad en casi todas las llamadas.",
+    "accion": "Cierre fijo: «Te llamo el [día] a las [hora] para revisar [tema]. Te atendió [nombre], de la Unidad CIE de la Universidad Continental; te transfiero a una breve encuesta».",
     "tecnica": "tec_16"
    },
    {
-    "tipo": "mania",
-    "titulo": "Anticipar el resultado de la convalidación",
-    "queVimos": "Antes de revisar documentos se dice cuánto se convalidaría («aproximadamente un ciclo»), se ponen límites de antigüedad, se sugiere empezar desde cero o se aseguran plazos del trámite sin validarlos.",
-    "veces": "6 llamadas · 6 asesores · 2.ª semana seguida",
-    "asesores": [
-     "Orlando Jesus Pintado Sandoval",
-     "Isai Yuliño Mercado Bravo",
-     "Jimena del Rosario Vera Osores",
-     "Edward Nelson Gonzales Villaneda",
-     "Raul Aaron Manuel Ipanaque Escobar",
-     "Melissa Leslie Fernadez Avalos"
-    ],
-    "ejemplo": "«Evita asegurar plazos de trámites documentarios sin validar las condiciones» (28/10); «aclara que el tiempo de convalidación es referencial y depende de la evaluación académica de los sílabos» (28/10).",
-    "porQueImporta": "Si la evaluación real da otro resultado, el prospecto siente que se le prometió algo falso; y desanimar con límites inexistentes hace perder matrículas.",
-    "accion": "Frase modelo: «No quiero darte una cifra sin sustento: la convalidación se define revisando tu certificado y los sílabos. Envíamelos y te doy el resultado el [día] a las [hora]».",
-    "tecnica": "tec_08"
-   },
-   {
     "tipo": "mala_practica",
-    "titulo": "Pago inicial sin desglose y descuentos ofrecidos de entrada",
-    "queVimos": "Se dan montos que no cuadran con lo informado antes, no se desglosan admisión, matrícula, seguro y primera cuota, y ante la objeción económica se justifica el precio o se ofrece el descuento sin indagar qué limita la decisión.",
-    "veces": "23 llamadas · 14 asesores · 3.ª semana seguida",
+    "titulo": "Inversión incompleta, montos que no cuadran y descuento como argumento",
+    "queVimos": "Se menciona solo el pago promocional o montos que cambian durante la llamada, no se desglosa la primera cuota y el descuento se ofrece de entrada en lugar de indagar qué frena la decisión.",
+    "veces": "13 llamadas · 10 asesores · 4.ª semana seguida",
     "asesores": [
      "Ana Maria Padilla Parra",
      "Angelo Jaime Franco Sarmiento",
      "Anyhela Kelly Ordoñez Chavez",
-     "Betsabeth Alexandra Rojas Palacios",
-     "Eduardo Alfredo Coaquiera Elguera",
      "Edward Nelson Gonzales Villaneda",
      "Isai Yuliño Mercado Bravo",
      "Jimena del Rosario Vera Osores",
      "Justyn Flores Solano",
      "Maria Alejandra Pino Contreras",
-     "Melissa Leslie Fernadez Avalos",
      "Orlando Jesus Pintado Sandoval",
-     "Raul Aaron Manuel Ipanaque Escobar",
-     "Ruth Alexandra Mauricio Verde"
+     "Raul Aaron Manuel Ipanaque Escobar"
     ],
-    "ejemplo": "«Evita justificar el precio sin explorar primero la necesidad y no ofrezcas descuentos de manera automática» (29/10); «le informaron anteriormente un costo de S/ 540, mientras que tú comunicas S/ 948 como primer pago» (28/10).",
-    "porQueImporta": "Un monto que no cuadra rompe la confianza, y empujar a endeudarse sin conocer la situación del prospecto es una mala práctica grave que genera reclamos y desistimientos.",
-    "accion": "Desglosa siempre por partes (admisión + matrícula + seguro + primera cuota) con los montos de la Biblioteca; ante «es elevado» pregunta «¿qué parte te pesa más?» y nunca sugieras préstamos ni tarjetas.",
-    "tecnica": "tec_14"
+    "ejemplo": "«No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos» (30/10); «le informaron anteriormente un costo de S/ 540, mientras que tú comunicas S/ 948 como primer pago» (28/10).",
+    "porQueImporta": "Un monto que no cuadra rompe la confianza y genera desistimientos; y si el descuento es el único argumento, la decisión se reduce a precio.",
+    "accion": "Desglosa siempre por partes (admisión + matrícula + seguro + primera cuota, luego pensiones) con los montos de la Biblioteca y valida cada parte; ante «es caro» pregunta «¿qué parte te pesa más?» antes de hablar de descuentos.",
+    "tecnica": "tec_10"
+   },
+   {
+    "tipo": "mania",
+    "titulo": "Anticipar resultados de convalidación, plazos o títulos",
+    "queVimos": "Antes de revisar documentos se estima cuánto se convalidaría, se ponen límites de antigüedad, se aseguran plazos o duración de la carrera, o se afirma sobre el licenciamiento de otra institución.",
+    "veces": "6 llamadas · 6 asesores · 3.ª semana seguida",
+    "asesores": [
+     "Betsabeth Alexandra Rojas Palacios",
+     "Edward Nelson Gonzales Villaneda",
+     "Isai Yuliño Mercado Bravo",
+     "Jimena del Rosario Vera Osores",
+     "Melissa Leslie Fernadez Avalos",
+     "Raul Aaron Manuel Ipanaque Escobar"
+    ],
+    "ejemplo": "«Evita anticipar que Benedicto podría convalidar aproximadamente un ciclo» (27/10); «Evita realizar afirmaciones sobre el licenciamiento o la validez de su formación sin contar con información verificada» (30/10).",
+    "porQueImporta": "Si la evaluación real da otro resultado, el prospecto siente que se le prometió algo falso; y descartar sin validar hace perder matrículas.",
+    "accion": "Frase modelo: «No quiero darte una cifra sin sustento: la convalidación se define evaluando tus sílabos. Envíamelos y te doy el resultado el [día] a las [hora]».",
+    "tecnica": "tec_08"
    },
    {
     "tipo": "mala_costumbre",
     "titulo": "Propuesta de valor sin dos diferenciales ligados a la necesidad",
-    "queVimos": "La conversación se centra en costos, descuentos y horarios sin indagar la motivación ni conectar al menos dos diferenciales con lo que el prospecto contó.",
-    "veces": "18 llamadas · 10 asesores · 4.ª semana seguida",
+    "queVimos": "La conversación se centra en costos, descuentos y horarios sin conectar al menos dos diferenciales con la motivación o la situación que contó el prospecto.",
+    "veces": "17 llamadas · 9 asesores · 5.ª semana seguida",
     "asesores": [
      "Ana Maria Padilla Parra",
      "Anyhela Kelly Ordoñez Chavez",
-     "Eduardo Alfredo Coaquiera Elguera",
+     "Betsabeth Alexandra Rojas Palacios",
      "Edward Nelson Gonzales Villaneda",
      "Isai Yuliño Mercado Bravo",
      "Jimena del Rosario Vera Osores",
      "Justyn Flores Solano",
-     "Melissa Leslie Fernadez Avalos",
      "Raul Aaron Manuel Ipanaque Escobar",
      "Ruth Alexandra Mauricio Verde"
     ],
-    "ejemplo": "«Profundiza en las motivaciones de la prospecta para estudiar Psicología y relaciona la propuesta académica con sus objetivos» (29/10); «presenta al menos dos diferenciales de la Universidad Continental vinculados con sus necesidades» (28/10).",
+    "ejemplo": "«Desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad virtual» (30/10); «evitando que la propuesta se concentre principalmente en descuentos, horarios y beneficios generales» (27/10).",
     "porQueImporta": "Sin diferenciales propios la oferta se parece a cualquier otra y la decisión termina en precio.",
     "accion": "Pregunta «¿qué te gustaría lograr al terminar la carrera?», devuelve la respuesta con sus palabras y une dos diferenciales (clases grabadas, certificaciones progresivas, convalidación por sílabos).",
     "tecnica": "tec_09"
    },
    {
-    "tipo": "mala_costumbre",
-    "titulo": "Presentación incompleta y nombre del prospecto mal usado",
-    "queVimos": "La llamada arranca sin nombre, unidad o universidad completos, no se confirma el motivo real de la consulta y el nombre del prospecto se usa poco o de forma inconsistente.",
-    "veces": "24 llamadas · 14 asesores · 2.ª semana seguida",
-    "asesores": [
-     "Ana Maria Padilla Parra",
-     "Angelo Jaime Franco Sarmiento",
-     "Anyhela Kelly Ordoñez Chavez",
-     "Betsabeth Alexandra Rojas Palacios",
-     "Eduardo Alfredo Coaquiera Elguera",
-     "Edward Nelson Gonzales Villaneda",
-     "Isai Yuliño Mercado Bravo",
-     "Jimena del Rosario Vera Osores",
-     "Justyn Flores Solano",
-     "Maria Alejandra Pino Contreras",
-     "Melissa Leslie Fernadez Avalos",
-     "Orlando Jesus Pintado Sandoval",
-     "Raul Aaron Manuel Ipanaque Escobar",
-     "Ruth Alexandra Mauricio Verde"
-    ],
-    "ejemplo": "«Recuerda presentarte con tu nombre y la Unidad CIE, identificar el nombre de la prospecta y utilizarlo durante la conversación» (29/10); «durante la conversación lo llamas Yover y al cierre Javier» (28/10).",
-    "porQueImporta": "Los primeros segundos definen la confianza: equivocar el nombre o no saber por qué llama hace que el prospecto sienta una atención genérica.",
-    "accion": "Apertura fija: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental. ¿Me confirmas si te interesa la carrera, la convalidación o el ingreso?» y repite su nombre al cierre.",
-    "tecnica": "tec_12"
-   },
-   {
     "tipo": "buena_practica",
     "titulo": "Seguimiento con día y hora confirmados",
-    "queVimos": "Se cierra la llamada con una cita concreta para retomar, confirmando día y hora con el prospecto.",
-    "veces": "Edward, Jimena e Isai (27/10) y Melissa (28/10)",
+    "queVimos": "Se cierra con una cita concreta para retomar la conversación o la evaluación, confirmando día y hora con el prospecto.",
+    "veces": "Edward e Isai (27/10), Melissa (28/10), María Alejandra y Orlando (30/10) · 2.ª semana seguida",
     "asesores": [
      "Edward Nelson Gonzales Villaneda",
-     "Jimena del Rosario Vera Osores",
      "Isai Yuliño Mercado Bravo",
-     "Melissa Leslie Fernadez Avalos"
+     "Melissa Leslie Fernadez Avalos",
+     "Maria Alejandra Pino Contreras",
+     "Orlando Jesus Pintado Sandoval"
     ],
-    "ejemplo": "«Consigues establecer un compromiso de seguimiento para el martes 3 de noviembre a las 10:00 a. m.» (27/10); «acuerdas una llamada de seguimiento para las 2 p. m.» (28/10).",
+    "ejemplo": "«Lograste establecer un compromiso de contacto para el día siguiente a las 11:00 a. m.» (30/10); «compromiso de seguimiento para el martes 3 de noviembre a las 10:00 a. m.» (27/10).",
     "porQueImporta": "Convierte el «te aviso» en un compromiso y asegura la siguiente conversación.",
-    "accion": "Usarlo como modelo en el briefing y sumarle un cierre parcial antes de agendar.",
+    "accion": "Usarlo como modelo en el briefing y sumarle la despedida de protocolo y la encuesta, que fue lo que faltó.",
     "tecnica": "tec_16"
    },
    {
     "tipo": "buena_practica",
-    "titulo": "Proceso de admisión explicado completo",
-    "queVimos": "Se explica que la evaluación es actitudinal, virtual, que no es una prueba de conocimientos y que requiere computadora o laptop con cámara.",
-    "veces": "Ana María (3 llamadas, 27/10)",
+    "titulo": "Validar el caso antes de responder sobre traslado o convalidación",
+    "queVimos": "Ante una consulta de traslado y convalidación no se asegura ni se descarta nada: se compromete a consultar el caso específico para dar una respuesta precisa.",
+    "veces": "Betsabeth (30/10)",
     "asesores": [
-     "Ana Maria Padilla Parra"
+     "Betsabeth Alexandra Rojas Palacios"
     ],
-    "ejemplo": "«Precisando que la evaluación es actitudinal, virtual, no corresponde a una prueba de conocimientos y requiere una computadora o laptop con cámara» (27/10).",
-    "porQueImporta": "Quita el miedo al examen, una objeción frecuente en quienes retoman estudios, y deja claro qué necesita para postular.",
-    "accion": "Replicarlo en todas las llamadas; completarlo con el desglose del pago inicial, que fue lo que faltó.",
+    "ejemplo": "«Ante la consulta sobre traslado y convalidación, evitaste asegurar una respuesta sin validar previamente el caso» (30/10).",
+    "porQueImporta": "Es el antídoto de la manía de anticipar convalidaciones: protege la confianza y abre una segunda llamada con motivo claro.",
+    "accion": "Replicarlo y completarlo con día y hora para dar el resultado, que es lo que faltó en esa llamada.",
     "tecnica": "tec_08"
    }
   ],
   "acciones": [
-   "Toda llamada termina con día + hora + qué haremos, despedida de protocolo y transferencia a la encuesta.",
-   "Ante «se me complica el pago»: preguntar qué parte pesa (monto o fecha) antes de hablar de descuentos; desglosar el pago inicial con montos de la Biblioteca y nunca sugerir préstamos.",
-   "Apertura fija con nombre + Unidad CIE + nombre del prospecto, y convalidación sin cifras ni plazos: pedir certificado y sílabos y agendar el resultado."
+   "Toda llamada termina con día + hora + qué haremos, despedida con nombre y Unidad CIE y transferencia a la encuesta.",
+   "Apertura fija con tu nombre + Unidad CIE + nombre del prospecto, y convalidación sin cifras ni plazos: pedir sílabos y agendar el resultado.",
+   "Inversión siempre desglosada por partes con montos de la Biblioteca y validada; el descuento solo después de indagar qué frena la decisión."
   ],
   "conteos": {
    "acumulado": {
     "desde": "02/09/2026",
-    "hasta": "29/10/2026",
-    "llamadas": 143,
+    "hasta": "30/10/2026",
+    "llamadas": 146,
     "temas": [
      {
       "id": "encuesta",
       "tema": "No deriva a la encuesta de satisfacción",
-      "llamadas": 75,
+      "llamadas": 78,
       "asesores": 25,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -15339,7 +15353,7 @@
      {
       "id": "seguimiento",
       "tema": "Seguimiento sin día y hora concretos",
-      "llamadas": 67,
+      "llamadas": 69,
       "asesores": 24,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -15371,7 +15385,7 @@
      {
       "id": "presentacion",
       "tema": "Presentación tardía / no usa el nombre del prospecto",
-      "llamadas": 61,
+      "llamadas": 64,
       "asesores": 23,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -15402,7 +15416,7 @@
      {
       "id": "valor",
       "tema": "Propuesta de valor débil (sin 2 diferenciales)",
-      "llamadas": 56,
+      "llamadas": 57,
       "asesores": 21,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -15431,7 +15445,7 @@
      {
       "id": "admision",
       "tema": "Proceso de admisión incompleto (evaluación, cámara)",
-      "llamadas": 53,
+      "llamadas": 55,
       "asesores": 22,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -15489,11 +15503,12 @@
      {
       "id": "indagacion",
       "tema": "Indagación débil: no se conoce la motivación",
-      "llamadas": 33,
-      "asesores": 16,
+      "llamadas": 34,
+      "asesores": 17,
       "nombres": [
        "Ana Maria Padilla Parra",
        "Anyhela Kelly Ordoñez Chavez",
+       "Betsabeth Alexandra Rojas Palacios",
        "Cecilia Esther Aliaga Lapa",
        "Diana Carol Taipe Rojas",
        "Edward Nelson Gonzales Villaneda",
@@ -15588,21 +15603,20 @@
     ]
    },
    "ultimos7": {
-    "desde": "23/10/2026",
-    "hasta": "29/10/2026",
+    "desde": "24/10/2026",
+    "hasta": "30/10/2026",
     "llamadas": 26,
     "temas": [
      {
       "id": "presentacion",
       "tema": "Presentación tardía / no usa el nombre del prospecto",
       "llamadas": 24,
-      "asesores": 14,
+      "asesores": 13,
       "nombres": [
        "Ana Maria Padilla Parra",
        "Angelo Jaime Franco Sarmiento",
        "Anyhela Kelly Ordoñez Chavez",
        "Betsabeth Alexandra Rojas Palacios",
-       "Eduardo Alfredo Coaquiera Elguera",
        "Edward Nelson Gonzales Villaneda",
        "Isai Yuliño Mercado Bravo",
        "Jimena del Rosario Vera Osores",
@@ -15618,16 +15632,17 @@
       "id": "encuesta",
       "tema": "No deriva a la encuesta de satisfacción",
       "llamadas": 23,
-      "asesores": 12,
+      "asesores": 13,
       "nombres": [
        "Ana Maria Padilla Parra",
        "Angelo Jaime Franco Sarmiento",
        "Anyhela Kelly Ordoñez Chavez",
-       "Eduardo Alfredo Coaquiera Elguera",
+       "Betsabeth Alexandra Rojas Palacios",
        "Edward Nelson Gonzales Villaneda",
        "Isai Yuliño Mercado Bravo",
        "Jimena del Rosario Vera Osores",
        "Justyn Flores Solano",
+       "Maria Alejandra Pino Contreras",
        "Melissa Leslie Fernadez Avalos",
        "Orlando Jesus Pintado Sandoval",
        "Raul Aaron Manuel Ipanaque Escobar",
@@ -15637,20 +15652,18 @@
      {
       "id": "seguimiento",
       "tema": "Seguimiento sin día y hora concretos",
-      "llamadas": 21,
-      "asesores": 13,
+      "llamadas": 20,
+      "asesores": 11,
       "nombres": [
        "Ana Maria Padilla Parra",
-       "Angelo Jaime Franco Sarmiento",
        "Anyhela Kelly Ordoñez Chavez",
        "Betsabeth Alexandra Rojas Palacios",
-       "Eduardo Alfredo Coaquiera Elguera",
        "Edward Nelson Gonzales Villaneda",
        "Isai Yuliño Mercado Bravo",
        "Jimena del Rosario Vera Osores",
        "Justyn Flores Solano",
        "Maria Alejandra Pino Contreras",
-       "Melissa Leslie Fernadez Avalos",
+       "Orlando Jesus Pintado Sandoval",
        "Raul Aaron Manuel Ipanaque Escobar",
        "Ruth Alexandra Mauricio Verde"
       ]
@@ -15658,36 +15671,18 @@
      {
       "id": "valor",
       "tema": "Propuesta de valor débil (sin 2 diferenciales)",
-      "llamadas": 18,
-      "asesores": 10,
-      "nombres": [
-       "Ana Maria Padilla Parra",
-       "Anyhela Kelly Ordoñez Chavez",
-       "Eduardo Alfredo Coaquiera Elguera",
-       "Edward Nelson Gonzales Villaneda",
-       "Isai Yuliño Mercado Bravo",
-       "Jimena del Rosario Vera Osores",
-       "Justyn Flores Solano",
-       "Melissa Leslie Fernadez Avalos",
-       "Raul Aaron Manuel Ipanaque Escobar",
-       "Ruth Alexandra Mauricio Verde"
-      ]
-     },
-     {
-      "id": "parciales",
-      "tema": "Faltan cierres parciales",
-      "llamadas": 15,
+      "llamadas": 17,
       "asesores": 9,
       "nombres": [
        "Ana Maria Padilla Parra",
-       "Angelo Jaime Franco Sarmiento",
        "Anyhela Kelly Ordoñez Chavez",
-       "Eduardo Alfredo Coaquiera Elguera",
+       "Betsabeth Alexandra Rojas Palacios",
        "Edward Nelson Gonzales Villaneda",
        "Isai Yuliño Mercado Bravo",
        "Jimena del Rosario Vera Osores",
        "Justyn Flores Solano",
-       "Melissa Leslie Fernadez Avalos"
+       "Raul Aaron Manuel Ipanaque Escobar",
+       "Ruth Alexandra Mauricio Verde"
       ]
      },
      {
@@ -15700,21 +15695,36 @@
        "Angelo Jaime Franco Sarmiento",
        "Anyhela Kelly Ordoñez Chavez",
        "Betsabeth Alexandra Rojas Palacios",
-       "Eduardo Alfredo Coaquiera Elguera",
        "Edward Nelson Gonzales Villaneda",
        "Justyn Flores Solano",
        "Maria Alejandra Pino Contreras",
+       "Orlando Jesus Pintado Sandoval",
        "Raul Aaron Manuel Ipanaque Escobar",
        "Ruth Alexandra Mauricio Verde"
       ]
      },
      {
-      "id": "indagacion",
-      "tema": "Indagación débil: no se conoce la motivación",
-      "llamadas": 5,
-      "asesores": 4,
+      "id": "parciales",
+      "tema": "Faltan cierres parciales",
+      "llamadas": 12,
+      "asesores": 6,
       "nombres": [
        "Ana Maria Padilla Parra",
+       "Anyhela Kelly Ordoñez Chavez",
+       "Edward Nelson Gonzales Villaneda",
+       "Isai Yuliño Mercado Bravo",
+       "Jimena del Rosario Vera Osores",
+       "Justyn Flores Solano"
+      ]
+     },
+     {
+      "id": "indagacion",
+      "tema": "Indagación débil: no se conoce la motivación",
+      "llamadas": 6,
+      "asesores": 5,
+      "nombres": [
+       "Ana Maria Padilla Parra",
+       "Betsabeth Alexandra Rojas Palacios",
        "Isai Yuliño Mercado Bravo",
        "Justyn Flores Solano",
        "Ruth Alexandra Mauricio Verde"
@@ -15735,12 +15745,11 @@
      {
       "id": "erronea",
       "tema": "Información errónea o confusa",
-      "llamadas": 3,
-      "asesores": 3,
+      "llamadas": 2,
+      "asesores": 2,
       "nombres": [
        "Isai Yuliño Mercado Bravo",
-       "Maria Alejandra Pino Contreras",
-       "Melissa Leslie Fernadez Avalos"
+       "Maria Alejandra Pino Contreras"
       ]
      },
      {

@@ -10684,5 +10684,239 @@
     "evidencia": "Acuerda una fecha y hora de seguimiento"
    }
   }
+ },
+ "c11f3d068399": {
+  "asesor": "Betsabeth Alexandra Rojas Palacios",
+  "fecha": "30/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Mantén la presentación protocolar desde el inicio con tu nombre y Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "pendiente",
+    "evidencia": "Presenta los beneficios de estudiar en Universidad Continental"
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Indagaste los motivos por los que desea cambiarse"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificaste que su principal preocupación es el licenciamiento de su instituto"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Desarrolla la propuesta de valor con al menos dos diferenciales de la modalidad"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Explica alternativas y valida traslado o convalidación ante su preocupación"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Cumple con el protocolo de despedida"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece fecha y hora para retomar el contacto, no solo enviar información"
+   }
+  }
+ },
+ "1825568cf4c5": {
+  "asesor": "Maria Alejandra Pino Contreras",
+  "fecha": "30/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre y mencionar la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre del prospecto durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "ok",
+    "evidencia": "Explicaste beneficios de la modalidad: clases grabadas y adelantar cursos"
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Confirma su carrera de interés inicial antes de orientar la propuesta"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Explicaste clases grabadas y la posibilidad de adelantar cursos"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Valida que comprenda los pasos y condiciones de convalidación"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda mencionar la Unidad CIE durante la despedida"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Compromiso de contacto para el día siguiente a las 11:00 a. m."
+   }
+  }
+ },
+ "2dc8c3e56dc2": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "30/10/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre y Unidad CIE desde el inicio"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Consultaste estudios previos y disponibilidad horaria"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste que necesita horario nocturno por sus actividades laborales"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Explicaste clases en vivo, horarios nocturnos y grabaciones"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Cumple la despedida mencionando tu nombre y Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Acordaste continuar la coordinación por WhatsApp a las 3:30 p. m."
+   }
+  }
  }
 }

@@ -326,38 +326,38 @@
  },
  "Betsabeth Alexandra Rojas Palacios|paso2": {
   "stage": "paso2",
-  "base": "980abf6e0ead",
-  "conclusion": "Identificas que Santos estudió Educación Primaria y que sus dudas son convalidación, duración e inversión. Te faltó profundizar en por qué quiere estudiar Psicología, qué espera de la carrera y qué necesita resolver para decidir.",
+  "base": "e7e2dce14a7d",
+  "conclusion": "Indagaste su situación académica, su instituto, ciclo y motivos, y detectaste que le preocupa el licenciamiento. Te faltó profundizar más antes de concluir y evitar afirmaciones sobre el licenciamiento o la validez de sus estudios sin información verificada.",
   "tecId": "tec_09",
   "tipo": "speech",
-  "porQue": "Preguntar por su motivo y devolvérselo con sus palabras revela qué pesa en su decisión y orienta toda la explicación posterior.",
+  "porQue": "Devolverle su preocupación con sus propias palabras y seguir preguntando te permite profundizar sin afirmar nada sobre su licenciamiento que no esté validado.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Lo que quiero saber es cuánto me convalidan y cuánto me cuesta."
+    "texto": "Lo que me preocupa es que mi instituto está en proceso de licenciamiento y no sé qué pasará con mis estudios."
    },
    {
     "quien": "asesor",
-    "texto": "Claro, Santos, lo vemos.\n\nAntes, cuéntame: ya eres docente de Primaria, ¿qué te motiva a estudiar Psicología ahora?\n\nQuiero entender qué esperas lograr con esta carrera."
+    "texto": "Te entiendo, Bania. Lo que me dices es que llevas años en una carrera pedagógica de cinco años y no quieres que ese esfuerzo se pierda, ¿es así?\n\nPara orientarte bien necesito conocer tu caso completo.\n\n¿En qué ciclo estás y qué te ha comunicado exactamente tu instituto?"
    },
    {
     "quien": "cliente",
-    "texto": "Trabajo con niños y veo muchos casos de conducta; quiero poder ayudarlos de verdad."
+    "texto": "Estoy en cuarto ciclo. Solo nos dijeron que están en proceso, nada más."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces lo que buscas es ayudar de verdad a los niños con los casos de conducta que ves en el aula.\n\nPara decidir, ¿qué pesa más para ti: cuánto te convaliden, el tiempo que te tome o el presupuesto mensual?"
+    "texto": "Gracias por contarme. No te voy a asegurar nada sobre tu instituto sin verificarlo, porque sería generarte una expectativa falsa.\n\nLo que sí te puedo explicar es cómo funciona aquí: la convalidación se hace por evaluación de sílabos de los cursos que ya llevaste.\n\n¿Tienes a la mano tus certificados o sílabos de los ciclos aprobados?"
    },
    {
     "quien": "cliente",
-    "texto": "El tiempo, porque trabajo todo el día."
+    "texto": "Tengo mis notas, los sílabos tendría que pedirlos."
    },
    {
     "quien": "asesor",
-    "texto": "Entendido, el tiempo es lo principal.\n\nTe explico cómo la modalidad a distancia y la convalidación pueden ayudarte a avanzar sin dejar tu trabajo.\n\n¿Te parece si empezamos por ahí?"
+    "texto": "Perfecto, con eso avanzamos. Pide tus sílabos y yo consulto tu caso específico para darte una respuesta precisa.\n\n¿Te parece si te llamo el jueves a las 6 p. m. para contarte el resultado y ver los siguientes pasos?"
    }
   ],
-  "speech": "Claro, Santos, lo vemos.\n\nAntes, cuéntame: ya eres docente de Primaria, ¿qué te motiva a estudiar Psicología ahora?\n\nQuiero entender qué esperas lograr con esta carrera.\n\nEntonces lo que buscas es ayudar de verdad a los niños con los casos de conducta que ves en el aula.\n\nPara decidir, ¿qué pesa más para ti: cuánto te convaliden, el tiempo que te tome o el presupuesto mensual?\n\nEntendido, el tiempo es lo principal.\n\nTe explico cómo la modalidad a distancia y la convalidación pueden ayudarte a avanzar sin dejar tu trabajo.\n\n¿Te parece si empezamos por ahí?"
+  "speech": "Te entiendo, Bania. Lo que me dices es que llevas años en una carrera pedagógica de cinco años y no quieres que ese esfuerzo se pierda, ¿es así?\n\nPara orientarte bien necesito conocer tu caso completo.\n\n¿En qué ciclo estás y qué te ha comunicado exactamente tu instituto?\n\nGracias por contarme. No te voy a asegurar nada sobre tu instituto sin verificarlo, porque sería generarte una expectativa falsa.\n\nLo que sí te puedo explicar es cómo funciona aquí: la convalidación se hace por evaluación de sílabos de los cursos que ya llevaste.\n\n¿Tienes a la mano tus certificados o sílabos de los ciclos aprobados?\n\nPerfecto, con eso avanzamos. Pide tus sílabos y yo consulto tu caso específico para darte una respuesta precisa.\n\n¿Te parece si te llamo el jueves a las 6 p. m. para contarte el resultado y ver los siguientes pasos?"
  },
  "Maria Alejandra Pino Contreras|paso3": {
   "stage": "paso3",
@@ -894,34 +894,38 @@
  },
  "Maria Alejandra Pino Contreras|paso1": {
   "stage": "paso1",
-  "base": "85bd81277a76",
-  "conclusion": "Eres cordial y verificas que John recibió la información por WhatsApp. Te faltó presentarte con tu nombre y la universidad, enfocarte en Ingeniería Ambiental cuando él lo confirmó, usar su nombre al menos dos veces y completar la despedida institucional.",
+  "base": "a908f301efba",
+  "conclusion": "Iniciaste la atención a tiempo, confirmaste que Milton pidió información por WhatsApp e identificaste sus estudios previos. Te faltó presentarte con tu nombre y Unidad CIE al inicio, y usar el nombre del prospecto durante la conversación.",
   "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Presentarte bien y seguir la carrera que el prospecto confirma le da el control y evita insistir en un interés que no reconoce.",
+  "porQue": "Presentarte formalmente y llamarlo por su nombre mientras le das la opción de decidir el ritmo genera cercanía y confianza desde el primer minuto.",
   "dialogo": [
    {
+    "quien": "cliente",
+    "texto": "¿Sí, aló?"
+   },
+   {
     "quien": "asesor",
-    "texto": "Hola, John, buenas tardes. Te saluda María, asesora de la Universidad Continental, modalidad a distancia.\n\nTe escribí por WhatsApp con información; ¿pudiste recibirla?"
+    "texto": "Hola, Milton, buenas tardes. Te saluda María Alejandra, asesora de la Unidad CIE de la Universidad Continental.\n\nTe contacto porque nos escribiste por WhatsApp pidiendo información.\n\n¿Es un buen momento para conversar unos minutos?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, pero me hablaban de Psicología y yo no pedí eso."
+    "texto": "Sí, justo quería saber sobre Ingeniería Ambiental."
    },
    {
     "quien": "asesor",
-    "texto": "Gracias por aclararlo, John.\n\nCuéntame entonces, ¿qué carrera es la que te interesa?"
+    "texto": "Qué bueno, Milton. Para darte la información que de verdad te sirva, quiero entender primero tu caso.\n\nTú me dices qué es lo que más te interesa saber y lo vemos juntos.\n\n¿Ya llevaste estudios antes en alguna carrera o instituto?"
    },
    {
     "quien": "cliente",
-    "texto": "Ingeniería Ambiental, a distancia."
+    "texto": "Sí, estudié unos ciclos en un instituto."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, nos enfocamos en Ingeniería Ambiental.\n\nTe cuento cómo funciona la modalidad a distancia y luego resolvemos tus dudas.\n\n¿Qué te gustaría saber primero?"
+    "texto": "Excelente, Milton, eso nos puede ayudar.\n\nCuéntame qué estudiaste y cuántos ciclos aprobaste, así te explico qué opción te conviene.\n\n¿Tienes tus certificados a la mano?"
    }
   ],
-  "speech": "Hola, John, buenas tardes. Te saluda María, asesora de la Universidad Continental, modalidad a distancia.\n\nTe escribí por WhatsApp con información; ¿pudiste recibirla?\n\nGracias por aclararlo, John.\n\nCuéntame entonces, ¿qué carrera es la que te interesa?\n\nPerfecto, nos enfocamos en Ingeniería Ambiental.\n\nTe cuento cómo funciona la modalidad a distancia y luego resolvemos tus dudas.\n\n¿Qué te gustaría saber primero?"
+  "speech": "Hola, Milton, buenas tardes. Te saluda María Alejandra, asesora de la Unidad CIE de la Universidad Continental.\n\nTe contacto porque nos escribiste por WhatsApp pidiendo información.\n\n¿Es un buen momento para conversar unos minutos?\n\nQué bueno, Milton. Para darte la información que de verdad te sirva, quiero entender primero tu caso.\n\nTú me dices qué es lo que más te interesa saber y lo vemos juntos.\n\n¿Ya llevaste estudios antes en alguna carrera o instituto?\n\nExcelente, Milton, eso nos puede ayudar.\n\nCuéntame qué estudiaste y cuántos ciclos aprobaste, así te explico qué opción te conviene.\n\n¿Tienes tus certificados a la mano?"
  },
  "Angelo Jaime Franco Sarmiento|paso1": {
   "stage": "paso1",
@@ -1018,34 +1022,38 @@
  },
  "Orlando Jesus Pintado Sandoval|paso1": {
   "stage": "paso1",
-  "base": "19d44f4e0f34",
-  "conclusion": "Mantienes una conversación activa con Carlos, verificas que reciba la información y lo orientas sobre los requisitos de la evaluación virtual. Usa su nombre al menos dos veces, evita que la vigencia de la promoción suene a presión y completa la despedida y la encuesta.",
+  "base": "b2e4622ba707",
+  "conclusion": "Iniciaste la llamada a tiempo y confirmaste que Iván pidió información de Administración y Finanzas. Te faltó presentarte con tu nombre y mencionar la Unidad CIE desde el inicio.",
   "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Dar la sensación de control, en vez de presionar con la vigencia, mantiene la confianza y abre espacio para una nueva oportunidad.",
+  "porQue": "Una presentación completa y darle a Iván la opción de elegir el momento lo hace sentir en control y te da la formalidad que genera confianza.",
   "dialogo": [
    {
+    "quien": "cliente",
+    "texto": "¿Aló?"
+   },
+   {
     "quien": "asesor",
-    "texto": "Carlos, te comento que el beneficio tiene una vigencia, pero lo importante es que tomes la decisión que te convenga.\n\nNo quiero que sientas presión.\n\n¿Qué te parece si vemos con calma qué opción encaja contigo?"
+    "texto": "Hola, Iván, buenas tardes. Te saluda Orlando, asesor de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque solicitaste información de la carrera de Administración y Finanzas.\n\n¿Tienes unos minutos ahora o prefieres que te llame en otro momento?"
    },
    {
     "quien": "cliente",
-    "texto": "Gracias, porque ahorita no tengo mucho tiempo para estudiar."
+    "texto": "Ahorita puedo, pero la señal está un poco mala."
    },
    {
     "quien": "asesor",
-    "texto": "Te entiendo, Carlos, y respeto tu ritmo.\n\nTú decides cuándo es el mejor momento; mientras tanto te dejo la información para que la tengas a la mano.\n\n¿Te parece bien?"
+    "texto": "No te preocupes, Iván, si se corta te vuelvo a llamar.\n\nPara orientarte bien, me gustaría conocer un poco tu situación y tú me dices qué te interesa más saber.\n\n¿Te parece bien?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, perfecto."
+    "texto": "Sí, claro."
    },
    {
     "quien": "asesor",
-    "texto": "Muchas gracias por tu tiempo, Carlos. Te atendió Orlando, de la Universidad Continental.\n\nAntes de terminar, te transfiero a una breve encuesta de satisfacción sobre mi atención."
+    "texto": "Perfecto, gracias.\n\nEmpecemos por lo principal para recomendarte el horario adecuado.\n\n¿Actualmente trabajas? ¿En qué horario tendrías tiempo para estudiar?"
    }
   ],
-  "speech": "Carlos, te comento que el beneficio tiene una vigencia, pero lo importante es que tomes la decisión que te convenga.\n\nNo quiero que sientas presión.\n\n¿Qué te parece si vemos con calma qué opción encaja contigo?\n\nTe entiendo, Carlos, y respeto tu ritmo.\n\nTú decides cuándo es el mejor momento; mientras tanto te dejo la información para que la tengas a la mano.\n\n¿Te parece bien?\n\nMuchas gracias por tu tiempo, Carlos. Te atendió Orlando, de la Universidad Continental.\n\nAntes de terminar, te transfiero a una breve encuesta de satisfacción sobre mi atención."
+  "speech": "Hola, Iván, buenas tardes. Te saluda Orlando, asesor de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque solicitaste información de la carrera de Administración y Finanzas.\n\n¿Tienes unos minutos ahora o prefieres que te llame en otro momento?\n\nNo te preocupes, Iván, si se corta te vuelvo a llamar.\n\nPara orientarte bien, me gustaría conocer un poco tu situación y tú me dices qué te interesa más saber.\n\n¿Te parece bien?\n\nPerfecto, gracias.\n\nEmpecemos por lo principal para recomendarte el horario adecuado.\n\n¿Actualmente trabajas? ¿En qué horario tendrías tiempo para estudiar?"
  },
  "Nicol Alisson Romero Espinoza|paso1": {
   "stage": "paso1",
@@ -2422,34 +2430,38 @@
  },
  "Betsabeth Alexandra Rojas Palacios|paso1": {
   "stage": "paso1",
-  "base": "f3e864809e06",
-  "conclusion": "Mantienes un tono cordial y dejas que Santos plantee sus dudas sobre Psicología, convalidación y costos. Te faltó presentarte con tu nombre y el de la Universidad Continental desde el inicio para generar confianza.",
+  "base": "a23aa1d0b91c",
+  "conclusion": "Iniciaste a tiempo, te identificaste y confirmaste que Bania pidió información de Educación Inicial por TikTok. Te faltó la presentación protocolar completa desde el inicio: tu nombre y Unidad CIE.",
   "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Presentarte con nombre e institución y darle el control de la agenda hace que el prospecto sepa quién lo atiende y se abra a contar sus dudas.",
+  "porQue": "Presentarte completa y pedirle permiso para preguntar le da a Bania el control de la llamada y te posiciona como asesora formal desde el primer minuto.",
   "dialogo": [
    {
+    "quien": "cliente",
+    "texto": "¿Aló? ¿Quién habla?"
+   },
+   {
     "quien": "asesor",
-    "texto": "Hola, Santos, buenos días. Te saluda Betsabeth, asesora de la Universidad Continental, modalidad a distancia.\n\nTe llamo por tu interés en la carrera de Psicología.\n\n¿Tienes unos minutos para conversar?"
+    "texto": "Hola, Bania, buenas tardes. Te saluda Betsabeth, asesora de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque dejaste tus datos en TikTok para recibir información de Educación Inicial.\n\n¿Tienes unos minutos para conversar ahora o prefieres que te llame en otro momento?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, justo quería saber si me convalidan algo, porque ya estudié Educación Primaria."
+    "texto": "Sí, ahora puedo, pero rápido porque estoy saliendo."
    },
    {
     "quien": "asesor",
-    "texto": "Qué bueno que lo comentas, Santos, eso es importante.\n\nPara aprovechar bien tu tiempo, cuéntame tú: ¿por dónde prefieres empezar, por la convalidación, por la duración de la carrera o por la inversión?\n\nAsí vamos en el orden que más te sirve."
+    "texto": "Claro, Bania, lo vamos a hacer breve y tú decides hasta dónde avanzamos.\n\nPara orientarte bien, me gustaría hacerte un par de preguntas sobre lo que estudias ahora.\n\n¿Te parece bien empezar por ahí?"
    },
    {
     "quien": "cliente",
-    "texto": "Primero la convalidación, y luego los costos."
+    "texto": "Ya, dale."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, empezamos por ahí.\n\nLa convalidación se define con una evaluación de tus sílabos, así que te explico cómo funciona y qué documentos se revisan.\n\nY al terminar vemos los costos con calma, ¿te parece?"
+    "texto": "Perfecto, gracias por tu tiempo.\n\nCon lo que me cuentes te diré con claridad qué opción te conviene, sin compromiso.\n\n¿Actualmente estás estudiando o ya terminaste algún estudio?"
    }
   ],
-  "speech": "Hola, Santos, buenos días. Te saluda Betsabeth, asesora de la Universidad Continental, modalidad a distancia.\n\nTe llamo por tu interés en la carrera de Psicología.\n\n¿Tienes unos minutos para conversar?\n\nQué bueno que lo comentas, Santos, eso es importante.\n\nPara aprovechar bien tu tiempo, cuéntame tú: ¿por dónde prefieres empezar, por la convalidación, por la duración de la carrera o por la inversión?\n\nAsí vamos en el orden que más te sirve.\n\nPerfecto, empezamos por ahí.\n\nLa convalidación se define con una evaluación de tus sílabos, así que te explico cómo funciona y qué documentos se revisan.\n\nY al terminar vemos los costos con calma, ¿te parece?"
+  "speech": "Hola, Bania, buenas tardes. Te saluda Betsabeth, asesora de la Unidad CIE de la Universidad Continental.\n\nTe llamo porque dejaste tus datos en TikTok para recibir información de Educación Inicial.\n\n¿Tienes unos minutos para conversar ahora o prefieres que te llame en otro momento?\n\nClaro, Bania, lo vamos a hacer breve y tú decides hasta dónde avanzamos.\n\nPara orientarte bien, me gustaría hacerte un par de preguntas sobre lo que estudias ahora.\n\n¿Te parece bien empezar por ahí?\n\nPerfecto, gracias por tu tiempo.\n\nCon lo que me cuentes te diré con claridad qué opción te conviene, sin compromiso.\n\n¿Actualmente estás estudiando o ya terminaste algún estudio?"
  },
  "Maria Alejandra Pino Contreras|paso4": {
   "stage": "paso4",
@@ -2600,38 +2612,38 @@
  },
  "Maria Alejandra Pino Contreras|paso2": {
   "stage": "paso2",
-  "base": "9a15e90e0b1e",
-  "conclusion": "Confirmas su interés en Ingeniería Ambiental a distancia y atiendes sus consultas sobre virtualidad, cuotas y duración. Te faltó profundizar en sus prioridades: qué espera de la modalidad virtual y qué factores necesita evaluar para decidir.",
-  "tecId": "tec_14",
+  "base": "23bc5ff73d04",
+  "conclusion": "Indagaste sus estudios anteriores, documentos para convalidación, disponibilidad y presupuesto, y explicaste beneficios como las clases grabadas. Te faltó validar que Milton comprenda los pasos y condiciones de convalidación y confirmar su carrera de interés antes de orientar la propuesta.",
+  "tecId": "tec_01",
   "tipo": "speech",
-  "porQue": "Preguntar qué necesita evaluar para avanzar ubica la prioridad real de John y permite responder directo a eso.",
+  "porQue": "Resumir y dejar que Milton confirme con sus palabras su carrera y los pasos de convalidación asegura que la decisión sea suya y que entendió el proceso.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "¿Y las clases cómo son? ¿Todo virtual?"
+    "texto": "Entonces, ¿con mis cursos del instituto ya me convalidan?"
    },
    {
     "quien": "asesor",
-    "texto": "Sí, John, todo es virtual y las clases quedan grabadas.\n\nPara orientarte mejor, ¿qué esperas de la modalidad virtual?\n\n¿Trabajas actualmente?"
+    "texto": "Milton, antes de avanzar quiero asegurarme de que todo quede claro.\n\nLa convalidación se hace por evaluación de sílabos: revisamos los cursos que aprobaste y se determina cuáles se reconocen. No se define antes de esa evaluación.\n\n¿Me podrías contar con tus palabras cómo entendiste el proceso?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, trabajo de lunes a sábado, por eso necesito algo flexible."
+    "texto": "O sea, envío mis sílabos y ustedes revisan qué cursos me reconocen."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces la flexibilidad es lo clave para ti.\n\nAdemás del horario, ¿qué más necesitas evaluar para tomar tu decisión: las cuotas, la duración o el proceso de admisión?"
+    "texto": "Exacto, así es.\n\nAhora, para orientarte bien la propuesta: al inicio me comentaste de Ingeniería Ambiental.\n\n¿Sigue siendo la carrera que quieres o estás evaluando alguna otra?"
    },
    {
     "quien": "cliente",
-    "texto": "Las cuotas, sobre todo."
+    "texto": "Sí, Ingeniería Ambiental es la que quiero."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, entonces vemos las cuotas en detalle y cómo encajan con tu presupuesto.\n\n¿Te parece si empezamos por ahí?"
+    "texto": "Perfecto, entonces tú mismo lo tienes claro: Ingeniería Ambiental, con convalidación por sílabos y clases grabadas para tu horario.\n\n¿Te parece si mañana a las 11 a. m. revisamos juntos tus sílabos y vemos el siguiente paso?"
    }
   ],
-  "speech": "Sí, John, todo es virtual y las clases quedan grabadas.\n\nPara orientarte mejor, ¿qué esperas de la modalidad virtual?\n\n¿Trabajas actualmente?\n\nEntonces la flexibilidad es lo clave para ti.\n\nAdemás del horario, ¿qué más necesitas evaluar para tomar tu decisión: las cuotas, la duración o el proceso de admisión?\n\nPerfecto, entonces vemos las cuotas en detalle y cómo encajan con tu presupuesto.\n\n¿Te parece si empezamos por ahí?"
+  "speech": "Milton, antes de avanzar quiero asegurarme de que todo quede claro.\n\nLa convalidación se hace por evaluación de sílabos: revisamos los cursos que aprobaste y se determina cuáles se reconocen. No se define antes de esa evaluación.\n\n¿Me podrías contar con tus palabras cómo entendiste el proceso?\n\nExacto, así es.\n\nAhora, para orientarte bien la propuesta: al inicio me comentaste de Ingeniería Ambiental.\n\n¿Sigue siendo la carrera que quieres o estás evaluando alguna otra?\n\nPerfecto, entonces tú mismo lo tienes claro: Ingeniería Ambiental, con convalidación por sílabos y clases grabadas para tu horario.\n\n¿Te parece si mañana a las 11 a. m. revisamos juntos tus sílabos y vemos el siguiente paso?"
  },
  "Rosa Victoria Guzman Bonilla|paso2": {
   "stage": "paso2",
@@ -2802,37 +2814,37 @@
  },
  "Orlando Jesus Pintado Sandoval|paso2": {
   "stage": "paso2",
-  "base": "8e67bb24b656",
-  "conclusion": "Indagas por qué Carlos no quiere iniciar ahora y detectas que el tiempo es su límite, además del interés de su esposa en Administración. Te faltó profundizar en ella: sus preferencias en Administración, objetivos profesionales y disponibilidad horaria.",
-  "tecId": "tec_14",
+  "base": "e2d2450f4760",
+  "conclusion": "Consultaste sus estudios previos y disponibilidad, e identificaste que necesita estudiar de noche por su trabajo. Cuando Iván preguntó cómo matricularse, te faltó darle la información completa de la inversión: matrícula y pensiones.",
+  "tecId": "tec_10",
   "tipo": "speech",
-  "porQue": "Preguntar qué falta saber del perfil de su esposa convierte la nueva oportunidad en una recomendación concreta y alineada.",
+  "porQue": "Explicar la inversión por partes y validar cada una con un pequeño sí le da a Iván claridad completa del proceso y lo acerca a la matrícula.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Mi esposa sí está interesada en algo de Administración."
+    "texto": "¿Y cómo hago para matricularme?"
    },
    {
     "quien": "asesor",
-    "texto": "Qué buena noticia, Carlos.\n\nPara recomendarle la opción correcta, cuéntame: ¿qué le gustaría hacer a ella al terminar la carrera?"
+    "texto": "Buena pregunta, Iván. Te lo explico por partes para que tengas todo claro.\n\nPrimero, el pago inicial incluye la admisión, la matrícula, el seguro y tu primera cuota. Después pagas tus pensiones mensuales durante el ciclo.\n\n¿Hasta aquí está claro cómo se compone?"
    },
    {
     "quien": "cliente",
-    "texto": "Quiere poner su propio negocio."
+    "texto": "Sí, pero ¿cuánto sería en total?"
    },
    {
     "quien": "asesor",
-    "texto": "Entonces busca formarse para emprender.\n\n¿Y cuánto tiempo al día podría dedicarle a sus estudios? ¿Trabaja actualmente?"
+    "texto": "Te paso el detalle exacto de cada concepto por WhatsApp ahora mismo, con los montos oficiales, para que lo revises con calma.\n\nLo importante es que ya sabes qué incluye cada pago y que las clases nocturnas y grabadas se ajustan a tu trabajo.\n\n¿Eso es lo que buscabas para tu horario?"
    },
    {
     "quien": "cliente",
-    "texto": "Trabaja medio tiempo, en las tardes estaría libre."
+    "texto": "Sí, de noche me acomoda."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, con las tardes libres y clases grabadas puede organizarse bien.\n\n¿Te parece si coordinamos una llamada con ella el sábado a las 10 a. m. para orientarla directamente?"
+    "texto": "Perfecto. Entonces el siguiente paso es tu evaluación de ingreso virtual, con cámara y sin examen de conocimientos.\n\n¿La agendamos hoy a las 3:30 p. m., cuando coordinemos por WhatsApp?"
    }
   ],
-  "speech": "Qué buena noticia, Carlos.\n\nPara recomendarle la opción correcta, cuéntame: ¿qué le gustaría hacer a ella al terminar la carrera?\n\nEntonces busca formarse para emprender.\n\n¿Y cuánto tiempo al día podría dedicarle a sus estudios? ¿Trabaja actualmente?\n\nPerfecto, con las tardes libres y clases grabadas puede organizarse bien.\n\n¿Te parece si coordinamos una llamada con ella el sábado a las 10 a. m. para orientarla directamente?"
+  "speech": "Buena pregunta, Iván. Te lo explico por partes para que tengas todo claro.\n\nPrimero, el pago inicial incluye la admisión, la matrícula, el seguro y tu primera cuota. Después pagas tus pensiones mensuales durante el ciclo.\n\n¿Hasta aquí está claro cómo se compone?\n\nTe paso el detalle exacto de cada concepto por WhatsApp ahora mismo, con los montos oficiales, para que lo revises con calma.\n\nLo importante es que ya sabes qué incluye cada pago y que las clases nocturnas y grabadas se ajustan a tu trabajo.\n\n¿Eso es lo que buscabas para tu horario?\n\nPerfecto. Entonces el siguiente paso es tu evaluación de ingreso virtual, con cámara y sin examen de conocimientos.\n\n¿La agendamos hoy a las 3:30 p. m., cuando coordinemos por WhatsApp?"
  }
 }
