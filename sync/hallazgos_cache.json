@@ -1,11 +1,11 @@
 {
- "actualizado": "30/10/2026",
+ "actualizado": "31/10/2026",
  "periodo": {
   "desde": "24/10/2026",
   "hasta": "30/10/2026"
  },
  "base": {
-  "llamadas": 26,
+  "llamadas": 27,
   "asesores": 13
  },
  "titular": "Lo que más se repite es presentarse sin nombre ni Unidad CIE y cerrar sin día y hora ni encuesta (8.ª semana seguida). Siguen la inversión sin desglose con descuentos como argumento y la convalidación anticipada. Lo bueno: más seguimientos con hora fija y casos validados antes de prometer.",
@@ -14,7 +14,7 @@
    "tipo": "mala_costumbre",
    "titulo": "Presentación incompleta y nombre del prospecto poco usado",
    "queVimos": "La llamada arranca sin nombre del asesor o sin mencionar la Unidad CIE, y el nombre del prospecto casi no se usa o se cambia durante la conversación.",
-   "veces": "24 llamadas · 13 asesores · 3.ª semana seguida",
+   "veces": "25 llamadas · 13 asesores · 3.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -39,7 +39,7 @@
    "tipo": "mala_costumbre",
    "titulo": "Cerrar sin día y hora ni derivar a la encuesta",
    "queVimos": "Se cierra con «te envío la información» o «coordinamos por WhatsApp» sin fijar día y hora, y la despedida termina sin nombre, Unidad CIE ni transferencia a la encuesta de satisfacción.",
-   "veces": "23 llamadas · 13 asesores · 8.ª semana seguida",
+   "veces": "24 llamadas · 13 asesores · 8.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -64,7 +64,7 @@
    "tipo": "mala_practica",
    "titulo": "Inversión incompleta, montos que no cuadran y descuento como argumento",
    "queVimos": "Se menciona solo el pago promocional o montos que cambian durante la llamada, no se desglosa la primera cuota y el descuento se ofrece de entrada en lugar de indagar qué frena la decisión.",
-   "veces": "13 llamadas · 10 asesores · 4.ª semana seguida",
+   "veces": "14 llamadas · 10 asesores · 4.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -77,7 +77,7 @@
     "Orlando Jesus Pintado Sandoval",
     "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "ejemplo": "«No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos» (30/10); «le informaron anteriormente un costo de S/ 540, mientras que tú comunicas S/ 948 como primer pago» (28/10).",
+   "ejemplo": "«No ofrezcas descuentos de manera anticipada; utiliza los beneficios comerciales progresivamente como parte de una negociación consultiva» (30/10); «le informaron anteriormente un costo de S/ 540, mientras que tú comunicas S/ 948 como primer pago» (28/10).",
    "porQueImporta": "Un monto que no cuadra rompe la confianza y genera desistimientos; y si el descuento es el único argumento, la decisión se reduce a precio.",
    "accion": "Desglosa siempre por partes (admisión + matrícula + seguro + primera cuota, luego pensiones) con los montos de la Biblioteca y valida cada parte; ante «es caro» pregunta «¿qué parte te pesa más?» antes de hablar de descuentos.",
    "tecnica": "tec_10"
