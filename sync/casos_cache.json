@@ -2055,69 +2055,73 @@
  },
  "Raul Aaron Manuel Ipanaque Escobar|paso1": {
   "stage": "paso1",
-  "base": "9376af9e585c",
-  "conclusion": "Te presentas con tu nombre y el de la Universidad Continental, y adaptas la conversación cuando Cristina aclara que busca convalidar. Confirma desde el inicio el motivo real de su consulta y evita asegurar plazos de trámites sin validarlos.",
-  "tecId": "tec_08",
+  "base": "616835bd7911",
+  "conclusion": "Iniciaste a tiempo, confirmaste la solicitud y preguntaste por su interés en Administración y Marketing. Te faltó la presentación protocolar: di tu nombre y menciona a la Unidad CIE desde los primeros segundos.",
+  "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Anticipar la duda del plazo sin prometer fechas protege la confianza de Cristina y lleva la conversación a un paso verificable: la simulación.",
+  "porQue": "Presentarte con nombre e institución y dejarle elegir el momento de conversar baja la defensa del prospecto y genera confianza desde el inicio.",
   "dialogo": [
    {
+    "quien": "cliente",
+    "texto": "Aló, ¿quién habla?"
+   },
+   {
     "quien": "asesor",
-    "texto": "Hola, Cristina, te saluda Aaron de la Universidad Continental.\n\nAntes de contarte nada, ¿me confirmas qué te interesa revisar: una carrera nueva, la convalidación de tus estudios o el proceso de ingreso?"
+    "texto": "Hola, buenas tardes. Te saluda Aaron, asesor de la Universidad Continental, de la Unidad CIE.\n\nTe llamo porque dejaste tus datos pidiendo información sobre Administración y Marketing.\n\n¿Tienes unos minutos para conversar y ver si la modalidad se ajusta a lo que buscas?"
    },
    {
     "quien": "cliente",
-    "texto": "La convalidación, ya tengo una carrera terminada."
+    "texto": "Ah, sí, pedí información, pero estoy algo ocupado."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, entonces nos enfocamos en eso.\n\nLa convalidación se define evaluando tus sílabos, por eso primero hacemos una simulación con tus documentos.\n\n¿Tienes tus sílabos y certificados a la mano?"
+    "texto": "Te entiendo, y la decisión de cuánto conversamos hoy es tuya.\n\nSi te parece, te hago dos preguntas rápidas para saber qué te interesa más y no quitarte tiempo de más.\n\n¿Prefieres que lo veamos ahora en cinco minutos o te llamo en otro momento del día?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, pero ¿en cuánto tiempo sale el trámite?"
+    "texto": "Ahora está bien, pero rápido."
    },
    {
     "quien": "asesor",
-    "texto": "Prefiero no darte un plazo que luego no se cumpla, porque depende de la revisión de tus documentos.\n\nLo que sí hago es avisarte apenas tenga el resultado de la simulación.\n\n¿Me envías tus documentos hoy y te llamo mañana a las 11 a. m.?"
+    "texto": "Perfecto, gracias por tu tiempo.\n\nPara orientarte bien, primero quiero entender tu situación.\n\n¿Actualmente estás trabajando o estudiando, y qué te motivó a pedir información sobre Administración y Marketing?"
    }
   ],
-  "speech": "Hola, Cristina, te saluda Aaron de la Universidad Continental.\n\nAntes de contarte nada, ¿me confirmas qué te interesa revisar: una carrera nueva, la convalidación de tus estudios o el proceso de ingreso?\n\nPerfecto, entonces nos enfocamos en eso.\n\nLa convalidación se define evaluando tus sílabos, por eso primero hacemos una simulación con tus documentos.\n\n¿Tienes tus sílabos y certificados a la mano?\n\nPrefiero no darte un plazo que luego no se cumpla, porque depende de la revisión de tus documentos.\n\nLo que sí hago es avisarte apenas tenga el resultado de la simulación.\n\n¿Me envías tus documentos hoy y te llamo mañana a las 11 a. m.?"
+  "speech": "Hola, buenas tardes. Te saluda Aaron, asesor de la Universidad Continental, de la Unidad CIE.\n\nTe llamo porque dejaste tus datos pidiendo información sobre Administración y Marketing.\n\n¿Tienes unos minutos para conversar y ver si la modalidad se ajusta a lo que buscas?\n\nTe entiendo, y la decisión de cuánto conversamos hoy es tuya.\n\nSi te parece, te hago dos preguntas rápidas para saber qué te interesa más y no quitarte tiempo de más.\n\n¿Prefieres que lo veamos ahora en cinco minutos o te llamo en otro momento del día?\n\nPerfecto, gracias por tu tiempo.\n\nPara orientarte bien, primero quiero entender tu situación.\n\n¿Actualmente estás trabajando o estudiando, y qué te motivó a pedir información sobre Administración y Marketing?"
  },
  "Raul Aaron Manuel Ipanaque Escobar|paso2": {
   "stage": "paso2",
-  "base": "c3f48960fac3",
-  "conclusion": "Indagas sus estudios previos, la última carrera culminada y los documentos para la convalidación. Profundiza en qué estudios desea convalidar y en sus objetivos, y presenta al menos dos diferenciales de la Universidad Continental conectados con su necesidad.",
+  "base": "a9c991f9a5ee",
+  "conclusion": "Indagaste sus estudios y su situación laboral y detectaste sus horarios rotativos de 7 a 7. Profundiza en cómo se organizará y qué espera lograr, y explica asistencia, participación y recuperación, no solo que las clases quedan grabadas.",
   "tecId": "tec_09",
   "tipo": "speech",
-  "porQue": "Conocer qué quiere lograr Cristina y devolvérselo con sus palabras permite elegir los diferenciales que de verdad le importan.",
+  "porQue": "Devolverle sus propias palabras sobre los horarios rotativos le muestra que lo entendiste y abre la conversación sobre cómo encaja la modalidad en su rutina.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Quiero convalidar mi carrera anterior para avanzar más rápido."
+    "texto": "Voy a empezar a trabajar con horarios rotativos, de 7 de la mañana a 7 de la noche."
    },
    {
     "quien": "asesor",
-    "texto": "Claro, Cristina. Para orientarte bien, ¿qué cursos de tu carrera anterior te gustaría que te reconozcan?\n\n¿Y qué quieres lograr con esta nueva carrera?"
+    "texto": "Entiendo, vas a tener horarios rotativos de 7 a. m. a 7 p. m., y eso pesa al pensar en estudiar.\n\nPara orientarte bien, ¿cómo se reparten esos turnos en la semana y qué días o momentos te quedarían libres?"
    },
    {
     "quien": "cliente",
-    "texto": "Quiero un título que me ayude a ascender en mi trabajo."
+    "texto": "Cambia cada semana, a veces tengo dos días libres seguidos."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces buscas ascender sin descuidar tu trabajo.\n\nCon clases grabadas estudias en tus horarios, y con las certificaciones progresivas vas acreditando lo que aprendes antes de terminar.\n\n¿Cuál de las dos te ayudaría más hoy para ese ascenso?"
+    "texto": "Gracias, eso me sirve mucho.\n\nY pensando a futuro, ¿qué te gustaría lograr al terminar Administración y Marketing: crecer en tu trabajo actual o cambiar de rubro?"
    },
    {
     "quien": "cliente",
-    "texto": "Las clases grabadas, porque salgo tarde."
+    "texto": "Me gustaría ascender, pero me preocupa no poder conectarme a las clases."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, lo tomamos en cuenta.\n\nTe envío por WhatsApp la malla y los requisitos para la simulación de convalidación.\n\n¿Revisamos juntos tus documentos el viernes a las 7 p. m.?"
+    "texto": "Justo por eso te lo pregunto: quieres ascender y te preocupa no poder conectarte.\n\nLas clases quedan grabadas y puedes revisarlas en tus días libres; además te explico las condiciones de asistencia, participación y recuperación para que sepas cómo organizarte.\n\n¿Te parece si las revisamos juntos el jueves a las 7:30 p. m., cuando ya saliste de tu turno?"
    }
   ],
-  "speech": "Claro, Cristina. Para orientarte bien, ¿qué cursos de tu carrera anterior te gustaría que te reconozcan?\n\n¿Y qué quieres lograr con esta nueva carrera?\n\nEntonces buscas ascender sin descuidar tu trabajo.\n\nCon clases grabadas estudias en tus horarios, y con las certificaciones progresivas vas acreditando lo que aprendes antes de terminar.\n\n¿Cuál de las dos te ayudaría más hoy para ese ascenso?\n\nPerfecto, lo tomamos en cuenta.\n\nTe envío por WhatsApp la malla y los requisitos para la simulación de convalidación.\n\n¿Revisamos juntos tus documentos el viernes a las 7 p. m.?"
+  "speech": "Entiendo, vas a tener horarios rotativos de 7 a. m. a 7 p. m., y eso pesa al pensar en estudiar.\n\nPara orientarte bien, ¿cómo se reparten esos turnos en la semana y qué días o momentos te quedarían libres?\n\nGracias, eso me sirve mucho.\n\nY pensando a futuro, ¿qué te gustaría lograr al terminar Administración y Marketing: crecer en tu trabajo actual o cambiar de rubro?\n\nJusto por eso te lo pregunto: quieres ascender y te preocupa no poder conectarte.\n\nLas clases quedan grabadas y puedes revisarlas en tus días libres; además te explico las condiciones de asistencia, participación y recuperación para que sepas cómo organizarte.\n\n¿Te parece si las revisamos juntos el jueves a las 7:30 p. m., cuando ya saliste de tu turno?"
  },
  "Raul Aaron Manuel Ipanaque Escobar|paso3": {
   "stage": "paso3",
