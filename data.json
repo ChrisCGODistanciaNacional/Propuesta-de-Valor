@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-11-01T14:13:00Z",
+ "generado": "2026-11-01T23:13:40Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -8610,7 +8610,7 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 66,
    "cuartilCalidad": "Q4",
-   "matriculas": 0,
+   "matriculas": 1,
    "meta": null,
    "avanceMes": null,
    "avanceRitmo": null,
@@ -11475,7 +11475,7 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 78,
    "cuartilCalidad": "Q3",
-   "matriculas": 0,
+   "matriculas": 1,
    "meta": null,
    "avanceMes": null,
    "avanceRitmo": null,
@@ -14888,7 +14888,7 @@
     "cuadrante": "amarillo",
     "calidad": 78,
     "cuartilCalidad": "Q3",
-    "matriculas": 0,
+    "matriculas": 1,
     "meta": null,
     "avanceMeta": null,
     "avanceMes": null,
@@ -15112,7 +15112,7 @@
     "cuadrante": "amarillo",
     "calidad": 66,
     "cuartilCalidad": "Q4",
-    "matriculas": 0,
+    "matriculas": 1,
     "meta": null,
     "avanceMeta": null,
     "avanceMes": null,
@@ -15204,7 +15204,7 @@
   ]
  },
  "hallazgos": {
-  "actualizado": "31/10/2026",
+  "actualizado": "01/11/2026",
   "periodo": {
    "desde": "24/10/2026",
    "hasta": "30/10/2026"
