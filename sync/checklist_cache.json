@@ -10997,6 +10997,84 @@
    }
   }
  },
+ "f064f487c7e4": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte por tu nombre (Orlando) desde el inicio de la llamada"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Confirmas el nombre del prospecto (Mario) y validas su interés por Psicología"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Validas su interés por la carrera e indagas si tiene estudios previos"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué lo motivó a estudiar esta carrera en este momento"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga cómo planea aplicar la carrera en su vida personal o profesional"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita comentarios desmotivadores como no te convendría al hablar de convalidación"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Ofreces reprogramar por WhatsApp, pero falta acordar la prueba con hora exacta"
+   }
+  }
+ },
  "adb1c0d30803": {
   "asesor": "Orlando Jesus Pintado Sandoval",
   "fecha": "",
