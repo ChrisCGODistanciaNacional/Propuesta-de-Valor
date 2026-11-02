@@ -79,3 +79,11 @@ Toda etapa con texto necesita `conclusion`; `tecId/porQue/dialogo/speech` solo c
 - En los ítems negativos los nombres van solo en `asesores` (la página los muestra únicamente en modo edición).
 - Fuentes: observaciones de 🔰FEEDBACK + auditorías en `sync/auditorias/` + fichas de la Propuesta de Valor,
   técnicas y mensajes de la Biblioteca de Mensajes como referencia de lo correcto.
+
+## Conversaciones de ejemplo (casos_cache.json, casos_genericos.json, guion_inversion.md)
+
+- Cada etapa con oportunidad lleva 3 formas de llevar la MISMA situación (`dialogo`/`speech` = opción 1; `variantes` = 2 más).
+- `sync/guion_inversion.md` es el guion del supervisor para los casos de precio/inversión (tema `inversion`): pocos
+  números, el ahorro de S/530 como gancho, Nexus y Taller de Excel sin costo por matricularse, y cierre en la misma
+  llamada (pagar la admisión de S/100 ahora o agendar la evaluación hoy; nunca «te llamo mañana»).
+- `sync/casos_genericos.json`: situación frecuente por etapa (con 3 opciones) para etapas < 75 % sin observación de calidad.
