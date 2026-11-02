@@ -221,10 +221,10 @@
    },
    {
     "quien": "asesor",
-    "texto": "Solo S/100 de admisión, la mitad del precio normal. Este ciclo te ahorras S/530 y, solo por matricularte, te registro sin costo en Nexus para adelantar cursos y en el Taller de Excel certificado. ¿Hacemos tu admisión hoy con los S/100?"
+    "texto": "Solo S/100 de admisión, la mitad del precio normal. Este ciclo te ahorras S/530 y, solo por matricularte, te registro sin costo en Nexus para adelantar cursos y en el Taller de Excel certificado. La evaluación es virtual, desde una computadora o laptop con cámara. ¿Qué fecha te acomoda para rendirla, hoy o mañana, y accedes al beneficio?"
    }
   ],
-  "speech": "[nombre], la cuota de tu carrera normalmente es S/560, pero hoy con el descuento te queda en S/504. Y ese 10 % menos lo tienes toda tu carrera. ¿Vamos bien?\n\nSolo la primera es un poco más porque trae el seguro y el examen médico: queda en S/570, y la pagas recién 24 horas después de tu admisión. La matrícula de S/250 hoy es gratis.\n\nSolo S/100 de admisión, la mitad del precio normal. Este ciclo te ahorras S/530 y, solo por matricularte, te registro sin costo en Nexus para adelantar cursos y en el Taller de Excel certificado. ¿Hacemos tu admisión hoy con los S/100?",
+  "speech": "[nombre], la cuota de tu carrera normalmente es S/560, pero hoy con el descuento te queda en S/504. Y ese 10 % menos lo tienes toda tu carrera. ¿Vamos bien?\n\nSolo la primera es un poco más porque trae el seguro y el examen médico: queda en S/570, y la pagas recién 24 horas después de tu admisión. La matrícula de S/250 hoy es gratis.\n\nSolo S/100 de admisión, la mitad del precio normal. Este ciclo te ahorras S/530 y, solo por matricularte, te registro sin costo en Nexus para adelantar cursos y en el Taller de Excel certificado. La evaluación es virtual, desde una computadora o laptop con cámara. ¿Qué fecha te acomoda para rendirla, hoy o mañana, y accedes al beneficio?",
   "porQue": "Pocas cifras, una idea por frase, el ahorro de S/530 como gancho y el cierre en la misma llamada con los regalos de Nexus y Excel.",
   "variantes": [
    {
@@ -252,10 +252,10 @@
      },
      {
       "quien": "asesor",
-      "texto": "Tercero, recién desde abril, de S/504 cada una. En total te ahorras S/530 este ciclo, y por matricularte te registro gratis en Nexus y en el Taller de Excel certificado. ¿Te envío ahora el enlace de los S/100 y agendamos tu evaluación para hoy?"
+      "texto": "Tercero, recién desde abril, de S/504 cada una. En total te ahorras S/530 este ciclo, y por matricularte te registro gratis en Nexus y en el Taller de Excel certificado. Se rinde desde una computadora o laptop con cámara. ¿Qué día podrías rendirla con normalidad, hoy o mañana, y aseguras el beneficio?"
      }
     ],
-    "speech": "Son tres pasos, [nombre]. Primero la admisión: hoy S/100 en vez de S/200, y con eso ya tienes tu vacante. ¿Te hace sentido?\n\nSegundo, 24 horas después de tu admisión das tu primera cuota: S/570, que ya incluye seguro y examen médico. La matrícula de S/250 no la pagas, hoy es gratis.\n\nTercero, recién desde abril, de S/504 cada una. En total te ahorras S/530 este ciclo, y por matricularte te registro gratis en Nexus y en el Taller de Excel certificado. ¿Te envío ahora el enlace de los S/100 y agendamos tu evaluación para hoy?",
+    "speech": "Son tres pasos, [nombre]. Primero la admisión: hoy S/100 en vez de S/200, y con eso ya tienes tu vacante. ¿Te hace sentido?\n\nSegundo, 24 horas después de tu admisión das tu primera cuota: S/570, que ya incluye seguro y examen médico. La matrícula de S/250 no la pagas, hoy es gratis.\n\nTercero, recién desde abril, de S/504 cada una. En total te ahorras S/530 este ciclo, y por matricularte te registro gratis en Nexus y en el Taller de Excel certificado. Se rinde desde una computadora o laptop con cámara. ¿Qué día podrías rendirla con normalidad, hoy o mañana, y aseguras el beneficio?",
     "porQue": "Tres pasos en el orden real de pago, sin saturar de números, y cierre inmediato con el enlace de los S/100."
    },
    {
@@ -283,10 +283,10 @@
      },
      {
       "quien": "asesor",
-      "texto": "La campaña puede cerrar y vuelves al precio regular. Hoy además te llevas gratis Nexus para adelantar cursos y el Taller de Excel certificado, solo por matricularte. ¿Aseguramos tu vacante ahora con los S/100?"
+      "texto": "La campaña puede cerrar y vuelves al precio regular. Hoy además te llevas gratis Nexus para adelantar cursos y el Taller de Excel certificado, solo por matricularte. La evaluación es virtual, desde tu computadora o laptop con cámara. ¿La rendimos hoy o mañana para que accedas al beneficio?"
      }
     ],
-    "speech": "Te entiendo, [nombre], es una decisión importante. Por eso quiero que veas una sola cifra: hoy te ahorras S/530 en el ciclo, porque la matrícula es gratis y las cuotas tienen 10 % menos toda la carrera. ¿Hasta ahí claro?\n\nPara empezar no necesitas todo: solo S/100 de admisión. La primera cuota la das recién 24 horas después, y las demás desde abril.\n\nLa campaña puede cerrar y vuelves al precio regular. Hoy además te llevas gratis Nexus para adelantar cursos y el Taller de Excel certificado, solo por matricularte. ¿Aseguramos tu vacante ahora con los S/100?",
+    "speech": "Te entiendo, [nombre], es una decisión importante. Por eso quiero que veas una sola cifra: hoy te ahorras S/530 en el ciclo, porque la matrícula es gratis y las cuotas tienen 10 % menos toda la carrera. ¿Hasta ahí claro?\n\nPara empezar no necesitas todo: solo S/100 de admisión. La primera cuota la das recién 24 horas después, y las demás desde abril.\n\nLa campaña puede cerrar y vuelves al precio regular. Hoy además te llevas gratis Nexus para adelantar cursos y el Taller de Excel certificado, solo por matricularte. La evaluación es virtual, desde tu computadora o laptop con cámara. ¿La rendimos hoy o mañana para que accedas al beneficio?",
     "porQue": "Ante el «lo voy a pensar», una sola cifra (S/530), un primer paso pequeño (S/100) y los regalos por matricularse como empujón final."
    }
   ]
