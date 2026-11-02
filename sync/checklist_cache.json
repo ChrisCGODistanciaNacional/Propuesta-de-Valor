@@ -10996,5 +10996,83 @@
     "evidencia": "Establece fecha y hora concreta de seguimiento; no dejes la iniciativa al prospecto"
    }
   }
+ },
+ "adb1c0d30803": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte por tu nombre (Orlando) desde el inicio de la llamada"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Confirmas el nombre del prospecto (Mario Mendoza) y validas su interés por Psicología"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Indagas si cuenta con estudios previos para orientarlo sobre admisión o convalidación"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué lo motivó a estudiar esta carrera en este momento"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga cómo planea aplicarla en su vida personal o profesional"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante la objeción de cierre de mes y viajes, profundiza qué le impediría evaluarse"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Ofreces la reprogramación de la respuesta vía WhatsApp y envías un resumen"
+   }
+  }
  }
 }
