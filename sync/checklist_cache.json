@@ -11152,5 +11152,551 @@
     "evidencia": "Ofreces la reprogramación de la respuesta vía WhatsApp y envías un resumen"
    }
   }
+ },
+ "71a8d51e90dc": {
+  "asesor": "Diana Carol Taipe Rojas",
+  "fecha": "02/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Realizaste la presentación institucional correspondiente al iniciar la llamada"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre de la prospecto al menos dos veces durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste su interés en Ingeniería Industrial y que deseaba iniciar desde el primer ciclo"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste que necesitaba compatibilizar sus estudios con el trabajo"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Cuando desee pensarlo, pregunta qué aspecto necesita evaluar"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda un día y una hora específicos para retomar la conversación"
+   }
+  }
+ },
+ "906439f495bb": {
+  "asesor": "Isai Yuliño Mercado Bravo",
+  "fecha": "02/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar indicando tu nombre y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre del prospecto; identificaste su interés por Derecho"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Indagaste sus estudios previos en Ciencias Sociales e Historia"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas profesionales y qué busca con esta segunda carrera"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Brindaste la duración estimada de la carrera y las modalidades"
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Al decir que analizará la propuesta, explora su decisión"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "No dejes el seguimiento abierto con «me vas comentando»; propón fecha y hora"
+   }
+  }
+ },
+ "78c684588e7c": {
+  "asesor": "Betsabeth Alexandra Rojas Palacios",
+  "fecha": "02/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte indicando tu nombre y la Unidad CIE desde el inicio"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre de la prospecto durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste su interés en Psicología y sus planes para el siguiente año"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Realizaste preguntas sobre su situación académica"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste que sus padres participan en la decisión económica"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Menciona al menos dos diferenciales concretos de Psicología"
+   },
+   "paso3_3": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza por qué compara otras universidades y diferencia la propuesta"
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece fecha y hora para conocer la decisión familiar"
+   }
+  }
+ },
+ "1f9d98081e96": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "02/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre y la Unidad CIE desde el inicio"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre del prospecto durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste que solicitó información sobre Psicología y convalidación"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste sus estudios técnicos anteriores y el año de culminación"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas de convalidación y objetivos profesionales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Presentaste clases grabadas, flexibilidad, adelanto de cursos y prácticas"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece día y hora para retomar el contacto"
+   }
+  }
+ },
+ "8168c8ce8c70": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "02/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte por tu nombre desde el inicio"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Confirmas el nombre del prospecto y su interés por Psicología"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Indagas si cuenta con estudios previos para orientarlo"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Explicas clases grabadas e internado presencial o virtual según sus tiempos"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante su objeción de cierre de mes, indaga qué le impide tomar la evaluación"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Ofreces la reprogramación vía WhatsApp y envías un resumen"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Asegura la programación de la prueba con hora exacta"
+   }
+  }
+ },
+ "00b52f9c8706": {
+  "asesor": "Nicol Alisson Romero Espinoza",
+  "fecha": "02/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza la presentación mencionando tu nombre, la universidad y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto, aunque una vez la llamaste Lina"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste el motivo de su interés y su intención de seguir una carrera"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Preguntaste por sus estudios técnicos previos en SENATI"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Brindaste la duración estimada de los estudios y las asignaturas por convalidar"
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Cuando desee pensarlo, pregunta qué aspecto necesita evaluar"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda un día y una hora específicos para retomar la conversación"
+   }
+  }
+ },
+ "02c32c9cd85b": {
+  "asesor": "Cecilia Esther Aliaga Lapa",
+  "fecha": "02/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar indicando tu nombre y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre del prospecto en diferentes momentos"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste sus estudios técnicos previos y su interés en seguir formándose"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus objetivos profesionales y qué espera de la carrera"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Cuando dice que evalúa si la carrera le sirve, profundiza en su respuesta"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Procura establecer un compromiso de seguimiento validando su disponibilidad"
+   }
+  }
  }
 }
