@@ -1109,7 +1109,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-11-02T14:27:37.000Z";
+  const DATA_VERSION = "2026-11-02T14:49:54.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -2778,7 +2778,6 @@
         </div>
         <div class="paso-objetivo" contenteditable="true" onblur="updatePasoField(${pasoIdx}, 'objetivo', this.innerText)"><b>Objetivo:</b> ${paso.objetivo}</div>
         ${paso.sla ? `<div class="paso-sla">⏱️ SLA: ${paso.sla}</div>` : ''}
-        ${paso.datos_estandar ? `<div class="datos-estandar-box"><b>💳 Datos estándar:</b> ${paso.datos_estandar}</div>` : ''}
       </div>
       ${renderEvaluacionEtapa(paso.id)}
     `;
