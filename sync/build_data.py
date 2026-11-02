@@ -784,6 +784,21 @@ casos_cache = load_json(os.path.join(SYNC, 'casos_cache.json'), {})
 check_cache = load_json(os.path.join(SYNC, 'checklist_cache.json'), {})
 pending = {'casos': [], 'checklist': []}
 
+# Observaciones sobre la inversión (precio, cuotas, desglose, objeción económica): las 3 opciones del
+# ejemplo se arman con el guion del supervisor (sync/guion_inversion.md).
+TEMA_INVERSION = re.compile(r'(inversi[oó]n|importe|cuota|pensi[oó]n|desglos|econ[oó]mic|costos?\b|precio|presupuesto|monto)', re.I)
+def tema_de(oportunidad):
+    return 'inversion' if oportunidad and TEMA_INVERSION.search(oportunidad) else None
+
+def leer_dialogo(lst):
+    out = []
+    for t in (lst if isinstance(lst, list) else []):
+        if not isinstance(t, dict) or not str(t.get('texto', '')).strip():
+            continue
+        quien = 'cliente' if str(t.get('quien', '')).strip().lower().startswith('c') else 'asesor'
+        out.append({'quien': quien, 'texto': str(t['texto']).strip()})
+    return out or None
+
 def caso_base(fortaleza, oportunidad, k):
     """Identifica la observación de una etapa: si cambia el texto del supervisor, cambia la base y se vuelve a redactar."""
     return sha12(norm(fortaleza or '') + '|' + norm(oportunidad or '') + '|' + k)
@@ -886,9 +901,24 @@ for name, lst in hist.items():
                         dialogo = None
                 texto = '\n\n'.join(t['texto'] for t in dialogo if t['quien'] == 'asesor') if dialogo else c.get('speech', '')
                 st['caso'] = {'tipo': c.get('tipo', 'speech'), 'texto': texto or c.get('speech', ''), 'porQue': c.get('porQue', ''), 'base': base, 'dialogo': dialogo}
-            if not (c and c.get('base') == base and (st['conclusion'] or not o_txt) and (not o_txt or st['caso'])):
+                # Hasta 3 formas de llevar la misma situación (opción 1 = la principal)
+                variantes = []
+                for v in (c.get('variantes') if isinstance(c.get('variantes'), list) else []):
+                    if not isinstance(v, dict):
+                        continue
+                    vd = leer_dialogo(v.get('dialogo'))
+                    vt = '\n\n'.join(t['texto'] for t in vd if t['quien'] == 'asesor') if vd else str(v.get('speech', '') or '')
+                    if vt.strip():
+                        variantes.append({'titulo': str(v.get('titulo', '') or '').strip(), 'dialogo': vd, 'texto': vt, 'porQue': str(v.get('porQue', '') or '')})
+                if st['caso']['tipo'] != 'accion':
+                    principal = {'titulo': str(c.get('titulo', '') or '').strip() or 'Opción 1', 'dialogo': dialogo, 'texto': st['caso']['texto'], 'porQue': st['caso']['porQue']}
+                    st['caso']['variantes'] = [principal] + variantes[:2]
+                    st['caso']['tema'] = tema_de(o_txt)
+            faltan_variantes = bool(o_txt) and bool(st['caso']) and st['caso'].get('tipo') != 'accion' and len(st['caso'].get('variantes') or []) < 3
+            if not (c and c.get('base') == base and (st['conclusion'] or not o_txt) and (not o_txt or st['caso'])) or faltan_variantes:
                 pending['casos'].append({'asesor': name, 'stage': k, 'base': base, 'pct': p, 'fortaleza': f_txt or '', 'oportunidad': o_txt or '',
-                                         'evidencia': evid, 'necesita': 'conclusion+caso' if o_txt else 'conclusion'})
+                                         'evidencia': evid, 'tema': tema_de(o_txt),
+                                         'necesita': ('variantes' if faltan_variantes and st['conclusion'] else ('conclusion+caso' if o_txt else 'conclusion'))})
         stages[k] = st
 
     # checklist de calidad: ventana de las últimas N llamadas evaluadas; manual (Sheet) manda sobre la lectura

@@ -105,27 +105,92 @@
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Juan, te detallo el pago inicial concepto por concepto: matrícula S/250, la primera pensión S/560, además del seguro y los demás conceptos del ingreso. Lo ves completo en el mensaje que te envío. ¿Va claro?"
+    "texto": "Juan, te comento la inversión. Las cuotas normalmente son de S/560, pero solo por ahora tienes 10 % de descuento: te quedan en S/504. ¿Vamos bien hasta ahí?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, pero el total me parece más de lo que pensé."
+    "texto": "Ya, pero me dijeron que la primera era más."
    },
    {
     "quien": "asesor",
-    "texto": "Por eso lo separo, Juan, para que veas qué incluye cada parte. Y antes de hablarte de descuentos, confirmo que estén vigentes, porque no quiero darte información desactualizada. ¿Te parece?"
+    "texto": "Exacto, solo la primera es un poco mayor: S/876 normalmente, porque incluye matrícula S/250, seguro S/36 y examen médico S/30. Con el 100 % en matrícula y el 10 % en cuotas pagarías S/570, y eso recién 24 horas después de tu admisión."
    },
    {
     "quien": "cliente",
-    "texto": "Sí, confírmalo."
+    "texto": "¿Y la admisión cuánto es?"
    },
    {
     "quien": "asesor",
-    "texto": "Listo, lo valido hoy y te escribo. También recuerda que la evaluación de ingreso no es un examen de conocimientos, es virtual y con cámara. ¿Te llamo mañana a las 11:00 a. m. con todo confirmado?"
+    "texto": "S/200, pero si iniciamos hoy tienes 50 %: solo S/100. Además entras a Nexus para adelantar cursos y tienes un Taller de Excel certificado de regalo. ¿Iniciamos tu admisión hoy?"
    }
   ],
-  "speech": "Juan, te detallo el pago inicial concepto por concepto: matrícula S/250, la primera pensión S/560, además del seguro y los demás conceptos del ingreso. Lo ves completo en el mensaje que te envío. ¿Va claro?\n\nPor eso lo separo, Juan, para que veas qué incluye cada parte. Y antes de hablarte de descuentos, confirmo que estén vigentes, porque no quiero darte información desactualizada. ¿Te parece?\n\nListo, lo valido hoy y te escribo. También recuerda que la evaluación de ingreso no es un examen de conocimientos, es virtual y con cámara. ¿Te llamo mañana a las 11:00 a. m. con todo confirmado?",
-  "porQue": "Desglosar la inversión por partes con cierres parciales evita dudas de pago y da seguridad al prospecto."
+  "speech": "Juan, te comento la inversión. Las cuotas normalmente son de S/560, pero solo por ahora tienes 10 % de descuento: te quedan en S/504. ¿Vamos bien hasta ahí?\n\nExacto, solo la primera es un poco mayor: S/876 normalmente, porque incluye matrícula S/250, seguro S/36 y examen médico S/30. Con el 100 % en matrícula y el 10 % en cuotas pagarías S/570, y eso recién 24 horas después de tu admisión.\n\nS/200, pero si iniciamos hoy tienes 50 %: solo S/100. Además entras a Nexus para adelantar cursos y tienes un Taller de Excel certificado de regalo. ¿Iniciamos tu admisión hoy?",
+  "porQue": "Desglosa la primera cuota concepto por concepto (matrícula, seguro, examen) y cierra cada bloque con una validación, que es justo lo que faltó en tu llamada.",
+  "titulo": "De las cuotas hacia arriba",
+  "variantes": [
+   {
+    "titulo": "Paso a paso, en orden de pago",
+    "dialogo": [
+     {
+      "quien": "cliente",
+      "texto": "¿Qué tendría que pagar primero?"
+     },
+     {
+      "quien": "asesor",
+      "texto": "El primer paso es la admisión, Juan: vale S/200, pero con el beneficio de hoy abonas S/100 y ya tienes tu vacante. ¿Te hace sentido?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Sí. ¿Y después?"
+     },
+     {
+      "quien": "asesor",
+      "texto": "El ciclo son 5 cuotas. La primera la das 24 horas después de la admisión: normalmente S/876 porque incluye matrícula S/250, seguro S/36 y examen médico S/30; con la campaña pagas S/570 y quedas matriculado."
+     },
+     {
+      "quien": "cliente",
+      "texto": "¿Y las otras cuotas?"
+     },
+     {
+      "quien": "asesor",
+      "texto": "Recién en abril, mayo, junio y julio, de S/504 en lugar de S/560. Mientras tanto adelantas cursos con Nexus sin costo. ¿Agendamos tu admisión para hoy o mañana?"
+     }
+    ],
+    "speech": "El primer paso es la admisión, Juan: vale S/200, pero con el beneficio de hoy abonas S/100 y ya tienes tu vacante. ¿Te hace sentido?\n\nEl ciclo son 5 cuotas. La primera la das 24 horas después de la admisión: normalmente S/876 porque incluye matrícula S/250, seguro S/36 y examen médico S/30; con la campaña pagas S/570 y quedas matriculado.\n\nRecién en abril, mayo, junio y julio, de S/504 en lugar de S/560. Mientras tanto adelantas cursos con Nexus sin costo. ¿Agendamos tu admisión para hoy o mañana?",
+    "porQue": "Sigue el orden real en que Juan va a pagar: admisión, primera cuota desglosada y recién las demás en abril, así nada lo sorprende."
+   },
+   {
+    "titulo": "Primero el valor, luego el número",
+    "dialogo": [
+     {
+      "quien": "cliente",
+      "texto": "Está un poco más de lo que pensaba, lo voy a pensar."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Te entiendo, Juan, es una decisión importante. Déjame mostrártelo con números reales y tú decides: hoy la campaña te cubre el 100 % de la matrícula y el 50 % de la admisión, son S/350 que no pagas."
+     },
+     {
+      "quien": "cliente",
+      "texto": "¿Y eso hasta cuándo dura?"
+     },
+     {
+      "quien": "asesor",
+      "texto": "Lo confirmo contigo ahora mismo para darte la fecha exacta; lo que sí es seguro es que el 10 % en cuotas te acompaña toda la carrera. Para empezar solo necesitas S/100 de admisión; la primera cuota de S/570 la das 24 horas después."
+     },
+     {
+      "quien": "cliente",
+      "texto": "¿Y si no me va bien en la evaluación?"
+     },
+     {
+      "quien": "asesor",
+      "texto": "Tranquilo: la evaluación de ingreso no es de conocimientos, es virtual con cámara y te acompaño en el proceso. ¿Aseguramos hoy tu admisión con los S/100 y mañana a las 11 revisamos juntos el primer pago?"
+     }
+    ],
+    "speech": "Te entiendo, Juan, es una decisión importante. Déjame mostrártelo con números reales y tú decides: hoy la campaña te cubre el 100 % de la matrícula y el 50 % de la admisión, son S/350 que no pagas.\n\nLo confirmo contigo ahora mismo para darte la fecha exacta; lo que sí es seguro es que el 10 % en cuotas te acompaña toda la carrera. Para empezar solo necesitas S/100 de admisión; la primera cuota de S/570 la das 24 horas después.\n\nTranquilo: la evaluación de ingreso no es de conocimientos, es virtual con cámara y te acompaño en el proceso. ¿Aseguramos hoy tu admisión con los S/100 y mañana a las 11 revisamos juntos el primer pago?",
+    "porQue": "Ante el «lo voy a pensar», muestra primero lo que se ahorra, confirma la vigencia de la campaña antes de prometerla y deja un cierre con fecha."
+   }
+  ]
  },
  "Milagros Torres Santos|paso2": {
   "stage": "paso2",
