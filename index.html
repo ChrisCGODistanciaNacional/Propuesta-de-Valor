@@ -1109,7 +1109,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-11-02T14:49:54.000Z";
+  const DATA_VERSION = "2026-11-02T14:57:32.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1714,7 +1714,8 @@
     const url = (db.config && db.config.sheets_api_url) ? db.config.sheets_api_url.trim() : '';
     const source = url || './data.json';
     try {
-      const resp = await fetch((force && !url) ? source + '?v=' + Date.now() : source, { cache: force ? 'no-store' : 'default' });
+      // data.json siempre fresco: GitHub Pages lo cachea 10 min y el navegador podía mostrar una copia vieja
+      const resp = await fetch(url ? source : source + '?v=' + Date.now(), { cache: 'no-store' });
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
       const json = await resp.json();
       sheetDataCache = {
@@ -2054,7 +2055,9 @@
       const tabs = total > 1 ? `<div class="caso-opciones no-img" role="tablist" aria-label="Formas de llevar esta situación">
           ${variantesDe(caso).map((x, j) => `<button type="button" role="tab" class="caso-opcion ${j === i ? 'active' : ''}" aria-selected="${j === i}" onclick="elegirOpcionCaso('${caso.base}', ${j})"><b>Opción ${j + 1}</b>${x.titulo ? `<span>${escapeHtmlPreserveNL(x.titulo)}</span>` : ''}</button>`).join('')}
         </div>` : '';
-      const intro = total > 1
+      const intro = caso.generico
+        ? `Calidad no detalló esta etapa en tu última llamada, así que te mostramos la <b>situación más frecuente</b> en este paso y cómo llevarla con la técnica <b>${tec.titulo}</b>. Elige una de las ${total} formas:`
+        : total > 1
         ? `Para tu caso, con la técnica <b>${tec.titulo}</b> podrías resolver mejor la situación. Elige una de las ${total} formas de llevarla${caso.tema === 'inversion' ? ' (con el guion de inversión del equipo)' : ''}:`
         : `Para tu caso, con la técnica <b>${tec.titulo}</b> podrías resolver mejor la situación. Ejemplo:`;
       const porQue = v.porQue || caso.porQue;
@@ -2431,6 +2434,13 @@
     } else if (st && st.rol === 'oportunidad' && st.texto) {
       const tec = tecnicaForStage(stageKey, st);
       feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Tu oportunidad de mejora</div>${observacionHTML(st)}
+        ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div>` : ''}
+      </div>`;
+    } else if (st && st.rol === 'generico' && st.caso) {
+      // Etapa baja sin observación escrita de calidad: situación frecuente de este paso, con 3 formas de llevarla
+      const tec = tecnicaForStage(stageKey, st);
+      feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Situación frecuente en esta etapa</div>
+        <div class="obs-conclusion"><b>Lo que suele pasar:</b> ${escapeHtmlPreserveNL(st.conclusion || '')}</div>
         ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div>` : ''}
       </div>`;
     } else if (pct === null || pct === undefined) {

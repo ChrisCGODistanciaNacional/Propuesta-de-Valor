@@ -1,0 +1,173 @@
+{
+ "_nota": "Situaciones frecuentes por etapa. Se muestran cuando el asesor tiene la etapa por debajo de 75 % y calidad no dejó una observación escrita. Misma forma que casos_cache: opción 1 en dialogo/speech/porQue/titulo, las otras dos en variantes.",
+ "paso1": {
+  "tecId": "tec_05",
+  "titulo": "Presentarte y usar su nombre",
+  "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es no presentarse con nombre y universidad desde el inicio y no usar el nombre del prospecto.",
+  "dialogo": [
+   {"quien": "cliente", "texto": "¿Aló? ¿Quién habla?"},
+   {"quien": "asesor", "texto": "Hola, buenas tardes, ¿hablo con [nombre]? Soy [tu nombre], de la Universidad Continental. Te escribo porque dejaste tu interés en estudiar a distancia. ¿Tienes dos minutos?"},
+   {"quien": "cliente", "texto": "Ah, sí, pero estoy en el trabajo."},
+   {"quien": "asesor", "texto": "Tranquilo, [nombre], voy al grano y si prefieres te llamo a la hora que me digas. Solo quiero entender qué buscas para orientarte bien. ¿Te parece?"},
+   {"quien": "cliente", "texto": "Ya, dime."},
+   {"quien": "asesor", "texto": "Perfecto. Cuéntame, [nombre], ¿qué carrera te interesa y qué te animó a buscar la modalidad a distancia?"}
+  ],
+  "speech": "Hola, buenas tardes, ¿hablo con [nombre]? Soy [tu nombre], de la Universidad Continental. Te escribo porque dejaste tu interés en estudiar a distancia. ¿Tienes dos minutos?\n\nTranquilo, [nombre], voy al grano y si prefieres te llamo a la hora que me digas. Solo quiero entender qué buscas para orientarte bien. ¿Te parece?\n\nPerfecto. Cuéntame, [nombre], ¿qué carrera te interesa y qué te animó a buscar la modalidad a distancia?",
+  "porQue": "Nombre propio + universidad en la primera frase y el nombre del prospecto en cada bloque: así sabe con quién habla y la llamada deja de sentirse como una más.",
+  "variantes": [
+   {
+    "titulo": "Cuando ya te conoce por WhatsApp",
+    "dialogo": [
+     {"quien": "asesor", "texto": "[nombre], hola, soy [tu nombre] de la Universidad Continental, la persona que te escribió por WhatsApp. Te llamo para resolver tus dudas en vivo, ¿te acomoda ahora?"},
+     {"quien": "cliente", "texto": "Sí, ya vi tu mensaje."},
+     {"quien": "asesor", "texto": "Genial. Antes de darte información, cuéntame tú: ¿qué es lo que más te importa resolver hoy, la carrera, el tiempo o la inversión?"},
+     {"quien": "cliente", "texto": "Más que nada la inversión."},
+     {"quien": "asesor", "texto": "Perfecto, [nombre], vamos por ahí. Te lo explico en orden y me vas diciendo si vamos bien, ¿ok?"}
+    ],
+    "speech": "[nombre], hola, soy [tu nombre] de la Universidad Continental, la persona que te escribió por WhatsApp. Te llamo para resolver tus dudas en vivo, ¿te acomoda ahora?\n\nGenial. Antes de darte información, cuéntame tú: ¿qué es lo que más te importa resolver hoy, la carrera, el tiempo o la inversión?\n\nPerfecto, [nombre], vamos por ahí. Te lo explico en orden y me vas diciendo si vamos bien, ¿ok?",
+    "porQue": "Conecta la llamada con el WhatsApp anterior y deja que el prospecto elija el tema: genera confianza sin alargar la presentación."
+   },
+   {
+    "titulo": "Cuando está apurado o desconfiado",
+    "dialogo": [
+     {"quien": "cliente", "texto": "No tengo tiempo, ¿de dónde me llaman?"},
+     {"quien": "asesor", "texto": "Entiendo, [nombre], te robo un minuto. Soy [tu nombre], de la Universidad Continental: tú dejaste tus datos pidiendo información de la carrera a distancia, por eso te llamo."},
+     {"quien": "cliente", "texto": "Ah ya, sí fui yo."},
+     {"quien": "asesor", "texto": "Para no quitarte tiempo: ¿prefieres que te explique ahora en tres minutos o te llamo hoy a la hora que me digas? Tú decides, [nombre]."},
+     {"quien": "cliente", "texto": "Mejor a las 7 de la noche."},
+     {"quien": "asesor", "texto": "Listo, a las 7 te llamo yo, [tu nombre]. Te dejo mi número por WhatsApp para que lo tengas guardado. ¡Hablamos a las 7!"}
+    ],
+    "speech": "Entiendo, [nombre], te robo un minuto. Soy [tu nombre], de la Universidad Continental: tú dejaste tus datos pidiendo información de la carrera a distancia, por eso te llamo.\n\nPara no quitarte tiempo: ¿prefieres que te explique ahora en tres minutos o te llamo hoy a la hora que me digas? Tú decides, [nombre].\n\nListo, a las 7 te llamo yo, [tu nombre]. Te dejo mi número por WhatsApp para que lo tengas guardado. ¡Hablamos a las 7!",
+    "porQue": "Ante el rechazo inicial, te identificas, le recuerdas que él pidió la información y le das el control del horario: la confianza se gana sin presionar."
+   }
+  ]
+ },
+ "paso2": {
+  "tecId": "tec_09",
+  "titulo": "Preguntar antes de informar",
+  "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es dar toda la información sin preguntar primero qué busca el prospecto, si trabaja, cuánto tiempo tiene y qué lo frena.",
+  "dialogo": [
+   {"quien": "asesor", "texto": "[nombre], antes de contarte de la carrera quiero entender tu situación. ¿Actualmente trabajas? ¿En qué horario?"},
+   {"quien": "cliente", "texto": "Sí, trabajo de lunes a sábado, hasta las 6."},
+   {"quien": "asesor", "texto": "Perfecto, eso me ayuda. ¿Y qué te gustaría lograr estudiando esta carrera: ascender donde estás, cambiar de trabajo o tener tu propio negocio?"},
+   {"quien": "cliente", "texto": "Ascender, en mi empresa piden título."},
+   {"quien": "asesor", "texto": "Entonces lo que necesitas es avanzar sin dejar de trabajar y con un título reconocido. ¿Hay algo que te frene hoy para empezar: el tiempo, la inversión o el proceso?"},
+   {"quien": "cliente", "texto": "Más que nada el tiempo."},
+   {"quien": "asesor", "texto": "Listo, [nombre], entonces te voy a explicar la modalidad pensando en tu horario de trabajo. ¿Vamos?"}
+  ],
+  "speech": "[nombre], antes de contarte de la carrera quiero entender tu situación. ¿Actualmente trabajas? ¿En qué horario?\n\nPerfecto, eso me ayuda. ¿Y qué te gustaría lograr estudiando esta carrera: ascender donde estás, cambiar de trabajo o tener tu propio negocio?\n\nEntonces lo que necesitas es avanzar sin dejar de trabajar y con un título reconocido. ¿Hay algo que te frene hoy para empezar: el tiempo, la inversión o el proceso?\n\nListo, [nombre], entonces te voy a explicar la modalidad pensando en tu horario de trabajo. ¿Vamos?",
+  "porQue": "Tres preguntas cortas (trabajo, meta, freno) antes de informar: todo lo que digas después se ajusta a lo que él quiere, no a un libreto.",
+  "variantes": [
+   {
+    "titulo": "Cuando ya estudió antes",
+    "dialogo": [
+     {"quien": "cliente", "texto": "Yo estudié dos años en un instituto pero lo dejé."},
+     {"quien": "asesor", "texto": "Qué bueno que me lo cuentes, [nombre]. ¿Qué estudiaste y por qué lo dejaste? Así veo cómo aprovechar lo que ya avanzaste."},
+     {"quien": "cliente", "texto": "Computación, lo dejé por trabajo y plata."},
+     {"quien": "asesor", "texto": "Entiendo. Hoy, ¿qué cambió? ¿Tienes más estabilidad para retomar o sigue siendo el tiempo lo que más pesa?"},
+     {"quien": "cliente", "texto": "Ahora tengo trabajo estable, pero poco tiempo."},
+     {"quien": "asesor", "texto": "Perfecto, entonces te conviene una modalidad que respete tu horario y que evalúe convalidar tus cursos. ¿Te explico cómo funciona la convalidación y la modalidad?"}
+    ],
+    "speech": "Qué bueno que me lo cuentes, [nombre]. ¿Qué estudiaste y por qué lo dejaste? Así veo cómo aprovechar lo que ya avanzaste.\n\nEntiendo. Hoy, ¿qué cambió? ¿Tienes más estabilidad para retomar o sigue siendo el tiempo lo que más pesa?\n\nPerfecto, entonces te conviene una modalidad que respete tu horario y que evalúe convalidar tus cursos. ¿Te explico cómo funciona la convalidación y la modalidad?",
+    "porQue": "Sondea el estudio previo y el motivo de abandono sin prometer convalidaciones: la propuesta sale de su historia, no de supuestos."
+   },
+   {
+    "titulo": "Cuando solo pregunta el precio",
+    "dialogo": [
+     {"quien": "cliente", "texto": "Solo dime cuánto cuesta."},
+     {"quien": "asesor", "texto": "Claro, [nombre], te lo digo con cifras exactas. Solo una pregunta para darte el monto correcto: ¿es para ti y cuál carrera estás viendo?"},
+     {"quien": "cliente", "texto": "Para mí, Administración."},
+     {"quien": "asesor", "texto": "Perfecto. ¿Y hoy trabajas? Te lo pregunto porque la modalidad y los beneficios cambian según tu disponibilidad, y no quiero darte un número que no te sirva."},
+     {"quien": "cliente", "texto": "Sí, trabajo todo el día."},
+     {"quien": "asesor", "texto": "Entonces vas a poder estudiar sin dejar tu trabajo. Ahora sí, te explico la inversión completa, paso a paso. ¿Vamos?"}
+    ],
+    "speech": "Claro, [nombre], te lo digo con cifras exactas. Solo una pregunta para darte el monto correcto: ¿es para ti y cuál carrera estás viendo?\n\nPerfecto. ¿Y hoy trabajas? Te lo pregunto porque la modalidad y los beneficios cambian según tu disponibilidad, y no quiero darte un número que no te sirva.\n\nEntonces vas a poder estudiar sin dejar tu trabajo. Ahora sí, te explico la inversión completa, paso a paso. ¿Vamos?",
+    "porQue": "No esquiva el precio: lo promete y gana dos preguntas clave (carrera y trabajo) explicando por qué las necesita para darle el monto correcto."
+   }
+  ]
+ },
+ "paso3": {
+  "tecId": "tec_10",
+  "titulo": "De las cuotas hacia arriba",
+  "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es explicar la inversión de corrido, sin desglosar la primera cuota ni validar que el prospecto va entendiendo.",
+  "dialogo": [
+   {"quien": "asesor", "texto": "[nombre], te comento la inversión. Las cuotas mensuales normalmente son de S/560, pero solo por ahora tienes 10 % de descuento: te quedan en S/504. ¿Vamos bien hasta ahí?"},
+   {"quien": "cliente", "texto": "Ya, ¿y la primera cuota es igual?"},
+   {"quien": "asesor", "texto": "Solo la primera es un poco mayor: S/876 normalmente, porque incluye matrícula S/250, seguro S/36 y examen médico S/30. Con el 100 % en matrícula y el 10 % en cuotas pagarías S/570, y eso 24 horas después de tu admisión."},
+   {"quien": "cliente", "texto": "¿Y la admisión?"},
+   {"quien": "asesor", "texto": "S/200, pero si iniciamos hoy tienes 50 %: solo S/100. Además entras a Nexus para adelantar cursos y tienes un Taller de Excel certificado de regalo. ¿Iniciamos tu admisión hoy?"}
+  ],
+  "speech": "[nombre], te comento la inversión. Las cuotas mensuales normalmente son de S/560, pero solo por ahora tienes 10 % de descuento: te quedan en S/504. ¿Vamos bien hasta ahí?\n\nSolo la primera es un poco mayor: S/876 normalmente, porque incluye matrícula S/250, seguro S/36 y examen médico S/30. Con el 100 % en matrícula y el 10 % en cuotas pagarías S/570, y eso 24 horas después de tu admisión.\n\nS/200, pero si iniciamos hoy tienes 50 %: solo S/100. Además entras a Nexus para adelantar cursos y tienes un Taller de Excel certificado de regalo. ¿Iniciamos tu admisión hoy?",
+  "porQue": "Primera cuota desglosada concepto por concepto y una validación corta por bloque: el prospecto entiende qué paga y por qué (cifras de Administración; cambia por las de su carrera).",
+  "variantes": [
+   {
+    "titulo": "Paso a paso, en orden de pago",
+    "dialogo": [
+     {"quien": "cliente", "texto": "¿Qué tendría que pagar primero?"},
+     {"quien": "asesor", "texto": "El primer paso es la admisión, [nombre]: vale S/200, pero con el beneficio de hoy abonas S/100 y ya tienes tu vacante. ¿Te hace sentido?"},
+     {"quien": "cliente", "texto": "Sí. ¿Y después?"},
+     {"quien": "asesor", "texto": "El ciclo son 5 cuotas. La primera la das 24 horas después de la admisión: normalmente S/876 porque incluye matrícula, seguro y examen médico; con la campaña pagas S/570 y quedas matriculado."},
+     {"quien": "cliente", "texto": "¿Y las otras cuotas?"},
+     {"quien": "asesor", "texto": "Recién en abril, mayo, junio y julio, de S/504 en lugar de S/560. Mientras tanto adelantas cursos con Nexus sin costo. ¿Agendamos tu admisión para hoy o mañana?"}
+    ],
+    "speech": "El primer paso es la admisión, [nombre]: vale S/200, pero con el beneficio de hoy abonas S/100 y ya tienes tu vacante. ¿Te hace sentido?\n\nEl ciclo son 5 cuotas. La primera la das 24 horas después de la admisión: normalmente S/876 porque incluye matrícula, seguro y examen médico; con la campaña pagas S/570 y quedas matriculado.\n\nRecién en abril, mayo, junio y julio, de S/504 en lugar de S/560. Mientras tanto adelantas cursos con Nexus sin costo. ¿Agendamos tu admisión para hoy o mañana?",
+    "porQue": "Sigue el orden real en que va a pagar: admisión, primera cuota y recién las demás en abril; nada lo sorprende después."
+   },
+   {
+    "titulo": "Primero el valor, luego el número",
+    "dialogo": [
+     {"quien": "cliente", "texto": "Está un poco caro, lo voy a pensar."},
+     {"quien": "asesor", "texto": "Te entiendo, [nombre], es una decisión importante. Déjame mostrártelo con números reales y tú decides: hoy la campaña te cubre el 100 % de la matrícula y el 50 % de la admisión, son S/350 que no pagas."},
+     {"quien": "cliente", "texto": "¿Y eso hasta cuándo dura?"},
+     {"quien": "asesor", "texto": "Lo confirmo contigo ahora mismo para darte la fecha exacta; lo que sí es seguro es que el 10 % en cuotas te acompaña toda la carrera. Para empezar solo necesitas S/100 de admisión."},
+     {"quien": "cliente", "texto": "Ya, ¿y después?"},
+     {"quien": "asesor", "texto": "La primera cuota de S/570 la das 24 horas después y las demás recién desde abril. ¿Aseguramos hoy tu admisión con los S/100 y mañana revisamos juntos el primer pago?"}
+    ],
+    "speech": "Te entiendo, [nombre], es una decisión importante. Déjame mostrártelo con números reales y tú decides: hoy la campaña te cubre el 100 % de la matrícula y el 50 % de la admisión, son S/350 que no pagas.\n\nLo confirmo contigo ahora mismo para darte la fecha exacta; lo que sí es seguro es que el 10 % en cuotas te acompaña toda la carrera. Para empezar solo necesitas S/100 de admisión.\n\nLa primera cuota de S/570 la das 24 horas después y las demás recién desde abril. ¿Aseguramos hoy tu admisión con los S/100 y mañana revisamos juntos el primer pago?",
+    "porQue": "Ante el «lo voy a pensar», muestra primero lo que se ahorra, no promete fechas sin confirmarlas y cierra con un paso pequeño: S/100 hoy."
+   }
+  ]
+ },
+ "paso4": {
+  "tecId": "tec_16",
+  "titulo": "Cerrar con fecha y hora",
+  "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es terminar con un «me avisas» en lugar de un cierre parcial, una fecha y hora concretas y la despedida con tu nombre.",
+  "dialogo": [
+   {"quien": "cliente", "texto": "Ya, lo reviso y te aviso."},
+   {"quien": "asesor", "texto": "Perfecto, [nombre]. Para que no se te pase, dejemos un momento fijo: ¿te llamo mañana a las 11 o prefieres a las 6 de la tarde?"},
+   {"quien": "cliente", "texto": "A las 6 mejor."},
+   {"quien": "asesor", "texto": "Listo, mañana a las 6 te llamo. Te envío por WhatsApp el resumen de la inversión y el paso de admisión para que lo tengas a la mano. ¿Algo más que quieras que te aclare hoy?"},
+   {"quien": "cliente", "texto": "No, así está bien."},
+   {"quien": "asesor", "texto": "Gracias por tu tiempo, [nombre]. Soy [tu nombre], de la Universidad Continental; cualquier duda me escribes. ¡Hablamos mañana a las 6!"}
+  ],
+  "speech": "Perfecto, [nombre]. Para que no se te pase, dejemos un momento fijo: ¿te llamo mañana a las 11 o prefieres a las 6 de la tarde?\n\nListo, mañana a las 6 te llamo. Te envío por WhatsApp el resumen de la inversión y el paso de admisión para que lo tengas a la mano. ¿Algo más que quieras que te aclare hoy?\n\nGracias por tu tiempo, [nombre]. Soy [tu nombre], de la Universidad Continental; cualquier duda me escribes. ¡Hablamos mañana a las 6!",
+  "porQue": "Convierte el «te aviso» en una hora elegida por él, deja material por WhatsApp y se despide con nombre y universidad: el seguimiento queda en tus manos.",
+  "variantes": [
+   {
+    "titulo": "Cierre parcial hacia la admisión",
+    "dialogo": [
+     {"quien": "asesor", "texto": "[nombre], hasta aquí, ¿la carrera y la modalidad te convencen? Dime con sinceridad."},
+     {"quien": "cliente", "texto": "Sí, me gusta, lo que me frena es el tema del pago."},
+     {"quien": "asesor", "texto": "Entonces la decisión ya está tomada, solo falta acomodar el inicio. El primer paso es la admisión con S/100 y la primera cuota recién 24 horas después. ¿Te parece si agendamos tu admisión y lo demás lo armamos sobre la marcha?"},
+     {"quien": "cliente", "texto": "¿Y si no llego a pagar la cuota a tiempo?"},
+     {"quien": "asesor", "texto": "Lo vemos juntos antes de que llegue ese día, [nombre]. ¿Reservamos tu admisión para el jueves a las 10 de la mañana? Te envío el enlace de pago ahora mismo."}
+    ],
+    "speech": "[nombre], hasta aquí, ¿la carrera y la modalidad te convencen? Dime con sinceridad.\n\nEntonces la decisión ya está tomada, solo falta acomodar el inicio. El primer paso es la admisión con S/100 y la primera cuota recién 24 horas después. ¿Te parece si agendamos tu admisión y lo demás lo armamos sobre la marcha?\n\nLo vemos juntos antes de que llegue ese día, [nombre]. ¿Reservamos tu admisión para el jueves a las 10 de la mañana? Te envío el enlace de pago ahora mismo.",
+    "porQue": "Un «sí» pequeño (la carrera le gusta) separa la decisión del pago y lleva al prospecto a agendar la admisión, no a pensarlo."
+   },
+   {
+    "titulo": "Cuando lo consultará con su familia",
+    "dialogo": [
+     {"quien": "cliente", "texto": "Lo converso con mi esposa y te aviso."},
+     {"quien": "asesor", "texto": "Claro, [nombre], es una decisión de los dos. ¿Qué crees que ella va a preguntar primero: la inversión, el tiempo o si el título vale igual?"},
+     {"quien": "cliente", "texto": "Seguro la inversión."},
+     {"quien": "asesor", "texto": "Entonces te envío ahora por WhatsApp el resumen con las cifras exactas y los beneficios de la campaña, para que lo vean juntos. ¿A qué hora conversan hoy?"},
+     {"quien": "cliente", "texto": "En la noche, como a las 9."},
+     {"quien": "asesor", "texto": "Perfecto. Te llamo mañana a las 10 de la mañana para resolver lo que haya quedado, y si ella quiere, la sumamos a la llamada. ¡Gracias, [nombre], soy [tu nombre], hablamos mañana!"}
+    ],
+    "speech": "Claro, [nombre], es una decisión de los dos. ¿Qué crees que ella va a preguntar primero: la inversión, el tiempo o si el título vale igual?\n\nEntonces te envío ahora por WhatsApp el resumen con las cifras exactas y los beneficios de la campaña, para que lo vean juntos. ¿A qué hora conversan hoy?\n\nPerfecto. Te llamo mañana a las 10 de la mañana para resolver lo que haya quedado, y si ella quiere, la sumamos a la llamada. ¡Gracias, [nombre], soy [tu nombre], hablamos mañana!",
+    "porQue": "Respeta la consulta familiar, le da el material para esa conversación y fija la hora del siguiente contacto antes de colgar."
+   }
+  ]
+ }
+}

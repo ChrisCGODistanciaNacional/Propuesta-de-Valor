@@ -781,6 +781,21 @@ def row_base(name, row):
 
 # ----------------------------------------------------------------------------- cachés de Claude
 casos_cache = load_json(os.path.join(SYNC, 'casos_cache.json'), {})
+# Situaciones frecuentes por etapa: se usan cuando la etapa está baja (< 75 %) y calidad no escribió nada de ella
+CASOS_GENERICOS = load_json(os.path.join(SYNC, 'casos_genericos.json'), {}) or {}
+UMBRAL_GENERICO = 75
+
+def caso_generico(k):
+    g = CASOS_GENERICOS.get(k)
+    if not isinstance(g, dict) or not g.get('speech'):
+        return None
+    def arma(v):
+        d = leer_dialogo(v.get('dialogo'))
+        return {'titulo': str(v.get('titulo', '') or ''), 'dialogo': d, 'texto': '\n\n'.join(t['texto'] for t in d if t['quien'] == 'asesor') if d else str(v.get('speech', '')), 'porQue': str(v.get('porQue', '') or '')}
+    principal = arma(g)
+    variantes = [arma(v) for v in (g.get('variantes') or []) if isinstance(v, dict)][:2]
+    return {'tipo': 'speech', 'texto': principal['texto'], 'porQue': principal['porQue'], 'base': 'generico-' + k, 'dialogo': principal['dialogo'],
+            'variantes': [principal] + variantes, 'tema': None, 'generico': True}
 check_cache = load_json(os.path.join(SYNC, 'checklist_cache.json'), {})
 pending = {'casos': [], 'checklist': []}
 
@@ -914,6 +929,16 @@ for name, lst in hist.items():
                     principal = {'titulo': str(c.get('titulo', '') or '').strip() or 'Opción 1', 'dialogo': dialogo, 'texto': st['caso']['texto'], 'porQue': st['caso']['porQue']}
                     st['caso']['variantes'] = [principal] + variantes[:2]
                     st['caso']['tema'] = tema_de(o_txt)
+        elif p is not None and p < UMBRAL_GENERICO and not f_txt:
+            # Etapa baja sin observación de calidad: situación frecuente de esa etapa, con sus 3 opciones
+            g = caso_generico(k)
+            if g:
+                st['caso'] = g
+                st['conclusion'] = str(CASOS_GENERICOS[k].get('conclusion', '') or '') or None
+                st['rol'] = 'generico'
+                tec = TEC_BY_ID.get(CASOS_GENERICOS[k].get('tecId'))
+                st['tecnica'] = ({'id': tec['id'], 'titulo': tec['titulo'], 'ejemplo': (tec.get('ejemplos') or [None])[0]} if tec else None)
+        if f_txt or o_txt:
             faltan_variantes = bool(o_txt) and bool(st['caso']) and st['caso'].get('tipo') != 'accion' and len(st['caso'].get('variantes') or []) < 3
             if not (c and c.get('base') == base and (st['conclusion'] or not o_txt) and (not o_txt or st['caso'])) or faltan_variantes:
                 pending['casos'].append({'asesor': name, 'stage': k, 'base': base, 'pct': p, 'fortaleza': f_txt or '', 'oportunidad': o_txt or '',
