@@ -1,30 +1,27 @@
 {
- "actualizado": "02/11/2026",
+ "actualizado": "03/11/2026",
  "periodo": {
-  "desde": "27/10/2026",
-  "hasta": "02/11/2026"
+  "desde": "28/10/2026",
+  "hasta": "03/11/2026"
  },
  "base": {
-  "llamadas": 29,
-  "asesores": 15
+  "llamadas": 18,
+  "asesores": 13
  },
- "titular": "Lo que más se repite es cerrar sin día y hora ni encuesta (9.ª semana seguida) y presentarse sin nombre ni Unidad CIE. Aparece fuerte aceptar el «lo voy a pensar» sin indagar y un descuento ofrecido fuera de la división. Lo bueno: seguimientos con hora fija y beneficios guardados hasta saber quién decide.",
+ "titular": "Sigue dominando cerrar sin día y hora ni encuesta (10.ª semana seguida) y presentarse sin nombre ni Unidad CIE. Crece dar información no validada (convalidación, documentos extranjeros, internado) y aceptar la postergación por dinero sin indagar. Lo bueno: seguimientos con hora fija y beneficios guardados hasta saber quién decide.",
  "items": [
   {
    "tipo": "mala_costumbre",
    "titulo": "Cerrar sin día y hora ni derivar a la encuesta",
-   "queVimos": "Se cierra con «te envío la información» o «coordinamos por WhatsApp» sin fijar día y hora, y la despedida termina sin nombre, Unidad CIE ni transferencia a la encuesta de satisfacción.",
-   "veces": "28 llamadas · 15 asesores · 9.ª semana seguida",
+   "queVimos": "La llamada termina con «te envío la información por WhatsApp» o «lo coordinamos» sin fijar día y hora, y la despedida va sin nombre, Unidad CIE ni transferencia a la encuesta de satisfacción.",
+   "veces": "16 llamadas · 12 asesores · 10.ª semana seguida",
    "asesores": [
-    "Ana Maria Padilla Parra",
-    "Anyhela Kelly Ordoñez Chavez",
     "Betsabeth Alexandra Rojas Palacios",
-    "Cecilia Esther Aliaga Lapa",
     "Diana Carol Taipe Rojas",
-    "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
-    "Jimena del Rosario Vera Osores",
+    "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
+    "Lisette Valeria Blanco Chuco",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Nicol Alisson Romero Espinoza",
@@ -32,26 +29,24 @@
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«No dejes el seguimiento abierto con expresiones como “me vas comentando”. Propón una fecha y hora» (02/11); «Completa el protocolo de despedida mencionando tu nombre, la Unidad CIE y realizando la transferencia a la encuesta de satisfacción» (02/11).",
+   "ejemplo": "«Acuerda una fecha y hora específica para el siguiente contacto, evitando dejar el seguimiento abierto» (03/11); «Completa el protocolo de despedida indicando tu nombre, la Unidad CIE y realizando la transferencia a la encuesta de satisfacción» (03/11).",
    "porQueImporta": "Sin día y hora el lead se enfría, y la encuesta omitida resta puntaje de calidad en casi todas las llamadas.",
-   "accion": "Cierre fijo: «Te llamo el [día] a las [hora] para revisar [tema]. Te atendió [nombre], de la Unidad CIE de la Universidad Continental; te transfiero a una breve encuesta».",
+   "accion": "Cierre fijo: «Tu evaluación queda para el [día] a las [hora]. Te atendió [nombre], de la Unidad CIE de la Universidad Continental; guarda mi WhatsApp. Te paso a una breve encuesta».",
    "tecnica": "tec_16"
   },
   {
    "tipo": "mala_costumbre",
    "titulo": "Presentación incompleta y nombre del prospecto poco usado",
-   "queVimos": "La llamada arranca sin nombre del asesor o sin mencionar la Unidad CIE, y el nombre del prospecto casi no se usa o se confunde durante la conversación.",
-   "veces": "27 llamadas · 15 asesores · 4.ª semana seguida",
+   "queVimos": "La llamada arranca sin el nombre del asesor o sin mencionar la Unidad CIE, y el nombre del prospecto se usa poco o se confunde.",
+   "veces": "16 llamadas · 13 asesores · 5.ª semana seguida",
    "asesores": [
-    "Ana Maria Padilla Parra",
-    "Anyhela Kelly Ordoñez Chavez",
     "Betsabeth Alexandra Rojas Palacios",
     "Cecilia Esther Aliaga Lapa",
     "Diana Carol Taipe Rojas",
-    "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
-    "Jimena del Rosario Vera Osores",
+    "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
+    "Lisette Valeria Blanco Chuco",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Nicol Alisson Romero Espinoza",
@@ -59,121 +54,115 @@
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Recuerda iniciar la llamada indicando tu nombre y mencionando que perteneces a la Unidad CIE de Universidad Continental» (02/11); «Durante la conversación la llamaste “Lina” en una oportunidad» (02/11).",
+   "ejemplo": "«Mantén el protocolo de presentación al inicio de la llamada, asegurando que el prospecto identifique claramente tu nombre y la Unidad CIE» (03/11); «durante la conversación lo llamas Yover y al cierre Javier» (28/10).",
    "porQueImporta": "Los primeros segundos definen la confianza: una apertura genérica o un nombre equivocado hacen que el prospecto sienta que es uno más.",
-   "accion": "Apertura fija: «Hola, [nombre], te saluda [tu nombre], asesor de la Unidad CIE de la Universidad Continental» y repite su nombre al menos dos veces y en la despedida.",
+   "accion": "Apertura fija: «Hola, [nombre], te saluda [tu nombre], de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en [carrera], ¿me regalas dos minutos?» y repetir su nombre en la despedida.",
    "tecnica": "tec_12"
   },
   {
-   "tipo": "mala_costumbre",
-   "titulo": "Aceptar el «lo voy a pensar» sin indagar",
-   "queVimos": "Cuando el prospecto dice que lo pensará o lo analizará, la llamada se cierra compartiendo el número o enviando información, sin preguntar qué necesita evaluar.",
-   "veces": "4 llamadas · 4 asesores",
-   "asesores": [
-    "Cecilia Esther Aliaga Lapa",
-    "Diana Carol Taipe Rojas",
-    "Isai Yuliño Mercado Bravo",
-    "Nicol Alisson Romero Espinoza"
-   ],
-   "ejemplo": "«Cuando la prospecto indique que desea pensarlo, evita limitarte a compartir tu número corporativo» (02/11); «Cuando el prospecto manifieste que analizará la propuesta, evita cerrar la conversación sin explorar su decisión» (02/11).",
-   "porQueImporta": "El «lo voy a pensar» casi siempre esconde una objeción concreta; si no se descubre en la llamada, el lead se enfría y la siguiente conversación empieza de cero.",
-   "accion": "Frase modelo: «Claro, es una decisión importante. Para ayudarte, ¿qué te gustaría evaluar: la inversión, los horarios, la convalidación o el proceso?» y resolver esa duda antes de proponer la evaluación con fecha.",
-   "tecnica": "tec_14"
-  },
-  {
    "tipo": "mala_practica",
-   "titulo": "Descuento como argumento o fuera de la división",
-   "queVimos": "El descuento se ofrece de entrada en lugar de indagar qué frena la decisión, y en un caso se ofreció un porcentaje que es exclusivo de otra división.",
-   "veces": "14 llamadas · 9 asesores · 5.ª semana seguida",
+   "titulo": "Dar información no validada",
+   "queVimos": "Se anticipan resultados de convalidación, plazos de trámites, condiciones de internado o licenciamiento, y en los estudios del extranjero se dan indicaciones sobre apostillas o validaciones sin confirmar con el área.",
+   "veces": "8 llamadas · 8 asesores · 5.ª semana seguida",
    "asesores": [
-    "Ana Maria Padilla Parra",
-    "Anyhela Kelly Ordoñez Chavez",
-    "Diana Carol Taipe Rojas",
-    "Edward Nelson Gonzales Villaneda",
-    "Isai Yuliño Mercado Bravo",
-    "Jimena del Rosario Vera Osores",
+    "Betsabeth Alexandra Rojas Palacios",
+    "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
+    "Lisette Valeria Blanco Chuco",
+    "Melissa Leslie Fernadez Avalos",
+    "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
     "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "ejemplo": "«No debes ofrecer ni utilizar el descuento del 20%, ya que este beneficio es exclusivo de la división de ingresantes» (02/11); «Evita presentar los descuentos como único argumento para conseguir el avance» (02/11).",
-   "porQueImporta": "Ofrecer un beneficio no autorizado genera expectativas que luego no se cumplen y reclamos; y si el descuento es el único argumento, la decisión se reduce a precio.",
-   "accion": "Antes de hablar de beneficios, valida campaña y división; desglosa la inversión con el guion (admisión, primera cuota, cuotas desde abril) y usa el descuento solo después de preguntar «¿qué parte te pesa más?».",
-   "tecnica": "tec_10"
-  },
-  {
-   "tipo": "mania",
-   "titulo": "Anticipar resultados de convalidación, plazos o títulos",
-   "queVimos": "Antes de revisar documentos se estima cuánto se convalidaría, se ponen límites de antigüedad, se aseguran plazos o duración de la carrera, o se afirma sobre el licenciamiento de otra institución.",
-   "veces": "6 llamadas · 6 asesores · 4.ª semana seguida",
-   "asesores": [
-    "Ana Maria Padilla Parra",
-    "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
-    "Jimena del Rosario Vera Osores",
-    "Nicol Alisson Romero Espinoza",
-    "Raul Aaron Manuel Ipanaque Escobar"
-   ],
-   "ejemplo": "«Aclara que la cantidad definitiva de cursos y ciclos reconocidos estará sujeta a la evaluación académica correspondiente» (02/11); «Evita anticipar que Benedicto podría convalidar aproximadamente un ciclo» (27/10).",
-   "porQueImporta": "Si la evaluación real da otro resultado, el prospecto siente que se le prometió algo falso; y descartar sin validar hace perder matrículas.",
-   "accion": "Frase modelo: «No quiero darte una cifra sin sustento: la convalidación se define evaluando tus sílabos. Envíamelos y te doy el resultado el [día] a las [hora]».",
+   "ejemplo": "«Evita proporcionar información imprecisa sobre apostillas, legalizaciones o validaciones» (03/11); «Evita asegurar plazos de trámites documentarios sin validar las condiciones» (28/10).",
+   "porQueImporta": "Si la realidad sale distinta, el prospecto siente que se le prometió algo falso y se pierde la confianza (y la matrícula).",
+   "accion": "Frase modelo: «No quiero darte un dato a medias: eso lo confirma el área de admisión y te lo envío por escrito. Mientras, avancemos con tu evaluación». Convalidación siempre «por evaluación de sílabos».",
    "tecnica": "tec_08"
   },
   {
    "tipo": "mala_costumbre",
-   "titulo": "Propuesta de valor sin dos diferenciales ligados a la necesidad",
-   "queVimos": "La conversación se centra en costos, descuentos y horarios sin conectar al menos dos diferenciales con la motivación o la situación que contó el prospecto.",
-   "veces": "17 llamadas · 9 asesores · 6.ª semana seguida",
+   "titulo": "Aceptar el «lo pienso» o la postergación por dinero",
+   "queVimos": "Cuando el prospecto dice que lo analizará, que evalúa su presupuesto o que prefiere empezar más adelante por temas económicos, se acepta y se envía información sin preguntar qué necesita organizar.",
+   "veces": "8 llamadas · 7 asesores · 2.ª semana seguida",
    "asesores": [
-    "Ana Maria Padilla Parra",
-    "Anyhela Kelly Ordoñez Chavez",
-    "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
+    "Cecilia Esther Aliaga Lapa",
+    "Diana Carol Taipe Rojas",
     "Isai Yuliño Mercado Bravo",
-    "Jimena del Rosario Vera Osores",
+    "Judith Rocio Vila Incaroca",
+    "Justyn Flores Solano",
+    "Nicol Alisson Romero Espinoza",
+    "Raul Aaron Manuel Ipanaque Escobar"
+   ],
+   "ejemplo": "«Cuando el prospecto manifieste limitaciones económicas o indique que desea postergar su inscripción, no te limites a aceptar su decisión» (03/11); «Profundiza en qué aspecto le impide decidir» (28/10).",
+   "porQueImporta": "Detrás del «lo pienso» hay una objeción concreta; si no se descubre en la llamada, el lead se enfría y la campaña puede cerrar.",
+   "accion": "Frase modelo: «¿Qué necesitas organizar antes de empezar: el pago inicial o las cuotas?» y responder con el guion de inversión (empieza con S/100 de admisión) antes de proponer la evaluación hoy o mañana.",
+   "tecnica": "tec_14"
+  },
+  {
+   "tipo": "mala_practica",
+   "titulo": "Inversión explicada a medias o desordenada",
+   "queVimos": "Se menciona solo el pago promocional o una cifra suelta sin desglosar admisión, primera cuota y cuotas, y en algún caso se comunicaron beneficios de otra división.",
+   "veces": "7 llamadas · 6 asesores · 6.ª semana seguida",
+   "asesores": [
+    "Justyn Flores Solano",
+    "Lisette Valeria Blanco Chuco",
+    "Melissa Leslie Fernadez Avalos",
+    "Orlando Jesus Pintado Sandoval",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Ruth Alexandra Mauricio Verde"
+   ],
+   "ejemplo": "«No te limites a mencionar el pago promocional de S/100; complementa la información con los costos y requisitos» (30/10); «Desarrolla la propuesta económica completa, incluyendo los conceptos de pago» (03/11).",
+   "porQueImporta": "Una cifra sin conceptos genera desconfianza («me dijeron otro monto») y frena la decisión.",
+   "accion": "Usar el guion de inversión: valor normal con sus conceptos, luego el beneficio y el monto final, máximo 3 cifras por turno, y validar campaña y división antes de hablar de descuentos.",
+   "tecnica": "tec_10"
+  },
+  {
+   "tipo": "mala_costumbre",
+   "titulo": "Propuesta de valor sin diferenciales ligados a la necesidad",
+   "queVimos": "La conversación se queda en costos y horarios sin conectar al menos dos diferenciales con la meta o la situación que contó el prospecto.",
+   "veces": "5 llamadas · 4 asesores · 7.ª semana seguida",
+   "asesores": [
+    "Betsabeth Alexandra Rojas Palacios",
     "Justyn Flores Solano",
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Refuerza la propuesta de valor de Psicología mencionando al menos dos diferenciales concretos» (02/11); «evitando que la propuesta se concentre principalmente en descuentos, horarios y beneficios generales» (27/10).",
+   "ejemplo": "«Refuerza la propuesta de valor de Psicología mencionando al menos dos diferenciales concretos» (02/11); «Presenta al menos dos diferenciales de la Universidad Continental vinculados con sus necesidades» (28/10).",
    "porQueImporta": "Sin diferenciales propios la oferta se parece a cualquier otra y la decisión termina en precio.",
-   "accion": "Pregunta «¿qué te gustaría lograr al terminar la carrera?», devuelve la respuesta con sus palabras y une dos diferenciales (clases grabadas, certificaciones progresivas, convalidación por sílabos).",
+   "accion": "Preguntar «¿qué te gustaría lograr al terminar la carrera?», devolverlo con sus palabras y unir dos diferenciales (clases grabadas, certificaciones progresivas, convalidación por sílabos).",
    "tecnica": "tec_09"
   },
   {
    "tipo": "buena_practica",
    "titulo": "Seguimiento con día y hora confirmados",
-   "queVimos": "Se cierra con una cita concreta para retomar la conversación o la evaluación, confirmando día y hora con el prospecto.",
-   "veces": "Edward e Isai (27/10), Melissa (28/10), María Alejandra y Orlando (30/10) · 3.ª semana seguida",
+   "queVimos": "Se cierra con una cita concreta para retomar la conversación o la evaluación, confirmando la hora con el prospecto.",
+   "veces": "María Alejandra y Orlando (30/10) · 4.ª semana seguida",
    "asesores": [
-    "Edward Nelson Gonzales Villaneda",
-    "Isai Yuliño Mercado Bravo",
-    "Melissa Leslie Fernadez Avalos",
     "Maria Alejandra Pino Contreras",
     "Orlando Jesus Pintado Sandoval"
    ],
-   "ejemplo": "«Lograste establecer un compromiso de contacto para el día siguiente a las 11:00 a. m.» (30/10); «compromiso de seguimiento para el martes 3 de noviembre a las 10:00 a. m.» (27/10).",
+   "ejemplo": "«Lograste establecer un compromiso de contacto para el día siguiente a las 11:00 a. m.» (30/10); «acordaste continuar la coordinación por WhatsApp a las 3:30 p. m.» (30/10).",
    "porQueImporta": "Convierte el «te aviso» en un compromiso y asegura la siguiente conversación.",
-   "accion": "Usarlo como modelo en el briefing y sumarle la despedida de protocolo y la encuesta, que fue lo que faltó.",
+   "accion": "Usarlo como modelo en el briefing, apuntando a que la hora acordada sea la de la evaluación, y sumarle la despedida de protocolo y la encuesta.",
    "tecnica": "tec_16"
   },
   {
    "tipo": "buena_practica",
    "titulo": "No ofrecer beneficios antes de conocer quién decide",
    "queVimos": "Se indagó el presupuesto familiar, se identificó que los padres deciden la inversión y no se lanzaron descuentos antes de conocer esa situación.",
-   "veces": "Betsabeth (02/11) · y validar antes de prometer, Betsabeth (30/10)",
+   "veces": "Betsabeth (02/11) · 2.ª semana seguida",
    "asesores": [
     "Betsabeth Alexandra Rojas Palacios"
    ],
    "ejemplo": "«Mostraste criterio comercial al no ofrecer beneficios sin antes conocer la situación económica y la decisión de la familia» (02/11).",
    "porQueImporta": "Es el antídoto del descuento como argumento: primero se entiende quién decide y qué pesa, y el beneficio se guarda para cerrar.",
-   "accion": "Replicarlo y completarlo con una llamada conjunta con quien financia, con día y hora, que fue lo que faltó.",
+   "accion": "Replicarlo y completarlo orientando a quien financia en la misma llamada (altavoz), con la evaluación agendada.",
    "tecnica": "tec_14"
   }
  ],
  "acciones": [
-  "Toda llamada termina con día + hora + qué haremos, despedida con nombre y Unidad CIE y transferencia a la encuesta.",
-  "Ante «lo voy a pensar», preguntar qué necesita evaluar (inversión, horarios, convalidación, proceso) y resolverlo antes de proponer la evaluación con fecha.",
-  "Validar campaña y división antes de mencionar cualquier descuento, y desglosar la inversión con el guion; el beneficio va después de indagar."
+  "Toda llamada termina con la evaluación agendada (día y hora), despedida con nombre y Unidad CIE y transferencia a la encuesta.",
+  "Ante «lo pienso» o «mejor más adelante», preguntar qué necesita organizar y responder con el guion de inversión antes de proponer la evaluación hoy o mañana.",
+  "Nada sin validar: convalidación por sílabos, documentos extranjeros e internado se confirman con el área y se envían por escrito."
  ]
 }

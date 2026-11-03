@@ -11698,5 +11698,161 @@
     "evidencia": "Procura establecer un compromiso de seguimiento validando su disponibilidad"
    }
   }
+ },
+ "720fa5bf89a7": {
+  "asesor": "Judith Rocio Vila Incaroca",
+  "fecha": "03/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Mantén el protocolo de presentación con tu nombre y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Mantén el uso del nombre del prospecto durante la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Validaste su interés en Psicología e identificaste su intención de iniciar en marzo"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Ante limitaciones económicas o postergación, explora su situación en vez de aceptarla"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece el manejo consultivo de objeciones económicas"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el cierre mencionando tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda fecha y hora específica, evitando dejar el seguimiento abierto"
+   }
+  }
+ },
+ "d1397f2cf5c7": {
+  "asesor": "Lisette Valeria Blanco Chuco",
+  "fecha": "03/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar la llamada con tu nombre y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Validaste su interés en Psicología a distancia y su intención de postular en febrero"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste que necesita modalidad virtual por sus responsabilidades laborales"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas respecto a Psicología"
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "No te limites a confirmar que iniciará en marzo; explora su situación económica"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Trabaja una alternativa ante su limitación económica en vez de solo enviar información"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa la despedida indicando tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece fecha y hora específica para retomar la comunicación"
+   }
+  }
  }
 }
