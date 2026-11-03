@@ -18,6 +18,24 @@ prospecto en la llamada evaluada y a la carrera que se mencione (si no se mencio
 Los montos de otras carreras salen de la Biblioteca de Mensajes (escala Z, crédito × créditos ÷ 5 cuotas).
 Nunca inventar cifras ni beneficios: solo los vigentes en la Biblioteca.
 
+## Cómo explicar la primera cuota (Christopher, 03/11/2026): normal → conceptos → con beneficio
+
+La primera cuota se paga 24 horas después de la evaluación de admisión y es la única distinta, porque junta
+cuatro conceptos: **pago por créditos** (4 créditos), **matrícula** (S/250), **seguro contra accidentes** (S/36) y
+**examen médico** (S/30). Se dice primero el valor normal con sus conceptos, luego el beneficio y el monto final:
+
+> "Tu primera cuota normalmente es S/876: trae tus 4 créditos del ciclo (S/560), la matrícula de S/250, el seguro
+> (S/36) y el examen médico (S/30). Hoy tienes 100 % de descuento en la matrícula del primer ciclo y 10 % en
+> cuotas para toda tu carrera, así que en lugar de S/876 abonas S/570. De tu segunda cuota en adelante, recién en
+> abril, normalmente serían S/560, pero con el 10 % pagas S/504."
+
+- El **10 % en cuotas aplica desde el primer pago que hace después de la evaluación**, sobre el concepto
+  "pago por créditos", y sigue toda la carrera. Nunca decir "desde abril con 10 % menos" como si la primera cuota
+  no lo tuviera.
+- Ejemplo Psicología (plan 2024, crédito S/158 × 20 créditos): cuota S/632 → S/568.80; primera cuota S/948 →
+  S/634.80; cuotas 2.ª a 5.ª S/632 → S/568.80; ahorro del ciclo S/566 (más S/100 de admisión).
+- Los montos de cada carrera salen de la Biblioteca (escala Z). Si la carrera no se conoce, Administración.
+
 ## Ganchos para motivar (decirlos como regalo, no como condición)
 - **Nexus**: adelantar cursos antes de marzo, sin costo adicional ("llegas a clases con ventaja").
 - **Taller de Excel certificado**: de regalo al matricularse.
@@ -59,7 +77,7 @@ Nunca inventar cifras ni beneficios: solo los vigentes en la Biblioteca.
 
 ## Reglas de estilo para las 3 opciones
 - Cada intervención del asesor: 2 o 3 frases cortas (máx. ~45 palabras), nunca un monólogo con todas las cifras.
-- Cerrar cada bloque con una validación corta: "¿vamos bien?", "¿te hace sentido?", "¿hasta ahí claro?".
+- Cerrar cada bloque con una validación corta y VARIADA: "¿vamos bien?", "¿hasta ahí claro?", "¿cómo lo ves?", "¿te sirve así?". No repetir "¿te hace sentido?" ni el ahorro de S/530 en cada turno: se combinan con otros motivadores (su meta, Nexus, certificaciones progresivas, empezar este ciclo) según `guion_conversaciones.md`.
 - El cliente responde como cliente real: pregunta el monto, duda, pone una excusa, pide tiempo.
 - Español peruano natural, de "tú", con el nombre del prospecto si la observación lo trae.
 - Terminar siempre con un cierre EN LA MISMA LLAMADA hacia la evaluación de admisión: "¿qué fecha podrías rendirla con normalidad, hoy o mañana, y accedes al beneficio?" (virtual, desde computadora o laptop con cámara). Nunca «te llamo mañana».

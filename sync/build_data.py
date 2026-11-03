@@ -797,7 +797,7 @@ def caso_generico(k):
     return {'tipo': 'speech', 'texto': principal['texto'], 'porQue': principal['porQue'], 'base': 'generico-' + k, 'dialogo': principal['dialogo'],
             'variantes': [principal] + variantes, 'tema': None, 'generico': True}
 check_cache = load_json(os.path.join(SYNC, 'checklist_cache.json'), {})
-pending = {'casos': [], 'checklist': []}
+pending = {'LEER_PRIMERO': 'Antes de escribir cualquier conversacion de ejemplo (dialogo/speech/variantes) lee con Read sync/guion_conversaciones.md (doctrina de fondo y forma de Christopher, 03/11/2026; manda sobre el prompt) y, si tema=inversion, sync/guion_inversion.md. Reglas clave: se resuelve en la misma llamada (nunca "ahora o mas tarde" ni otra llamada); inicio corto con el nombre del asesor en la primera frase; paso 1-3 nunca se despide ni nombra la encuesta y cada etapa termina con la pregunta que abre la siguiente; motivadores variados ademas del descuento; la inversion con conceptos y el 10% desde la primera cuota.', 'casos': [], 'checklist': []}
 
 # Observaciones sobre la inversión (precio, cuotas, desglose, objeción económica): las 3 opciones del
 # ejemplo se arman con el guion del supervisor (sync/guion_inversion.md).
@@ -1154,6 +1154,7 @@ if FILAS_VACIAS:
 for a in ALERTAS_DATOS:
     print(f'⚠️ 🔰FEEDBACK {a["asesor"]} {a["fecha"] or "(sin fecha)"}: {a["mensaje"]}')
 print(f'PENDIENTES: casos={len(pending["casos"])} checklist={len(pending["checklist"])}  (ver sync/pending.json)')
+if pending['casos']: print('⚠️ Antes de escribir los casos pendientes lee sync/guion_conversaciones.md (y sync/guion_inversion.md si tema=inversion).')
 if DRY:
     print('(modo --dry: data.json no se escribió)')
 else:

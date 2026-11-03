@@ -82,6 +82,17 @@ Toda etapa con texto necesita `conclusion`; `tecId/porQue/dialogo/speech` solo c
 
 ## Conversaciones de ejemplo (casos_cache.json, casos_genericos.json, guion_inversion.md)
 
+- **`sync/guion_conversaciones.md` es la doctrina de fondo y forma (Christopher, 03/11/2026) y manda sobre cualquier
+  otra regla**: todo se resuelve en la misma llamada (nunca «¿ahora o más tarde?», «te llamo después» ni agendar otra
+  llamada, ni con una segunda persona); el inicio es corto con el nombre del asesor en la primera frase y una pregunta
+  puente; en paso 1, 2 y 3 nunca se despide, se transfiere a la encuesta ni se cierra la llamada: cada etapa termina con
+  la pregunta que abre la siguiente; cada frase del asesor nace de lo que dijo el cliente e implica su vida personal;
+  motivadores variados (meta personal, tiempo, Nexus/Excel, certificaciones progresivas, historia de otro alumno,
+  control, pertenencia) y validaciones alternadas, no solo el descuento y «¿te hace sentido?»; la inversión se explica
+  normal → conceptos → con beneficio, con el 10 % desde la primera cuota. Las 3 opciones de cada caso son 3 caminos
+  distintos (en paso 1, uno es un abordaje alternativo). La tarea programada lo lee antes de escribir casos (pending.json
+  lo recuerda en `LEER_PRIMERO`).
+
 - Cada etapa con oportunidad lleva 3 formas de llevar la MISMA situación (`dialogo`/`speech` = opción 1; `variantes` = 2 más).
 - `sync/guion_inversion.md` es el guion del supervisor para los casos de precio/inversión (tema `inversion`): pocos
   números, el ahorro de S/530 como gancho, Nexus y Taller de Excel sin costo por matricularse, y cierre en la misma
