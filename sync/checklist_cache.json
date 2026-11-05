@@ -12166,5 +12166,239 @@
     "evidencia": "Establece fecha y hora concreta; no dejes el seguimiento al prospecto"
    }
   }
+ },
+ "a93a0d18365a": {
+  "asesor": "Milagros Torres Santos",
+  "fecha": "04/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Debes presentarte indicando tu nombre y mencionando a la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Lo identificaste como Gilmer, pero al finalizar lo llamaste Jimmy"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste que trabaja con horarios rotativos de 14 días por 7"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza cómo sus horarios podrían afectar su continuidad académica"
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Debiste profundizar en su capacidad de pago antes del descuento"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ofreciste el 15 % sin consultar si la pensión estaba en sus posibilidades"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Cumple la despedida: indica tu nombre y menciona la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Coordinaste llamada de seguimiento al día siguiente al mediodía"
+   }
+  }
+ },
+ "64d18156510c": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "05/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentaste con tu nombre y la institución"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Confirma la carrera de interés desde el inicio, con el nombre y la modalidad"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga por qué quiere Psicología, a qué se dedica y qué estudios tiene"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante la postergación y gastos, explora la causa en lugar de solo urgir"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Te identificaste con tu nombre completo y dejaste abierta la comunicación por WhatsApp"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Concreta el seguimiento con día y hora confirmados por la prospecta"
+   }
+  }
+ },
+ "237864a869a8": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "04/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Te identificaste recién al despedirte; preséntate desde el saludo"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga cuánto tiempo real tiene para estudiar y qué lo motiva"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "Evita asegurar la duración de la carrera antes de la evaluación"
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Resaltaste clases grabadas, flexibilidad y el curso de adelanto"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Ante el costo de documentos, propusiste rendir primero la evaluación"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Al despedirte, incluye tu nombre y el de la institución"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Deja agendado el viernes con una hora concreta"
+   }
+  }
  }
 }

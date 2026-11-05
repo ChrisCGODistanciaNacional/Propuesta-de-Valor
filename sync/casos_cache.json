@@ -429,109 +429,105 @@
  },
  "Milagros Torres Santos|paso2": {
   "stage": "paso2",
-  "base": "98f693477ea7",
-  "conclusion": "Cuando mencionas la evaluación de ingreso, refuerza en qué consiste, para qué sirve, que no es un examen de conocimientos y que se rinde de forma virtual con cámara.",
-  "tecId": "tec_10",
+  "base": "d37c0c814966",
+  "conclusion": "Identificaste sus turnos de 14x7, relacionaste la modalidad con su flexibilidad y explicaste clases en vivo y grabadas. Te faltó profundizar en cómo afectan sus horarios y su economía la continuidad, y conocer su capacidad de pago antes de ofrecer el descuento, con cálculos exactos.",
+  "tecId": "tec_14",
   "tipo": "speech",
-  "porQue": "Explica la evaluación de admisión en tres partes (no es examen, para qué sirve, virtual con cámara desde computadora o laptop) confirmando cada una, y cierra con resumen y la pregunta que abre la solución.",
+  "titulo": "De las cuotas hacia arriba",
+  "porQue": "Primero pregunta cuánto puede destinar y solo después explica la cuota con sus cifras exactas, sin gastar el descuento antes de tiempo.",
   "dialogo": [
    {
+    "quien": "cliente",
+    "texto": "Me preocupa empezar y luego no poder seguir pagando."
+   },
+   {
     "quien": "asesor",
-    "texto": "[nombre], para postular hay una evaluación de admisión. ¿Te suena, o es la primera vez que la escuchas?"
+    "texto": "Es lógico, Gilmer, nadie quiere empezar y dejar. Para orientarte bien, ¿qué monto mensual tienes previsto para tus estudios?"
    },
    {
     "quien": "cliente",
-    "texto": "Me suena a examen. ¿Hay que estudiar?"
+    "texto": "Unos 550 o 600 soles."
    },
    {
     "quien": "asesor",
-    "texto": "No, y eso es lo primero: no es un examen de conocimientos, así que no tienes que estudiar. ¿Hasta ahí tranquila?"
+    "texto": "Gracias por decírmelo. La cuota de Industrial es S/625.60; con el 10 % de descuento te queda en S/563.04, y ese descuento sigue toda tu carrera. ¿Eso entra en lo que tienes previsto?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, eso me alivia."
+    "texto": "Sí, ahí sí me alcanza."
    },
    {
     "quien": "asesor",
-    "texto": "Lo segundo: sirve para conocer tu perfil y motivaciones y validar tu identidad, por eso se rinde con la cámara encendida. Lo tercero: es virtual, desde una computadora o laptop, y yo te acompaño. ¿Tienes laptop en casa?"
-   },
-   {
-    "quien": "cliente",
-    "texto": "Sí, tengo una."
-   },
-   {
-    "quien": "asesor",
-    "texto": "Entonces ya tienes lo que necesitas. Resumo: quieres empezar este ciclo y ya sabes que la evaluación no es un examen ni te saca de casa. ¿Te cuento ahora cómo son las clases y la inversión para que decidas con todo claro?"
+    "texto": "Perfecto. Y con tus 7 días de descanso puedes ponerte al día con las clases grabadas. ¿Esto responde lo que te preocupaba?"
    }
   ],
-  "speech": "[nombre], para postular hay una evaluación de admisión. ¿Te suena, o es la primera vez que la escuchas?\n\nNo, y eso es lo primero: no es un examen de conocimientos, así que no tienes que estudiar. ¿Hasta ahí tranquila?\n\nLo segundo: sirve para conocer tu perfil y motivaciones y validar tu identidad, por eso se rinde con la cámara encendida. Lo tercero: es virtual, desde una computadora o laptop, y yo te acompaño. ¿Tienes laptop en casa?\n\nEntonces ya tienes lo que necesitas. Resumo: quieres empezar este ciclo y ya sabes que la evaluación no es un examen ni te saca de casa. ¿Te cuento ahora cómo son las clases y la inversión para que decidas con todo claro?",
-  "titulo": "Explicarla por partes con pequeños sí",
+  "speech": "Es lógico, Gilmer, nadie quiere empezar y dejar. Para orientarte bien, ¿qué monto mensual tienes previsto para tus estudios?\n\nGracias por decírmelo. La cuota de Industrial es S/625.60; con el 10 % de descuento te queda en S/563.04, y ese descuento sigue toda tu carrera. ¿Eso entra en lo que tienes previsto?\n\nPerfecto. Y con tus 7 días de descanso puedes ponerte al día con las clases grabadas. ¿Esto responde lo que te preocupaba?",
   "variantes": [
    {
-    "titulo": "Desde el miedo al examen",
-    "porQue": "Responde primero al temor (años sin estudiar) aclarando qué es y para qué sirve la evaluación, luego cómo se rinde; confirma cada parte y abre la solución pensada para alguien que vuelve a estudiar.",
+    "titulo": "Paso a paso, en orden de pago",
+    "porQue": "Al ordenar los pagos según su cobro de 14x7, él ve que puede sostenerlo y la explicación es exacta.",
     "dialogo": [
      {
-      "quien": "cliente",
-      "texto": "¿Y hay que dar examen? Hace años que no estudio."
-     },
-     {
       "quien": "asesor",
-      "texto": "Te entiendo, [nombre], y respira: no es un examen de conocimientos. Es una evaluación de admisión para conocer tu perfil y tus motivaciones, no para dejarte fuera. ¿Eso te deja más tranquila?"
+      "texto": "Gilmer, con tus turnos de 14 por 7, ¿cómo te organizas con tus gastos del mes?"
      },
      {
       "quien": "cliente",
-      "texto": "Un poco. ¿Y tengo que ir a algún sitio?"
+      "texto": "Me pagan a fin de mes, pero tengo varios gastos."
      },
      {
       "quien": "asesor",
-      "texto": "No, la rindes desde tu casa, virtual, en una computadora o laptop con la cámara encendida, y yo estoy contigo en el proceso. ¿Cuentas con laptop o computadora?"
+      "texto": "Entiendo. Te explico en qué orden se paga para que lo cuadres. Primero la admisión: hoy S/100 en vez de S/200. ¿Vamos bien?"
      },
      {
       "quien": "cliente",
-      "texto": "Tengo laptop, sí."
+      "texto": "Sí, ¿y después?"
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto. Entonces: no estudias, no viajas y lo haces desde tu laptop. ¿Con eso queda resuelto lo del examen? Si sí, te cuento cómo son las clases para alguien que, como tú, vuelve a estudiar después de años, ¿te parece?"
+      "texto": "Veinticuatro horas después, tu primera cuota de S/629.04, que ya incluye seguro y examen médico; la matrícula es gratis. Las otras cuatro, desde abril, de S/563.04. ¿Ese orden calza con tu fecha de pago?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Sí, así sí."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Genial. Y en tus días de trabajo, las clases grabadas te esperan para tu descanso. ¿Hasta ahí claro?"
      }
     ],
-    "speech": "Te entiendo, [nombre], y respira: no es un examen de conocimientos. Es una evaluación de admisión para conocer tu perfil y tus motivaciones, no para dejarte fuera. ¿Eso te deja más tranquila?\n\nNo, la rindes desde tu casa, virtual, en una computadora o laptop con la cámara encendida, y yo estoy contigo en el proceso. ¿Cuentas con laptop o computadora?\n\nPerfecto. Entonces: no estudias, no viajas y lo haces desde tu laptop. ¿Con eso queda resuelto lo del examen? Si sí, te cuento cómo son las clases para alguien que, como tú, vuelve a estudiar después de años, ¿te parece?"
+    "speech": "Gilmer, con tus turnos de 14 por 7, ¿cómo te organizas con tus gastos del mes?\n\nEntiendo. Te explico en qué orden se paga para que lo cuadres. Primero la admisión: hoy S/100 en vez de S/200. ¿Vamos bien?\n\nVeinticuatro horas después, tu primera cuota de S/629.04, que ya incluye seguro y examen médico; la matrícula es gratis. Las otras cuatro, desde abril, de S/563.04. ¿Ese orden calza con tu fecha de pago?\n\nGenial. Y en tus días de trabajo, las clases grabadas te esperan para tu descanso. ¿Hasta ahí claro?"
    },
    {
-    "titulo": "Ubicarla dentro del proceso",
-    "porQue": "Muestra la evaluación como un paso más del proceso, aclara qué es, para qué sirve y cómo se rinde con pequeños sí, y cierra con resumen y la pregunta que abre clases e inversión.",
+    "titulo": "Primero el valor, luego el número",
+    "porQue": "Profundiza en su miedo a no sostener los estudios, lo conecta con el valor y recién luego habla de cifras correctas.",
     "dialogo": [
      {
+      "quien": "cliente",
+      "texto": "No quiero pagar un mes y luego abandonar."
+     },
+     {
       "quien": "asesor",
-      "texto": "[nombre], el proceso tiene tres pasos: tu ficha, la evaluación de admisión y el pago de admisión. ¿Te los explico uno por uno?"
+      "texto": "Te entiendo, Gilmer. Cuéntame, ¿qué te haría abandonar: el tiempo por tus turnos o el pago mensual?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, sobre todo la evaluación. ¿Es difícil?"
+      "texto": "Más el pago, la verdad."
      },
      {
       "quien": "asesor",
-      "texto": "Para nada. No mide conocimientos: sirve para conocer tu perfil de ingreso y confirmar que eres tú, por eso va con cámara. ¿Vamos bien?"
+      "texto": "Gracias por la confianza. ¿Qué monto podrías asumir al mes sin descuidar tus otros gastos?"
      },
      {
       "quien": "cliente",
-      "texto": "Ok. ¿Y es presencial?"
+      "texto": "Unos 570 más o menos."
      },
      {
       "quien": "asesor",
-      "texto": "Es virtual, desde una computadora o laptop con cámara, el día y la hora que tú elijas, y yo te acompaño. ¿Te queda claro qué es, para qué sirve y cómo se rinde?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Sí, ahora sí."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Entonces ese paso ya está claro. Resumo: quieres postular este ciclo y la evaluación ya no te asusta. ¿Te explico ahora cómo son las clases y cómo se organiza la inversión antes de llenar tu ficha?"
+      "texto": "Entonces encaja: con el 10 % tu cuota queda en S/563.04 toda la carrera, y este ciclo te ahorras S/562.80. Además vas sumando certificaciones progresivas para crecer en tu trabajo. ¿Cómo lo ves?"
      }
     ],
-    "speech": "[nombre], el proceso tiene tres pasos: tu ficha, la evaluación de admisión y el pago de admisión. ¿Te los explico uno por uno?\n\nPara nada. No mide conocimientos: sirve para conocer tu perfil de ingreso y confirmar que eres tú, por eso va con cámara. ¿Vamos bien?\n\nEs virtual, desde una computadora o laptop con cámara, el día y la hora que tú elijas, y yo te acompaño. ¿Te queda claro qué es, para qué sirve y cómo se rinde?\n\nEntonces ese paso ya está claro. Resumo: quieres postular este ciclo y la evaluación ya no te asusta. ¿Te explico ahora cómo son las clases y cómo se organiza la inversión antes de llenar tu ficha?"
+    "speech": "Te entiendo, Gilmer. Cuéntame, ¿qué te haría abandonar: el tiempo por tus turnos o el pago mensual?\n\nGracias por la confianza. ¿Qué monto podrías asumir al mes sin descuidar tus otros gastos?\n\nEntonces encaja: con el 10 % tu cuota queda en S/563.04 toda la carrera, y este ciclo te ahorras S/562.80. Además vas sumando certificaciones progresivas para crecer en tu trabajo. ¿Cómo lo ves?"
    }
   ]
  },
@@ -1439,201 +1435,205 @@
  },
  "Justyn Flores Solano|paso3": {
   "stage": "paso3",
-  "base": "64c1d35bb85d",
-  "conclusion": "Dominas las condiciones económicas y cuantificas el ahorro, además de aclarar la duración y el tipo de evaluación. Te faltó precisión en políticas académicas: evita afirmar que no se desaprueba por faltas y apóyate en las clases grabadas para nivelarse.",
-  "tecId": "tec_08",
+  "base": "106e1b0bca80",
+  "conclusion": "Hiciste varios intentos de avance y usaste bien la escala del 1 al 10, con respeto ante sus gastos. Cuida la consistencia: no mezcles el inicio de marzo con el curso de adelanto, presenta la evaluación como de perfil y, ante la postergación, explora la causa.",
+  "tecId": "tec_14",
   "tipo": "speech",
-  "porQue": "Resuelve la duda del viaje sin prometer que las faltas no cuentan: la respuesta real son el reglamento y las clases grabadas. Cierra en parcial y abre el proceso de admisión.",
+  "titulo": "Aclarar fechas y explorar la causa",
+  "porQue": "Dejas una sola fecha de inicio, separas el adelanto y preguntas qué la hace postergar antes de responder, en lugar de apurar con vacantes.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "¿Y si falto por el viaje de trabajo? ¿Me desaprueban?"
+    "texto": "Lo veo para más adelante, ahorita estoy organizando mis gastos."
    },
    {
     "quien": "asesor",
-    "texto": "Te lo digo tal cual, Jenny, para que no haya sorpresas. La asistencia se rige por el reglamento académico, no te voy a decir que las faltas no cuentan.\n\nLo que sí tienes es que cada clase en vivo queda grabada en tu campus virtual. ¿Hasta ahí claro?"
+    "texto": "Te entiendo, [nombre]. Para no confundirte con fechas: las clases regulares empiezan en marzo de 2027, y antes puedes adelantar cursos con Nexus. ¿Qué es lo que más te hace pensar en postergar?"
    },
    {
     "quien": "cliente",
-    "texto": "Ya, pero ¿cómo me nivelo si estoy una semana fuera?"
+    "texto": "Más que nada lo económico."
    },
    {
     "quien": "asesor",
-    "texto": "Desde tu celular, en el hotel o en el bus, ves la clase grabada y te pones al día con el material del campus.\n\nVarios alumnos que viajan por trabajo estudian así: organizan su semana con las grabaciones y no pierden el hilo. ¿Te imaginas haciéndolo igual?"
+    "texto": "Gracias por decírmelo. ¿Es el monto de las cuotas o el momento del pago lo que te preocupa?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, eso sí lo puedo hacer."
+    "texto": "El momento, cobro a fin de mes."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces lo del viaje queda resuelto con las grabaciones y tu organización, ¿verdad?\n\nEl siguiente paso es tu evaluación de admisión: es virtual, desde una computadora o laptop con cámara encendida, y yo te acompaño. ¿Te cuento cómo se rinde?"
+    "texto": "Entonces lo ordenamos a tu favor: eliges el día de tu evaluación, que es de perfil y no de conocimientos, y la primera cuota la das 24 horas después. ¿Con esto queda resuelto lo del momento del pago?"
    }
   ],
-  "speech": "Te lo digo tal cual, Jenny, para que no haya sorpresas. La asistencia se rige por el reglamento académico, no te voy a decir que las faltas no cuentan.\n\nLo que sí tienes es que cada clase en vivo queda grabada en tu campus virtual. ¿Hasta ahí claro?\n\nDesde tu celular, en el hotel o en el bus, ves la clase grabada y te pones al día con el material del campus.\n\nVarios alumnos que viajan por trabajo estudian así: organizan su semana con las grabaciones y no pierden el hilo. ¿Te imaginas haciéndolo igual?\n\nEntonces lo del viaje queda resuelto con las grabaciones y tu organización, ¿verdad?\n\nEl siguiente paso es tu evaluación de admisión: es virtual, desde una computadora o laptop con cámara encendida, y yo te acompaño. ¿Te cuento cómo se rinde?",
-  "titulo": "Las faltas, con la verdad por delante",
+  "speech": "Te entiendo, [nombre]. Para no confundirte con fechas: las clases regulares empiezan en marzo de 2027, y antes puedes adelantar cursos con Nexus. ¿Qué es lo que más te hace pensar en postergar?\n\nGracias por decírmelo. ¿Es el monto de las cuotas o el momento del pago lo que te preocupa?\n\nEntonces lo ordenamos a tu favor: eliges el día de tu evaluación, que es de perfil y no de conocimientos, y la primera cuota la das 24 horas después. ¿Con esto queda resuelto lo del momento del pago?",
   "variantes": [
    {
-    "titulo": "Anticipar la duda antes de que pregunte",
-    "porQue": "Jenny dijo que viaja; el asesor levanta la duda de las faltas antes de que ella la plantee y la responde con el reglamento y las grabaciones, sin promesas. Termina abriendo la admisión.",
+    "titulo": "Evaluación de perfil, sin miedo",
+    "porQue": "Presentas la evaluación como de perfil, separas inicio regular y adelanto, y cierras con la escala para medir qué falta.",
     "dialogo": [
      {
+      "quien": "cliente",
+      "texto": "¿Y el examen es difícil? No quiero desaprobar."
+     },
+     {
       "quien": "asesor",
-      "texto": "Jenny, me dijiste que viajas por trabajo, así que te adelanto algo que seguro te preguntas: qué pasa con las clases cuando estás fuera.\n\nLa asistencia la define el reglamento académico, así que no te diré que faltar no importa. Pero todas las clases quedan grabadas. ¿Vamos bien?"
+      "texto": "Tranquila, [nombre], no es un examen de conocimientos: es una evaluación de perfil, virtual, desde tu computadora o laptop con cámara. Lo que buscamos es conocerte. ¿Hasta ahí claro?"
      },
      {
       "quien": "cliente",
-      "texto": "Ah, justo eso iba a preguntar. ¿Y las grabaciones duran?"
+      "texto": "Ah, ya. ¿Y cuándo empezaría a estudiar?"
      },
      {
       "quien": "asesor",
-      "texto": "Quedan en tu campus virtual todo el ciclo y las ves desde tu celular o laptop cuando tengas un rato.\n\nAsí, cuando estés de viaje, ves la clase, revisas el material y presentas tus tareas por el campus. ¿Te sirve así?"
+      "texto": "Las clases regulares inician en marzo de 2027. Si quieres avanzar antes, Nexus te permite adelantar cursos sin costo adicional. Son dos cosas distintas, ¿te queda claro cuál es cuál?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, me sirve. Igual me preocupa atrasarme."
+      "texto": "Sí, pero igual quizá lo deje para después."
      },
      {
       "quien": "asesor",
-      "texto": "Por eso conviene organizar tu semana desde el inicio: clase en vivo de noche cuando estás en casa, grabaciones cuando viajas.\n\nCon eso respondido, ¿te cuento cómo es tu evaluación de admisión para dar el siguiente paso?"
+      "texto": "Te entiendo. Del 1 al 10, ¿qué tan decidida estás de empezar, y qué te faltaría para llegar a 10?"
      }
     ],
-    "speech": "Jenny, me dijiste que viajas por trabajo, así que te adelanto algo que seguro te preguntas: qué pasa con las clases cuando estás fuera.\n\nLa asistencia la define el reglamento académico, así que no te diré que faltar no importa. Pero todas las clases quedan grabadas. ¿Vamos bien?\n\nQuedan en tu campus virtual todo el ciclo y las ves desde tu celular o laptop cuando tengas un rato.\n\nAsí, cuando estés de viaje, ves la clase, revisas el material y presentas tus tareas por el campus. ¿Te sirve así?\n\nPor eso conviene organizar tu semana desde el inicio: clase en vivo de noche cuando estás en casa, grabaciones cuando viajas.\n\nCon eso respondido, ¿te cuento cómo es tu evaluación de admisión para dar el siguiente paso?"
+    "speech": "Tranquila, [nombre], no es un examen de conocimientos: es una evaluación de perfil, virtual, desde tu computadora o laptop con cámara. Lo que buscamos es conocerte. ¿Hasta ahí claro?\n\nLas clases regulares inician en marzo de 2027. Si quieres avanzar antes, Nexus te permite adelantar cursos sin costo adicional. Son dos cosas distintas, ¿te queda claro cuál es cuál?\n\nTe entiendo. Del 1 al 10, ¿qué tan decidida estás de empezar, y qué te faltaría para llegar a 10?"
    },
    {
-    "titulo": "Cuando pide que le aseguren que no desaprueba",
-    "porQue": "Ante la presión de una promesa, el asesor no la da: devuelve la verdad del reglamento y la solución concreta con las grabaciones. Cierra parcial y abre el proceso de admisión.",
+    "titulo": "Escala del 1 al 10 y lo que falta",
+    "porQue": "Aprovechas tu pregunta de escala para descubrir qué falta, aclaras la fecha con un solo dato y exploras la causa económica.",
     "dialogo": [
      {
-      "quien": "cliente",
-      "texto": "Pero dime nomás que no me van a desaprobar si falto, para estar tranquila."
-     },
-     {
       "quien": "asesor",
-      "texto": "Te entiendo, Jenny, y justamente por eso no te voy a decir algo que después te genere un problema.\n\nLas faltas las regula el reglamento académico. Lo que te da tranquilidad real es otra cosa: ninguna clase se te pierde, porque quedan grabadas. ¿Cómo lo ves?"
+      "texto": "[nombre], del 1 al 10, ¿qué tan segura te sientes de empezar Psicología este ciclo?"
      },
      {
       "quien": "cliente",
-      "texto": "Ya, prefiero que me digas la verdad."
+      "texto": "Un 7."
      },
      {
       "quien": "asesor",
-      "texto": "Así es mejor. Cuando viajes, ves la grabación desde tu celular y sigues con tus tareas en el campus; cuando estés en casa, entras a la clase en vivo de noche.\n\nEn tu segundo ciclo ya vas a tener esa rutina armada. ¿Te imaginas estudiando así?"
+      "texto": "Un 7 es bastante. ¿Qué tendría que pasar para que sea un 10?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, creo que sí."
+      "texto": "Organizar mis gastos y saber bien cuándo empiezo."
      },
      {
       "quien": "asesor",
-      "texto": "Entonces lo del viaje ya tiene solución, ¿verdad? El siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿Te explico cómo se rinde?"
+      "texto": "Lo de la fecha te lo dejo claro: las clases regulares inician en marzo de 2027; Nexus es aparte, para adelantar cursos antes. ¿Eso ya lo resuelve?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Sí, eso sí."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Perfecto. Y sobre tus gastos, ¿te preocupa más el monto o la fecha del pago? Así vemos juntos cómo ordenarlo."
      }
     ],
-    "speech": "Te entiendo, Jenny, y justamente por eso no te voy a decir algo que después te genere un problema.\n\nLas faltas las regula el reglamento académico. Lo que te da tranquilidad real es otra cosa: ninguna clase se te pierde, porque quedan grabadas. ¿Cómo lo ves?\n\nAsí es mejor. Cuando viajes, ves la grabación desde tu celular y sigues con tus tareas en el campus; cuando estés en casa, entras a la clase en vivo de noche.\n\nEn tu segundo ciclo ya vas a tener esa rutina armada. ¿Te imaginas estudiando así?\n\nEntonces lo del viaje ya tiene solución, ¿verdad? El siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿Te explico cómo se rinde?"
+    "speech": "[nombre], del 1 al 10, ¿qué tan segura te sientes de empezar Psicología este ciclo?\n\nUn 7 es bastante. ¿Qué tendría que pasar para que sea un 10?\n\nLo de la fecha te lo dejo claro: las clases regulares inician en marzo de 2027; Nexus es aparte, para adelantar cursos antes. ¿Eso ya lo resuelve?\n\nPerfecto. Y sobre tus gastos, ¿te preocupa más el monto o la fecha del pago? Así vemos juntos cómo ordenarlo."
    }
   ]
  },
  "Orlando Jesus Pintado Sandoval|paso3": {
   "stage": "paso3",
-  "base": "df04c162dd95",
-  "conclusion": "Desglosaste bien la pensión regular y con descuento, el ahorro en admisión, la exoneración de matrícula y los documentos. Sobre la convalidación, evita frases desmotivadoras: explica con calidez que, al ser áreas distintas, se define evaluando sus sílabos, y destaca su perfil.",
+  "base": "f7f0c14a6f9f",
+  "conclusion": "Bien al proponer rendir primero la evaluación para saber qué se convalida antes de invertir en documentos. Evita asegurar tiempos de convalidación o duración, comunica las reglas de asistencia según la información oficial y mantén la neutralidad sobre otras instituciones y asesores.",
   "tecId": "tec_08",
   "tipo": "speech",
-  "titulo": "Anticipar la convalidación con calidez",
-  "porQue": "Explica la regla real (el área académica revisa los sílabos) sin un «no» tajante, destaca su experiencia en Caja Trujillo como ventaja y cierra parcial abriendo la evaluación, todo en la misma llamada.",
+  "titulo": "Sin prometer tiempos",
+  "porQue": "Explicas el camino real de la convalidación sin dar cifras que luego cambien, y eso sostiene tu credibilidad.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Yo estudié Mecánica, ¿eso me sirve para Psicología?"
+    "texto": "¿Entonces en cuánto tiempo terminaría con la convalidación?"
    },
    {
     "quien": "asesor",
-    "texto": "Qué bueno que lo preguntes antes, Mario, así no te llevas sorpresas. Como Mecánica y Psicología son áreas distintas, lo que se reconoce lo define el área académica revisando tus sílabos, curso por curso. No te adelanto ni un sí ni un no. ¿Hasta ahí claro?"
+    "texto": "Te entiendo, [nombre], quieres terminar pronto. El tiempo exacto lo define el área académica cuando evalúa tus sílabos, así que prefiero no darte una cifra que luego cambie. ¿Te parece bien así?"
    },
    {
     "quien": "cliente",
-    "texto": "O sea, ¿puede que empiece de cero?"
+    "texto": "Sí, pero más o menos..."
    },
    {
     "quien": "asesor",
-    "texto": "Puede que algunos cursos generales se reconozcan y otros no; eso lo dirá la revisión. Pero fíjate en esto: tu trabajo en Caja Trujillo, atendiendo personas todo el día, es exactamente lo que Psicología necesita. Eso no se convalida, pero te da ventaja desde la primera clase. ¿Cómo lo ves?"
+    "texto": "Lo que sí te aseguro es el camino: rindes tu evaluación, presentas tus documentos y la facultad te dice qué cursos se convalidan. Con eso ya tienes tu plan real. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
-    "texto": "Nunca lo había pensado así."
+    "texto": "Ya, me parece justo."
    },
    {
     "quien": "asesor",
-    "texto": "Y mientras la revisión avanza, tú ya puedes estar estudiando: desde los primeros ciclos recibes certificaciones progresivas para tu CV. ¿Con esto queda resuelta tu duda de la convalidación y te cuento cómo es tu evaluación de admisión?"
+    "texto": "Perfecto. Entonces el siguiente paso es tu evaluación de admisión, virtual desde una laptop con cámara. ¿Te cuento cómo es?"
    }
   ],
-  "speech": "Qué bueno que lo preguntes antes, Mario, así no te llevas sorpresas. Como Mecánica y Psicología son áreas distintas, lo que se reconoce lo define el área académica revisando tus sílabos, curso por curso. No te adelanto ni un sí ni un no. ¿Hasta ahí claro?\n\nPuede que algunos cursos generales se reconozcan y otros no; eso lo dirá la revisión. Pero fíjate en esto: tu trabajo en Caja Trujillo, atendiendo personas todo el día, es exactamente lo que Psicología necesita. Eso no se convalida, pero te da ventaja desde la primera clase. ¿Cómo lo ves?\n\nY mientras la revisión avanza, tú ya puedes estar estudiando: desde los primeros ciclos recibes certificaciones progresivas para tu CV. ¿Con esto queda resuelta tu duda de la convalidación y te cuento cómo es tu evaluación de admisión?",
+  "speech": "Te entiendo, [nombre], quieres terminar pronto. El tiempo exacto lo define el área académica cuando evalúa tus sílabos, así que prefiero no darte una cifra que luego cambie. ¿Te parece bien así?\n\nLo que sí te aseguro es el camino: rindes tu evaluación, presentas tus documentos y la facultad te dice qué cursos se convalidan. Con eso ya tienes tu plan real. ¿Vamos bien?\n\nPerfecto. Entonces el siguiente paso es tu evaluación de admisión, virtual desde una laptop con cámara. ¿Te cuento cómo es?",
   "variantes": [
    {
-    "titulo": "Valorar su perfil primero",
-    "porQue": "Arranca por lo positivo (su trato diario con personas en Caja Trujillo) para que la regla de convalidación llegue como orientación; responde el miedo a demorarse con Nexus y abre el proceso sin agendar otra llamada.",
+    "titulo": "Asistencia con la información oficial",
+    "porQue": "Aclaras la asistencia con la información oficial (clases grabadas, sin penalidad) sin decir que no se desaprueba.",
     "dialogo": [
      {
+      "quien": "cliente",
+      "texto": "Me dijeron que si no asisto igual no desapruebo, ¿es así?"
+     },
+     {
       "quien": "asesor",
-      "texto": "Mario, antes de hablar de convalidación quiero decirte algo. En Caja Trujillo tratas con personas con problemas de dinero todos los días, ¿cierto?"
+      "texto": "Buena pregunta, [nombre]. Las clases quedan grabadas y no hay penalidad por inasistencia, así que puedes verlas en tu horario. Lo que define tu nota son tus evaluaciones y actividades. ¿Hasta ahí claro?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, todo el día, y a veces llegan muy estresados."
+      "texto": "Ah, o sea igual tengo que cumplir."
      },
      {
       "quien": "asesor",
-      "texto": "Eso es Psicología aplicada sin saberlo: escuchar, calmar, entender. Vas a entrar con una base que muchos no tienen. Y sobre Mecánica, como es otra área, lo que se reconoce lo define el área académica revisando tus sílabos. ¿Te hace sentido?"
+      "texto": "Exacto, a tu ritmo pero cumpliendo, por eso importa que encaje con tu trabajo. ¿Con esto queda resuelto lo del horario?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, pero entonces me demoraría más que otros."
+      "texto": "Sí."
      },
      {
       "quien": "asesor",
-      "texto": "No necesariamente, Mario. Puedes empezar este ciclo y la revisión corre en paralelo; y con Nexus, si te matriculas, adelantas un curso desde el 14 de diciembre, antes que todos. ¿Eso responde lo del tiempo?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Sí, eso me anima."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Me alegra. Entonces el siguiente paso es tu evaluación de admisión, virtual desde una computadora con cámara, y en paralelo me envías tus sílabos. ¿Te cuento cómo es la evaluación?"
+      "texto": "Genial. Entonces vamos con tu evaluación de admisión, que también abre la revisión de tus cursos convalidables. ¿La harías desde tu laptop?"
      }
     ],
-    "speech": "Mario, antes de hablar de convalidación quiero decirte algo. En Caja Trujillo tratas con personas con problemas de dinero todos los días, ¿cierto?\n\nEso es Psicología aplicada sin saberlo: escuchar, calmar, entender. Vas a entrar con una base que muchos no tienen. Y sobre Mecánica, como es otra área, lo que se reconoce lo define el área académica revisando tus sílabos. ¿Te hace sentido?\n\nNo necesariamente, Mario. Puedes empezar este ciclo y la revisión corre en paralelo; y con Nexus, si te matriculas, adelantas un curso desde el 14 de diciembre, antes que todos. ¿Eso responde lo del tiempo?\n\nMe alegra. Entonces el siguiente paso es tu evaluación de admisión, virtual desde una computadora con cámara, y en paralelo me envías tus sílabos. ¿Te cuento cómo es la evaluación?"
+    "speech": "Buena pregunta, [nombre]. Las clases quedan grabadas y no hay penalidad por inasistencia, así que puedes verlas en tu horario. Lo que define tu nota son tus evaluaciones y actividades. ¿Hasta ahí claro?\n\nExacto, a tu ritmo pero cumpliendo, por eso importa que encaje con tu trabajo. ¿Con esto queda resuelto lo del horario?\n\nGenial. Entonces vamos con tu evaluación de admisión, que también abre la revisión de tus cursos convalidables. ¿La harías desde tu laptop?"
    },
    {
-    "titulo": "Cuando le dijeron que nada",
-    "porQue": "Corrige con calidez el comentario tajante que le hicieron, sin prometer ni descartar cursos, valora su experiencia y confirma antes de pasar al proceso de admisión en la misma llamada.",
+    "titulo": "Neutral con otras instituciones",
+    "porQue": "Respondes a la comparación sin descalificar a nadie y llevas la decisión a lo que el prospecto valora.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Me dijeron que si estudié otra cosa no me convalidan nada, ¿es cierto?"
+      "texto": "En otro lado me cobran menos por los documentos, y otro asesor también me llamó."
      },
      {
       "quien": "asesor",
-      "texto": "Entiendo que te hayan desanimado, Mario, pero no es así de tajante. Ningún asesor puede decirte «nada» ni «todo»: lo define el área académica revisando los sílabos de lo que llevaste en Mecánica. ¿Vamos bien?"
+      "texto": "Te entiendo, [nombre], es normal comparar. Esos documentos se piden en cualquier universidad para convalidar, así que no es un gasto perdido. ¿Qué es lo que más te importa al elegir?"
      },
      {
       "quien": "cliente",
-      "texto": "Pero Mecánica no tiene nada que ver con Psicología."
+      "texto": "Que me convaliden lo más posible."
      },
      {
       "quien": "asesor",
-      "texto": "Es cierto que son áreas distintas, y por eso no te prometo cursos. Lo que sí te aseguro es que tu experiencia en Caja Trujillo con clientes te da ventaja, y que la revisión la gestiono yo con tus documentos, sin que pierdas tiempo. ¿Te sirve así?"
+      "texto": "Por eso te propongo rendir primero la evaluación: así la facultad revisa tus sílabos y sabes qué se convalida antes de invertir más. Yo me encargo de tu seguimiento. ¿Te parece bien?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí. Igual quiero saber si algo se puede."
+      "texto": "Sí, me parece."
      },
      {
       "quien": "asesor",
-      "texto": "Y lo sabrás con certeza, no con suposiciones. ¿Con esto queda claro cómo funciona la convalidación? Entonces te cuento el siguiente paso, tu evaluación de admisión, que es virtual desde una computadora con cámara, y en paralelo me pasas tus sílabos, ¿vamos?"
+      "texto": "Perfecto. ¿Te cuento cómo es la evaluación virtual para que la tengas clara?"
      }
     ],
-    "speech": "Entiendo que te hayan desanimado, Mario, pero no es así de tajante. Ningún asesor puede decirte «nada» ni «todo»: lo define el área académica revisando los sílabos de lo que llevaste en Mecánica. ¿Vamos bien?\n\nEs cierto que son áreas distintas, y por eso no te prometo cursos. Lo que sí te aseguro es que tu experiencia en Caja Trujillo con clientes te da ventaja, y que la revisión la gestiono yo con tus documentos, sin que pierdas tiempo. ¿Te sirve así?\n\nY lo sabrás con certeza, no con suposiciones. ¿Con esto queda claro cómo funciona la convalidación? Entonces te cuento el siguiente paso, tu evaluación de admisión, que es virtual desde una computadora con cámara, y en paralelo me pasas tus sílabos, ¿vamos?"
+    "speech": "Te entiendo, [nombre], es normal comparar. Esos documentos se piden en cualquier universidad para convalidar, así que no es un gasto perdido. ¿Qué es lo que más te importa al elegir?\n\nPor eso te propongo rendir primero la evaluación: así la facultad revisa tus sílabos y sabes qué se convalida antes de invertir más. Yo me encargo de tu seguimiento. ¿Te parece bien?\n\nPerfecto. ¿Te cuento cómo es la evaluación virtual para que la tengas clara?"
    }
   ]
  },
@@ -3187,97 +3187,93 @@
  },
  "Orlando Jesus Pintado Sandoval|paso1": {
   "stage": "paso1",
-  "base": "1d9e1af13f13",
-  "conclusion": "Iniciaste a tiempo, confirmaste su interés en Psicología y convalidación e identificaste sus estudios técnicos y el año en que terminó. Te faltó presentarte con tu nombre y la Unidad CIE al inicio y usar el nombre del prospecto.",
+  "base": "ceae12b9571b",
+  "conclusion": "Atendiste de inmediato, confirmaste el motivo del contacto e identificaste rápido su interés en convalidar estudios de instituto. Preséntate con tu nombre y la institución desde el saludo, no recién al despedirte.",
   "tecId": "tec_12",
   "tipo": "speech",
-  "titulo": "Presentarte y preguntar su nombre",
-  "porQue": "Nombre propio y Unidad CIE en la primera frase, y «¿con quién tengo el gusto?» para poder usar su nombre en el resto de la llamada; él elige por dónde empezar y la etapa termina abriendo la indagación.",
+  "titulo": "Presentación directa con el motivo",
+  "porQue": "Tu nombre y la institución van en la primera frase, y desde ahí conectas con su interés en convalidar.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Hola, buenas tardes. Te saluda Orlando, de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿con quién tengo el gusto?"
+    "texto": "Hola, [nombre], te saluda Orlando de la Universidad Continental. Te llamo por la información que pediste sobre carreras a distancia, ¿me regalas dos minutos?"
    },
    {
     "quien": "cliente",
-    "texto": "Con [nombre]. Sí, quería saber de la convalidación."
+    "texto": "Sí, claro. Quería saber si puedo convalidar lo del instituto."
    },
    {
     "quien": "asesor",
-    "texto": "Mucho gusto, [nombre]. Justo para eso te llamo, y tú me dices por dónde empezamos: ¿por lo que ya estudiaste o por cómo funciona Psicología a distancia?"
+    "texto": "Claro que lo vemos, [nombre]: la convalidación la evalúa el área académica con tus sílabos. ¿Qué carrera estudiaste en el instituto?"
    },
    {
     "quien": "cliente",
-    "texto": "Por lo que estudié, hice Laboratorio Clínico."
+    "texto": "Una carrera técnica, ya terminé."
    },
    {
     "quien": "asesor",
-    "texto": "Buena base para Psicología, [nombre], estás en salud. ¿En qué año terminaste y qué te anima a dar este paso ahora?"
+    "texto": "Perfecto, eso suma. ¿Y hoy a qué te dedicas, para ver cómo encajan las clases con tu horario?"
    }
   ],
-  "speech": "Hola, buenas tardes. Te saluda Orlando, de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿con quién tengo el gusto?\n\nMucho gusto, [nombre]. Justo para eso te llamo, y tú me dices por dónde empezamos: ¿por lo que ya estudiaste o por cómo funciona Psicología a distancia?\n\nBuena base para Psicología, [nombre], estás en salud. ¿En qué año terminaste y qué te anima a dar este paso ahora?",
+  "speech": "Hola, [nombre], te saluda Orlando de la Universidad Continental. Te llamo por la información que pediste sobre carreras a distancia, ¿me regalas dos minutos?\n\nClaro que lo vemos, [nombre]: la convalidación la evalúa el área académica con tus sílabos. ¿Qué carrera estudiaste en el instituto?\n\nPerfecto, eso suma. ¿Y hoy a qué te dedicas, para ver cómo encajan las clases con tu horario?",
   "variantes": [
    {
-    "titulo": "Si pregunta quién habla",
-    "porQue": "Cuando el cliente pregunta quién llama, te presentas completo (nombre y Unidad CIE), pides su nombre y dos minutos, y de inmediato pasas a sus estudios previos.",
+    "titulo": "Cuando el cliente arranca hablando",
+    "porQue": "Aunque el prospecto hable primero, te presentas en la misma respuesta y no dejas tu nombre para el final.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "¿Aló? ¿Quién habla?"
+      "texto": "Aló, sí, yo pedí información para convalidar mis estudios del instituto."
      },
      {
       "quien": "asesor",
-      "texto": "Hola, buenas tardes. Soy Orlando, de la Unidad CIE de la Universidad Continental. Te llamo porque pediste información de Psicología y convalidación. ¿Con quién tengo el gusto?"
+      "texto": "Qué bueno, te saluda Orlando de la Universidad Continental y justo te llamo por eso. ¿Con quién tengo el gusto?"
      },
      {
       "quien": "cliente",
-      "texto": "Con [nombre]."
+      "texto": "Soy [nombre]."
      },
      {
       "quien": "asesor",
-      "texto": "Gracias, [nombre]. Voy a ser breve: ¿me regalas dos minutos para ver si tus estudios anteriores te sirven?"
+      "texto": "Un gusto, [nombre]. Lo que se convalida se define con la evaluación de tus sílabos. Para orientarte bien, ¿qué estudiaste y qué carrera tienes en mente?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, un rato."
+      "texto": "Una técnica, y quiero seguir algo relacionado."
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto. Cuéntame, [nombre], ¿qué estudiaste y hace cuánto terminaste?"
+      "texto": "Perfecto. ¿Y qué te motiva a retomar los estudios justo ahora?"
      }
     ],
-    "speech": "Hola, buenas tardes. Soy Orlando, de la Unidad CIE de la Universidad Continental. Te llamo porque pediste información de Psicología y convalidación. ¿Con quién tengo el gusto?\n\nGracias, [nombre]. Voy a ser breve: ¿me regalas dos minutos para ver si tus estudios anteriores te sirven?\n\nPerfecto. Cuéntame, [nombre], ¿qué estudiaste y hace cuánto terminaste?"
+    "speech": "Qué bueno, te saluda Orlando de la Universidad Continental y justo te llamo por eso. ¿Con quién tengo el gusto?\n\nUn gusto, [nombre]. Lo que se convalida se define con la evaluación de tus sílabos. Para orientarte bien, ¿qué estudiaste y qué carrera tienes en mente?\n\nPerfecto. ¿Y qué te motiva a retomar los estudios justo ahora?"
    },
    {
-    "titulo": "Si arranca con su duda",
-    "porQue": "Si el cliente abre con la convalidación, respondes desde ahí, te presentas en la misma frase y preguntas su nombre; luego le das a elegir el orden y pasas a documentos y año de egreso.",
+    "titulo": "Si atiende ocupado",
+    "porQue": "Con poco tiempo, igual te presentas primero y das un dato útil sobre convalidación para mantener la llamada.",
     "dialogo": [
      {
-      "quien": "cliente",
-      "texto": "Hola, ¿me van a convalidar mis cursos?"
-     },
-     {
       "quien": "asesor",
-      "texto": "Esa es justo la pregunta que vengo a resolver contigo. Te saluda Orlando, de la Unidad CIE de la Universidad Continental. ¿Con quién tengo el gusto?"
+      "texto": "Hola, [nombre], te saluda Orlando de la Universidad Continental, por tu solicitud de carreras a distancia. ¿Me regalas dos minutos?"
      },
      {
       "quien": "cliente",
-      "texto": "Con [nombre]. Estudié Laboratorio Clínico."
+      "texto": "Ahorita estoy trabajando."
      },
      {
       "quien": "asesor",
-      "texto": "Mucho gusto, [nombre], y qué bueno que vengas del área de salud. Tú decides: ¿vemos primero qué documentos tienes o qué esperas de Psicología?"
+      "texto": "Te lo resumo en un minuto: estudias a distancia con clases que quedan grabadas y, si estudiaste antes, puedes convalidar según tus sílabos. ¿Tienes estudios de instituto?"
      },
      {
       "quien": "cliente",
-      "texto": "Primero lo de los documentos."
+      "texto": "Sí, en un instituto."
      },
      {
       "quien": "asesor",
-      "texto": "Vamos con eso. ¿Tienes tu certificado de estudios y los sílabos de Laboratorio Clínico, [nombre], y en qué año terminaste?"
+      "texto": "Excelente, eso te puede ahorrar tiempo. ¿Qué carrera estudiaste?"
      }
     ],
-    "speech": "Esa es justo la pregunta que vengo a resolver contigo. Te saluda Orlando, de la Unidad CIE de la Universidad Continental. ¿Con quién tengo el gusto?\n\nMucho gusto, [nombre], y qué bueno que vengas del área de salud. Tú decides: ¿vemos primero qué documentos tienes o qué esperas de Psicología?\n\nVamos con eso. ¿Tienes tu certificado de estudios y los sílabos de Laboratorio Clínico, [nombre], y en qué año terminaste?"
+    "speech": "Hola, [nombre], te saluda Orlando de la Universidad Continental, por tu solicitud de carreras a distancia. ¿Me regalas dos minutos?\n\nTe lo resumo en un minuto: estudias a distancia con clases que quedan grabadas y, si estudiaste antes, puedes convalidar según tus sílabos. ¿Tienes estudios de instituto?\n\nExcelente, eso te puede ahorrar tiempo. ¿Qué carrera estudiaste?"
    }
   ]
  },
@@ -3510,293 +3506,301 @@
  },
  "Justyn Flores Solano|paso1": {
   "stage": "paso1",
-  "base": "563163de0d1c",
-  "conclusion": "Iniciaste la atención a tiempo y mantuviste una conversación activa con la prospecta. Te faltó presentarte con tu nombre y la Unidad CIE, y pedir y usar su nombre durante la llamada para personalizar la atención.",
+  "base": "f47dcdb33250",
+  "conclusion": "Iniciaste de inmediato, te presentaste con tu nombre y la institución y validaste la modalidad a distancia. Confirma desde el inicio la carrera de interés junto con su nombre y la modalidad, y evita bromas sobre su lugar de procedencia.",
   "tecId": "tec_12",
   "tipo": "speech",
-  "porQue": "Nombre del asesor, Unidad CIE y motivo en la primera frase; pide el nombre de la prospecta y lo usa enseguida, dejándole marcar el ritmo. Termina abriendo la indagación.",
+  "titulo": "Presentación directa con carrera",
+  "porQue": "Confirmas nombre, carrera y modalidad en los primeros segundos y abres la indagación sin comentarios personales que resten neutralidad.",
   "dialogo": [
    {
     "quien": "asesor",
-    "texto": "Hola, buenas tardes, te saluda Justyn, asesor de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿con quién tengo el gusto?"
+    "texto": "Hola, ¿hablo con [nombre]? Te saluda Jostyn de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿me regalas dos minutos?"
    },
    {
     "quien": "cliente",
-    "texto": "Con [nombre]."
+    "texto": "Sí, soy yo. ¿Pero es todo virtual?"
    },
    {
     "quien": "asesor",
-    "texto": "Mucho gusto, [nombre]. ¿Me regalas dos minutos para contarte cómo funciona y resolver tus dudas?"
+    "texto": "Así es, [nombre]: es a distancia, con clases en vivo que además quedan grabadas para que las veas cuando puedas. ¿Confirmamos que Psicología es la carrera que te interesa?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, dime, pero todavía estoy viendo opciones."
+    "texto": "Sí, Psicología. Sería mi otra carrera."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, comparar es lo correcto, y tú marcas el ritmo: me dices hasta dónde avanzamos hoy.\n\nPara no darte información de más, [nombre], ¿qué te animó a buscar Psicología justo ahora?"
+    "texto": "Qué bueno, entonces ya tienes experiencia estudiando. ¿Qué te animó a buscar Psicología justo ahora?"
    }
   ],
-  "speech": "Hola, buenas tardes, te saluda Justyn, asesor de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿con quién tengo el gusto?\n\nMucho gusto, [nombre]. ¿Me regalas dos minutos para contarte cómo funciona y resolver tus dudas?\n\nPerfecto, comparar es lo correcto, y tú marcas el ritmo: me dices hasta dónde avanzamos hoy.\n\nPara no darte información de más, [nombre], ¿qué te animó a buscar Psicología justo ahora?",
-  "titulo": "Presentarte y pedir su nombre",
+  "speech": "Hola, ¿hablo con [nombre]? Te saluda Jostyn de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿me regalas dos minutos?\n\nAsí es, [nombre]: es a distancia, con clases en vivo que además quedan grabadas para que las veas cuando puedas. ¿Confirmamos que Psicología es la carrera que te interesa?\n\nQué bueno, entonces ya tienes experiencia estudiando. ¿Qué te animó a buscar Psicología justo ahora?",
   "variantes": [
    {
-    "titulo": "Cuando contesta preguntando quién es",
-    "porQue": "Responde el quién es con nombre y Unidad CIE en la misma frase, pide su nombre y le da el control de por dónde empezar. La pregunta final abre la indagación.",
+    "titulo": "Responder neutral a su procedencia",
+    "porQue": "Respondes a su lugar de origen con un dato útil y neutral, sin bromas, y lo aprovechas para confirmar carrera y modalidad.",
     "dialogo": [
      {
-      "quien": "cliente",
-      "texto": "¿Aló? ¿Quién habla?"
-     },
-     {
       "quien": "asesor",
-      "texto": "Hola, buenas tardes. Soy Justyn, asesor de la Unidad CIE de la Universidad Continental, y te llamo por tu registro en Psicología a distancia. ¿Con quién tengo el gusto?"
+      "texto": "Hola, te saluda Jostyn de la Universidad Continental. ¿Hablo con [nombre]?"
      },
      {
       "quien": "cliente",
-      "texto": "Con [nombre]. Ah ya, sí me registré."
+      "texto": "Sí. Pedí información, pero soy de provincia, ¿igual puedo estudiar?"
      },
      {
       "quien": "asesor",
-      "texto": "Qué bueno, [nombre]. Tú eliges por dónde empezamos: cómo se estudia a distancia, cómo se revisan tus estudios técnicos para convalidar o el proceso de ingreso. ¿Cuál te acomoda primero?"
+      "texto": "Claro que sí, [nombre]. Al ser a distancia estudias desde donde estés, solo necesitas internet y tu computadora. ¿La carrera que viste fue Psicología?"
      },
      {
       "quien": "cliente",
-      "texto": "Lo de la convalidación, tengo estudios técnicos."
+      "texto": "Sí, Psicología."
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto, vamos por ahí. Para orientarte bien, cuéntame: ¿qué estudiaste y hace cuánto terminaste?"
+      "texto": "Perfecto, Psicología a distancia. Para orientarte bien, ¿hoy a qué te dedicas?"
      }
     ],
-    "speech": "Hola, buenas tardes. Soy Justyn, asesor de la Unidad CIE de la Universidad Continental, y te llamo por tu registro en Psicología a distancia. ¿Con quién tengo el gusto?\n\nQué bueno, [nombre]. Tú eliges por dónde empezamos: cómo se estudia a distancia, cómo se revisan tus estudios técnicos para convalidar o el proceso de ingreso. ¿Cuál te acomoda primero?\n\nPerfecto, vamos por ahí. Para orientarte bien, cuéntame: ¿qué estudiaste y hace cuánto terminaste?"
+    "speech": "Hola, te saluda Jostyn de la Universidad Continental. ¿Hablo con [nombre]?\n\nClaro que sí, [nombre]. Al ser a distancia estudias desde donde estés, solo necesitas internet y tu computadora. ¿La carrera que viste fue Psicología?\n\nPerfecto, Psicología a distancia. Para orientarte bien, ¿hoy a qué te dedicas?"
    },
    {
-    "titulo": "Ocupada: un minuto y seguimos",
-    "porQue": "Si está ocupada no se agenda: se pide un minuto, se da lo más corto y útil y ella decide seguir. Se usa su nombre y se termina abriendo la indagación.",
+    "titulo": "Si atiende ocupada",
+    "porQue": "Aunque esté ocupada, confirmas carrera y modalidad en una frase y no pierdes la oportunidad de indagar.",
     "dialogo": [
      {
       "quien": "asesor",
-      "texto": "Hola, ¿hablo con [nombre]? Te saluda Justyn, de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿me regalas dos minutos?"
+      "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental, por tu interés en Psicología a distancia. ¿Me regalas dos minutos?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, soy yo, pero estoy en el trabajo, rapidito."
+      "texto": "Estoy un poco ocupada."
      },
      {
       "quien": "asesor",
-      "texto": "Claro, [nombre], en un minuto. Psicología a distancia se estudia con clases en vivo por la noche que quedan grabadas, justo para quien trabaja de día. ¿Hasta ahí te sirve?"
+      "texto": "Te lo resumo en un minuto, [nombre]. Es Psicología a distancia, con clases en vivo que quedan grabadas. ¿Esa es la carrera que estás evaluando?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, eso me sirve."
+      "texto": "Sí, esa."
      },
      {
       "quien": "asesor",
-      "texto": "Entonces, para decirte solo lo que te importa y no quitarte más tiempo: ¿hoy a qué te dedicas y qué te hizo pensar en Psicología?"
+      "texto": "Genial. Y para ver si te calza el horario, ¿trabajas actualmente o te dedicas a estudiar?"
      }
     ],
-    "speech": "Hola, ¿hablo con [nombre]? Te saluda Justyn, de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Psicología a distancia, ¿me regalas dos minutos?\n\nClaro, [nombre], en un minuto. Psicología a distancia se estudia con clases en vivo por la noche que quedan grabadas, justo para quien trabaja de día. ¿Hasta ahí te sirve?\n\nEntonces, para decirte solo lo que te importa y no quitarte más tiempo: ¿hoy a qué te dedicas y qué te hizo pensar en Psicología?"
+    "speech": "Hola, [nombre], te saluda Jostyn de la Universidad Continental, por tu interés en Psicología a distancia. ¿Me regalas dos minutos?\n\nTe lo resumo en un minuto, [nombre]. Es Psicología a distancia, con clases en vivo que quedan grabadas. ¿Esa es la carrera que estás evaluando?\n\nGenial. Y para ver si te calza el horario, ¿trabajas actualmente o te dedicas a estudiar?"
    }
   ]
  },
  "Justyn Flores Solano|paso2": {
   "stage": "paso2",
-  "base": "83df1aaf361f",
-  "conclusion": "Indagaste sobre sus estudios técnicos, su situación laboral y ubicación, lo que te dio contexto. Te faltó profundizar en por qué quiere estudiar Psicología, conectar la propuesta con sus objetivos y explorar qué limitaba su pago antes de justificar el precio.",
-  "tecId": "tec_09",
+  "base": "d0513e78450c",
+  "conclusion": "Te faltó indagar por qué quiere Psicología, a qué se dedica y qué estudios tiene, clave para hablar de convalidación. Aclara que el descuento es porcentual y el monto depende de los créditos, y completa el desglose: primera cuota, número de cuotas, seguro y proceso de admisión.",
+  "tecId": "tec_10",
   "tipo": "speech",
-  "titulo": "Su porqué antes del precio",
+  "titulo": "De las cuotas hacia arriba",
+  "porQue": "Primero conoce su carrera previa y luego explica la cuota con su desglose, aclarando que el 10 % se mantiene pero el monto depende de los créditos.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "¿Y cuánto es la cuota? Es que ahorita ando justa."
+    "texto": "¿La mensualidad sería la misma durante los cinco años?"
    },
    {
     "quien": "asesor",
-    "texto": "Te lo explico con detalle en un momento, [nombre]. Primero quiero entender para qué lo quieres, así te hablo solo de lo que te sirve.\n\n¿Qué te lleva a Psicología justo ahora?"
+    "texto": "Buena pregunta, [nombre], ya te la detallo. Antes cuéntame: me dijiste que sería tu otra carrera, ¿qué estudiaste y a qué te dedicas hoy?"
    },
    {
     "quien": "cliente",
-    "texto": "Trabajo con adolescentes en un programa y quiero ayudarlos mejor, con base."
+    "texto": "Terminé otra carrera y ahora trabajo."
    },
    {
     "quien": "asesor",
-    "texto": "O sea, ya estás en el campo y quieres respaldo profesional para hacerlo mejor. Eso cambia todo.\n\nY cuando dices que andas justa, ¿es por el monto en sí o por la fecha en que cobras?"
+    "texto": "Eso suma, porque la convalidación la evalúa el área académica con tus sílabos. La cuota de Psicología normalmente es S/632 y hoy, con 10 % de descuento, S/568.80. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
-    "texto": "Más por la fecha de cobro, me pagan a fin de mes."
+    "texto": "Sí, pero ¿siempre será ese monto?"
    },
    {
     "quien": "asesor",
-    "texto": "Entonces lo tuyo es claro: quieres la carrera para seguir con tus adolescentes con base profesional, y lo que te preocupa es cuadrar el pago con tu fecha de cobro, no el monto. ¿Es así?\n\nSi es así, te cuento cómo cuadramos los pagos con tu cobro."
+    "texto": "El 10 % se mantiene toda la carrera, pero el monto depende de los créditos de cada ciclo. Son 5 cuotas por ciclo, y la primera es mayor porque trae matrícula, seguro y examen médico. ¿Hasta ahí claro?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, ¿y cuánto es la primera?"
+   },
+   {
+    "quien": "asesor",
+    "texto": "Esa primera cuota normalmente es S/948; con la matrícula gratis y el 10 % pagas S/634.80, recién 24 horas después de tu evaluación de admisión. ¿Te cuento cómo es esa evaluación?"
    }
   ],
-  "speech": "Te lo explico con detalle en un momento, [nombre]. Primero quiero entender para qué lo quieres, así te hablo solo de lo que te sirve.\n\n¿Qué te lleva a Psicología justo ahora?\n\nO sea, ya estás en el campo y quieres respaldo profesional para hacerlo mejor. Eso cambia todo.\n\nY cuando dices que andas justa, ¿es por el monto en sí o por la fecha en que cobras?\n\nEntonces lo tuyo es claro: quieres la carrera para seguir con tus adolescentes con base profesional, y lo que te preocupa es cuadrar el pago con tu fecha de cobro, no el monto. ¿Es así?\n\nSi es así, te cuento cómo cuadramos los pagos con tu cobro.",
-  "porQue": "Indaga por qué Psicología y qué la frena en el pago antes de justificar nada; devuelve su situación con sus palabras y abre la solución.",
+  "speech": "Buena pregunta, [nombre], ya te la detallo. Antes cuéntame: me dijiste que sería tu otra carrera, ¿qué estudiaste y a qué te dedicas hoy?\n\nEso suma, porque la convalidación la evalúa el área académica con tus sílabos. La cuota de Psicología normalmente es S/632 y hoy, con 10 % de descuento, S/568.80. ¿Vamos bien?\n\nEl 10 % se mantiene toda la carrera, pero el monto depende de los créditos de cada ciclo. Son 5 cuotas por ciclo, y la primera es mayor porque trae matrícula, seguro y examen médico. ¿Hasta ahí claro?\n\nEsa primera cuota normalmente es S/948; con la matrícula gratis y el 10 % pagas S/634.80, recién 24 horas después de tu evaluación de admisión. ¿Te cuento cómo es esa evaluación?",
   "variantes": [
    {
-    "titulo": "Desde Ayacucho hasta su meta",
-    "porQue": "Responde lo de Ayacucho sin inventar, conecta la carrera con su puesto en la ONG y resume antes de abrir la solución.",
+    "titulo": "Paso a paso, en orden de pago",
+    "porQue": "Ordenas los pagos en el orden en que ocurren, conectas su carrera previa con la convalidación y aclaras que el monto varía por créditos.",
     "dialogo": [
      {
-      "quien": "cliente",
-      "texto": "¿Tienen sede en Ayacucho? Yo vivo acá."
-     },
-     {
       "quien": "asesor",
-      "texto": "Las clases y todo el proceso son virtuales, [nombre], así que estudias desde Ayacucho sin moverte; la atención presencial te la confirmo por WhatsApp.\n\nCuéntame, ¿qué te gustaría hacer con Psicología allá?"
+      "texto": "[nombre], antes de los montos, ¿por qué te animas a estudiar Psicología como tu otra carrera?"
      },
      {
       "quien": "cliente",
-      "texto": "Trabajo con jóvenes en una ONG, quiero especializarme en lo clínico."
+      "texto": "Siempre me gustó y quiero cambiar de rubro."
      },
      {
       "quien": "asesor",
-      "texto": "Entonces ya tienes el trabajo y te falta el título que te respalde. ¿Hoy en la ONG sienten que te falta ese respaldo?"
+      "texto": "Qué bien. Como ya estudiaste, podrías convalidar cursos según la evaluación de tus sílabos. Te explico el orden de pago: primero la admisión, hoy S/100 en vez de S/200. ¿Vamos bien?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, para subir de puesto me piden ser profesional."
+      "texto": "Sí, ¿después qué pago?"
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto: estudias desde Ayacucho, de noche, y necesitas el título para subir de puesto en la ONG. Con eso en mente te explico cómo se estudia y cómo las certificaciones progresivas te sirven desde los primeros ciclos. ¿Empezamos por ahí?"
+      "texto": "Rindes tu evaluación virtual y, 24 horas después, tu primera cuota: S/634.80 en lugar de S/948, porque ya incluye seguro y examen médico y la matrícula es gratis. ¿Hasta ahí claro?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "¿Y las demás son iguales?"
+     },
+     {
+      "quien": "asesor",
+      "texto": "Las otras 4 cuotas del ciclo, desde abril, son de S/568.80. El 10 % sigue toda la carrera, aunque el monto varía según los créditos de cada ciclo. ¿Te sirve así para organizarte?"
      }
     ],
-    "speech": "Las clases y todo el proceso son virtuales, [nombre], así que estudias desde Ayacucho sin moverte; la atención presencial te la confirmo por WhatsApp.\n\nCuéntame, ¿qué te gustaría hacer con Psicología allá?\n\nEntonces ya tienes el trabajo y te falta el título que te respalde. ¿Hoy en la ONG sienten que te falta ese respaldo?\n\nPerfecto: estudias desde Ayacucho, de noche, y necesitas el título para subir de puesto en la ONG. Con eso en mente te explico cómo se estudia y cómo las certificaciones progresivas te sirven desde los primeros ciclos. ¿Empezamos por ahí?"
+    "speech": "[nombre], antes de los montos, ¿por qué te animas a estudiar Psicología como tu otra carrera?\n\nQué bien. Como ya estudiaste, podrías convalidar cursos según la evaluación de tus sílabos. Te explico el orden de pago: primero la admisión, hoy S/100 en vez de S/200. ¿Vamos bien?\n\nRindes tu evaluación virtual y, 24 horas después, tu primera cuota: S/634.80 en lugar de S/948, porque ya incluye seguro y examen médico y la matrícula es gratis. ¿Hasta ahí claro?\n\nLas otras 4 cuotas del ciclo, desde abril, son de S/568.80. El 10 % sigue toda la carrera, aunque el monto varía según los créditos de cada ciclo. ¿Te sirve así para organizarte?"
    },
    {
-    "titulo": "Qué la frenó antes",
-    "porQue": "Explora el obstáculo previo con sus palabras, lo devuelve sin juzgar y lo convierte en el criterio para la siguiente etapa.",
+    "titulo": "Primero el valor, luego el número",
+    "porQue": "Indaga su motivación y su trabajo antes de hablar de dinero y presenta el ahorro con su origen, sin prometer una cuota fija.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "La verdad, ya intenté estudiar antes y lo dejé."
+      "texto": "Me interesa, pero estoy organizando mis gastos y no sé si me alcanza."
      },
      {
       "quien": "asesor",
-      "texto": "Gracias por contármelo, [nombre]. ¿Qué pasó esa vez: el horario, el dinero o la carrera?"
+      "texto": "Te entiendo, [nombre]. Para orientarte bien, ¿hoy a qué te dedicas y qué te motiva a estudiar Psicología?"
      },
      {
       "quien": "cliente",
-      "texto": "El dinero, me atrasé en los pagos y lo dejé."
+      "texto": "Trabajo, y quiero dedicarme a lo que me gusta."
      },
      {
       "quien": "asesor",
-      "texto": "Entiendo, te atrasaste y preferiste parar antes que acumular deuda. ¿Y qué te hace volver a intentarlo ahora con Psicología?"
+      "texto": "Entonces lo tuyo es estudiar sin dejar tu trabajo y cumplir esa meta. Mira una sola cifra: este ciclo te ahorras S/566, porque la matrícula es gratis y las cuotas tienen 10 % menos. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
-      "texto": "Trabajo con adolescentes y siento que me falta base para ayudarlos."
+      "texto": "Suena bien, ¿pero la cuota siempre es igual?"
      },
      {
       "quien": "asesor",
-      "texto": "Entonces tienes la motivación clara, tus adolescentes, y una preocupación concreta: no volver a atrasarte. Si te muestro cómo se organizan los pagos en fechas que cuadren con tu cobro, ¿te ayudaría a decidir?"
+      "texto": "El descuento es porcentual y se mantiene, pero el monto depende de los créditos de cada ciclo. Para empezar solo necesitas S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Te cuento cómo es?"
      }
     ],
-    "speech": "Gracias por contármelo, [nombre]. ¿Qué pasó esa vez: el horario, el dinero o la carrera?\n\nEntiendo, te atrasaste y preferiste parar antes que acumular deuda. ¿Y qué te hace volver a intentarlo ahora con Psicología?\n\nEntonces tienes la motivación clara, tus adolescentes, y una preocupación concreta: no volver a atrasarte. Si te muestro cómo se organizan los pagos en fechas que cuadren con tu cobro, ¿te ayudaría a decidir?"
+    "speech": "Te entiendo, [nombre]. Para orientarte bien, ¿hoy a qué te dedicas y qué te motiva a estudiar Psicología?\n\nEntonces lo tuyo es estudiar sin dejar tu trabajo y cumplir esa meta. Mira una sola cifra: este ciclo te ahorras S/566, porque la matrícula es gratis y las cuotas tienen 10 % menos. ¿Cómo lo ves?\n\nEl descuento es porcentual y se mantiene, pero el monto depende de los créditos de cada ciclo. Para empezar solo necesitas S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Te cuento cómo es?"
    }
   ]
  },
  "Justyn Flores Solano|paso4": {
   "stage": "paso4",
-  "base": "a79bf6e4e345",
-  "conclusion": "Identificas la oportunidad de cierre inmediato, propones la evaluación ese mismo día y acuerdas un compromiso con hora (8:00 p. m.). Te faltó confirmar por WhatsApp apenas terminó la llamada y derivar a la encuesta de satisfacción.",
-  "tecId": "tec_10",
+  "base": "a180f2fe5205",
+  "conclusion": "Te identificaste como su asesor y propusiste seguimiento por WhatsApp. Concreta día y hora confirmados por ella, precisa qué le enviarás (brochure y cuadro de costos), usa su nombre y, al despedirte, nombra la institución, deriva a la encuesta y evita expresiones informales.",
+  "tecId": "tec_16",
   "tipo": "speech",
-  "porQue": "Convierte el sí de las 8 en pequeños sí: la hora, la laptop, el WhatsApp y el recibido. Solo después de agendar la evaluación cierra con nombre, Unidad y encuesta.",
+  "titulo": "De las cuotas hacia arriba",
+  "porQue": "Respondes el monto con su desglose, dices qué envías por WhatsApp y cierras con día y hora de la evaluación elegidos por ella.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Ahorita tengo una reunión, a las 8 te puedo atender."
+    "texto": "Ya, pero al final ¿cuánto pagaría al mes? Mándame todo por WhatsApp."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, Jenny, a las 8:00 p. m. rendimos tu evaluación de admisión. Es virtual, desde una computadora o laptop con cámara encendida, y yo te acompaño. ¿A esa hora ya estarás frente a tu laptop?"
+    "texto": "Claro, [nombre]. La cuota de Psicología es S/632 y hoy, con 10 % de descuento, queda en S/568.80, un descuento que mantienes toda la carrera. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, ya estaré en mi casa."
+    "texto": "Sí. ¿Y la primera cuota?"
    },
    {
     "quien": "asesor",
-    "texto": "Genial. Apenas colguemos te mando por WhatsApp el enlace y los datos que necesito para programarla. ¿Me respondes un recibido cuando te llegue?"
+    "texto": "Normalmente es S/948 y hoy S/634.80, porque la matrícula es gratis. Te envío ahora el brochure y el cuadro de costos, y por matricularte tienes Nexus y el Taller de Excel certificado sin costo. ¿Rindes tu evaluación hoy en la noche o mañana?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, te escribo apenas me llegue."
+    "texto": "Mañana a las 7 de la noche."
    },
    {
     "quien": "asesor",
-    "texto": "Gracias, Jenny. A las 8 te llamo a este mismo número y empezamos. Te atendió Justyn, de la Unidad CIE de la Universidad Continental. Ahora te derivo a una breve encuesta sobre esta atención, ¿de acuerdo?"
+    "texto": "Listo, [nombre], queda agendada mañana a las 7 p. m., desde tu laptop con cámara, y te escribo antes por WhatsApp. Te atendió Jostyn, de la Universidad Continental; ahora te derivo a una breve encuesta de atención."
    }
   ],
-  "speech": "Perfecto, Jenny, a las 8:00 p. m. rendimos tu evaluación de admisión. Es virtual, desde una computadora o laptop con cámara encendida, y yo te acompaño. ¿A esa hora ya estarás frente a tu laptop?\n\nGenial. Apenas colguemos te mando por WhatsApp el enlace y los datos que necesito para programarla. ¿Me respondes un recibido cuando te llegue?\n\nGracias, Jenny. A las 8 te llamo a este mismo número y empezamos. Te atendió Justyn, de la Unidad CIE de la Universidad Continental. Ahora te derivo a una breve encuesta sobre esta atención, ¿de acuerdo?",
-  "titulo": "Hoy a las 8, confirmado por WhatsApp",
+  "speech": "Claro, [nombre]. La cuota de Psicología es S/632 y hoy, con 10 % de descuento, queda en S/568.80, un descuento que mantienes toda la carrera. ¿Vamos bien?\n\nNormalmente es S/948 y hoy S/634.80, porque la matrícula es gratis. Te envío ahora el brochure y el cuadro de costos, y por matricularte tienes Nexus y el Taller de Excel certificado sin costo. ¿Rindes tu evaluación hoy en la noche o mañana?\n\nListo, [nombre], queda agendada mañana a las 7 p. m., desde tu laptop con cámara, y te escribo antes por WhatsApp. Te atendió Jostyn, de la Universidad Continental; ahora te derivo a una breve encuesta de atención.",
   "variantes": [
    {
-    "titulo": "Si pide que sea mañana temprano",
-    "porQue": "Da control sobre la hora pero siempre dentro de hoy o mañana; asegura el WhatsApp con un sí de recepción y cierra con protocolo y encuesta.",
+    "titulo": "Paso a paso, en orden de pago",
+    "porQue": "Conviertes el envío de información en un resumen ordenado de pagos y terminas con la evaluación agendada, no con un seguimiento abierto.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Hoy tengo reuniones hasta tarde, ¿mañana se puede?"
+      "texto": "Mándame la información y lo veo."
      },
      {
       "quien": "asesor",
-      "texto": "Claro, Jenny, mañana también aplica. ¿Te acomoda más a las 8 de la mañana, antes de tu trabajo, o a las 7 de la noche?"
+      "texto": "Claro, [nombre], te envío ahora por WhatsApp el brochure y el cuadro de costos. Te lo resumo en orden: primero la admisión, hoy S/100 en vez de S/200. ¿Vamos bien?"
      },
      {
       "quien": "cliente",
-      "texto": "A las 8 de la mañana mejor."
+      "texto": "Sí, ¿después?"
      },
      {
       "quien": "asesor",
-      "texto": "Listo, mañana 8:00 a. m., desde una computadora o laptop con cámara encendida. Apenas colguemos te envío por WhatsApp el enlace y el formulario de datos. ¿Me confirmas por ahí que te llegó?"
+      "texto": "24 horas después de tu evaluación, la primera cuota: S/634.80, con seguro y examen médico, y la matrícula gratis. Las otras 4, desde abril, de S/568.80. ¿Hasta ahí claro?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, te confirmo."
+      "texto": "Sí, clarísimo."
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto. Con eso tu evaluación queda programada y mañana a las 8 das tu primer paso. Te atendió Justyn, de la Unidad CIE de la Universidad Continental. Te paso a una breve encuesta de atención, ¿te parece?"
+      "texto": "Y por matricularte tienes Nexus y el Taller de Excel certificado, sin costo. ¿Rindes tu evaluación virtual hoy en la noche o mañana temprano? Dime la hora y te la dejo agendada."
      }
     ],
-    "speech": "Claro, Jenny, mañana también aplica. ¿Te acomoda más a las 8 de la mañana, antes de tu trabajo, o a las 7 de la noche?\n\nListo, mañana 8:00 a. m., desde una computadora o laptop con cámara encendida. Apenas colguemos te envío por WhatsApp el enlace y el formulario de datos. ¿Me confirmas por ahí que te llegó?\n\nPerfecto. Con eso tu evaluación queda programada y mañana a las 8 das tu primer paso. Te atendió Justyn, de la Unidad CIE de la Universidad Continental. Te paso a una breve encuesta de atención, ¿te parece?"
+    "speech": "Claro, [nombre], te envío ahora por WhatsApp el brochure y el cuadro de costos. Te lo resumo en orden: primero la admisión, hoy S/100 en vez de S/200. ¿Vamos bien?\n\n24 horas después de tu evaluación, la primera cuota: S/634.80, con seguro y examen médico, y la matrícula gratis. Las otras 4, desde abril, de S/568.80. ¿Hasta ahí claro?\n\nY por matricularte tienes Nexus y el Taller de Excel certificado, sin costo. ¿Rindes tu evaluación virtual hoy en la noche o mañana temprano? Dime la hora y te la dejo agendada."
    },
    {
-    "titulo": "Confirmar el recibido en la misma llamada",
-    "porQue": "No deja el WhatsApp para después: lo envía y confirma la recepción mientras habla, luego cierra con nombre, Unidad y encuesta.",
+    "titulo": "Primero el valor, luego el número",
+    "porQue": "Ante el «lo pienso», das una cifra de valor, preguntas qué falta y fijas día y hora según su fecha de cobro.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Ya, a las 8 entonces."
+      "texto": "Lo voy a pensar, te escribo por WhatsApp."
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto, Jenny, a las 8:00 p. m. Te estoy enviando ahora mismo por WhatsApp el formulario de datos para tu evaluación. ¿Puedes revisar si ya te llegó mientras hablamos?"
+      "texto": "Te entiendo, [nombre], es una decisión importante. Para que lo pienses con datos: este ciclo te ahorras S/566, porque la matrícula es gratis y las cuotas tienen 10 % menos. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
-      "texto": "A ver… sí, ya me llegó."
+      "texto": "Está bien, pero necesito ver mis gastos."
      },
      {
       "quien": "asesor",
-      "texto": "Excelente. Llénalo cuando salgas de tu reunión, te toma dos minutos. A las 8 te llamo, abres tu laptop con la cámara encendida y la rendimos juntos. ¿Vamos bien?"
+      "texto": "Claro. Para empezar solo necesitas S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. Te envío ahora el brochure y el cuadro de costos. ¿Qué te faltaría para decidir?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, listo."
+      "texto": "Ver si me alcanza a fin de mes."
      },
      {
       "quien": "asesor",
-      "texto": "Gracias por tu tiempo, Jenny. Te atendió Justyn, de la Unidad CIE de la Universidad Continental. Antes de colgar te derivo a una breve encuesta de satisfacción sobre esta atención."
+      "texto": "Entonces elijamos una fecha que calce con tu cobro: ¿qué día y a qué hora rindes tu evaluación virtual? Soy Jostyn, de la Universidad Continental, y ese día te escribo para acompañarte."
      }
     ],
-    "speech": "Perfecto, Jenny, a las 8:00 p. m. Te estoy enviando ahora mismo por WhatsApp el formulario de datos para tu evaluación. ¿Puedes revisar si ya te llegó mientras hablamos?\n\nExcelente. Llénalo cuando salgas de tu reunión, te toma dos minutos. A las 8 te llamo, abres tu laptop con la cámara encendida y la rendimos juntos. ¿Vamos bien?\n\nGracias por tu tiempo, Jenny. Te atendió Justyn, de la Unidad CIE de la Universidad Continental. Antes de colgar te derivo a una breve encuesta de satisfacción sobre esta atención."
+    "speech": "Te entiendo, [nombre], es una decisión importante. Para que lo pienses con datos: este ciclo te ahorras S/566, porque la matrícula es gratis y las cuotas tienen 10 % menos. ¿Cómo lo ves?\n\nClaro. Para empezar solo necesitas S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. Te envío ahora el brochure y el cuadro de costos. ¿Qué te faltaría para decidir?\n\nEntonces elijamos una fecha que calce con tu cobro: ¿qué día y a qué hora rindes tu evaluación virtual? Soy Jostyn, de la Universidad Continental, y ese día te escribo para acompañarte."
    }
   ]
  },
@@ -7451,125 +7455,105 @@
  },
  "Milagros Torres Santos|paso4": {
   "stage": "paso4",
-  "base": "ac91b0ccc270",
-  "conclusion": "Llevaste bien el cierre: pasaste de resolver la barrera económica a validar cuándo se inscribe, iniciaste la ficha y mantuviste la continuidad por WhatsApp. Falta explicar todos los conceptos del pago inicial, usar el nombre y derivar a la encuesta.",
-  "tecId": "tec_10",
+  "base": "1117024cbbac",
+  "conclusion": "Fuiste cordial y escuchaste sus preocupaciones de horario y economía. Refuerza el uso de su nombre y cumple el protocolo de despedida: tu nombre, la Unidad CIE y la transferencia a la encuesta; y antes de cualquier descuento, identifica su capacidad de pago.",
+  "tecId": "tec_14",
   "tipo": "speech",
-  "titulo": "Pago inicial completo y evaluación agendada",
+  "titulo": "De las cuotas hacia arriba",
+  "porQue": "Confirma que la cuota calza con su presupuesto, cierra hacia la evaluación y termina con el protocolo completo.",
   "dialogo": [
    {
-    "quien": "cliente",
-    "texto": "Ya, ¿y cuánto pago para inscribirme?"
-   },
-   {
     "quien": "asesor",
-    "texto": "Te lo ordeno, [nombre]. Primero la admisión: S/200, hoy S/100. Con eso tienes tu vacante en Administración. ¿Vamos bien?"
+    "texto": "Gilmer, con lo que me dijiste, tu cuota de S/563.04 entra en lo que tienes previsto, y ese 10 % sigue toda tu carrera. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí."
+    "texto": "Sí, me parece bien."
    },
    {
     "quien": "asesor",
-    "texto": "Segundo, 24 horas después de tu evaluación, tu primera cuota. Normalmente es S/876 porque junta cuatro conceptos: el pago por tus créditos, la matrícula de S/250, el seguro contra accidentes y el examen médico. ¿Hasta ahí claro?"
+    "texto": "Perfecto. Solo por matricularte tienes Nexus para adelantar cursos y el Taller de Excel certificado. ¿Rindes tu evaluación virtual hoy o mañana, Gilmer?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, ¿y con el descuento?"
+    "texto": "Mañana, que estoy de descanso."
    },
    {
     "quien": "asesor",
-    "texto": "Hoy la matrícula sale gratis y tus créditos tienen 10 % menos, así que esa primera cuota queda en S/570, con seguro y examen médico ya incluidos. Las demás cuotas, recién desde abril, S/504. ¿Cómo lo ves?"
+    "texto": "Ideal, Gilmer. ¿A qué hora te acomoda?"
    },
    {
     "quien": "cliente",
-    "texto": "Mejor de lo que pensaba. ¿Y qué sigue?"
+    "texto": "A las diez."
    },
    {
     "quien": "asesor",
-    "texto": "Tu evaluación de admisión, [nombre]: virtual, desde una computadora o laptop con cámara, y yo te acompaño. Apenas me digas la hora, te envío el enlace por WhatsApp. ¿La rindes hoy a las 8 de la noche o mañana a las 10?"
+    "texto": "Listo, mañana a las diez. Soy Patricia, de la Unidad CIE de la Universidad Continental; te escribo por WhatsApp. Te transfiero a una breve encuesta de satisfacción. ¡Gracias, Gilmer!"
    }
   ],
-  "speech": "Te lo ordeno, [nombre]. Primero la admisión: S/200, hoy S/100. Con eso tienes tu vacante en Administración. ¿Vamos bien?\n\nSegundo, 24 horas después de tu evaluación, tu primera cuota. Normalmente es S/876 porque junta cuatro conceptos: el pago por tus créditos, la matrícula de S/250, el seguro contra accidentes y el examen médico. ¿Hasta ahí claro?\n\nHoy la matrícula sale gratis y tus créditos tienen 10 % menos, así que esa primera cuota queda en S/570, con seguro y examen médico ya incluidos. Las demás cuotas, recién desde abril, S/504. ¿Cómo lo ves?\n\nTu evaluación de admisión, [nombre]: virtual, desde una computadora o laptop con cámara, y yo te acompaño. Apenas me digas la hora, te envío el enlace por WhatsApp. ¿La rindes hoy a las 8 de la noche o mañana a las 10?",
-  "porQue": "Explica todos los conceptos del pago inicial (admisión, créditos, matrícula, seguro, examen médico) con pocas cifras por turno y usando su nombre; agenda la evaluación y recién entonces WhatsApp, nombre y encuesta.",
+  "speech": "Gilmer, con lo que me dijiste, tu cuota de S/563.04 entra en lo que tienes previsto, y ese 10 % sigue toda tu carrera. ¿Vamos bien?\n\nPerfecto. Solo por matricularte tienes Nexus para adelantar cursos y el Taller de Excel certificado. ¿Rindes tu evaluación virtual hoy o mañana, Gilmer?\n\nIdeal, Gilmer. ¿A qué hora te acomoda?\n\nListo, mañana a las diez. Soy Patricia, de la Unidad CIE de la Universidad Continental; te escribo por WhatsApp. Te transfiero a una breve encuesta de satisfacción. ¡Gracias, Gilmer!",
   "variantes": [
    {
-    "titulo": "De la cuota hacia la primera cuota",
-    "porQue": "Parte de la cuota mensual, explica por qué la primera es distinta nombrando sus cuatro conceptos y cuándo se paga, y cierra con la evaluación con hora, WhatsApp, nombre y encuesta.",
+    "titulo": "Paso a paso, en orden de pago",
+    "porQue": "Resume el orden de pagos para que decida con claridad, usa su nombre y cierra con protocolo.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "¿Entonces la cuota cuánto es?"
+      "texto": "Lo tengo que organizar con mi sueldo."
      },
      {
       "quien": "asesor",
-      "texto": "[nombre], la cuota de Administración es S/560 y hoy queda en S/504, con 10 % menos en el pago por créditos. Son cinco cuotas por ciclo. ¿Vamos bien?"
+      "texto": "Claro, Gilmer. Hoy solo es la admisión, S/100 en vez de S/200. La primera cuota, S/629.04, va 24 horas después de tu evaluación. ¿Te sirve así?"
      },
      {
       "quien": "cliente",
-      "texto": "¿Y todas iguales?"
+      "texto": "Sí, eso lo puedo hacer."
      },
      {
       "quien": "asesor",
-      "texto": "Solo la primera es distinta porque trae cuatro conceptos: tus créditos, la matrícula de S/250, el seguro contra accidentes y el examen médico. Hoy la matrícula es gratis, así que queda en S/570, y la pagas 24 horas después de tu evaluación. ¿Hasta ahí claro?"
+      "texto": "Genial, Gilmer. Entonces, ¿qué fecha te acomoda para rendir tu evaluación, hoy o mañana?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, me cuadra. ¿Y para rendir la evaluación?"
+      "texto": "Hoy en la noche."
      },
      {
       "quien": "asesor",
-      "texto": "Es virtual, desde tu laptop con cámara, sobre tu perfil y motivaciones, y yo te acompaño. Hoy solo pagas la admisión, S/100 en vez de S/200. ¿La rendimos hoy en la noche o mañana temprano, [nombre]?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Hoy en la noche, a las 7."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Hoy a las 7, listo. Te envío el enlace por WhatsApp ahora mismo. Te atendió Milagros de la Universidad Continental; te derivo a una breve encuesta sobre mi atención, ¿me apoyas?"
+      "texto": "Excelente. Hazlo desde tu laptop con cámara. Te atendió Patricia, de la Unidad CIE; guarda mi WhatsApp. Te paso a una encuesta corta sobre mi atención. ¡Éxitos, Gilmer!"
      }
     ],
-    "speech": "[nombre], la cuota de Administración es S/560 y hoy queda en S/504, con 10 % menos en el pago por créditos. Son cinco cuotas por ciclo. ¿Vamos bien?\n\nSolo la primera es distinta porque trae cuatro conceptos: tus créditos, la matrícula de S/250, el seguro contra accidentes y el examen médico. Hoy la matrícula es gratis, así que queda en S/570, y la pagas 24 horas después de tu evaluación. ¿Hasta ahí claro?\n\nEs virtual, desde tu laptop con cámara, sobre tu perfil y motivaciones, y yo te acompaño. Hoy solo pagas la admisión, S/100 en vez de S/200. ¿La rendimos hoy en la noche o mañana temprano, [nombre]?\n\nHoy a las 7, listo. Te envío el enlace por WhatsApp ahora mismo. Te atendió Milagros de la Universidad Continental; te derivo a una breve encuesta sobre mi atención, ¿me apoyas?"
+    "speech": "Claro, Gilmer. Hoy solo es la admisión, S/100 en vez de S/200. La primera cuota, S/629.04, va 24 horas después de tu evaluación. ¿Te sirve así?\n\nGenial, Gilmer. Entonces, ¿qué fecha te acomoda para rendir tu evaluación, hoy o mañana?\n\nExcelente. Hazlo desde tu laptop con cámara. Te atendió Patricia, de la Unidad CIE; guarda mi WhatsApp. Te paso a una encuesta corta sobre mi atención. ¡Éxitos, Gilmer!"
    },
    {
-    "titulo": "Si se corta, seguir por WhatsApp ahora",
-    "porQue": "Cuando la llamada falla, continúa por WhatsApp en ese momento con el pago inicial en tres líneas (todos los conceptos, pocas cifras), motiva con Nexus y Excel, agenda la evaluación y cierra con nombre y encuesta.",
+    "titulo": "Primero el valor, luego el número",
+    "porQue": "Pregunta qué falta para decidir, responde con su meta y el ahorro, y recién después cierra con protocolo.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Se escucha mal, mejor lo vemos luego."
+      "texto": "Me gustó, pero no sé."
      },
      {
       "quien": "asesor",
-      "texto": "Tranquila, [nombre], te escribo por WhatsApp ahora mismo y seguimos por ahí, sin esperar. Primera línea: admisión S/100 en vez de S/200, y es lo único que pagas hoy. ¿Vamos bien?"
+      "texto": "Te entiendo, Gilmer. ¿Qué te falta para decidirte: el horario o el pago?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, ya veo el mensaje."
+      "texto": "El pago, que no se me complique."
      },
      {
       "quien": "asesor",
-      "texto": "Segunda: tu primera cuota va 24 horas después de la evaluación y junta tus créditos, la matrícula, el seguro contra accidentes y el examen médico. Hoy la matrícula sale gratis y los créditos tienen 10 % menos: queda en S/570. ¿Hasta ahí claro?"
+      "texto": "Por eso te conviene hoy: te ahorras S/562.80 en el ciclo y para empezar solo pagas S/100. Y con tus días de descanso avanzas tus clases. ¿Te imaginas en tu primer ciclo de Industrial?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, ahora sí lo entiendo."
+      "texto": "Sí, la verdad sí."
      },
      {
       "quien": "asesor",
-      "texto": "Tercera: las demás cuotas recién desde abril. Solo queda tu evaluación, [nombre], virtual desde una laptop con cámara, y por matricularte te regalamos Nexus y el Taller de Excel certificado. ¿La rindes hoy a las 8 o mañana a las 10?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Mañana a las 10."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Mañana a las 10, anotado. Te dejo el enlace por este WhatsApp. Te atendió Milagros de la Universidad Continental; te derivo a una breve encuesta sobre mi atención, ¿me apoyas?"
+      "texto": "Entonces, Gilmer, ¿rindes tu evaluación hoy o mañana? Soy Patricia, de la Unidad CIE, y te acompaño. Luego te paso a una breve encuesta de atención."
      }
     ],
-    "speech": "Tranquila, [nombre], te escribo por WhatsApp ahora mismo y seguimos por ahí, sin esperar. Primera línea: admisión S/100 en vez de S/200, y es lo único que pagas hoy. ¿Vamos bien?\n\nSegunda: tu primera cuota va 24 horas después de la evaluación y junta tus créditos, la matrícula, el seguro contra accidentes y el examen médico. Hoy la matrícula sale gratis y los créditos tienen 10 % menos: queda en S/570. ¿Hasta ahí claro?\n\nTercera: las demás cuotas recién desde abril. Solo queda tu evaluación, [nombre], virtual desde una laptop con cámara, y por matricularte te regalamos Nexus y el Taller de Excel certificado. ¿La rindes hoy a las 8 o mañana a las 10?\n\nMañana a las 10, anotado. Te dejo el enlace por este WhatsApp. Te atendió Milagros de la Universidad Continental; te derivo a una breve encuesta sobre mi atención, ¿me apoyas?"
+    "speech": "Te entiendo, Gilmer. ¿Qué te falta para decidirte: el horario o el pago?\n\nPor eso te conviene hoy: te ahorras S/562.80 en el ciclo y para empezar solo pagas S/100. Y con tus días de descanso avanzas tus clases. ¿Te imaginas en tu primer ciclo de Industrial?\n\nEntonces, Gilmer, ¿rindes tu evaluación hoy o mañana? Soy Patricia, de la Unidad CIE, y te acompaño. Luego te paso a una breve encuesta de atención."
    }
   ]
  },
@@ -8808,237 +8792,205 @@
  },
  "Orlando Jesus Pintado Sandoval|paso2": {
   "stage": "paso2",
-  "base": "41c737655476",
-  "conclusion": "Indagaste sus estudios de Laboratorio Clínico, explicaste documentos, beneficios de la modalidad y costos. Profundiza sus expectativas antes de informar, da datos validados de internado y prácticas y comunica solo beneficios de su división: el 20 % es exclusivo de ingresantes; fija día y hora de seguimiento.",
-  "tecId": "tec_08",
+  "base": "5a0bcf07d9ff",
+  "conclusion": "Conectaste bien horarios, clases grabadas y curso de adelanto con su trabajo y su meta de terminar pronto. Te faltó indagar su tiempo real y su motivación, sin repetir datos que ya dio, y explicar la inversión completa: matrícula, cuotas por créditos, número de cuotas, seguro y condiciones del descuento.",
+  "tecId": "tec_10",
   "tipo": "speech",
-  "titulo": "Su expectativa antes de informar",
-  "porQue": "Antes de documentos y montos profundiza su meta, sus turnos y qué espera de la convalidación; termina con un resumen con sus palabras y abre la solución con los beneficios exactos de su caso, sin agendar seguimiento.",
+  "titulo": "De las cuotas hacia arriba",
+  "porQue": "Indagas su tiempo real y su motivo y luego explicas la cuota con todos sus conceptos, dejando claro que depende de los créditos.",
   "dialogo": [
    {
+    "quien": "cliente",
+    "texto": "Yo trabajo hasta la madrugada en mi negocio."
+   },
+   {
     "quien": "asesor",
-    "texto": "[nombre], antes de contarte documentos y montos, quiero entender algo: ¿qué esperas lograr con Psicología, teniendo ya Laboratorio Clínico?"
+    "texto": "Entiendo, [nombre], hasta la madrugada es bastante. ¿Cuántas horas reales a la semana podrías dedicarle al estudio, y qué te motiva a terminar la carrera?"
    },
    {
     "quien": "cliente",
-    "texto": "Trabajo en una clínica y quiero pasar a salud mental, me gusta más tratar con pacientes."
+    "texto": "Unas horas en la tarde. Quiero terminar rápido para crecer mi negocio."
    },
    {
     "quien": "asesor",
-    "texto": "Pasar a salud mental sin salir del sector donde ya estás. ¿Y en la clínica tienes turnos rotativos o un horario fijo?"
+    "texto": "Entonces lo tuyo es avanzar rápido sin descuidar tu negocio, y las clases grabadas te esperan en la tarde. La cuota normal es S/560 y hoy, con 10 % menos, S/504, toda la carrera. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
-    "texto": "Rotativos, a veces de noche."
+    "texto": "¿Y siempre es lo mismo?"
    },
    {
     "quien": "asesor",
-    "texto": "Turnos rotativos, anotado. ¿Y sobre lo que estudiaste, qué esperas: avanzar más rápido o simplemente que no se pierda?"
-   },
-   {
-    "quien": "cliente",
-    "texto": "Que se me reconozca algo, por lo menos los cursos de ciencias."
-   },
-   {
-    "quien": "asesor",
-    "texto": "Entonces lo tuyo es pasar a salud mental, con un horario que soporte tus turnos rotativos y que tus cursos de ciencias se evalúen para convalidar, ¿verdad? Te cuento cómo lo resolvemos y los beneficios exactos que aplican a tu caso, ¿vamos?"
+    "texto": "Depende de los créditos de cada ciclo, y son 5 cuotas por ciclo. La primera suma matrícula, seguro y examen médico: normalmente S/876, hoy S/570 porque la matrícula es gratis. ¿Te cuento cómo es la evaluación de admisión?"
    }
   ],
-  "speech": "[nombre], antes de contarte documentos y montos, quiero entender algo: ¿qué esperas lograr con Psicología, teniendo ya Laboratorio Clínico?\n\nPasar a salud mental sin salir del sector donde ya estás. ¿Y en la clínica tienes turnos rotativos o un horario fijo?\n\nTurnos rotativos, anotado. ¿Y sobre lo que estudiaste, qué esperas: avanzar más rápido o simplemente que no se pierda?\n\nEntonces lo tuyo es pasar a salud mental, con un horario que soporte tus turnos rotativos y que tus cursos de ciencias se evalúen para convalidar, ¿verdad? Te cuento cómo lo resolvemos y los beneficios exactos que aplican a tu caso, ¿vamos?",
+  "speech": "Entiendo, [nombre], hasta la madrugada es bastante. ¿Cuántas horas reales a la semana podrías dedicarle al estudio, y qué te motiva a terminar la carrera?\n\nEntonces lo tuyo es avanzar rápido sin descuidar tu negocio, y las clases grabadas te esperan en la tarde. La cuota normal es S/560 y hoy, con 10 % menos, S/504, toda la carrera. ¿Vamos bien?\n\nDepende de los créditos de cada ciclo, y son 5 cuotas por ciclo. La primera suma matrícula, seguro y examen médico: normalmente S/876, hoy S/570 porque la matrícula es gratis. ¿Te cuento cómo es la evaluación de admisión?",
   "variantes": [
    {
-    "titulo": "Cuando pide el 20 %",
-    "porQue": "Aclara de frente que el 20 % es exclusivo de ingresantes y no aplica a su división, y en vez de dar cifras al aire indaga quién paga y cuánto puede; cierra la etapa con un resumen que abre la inversión exacta.",
+    "titulo": "Paso a paso, en orden de pago",
+    "porQue": "Partes de su horario real y ordenas los pagos uno por uno, sin volver a pedir datos que ya te dio.",
     "dialogo": [
      {
-      "quien": "cliente",
-      "texto": "¿Y no hay un descuento mayor? Me dijeron que había de 20 %."
-     },
-     {
       "quien": "asesor",
-      "texto": "Te lo aclaro de frente, [nombre], para que no te quedes con una idea equivocada: ese 20 % es un beneficio exclusivo de quienes ya son ingresantes, no aplica a tu caso. Lo tuyo lo vemos con los beneficios reales de hoy. ¿Vamos bien?"
+      "texto": "[nombre], me contaste que trabajas hasta la madrugada. ¿En qué momento del día te quedaría tiempo para estudiar?"
      },
      {
       "quien": "cliente",
-      "texto": "Ah, ya. ¿Y entonces cuánto me ahorro?"
+      "texto": "En la tarde, antes de abrir."
      },
      {
       "quien": "asesor",
-      "texto": "Te lo detallo en un momento con cifras exactas. Primero dime, ¿quién va a asumir la inversión, tú con tu sueldo o te apoya alguien?"
+      "texto": "Perfecto, ahí puedes ver tus clases grabadas. Te explico el orden de pago: primero la admisión, hoy S/100 en vez de S/200, y con eso rindes tu evaluación virtual. ¿Vamos bien?"
      },
      {
       "quien": "cliente",
-      "texto": "Yo, con lo que gano en la clínica."
+      "texto": "Sí, ¿y luego?"
      },
      {
       "quien": "asesor",
-      "texto": "Con tu sueldo de la clínica. ¿Y cuánto podrías destinar al mes sin que te apriete?"
+      "texto": "24 horas después de la evaluación, tu primera cuota: S/570, que ya incluye seguro y examen médico; la matrícula de S/250 hoy es gratis. ¿Hasta ahí claro?"
      },
      {
       "quien": "cliente",
-      "texto": "Unos 600 soles, máximo."
+      "texto": "¿Y las demás cuotas?"
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto. Entonces lo pagas tú, con un tope de S/600 al mes, y quieres saber qué beneficio real te corresponde. Con eso te armo la inversión exacta de Psicología, sin promesas de otras divisiones. ¿Te la explico?"
+      "texto": "Las otras 4, desde abril, de S/504. El 10 % se mantiene toda la carrera, aunque el monto varía según los créditos que lleves. ¿Te sirve así para organizarte con tu negocio?"
      }
     ],
-    "speech": "Te lo aclaro de frente, [nombre], para que no te quedes con una idea equivocada: ese 20 % es un beneficio exclusivo de quienes ya son ingresantes, no aplica a tu caso. Lo tuyo lo vemos con los beneficios reales de hoy. ¿Vamos bien?\n\nTe lo detallo en un momento con cifras exactas. Primero dime, ¿quién va a asumir la inversión, tú con tu sueldo o te apoya alguien?\n\nCon tu sueldo de la clínica. ¿Y cuánto podrías destinar al mes sin que te apriete?\n\nPerfecto. Entonces lo pagas tú, con un tope de S/600 al mes, y quieres saber qué beneficio real te corresponde. Con eso te armo la inversión exacta de Psicología, sin promesas de otras divisiones. ¿Te la explico?"
+    "speech": "[nombre], me contaste que trabajas hasta la madrugada. ¿En qué momento del día te quedaría tiempo para estudiar?\n\nPerfecto, ahí puedes ver tus clases grabadas. Te explico el orden de pago: primero la admisión, hoy S/100 en vez de S/200, y con eso rindes tu evaluación virtual. ¿Vamos bien?\n\n24 horas después de la evaluación, tu primera cuota: S/570, que ya incluye seguro y examen médico; la matrícula de S/250 hoy es gratis. ¿Hasta ahí claro?\n\nLas otras 4, desde abril, de S/504. El 10 % se mantiene toda la carrera, aunque el monto varía según los créditos que lleves. ¿Te sirve así para organizarte con tu negocio?"
    },
    {
-    "titulo": "Internado con datos validados",
-    "porQue": "No improvisa sobre el internado: compromete el dato validado del área académica y usa el tiempo para profundizar sus expectativas de prácticas, su meta a un año y la convalidación; termina resumiendo y abriendo la solución.",
+    "titulo": "Primero el valor, luego el número",
+    "porQue": "Conectas su motivo (crecer su negocio) con el valor del ciclo y recién después das el monto para empezar.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "¿Y el internado cómo es? ¿Puedo hacerlo en mi clínica?"
+      "texto": "Me interesa, pero no sé si me dé el tiempo con el negocio."
      },
      {
       "quien": "asesor",
-      "texto": "Buena pregunta, [nombre], y prefiero darte el dato validado a inventarte una respuesta: lo consulto con el área académica y te lo envío confirmado por WhatsApp, no de memoria. Mientras, cuéntame: ¿qué esperas de tus prácticas?"
+      "texto": "Te entiendo, [nombre]. Cuéntame, ¿qué te motiva a terminar la carrera ahora y no más adelante?"
      },
      {
       "quien": "cliente",
-      "texto": "Hacerlas cerca de mi casa, en la misma clínica si se puede."
+      "texto": "Quiero tener el título para crecer."
      },
      {
       "quien": "asesor",
-      "texto": "Cerca de casa y, si se puede, en tu clínica. ¿Y tu jefe sabe que quieres pasar a salud mental, o lo estás viendo por tu cuenta?"
+      "texto": "Es una buena razón, y con las clases grabadas avanzas a tu ritmo. Además, este ciclo te ahorras S/530: la matrícula es gratis y las cuotas tienen 10 % menos toda la carrera. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
-      "texto": "Por mi cuenta, por ahora."
+      "texto": "Bien, ¿pero cuánto pagaría para empezar?"
      },
      {
       "quien": "asesor",
-      "texto": "Entendido. ¿Y qué te haría sentir, dentro de un año, que esta decisión fue la correcta?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Estar ya en segundo ciclo y con algún curso reconocido de Laboratorio."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Entonces lo tuyo es prácticas cerca de casa, avanzar por tu cuenta y llegar al segundo ciclo con cursos reconocidos de Laboratorio. Te cuento cómo lo resolvemos y con qué beneficios cuentas hoy, ¿te parece?"
+      "texto": "Para empezar, solo S/100 de admisión. La primera cuota la das 24 horas después de tu evaluación y las demás desde abril; el monto depende de los créditos de cada ciclo. ¿Te cuento cómo es la evaluación?"
      }
     ],
-    "speech": "Buena pregunta, [nombre], y prefiero darte el dato validado a inventarte una respuesta: lo consulto con el área académica y te lo envío confirmado por WhatsApp, no de memoria. Mientras, cuéntame: ¿qué esperas de tus prácticas?\n\nCerca de casa y, si se puede, en tu clínica. ¿Y tu jefe sabe que quieres pasar a salud mental, o lo estás viendo por tu cuenta?\n\nEntendido. ¿Y qué te haría sentir, dentro de un año, que esta decisión fue la correcta?\n\nEntonces lo tuyo es prácticas cerca de casa, avanzar por tu cuenta y llegar al segundo ciclo con cursos reconocidos de Laboratorio. Te cuento cómo lo resolvemos y con qué beneficios cuentas hoy, ¿te parece?"
+    "speech": "Te entiendo, [nombre]. Cuéntame, ¿qué te motiva a terminar la carrera ahora y no más adelante?\n\nEs una buena razón, y con las clases grabadas avanzas a tu ritmo. Además, este ciclo te ahorras S/530: la matrícula es gratis y las cuotas tienen 10 % menos toda la carrera. ¿Cómo lo ves?\n\nPara empezar, solo S/100 de admisión. La primera cuota la das 24 horas después de tu evaluación y las demás desde abril; el monto depende de los créditos de cada ciclo. ¿Te cuento cómo es la evaluación?"
    }
   ]
  },
  "Orlando Jesus Pintado Sandoval|paso4": {
   "stage": "paso4",
-  "base": "0d71aab88da7",
-  "conclusion": "Acompañaste la conversación y atendiste con cordialidad sus consultas de créditos, pagos, internado y beneficios. Pregunta y usa su nombre al menos dos veces y cierra con tu nombre, la Unidad CIE y la transferencia a la encuesta.",
+  "base": "1600d2026943",
+  "conclusion": "Propusiste pasos concretos (evaluación, registro, WhatsApp) y avisaste antes de pausar. Aprovecha su disposición para tomar sus datos en la llamada, agenda el viernes con hora concreta, usa su nombre en vez de «amigo», reduce diminutivos y despídete con tu nombre, la institución y la encuesta.",
   "tecId": "tec_16",
   "tipo": "speech",
-  "titulo": "Siguiente paso con fecha",
-  "porQue": "Ante el «lo pienso» pregunta qué queda pendiente, propone la evaluación con día y hora (no otra llamada), recuerda Nexus y Excel como regalo, y cierra con su nombre, tu nombre, Unidad CIE y encuesta.",
+  "titulo": "De las cuotas hacia arriba",
+  "porQue": "Das el monto con su desglose, tomas los datos en la misma llamada y fijas el viernes con hora, usando su nombre.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Bueno, ya me quedó claro. Lo pienso."
+    "texto": "Ya, ¿y cuánto sería al mes al final?"
    },
    {
     "quien": "asesor",
-    "texto": "Me alegra que esté claro, [nombre]. Para no dejarlo en el aire, dime: entre los créditos, los pagos y el internado, ¿cuál te hace pensarlo todavía?"
+    "texto": "[nombre], la cuota normal es S/560 y hoy, con 10 % de descuento, S/504, y ese descuento lo mantienes toda tu carrera. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
-    "texto": "Ninguno en especial, solo quiero ordenarme."
+    "texto": "Sí, me parece bien."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, entonces ordenémoslo juntos. Tu evaluación de admisión es virtual, desde una computadora o laptop con cámara, y yo te acompaño. Por matricularte, además, tienes Nexus sin costo desde el 14 de diciembre y el Taller de Excel certificado. ¿La rindes mañana a las 7 de la noche o prefieres hoy?"
+    "texto": "La primera cuota, que incluye seguro y examen médico, baja de S/876 a S/570 porque la matrícula es gratis. Si te parece, tomo ahora tus datos: sirven para inscribirte en la evaluación. ¿Me confirmas tu DNI y tu correo?"
    },
    {
     "quien": "cliente",
-    "texto": "Mañana a las 7 está bien."
+    "texto": "Sí, te los paso. ¿Cuándo sería la evaluación?"
    },
    {
     "quien": "asesor",
-    "texto": "Anotado, [nombre], mañana a las 7 p. m. Te envío por WhatsApp los pasos y mi número para cualquier duda. Te atendió Orlando, de la Unidad CIE de la Universidad Continental; te derivo a una breve encuesta de satisfacción, ¿de acuerdo?"
+    "texto": "Gracias, [nombre]. Por matricularte tienes Nexus y el Taller de Excel certificado sin costo. ¿El viernes la rindes en la mañana o en la tarde? Dime la hora y la dejo agendada."
    }
   ],
-  "speech": "Me alegra que esté claro, [nombre]. Para no dejarlo en el aire, dime: entre los créditos, los pagos y el internado, ¿cuál te hace pensarlo todavía?\n\nPerfecto, entonces ordenémoslo juntos. Tu evaluación de admisión es virtual, desde una computadora o laptop con cámara, y yo te acompaño. Por matricularte, además, tienes Nexus sin costo desde el 14 de diciembre y el Taller de Excel certificado. ¿La rindes mañana a las 7 de la noche o prefieres hoy?\n\nAnotado, [nombre], mañana a las 7 p. m. Te envío por WhatsApp los pasos y mi número para cualquier duda. Te atendió Orlando, de la Unidad CIE de la Universidad Continental; te derivo a una breve encuesta de satisfacción, ¿de acuerdo?",
+  "speech": "[nombre], la cuota normal es S/560 y hoy, con 10 % de descuento, S/504, y ese descuento lo mantienes toda tu carrera. ¿Vamos bien?\n\nLa primera cuota, que incluye seguro y examen médico, baja de S/876 a S/570 porque la matrícula es gratis. Si te parece, tomo ahora tus datos: sirven para inscribirte en la evaluación. ¿Me confirmas tu DNI y tu correo?\n\nGracias, [nombre]. Por matricularte tienes Nexus y el Taller de Excel certificado sin costo. ¿El viernes la rindes en la mañana o en la tarde? Dime la hora y la dejo agendada.",
   "variantes": [
    {
-    "titulo": "Preguntar su nombre antes de cerrar",
-    "porQue": "Si no preguntaste su nombre, lo haces apenas lo notas y lo repites; resumes lo visto, resuelves la excusa del cobro con el orden de pagos y cierras con fecha, nombre, Unidad CIE y encuesta.",
+    "titulo": "Paso a paso, en orden de pago",
+    "porQue": "Los tres pasos se resuelven en la llamada: datos, admisión y evaluación con hora, y cierras con tu nombre y la encuesta.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Gracias por la información."
+      "texto": "Me interesa, ¿qué tendría que hacer?"
      },
      {
       "quien": "asesor",
-      "texto": "Con gusto. Disculpa, con tantas consultas no te pregunté tu nombre, ¿con quién tengo el gusto?"
+      "texto": "Muy bien, [nombre], son tres pasos y los dejamos listos ahora. Primero tomo tus datos para el registro de tu evaluación, y luego la admisión: hoy S/100 en vez de S/200. ¿Vamos bien?"
      },
      {
       "quien": "cliente",
-      "texto": "Con [nombre]."
+      "texto": "Sí, ¿y después?"
      },
      {
       "quien": "asesor",
-      "texto": "Gracias, [nombre]. Repasemos: vimos los créditos, los pagos y el internado. ¿Queda algo que te frene para dar tu evaluación?"
+      "texto": "Rindes tu evaluación virtual y, 24 horas después, tu primera cuota de S/570, con seguro y examen médico. Las otras 4, desde abril, de S/504. ¿Hasta ahí claro?"
      },
      {
       "quien": "cliente",
-      "texto": "No, solo que recién cobro el viernes."
+      "texto": "Clarísimo. El viernes tendría tiempo."
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto, [nombre], eso no te frena: rindes la evaluación hoy o mañana y tu primera cuota la das recién 24 horas después, con la matrícula gratis. ¿La programamos mañana en la noche o hoy mismo?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Mañana en la noche."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Listo, [nombre], mañana en la noche, desde tu laptop con cámara, y yo te acompaño. Te atendió Orlando, de la Unidad CIE de la Universidad Continental; ahora te derivo a una breve encuesta, ¿sí?"
+      "texto": "Perfecto, ¿el viernes a qué hora la rindes, desde tu laptop con cámara? La dejo agendada y te escribo por WhatsApp. Te atendió Orlando, de la Universidad Continental; al terminar te derivo a una breve encuesta."
      }
     ],
-    "speech": "Con gusto. Disculpa, con tantas consultas no te pregunté tu nombre, ¿con quién tengo el gusto?\n\nGracias, [nombre]. Repasemos: vimos los créditos, los pagos y el internado. ¿Queda algo que te frene para dar tu evaluación?\n\nPerfecto, [nombre], eso no te frena: rindes la evaluación hoy o mañana y tu primera cuota la das recién 24 horas después, con la matrícula gratis. ¿La programamos mañana en la noche o hoy mismo?\n\nListo, [nombre], mañana en la noche, desde tu laptop con cámara, y yo te acompaño. Te atendió Orlando, de la Unidad CIE de la Universidad Continental; ahora te derivo a una breve encuesta, ¿sí?"
+    "speech": "Muy bien, [nombre], son tres pasos y los dejamos listos ahora. Primero tomo tus datos para el registro de tu evaluación, y luego la admisión: hoy S/100 en vez de S/200. ¿Vamos bien?\n\nRindes tu evaluación virtual y, 24 horas después, tu primera cuota de S/570, con seguro y examen médico. Las otras 4, desde abril, de S/504. ¿Hasta ahí claro?\n\nPerfecto, ¿el viernes a qué hora la rindes, desde tu laptop con cámara? La dejo agendada y te escribo por WhatsApp. Te atendió Orlando, de la Universidad Continental; al terminar te derivo a una breve encuesta."
    },
    {
-    "titulo": "Sumar a su esposa ahora",
-    "porQue": "Ante «te aviso» pregunta qué falta para decidir y, como debe hablar con su esposa, la suma en altavoz en el mismo momento; agenda la evaluación con los dos y cierra con el protocolo completo.",
+    "titulo": "Primero el valor, luego el número",
+    "porQue": "Ante el «te aviso el viernes», das una cifra de valor, preguntas qué falta y conviertes el viernes en una cita concreta.",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Ya, cualquier cosa te aviso."
+      "texto": "Déjame pensarlo, te aviso el viernes."
      },
      {
       "quien": "asesor",
-      "texto": "Claro, [nombre]. Solo para que no pierdas el beneficio: ¿qué tendría que pasar para que decidas, ver algo más del internado o conversarlo en casa?"
+      "texto": "Te entiendo, [nombre], es una decisión importante. Para que lo pienses con datos: este ciclo te ahorras S/530, porque la matrícula es gratis y las cuotas tienen 10 % menos toda la carrera. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
-      "texto": "Conversarlo con mi esposa, más que nada."
+      "texto": "Suena bien, pero igual quiero verlo."
      },
      {
       "quien": "asesor",
-      "texto": "Tiene sentido. ¿Está contigo ahora? Si puedes ponerla en altavoz, le explico en dos minutos lo de los pagos y el internado, para que decidan con la misma información."
+      "texto": "Claro. Para empezar solo necesitas S/100 de admisión, y la primera cuota recién 24 horas después de tu evaluación. ¿Qué te faltaría para decidir?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, está acá. Ya, te pongo en altavoz."
+      "texto": "Nada, solo ordenar mi semana."
      },
      {
       "quien": "asesor",
-      "texto": "Gracias, señora, un gusto. Su esposo ya revisó créditos, pagos e internado; hoy solo define el día de su evaluación de admisión, virtual desde la laptop con cámara, y por matricularse tiene Nexus y Excel certificado sin costo. ¿Les acomoda mañana a las 7 de la noche?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Ella dice que sí, mañana a las 7."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Perfecto, [nombre], mañana a las 7 p. m. Te envío los pasos por WhatsApp. Te atendió Orlando, de la Unidad CIE de la Universidad Continental; te derivo a una breve encuesta de satisfacción, ¿de acuerdo?"
+      "texto": "Entonces agendemos tu evaluación virtual el viernes: ¿a qué hora te acomoda? Tomo tus datos ahora para dejarte registrado y te envío por WhatsApp el resumen, con Nexus y el Taller de Excel de regalo."
      }
     ],
-    "speech": "Claro, [nombre]. Solo para que no pierdas el beneficio: ¿qué tendría que pasar para que decidas, ver algo más del internado o conversarlo en casa?\n\nTiene sentido. ¿Está contigo ahora? Si puedes ponerla en altavoz, le explico en dos minutos lo de los pagos y el internado, para que decidan con la misma información.\n\nGracias, señora, un gusto. Su esposo ya revisó créditos, pagos e internado; hoy solo define el día de su evaluación de admisión, virtual desde la laptop con cámara, y por matricularse tiene Nexus y Excel certificado sin costo. ¿Les acomoda mañana a las 7 de la noche?\n\nPerfecto, [nombre], mañana a las 7 p. m. Te envío los pasos por WhatsApp. Te atendió Orlando, de la Unidad CIE de la Universidad Continental; te derivo a una breve encuesta de satisfacción, ¿de acuerdo?"
+    "speech": "Te entiendo, [nombre], es una decisión importante. Para que lo pienses con datos: este ciclo te ahorras S/530, porque la matrícula es gratis y las cuotas tienen 10 % menos toda la carrera. ¿Cómo lo ves?\n\nClaro. Para empezar solo necesitas S/100 de admisión, y la primera cuota recién 24 horas después de tu evaluación. ¿Qué te faltaría para decidir?\n\nEntonces agendemos tu evaluación virtual el viernes: ¿a qué hora te acomoda? Tomo tus datos ahora para dejarte registrado y te envío por WhatsApp el resumen, con Nexus y el Taller de Excel de regalo."
    }
   ]
  },
@@ -9235,6 +9187,94 @@
      }
     ],
     "speech": "Te entiendo, Gilmer. Cuéntame, ¿qué te haría abandonar: el tiempo por tus turnos o el pago mensual?\n\nGracias por la confianza. ¿Qué monto podrías asumir al mes sin descuidar tus otros gastos?\n\nEntonces encaja: con el 10 % tu cuota queda en S/563.04 toda la carrera, y este ciclo te ahorras S/562.80. Además vas sumando certificaciones progresivas para crecer en tu trabajo. ¿Cómo lo ves?"
+   }
+  ]
+ },
+ "Milagros Torres Santos|paso1": {
+  "stage": "paso1",
+  "base": "78587e412fa0",
+  "conclusion": "Iniciaste a tiempo, retomaste su interés e identificaste Ingeniería Industrial a distancia. Te faltó presentarte con tu nombre y la Unidad CIE, y usar bien su nombre: lo identificaste como Gilmer y al final lo llamaste Jimmy.",
+  "tecId": "tec_12",
+  "tipo": "speech",
+  "titulo": "Presentación completa con su nombre",
+  "porQue": "Nombre, Unidad CIE y el nombre correcto del prospecto desde la primera frase generan confianza y abren la indagación.",
+  "dialogo": [
+   {
+    "quien": "asesor",
+    "texto": "Hola, Gilmer, te saluda Patricia, de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Ingeniería Industrial a distancia, ¿me regalas dos minutos?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, dime."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Gracias, Gilmer. Quiero contarte cómo se acomoda la carrera a tu rutina. ¿Te parece?"
+   },
+   {
+    "quien": "cliente",
+    "texto": "Sí, porque trabajo por turnos."
+   },
+   {
+    "quien": "asesor",
+    "texto": "Perfecto, Gilmer, justo eso quiero entender. ¿Cómo son tus turnos de trabajo?"
+   }
+  ],
+  "speech": "Hola, Gilmer, te saluda Patricia, de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en Ingeniería Industrial a distancia, ¿me regalas dos minutos?\n\nGracias, Gilmer. Quiero contarte cómo se acomoda la carrera a tu rutina. ¿Te parece?\n\nPerfecto, Gilmer, justo eso quiero entender. ¿Cómo son tus turnos de trabajo?",
+  "variantes": [
+   {
+    "titulo": "Confirmar el nombre al inicio",
+    "porQue": "Confirmar cómo prefiere que lo llamen evita confusiones y personaliza toda la llamada.",
+    "dialogo": [
+     {
+      "quien": "asesor",
+      "texto": "Hola, ¿hablo con Gilmer? Soy Patricia, de la Unidad CIE de la Universidad Continental."
+     },
+     {
+      "quien": "cliente",
+      "texto": "Sí, soy yo."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Gilmer, ¿te llamo así o prefieres otro nombre? Quiero dirigirme a ti como te gusta."
+     },
+     {
+      "quien": "cliente",
+      "texto": "Gilmer está bien."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Perfecto, Gilmer. Te llamo por Ingeniería Industrial a distancia. ¿Qué te animó a buscarla ahora?"
+     }
+    ],
+    "speech": "Hola, ¿hablo con Gilmer? Soy Patricia, de la Unidad CIE de la Universidad Continental.\n\nGilmer, ¿te llamo así o prefieres otro nombre? Quiero dirigirme a ti como te gusta.\n\nPerfecto, Gilmer. Te llamo por Ingeniería Industrial a distancia. ¿Qué te animó a buscarla ahora?"
+   },
+   {
+    "titulo": "Si atiende ocupado",
+    "porQue": "Te presentas completo aunque esté apurado, usas su nombre correcto y ganas un minuto para seguir.",
+    "dialogo": [
+     {
+      "quien": "asesor",
+      "texto": "Hola, Gilmer, soy Patricia, de la Unidad CIE de la Universidad Continental, por tu interés en Ingeniería Industrial."
+     },
+     {
+      "quien": "cliente",
+      "texto": "Estoy en el trabajo, estoy algo ocupado."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Te entiendo, Gilmer, te tomo un minuto. La carrera tiene clases grabadas, así que se adapta a tu trabajo. ¿Te hago dos preguntas rápidas?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Ya, dale."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Gracias, Gilmer. ¿Cómo es tu horario y cuándo podrías estudiar?"
+     }
+    ],
+    "speech": "Hola, Gilmer, soy Patricia, de la Unidad CIE de la Universidad Continental, por tu interés en Ingeniería Industrial.\n\nTe entiendo, Gilmer, te tomo un minuto. La carrera tiene clases grabadas, así que se adapta a tu trabajo. ¿Te hago dos preguntas rápidas?\n\nGracias, Gilmer. ¿Cómo es tu horario y cuándo podrías estudiar?"
    }
   ]
  }
