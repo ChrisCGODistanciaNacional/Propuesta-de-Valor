@@ -2,7 +2,7 @@
 
 Fuente: Christopher Huamán, 02/11/2026. Es el MODELO para las conversaciones de ejemplo cuando calidad
 observa que el asesor no explicó bien el precio, la inversión, la primera cuota o una objeción económica.
-Las 3 opciones de ejemplo de esa etapa se arman a partir de estas formas, adaptadas a lo que dijo el
+Las 5 opciones de ejemplo de esa etapa se arman a partir de estas formas (1–3 resolver con las Formas A, B o C; 4–5 continuar o cerrar con la Forma D y la evaluación hoy o mañana), adaptadas a lo que dijo el
 prospecto en la llamada evaluada y a la carrera que se mencione (si no se menciona, Administración).
 
 ## Cifras (campaña vigente · Administración como ejemplo)
@@ -41,6 +41,11 @@ cuatro conceptos: **pago por créditos** (4 créditos), **matrícula** (S/250), 
 - **Taller de Excel certificado**: de regalo al matricularse.
 - Las fechas vigentes están en la Biblioteca → "Información de Ganchos". Si no se conocen, no dar fecha.
 
+## Precios con naturalidad (08/11/2026)
+- Soles enteros, sin céntimos: "unos S/563", nunca "S/563.04". Primero qué incluye, después el monto.
+- Traducir a su día a día con cuentas reales: S/504 al mes = menos de 17 soles al día.
+- El ahorro siempre con su origen: matrícula gratis (S/250) + S/56 menos en cada una de las 5 cuotas = S/530.
+
 ## Regla de oro: pocos números, una idea por frase, y se cierra HOY
 - Máximo 3 cifras por intervención. Lo demás se dice con palabras ("un poco más", "mucho menos").
 - Siempre nombrar el ahorro del ciclo: **S/530** (matrícula S/250 + S/56 × 5 cuotas) + S/100 de admisión. Es la cifra que capta la atención.
@@ -75,7 +80,7 @@ cuatro conceptos: **pago por créditos** (4 créditos), **matrícula** (S/250), 
 >
 > La evaluación se rinde desde una computadora o laptop con cámara, y yo te acompaño en el proceso. ¿Qué fecha te acomoda para rendirla con normalidad, hoy o mañana, y accedes al beneficio?
 
-## Reglas de estilo para las 3 opciones
+## Reglas de estilo para las 5 opciones
 - Cada intervención del asesor: 2 o 3 frases cortas (máx. ~45 palabras), nunca un monólogo con todas las cifras.
 - Cerrar cada bloque con una validación corta y VARIADA: "¿vamos bien?", "¿hasta ahí claro?", "¿cómo lo ves?", "¿te sirve así?". No repetir "¿te hace sentido?" ni el ahorro de S/530 en cada turno: se combinan con otros motivadores (su meta, Nexus, certificaciones progresivas, empezar este ciclo) según `guion_conversaciones.md`.
 - El cliente responde como cliente real: pregunta el monto, duda, pone una excusa, pide tiempo.

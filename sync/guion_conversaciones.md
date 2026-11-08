@@ -87,11 +87,34 @@ calidad) y **forma** (se siente bien decirlo, implica la vida personal del clien
 - Si de verdad no decide: se pregunta qué falta para decidir (tec_14), se resuelve, y se deja un siguiente paso
   concreto con día y hora de la EVALUACIÓN, no de "otra llamada".
 
-## 3. Formato de cada caso (sin cambios de estructura)
-- `dialogo`: 5–8 turnos alternados, empieza por el cliente o por el asesor según el caso; cada turno del asesor
-  tiene 2–4 frases cortas (≤ 55 palabras); el cliente responde como cliente real (duda, excusa, pregunta).
+## 3. Formato de cada caso (desde 08/11/2026: 5 opciones, conversaciones más largas)
+
+Pedido de Christopher (08/11/2026): mejorar y ampliar a **5 ejemplos** por cada observación, con conversaciones
+más largas y naturales, los costos mejor explicados y la venta resuelta en la misma conversación (o llevada a ella).
+
+- **Opciones 1, 2 y 3 · grupo `resolver`:** tres formas DISTINTAS de resolver lo que observó calidad (p. ej. empezar
+  por una pregunta, empezar por el beneficio, partir de la objeción del cliente). No son tres redacciones de lo mismo.
+- **Opciones 4 y 5 · grupo `cerrar`:** la continuidad: qué pasa DESPUÉS de resolver lo observado. Una muestra la
+  siguiente objeción típica y cómo se resuelve; la otra cómo se cierra esa etapa de la venta consultiva (paso 1 → abre
+  la indagación; paso 2 → resume y abre la solución; paso 3 → cierre parcial y evaluación de admisión hoy o mañana;
+  paso 4 → fecha y hora de la evaluación, qué necesita, WhatsApp y recién ahí la despedida y la encuesta).
+- Campos: opción 1 en `titulo`/`dialogo`/`speech`/`porQue`; las otras 4 en `variantes` = lista de 4 objetos
+  `{"titulo", "grupo": "resolver"|"cerrar", "dialogo", "speech", "porQue"}` (2 de grupo resolver y 2 de grupo cerrar,
+  en ese orden). Marca la entrada con `"v": 2`.
+- `dialogo`: **8 a 12 turnos** alternados. Cada turno del asesor 2–4 frases cortas (≤ 55 palabras); el cliente responde
+  como cliente real (duda, excusa, pregunta, se distrae) y a veces con una frase muy corta ("Ya", "¿En serio?").
 - `speech`: los turnos del asesor unidos por línea en blanco (es lo que copia el botón).
-- `titulo`: 3–6 palabras que digan la jugada ("Presentarte y pedir dos minutos"), `porQue`: 1–2 frases que
-  expliquen por qué resuelve la observación de calidad y cómo deja lista la siguiente etapa.
-- 3 opciones (opción 1 + 2 `variantes`) = 3 formas DISTINTAS de llevar la misma situación (p. ej. en paso 1:
-  "presentación directa", "el cliente arranca hablando", "atiende ocupado"), no tres redacciones de lo mismo.
+- `titulo`: 3–6 palabras que digan la jugada; `porQue`: 1–2 frases sobre por qué funciona y cómo deja lista la
+  siguiente etapa.
+
+## 4. Precios dichos con naturalidad (08/11/2026)
+
+- **Soles enteros, sin céntimos.** Se redondea al sol: "unos S/563" o "S/563", nunca "S/563.04". Si la cifra exacta
+  importa, se dice "te llega el detalle exacto por WhatsApp".
+- **Primero qué es, después cuánto.** "Tu primera cuota trae tus créditos, la matrícula, el seguro y el examen médico;
+  normalmente son S/876, pero hoy te queda en S/570."
+- **Una cifra por frase y máximo 3 por turno.** Lo demás se dice con palabras: "la mitad", "gratis", "un poco más".
+- **Traducirlo a su vida:** "S/504 al mes es menos de 17 soles al día, lo que gastas en un par de pasajes";
+  "con lo que pagas tu plan del celular y un almuerzo afuera a la semana". Solo con cuentas reales (cuota ÷ 30).
+- **El ahorro con su origen:** "te ahorras S/530: los S/250 de la matrícula y S/56 menos en cada una de tus 5 cuotas".
+- **Validar después de cada número** y dejar que el cliente pregunte el siguiente; nunca soltar la tabla completa.

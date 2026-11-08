@@ -784,6 +784,13 @@ casos_cache = load_json(os.path.join(SYNC, 'casos_cache.json'), {})
 # Situaciones frecuentes por etapa: se usan cuando la etapa está baja (< 75 %) y calidad no escribió nada de ella
 CASOS_GENERICOS = load_json(os.path.join(SYNC, 'casos_genericos.json'), {}) or {}
 UMBRAL_GENERICO = 75
+# Conversaciones de ejemplo: 5 opciones por etapa observada (Christopher, 08/11/2026).
+#   1–3 «resolver»: tres formas distintas de resolver lo que observó calidad.
+#   4–5 «cerrar»: cómo continuar la conversación o cerrar esa etapa de la venta consultiva.
+MAX_OPCIONES = 5
+CASO_V = 2          # versión del estilo: conversaciones más largas y precios dichos con naturalidad
+def grupo_de(g, j):
+    return g if g in ('resolver', 'cerrar') else ('resolver' if j < 3 else 'cerrar')
 
 def caso_generico(k):
     g = CASOS_GENERICOS.get(k)
@@ -791,13 +798,15 @@ def caso_generico(k):
         return None
     def arma(v):
         d = leer_dialogo(v.get('dialogo'))
-        return {'titulo': str(v.get('titulo', '') or ''), 'dialogo': d, 'texto': '\n\n'.join(t['texto'] for t in d if t['quien'] == 'asesor') if d else str(v.get('speech', '')), 'porQue': str(v.get('porQue', '') or '')}
+        return {'titulo': str(v.get('titulo', '') or ''), 'dialogo': d, 'texto': '\n\n'.join(t['texto'] for t in d if t['quien'] == 'asesor') if d else str(v.get('speech', '')), 'porQue': str(v.get('porQue', '') or ''), 'grupo': v.get('grupo')}
     principal = arma(g)
-    variantes = [arma(v) for v in (g.get('variantes') or []) if isinstance(v, dict)][:2]
+    variantes = [arma(v) for v in (g.get('variantes') or []) if isinstance(v, dict)][:MAX_OPCIONES - 1]
+    for j, v in enumerate([principal] + variantes):
+        v['grupo'] = grupo_de(v.get('grupo'), j)
     return {'tipo': 'speech', 'texto': principal['texto'], 'porQue': principal['porQue'], 'base': 'generico-' + k, 'dialogo': principal['dialogo'],
             'variantes': [principal] + variantes, 'tema': None, 'generico': True}
 check_cache = load_json(os.path.join(SYNC, 'checklist_cache.json'), {})
-pending = {'LEER_PRIMERO': 'Antes de escribir cualquier conversacion de ejemplo (dialogo/speech/variantes) lee con Read sync/guion_conversaciones.md (doctrina de fondo y forma de Christopher, 03/11/2026; manda sobre el prompt) y, si tema=inversion, sync/guion_inversion.md. Reglas clave: se resuelve en la misma llamada (nunca "ahora o mas tarde" ni otra llamada); inicio corto con el nombre del asesor en la primera frase; paso 1-3 nunca se despide ni nombra la encuesta y cada etapa termina con la pregunta que abre la siguiente; motivadores variados ademas del descuento; la inversion con conceptos y el 10% desde la primera cuota.', 'casos': [], 'checklist': []}
+pending = {'LEER_PRIMERO': 'Antes de escribir cualquier conversacion de ejemplo lee con Read sync/guion_conversaciones.md (manda sobre el prompt) y, si tema=inversion, sync/guion_inversion.md. Cada caso con oportunidad lleva 5 opciones (opcion 1 en dialogo/speech/porQue/titulo + 4 en variantes) y "v": 2: opciones 1-3 grupo "resolver" (tres formas distintas de resolver lo observado) y 4-5 grupo "cerrar" (como continuar o cerrar esa etapa). Dialogos de 8 a 12 turnos, naturales; precios en soles enteros (sin centimos), primero que incluye y luego el monto; se resuelve en la misma llamada. necesita=reescribir: conserva conclusion/base/tecId y reescribe titulo/dialogo/speech/porQue/variantes con el estilo nuevo.', 'casos': [], 'checklist': []}
 
 # Observaciones sobre la inversión (precio, cuotas, desglose, objeción económica): las 3 opciones del
 # ejemplo se arman con el guion del supervisor (sync/guion_inversion.md).
@@ -924,10 +933,12 @@ for name, lst in hist.items():
                     vd = leer_dialogo(v.get('dialogo'))
                     vt = '\n\n'.join(t['texto'] for t in vd if t['quien'] == 'asesor') if vd else str(v.get('speech', '') or '')
                     if vt.strip():
-                        variantes.append({'titulo': str(v.get('titulo', '') or '').strip(), 'dialogo': vd, 'texto': vt, 'porQue': str(v.get('porQue', '') or '')})
+                        variantes.append({'titulo': str(v.get('titulo', '') or '').strip(), 'dialogo': vd, 'texto': vt, 'porQue': str(v.get('porQue', '') or ''), 'grupo': v.get('grupo')})
                 if st['caso']['tipo'] != 'accion':
                     principal = {'titulo': str(c.get('titulo', '') or '').strip() or 'Opción 1', 'dialogo': dialogo, 'texto': st['caso']['texto'], 'porQue': st['caso']['porQue']}
-                    st['caso']['variantes'] = [principal] + variantes[:2]
+                    st['caso']['variantes'] = [principal] + variantes[:MAX_OPCIONES - 1]
+                    for j, v in enumerate(st['caso']['variantes']):
+                        v['grupo'] = grupo_de(v.get('grupo'), j)
                     st['caso']['tema'] = tema_de(o_txt)
         elif p is not None and p < UMBRAL_GENERICO and not f_txt:
             # Etapa baja sin observación de calidad: situación frecuente de esa etapa, con sus 3 opciones
@@ -939,11 +950,13 @@ for name, lst in hist.items():
                 tec = TEC_BY_ID.get(CASOS_GENERICOS[k].get('tecId'))
                 st['tecnica'] = ({'id': tec['id'], 'titulo': tec['titulo'], 'ejemplo': (tec.get('ejemplos') or [None])[0]} if tec else None)
         if f_txt or o_txt:
-            faltan_variantes = bool(o_txt) and bool(st['caso']) and st['caso'].get('tipo') != 'accion' and len(st['caso'].get('variantes') or []) < 3
+            # Se reescribe si faltan opciones o si el caso es del estilo anterior (v < CASO_V); mientras tanto se sigue mostrando el anterior
+            faltan_variantes = bool(o_txt) and bool(st['caso']) and st['caso'].get('tipo') != 'accion' and (
+                len(st['caso'].get('variantes') or []) < MAX_OPCIONES or int((c or {}).get('v') or 1) < CASO_V)
             if not (c and c.get('base') == base and (st['conclusion'] or not o_txt) and (not o_txt or st['caso'])) or faltan_variantes:
                 pending['casos'].append({'asesor': name, 'stage': k, 'base': base, 'pct': p, 'fortaleza': f_txt or '', 'oportunidad': o_txt or '',
                                          'evidencia': evid, 'tema': tema_de(o_txt),
-                                         'necesita': ('variantes' if faltan_variantes and st['conclusion'] else ('conclusion+caso' if o_txt else 'conclusion'))})
+                                         'necesita': ('reescribir' if faltan_variantes and st['conclusion'] else ('conclusion+caso' if o_txt else 'conclusion'))})
         stages[k] = st
 
     # checklist de calidad: ventana de las últimas N llamadas evaluadas; manual (Sheet) manda sobre la lectura
@@ -1140,6 +1153,9 @@ out = {
     'hallazgos': hallazgos,
     'alertasDatos': {'filasVacias': FILAS_VACIAS, 'items': ALERTAS_DATOS},
 }
+# Orden de trabajo: primero lo nuevo (evaluaciones sin caso), luego las reescrituras, de la etapa más baja a la más alta
+_PRI = {'conclusion+caso': 0, 'conclusion': 1, 'reescribir': 2}
+pending['casos'].sort(key=lambda x: (_PRI.get(x['necesita'], 3), x['pct'] if x['pct'] is not None else 999))
 with open(os.path.join(SYNC, 'pending.json'), 'w', encoding='utf-8') as f:
     json.dump(pending, f, ensure_ascii=False, indent=1)
 
