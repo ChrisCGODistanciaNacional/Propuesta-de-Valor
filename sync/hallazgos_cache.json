@@ -1,27 +1,31 @@
 {
- "actualizado": "05/11/2026",
+ "actualizado": "08/11/2026",
  "periodo": {
-  "desde": "30/10/2026",
-  "hasta": "05/11/2026"
+  "desde": "01/11/2026",
+  "hasta": "07/11/2026"
  },
  "base": {
-  "llamadas": 25,
-  "asesores": 16
+  "llamadas": 29,
+  "asesores": 22
  },
- "titular": "Sigue la presentación sin nombre ni Unidad CIE (25 llamadas) y el cierre sin día y hora ni encuesta (12.ª semana seguida). Crece la convalidación con poca indagación y plazos prometidos sin evaluación, y el descuento antes de conocer el presupuesto. Lo bueno: inscripción sin costo para no perder el beneficio y el primer pago explicado por conceptos.",
+ "titular": "La semana sigue marcada por la presentación sin nombre ni Unidad CIE y la despedida sin encuesta (28 de 29 llamadas). Crece el descuento ofrecido antes de conocer el presupuesto o por encima de lo autorizado. Lo bueno: seis asesores ya dejan el seguimiento con hora concreta y tres cerraron con la encuesta.",
  "items": [
   {
    "tipo": "mala_costumbre",
-   "titulo": "Presentación tardía y nombre del prospecto poco usado",
-   "queVimos": "El asesor se identifica a mitad de la llamada o sin la Unidad CIE, y el nombre del prospecto casi no aparece durante la conversación.",
-   "veces": "25 llamadas · 16 asesores · 7.ª semana seguida",
+   "titulo": "Presentación sin nombre ni Unidad CIE",
+   "queVimos": "La llamada abre solo con «Universidad Continental» o el asesor se identifica a mitad de la conversación; el nombre del prospecto casi no aparece.",
+   "veces": "28 llamadas · 21 asesores · 8.ª semana seguida",
    "asesores": [
+    "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
     "Cecilia Esther Aliaga Lapa",
     "Diana Carol Taipe Rojas",
     "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
+    "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
+    "Jorge Luis Valencia Cardenas",
     "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Lisette Valeria Blanco Chuco",
@@ -31,24 +35,29 @@
     "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
     "Patricia Roxana Mercado Zacarias",
-    "Raul Aaron Manuel Ipanaque Escobar"
+    "Rosa Victoria Guzman Bonilla",
+    "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Preséntate con tu nombre desde el saludo inicial junto con el de la institución. En esta llamada te identificaste recién a mitad de la conversación» (05/11); «Utiliza el nombre del prospecto al menos dos veces» (05/11).",
-   "porQueImporta": "Los primeros segundos definen la confianza: sin nombre ni institución el prospecto no sabe con quién habla y la llamada suena a una más de la lista.",
-   "accion": "Apertura fija: «Hola, [nombre], te saluda [tu nombre], de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en [carrera], ¿me regalas dos minutos?» y su nombre uno de cada dos turnos.",
+   "ejemplo": "«No basta con mencionar únicamente a la Universidad Continental; el prospecto debe identificar claramente quién lo atiende y desde qué unidad se realiza la gestión» (07/11).",
+   "porQueImporta": "Los primeros segundos definen la confianza: sin nombre ni unidad, la llamada suena a una más de la lista y el prospecto corta o desconfía.",
+   "accion": "Apertura fija en una frase: «Hola, [nombre], te saluda [tu nombre], de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en [carrera], ¿me regalas dos minutos?».",
    "tecnica": "tec_12"
   },
   {
    "tipo": "mala_costumbre",
-   "titulo": "Cierre sin día y hora ni encuesta",
-   "queVimos": "La evaluación o el seguimiento quedan con varias fechas mencionadas o abiertos («te aviso»), y la despedida va sin nombre, Unidad CIE ni transferencia a la encuesta.",
-   "veces": "24 llamadas · 16 asesores · 12.ª semana seguida",
+   "titulo": "Despedida sin protocolo ni encuesta",
+   "queVimos": "La llamada termina sin volver a decir el nombre y la Unidad CIE y sin transferir a la encuesta de satisfacción; el seguimiento queda abierto en 14 llamadas.",
+   "veces": "28 llamadas · 21 asesores · 13.ª semana seguida",
    "asesores": [
+    "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
     "Cecilia Esther Aliaga Lapa",
     "Diana Carol Taipe Rojas",
     "Isai Yuliño Mercado Bravo",
+    "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
+    "Jorge Luis Valencia Cardenas",
     "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Lisette Valeria Blanco Chuco",
@@ -58,80 +67,105 @@
     "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
     "Patricia Roxana Mercado Zacarias",
-    "Raul Aaron Manuel Ipanaque Escobar"
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Rosa Victoria Guzman Bonilla",
+    "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«En la llamada se mencionaron el martes, el 9 de noviembre, mañana y hoy viernes, lo que puede generar confusión» (05/11); «Completa el protocolo de despedida mencionando tu nombre, la Unidad CIE y realizando la transferencia a la encuesta» (05/11).",
-   "porQueImporta": "Una cita con varias fechas es una cita sin fecha: el lead se enfría, y la encuesta omitida resta puntaje en casi todas las llamadas.",
-   "accion": "Una sola cita repetida y por escrito: «Tu evaluación queda para [día] a las [hora]. Te atendió [nombre], de la Unidad CIE de la Universidad Continental; guarda mi WhatsApp. Te paso a una breve encuesta».",
+   "ejemplo": "«Identificándote nuevamente y realizando la transferencia a la encuesta de satisfacción. Este paso forma parte de una atención completa y no debe omitirse» (07/11).",
+   "porQueImporta": "Es el punto que más puntaje resta en la semana y es el más fácil de corregir; además, sin una cita única para la evaluación el lead se enfría.",
+   "accion": "Cierre fijo después de agendar: «Tu evaluación queda para [día] a las [hora]. Te atendió [tu nombre], de la Unidad CIE de la Universidad Continental; guarda mi WhatsApp. Te transfiero a una breve encuesta».",
    "tecnica": "tec_16"
   },
   {
    "tipo": "mala_practica",
-   "titulo": "Convalidación sin indagar y plazos prometidos",
-   "queVimos": "Con prospectos de traslado, técnicos o segunda carrera no se pregunta institución, cursos aprobados ni documentos, y aun así se adelantan cursos convalidados o la duración de la carrera; también se dieron condiciones contradictorias o sin respaldo (cambio de sede automático, % de vacantes).",
-   "veces": "7 llamadas · 6 asesores",
+   "titulo": "Descuento antes del presupuesto o fuera de lo autorizado",
+   "queVimos": "Ante la objeción económica se ofrece el descuento de entrada, sin preguntar cuánto puede pagar el prospecto, y en algunas llamadas se comunicaron porcentajes por encima del máximo autorizado.",
+   "veces": "8 llamadas · 8 asesores · 3.ª semana seguida",
    "asesores": [
-    "Angelo Jaime Franco Sarmiento",
-    "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
+    "Orlando Jesus Pintado Sandoval",
+    "Patricia Roxana Mercado Zacarias",
+    "Milagros Torres Santos",
     "Justyn Flores Solano",
     "Melissa Leslie Fernadez Avalos",
-    "Milagros Torres Santos",
-    "Orlando Jesus Pintado Sandoval"
+    "Rosa Victoria Guzman Bonilla",
+    "Jimena del Rosario Vera Osores",
+    "Jean Carlos Espinoza Atoc"
    ],
-   "ejemplo": "«Evita generar expectativas indicando que posiblemente se le convalidarán cursos o que estudiará aproximadamente tres años y medio sin contar con una evaluación académica» (05/11); «Evita presentar el cambio de modalidad o de sede como automático» (05/11).",
-   "porQueImporta": "Si el área académica reconoce menos de lo prometido, el alumno se siente engañado y el riesgo de deserción y reclamo recae en el asesor y en la UC.",
-   "accion": "Preguntar «¿En qué institución estudiaste, cuántos ciclos aprobaste y tienes certificado y sílabos firmados y sellados?» y decir siempre: «La convalidación la define el área académica revisando tus sílabos; no te prometo cursos ni plazos antes de esa revisión».",
-   "tecnica": "tec_08"
-  },
-  {
-   "tipo": "mala_practica",
-   "titulo": "Descuento antes de conocer el presupuesto",
-   "queVimos": "Ante la duda económica se lanza el descuento como primera respuesta, sin preguntar cuánto puede invertir al mes; en otro caso se dieron campaña y convenio por separado y el prospecto no supo cuánto pagaría al final.",
-   "veces": "6 llamadas · 6 asesores · 2.ª semana seguida",
-   "asesores": [
-    "Isai Yuliño Mercado Bravo",
-    "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
-    "Melissa Leslie Fernadez Avalos",
-    "Milagros Torres Santos",
-    "Patricia Roxana Mercado Zacarias"
-   ],
-   "ejemplo": "«Antes de ofrecer descuentos, identifica su capacidad de pago» (05/11); «el prospecto necesitaba saber cuánto pagaría finalmente con el convenio, y recibió por separado la campaña y el convenio» (05/11).",
-   "porQueImporta": "El descuento lanzado de entrada gasta el gatillo de cierre y no resuelve el miedo real (sostener la carrera); dos esquemas a la vez confunden y frenan la decisión.",
-   "accion": "Primero «¿Cuánto podrías destinar al mes sin descuidar tus gastos?»; luego un solo esquema con el beneficio que le corresponde (campaña o convenio), explicado con el guion de inversión: valor normal, beneficio y monto final.",
+   "ejemplo": "«Recuerda que el descuento máximo autorizado es del 15%. No puedes ofrecer ni comprometer porcentajes superiores» (06/11); «Ofreciste el descuento del 15% desde el inicio, sin consultar previamente si la pensión estaba dentro de las posibilidades económicas» (04/11).",
+   "porQueImporta": "El descuento usado al inicio deja al asesor sin herramienta de negociación, y un beneficio no autorizado genera reclamos y riesgo para la UC.",
+   "accion": "Primero «¿Cuánto te quedaría cómodo invertir al mes?»; recién después, un solo esquema con los beneficios autorizados vigentes, validados antes de la llamada.",
    "tecnica": "tec_14"
   },
   {
-   "tipo": "buena_practica",
-   "titulo": "Inscripción sin costo para no perder el beneficio",
-   "queVimos": "Cuando el prospecto no podía rendir la evaluación al día siguiente, se le ofreció otra fecha y avanzar con la inscripción sin costo para conservar el beneficio, con varios intentos de avance.",
-   "veces": "Milagros (05/11)",
+   "tipo": "mala_practica",
+   "titulo": "Convalidación y condiciones prometidas sin respaldo",
+   "queVimos": "Con técnicos o segunda carrera se adelantan cursos convalidados o la duración de la carrera, y se presentan como automáticos cambios de sede o modalidad que están sujetos a condiciones.",
+   "veces": "5 llamadas · 5 asesores · 2.ª semana seguida",
    "asesores": [
-    "Milagros Torres Santos"
+    "Nicol Alisson Romero Espinoza",
+    "Orlando Jesus Pintado Sandoval",
+    "Milagros Torres Santos",
+    "Edward Nelson Gonzales Villaneda",
+    "Justyn Flores Solano"
    ],
-   "ejemplo": "«Le propusiste avanzar con la inscripción sin costo para que no perdiera el beneficio, un buen recurso para reducir la barrera de decisión» (05/11).",
-   "porQueImporta": "Bajar la barrera del primer paso mantiene el compromiso vivo aunque la evaluación se mueva, y evita que el lead se enfríe.",
-   "accion": "Modelo para el briefing: «Para que no pierdas el beneficio, te inscribo ahora sin costo y dejamos tu evaluación para [día] a las [hora], ¿te parece?» (siempre con una sola fecha).",
-   "tecnica": "tec_10"
+   "ejemplo": "«Evita generar expectativas indicando que posiblemente se le convalidarán cursos o que estudiará aproximadamente tres años y medio sin contar con una evaluación académica» (05/11).",
+   "porQueImporta": "Si el área académica reconoce menos de lo prometido, el alumno se siente engañado y el riesgo de deserción y reclamo recae en el asesor.",
+   "accion": "Indagar institución, años y documentos, y decir: «La cantidad de cursos la define el área académica revisando tus sílabos; los documentos se presentan después de la matrícula».",
+   "tecnica": "tec_08"
+  },
+  {
+   "tipo": "mania",
+   "titulo": "Muletillas y trato demasiado informal",
+   "queVimos": "Se repiten expresiones como «en sí» o «no te preocupes» y apelativos como «hija», «amigo» o «mi estimado», que restan seguridad y seriedad a la asesoría.",
+   "veces": "4 llamadas · 4 asesores",
+   "asesores": [
+    "Betsabeth Alexandra Rojas Palacios",
+    "Orlando Jesus Pintado Sandoval",
+    "Justyn Flores Solano",
+    "Jean Carlos Espinoza Atoc"
+   ],
+   "ejemplo": "«Evitando expresiones reiterativas como \"en sí\", \"no te preocupes\" y otras muletillas» (07/11); «Utilizando expresiones cercanas sin recurrir a términos como “hija”» (02/11).",
+   "porQueImporta": "La cercanía se logra con el nombre del prospecto, no con apelativos; las muletillas hacen sonar al asesor inseguro justo cuando explica precios o requisitos.",
+   "accion": "Reemplazar el apelativo por el nombre del prospecto y cerrar cada idea con una validación corta («¿vamos bien?», «¿hasta ahí claro?») en lugar de la muletilla.",
+   "tecnica": null
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Primer pago explicado por conceptos y ganchos",
-   "queVimos": "Se explicaron los conceptos que conforman el primer pago, la evaluación virtual y sus condiciones, y se sumaron las clases grabadas y el taller gratuito de Excel como beneficios.",
-   "veces": "Edward (05/11)",
+   "titulo": "Seguimiento con hora acordada",
+   "queVimos": "Cuando el prospecto no decide en la llamada, se acuerda una hora concreta para retomar (09:00 del día siguiente, 3:00 p. m., mediodía) en lugar de dejarlo a su iniciativa.",
+   "veces": "6 llamadas · 6 asesores · Ruth y Jean Carlos (07/11)",
    "asesores": [
-    "Edward Nelson Gonzales Villaneda"
+    "Patricia Roxana Mercado Zacarias",
+    "Milagros Torres Santos",
+    "Justyn Flores Solano",
+    "Orlando Jesus Pintado Sandoval",
+    "Ruth Alexandra Mauricio Verde",
+    "Jean Carlos Espinoza Atoc"
    ],
-   "ejemplo": "«Brindaste información sobre los costos del proceso y explicaste los conceptos que conforman el primer pago» (05/11).",
-   "porQueImporta": "Decir qué incluye la primera cuota evita la sorpresa del monto y da credibilidad; los ganchos como regalo suman valor sin tocar el precio.",
-   "accion": "Usarlo con el guion: «Tu primera cuota trae créditos, matrícula, seguro y examen médico; hoy la matrícula es gratis, así que pagas [monto]» y cerrar con Nexus y Excel de regalo.",
-   "tecnica": "tec_10"
+   "ejemplo": "«Estableciste un seguimiento para el día siguiente a las 9:00 a. m., obteniendo un compromiso concreto para retomar la conversación» (07/11).",
+   "porQueImporta": "Un compromiso con hora mantiene vivo el lead; el siguiente nivel es que esa hora sea la de la evaluación de admisión y no la de otra llamada.",
+   "accion": "Cuando no hay decisión: «¿Qué te falta para decidir?» y, si queda algo pendiente, dejar día y hora de la evaluación (hoy o mañana).",
+   "tecnica": "tec_16"
+  },
+  {
+   "tipo": "buena_practica",
+   "titulo": "Cierre completo con identificación y encuesta",
+   "queVimos": "Tres asesores se identificaron de nuevo al despedirse y transfirieron a la encuesta, justo el punto que más falla en el equipo.",
+   "veces": "3 llamadas · Aaron y Jean Carlos (07/11), Rosa (06/11)",
+   "asesores": [
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Jean Carlos Espinoza Atoc",
+    "Rosa Victoria Guzman Bonilla"
+   ],
+   "ejemplo": "«Te identificaste nuevamente al finalizar la llamada y comunicaste la transferencia a la encuesta de satisfacción» (07/11).",
+   "porQueImporta": "Muestra que el protocolo cabe en una llamada comercial sin perder el ritmo y sirve de modelo para el resto del equipo.",
+   "accion": "Usar su cierre como ejemplo en el próximo refuerzo de equipo y escucharlo juntos.",
+   "tecnica": "tec_16"
   }
  ],
  "acciones": [
-  "Toda llamada abre con nombre y Unidad CIE y cierra con UNA sola cita para la evaluación (día y hora), despedida de protocolo y encuesta.",
-  "En convalidación y traslados: indagar institución, ciclos y documentos, y nunca prometer cursos ni duración antes de la revisión de sílabos.",
-  "Ante la objeción económica: preguntar el presupuesto mensual antes de cualquier descuento y presentar un solo esquema con el guion de inversión."
+  "Toda llamada abre con nombre y Unidad CIE y cierra con una sola cita para la evaluación (día y hora), la identificación y la transferencia a la encuesta.",
+  "Ante la objeción económica: preguntar el presupuesto mensual antes de cualquier beneficio y usar solo los descuentos autorizados y vigentes, en un solo esquema.",
+  "En convalidación y segunda carrera: indagar institución, años y documentos, y no prometer cursos, duración ni cambios de sede antes de la evaluación académica."
  ]
 }
