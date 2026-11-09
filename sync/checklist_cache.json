@@ -13492,5 +13492,317 @@
     "evidencia": "Si necesita tiempo, establece una hora concreta de seguimiento"
    }
   }
+ },
+ "e7df121bc6e8": {
+  "asesor": "Judith Rocio Vila Incaroca",
+  "fecha": "09/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza tu presentación mencionando tu nombre y la Unidad CIE desde el inicio."
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Validaste el interés por Administración de Empresas y la modalidad de interés."
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante la preocupación por el costo, profundiza en su capacidad de pago antes de descuentos."
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales para validar si está dispuesto a iniciar su admisión."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece una fecha y hora específica para retomar el contacto."
+   }
+  }
+ },
+ "9cda3e5a91e7": {
+  "asesor": "Milagros Torres Santos",
+  "fecha": "09/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza tu presentación mencionando tu nombre y la Unidad CIE desde el inicio."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validaste el interés de Néstor por Derecho y usaste su nombre durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Validaste su interés por Derecho y que busca estudiar a distancia."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en qué motiva a Néstor a estudiar Derecho."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en qué busca conseguir profesionalmente con la carrera."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales para validar si está dispuesto a iniciar su admisión."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "No dejes el seguimiento a iniciativa del prospecto; establece fecha y hora concreta."
+   }
+  }
+ },
+ "7860ca299907": {
+  "asesor": "Patricia Roxana Mercado Zacarias",
+  "fecha": "09/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza tu presentación mencionando tu nombre y la Unidad CIE desde el inicio."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validaste el interés de Néstor por Derecho y usaste su nombre durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Validaste su interés por Derecho y que busca estudiar a distancia."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en qué motiva a Néstor a estudiar Derecho."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en qué busca conseguir profesionalmente con la carrera."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales para validar si está dispuesto a iniciar su admisión."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "No dejes el seguimiento a iniciativa del prospecto; establece fecha y hora concreta."
+   }
+  }
+ },
+ "cfe11211d6d4": {
+  "asesor": "Maria Alejandra Pino Contreras",
+  "fecha": "09/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre y mencionar la Unidad CIE al inicio."
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre del prospecto durante la conversación."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "ok",
+    "evidencia": "Mantén los cierres parciales."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Estableces un seguimiento concreto."
+   }
+  }
  }
 }
