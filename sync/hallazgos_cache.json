@@ -1,20 +1,48 @@
 {
- "actualizado": "09/11/2026",
+ "actualizado": "10/11/2026",
  "periodo": {
-  "desde": "03/11/2026",
-  "hasta": "09/11/2026"
+  "desde": "04/11/2026",
+  "hasta": "10/11/2026"
  },
  "base": {
-  "llamadas": 26,
-  "asesores": 19
+  "llamadas": 30,
+  "asesores": 18
  },
- "titular": "Presentarse sin nombre ni Unidad CIE y despedirse sin encuesta siguen en casi todas las llamadas (25 y 24 de 26). Preocupa el descuento ofrecido antes de conocer el presupuesto, incluso fuera de lo vigente. Lo bueno: cuatro asesores ya cierran con hora concreta y aparece la pregunta de escala del 1 al 10.",
+ "titular": "La despedida sin encuesta y la presentación sin nombre siguen en casi todas las llamadas (26 y 25 de 30). Lo nuevo: se resuelve la duda de convalidación o convenio pero no se convierte en compromiso. Lo bueno: cuatro asesores ya cierran con hora concreta.",
  "items": [
+  {
+   "tipo": "mala_costumbre",
+   "titulo": "Despedida sin protocolo ni encuesta",
+   "queVimos": "La llamada termina sin volver a decir el nombre y la Unidad CIE ni transferir a la encuesta; en 16 llamadas el seguimiento quedó sin día y hora, y en tres se observó riesgo de que el cierre parezca un corte de llamada.",
+   "veces": "26 llamadas · 16 asesores · 15.ª semana seguida",
+   "asesores": [
+    "Ana Maria Padilla Parra",
+    "Angelo Jaime Franco Sarmiento",
+    "Diana Carol Taipe Rojas",
+    "Isai Yuliño Mercado Bravo",
+    "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
+    "Jorge Luis Valencia Cardenas",
+    "Justyn Flores Solano",
+    "Maria Alejandra Pino Contreras",
+    "Melissa Leslie Fernadez Avalos",
+    "Milagros Torres Santos",
+    "Orlando Jesus Pintado Sandoval",
+    "Patricia Roxana Mercado Zacarias",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Rosa Victoria Guzman Bonilla",
+    "Ruth Alexandra Mauricio Verde"
+   ],
+   "ejemplo": "«Asegura la correcta finalización de la llamada, sin interrumpir intencionalmente la comunicación y cumpliendo el protocolo establecido» (10/11).",
+   "porQueImporta": "Es lo que más puntaje resta y lo más fácil de corregir; además, sin una cita concreta para la evaluación el interés del prospecto se enfría.",
+   "accion": "Cierre fijo después de agendar: «Tu evaluación queda para [día] a las [hora]. Te atendió [tu nombre], de la Unidad CIE de la Universidad Continental; guarda mi WhatsApp. Te transfiero a una breve encuesta, no cuelgues».",
+   "tecnica": "tec_16"
+  },
   {
    "tipo": "mala_costumbre",
    "titulo": "Presentación sin nombre ni Unidad CIE",
    "queVimos": "La llamada abre solo con «Universidad Continental» o el asesor se identifica a mitad de la conversación, y el nombre del prospecto casi no se usa.",
-   "veces": "25 llamadas · 18 asesores · 9.ª semana seguida",
+   "veces": "25 llamadas · 17 asesores · 10.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -26,7 +54,6 @@
     "Jorge Luis Valencia Cardenas",
     "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
-    "Lisette Valeria Blanco Chuco",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Milagros Torres Santos",
@@ -41,76 +68,49 @@
    "tecnica": "tec_12"
   },
   {
-   "tipo": "mala_costumbre",
-   "titulo": "Despedida sin protocolo ni encuesta",
-   "queVimos": "La llamada termina sin volver a decir el nombre y la Unidad CIE ni transferir a la encuesta; en 13 llamadas el seguimiento quedó sin día y hora, y en dos se observó riesgo de que el cierre parezca un corte de llamada.",
-   "veces": "24 llamadas · 18 asesores · 14.ª semana seguida",
-   "asesores": [
-    "Ana Maria Padilla Parra",
-    "Angelo Jaime Franco Sarmiento",
-    "Diana Carol Taipe Rojas",
-    "Isai Yuliño Mercado Bravo",
-    "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
-    "Jorge Luis Valencia Cardenas",
-    "Judith Rocio Vila Incaroca",
-    "Justyn Flores Solano",
-    "Lisette Valeria Blanco Chuco",
-    "Maria Alejandra Pino Contreras",
-    "Melissa Leslie Fernadez Avalos",
-    "Milagros Torres Santos",
-    "Orlando Jesus Pintado Sandoval",
-    "Patricia Roxana Mercado Zacarias",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
-    "Ruth Alexandra Mauricio Verde"
-   ],
-   "ejemplo": "«Refuerza el protocolo de cierre y evita cualquier acción que pueda interpretarse como un corte intencional de la llamada» (09/11).",
-   "porQueImporta": "Es lo que más puntaje resta y lo más fácil de corregir; además, sin una cita concreta para la evaluación el interés del prospecto se enfría.",
-   "accion": "Cierre fijo después de agendar: «Tu evaluación queda para [día] a las [hora]. Te atendió [tu nombre], de la Unidad CIE de la Universidad Continental; guarda mi WhatsApp. Te transfiero a una breve encuesta, no cuelgues».",
-   "tecnica": "tec_16"
-  },
-  {
    "tipo": "mala_practica",
    "titulo": "Descuento antes de conocer el presupuesto",
    "queVimos": "Ante la pregunta por el costo se presentan descuentos de entrada, sin indagar cuánto puede pagar ni qué lo motiva, y en algunas llamadas se ofrecieron porcentajes por encima de lo autorizado o que ya no estaban vigentes.",
-   "veces": "10 llamadas · 8 asesores · 4.ª semana seguida",
+   "veces": "9 llamadas · 8 asesores · 5.ª semana seguida",
    "asesores": [
-    "Patricia Roxana Mercado Zacarias",
-    "Milagros Torres Santos",
     "Rosa Victoria Guzman Bonilla",
     "Jimena del Rosario Vera Osores",
+    "Ruth Alexandra Mauricio Verde",
     "Jean Carlos Espinoza Atoc",
-    "Raul Aaron Manuel Ipanaque Escobar",
     "Judith Rocio Vila Incaroca",
+    "Patricia Roxana Mercado Zacarias",
+    "Milagros Torres Santos",
     "Maria Alejandra Pino Contreras"
    ],
-   "ejemplo": "«Verifica siempre que los costos, descuentos y beneficios comunicados correspondan a las campañas vigentes. No ofrezcas el descuento del 15 % si ya no está autorizado» (09/11).",
+   "ejemplo": "«Frente a una objeción económica, identifica primero la capacidad de pago y las condiciones que necesita la prospecto» (10/11).",
    "porQueImporta": "Si el descuento sale primero, el asesor se queda sin herramienta de negociación, y un beneficio vencido o no autorizado genera reclamos y riesgo para la UC.",
    "accion": "Primero «¿Qué te gustaría lograr con la carrera?» y «¿Cuánto te quedaría cómodo invertir al mes?»; recién después, un solo esquema con los beneficios vigentes de la Biblioteca, validados antes de llamar.",
    "tecnica": "tec_14"
   },
   {
-   "tipo": "mala_practica",
-   "titulo": "Información sin respaldo o que descalifica",
-   "queVimos": "Se adelantan plazos o cursos de convalidación sin evaluación académica, se presenta como automático el cambio de sede o modalidad, y para asegurar la recordación se pide al prospecto que no atienda a otros asesores.",
-   "veces": "4 llamadas · 4 asesores · 3.ª semana seguida",
+   "tipo": "mala_costumbre",
+   "titulo": "Se responde la consulta, no se vende",
+   "queVimos": "El asesor resuelve bien la duda puntual (convalidación, convenio, horarios) pero no indaga para qué quiere estudiar ni convierte esa respuesta en un compromiso: la llamada queda informativa y la iniciativa en manos del prospecto.",
+   "veces": "10 llamadas · 7 asesores",
    "asesores": [
-    "Orlando Jesus Pintado Sandoval",
-    "Milagros Torres Santos",
-    "Edward Nelson Gonzales Villaneda",
-    "Diana Carol Taipe Rojas"
+    "Angelo Jaime Franco Sarmiento",
+    "Ruth Alexandra Mauricio Verde",
+    "Jean Carlos Espinoza Atoc",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Justyn Flores Solano",
+    "Melissa Leslie Fernadez Avalos",
+    "Rosa Victoria Guzman Bonilla"
    ],
-   "ejemplo": "«Evita generar expectativas sobre plazos, requisitos o posibilidades de convalidación sin validar previamente la información correspondiente» (05/11).",
-   "porQueImporta": "Lo prometido sin respaldo se convierte en reclamo o deserción cuando el área académica responde distinto, y desacreditar a otros asesores daña la imagen del equipo.",
-   "accion": "«La cantidad de cursos la define el área académica revisando tus sílabos.» Para la recordación: «Guarda mi número, yo te acompaño en todo el proceso», sin hablar de otros asesores.",
-   "tecnica": "tec_08"
+   "ejemplo": "«No te limites a explicar la convalidación. Aprovecha el interés para realizar cierres parciales, identificar la disposición de inscripción y establecer una fecha y hora concreta» (10/11).",
+   "porQueImporta": "Sin conocer la motivación no hay con qué sostener el precio ni la decisión; el prospecto se queda con la información y compara con otras opciones sin un siguiente paso.",
+   "accion": "Después de resolver la duda: «¿Qué te gustaría lograr con esta carrera?» y un cierre parcial: «Con la convalidación clara, ¿te parece si avanzamos con tu evaluación de admisión hoy o mañana?».",
+   "tecnica": "tec_09"
   },
   {
    "tipo": "buena_practica",
    "titulo": "Seguimiento con hora acordada",
    "queVimos": "Al no cerrar en la llamada, el asesor deja un compromiso con hora exacta y envía la información por WhatsApp para que el prospecto la revise antes.",
-   "veces": "4 llamadas · 4 asesores · Melissa (05/11), Ruth y Jean Carlos (07/11), María Alejandra (09/11)",
+   "veces": "4 llamadas · 4 asesores · Melissa (05/11), Ruth y Jean Carlos (07/11), María Alejandra (09/11) · 2.ª semana seguida",
    "asesores": [
     "Melissa Leslie Fernadez Avalos",
     "Ruth Alexandra Mauricio Verde",
@@ -126,7 +126,7 @@
    "tipo": "buena_practica",
    "titulo": "Cierre con identificación y encuesta",
    "queVimos": "El asesor vuelve a decir su nombre al final y comunica la transferencia a la encuesta de satisfacción, completando el protocolo.",
-   "veces": "4 llamadas · Diana (04/11), Rosa (06/11), Jean Carlos y Aaron (07/11) · 2.ª semana seguida",
+   "veces": "4 llamadas · Diana (04/11), Rosa (06/11), Jean Carlos y Aaron (07/11) · 3.ª semana seguida",
    "asesores": [
     "Diana Carol Taipe Rojas",
     "Rosa Victoria Guzman Bonilla",
@@ -142,7 +142,7 @@
    "tipo": "nueva_tecnica",
    "titulo": "Pregunta de escala del 1 al 10",
    "queVimos": "Después de presentar la propuesta, el asesor pregunta del 1 al 10 qué tan probable es que se inscriba, y con la respuesta descubre qué falta para cerrar.",
-   "veces": "1 llamada · Justyn (05/11)",
+   "veces": "1 llamada · Justyn (05/11) · 2.ª semana seguida",
    "asesores": [
     "Justyn Flores Solano"
    ],
@@ -154,7 +154,7 @@
  ],
  "acciones": [
   "Toda llamada abre con nombre y Unidad CIE y cierra con la evaluación agendada (día y hora), la identificación y la transferencia a la encuesta, sin cortes.",
-  "Ante la pregunta por el costo: primero la motivación y el presupuesto mensual, después un solo esquema con los beneficios vigentes de la Biblioteca.",
-  "No prometer cursos convalidados, plazos ni cambios de sede, y no pedir al prospecto que deje de atender a otros asesores: «guarda mi número, yo te acompaño»."
+  "Después de resolver una duda (convalidación, convenio, horarios): preguntar la motivación y hacer un cierre parcial hacia la evaluación de admisión hoy o mañana.",
+  "Ante el costo o la objeción económica: primero la capacidad de pago mensual, después un solo esquema con los beneficios vigentes de la Biblioteca."
  ]
 }
