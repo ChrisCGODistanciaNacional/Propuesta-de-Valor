@@ -14584,5 +14584,473 @@
     "evidencia": "Confirma una fecha y hora específica para asegurar la continuidad."
    }
   }
+ },
+ "20367858ee6f": {
+  "asesor": "Isai Yuliño Mercado Bravo",
+  "fecha": "10/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Preséntate con tu nombre desde el saludo inicial"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Usa su nombre durante la gestión"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera de interés y si iniciaría desde cero o con convalidación"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué la motiva a estudiar Administración y cuál es su situación actual"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Presenta al menos dos diferenciales vinculados a sus respuestas"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Ante la intención de esperar hasta marzo, explicaste que matricularse ahora no adelanta las clases"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Enviaste la información por WhatsApp; despídete con tu nombre y la institución"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Agenda un seguimiento con día y hora en lugar de esperar que ella te avise"
+   }
+  }
+ },
+ "f4879e9addf1": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "10/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentaste con tu nombre y la institución"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Usa el nombre del prospecto durante la gestión"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste el motivo de la llamada y la carrera solicitada"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Usa preguntas puente para confirmar su objetivo"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "Responde con claridad la duración de la carrera"
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Conecta su información con los beneficios de la carrera de Derecho"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Escuchaste sin interrumpir, pero faltó responder con claridad su pregunta repetida"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Envía la información por WhatsApp y despídete con tu nombre"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Cerraste pidiéndole que te avisara; agenda seguimiento con día y hora"
+   }
+  }
+ },
+ "478618d0abde": {
+  "asesor": "Jorge Luis Valencia Cardenas",
+  "fecha": "10/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentaste con tu nombre y la institución"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Verifica el nombre de la prospecta: al final la llamaste por otro nombre"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera, la modalidad y si empezaría desde cero o con convalidación"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué la motiva a elegir Derecho"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué objetivo busca antes de sugerirle otra carrera"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Sobre aumentos, responde con la política institucional, sin asegurar que no habrá cambios"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Enviaste un mensaje por WhatsApp y le diste tu nombre para contactarte"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Propón un seguimiento con día y hora concretos en lugar de esperar su mensaje"
+   }
+  }
+ },
+ "042fe0d9a685": {
+  "asesor": "Jimena del Rosario Vera Osores",
+  "fecha": "10/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentaste con tu nombre y la institución"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Usa el nombre del prospecto durante la gestión"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera de interés y consultaste si era su primera carrera"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga por qué, siendo profesor, quiere estudiar Derecho"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué objetivo busca y qué otras opciones evalúa"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "Verifica la información sobre la duración de las carreras"
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante su horario hasta las 10:30 p. m., la respuesta clave eran las clases grabadas"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales con preguntas que confirmen el avance"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Le compartiste tu nombre para que pueda contactarte por WhatsApp"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "No quedó claro si el seguimiento sería hoy por la noche o mañana"
+   }
+  }
+ },
+ "7eb5af6286bf": {
+  "asesor": "Jimena del Rosario Vera Osores",
+  "fecha": "10/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentaste con tu nombre y la institución"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Usa su nombre durante la gestión"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Consultaste si era su primera carrera y si deseaba convalidar"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué busca lograr con la segunda carrera"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "No estimes la duración de la carrera"
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Presenta diferenciales de Ingeniería Ambiental conectados con su interés"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Ante la dificultad con documentos fedateados, explicaste que no los necesita ahora"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Enviaste por WhatsApp los montos y le compartiste tu número de contacto"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Confirma el horario propuesto con una hora exacta"
+   }
+  }
+ },
+ "532556786313": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "10/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Preséntate con tu nombre desde el saludo inicial"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Usaste el nombre del prospecto en varios momentos de la conversación"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera de interés del prospecto"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué lo motiva a estudiar Ingeniería Ambiental y cuánto tiempo podría dedicar"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Indaga qué objetivo busca"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Ante la falta de tiempo, explicaste que asegurar la vacante no exige dedicación inmediata"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales con preguntas que confirmen el avance"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Enviaste la información por WhatsApp y te presentaste como su asesor"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Acordaste una llamada de seguimiento con día y hora concretos"
+   }
+  }
  }
 }
