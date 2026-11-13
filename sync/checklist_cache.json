@@ -16066,5 +16066,83 @@
     "evidencia": "Establece una fecha y hora específicas para el seguimiento"
    }
   }
+ },
+ "6bfaad8fa6bb": {
+  "asesor": "Raul Aaron Manuel Ipanaque Escobar",
+  "fecha": "10/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Saludaste cordialmente y te presentaste con tu nombre y apellido identificando a la universidad"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera de interés: Ingeniería Industrial"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera y validaste la modalidad 100 % remota"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Pregúntale en qué trabaja y cuál es su motivación principal"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Pregunta si es su primera carrera o si tiene estudios previos"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Explicaste el sistema de creditaje, la duración del ciclo y la cantidad de créditos"
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita afirmar que el precio se congela o dar cifras estimadas no oficiales"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Concreta el horario exacto de la entrevista o del seguimiento por WhatsApp"
+   }
+  }
  }
 }
