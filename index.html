@@ -912,70 +912,96 @@
   .dif-todos .dif-chip { background: #ECEEF2; color: #5B6475; }
   .dif-solo { border-color: rgba(232,184,74,.55); background: #FFF9EC; }
   .dif-nota { margin: 6px 0 0; font-size: 12.5px; line-height: 1.45; color: #3B4558; }
-  /* ===================== PROCESO Y TÉCNICA VENTA (15/11/2026) ===================== */
-  .pvt-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%); color: #fff; border-radius: 16px; padding: 22px 24px; margin: 14px 0 18px; }
-  .pvt-hero h1 { margin: 0 0 4px; font-size: 24px; font-weight: 700; letter-spacing: -.01em; }
-  .pvt-hero > p { margin: 0 0 16px; color: rgba(255,255,255,.78); font-size: 14px; max-width: 780px; line-height: 1.5; }
-  .pvt-niv { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .pvt-niv > div { background: rgba(255,255,255,.07); border: 1px solid var(--navy-line); border-radius: 12px; padding: 12px 14px; }
-  .pvt-niv b { display: flex; align-items: center; gap: 8px; font-size: 15px; }
-  .pvt-niv b span { background: var(--gold); color: var(--navy); width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; }
-  .pvt-niv p { margin: 6px 0 0; font-size: 13px; color: rgba(255,255,255,.75); line-height: 1.45; }
-  .pvt-sec { display: flex; gap: 12px; align-items: flex-start; margin: 26px 0 12px; }
-  .pvt-sec h2 { margin: 0; font-size: 19px; color: var(--ink); }
-  .pvt-sec p { margin: 3px 0 0; color: var(--muted); font-size: 13.5px; }
-  .pvt-sec-n { flex: 0 0 30px; height: 30px; border-radius: 50%; background: var(--navy); color: var(--gold); font-weight: 700; display: flex; align-items: center; justify-content: center; }
-  .pvt-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
-  .pvt-step { text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; cursor: pointer; font: inherit; color: var(--ink); position: relative; transition: border-color .15s, box-shadow .15s; }
-  .pvt-step:hover { border-color: var(--line-strong); box-shadow: 0 2px 8px rgba(14,34,64,.06); }
-  .pvt-step small { display: block; color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em; }
-  .pvt-step b { display: block; font-size: 14.5px; margin-top: 2px; }
-  .pvt-step i { font-style: normal; position: absolute; top: 10px; right: 12px; font-size: 11.5px; color: var(--gold-deep); background: var(--gold-soft); border-radius: 999px; padding: 1px 8px; }
-  .pvt-step.on { background: var(--navy); color: #fff; border-color: var(--navy); }
-  .pvt-step.on small { color: rgba(255,255,255,.65); }
-  .pvt-step.on i { background: var(--gold); color: var(--navy); }
-  .pvt-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; box-shadow: 0 1px 2px rgba(14,34,64,.04); }
-  .pvt-obj { display: flex; gap: 12px; align-items: flex-start; background: var(--paper); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
-  .pvt-obj .ico { font-size: 26px; line-height: 1; }
-  .pvt-obj b { display: block; font-size: 16px; }
-  .pvt-obj p { margin: 3px 0 0; color: var(--ink-2); font-size: 14px; line-height: 1.5; }
-  .pvt-cols { display: grid; grid-template-columns: 1fr 1.25fr 1fr; gap: 16px; }
-  .pvt-col h3 { margin: 0 0 4px; font-size: 14px; display: flex; align-items: center; gap: 6px; }
-  .pvt-col .sub { margin: 0 0 10px; color: var(--muted); font-size: 12.5px; }
-  .pvt-col.c1 h3 { color: var(--navy); } .pvt-col.c2 h3 { color: var(--gold-deep); } .pvt-col.c3 h3 { color: #2D63B8; }
-  .pvt-ck { list-style: none; margin: 0; padding: 0; counter-reset: ck; }
-  .pvt-ck li { counter-increment: ck; position: relative; padding: 8px 0 8px 32px; border-bottom: 1px dashed var(--line); font-size: 13.5px; line-height: 1.45; }
-  .pvt-ck li:last-child { border-bottom: 0; }
-  .pvt-ck li::before { content: counter(ck); position: absolute; left: 0; top: 8px; width: 22px; height: 22px; border-radius: 50%; background: var(--navy); color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; }
-  .pvt-more { margin-top: 10px; border: 1px solid var(--line); border-radius: 10px; background: #FAFBFD; }
-  .pvt-more summary { cursor: pointer; padding: 8px 12px; font-size: 13px; font-weight: 600; color: var(--ink-2); list-style: none; }
-  .pvt-more summary::-webkit-details-marker { display: none; }
-  .pvt-more summary::after { content: '＋'; float: right; color: var(--muted); }
-  .pvt-more[open] summary::after { content: '－'; }
-  .pvt-more ul { margin: 0; padding: 0 12px 10px 28px; font-size: 13px; line-height: 1.5; color: var(--ink-2); }
-  .pvt-more li { margin: 4px 0; }
-  .pvt-tec { border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; background: #fff; }
-  .pvt-tec.dom { background: var(--gold-soft); }
-  .pvt-tec b { display: block; font-size: 14px; }
-  .pvt-tec p { margin: 4px 0 0; font-size: 13px; color: var(--ink-2); line-height: 1.45; }
-  .pvt-tec .ej { margin-top: 8px; background: var(--wa); border-radius: 10px 10px 10px 2px; padding: 7px 10px; font-size: 13px; color: #1F3A2B; line-height: 1.45; }
-  .pvt-tec .dm { float: right; font-size: 11px; color: var(--gold-deep); font-weight: 600; }
-  .pvt-voz { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; }
-  .pvt-voz b { font-size: 13.5px; }
-  .pvt-voz p { margin: 4px 0 0; font-size: 12.8px; color: var(--ink-2); line-height: 1.45; }
-  .pvt-voz .ok { color: var(--good); } .pvt-voz .no { color: var(--bad); }
-  .pvt-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  /* ===================== PROCESO Y TÉCNICA VENTA v2 ===================== */
+  .pvt-hero { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%); color: #fff; border-radius: 16px; padding: 18px 22px; margin: 14px 0 18px; }
+  .pvt-hero h1 { margin: 0; font-size: 22px; font-weight: 700; }
+  .pvt-hero p { margin: 2px 0 0; color: rgba(255,255,255,.75); font-size: 13.5px; }
+  .pvt-niv { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pvt-niv span { background: rgba(255,255,255,.08); border: 1px solid var(--navy-line); border-radius: 999px; padding: 6px 12px; font-size: 12.5px; display: inline-flex; align-items: center; gap: 6px; }
+  .pvt-niv b { background: var(--gold); color: var(--navy); width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11.5px; }
+  .pvt-sec { display: flex; gap: 12px; align-items: center; margin: 22px 0 12px; }
+  .pvt-sec h2 { margin: 0; font-size: 18px; color: var(--ink); }
+  .pvt-sec p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+  .pvt-sec-n { flex: 0 0 30px; height: 30px; border-radius: 50%; background: var(--navy); color: var(--gold); font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
+  .pvt-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+  .pvt-step { display: flex; align-items: center; gap: 10px; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; cursor: pointer; font: inherit; color: var(--ink); transition: all .15s; }
+  .pvt-step:hover { border-color: var(--line-strong); box-shadow: 0 3px 10px rgba(14,34,64,.07); }
+  .pvt-step .sn { flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--paper); color: var(--navy); font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
+  .pvt-step .st { flex: 1; min-width: 0; } .pvt-step b { display: block; font-size: 14px; } .pvt-step small { display: block; color: var(--muted); font-size: 11.5px; }
+  .pvt-step .si { font-size: 20px; opacity: .85; }
+  .pvt-step.on { background: var(--navy); color: #fff; border-color: var(--navy); box-shadow: 0 4px 14px rgba(14,34,64,.18); }
+  .pvt-step.on .sn { background: var(--gold); } .pvt-step.on small { color: rgba(255,255,255,.7); }
+  .pvt-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; box-shadow: 0 2px 6px rgba(14,34,64,.05); }
+  .pvt-obj { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+  .pvt-obj .ico { font-size: 28px; line-height: 1; }
+  .pvt-obj b { display: block; font-size: 17px; }
+  .pvt-objd summary { cursor: pointer; color: var(--muted); font-size: 12.5px; margin-top: 2px; list-style: none; }
+  .pvt-objd summary::-webkit-details-marker { display: none; }
+  .pvt-objd summary::after { content: ' ▾'; } .pvt-objd[open] summary::after { content: ' ▴'; }
+  .pvt-objd p { margin: 6px 0 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.5; max-width: 900px; }
+  .pvt-subs { display: flex; gap: 6px; background: var(--paper); border-radius: 12px; padding: 5px; margin-bottom: 16px; flex-wrap: wrap; }
+  .pvt-subs button { flex: 1; min-width: 120px; border: 0; background: transparent; border-radius: 9px; padding: 9px 10px; font: inherit; font-size: 13.5px; font-weight: 600; color: var(--ink-2); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+  .pvt-subs button:hover { background: rgba(255,255,255,.7); }
+  .pvt-subs button.on { background: #fff; color: var(--navy); box-shadow: 0 1px 4px rgba(14,34,64,.12); }
+  .pvt-body { min-height: 120px; }
+  .pvt-hint { color: var(--muted); font-size: 12.5px; margin: 0 0 10px; }
+  .pvt-panel { border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; background: #FAFBFD; }
+  .pvt-ph { font-weight: 600; font-size: 13.5px; color: var(--navy); margin-bottom: 4px; }
+  .pvt-ck { list-style: none; margin: 0; padding: 0; counter-reset: ck; display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
+  .pvt-ck li { counter-increment: ck; position: relative; padding: 9px 0 9px 34px; border-bottom: 1px dashed var(--line); font-size: 13.5px; line-height: 1.4; }
+  .pvt-ck li::before { content: counter(ck); position: absolute; left: 0; top: 8px; width: 24px; height: 24px; border-radius: 50%; background: var(--navy); color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; }
+  .pvt-accs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; align-items: start; }
+  .pvt-acc { border: 1px solid var(--line); border-radius: 12px; background: #fff; margin-bottom: 10px; overflow: hidden; }
+  .pvt-accs .pvt-acc { margin: 0; }
+  .pvt-acc summary { cursor: pointer; padding: 11px 14px; display: flex; align-items: center; gap: 8px; list-style: none; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+  .pvt-acc summary::-webkit-details-marker { display: none; }
+  .pvt-acc summary::after { content: '＋'; margin-left: auto; color: var(--muted); font-weight: 400; }
+  .pvt-acc[open] summary::after { content: '－'; }
+  .pvt-acc[open] summary { border-bottom: 1px solid var(--line); background: #FAFBFD; }
+  .pvt-acc .ac { background: var(--paper); color: var(--muted); border-radius: 999px; font-size: 11px; padding: 1px 7px; }
+  .pvt-list { margin: 0; padding: 10px 14px 12px 30px; font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+  .pvt-list li { margin: 5px 0; }
+  .pvt-tq { border-left: 4px solid var(--gold); }
+  .pvt-tq.dom { background: var(--gold-soft); }
+  .pvt-tq .dm { font-size: 11px; color: var(--gold-deep); font-weight: 600; background: #fff; border-radius: 999px; padding: 1px 8px; }
+  .pvt-tb { padding: 10px 14px 12px; }
+  .pvt-tb p { margin: 0 0 8px; font-size: 13.5px; color: var(--ink-2); line-height: 1.5; }
+  .pvt-tb .ej { margin-top: 6px; background: var(--wa); border-radius: 12px 12px 12px 3px; padding: 8px 11px; font-size: 13px; color: #1F3A2B; line-height: 1.45; max-width: 760px; }
+  .pvt-vgrid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .pvt-vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+  .pvt-vc { border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; background: #fff; }
+  .pvt-vc .vh { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .pvt-vc .vi { width: 30px; height: 30px; border-radius: 9px; background: #E9F0FB; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; }
+  .pvt-vc b { font-size: 14px; }
+  .pvt-vc p { margin: 0 0 8px; font-size: 13px; color: var(--ink-2); line-height: 1.45; }
+  .pvt-vc .vok, .pvt-vc .vno { font-size: 12.5px; border-radius: 8px; padding: 6px 9px; margin-top: 6px; line-height: 1.4; }
+  .pvt-vc .vok { background: var(--good-bg); color: #145C3B; } .pvt-vc .vno { background: var(--bad-bg); color: #8E1C2C; }
+  .pvt-prac { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; background: #FAFBFD; margin-bottom: 10px; }
+  .pvt-prc .who, .pvt-mod .who { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 4px; }
+  .pvt-prc .bub { display: inline-block; background: #fff; border: 1px solid var(--line); border-radius: 14px 14px 14px 3px; padding: 10px 14px; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .pvt-pl { display: block; margin: 14px 0 6px; font-size: 13px; font-weight: 600; } .pvt-pl small { color: var(--muted); font-weight: 400; }
+  .pvt-ta { width: 100%; border: 1px solid var(--line-strong); border-radius: 10px; padding: 9px 11px; font: inherit; font-size: 13.5px; resize: vertical; background: #fff; }
+  .pvt-mod { margin-top: 12px; }
+  .pvt-mod .bub2 { background: var(--wa); border-radius: 14px 14px 3px 14px; padding: 10px 14px; font-size: 14px; color: #1F3A2B; line-height: 1.5; }
+  .pvt-mt { margin-top: 6px; font-size: 12.5px; color: var(--gold-deep); }
+  .pvt-pb { display: flex; gap: 8px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+  .pvt-btn { border: 1px solid var(--line-strong); background: #fff; border-radius: 999px; padding: 8px 16px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; color: var(--ink); }
+  .pvt-btn.pri { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .pvt-cnt { margin-left: auto; color: var(--muted); font-size: 12px; }
+  .pvt-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
   .pvt-nav button { background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font: inherit; font-size: 13px; cursor: pointer; color: var(--ink); }
-  .pvt-nav button:hover { border-color: var(--navy); }
   .pvt-nav button[disabled] { visibility: hidden; }
-  .pvt-vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
-  .pvt-vgrid .pvt-voz { background: var(--card); margin: 0; }
-  .pvt-vgrid .pvt-voz b span { display: inline-flex; width: 20px; height: 20px; border-radius: 50%; background: #E3ECFA; color: #2D63B8; font-size: 11px; align-items: center; justify-content: center; margin-right: 6px; }
-  .pvt-tip { margin-top: 12px; background: var(--gold-soft); border: 1px solid #F1DFAE; border-radius: 12px; padding: 12px 14px; font-size: 13.5px; color: var(--ink); line-height: 1.5; }
+  .pvt-fold { margin-top: 18px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .pvt-fold > summary { cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 14px 18px; list-style: none; }
+  .pvt-fold > summary::-webkit-details-marker { display: none; }
+  .pvt-fold > summary::after { content: '＋'; margin-left: auto; color: var(--muted); font-size: 18px; }
+  .pvt-fold[open] > summary::after { content: '－'; }
+  .pvt-fold .ft b { display: block; font-size: 16.5px; color: var(--ink); } .pvt-fold .ft small { color: var(--muted); font-size: 12.5px; }
+  .pvt-fold-body { padding: 0 18px 18px; }
   @media (max-width: 900px) {
-    .pvt-niv, .pvt-cols { grid-template-columns: 1fr; }
     .pvt-steps { grid-template-columns: repeat(2, 1fr); }
-    .pvt-hero { padding: 18px; } .pvt-hero h1 { font-size: 20px; }
+    .pvt-ck, .pvt-accs, .pvt-vgrid3 { grid-template-columns: 1fr; }
+    .pvt-subs button { min-width: 45%; }
   }
 </style>
 </head>
@@ -1085,7 +1111,7 @@
   <!-- ===================== MÓDULO: TÉCNICA DE VENTA ===================== -->
   <div id="module-tecnica" class="module-panel">
     <div id="pvt-guia"></div>
-    <div class="pvt-sec" id="pvt-todas"><span class="pvt-sec-n">4</span><div><h2>Todas las técnicas</h2><p>Tu supervisor marca cada técnica cuando la escucha aplicada en tus llamadas. Las que ya dominas se ven en dorado.</p></div></div>
+    <details class="pvt-fold" id="pvt-todas"><summary><span class="pvt-sec-n">3</span><span class="ft"><b>Todas las técnicas</b><small>Tu supervisor marca cada técnica cuando la escucha en tus llamadas · toca para ver</small></span></summary><div class="pvt-fold-body">
     <div class="tecnica-progress">
       <div class="tecnica-progress-main">
         <div class="tecnica-progress-text" id="tecnicaProgressText">🏆 0 de 15 técnicas dominadas</div>
@@ -1097,6 +1123,7 @@
     </div>
     <button class="btn-global-add edit-only" onclick="addTecnica()">➕ Agregar técnica</button>
     <div id="container-tecnicas"></div>
+    </div></details>
   </div>
 
   <!-- ===================== PANEL DEL SUPERVISOR ===================== -->
@@ -1201,7 +1228,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-11-15T20:27:56.000Z";
+  const DATA_VERSION = "2026-11-15T20:42:32.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -3475,27 +3502,54 @@
       } else { next.style.display = 'none'; next.innerHTML = ''; }
     }
   }
-  // ===================== PROCESO Y TÉCNICA VENTA (15/11/2026, Christopher) =====================
-  // Los 3 niveles de una buena venta (proceso · técnica · comunicación) por cada uno de los 4 pasos.
-  // Proceso = db.atencion.pasos (checklist, preguntas, práctica, ideas) · Técnicas = db.tecnicas por etapa · Comunicación = PVT_VOZ.
+  // ===================== PROCESO Y TÉCNICA VENTA (15/11/2026, Christopher · v2) =====================
+  // Cada paso con sub-pestañas: Proceso · Técnicas (plegadas) · Comunicación · Practica (situaciones con respuesta modelo).
   const PVT_VOZ = [
-    ['tono','🎙️ Tono','Cálido y seguro, de asesor y no de vendedor. Que se note que ayudas a decidir, no que lees un guion.','«Te explico cómo funciona y tú decides con calma.»','Voz plana y apurada, como leyendo.'],
-    ['volumen','🔊 Volumen','Constante y claro. Un punto más alto cuando das cifras, beneficios o el siguiente paso.','«La primera cuota es de S/634.80 (pausa) y eso ya incluye tu matrícula.»','Bajar la voz al decir el precio: suena a duda.'],
-    ['ritmo','⏱️ Ritmo','Más lento en el saludo y en la inversión. Una idea, una pausa; nunca todo de corrido.','«Son 2 bloques por ciclo… y llevas solo 3 cursos a la vez.»','Soltar beneficios, montos y requisitos en una sola tirada.'],
-    ['modulacion','🎚️ Modulación y énfasis','Subir en el beneficio, pausar antes del monto y cerrar la frase hacia abajo: afirmas, no preguntas.','«Con el descuento, tu cuota queda en S/568.80.» (cierra firme)','Terminar todo en tono de pregunta: «¿la cuota es de 568?»'],
-    ['diccion','🗣️ Dicción','Nombre, carrera y montos pronunciados completos y claros.','«Administración y Negocios Internacionales, a distancia.»','Comerse sílabas o decir «pa’ la matri».'],
-    ['pausas','🤫 Pausas y silencio','Después de preguntar, calla. Después del precio, calla. El silencio deja pensar al cliente.','«¿Qué es lo que más te preocupa de empezar ahora?» … (esperas)','Responder tu propia pregunta o llenar el silencio con más datos.'],
-    ['energia','😊 Sonrisa y energía','Sonríe al marcar: se oye. Los primeros 10 segundos deciden si te escuchan o te cortan.','«¡Hola, María! Te habla [tu nombre] de la Universidad Continental, ¿cómo estás?»','Saludo de trámite, sin energía, que suena a llamada masiva.'],
-    ['muletillas','🚫 Muletillas y diminutivos','Frases limpias. Sin rellenos ni diminutivos que restan seriedad a la inversión.','«La cuota es de…» · «tu pago de matrícula…»','«Este…», «o sea», «¿ya?», «un ratito», «cuotita», «pagito».'],
-    ['positivo','✅ Lenguaje positivo','Di lo que sí se puede. Cambia el «no» por la alternativa.','«Lo que sí puedes hacer hoy es separar tu vacante con el beneficio.»','«No se puede», «eso no depende de mí».'],
-    ['escucha','👂 Escucha activa','Repite con sus palabras lo que dijo antes de responder: confirma que entendiste.','«Entonces lo que buscas es estudiar sin dejar el trabajo, ¿cierto?»','Interrumpir o pasar directo al precio sin recoger lo que dijo.'],
-    ['nombre','🪪 Personalización','Usa el nombre del cliente al inicio, al presentar la propuesta y en el cierre (sin abusar).','«María, con lo que me contaste, esta modalidad te calza.»','No preguntar el nombre o repetirlo en cada frase.'],
-    ['trato','🤝 Trato','Tú o usted según el cliente, y mantenlo toda la llamada. Respeto sin rigidez.','Si te trata de usted, sigue de usted hasta el final.','Saltar de «usted» a «tú» a mitad de la llamada.']
+    ['tono','🎙️','Tono','Cálido y seguro, de asesor y no de vendedor.','«Te explico cómo funciona y tú decides con calma.»','Voz plana y apurada, como leyendo.'],
+    ['volumen','🔊','Volumen','Claro y un punto más alto en cifras, beneficios y siguiente paso.','«La primera cuota es de S/634.80 (pausa) y eso ya incluye tu matrícula.»','Bajar la voz al decir el precio: suena a duda.'],
+    ['ritmo','⏱️','Ritmo','Lento en el saludo y en la inversión: una idea, una pausa.','«Son 2 bloques por ciclo… y llevas solo 3 cursos a la vez.»','Soltar beneficios, montos y requisitos de corrido.'],
+    ['modulacion','🎚️','Modulación','Sube en el beneficio y cierra la frase hacia abajo: afirmas.','«Con el descuento, tu cuota queda en S/568.80.»','Terminar todo en tono de pregunta.'],
+    ['diccion','🗣️','Dicción','Nombre, carrera y montos completos y claros.','«Administración y Negocios Internacionales, a distancia.»','Comerse sílabas o decir «pa’ la matri».'],
+    ['pausas','🤫','Pausas y silencio','Después de preguntar o dar el precio, calla.','«¿Qué es lo que más te preocupa de empezar ahora?» … (esperas)','Responder tu propia pregunta.'],
+    ['energia','😊','Sonrisa y energía','Sonríe al marcar: se oye en los primeros 10 segundos.','«¡Hola, María! Te habla [tu nombre] de la Universidad Continental.»','Saludo de trámite, sin energía.'],
+    ['muletillas','🚫','Sin muletillas','Frases limpias, sin diminutivos que restan seriedad.','«La cuota es de…» · «tu pago de matrícula…»','«Este…», «o sea», «¿ya?», «cuotita».'],
+    ['positivo','✅','Lenguaje positivo','Di lo que sí se puede y ofrece la alternativa.','«Lo que sí puedes hacer hoy es separar tu vacante con el beneficio.»','«No se puede», «eso no depende de mí».'],
+    ['escucha','👂','Escucha activa','Repite con sus palabras antes de responder.','«Entonces buscas estudiar sin dejar el trabajo, ¿cierto?»','Interrumpir o saltar directo al precio.'],
+    ['nombre','🪪','Personalización','Usa su nombre al inicio, en la propuesta y en el cierre.','«María, con lo que me contaste, esta modalidad te calza.»','No preguntar el nombre o repetirlo en cada frase.'],
+    ['trato','🤝','Trato','Tú o usted según el cliente, igual toda la llamada.','Si te trata de usted, sigue de usted hasta el final.','Saltar de «usted» a «tú» a mitad de llamada.']
   ];
   const PVT_VOZ_PASO = { paso1: ['energia','tono','nombre'], paso2: ['escucha','pausas','trato'], paso3: ['ritmo','modulacion','volumen'], paso4: ['pausas','volumen','positivo'] };
+  // Situaciones para practicar: [lo que dice el cliente, respuesta modelo, técnica]
+  const PVT_PRACTICA = {
+    paso1: [
+      ['«Estoy ocupado, llámame luego.»','«Te entiendo, [nombre]. Te tomo solo dos minutos para dejarte separado el beneficio; si prefieres, dime a qué hora te llamo y lo cerramos ahí. ¿Qué te acomoda más?»','tec_12'],
+      ['«No me acuerdo de haberme registrado.»','«Claro, te cuento: te habla [tu nombre] de la Universidad Continental. Dejaste tus datos para [carrera] a distancia. ¿Sigues pensando estudiar este año?»','tec_05'],
+      ['«Solo quiero saber el precio.»','«Con gusto te lo doy exacto. Para eso, ¿me confirmas la carrera y si empiezas desde cero o vienes de otra universidad? Así te digo el monto con tu beneficio.»','tec_15']
+    ],
+    paso2: [
+      ['«Quiero estudiar, pero trabajo todo el día.»','«Trabajas todo el día y quieres estudiar sin dejar tu trabajo, ¿cierto? ¿En qué momento avanzarías más cómodo: en las noches o el fin de semana?»','tec_09'],
+      ['«Ya empecé una carrera antes y la dejé.»','«Gracias por contarme. ¿Qué fue lo que hizo que la dejaras esa vez? Así vemos juntos que ahora no te pase lo mismo, ¿te parece?»','tec_10'],
+      ['«Es para mi hijo.»','«Qué bueno que lo estés apoyando. ¿Qué es lo que más le interesa a él de la carrera? ¿Y la decisión la toman juntos?»','tec_10']
+    ],
+    paso3: [
+      ['«Está muy caro.»','«Te entiendo. El valor normal es de S/600 al mes; con esta campaña quedas en S/500 y además llevas el curso de Excel certificado. Y piensa en esto: cada ciclo que esperas es un ciclo más sin tu título.»','tec_03'],
+      ['«No sé si lo virtual es bueno.»','«Es la duda más común, por eso te cuento: tienes clases en vivo y grabadas, biblioteca digital las 24 horas y un asesor de acompañamiento desde la primera semana. Además, la UC tiene la certificación ANECA para programas a distancia.»','tec_08'],
+      ['«En otra universidad me sale más barato.»','«Está bien comparar. Te pido que compares tres cosas: certificación internacional, que ya lleves certificados desde el primer año y el acompañamiento. Cuando ingreses a tu aula vas a ver la diferencia desde la primera semana.»','tec_07']
+    ],
+    paso4: [
+      ['«Lo voy a pensar.»','«Claro, es una decisión importante. Aparte de eso, ¿qué es lo único que te impediría empezar hoy?»','tec_14'],
+      ['«Tengo que consultarlo con mi esposa.»','«Me parece bien. ¿Te llamo mañana para conocer si podemos empezar tu proceso de admisión? ¿Te parece? Si deciden antes, avísame y estaré muy atento. ¿Quedamos para mañana?»','tec_16'],
+      ['«Ok, me interesa.»','«¡Excelente, [nombre]! Ya que tienes todo claro, ¿iniciamos tu proceso ahora para que accedas al beneficio, verdad? Solo necesito validar tus nombres.»','tec_04']
+    ]
+  };
   let pvtPaso = (() => { try { return localStorage.getItem('pvt_paso') || 'paso1'; } catch (e) { return 'paso1'; } })();
+  let pvtSub = (() => { try { return localStorage.getItem('pvt_sub') || 'proceso'; } catch (e) { return 'proceso'; } })();
+  let pvtPr = 0, pvtVer = false, pvtTxt = '';
   const pvtE = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  function pvtIrPaso(k) { pvtPaso = k; try { localStorage.setItem('pvt_paso', k); } catch (e) {} renderGuiaVenta(); const el = document.getElementById('pvt-pasos'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  function pvtIrPaso(k) { pvtPaso = k; pvtPr = 0; pvtVer = false; pvtTxt = ''; try { localStorage.setItem('pvt_paso', k); } catch (e) {} renderGuiaVenta(); const el = document.getElementById('pvt-pasos'); if (el && el.getBoundingClientRect().top < 0) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  function pvtIrSub(k) { pvtSub = k; try { localStorage.setItem('pvt_sub', k); } catch (e) {} renderGuiaVenta(); }
+  function pvtOtra() { const L = PVT_PRACTICA[pvtPaso] || []; pvtPr = L.length ? (pvtPr + 1) % L.length : 0; pvtVer = false; pvtTxt = ''; renderGuiaVenta(); }
+  function pvtMostrar() { const t = document.querySelector('.pvt-ta'); pvtTxt = t ? t.value : ''; pvtVer = true; renderGuiaVenta(); }
   function renderGuiaVenta() {
     const el = document.getElementById('pvt-guia'); if (!el) return;
     const P = ((db.atencion && db.atencion.pasos) || []).filter(p => STAGE_KEYS.includes(p.id));
@@ -3504,38 +3558,46 @@
     const vozDe = k => PVT_VOZ.find(v => v[0] === k);
     const i = P.findIndex(p => p.id === pvtPaso), p = P[i];
     const tecs = (db.tecnicas || []).filter(t => etapaDeTecnica(t) === p.id);
-    const lista = (arr) => (arr || []).filter(Boolean).map(x => `<li>${pvtE(x)}</li>`).join('');
-    const mas = (titulo, arr, open) => (arr && arr.length) ? `<details class="pvt-more"${open ? ' open' : ''}><summary>${titulo}</summary><ul>${lista(arr)}</ul></details>` : '';
+    const lista = arr => (arr || []).filter(Boolean).map(x => `<li>${pvtE(x)}</li>`).join('');
+    const fold = (ico, titulo, arr) => (arr && arr.length) ? `<details class="pvt-acc"><summary><span class="ai">${ico}</span><span class="at">${titulo}</span><span class="ac">${arr.length}</span></summary><ul class="pvt-list">${lista(arr)}</ul></details>` : '';
     const preg = p.preguntas && Array.isArray(p.preguntas.items) ? p.preguntas.items : [];
-    const tecHTML = tecs.map(t => { const ej = (Array.isArray(t.ejemplos) ? t.ejemplos : []).filter(Boolean); const dom = typeof isTecnicaUnlocked === 'function' && isTecnicaUnlocked(t.id);
-      return `<div class="pvt-tec${dom ? ' dom' : ''}">${dom ? '<span class="dm">✓ dominada</span>' : ''}<b>${pvtE(t.titulo)}</b><p>${pvtE(t.explicacion !== undefined ? t.explicacion : (t.descripcion || ''))}</p>${ej.map(x => `<div class="ej">${pvtE(x)}</div>`).join('')}</div>`; }).join('') || '<p class="sub">Aún no hay técnicas en este paso.</p>';
-    const vozHTML = (PVT_VOZ_PASO[p.id] || []).map(vozDe).filter(Boolean).map(v => `<div class="pvt-voz"><b>${pvtE(v[1])}</b><p>${pvtE(v[2])}</p><p class="ok">✔ ${pvtE(v[3])}</p><p class="no">✘ ${pvtE(v[4])}</p></div>`).join('');
+    const vozCard = v => `<div class="pvt-vc"><div class="vh"><span class="vi">${v[1]}</span><b>${pvtE(v[2])}</b></div><p>${pvtE(v[3])}</p><div class="vok">✔ ${pvtE(v[4])}</div><div class="vno">✘ ${pvtE(v[5])}</div></div>`;
+    let body = '';
+    if (pvtSub === 'proceso') {
+      body = `<div class="pvt-panel"><div class="pvt-ph">📋 Lo que tiene que pasar en este paso</div><ol class="pvt-ck">${lista(p.checklist)}</ol></div>
+        <div class="pvt-accs">${fold('💬', 'Preguntas que funcionan', preg)}${fold('▶️', 'Cómo practicarlo', p.practica)}${fold('💡', 'Ideas para hacerlo mejor', p.ideas)}</div>`;
+    } else if (pvtSub === 'tecnicas') {
+      body = `<p class="pvt-hint">Toca una técnica para leer de qué trata y sus ejemplos.</p>` + (tecs.map(t => { const ej = (Array.isArray(t.ejemplos) ? t.ejemplos : []).filter(Boolean); const dom = typeof isTecnicaUnlocked === 'function' && isTecnicaUnlocked(t.id);
+        return `<details class="pvt-acc pvt-tq${dom ? ' dom' : ''}"><summary><span class="at">${pvtE(t.titulo)}</span>${dom ? '<span class="dm">✓ dominada</span>' : ''}</summary><div class="pvt-tb"><p>${pvtE(t.explicacion !== undefined ? t.explicacion : (t.descripcion || ''))}</p>${ej.map(x => `<div class="ej">${pvtE(x)}</div>`).join('')}</div></details>`; }).join('') || '<p class="pvt-hint">Aún no hay técnicas en este paso.</p>');
+    } else if (pvtSub === 'voz') {
+      body = `<p class="pvt-hint">Los 3 temas de voz que más pesan en este paso.</p><div class="pvt-vgrid3">${(PVT_VOZ_PASO[p.id] || []).map(vozDe).filter(Boolean).map(vozCard).join('')}</div>`;
+    } else {
+      const L = PVT_PRACTICA[p.id] || []; const c = L[pvtPr % (L.length || 1)];
+      if (!c) body = '<p class="pvt-hint">Pronto habrá situaciones para este paso.</p>';
+      else { const t = (db.tecnicas || []).find(x => x.id === c[2]);
+        body = `<div class="pvt-prac"><div class="pvt-prc"><span class="who">Cliente</span><div class="bub">${pvtE(c[0])}</div></div>
+          <label class="pvt-pl">¿Qué le responderías? <small>(dilo en voz alta o escríbelo; no se guarda)</small></label>
+          <textarea class="pvt-ta" rows="3" placeholder="Escribe tu respuesta…">${pvtE(pvtTxt)}</textarea>
+          ${pvtVer ? `<div class="pvt-mod"><span class="who">Respuesta modelo</span><div class="bub2">${pvtE(c[1])}</div>${t ? `<div class="pvt-mt">Técnica: <b>${pvtE(t.titulo)}</b></div>` : ''}</div>` : ''}
+          <div class="pvt-pb">${pvtVer ? '' : '<button class="pvt-btn pri" onclick="pvtMostrar()">Ver respuesta modelo</button>'}<button class="pvt-btn" onclick="pvtOtra()">Otra situación ↻</button><span class="pvt-cnt">${(pvtPr % L.length) + 1} de ${L.length}</span></div></div>
+          <p class="pvt-hint">Rutina de 15 minutos: elige el paso donde más te cuesta (míralo en 🎧 Historial de Auditorías), practica sus situaciones y aplica un tema de voz en tus próximas 5 llamadas.</p>`; }
+    }
+    const subs = [['proceso', '📋', 'Proceso'], ['tecnicas', '🏆', `Técnicas · ${tecs.length}`], ['voz', '🎙️', 'Comunicación'], ['practica', '🎯', 'Practica']];
     el.innerHTML = `
       <div class="pvt-hero">
-        <h1>📚 Proceso y Técnica Venta</h1>
-        <p>Cómo llevamos una venta consultiva en CGO Distancia. En cada llamada trabajamos tres niveles a la vez: <b>qué</b> tiene que pasar, <b>cómo</b> lograrlo y <b>cómo debe sonar</b>.</p>
-        <div class="pvt-niv">
-          <div><b><span>1</span>📋 Proceso · el qué</b><p>Los 4 pasos de la venta consultiva y lo que no puede faltar en cada uno.</p></div>
-          <div><b><span>2</span>🏆 Técnica · el cómo</b><p>Frases y estrategias para conseguir pequeños «sí» y avanzar al siguiente paso.</p></div>
-          <div><b><span>3</span>🎙️ Comunicación · cómo suena</b><p>Tono, ritmo, pausas, dicción y trato: lo que el cliente escucha además de tus palabras.</p></div>
-        </div>
+        <div><h1>📚 Proceso y Técnica Venta</h1><p>Cómo llevamos una venta consultiva en CGO Distancia.</p></div>
+        <div class="pvt-niv"><span><b>1</b> Proceso · el qué</span><span><b>2</b> Técnica · el cómo</span><span><b>3</b> Comunicación · cómo suena</span></div>
       </div>
-      <div class="pvt-sec" id="pvt-pasos"><span class="pvt-sec-n">1</span><div><h2>Los 4 pasos de la venta</h2><p>Elige un paso: verás qué hacer, qué técnicas usar y cómo debe sonar. El % es lo que pesa en tu auditoría.</p></div></div>
-      <div class="pvt-steps">${P.map((q, j) => `<button class="pvt-step${q.id === p.id ? ' on' : ''}" onclick="pvtIrPaso('${q.id}')"><small>Paso ${j + 1}</small><b>${pvtE(q.icono || '')} ${pvtE(q.titulo)}</b>${STAGE_PESO[q.id] ? `<i>${STAGE_PESO[q.id]}%</i>` : ''}</button>`).join('')}</div>
+      <div class="pvt-sec" id="pvt-pasos"><span class="pvt-sec-n">1</span><div><h2>Los 4 pasos de la venta</h2><p>Elige un paso. El % es lo que pesa en tu auditoría.</p></div></div>
+      <div class="pvt-steps">${P.map((q, j) => `<button class="pvt-step${q.id === p.id ? ' on' : ''}" onclick="pvtIrPaso('${q.id}')"><span class="sn">${j + 1}</span><span class="st"><b>${pvtE(q.titulo)}</b><small>${STAGE_PESO[q.id] ? STAGE_PESO[q.id] + '% de la nota' : ''}</small></span><span class="si">${pvtE(q.icono || '')}</span></button>`).join('')}</div>
       <div class="pvt-card">
-        <div class="pvt-obj"><span class="ico">${pvtE(p.icono || '🎯')}</span><div><b>Paso ${i + 1} · ${pvtE(p.titulo)}</b><p>${pvtE(p.objetivo)}</p></div></div>
-        <div class="pvt-cols">
-          <div class="pvt-col c1"><h3>📋 Proceso</h3><p class="sub">Lo que tiene que pasar en este paso</p><ol class="pvt-ck">${lista(p.checklist)}</ol>
-            ${mas('💬 Preguntas que funcionan', preg, false)}${mas('▶️ Cómo practicarlo', p.practica, false)}${mas('💡 Ideas para hacerlo mejor', p.ideas, false)}</div>
-          <div class="pvt-col c2"><h3>🏆 Técnicas</h3><p class="sub">Cómo lograrlo · ${tecs.length} ${tecs.length === 1 ? 'técnica' : 'técnicas'}</p>${tecHTML}</div>
-          <div class="pvt-col c3"><h3>🎙️ Comunicación</h3><p class="sub">Lo que más pesa en este paso</p>${vozHTML}</div>
-        </div>
+        <div class="pvt-obj"><span class="ico">${pvtE(p.icono || '🎯')}</span><div><b>Paso ${i + 1} · ${pvtE(p.titulo)}</b><details class="pvt-objd"><summary>Objetivo del paso</summary><p>${pvtE(p.objetivo)}</p></details></div></div>
+        <div class="pvt-subs">${subs.map(s => `<button class="${pvtSub === s[0] ? 'on' : ''}" onclick="pvtIrSub('${s[0]}')"><span>${s[1]}</span>${s[2]}</button>`).join('')}</div>
+        <div class="pvt-body">${body}</div>
         <div class="pvt-nav"><button ${i === 0 ? 'disabled' : ''} onclick="pvtIrPaso('${(P[i - 1] || {}).id}')">← ${pvtE((P[i - 1] || {}).titulo || '')}</button><button ${i === P.length - 1 ? 'disabled' : ''} onclick="pvtIrPaso('${(P[i + 1] || {}).id}')">${pvtE((P[i + 1] || {}).titulo || '')} →</button></div>
       </div>
-      <div class="pvt-sec"><span class="pvt-sec-n">2</span><div><h2>Cómo practicar</h2><p>Quince minutos al día, un tema a la vez.</p></div></div>
-      <div class="pvt-tip">1) Elige el paso donde más te cuesta (míralo en <b>🎧 Historial de Auditorías</b>). 2) Lee una técnica de ese paso y di su ejemplo en voz alta tres veces, con tus palabras. 3) Elige un tema de comunicación y aplícalo en tus próximas 5 llamadas. 4) Escucha una de tus grabaciones: ¿pasó lo del checklist?</div>
-      <div class="pvt-sec"><span class="pvt-sec-n">3</span><div><h2>Comunicación: los 12 temas de voz y trato</h2><p>Lo que Calidad escucha en tu llamada, con un ejemplo correcto (✔) y uno a evitar (✘).</p></div></div>
-      <div class="pvt-vgrid">${PVT_VOZ.map((v, j) => `<div class="pvt-voz"><b><span>${j + 1}</span>${pvtE(v[1])}</b><p>${pvtE(v[2])}</p><p class="ok">✔ ${pvtE(v[3])}</p><p class="no">✘ ${pvtE(v[4])}</p></div>`).join('')}</div>`;
+      <details class="pvt-fold"><summary><span class="pvt-sec-n">2</span><span class="ft"><b>Comunicación: los 12 temas de voz y trato</b><small>Lo que Calidad escucha en tu llamada · toca para ver</small></span></summary>
+        <div class="pvt-fold-body"><div class="pvt-vgrid">${PVT_VOZ.map(vozCard).join('')}</div></div></details>`;
   }
   function renderTecnicas() {
     try { renderGuiaVenta(); } catch (e) { console.warn('guía de venta', e); }
