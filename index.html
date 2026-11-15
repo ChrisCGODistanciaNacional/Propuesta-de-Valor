@@ -1003,6 +1003,31 @@
     .pvt-ck, .pvt-accs, .pvt-vgrid3 { grid-template-columns: 1fr; }
     .pvt-subs button { min-width: 45%; }
   }
+
+  .pvt-obj { background: var(--paper); border-radius: 14px; padding: 12px 16px; }
+  .pvt-obj p { margin: 4px 0 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.5; }
+  .pvt-cols { display: grid; grid-template-columns: 1fr 1.15fr 1fr; gap: 14px; align-items: start; }
+  .pvt-colp { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+  .pvt-colp > .pvt-chd { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .pvt-colp > .pvt-chd > span { width: 32px; height: 32px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; }
+  .pvt-colp > .pvt-chd b { display: block; font-size: 14.5px; } .pvt-colp > .pvt-chd small { color: var(--muted); font-size: 11.5px; }
+  .pvt-colp.c1 > header { background: #EEF2F8; } .pvt-colp.c1 > header > span { background: var(--navy); }
+  .pvt-colp.c2 > header { background: var(--gold-soft); } .pvt-colp.c2 > header > span { background: var(--gold); }
+  .pvt-colp.c3 > header { background: #EAF1FC; } .pvt-colp.c3 > header > span { background: #CFE0F8; }
+  .pvt-cb { padding: 12px 14px; }
+  .pvt-cols .pvt-ck { grid-template-columns: 1fr; }
+  .pvt-cols .pvt-accs { grid-template-columns: 1fr; gap: 8px; }
+  .pvt-cols .pvt-acc { margin-bottom: 8px; }
+  .pvt-cols .pvt-acc summary { padding: 9px 12px; font-size: 13px; }
+  .pvt-cols .pvt-vc { margin-bottom: 10px; padding: 10px 12px; }
+  .pvt-cols .pvt-vc:last-child { margin-bottom: 0; }
+  .pvt-prac { margin-top: 14px; border: 1px solid #F1DFAE; background: linear-gradient(180deg, var(--gold-soft), #fff); border-radius: 14px; padding: 14px 16px; }
+  .pvt-prh { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; } .pvt-prh b { font-size: 15px; }
+  .pvt-prg { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .pvt-prac .pvt-ta { margin-top: 10px; }
+  .pvt-prac .pvt-mod { margin-top: 0; }
+  .pvt-modph { border: 2px dashed #EBD9A6; border-radius: 12px; padding: 18px; color: var(--muted); font-size: 13px; text-align: center; }
+  @media (max-width: 900px) { .pvt-cols, .pvt-prg { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -1228,7 +1253,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-11-15T20:42:32.000Z";
+  const DATA_VERSION = "2026-11-15T20:48:00.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -3562,38 +3587,31 @@
     const fold = (ico, titulo, arr) => (arr && arr.length) ? `<details class="pvt-acc"><summary><span class="ai">${ico}</span><span class="at">${titulo}</span><span class="ac">${arr.length}</span></summary><ul class="pvt-list">${lista(arr)}</ul></details>` : '';
     const preg = p.preguntas && Array.isArray(p.preguntas.items) ? p.preguntas.items : [];
     const vozCard = v => `<div class="pvt-vc"><div class="vh"><span class="vi">${v[1]}</span><b>${pvtE(v[2])}</b></div><p>${pvtE(v[3])}</p><div class="vok">✔ ${pvtE(v[4])}</div><div class="vno">✘ ${pvtE(v[5])}</div></div>`;
-    let body = '';
-    if (pvtSub === 'proceso') {
-      body = `<div class="pvt-panel"><div class="pvt-ph">📋 Lo que tiene que pasar en este paso</div><ol class="pvt-ck">${lista(p.checklist)}</ol></div>
-        <div class="pvt-accs">${fold('💬', 'Preguntas que funcionan', preg)}${fold('▶️', 'Cómo practicarlo', p.practica)}${fold('💡', 'Ideas para hacerlo mejor', p.ideas)}</div>`;
-    } else if (pvtSub === 'tecnicas') {
-      body = `<p class="pvt-hint">Toca una técnica para leer de qué trata y sus ejemplos.</p>` + (tecs.map(t => { const ej = (Array.isArray(t.ejemplos) ? t.ejemplos : []).filter(Boolean); const dom = typeof isTecnicaUnlocked === 'function' && isTecnicaUnlocked(t.id);
-        return `<details class="pvt-acc pvt-tq${dom ? ' dom' : ''}"><summary><span class="at">${pvtE(t.titulo)}</span>${dom ? '<span class="dm">✓ dominada</span>' : ''}</summary><div class="pvt-tb"><p>${pvtE(t.explicacion !== undefined ? t.explicacion : (t.descripcion || ''))}</p>${ej.map(x => `<div class="ej">${pvtE(x)}</div>`).join('')}</div></details>`; }).join('') || '<p class="pvt-hint">Aún no hay técnicas en este paso.</p>');
-    } else if (pvtSub === 'voz') {
-      body = `<p class="pvt-hint">Los 3 temas de voz que más pesan en este paso.</p><div class="pvt-vgrid3">${(PVT_VOZ_PASO[p.id] || []).map(vozDe).filter(Boolean).map(vozCard).join('')}</div>`;
-    } else {
-      const L = PVT_PRACTICA[p.id] || []; const c = L[pvtPr % (L.length || 1)];
-      if (!c) body = '<p class="pvt-hint">Pronto habrá situaciones para este paso.</p>';
-      else { const t = (db.tecnicas || []).find(x => x.id === c[2]);
-        body = `<div class="pvt-prac"><div class="pvt-prc"><span class="who">Cliente</span><div class="bub">${pvtE(c[0])}</div></div>
-          <label class="pvt-pl">¿Qué le responderías? <small>(dilo en voz alta o escríbelo; no se guarda)</small></label>
-          <textarea class="pvt-ta" rows="3" placeholder="Escribe tu respuesta…">${pvtE(pvtTxt)}</textarea>
-          ${pvtVer ? `<div class="pvt-mod"><span class="who">Respuesta modelo</span><div class="bub2">${pvtE(c[1])}</div>${t ? `<div class="pvt-mt">Técnica: <b>${pvtE(t.titulo)}</b></div>` : ''}</div>` : ''}
-          <div class="pvt-pb">${pvtVer ? '' : '<button class="pvt-btn pri" onclick="pvtMostrar()">Ver respuesta modelo</button>'}<button class="pvt-btn" onclick="pvtOtra()">Otra situación ↻</button><span class="pvt-cnt">${(pvtPr % L.length) + 1} de ${L.length}</span></div></div>
-          <p class="pvt-hint">Rutina de 15 minutos: elige el paso donde más te cuesta (míralo en 🎧 Historial de Auditorías), practica sus situaciones y aplica un tema de voz en tus próximas 5 llamadas.</p>`; }
-    }
-    const subs = [['proceso', '📋', 'Proceso'], ['tecnicas', '🏆', `Técnicas · ${tecs.length}`], ['voz', '🎙️', 'Comunicación'], ['practica', '🎯', 'Practica']];
+    const procHTML = `<ol class="pvt-ck">${lista(p.checklist)}</ol><div class="pvt-accs">${fold('💬', 'Preguntas que funcionan', preg)}${fold('▶️', 'Cómo practicarlo', p.practica)}${fold('💡', 'Ideas para hacerlo mejor', p.ideas)}</div>`;
+    const tecHTML = tecs.map(t => { const ej = (Array.isArray(t.ejemplos) ? t.ejemplos : []).filter(Boolean); const dom = typeof isTecnicaUnlocked === 'function' && isTecnicaUnlocked(t.id);
+        return `<details class="pvt-acc pvt-tq${dom ? ' dom' : ''}"><summary><span class="at">${pvtE(t.titulo)}</span>${dom ? '<span class="dm">✓</span>' : ''}</summary><div class="pvt-tb"><p>${pvtE(t.explicacion !== undefined ? t.explicacion : (t.descripcion || ''))}</p>${ej.map(x => `<div class="ej">${pvtE(x)}</div>`).join('')}</div></details>`; }).join('') || '<p class="pvt-hint">Aún no hay técnicas en este paso.</p>';
+    const vozHTML = (PVT_VOZ_PASO[p.id] || []).map(vozDe).filter(Boolean).map(vozCard).join('');
+    const L = PVT_PRACTICA[p.id] || []; const c = L.length ? L[pvtPr % L.length] : null; const tc = c ? (db.tecnicas || []).find(x => x.id === c[2]) : null;
+    const pracHTML = !c ? '' : `<div class="pvt-prac"><div class="pvt-prh"><b>🎯 Practica este paso</b><span class="pvt-cnt">Situación ${(pvtPr % L.length) + 1} de ${L.length}</span></div>
+        <div class="pvt-prg"><div><div class="pvt-prc"><span class="who">El cliente dice</span><div class="bub">${pvtE(c[0])}</div></div>
+          <textarea class="pvt-ta" rows="2" placeholder="¿Qué le responderías? Escríbelo o dilo en voz alta (no se guarda)">${pvtE(pvtTxt)}</textarea>
+          <div class="pvt-pb">${pvtVer ? '' : '<button class="pvt-btn pri" onclick="pvtMostrar()">Ver respuesta modelo</button>'}<button class="pvt-btn" onclick="pvtOtra()">Otra situación ↻</button></div></div>
+        <div>${pvtVer ? `<div class="pvt-mod"><span class="who">Respuesta modelo</span><div class="bub2">${pvtE(c[1])}</div>${tc ? `<div class="pvt-mt">Técnica: <b>${pvtE(tc.titulo)}</b></div>` : ''}</div>` : '<div class="pvt-modph">Primero piensa tu respuesta; luego compárala con la respuesta modelo.</div>'}</div></div></div>`;
     el.innerHTML = `
       <div class="pvt-hero">
         <div><h1>📚 Proceso y Técnica Venta</h1><p>Cómo llevamos una venta consultiva en CGO Distancia.</p></div>
         <div class="pvt-niv"><span><b>1</b> Proceso · el qué</span><span><b>2</b> Técnica · el cómo</span><span><b>3</b> Comunicación · cómo suena</span></div>
       </div>
-      <div class="pvt-sec" id="pvt-pasos"><span class="pvt-sec-n">1</span><div><h2>Los 4 pasos de la venta</h2><p>Elige un paso. El % es lo que pesa en tu auditoría.</p></div></div>
+      <div class="pvt-sec" id="pvt-pasos"><span class="pvt-sec-n">1</span><div><h2>Los 4 pasos de la venta</h2><p>Elige un paso: verás qué hacer, qué técnicas usar, cómo debe sonar y una situación para practicar. El % es lo que pesa en tu auditoría.</p></div></div>
       <div class="pvt-steps">${P.map((q, j) => `<button class="pvt-step${q.id === p.id ? ' on' : ''}" onclick="pvtIrPaso('${q.id}')"><span class="sn">${j + 1}</span><span class="st"><b>${pvtE(q.titulo)}</b><small>${STAGE_PESO[q.id] ? STAGE_PESO[q.id] + '% de la nota' : ''}</small></span><span class="si">${pvtE(q.icono || '')}</span></button>`).join('')}</div>
       <div class="pvt-card">
-        <div class="pvt-obj"><span class="ico">${pvtE(p.icono || '🎯')}</span><div><b>Paso ${i + 1} · ${pvtE(p.titulo)}</b><details class="pvt-objd"><summary>Objetivo del paso</summary><p>${pvtE(p.objetivo)}</p></details></div></div>
-        <div class="pvt-subs">${subs.map(s => `<button class="${pvtSub === s[0] ? 'on' : ''}" onclick="pvtIrSub('${s[0]}')"><span>${s[1]}</span>${s[2]}</button>`).join('')}</div>
-        <div class="pvt-body">${body}</div>
+        <div class="pvt-obj"><span class="ico">${pvtE(p.icono || '🎯')}</span><div><b>Paso ${i + 1} · ${pvtE(p.titulo)}</b><p>${pvtE(p.objetivo)}</p></div></div>
+        <div class="pvt-cols">
+          <section class="pvt-colp c1"><div class="pvt-chd"><span>📋</span><div><b>Proceso</b><small>Qué tiene que pasar</small></div></div><div class="pvt-cb">${procHTML}</div></section>
+          <section class="pvt-colp c2"><div class="pvt-chd"><span>🏆</span><div><b>Técnicas · ${tecs.length}</b><small>Cómo lograrlo · toca para leer</small></div></div><div class="pvt-cb">${tecHTML}</div></section>
+          <section class="pvt-colp c3"><div class="pvt-chd"><span>🎙️</span><div><b>Comunicación</b><small>Cómo debe sonar</small></div></div><div class="pvt-cb">${vozHTML}</div></section>
+        </div>
+        ${pracHTML}
         <div class="pvt-nav"><button ${i === 0 ? 'disabled' : ''} onclick="pvtIrPaso('${(P[i - 1] || {}).id}')">← ${pvtE((P[i - 1] || {}).titulo || '')}</button><button ${i === P.length - 1 ? 'disabled' : ''} onclick="pvtIrPaso('${(P[i + 1] || {}).id}')">${pvtE((P[i + 1] || {}).titulo || '')} →</button></div>
       </div>
       <details class="pvt-fold"><summary><span class="pvt-sec-n">2</span><span class="ft"><b>Comunicación: los 12 temas de voz y trato</b><small>Lo que Calidad escucha en tu llamada · toca para ver</small></span></summary>
