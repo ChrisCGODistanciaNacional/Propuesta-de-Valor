@@ -1,24 +1,26 @@
 {
- "actualizado": "14/11/2026",
+ "actualizado": "15/11/2026",
  "periodo": {
-  "desde": "07/11/2026",
-  "hasta": "13/11/2026"
+  "desde": "09/11/2026",
+  "hasta": "15/11/2026"
  },
  "base": {
   "llamadas": 56,
   "asesores": 22
  },
- "titular": "La despedida sin encuesta ni seguimiento agendado (47 de 56 llamadas) y la presentación sin nombre ni Unidad CIE (38) siguen dominando; crece la inversión mal dicha: matrícula «gratis» y primeras cuotas que no cuadran. Lo bueno: seguimientos cumplidos a la hora pactada e inversión regular vs. promocional bien sumada.",
+ "titular": "La despedida sin encuesta (50 de 56 llamadas) y la presentación sin nombre ni Unidad CIE (49) siguen arriba; crece el descuento ofrecido antes de conocer el presupuesto o por encima del límite (12 llamadas, 9 asesores). Lo bueno: más seguimientos retomados a la hora pactada (11 llamadas).",
  "items": [
   {
    "tipo": "mala_costumbre",
    "titulo": "Despedida sin protocolo ni seguimiento agendado",
    "queVimos": "La llamada termina sin repetir el nombre y la institución ni transferir a la encuesta, a veces con un corte abrupto; en 36 llamadas el seguimiento quedó sin día y hora («la próxima semana», «yo me comunico») o se esperó a que el prospecto escribiera, incluso cuando dio un dato para agendar (sale de clases a las 5:30, cobra en la quincena).",
-   "veces": "47 llamadas · 20 asesores · 18.ª semana seguida",
+   "veces": "50 llamadas sin encuesta · 33 sin día y hora · 22 asesores · 19.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
+    "Cecilia Esther Aliaga Lapa",
+    "Diana Carol Taipe Rojas",
     "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
     "Jean Carlos Espinoza Atoc",
@@ -46,7 +48,7 @@
    "tipo": "mala_costumbre",
    "titulo": "Presentación sin nombre ni Unidad CIE",
    "queVimos": "Se abre solo con «Universidad Continental» o el asesor se identifica tarde; el nombre del prospecto no se usa o se le llama por otro al final. También aparecieron un saludo que no corresponde a la hora («buenas noches» al mediodía) y un asesor que dio dos nombres distintos en la misma llamada.",
-   "veces": "38 llamadas · 20 asesores · 13.ª semana seguida",
+   "veces": "49 llamadas · 22 asesores · 14.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -62,7 +64,9 @@
     "Justyn Flores Solano",
     "Lisette Valeria Blanco Chuco",
     "Maria Alejandra Pino Contreras",
+    "Melissa Leslie Fernadez Avalos",
     "Milagros Torres Santos",
+    "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
     "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
@@ -76,47 +80,42 @@
   },
   {
    "tipo": "mala_practica",
+   "titulo": "Descuento antes de conocer el presupuesto o fuera del límite",
+   "queVimos": "El descuento sale como primer argumento al dar los costos, incluso cuando el prospecto preguntaba por convalidación o duración o ya dijo que la cuota le alcanzaba; en varias llamadas se ofreció un porcentaje por encima del autorizado o se insistió en el pago inmediato cuando el prospecto pidió esperar a la quincena.",
+   "veces": "12 llamadas · 9 asesores · 9.ª semana seguida (sin contar 3 evaluaciones del 15/11 que repiten el texto de otra)",
+   "asesores": [
+    "Angelo Jaime Franco Sarmiento",
+    "Judith Rocio Vila Incaroca",
+    "Justyn Flores Solano",
+    "Milagros Torres Santos",
+    "Orlando Jesus Pintado Sandoval",
+    "Patricia Roxana Mercado Zacarias",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Rosa Victoria Guzman Bonilla",
+    "Ruth Alexandra Mauricio Verde"
+   ],
+   "ejemplo": "«No ofrezcas descuentos automáticamente al presentar los costos. Primero identifica la capacidad económica y la existencia de una verdadera objeción financiera» (13/11).",
+   "porQueImporta": "Un descuento sin objeción real baja el valor percibido, deja sin argumento para el cierre y, si supera lo autorizado, genera reclamos cuando el monto real no coincide.",
+   "accion": "Antes de cualquier beneficio preguntar: «¿La cuota normal se ajusta a lo que tienes pensado invertir?». Solo si dice que no, presentar el beneficio vigente de la Biblioteca, nunca uno mayor.",
+   "tecnica": "tec_14"
+  },
+  {
+   "tipo": "mala_practica",
    "titulo": "Matrícula «gratis» y primera cuota que no cuadra",
    "queVimos": "Se ofrece la matrícula exonerada o al 100 % cuando el beneficio vigente es 50 % (S/125), o se deja pasar que el prospecto la crea gratuita; el mismo asesor da otro porcentaje u otra fecha de cierre en otra llamada del mismo día, o cita descuentos no vigentes (15 %, 25 %, «5 % si no me equivoco»). En la primera cuota se usa el tarifario de otra carrera (S/759 y S/568 en vez de S/695 y S/504), la suma de conceptos no da el total o se dan dos pensiones distintas; también se dijo que el siguiente inicio era en agosto o en diciembre.",
-   "veces": "20 llamadas · 15 asesores · 3.ª semana seguida",
+   "veces": "6 llamadas · 6 asesores (11 y 13/11) · 4.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Betsabeth Alexandra Rojas Palacios",
     "Edward Nelson Gonzales Villaneda",
-    "Isai Yuliño Mercado Bravo",
-    "Jean Carlos Espinoza Atoc",
     "Jimena del Rosario Vera Osores",
-    "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
-    "Lisette Valeria Blanco Chuco",
-    "Maria Alejandra Pino Contreras",
-    "Milagros Torres Santos",
-    "Nicol Alisson Romero Espinoza",
-    "Orlando Jesus Pintado Sandoval",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla"
+    "Orlando Jesus Pintado Sandoval"
    ],
    "ejemplo": "«Indicaste que el prospecto no pagaría matrícula; sin embargo, el beneficio vigente contempla únicamente un 50% de descuento, por lo que corresponde pagar S/125. No debemos ofrecer exoneraciones totales cuando no están autorizadas» (13/11).",
    "porQueImporta": "Un monto prometido que no coincide con el que se cobra genera reclamos al matricular y riesgo para la UC; si el prospecto compara llamadas o hace la suma y no le cuadra, deja de creer en todo lo demás.",
    "accion": "Antes de cada llamada, abrir en la Biblioteca el tarifario de la carrera y el beneficio vigente. Decir la primera cuota siempre armada: «Con el beneficio, tu primera cuota es S/[total]: matrícula S/125 (50 % de descuento sobre S/250), seguro, examen médico y tu primera pensión; desde abril pagas S/[cuota], que depende de tus créditos. Las clases inician en marzo». Enviar la misma tabla por WhatsApp y leer de ella.",
    "tecnica": "tec_06"
-  },
-  {
-   "tipo": "mala_practica",
-   "titulo": "Descuento antes de conocer el presupuesto",
-   "queVimos": "El descuento sale como primer argumento cuando el prospecto pregunta por convalidación o duración, o incluso cuando ya dijo que la cuota regular le alcanzaba, sin preguntar cuánto puede invertir.",
-   "veces": "7 llamadas · 5 asesores · 8.ª semana seguida",
-   "asesores": [
-    "Angelo Jaime Franco Sarmiento",
-    "Justyn Flores Solano",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
-    "Ruth Alexandra Mauricio Verde"
-   ],
-   "ejemplo": "«En esta llamada, el principal interés del prospecto era conocer el porcentaje de convalidación y el tiempo de duración de la carrera. Antes de presentar beneficios económicos, identifica si existe una dificultad financiera y explora su capacidad de pago» (13/11).",
-   "porQueImporta": "El descuento usado de entrada deja al asesor sin herramienta de negociación y enseña al prospecto a decidir solo por precio, cuando su duda era otra.",
-   "accion": "Orden fijo: 1) responder lo que preguntó (convalidación, duración); 2) inversión normal con sus conceptos; 3) «¿Esa cuota está dentro de lo que pensabas invertir al mes?»; solo si hay objeción económica real, el beneficio vigente. Si la cuota le alcanza, ir directo a la evaluación hoy o mañana.",
-   "tecnica": "tec_14"
   },
   {
    "tipo": "buena_practica",
@@ -137,16 +136,16 @@
    "tipo": "buena_practica",
    "titulo": "Seguimiento con hora acordada y cumplido",
    "queVimos": "Al no cerrar, el asesor deja una hora exacta (a las 9:00, 10:00, 5:00 p. m. o el mismo día) y luego retoma la llamada en el horario agendado, confirmando disponibilidad y si revisó la información enviada.",
-   "veces": "9 llamadas · 8 asesores · Ruth y Jean Carlos (07/11), Jimena (11/11), Angelo, Ana María, Nicol, Lisette y María Alejandra (13/11) · 5.ª semana seguida",
+   "veces": "11 llamadas · 8 asesores · Betsabeth, Isai, Jean Carlos, Jimena, Judith, Lisette, Nicol y Rosa (10 al 13/11) · 6.ª semana seguida",
    "asesores": [
-    "Ruth Alexandra Mauricio Verde",
+    "Betsabeth Alexandra Rojas Palacios",
+    "Isai Yuliño Mercado Bravo",
     "Jean Carlos Espinoza Atoc",
     "Jimena del Rosario Vera Osores",
-    "Angelo Jaime Franco Sarmiento",
-    "Ana Maria Padilla Parra",
-    "Nicol Alisson Romero Espinoza",
+    "Judith Rocio Vila Incaroca",
     "Lisette Valeria Blanco Chuco",
-    "Maria Alejandra Pino Contreras"
+    "Nicol Alisson Romero Espinoza",
+    "Rosa Victoria Guzman Bonilla"
    ],
    "ejemplo": "«Retomaste la llamada en el horario agendado, confirmaste la disponibilidad del prospecto, la carrera, la modalidad y que era su primera carrera» (13/11).",
    "porQueImporta": "Un siguiente paso con hora, y cumplido, mantiene vivo el interés y demuestra seriedad: el prospecto contesta porque sabe que lo llamarán.",
@@ -157,12 +156,9 @@
    "tipo": "nueva_tecnica",
    "titulo": "Quitar la barrera de los documentos",
    "queVimos": "Cuando el prospecto se frena por el certificado, documentos fedateados o sílabos difíciles de conseguir, el asesor explica que puede iniciar con carta de compromiso, que los documentos se presentan después de matricularse y que puede avanzar cursos mientras regulariza; esta semana se sumó la opción de convalidar por experiencia laboral cuando el instituto ya no responde.",
-   "veces": "8 llamadas · 5 asesores · Jimena (07, 10 y 11/11), Edward (11/11), Orlando (11 y 13/11), Jean Carlos y Judith (13/11) · 3.ª semana seguida",
+   "veces": "3 llamadas · 2 asesores · Jimena (10 y 11/11) y Judith (13/11) · 4.ª semana seguida",
    "asesores": [
     "Jimena del Rosario Vera Osores",
-    "Edward Nelson Gonzales Villaneda",
-    "Orlando Jesus Pintado Sandoval",
-    "Jean Carlos Espinoza Atoc",
     "Judith Rocio Vila Incaroca"
    ],
    "ejemplo": "«Ante la dificultad del prospecto para obtener sus sílabos, le explicaste que los documentos se presentan después de la matrícula y le ofreciste una alternativa por experiencia laboral, una respuesta pertinente a su situación» (13/11).",
@@ -172,8 +168,8 @@
   }
  ],
  "acciones": [
-  "Antes de la primera llamada, abrir en la Biblioteca el tarifario de la carrera y el beneficio vigente (matrícula al 50 %, S/125) y decir la primera cuota siempre armada con sus conceptos; nada de montos ni fechas de memoria.",
+  "Abrir con nombre real y Unidad CIE y no ofrecer descuento hasta preguntar si la cuota normal le alcanza; nunca un porcentaje mayor al vigente en la Biblioteca.",
   "Toda llamada cierra con día y hora (de preferencia de la evaluación), nombre, Unidad CIE y transferencia a la encuesta; nunca «avísame» ni «yo te escribo».",
-  "Abrir con nombre real y Unidad CIE, y no ofrecer descuento hasta preguntar si la cuota normal le alcanza."
+  "Decir la matrícula y la primera cuota siempre armadas con sus conceptos y el tarifario de la Biblioteca abierto; nada de montos de memoria."
  ]
 }
