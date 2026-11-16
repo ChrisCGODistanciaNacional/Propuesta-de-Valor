@@ -1,20 +1,20 @@
 {
- "actualizado": "15/11/2026",
+ "actualizado": "16/11/2026",
  "periodo": {
-  "desde": "09/11/2026",
-  "hasta": "15/11/2026"
+  "desde": "10/11/2026",
+  "hasta": "16/11/2026"
  },
  "base": {
-  "llamadas": 56,
+  "llamadas": 64,
   "asesores": 22
  },
- "titular": "La despedida sin encuesta (50 de 56 llamadas) y la presentación sin nombre ni Unidad CIE (49) siguen arriba; crece el descuento ofrecido antes de conocer el presupuesto o por encima del límite (12 llamadas, 9 asesores). Lo bueno: más seguimientos retomados a la hora pactada (11 llamadas).",
+ "titular": "La despedida sin encuesta (58 de 64 llamadas) y la presentación sin nombre ni Unidad CIE (55) siguen arriba; aparece llamar «beca» al descuento (2 asesores) y una entrante sin atender. Lo bueno: preguntar el presupuesto antes del beneficio ya se ve en 3 asesores.",
  "items": [
   {
    "tipo": "mala_costumbre",
    "titulo": "Despedida sin protocolo ni seguimiento agendado",
-   "queVimos": "La llamada termina sin repetir el nombre y la institución ni transferir a la encuesta, a veces con un corte abrupto; en 36 llamadas el seguimiento quedó sin día y hora («la próxima semana», «yo me comunico») o se esperó a que el prospecto escribiera, incluso cuando dio un dato para agendar (sale de clases a las 5:30, cobra en la quincena).",
-   "veces": "50 llamadas sin encuesta · 33 sin día y hora · 22 asesores · 19.ª semana seguida",
+   "queVimos": "La llamada termina sin repetir el nombre y la Unidad CIE ni transferir a la encuesta, a veces con un corte abrupto; en 41 llamadas el seguimiento quedó sin día y hora («yo me comunico», «lo conversa en casa y me avisa»), incluso cuando el prospecto dio un dato para agendar.",
+   "veces": "58 llamadas sin encuesta · 41 sin día y hora · 22 asesores · 20.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -39,7 +39,7 @@
     "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«En lugar de esperar que el prospecto te avise, agenda un seguimiento con fecha y hora acorde a cuando podría contar con ingresos» (13/11).",
+   "ejemplo": "«Cuando el prospecto necesite conversar la decisión con un familiar, establece un seguimiento con fecha y hora específica» (16/11).",
    "porQueImporta": "Sigue siendo lo que más puntaje resta y lo más fácil de corregir; sin día y hora la iniciativa queda en manos del prospecto y el interés se enfría mientras compara con otras universidades.",
    "accion": "Cierre fijo: «Tu evaluación queda para [día] a las [hora], desde tu laptop con cámara. Te atendió [tu nombre], de la Unidad CIE de la Universidad Continental; guarda mi WhatsApp. Te transfiero a una breve encuesta, no cuelgues». Si no cierra, usar el dato que dio: «Me dijiste que sales a las 5:30; te llamo mañana a las 6:00, ¿te parece?».",
    "tecnica": "tec_16"
@@ -48,7 +48,7 @@
    "tipo": "mala_costumbre",
    "titulo": "Presentación sin nombre ni Unidad CIE",
    "queVimos": "Se abre solo con «Universidad Continental» o el asesor se identifica tarde; el nombre del prospecto no se usa o se le llama por otro al final. También aparecieron un saludo que no corresponde a la hora («buenas noches» al mediodía) y un asesor que dio dos nombres distintos en la misma llamada.",
-   "veces": "49 llamadas · 22 asesores · 14.ª semana seguida",
+   "veces": "55 llamadas · 22 asesores · 15.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -73,7 +73,7 @@
     "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Recuerda que tu presentación debe incluir tu nombre y la Unidad CIE para cumplir con el protocolo institucional desde el primer contacto» (13/11).",
+   "ejemplo": "«Mantén la presentación institucional completa, incluyendo tu nombre y la Unidad CIE, para reforzar la identificación del servicio que brindas» (16/11).",
    "porQueImporta": "En los primeros segundos el prospecto decide si confía; un nombre que cambia o un saludo equivocado suena a improvisación y equivocar su nombre borra la cercanía construida.",
    "accion": "Apertura en una frase: «[Buenos días/tardes/noches], [nombre], te saluda [tu nombre real], de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en [carrera] a distancia, ¿me regalas dos minutos?». Anotar el nombre del prospecto en pantalla y usarlo al menos dos veces.",
    "tecnica": "tec_12"
@@ -81,41 +81,62 @@
   {
    "tipo": "mala_practica",
    "titulo": "Descuento antes de conocer el presupuesto o fuera del límite",
-   "queVimos": "El descuento sale como primer argumento al dar los costos, incluso cuando el prospecto preguntaba por convalidación o duración o ya dijo que la cuota le alcanzaba; en varias llamadas se ofreció un porcentaje por encima del autorizado o se insistió en el pago inmediato cuando el prospecto pidió esperar a la quincena.",
-   "veces": "12 llamadas · 9 asesores · 9.ª semana seguida (sin contar 3 evaluaciones del 15/11 que repiten el texto de otra)",
+   "queVimos": "El descuento sale como primer argumento al dar los costos, sin preguntar antes si la cuota normal alcanza ni si hay una dificultad económica real; en 3 llamadas se habló de un porcentaje por encima del autorizado.",
+   "veces": "9 llamadas · 6 asesores · 10.ª semana seguida (sin contar 10 evaluaciones del 15/11 que repiten el texto de otra)",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
-    "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
-    "Milagros Torres Santos",
-    "Orlando Jesus Pintado Sandoval",
-    "Patricia Roxana Mercado Zacarias",
+    "Maria Alejandra Pino Contreras",
     "Raul Aaron Manuel Ipanaque Escobar",
     "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«No ofrezcas descuentos automáticamente al presentar los costos. Primero identifica la capacidad económica y la existencia de una verdadera objeción financiera» (13/11).",
+   "ejemplo": "«Evita ofrecer descuentos desde el inicio. Primero identifica la capacidad de pago, el presupuesto y si existe una dificultad económica real» (16/11).",
    "porQueImporta": "Un descuento sin objeción real baja el valor percibido, deja sin argumento para el cierre y, si supera lo autorizado, genera reclamos cuando el monto real no coincide.",
    "accion": "Antes de cualquier beneficio preguntar: «¿La cuota normal se ajusta a lo que tienes pensado invertir?». Solo si dice que no, presentar el beneficio vigente de la Biblioteca, nunca uno mayor.",
    "tecnica": "tec_14"
   },
   {
    "tipo": "mala_practica",
-   "titulo": "Matrícula «gratis» y primera cuota que no cuadra",
-   "queVimos": "Se ofrece la matrícula exonerada o al 100 % cuando el beneficio vigente es 50 % (S/125), o se deja pasar que el prospecto la crea gratuita; el mismo asesor da otro porcentaje u otra fecha de cierre en otra llamada del mismo día, o cita descuentos no vigentes (15 %, 25 %, «5 % si no me equivoco»). En la primera cuota se usa el tarifario de otra carrera (S/759 y S/568 en vez de S/695 y S/504), la suma de conceptos no da el total o se dan dos pensiones distintas; también se dijo que el siguiente inicio era en agosto o en diciembre.",
-   "veces": "6 llamadas · 6 asesores (11 y 13/11) · 4.ª semana seguida",
+   "titulo": "Llamar «beca» al descuento de campaña",
+   "queVimos": "Al presentar el beneficio de campaña se le dice «beca» al descuento, lo que hace creer al prospecto que ganó algo por mérito o que es permanente sin condiciones; en una llamada además quedó confusa la explicación de bachiller y titulación.",
+   "veces": "4 llamadas · 2 asesores",
    "asesores": [
-    "Ana Maria Padilla Parra",
-    "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
-    "Jimena del Rosario Vera Osores",
     "Justyn Flores Solano",
-    "Orlando Jesus Pintado Sandoval"
+    "Maria Alejandra Pino Contreras"
    ],
-   "ejemplo": "«Indicaste que el prospecto no pagaría matrícula; sin embargo, el beneficio vigente contempla únicamente un 50% de descuento, por lo que corresponde pagar S/125. No debemos ofrecer exoneraciones totales cuando no están autorizadas» (13/11).",
-   "porQueImporta": "Un monto prometido que no coincide con el que se cobra genera reclamos al matricular y riesgo para la UC; si el prospecto compara llamadas o hace la suma y no le cuadra, deja de creer en todo lo demás.",
-   "accion": "Antes de cada llamada, abrir en la Biblioteca el tarifario de la carrera y el beneficio vigente. Decir la primera cuota siempre armada: «Con el beneficio, tu primera cuota es S/[total]: matrícula S/125 (50 % de descuento sobre S/250), seguro, examen médico y tu primera pensión; desde abril pagas S/[cuota], que depende de tus créditos. Las clases inician en marzo». Enviar la misma tabla por WhatsApp y leer de ella.",
+   "ejemplo": "«Recuerda que no debes utilizar la palabra «beca» para comunicar descuentos comerciales. Utiliza términos como beneficio económico, descuento o tarifa especial» (16/11).",
+   "porQueImporta": "La beca en la UC es otra cosa (semibeca por excelencia desde el 2.º ciclo); confundirlas genera expectativas falsas y reclamos cuando el prospecto pide «su beca» al matricularse.",
+   "accion": "Decir siempre «beneficio de campaña» o «descuento»: «Hoy tienes un beneficio de campaña: la mitad en la admisión y en la matrícula, y 10 % menos en tus cuotas». Si el prospecto pregunta por becas: «En el primer ciclo no hay; desde el segundo puedes postular a una semibeca por excelencia con buen promedio».",
    "tecnica": "tec_06"
+  },
+  {
+   "tipo": "mala_practica",
+   "titulo": "Llamada entrante sin atender",
+   "queVimos": "Una llamada ingresó a la posición del asesor y no fue atendida porque mantenía una conversación ajena a sus funciones; el prospecto cortó sin recibir atención.",
+   "veces": "1 llamada · 1 asesor (grave)",
+   "asesores": [
+    "Melissa Leslie Fernadez Avalos"
+   ],
+   "ejemplo": "«La llamada ingresó a tu posición, pero no fue atendida debido a que te encontrabas conversando sobre temas ajenos a tus funciones» (16/11).",
+   "porQueImporta": "Es un lead que buscó a la UC por iniciativa propia y se perdió sin una sola palabra; en entrantes la intención de compra es la más alta del día.",
+   "accion": "Mientras el estado sea «disponible», nada más que la gestión: si necesitas una pausa, cambia tu estado en el sistema. Revisar en Genesys las entrantes abandonadas del turno y devolverlas de inmediato.",
+   "tecnica": null
+  },
+  {
+   "tipo": "buena_practica",
+   "titulo": "Preguntar el presupuesto antes del beneficio",
+   "queVimos": "Antes de mencionar el descuento, el asesor pregunta si la mensualidad regular se ajusta a lo que el prospecto tiene pensado invertir y recién con esa respuesta presenta el beneficio.",
+   "veces": "3 llamadas · 3 asesores · Rosa (10/11), Raúl (11/11) y Justyn (16/11)",
+   "asesores": [
+    "Rosa Victoria Guzman Bonilla",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Justyn Flores Solano"
+   ],
+   "ejemplo": "«Consultaste si la mensualidad regular se ajustaba al presupuesto de la prospecto antes de comunicar el beneficio económico» (16/11).",
+   "porQueImporta": "Es la respuesta directa a la mala práctica más repetida: el beneficio llega como solución a una objeción real y conserva su fuerza para el cierre.",
+   "accion": "Volverlo frase obligatoria antes de cualquier beneficio: «¿La cuota normal de S/[cuota] se ajusta a lo que tienes pensado invertir?». Si dice que sí, se avanza a la evaluación sin descuento extra; si dice que no, se presenta el beneficio vigente.",
+   "tecnica": "tec_14"
   },
   {
    "tipo": "buena_practica",
@@ -133,30 +154,10 @@
    "tecnica": "tec_03"
   },
   {
-   "tipo": "buena_practica",
-   "titulo": "Seguimiento con hora acordada y cumplido",
-   "queVimos": "Al no cerrar, el asesor deja una hora exacta (a las 9:00, 10:00, 5:00 p. m. o el mismo día) y luego retoma la llamada en el horario agendado, confirmando disponibilidad y si revisó la información enviada.",
-   "veces": "11 llamadas · 8 asesores · Betsabeth, Isai, Jean Carlos, Jimena, Judith, Lisette, Nicol y Rosa (10 al 13/11) · 6.ª semana seguida",
-   "asesores": [
-    "Betsabeth Alexandra Rojas Palacios",
-    "Isai Yuliño Mercado Bravo",
-    "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
-    "Judith Rocio Vila Incaroca",
-    "Lisette Valeria Blanco Chuco",
-    "Nicol Alisson Romero Espinoza",
-    "Rosa Victoria Guzman Bonilla"
-   ],
-   "ejemplo": "«Retomaste la llamada en el horario agendado, confirmaste la disponibilidad del prospecto, la carrera, la modalidad y que era su primera carrera» (13/11).",
-   "porQueImporta": "Un siguiente paso con hora, y cumplido, mantiene vivo el interés y demuestra seriedad: el prospecto contesta porque sabe que lo llamarán.",
-   "accion": "Reconocerlo en el equipo y llevarlo un paso más allá: que la hora acordada sea la de la evaluación de admisión (hoy o mañana), no la de otra llamada informativa.",
-   "tecnica": "tec_16"
-  },
-  {
    "tipo": "nueva_tecnica",
    "titulo": "Quitar la barrera de los documentos",
    "queVimos": "Cuando el prospecto se frena por el certificado, documentos fedateados o sílabos difíciles de conseguir, el asesor explica que puede iniciar con carta de compromiso, que los documentos se presentan después de matricularse y que puede avanzar cursos mientras regulariza; esta semana se sumó la opción de convalidar por experiencia laboral cuando el instituto ya no responde.",
-   "veces": "3 llamadas · 2 asesores · Jimena (10 y 11/11) y Judith (13/11) · 4.ª semana seguida",
+   "veces": "3 llamadas · 2 asesores · Jimena (10 y 11/11) y Judith (13/11) · 5.ª semana seguida",
    "asesores": [
     "Jimena del Rosario Vera Osores",
     "Judith Rocio Vila Incaroca"
@@ -168,8 +169,8 @@
   }
  ],
  "acciones": [
-  "Abrir con nombre real y Unidad CIE y no ofrecer descuento hasta preguntar si la cuota normal le alcanza; nunca un porcentaje mayor al vigente en la Biblioteca.",
-  "Toda llamada cierra con día y hora (de preferencia de la evaluación), nombre, Unidad CIE y transferencia a la encuesta; nunca «avísame» ni «yo te escribo».",
-  "Decir la matrícula y la primera cuota siempre armadas con sus conceptos y el tarifario de la Biblioteca abierto; nada de montos de memoria."
+  "Antes de cualquier beneficio, preguntar si la cuota normal le alcanza; decir «beneficio de campaña», nunca «beca», y solo el porcentaje vigente en la Biblioteca.",
+  "Toda llamada cierra con día y hora de la evaluación, nombre, Unidad CIE, WhatsApp y transferencia a la encuesta; si lo conversa en casa, poner a la otra persona en altavoz ahora.",
+  "En estado disponible, cero conversaciones ajenas: revisar entrantes abandonadas en Genesys cada bloque y devolverlas de inmediato."
  ]
 }

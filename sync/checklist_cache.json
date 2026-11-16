@@ -18172,5 +18172,941 @@
     "evidencia": "Establece un seguimiento con fecha y hora concreta"
    }
   }
+ },
+ "4fc5c9b4e8d7": {
+  "asesor": "Milagros Torres Santos",
+  "fecha": "15/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera de interés, modalidad y ubicación de la prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas de la prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de la prospecto para entender su decisión."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases en vivo, grabaciones y flexibilidad académica."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita presionar cuando manifiesta que desea esperar; negociación consultiva."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora concreta."
+   }
+  }
+ },
+ "8c05c37218e4": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "15/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera de interés, modalidad y ubicación de la prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas de la prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de la prospecto para entender su decisión."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases en vivo, grabaciones y flexibilidad académica."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita presionar cuando manifiesta que desea esperar; negociación consultiva."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora concreta."
+   }
+  }
+ },
+ "5fce2ad017dd": {
+  "asesor": "Patricia Roxana Mercado Zacarias",
+  "fecha": "15/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera de interés, modalidad y ubicación de la prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas de la prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de la prospecto para entender su decisión."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases en vivo, grabaciones y flexibilidad académica."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita presionar cuando manifiesta que desea esperar; negociación consultiva."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora concreta."
+   }
+  }
+ },
+ "e5111f56b72f": {
+  "asesor": "Betsabeth Alexandra Rojas Palacios",
+  "fecha": "15/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera de interés, modalidad y ubicación de la prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas de la prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de la prospecto para entender su decisión."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases en vivo, grabaciones y flexibilidad académica."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita presionar cuando manifiesta que desea esperar; negociación consultiva."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora concreta."
+   }
+  }
+ },
+ "2e9ec798de22": {
+  "asesor": "Maria Alejandra Pino Contreras",
+  "fecha": "16/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Mantén la presentación institucional completa con tu nombre y la Unidad CIE."
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en por qué desea estudiar y qué busca profesionalmente."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conoce qué busca conseguir profesionalmente y sus expectativas."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste la flexibilidad de horarios y el curso Nexus gratuito."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda despedirte indicando tu nombre y la Unidad CIE."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Genera compromisos de seguimiento con fecha y hora específica."
+   }
+  }
+ },
+ "abe5d03cc1ff": {
+  "asesor": "Angelo Jaime Franco Sarmiento",
+  "fecha": "16/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Continúa utilizando el nombre del prospecto durante la conversación."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste su interés en Ingeniería Ambiental y su necesidad de convalidar."
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Explicaste clases en vivo, grabaciones y diferencias entre modalidades."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece los cierres parciales para avanzar hacia la preinscripción."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda indicar tu nombre y la Unidad CIE al finalizar."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece seguimiento con fecha y hora, sin dejar la gestión abierta."
+   }
+  }
+ },
+ "88e4557ddac0": {
+  "asesor": "Angelo Jaime Franco Sarmiento",
+  "fecha": "15/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera de interés, modalidad y ubicación de la prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas de la prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de la prospecto para entender su decisión."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases en vivo, grabaciones y flexibilidad académica."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita presionar cuando manifiesta que desea esperar; negociación consultiva."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora concreta."
+   }
+  }
+ },
+ "b8d243ca7f32": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "16/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "380fa9faa9a2": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "16/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validaste la solicitud de Daisy y su interés en Psicología."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza las preguntas filtro sobre perfil académico, laboral y disponibilidad."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en por qué desea estudiar Psicología."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conoce qué busca conseguir profesionalmente y sus expectativas."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Explicaste la modalidad virtual, horarios nocturnos y la duración de la carrera."
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece los cierres parciales para avanzar hacia la preinscripción."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda indicar tu nombre y la Unidad CIE."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Si lo conversa con un familiar, seguimiento con fecha y hora específica."
+   }
+  }
+ },
+ "117ccfdfe01f": {
+  "asesor": "Nicol Alisson Romero Espinoza",
+  "fecha": "15/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera de interés, modalidad y ubicación de la prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas de la prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de la prospecto para entender su decisión."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases en vivo, grabaciones y flexibilidad académica."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita presionar cuando manifiesta que desea esperar; negociación consultiva."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora concreta."
+   }
+  }
+ },
+ "abb573095c34": {
+  "asesor": "Ruth Alexandra Mauricio Verde",
+  "fecha": "16/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Realizaste preguntas filtro sobre antecedentes académicos y situación laboral."
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Conociste su situación laboral con las preguntas filtro."
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificaste el aspecto económico y el tiempo como factores de decisión."
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Explicaste metodología por bloques, programa de inglés y doble grado internacional."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "ok",
+    "evidencia": "Explicaste las certificaciones progresivas."
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Si pide tiempo, establece seguimiento con fecha y hora específica."
+   }
+  }
+ },
+ "06502e4eca1b": {
+  "asesor": "Ruth Alexandra Mauricio Verde",
+  "fecha": "15/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto durante la llamada."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera de interés, modalidad y ubicación de la prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas de la prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las expectativas de la prospecto para entender su decisión."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases en vivo, grabaciones y flexibilidad académica."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita presionar cuando manifiesta que desea esperar; negociación consultiva."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora concreta."
+   }
+  }
  }
 }
