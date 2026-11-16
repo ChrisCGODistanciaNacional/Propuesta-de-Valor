@@ -1028,6 +1028,41 @@
   .pvt-prac .pvt-mod { margin-top: 0; }
   .pvt-modph { border: 2px dashed #EBD9A6; border-radius: 12px; padding: 18px; color: var(--muted); font-size: 13px; text-align: center; }
   @media (max-width: 900px) { .pvt-cols, .pvt-prg { grid-template-columns: 1fr; } }
+
+  /* Historial de Auditorías v2 (15/11/2026) */
+  body.mod-atencion-on .advisor-select-box { display: none; }
+  .hola-sel-wrap { position: relative; display: inline-block; }
+  .hola-sel { font: inherit; font-weight: 700; color: var(--gold); background: rgba(255,255,255,.06); border: 1px solid var(--navy-line); border-radius: 10px; padding: 2px 30px 2px 10px; cursor: pointer; appearance: none; -webkit-appearance: none; }
+  .hola-sel-wrap::after { content: '▾'; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: var(--gold); pointer-events: none; font-size: .7em; }
+  .hola-sel option { color: #0E2240; font-weight: 500; font-size: 14px; }
+  .ev2 { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin-top: 12px; box-shadow: 0 2px 6px rgba(14,34,64,.05); }
+  .ev2-top { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .ev2-score { width: 86px; height: 86px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; flex: 0 0 86px; box-shadow: inset 0 0 0 5px rgba(255,255,255,.25); }
+  .ev2-score b { font-size: 24px; line-height: 1; } .ev2-score small { font-size: 9.5px; opacity: .9; margin-top: 3px; text-align: center; padding: 0 6px; line-height: 1.1; }
+  .ev2-score.diag-green { background: #1E9E63; } .ev2-score.diag-yellow { background: #C9971A; } .ev2-score.diag-red { background: #D2483D; } .ev2-score.diag-gray, .ev2-score.diag-none { background: #8A94A6; }
+  .ev2-ttl { flex: 1; min-width: 260px; } .ev2-ttl h3 { margin: 0 0 6px; font-size: 18px; color: var(--ink); }
+  .ev2-chips { display: flex; flex-wrap: wrap; gap: 6px; } .ev2-chips span { background: var(--paper); border-radius: 999px; padding: 3px 10px; font-size: 12px; color: var(--ink-2); }
+  .ev2-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; }
+  .ev2-c { border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; background: #fff; }
+  .ev2-c h4 { margin: 0 0 8px; font-size: 14px; color: var(--navy); display: flex; align-items: center; gap: 6px; }
+  .ev2-c.obs.warn { border-left: 4px solid #E0A12A; } .ev2-c.obs.good { border-left: 4px solid #1E9E63; }
+  .ev2-concl { margin: 0 0 8px; font-size: 14px; line-height: 1.5; color: var(--ink); }
+  .ev2-fo { border-radius: 10px; padding: 8px 10px; margin-top: 8px; font-size: 13px; line-height: 1.45; }
+  .ev2-fo > span { display: block; font-weight: 700; font-size: 12px; margin-bottom: 2px; }
+  .ev2-fo.good { background: var(--good-bg); } .ev2-fo.warn { background: #FFF4E0; }
+  .ev2-fo ul { margin: 2px 0 0; padding-left: 18px; } .ev2-fo li { margin: 2px 0; }
+  .ev2-ck { list-style: none; margin: 0; padding: 0; }
+  .ev2-ck li { display: flex; gap: 8px; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: 13.5px; line-height: 1.4; }
+  .ev2-ck li:last-child { border-bottom: 0; }
+  .ev2-ck li b { font-weight: 600; display: block; } .ev2-ck li small { display: block; color: var(--muted); font-size: 12.5px; margin-top: 3px; }
+  .ev2-ci { flex: 0 0 20px; }
+  .ev2-leg { margin: 8px 0 0; font-size: 11.5px; color: var(--muted); }
+  .ev2-ok { margin: 0; color: #145C3B; background: var(--good-bg); border-radius: 10px; padding: 10px; font-size: 13.5px; }
+  .ev2-empty { margin: 0; color: var(--muted); font-size: 13px; }
+  .ev2-c.tec { margin-top: 14px; border-left: 4px solid var(--gold); background: linear-gradient(180deg, var(--gold-soft), #fff 70%); }
+  .ev2-c.tec h4 span { color: var(--gold-deep); }
+  .ev2-c.tec .speech-suggest { background: transparent; border: 0; padding: 0; margin: 0; }
+  @media (max-width: 900px) { .ev2-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -1253,7 +1288,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-11-15T20:48:00.000Z";
+  const DATA_VERSION = "2026-11-16T00:00:57.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
@@ -1398,6 +1433,7 @@
 
   // ===================== NAVEGACIÓN DE MÓDULOS =====================
   function switchModule(modId, btn) {
+    document.body.classList.toggle('mod-atencion-on', modId === 'atencion');
     document.querySelectorAll('.module-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.module-tab, .btn-admin').forEach(b => b.classList.remove('active'));
     document.getElementById('module-' + modId).classList.add('active');
@@ -2538,7 +2574,7 @@
     const advisor = getSelectedAdvisor();
     const zonaVacia = (ico, texto) => `<section class="hero zone-analisis" aria-label="Tu diagnóstico">${zonaTituloHTML('analisis', '📊')}<div class="diag-empty"><span class="big">${ico}</span><div>${texto}</div></div></section>`;
     if (!advisor) {
-      el.innerHTML = zonaVacia('👤', 'Elige tu nombre arriba (junto a ⚙️) para ver <b>tu diagnóstico</b>: tu nivel, tus resultados y la técnica que te conviene practicar hoy.');
+      el.innerHTML = `<section class="hero zone-analisis">${zonaTituloHTML('analisis', '📊')}<div class="hero-top"><div class="hero-id"><div><h2 class="hero-name">Hola, ${holaSelectHTML('')}</h2><div class="hero-sub">Elige tu nombre para ver tu resumen, tus auditorías y lo que te conviene practicar.</div></div></div></div></section>`;
       applyEditMode(el);
       return;
     }
@@ -2584,7 +2620,7 @@
           <div class="hero-id">
             ${avatarHTML(advisor, 52)}
             <div>
-              <h2 class="hero-name">Hola, ${primerNombre(advisor)}</h2>
+              <h2 class="hero-name">Hola, ${holaSelectHTML(advisor)}</h2>
               <div class="hero-sub">${history.length} ${history.length === 1 ? 'llamada evaluada' : 'llamadas evaluadas'}${last.fecha ? ' · última el ' + last.fecha : ''}${a.sede ? ' · ' + a.sede : ''}</div>
             </div>
           </div>
@@ -2606,6 +2642,11 @@
     applyEditMode(el);
   }
 
+  // Desplegable del asesor dentro del saludo del Historial (15/11/2026)
+  function holaSelectHTML(advisor) {
+    const names = getAdvisorNames();
+    return `<span class="hola-sel-wrap"><select class="hola-sel" onchange="onAdvisorChange(this.value)" aria-label="Elige tu nombre"><option value="">elige tu nombre…</option>${names.map(n => `<option value="${escapeHtmlPreserveNL(n)}" ${n === advisor ? 'selected' : ''}>${escapeHtmlPreserveNL(advisor && n === advisor ? primerNombre(n) : n)}</option>`).join('')}</select></span>`;
+  }
   // ---- Dentro de cada paso: tu evaluación en esa etapa ----
   function renderEvaluacionEtapa(stageKey) {
     const advisor = getSelectedAdvisor();
@@ -2624,41 +2665,43 @@
     const weight = stageWeight(sel.entry.row, stageKey);
     const hasObs = !!(st && st.rol && st.texto);
 
-    let feedbackHTML = '';
-    if (st && st.rol === 'fortaleza' && st.texto) {
-      feedbackHTML = `<div class="feedback fortaleza"><div class="feedback-title">💪 Tu fortaleza en esta etapa</div>${observacionHTML(st)}</div>`;
-    } else if (st && st.rol === 'oportunidad' && st.texto) {
-      const tec = tecnicaForStage(stageKey, st);
-      feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Tu oportunidad de mejora</div>${observacionHTML(st)}
-        ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div>` : ''}
-      </div>`;
+    // v2 (15/11/2026, Christopher): de un vistazo · qué escuchó Calidad · qué faltó del checklist · técnica y ejemplos para mejorarlo
+    const paso = (db.atencion.pasos || []).find(x => x.id === stageKey) || { checklist: [], practica: [] };
+    const ck = analysisLatest && analysisLatest.checklist && analysisLatest.checklist.items ? analysisLatest.checklist.items : null;
+    const faltan = [];
+    (paso.checklist || []).forEach((c, i) => { const it = ck ? (ck[`${stageKey}_${i + 1}`] || { estado: 'sin_evidencia' }) : null; if (!it || it.estado === 'ok') return; faltan.push({ c, pend: it.estado === 'pendiente', pr: (paso.practica || [])[i] || '' }); });
+    faltan.sort((x, y) => (y.pend ? 1 : 0) - (x.pend ? 1 : 0));
+    const okN = ck ? (paso.checklist || []).length - faltan.length : null;
+    const ckHTML = !ck ? '<p class="ev2-empty">Tu supervisor aún no marca el checklist de este paso.</p>'
+      : !faltan.length ? '<p class="ev2-ok">✅ Cumpliste todo el checklist de este paso.</p>'
+      : `<ul class="ev2-ck">${faltan.slice(0, 5).map(f => `<li class="${f.pend ? 'pend' : 'none'}"><span class="ev2-ci">${f.pend ? '🔸' : '◻️'}</span><div><b>${escapeHtmlPreserveNL(f.c)}</b>${f.pr ? `<small>Practica así: ${escapeHtmlPreserveNL(f.pr)}</small>` : ''}</div></li>`).join('')}</ul><p class="ev2-leg">🔸 por reforzar · ◻️ aún sin evidencia · ${okN} de ${(paso.checklist || []).length} validados</p>`;
+    let obsHTML = '', obsCls = 'neutral';
+    if (st && (st.fortaleza || st.oportunidad || st.conclusion)) {
+      obsCls = st.rol === 'fortaleza' ? 'good' : 'warn';
+      obsHTML = `${st.conclusion ? `<p class="ev2-concl">${escapeHtmlPreserveNL(st.conclusion)}</p>` : ''}
+        ${st.fortaleza ? `<div class="ev2-fo good"><span>🟢 Lo que hiciste bien</span>${feedbackListHTML(st.fortaleza)}</div>` : ''}
+        ${st.oportunidad ? `<div class="ev2-fo warn"><span>🟠 Lo que debes mejorar</span>${feedbackListHTML(st.oportunidad)}</div>` : ''}`;
     } else if (st && st.rol === 'generico' && st.caso) {
-      // Etapa baja sin observación escrita de calidad: situación frecuente de este paso, con 3 formas de llevarla
-      const tec = tecnicaForStage(stageKey, st);
-      feedbackHTML = `<div class="feedback oportunidad"><div class="feedback-title">🎯 Situación frecuente en esta etapa</div>
-        <div class="obs-conclusion"><b>Lo que suele pasar:</b> ${escapeHtmlPreserveNL(st.conclusion || '')}</div>
-        ${tec ? `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div>` : ''}
-      </div>`;
-    } else if (pct === null || pct === undefined) {
-      feedbackHTML = `<div class="eval-none">Sin puntaje en esta llamada.</div>`;
-    } else {
-      feedbackHTML = `<div class="eval-none">Sin observaciones en esta llamada${pct < 80 ? ' · revisa el checklist de abajo' : ''}.</div>`;
-    }
+      obsCls = 'warn'; obsHTML = `<p class="ev2-concl">Calidad no detalló este paso. <b>Lo que suele pasar:</b> ${escapeHtmlPreserveNL(st.conclusion || '')}</p>`;
+    } else if (pct === null || pct === undefined) obsHTML = '<p class="ev2-empty">Sin puntaje en esta llamada.</p>';
+    else obsHTML = `<p class="ev2-empty">Sin observaciones escritas en esta llamada.</p>`;
+    const tec = (st && (st.rol === 'oportunidad' || st.rol === 'generico')) || (pct !== null && pct !== undefined && pct < 80) ? tecnicaForStage(stageKey, st) : null;
+    const tecHTML = tec ? `<section class="ev2-c tec"><h4>🏆 Cómo mejorarlo${tec.titulo ? `: <span>${escapeHtmlPreserveNL(tec.titulo)}</span>` : ''}</h4><div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div></section>` : '';
+    const pctTxt = pct !== null && pct !== undefined ? Math.round(pct) + '%' : '—';
+    const chips = [sel.entry.fecha ? `📅 Llamada del ${sel.entry.fecha}` : '', delta !== null ? `<span class="${deltaClass(delta)}">${deltaPhrase(delta, ' pts')}</span>` : 'Primera evaluación', avg !== null && avg !== undefined ? `Tu promedio: <b>${fmtPct(avg)}</b> (${history.length})` : '', weight ? `Pesa <b>${weight}%</b> de tu nota` : ''].filter(Boolean);
     return `
-      <div class="eval-box ${hasObs ? 'has-obs' : ''}" data-capturable>
+      <div class="ev2" data-capturable>
         ${imgHeadHTML()}
-        <div class="eval-head">
-          <div class="eval-score diag-${color}">${pct !== null && pct !== undefined ? Math.round(pct) + '%' : '—'}</div>
-          <div class="eval-head-text">
-            <div class="eval-title">Tu evaluación en esta etapa${sel.entry.fecha ? `<span class="eval-date">· llamada del ${sel.entry.fecha}</span>` : ''}</div>
-            <div class="eval-metrics">
-              ${delta !== null ? `<span class="fm ${deltaClass(delta)}">${deltaPhrase(delta, ' pts')}</span>` : `<span class="fm">Primera evaluación</span>`}
-              ${avg !== null && avg !== undefined ? `<span class="fm"><b>${fmtPct(avg)}</b> promedio de ${history.length} ${history.length === 1 ? 'evaluación' : 'evaluaciones'}</span>` : ''}
-            </div>
-          </div>
+        <div class="ev2-top">
+          <div class="ev2-score diag-${color}"><b>${pctTxt}</b><small>${STAGE_LABELS[stageKey] || ''}</small></div>
+          <div class="ev2-ttl"><h3>Tu auditoría en ${STAGE_LABELS[stageKey] || 'este paso'}</h3><div class="ev2-chips">${chips.map(c => `<span>${c}</span>`).join('')}</div></div>
           <div class="eval-tools">${evalSelectorHTML(history, sel, '')}${btnImgHTML('Tu evaluación · ' + STAGE_LABELS[stageKey], nombreCorto(advisor))}</div>
         </div>
-        ${feedbackHTML}
+        <div class="ev2-grid">
+          <section class="ev2-c obs ${obsCls}"><h4>🔍 Lo que escuchó tu supervisor</h4>${obsHTML}</section>
+          <section class="ev2-c ckc"><h4>📋 Lo que faltó del checklist</h4>${ckHTML}</section>
+        </div>
+        ${tecHTML}
         ${imgFootHTML()}
       </div>`;
   }
@@ -2977,14 +3020,14 @@
     // Orden: concepto del paso (oscuro) → tu evaluación (protagonista si hay observación)
     // → kit del paso (checklist + práctica · preguntas · ideas).
     container.innerHTML = `
-      <div class="paso-header dark">
+      ${editMode ? `<div class="paso-header dark">
         <div class="paso-title-row">
           <div class="paso-header-title">${paso.icono} Paso ${paso.numero}: ${paso.titulo}</div>
           ${weight ? `<span class="paso-weight" title="Peso de esta etapa en tu evaluación de llamada">${weight}% de tu evaluación</span>` : ''}
         </div>
         <div class="paso-objetivo" contenteditable="true" onblur="updatePasoField(${pasoIdx}, 'objetivo', this.innerText)"><b>Objetivo:</b> ${paso.objetivo}</div>
         ${paso.sla ? `<div class="paso-sla">⏱️ SLA: ${paso.sla}</div>` : ''}
-      </div>
+      </div>` : ''}
       ${renderEvaluacionEtapa(paso.id)}
     `;
     if (kitWrap) { kitWrap.innerHTML = renderKit(paso, pasoIdx); if (zonaKit) zonaKit.hidden = false; applyEditMode(zonaKit || kitWrap); }
