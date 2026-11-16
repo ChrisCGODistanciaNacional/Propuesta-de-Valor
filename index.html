@@ -1030,7 +1030,12 @@
   @media (max-width: 900px) { .pvt-cols, .pvt-prg { grid-template-columns: 1fr; } }
 
   /* Historial de Auditorías v2 (15/11/2026) */
-  body.mod-atencion-on .advisor-select-box { display: none; }
+  /* 16/11 (Christopher): el nombre del asesor se elige SOLO en Auditorías, dentro del «Hola, …»; el selector del encabezado queda oculto en todas las pestañas (y en móvil) */
+  .advisor-select-box { display: none !important; }
+  .hero-name { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+  .hola-sel-wrap { max-width: 100%; vertical-align: middle; }
+  .hola-sel { max-width: min(62vw, 360px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  @media (max-width: 600px) { .hola-sel { max-width: 70vw; font-size: .9em; } .hero-id, .hero-top { min-width: 0; max-width: 100%; } }
   .hola-sel-wrap { position: relative; display: inline-block; }
   .hola-sel { font: inherit; font-weight: 700; color: var(--gold); background: rgba(255,255,255,.06); border: 1px solid var(--navy-line); border-radius: 10px; padding: 2px 30px 2px 10px; cursor: pointer; appearance: none; -webkit-appearance: none; }
   .hola-sel-wrap::after { content: '▾'; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: var(--gold); pointer-events: none; font-size: .7em; }
@@ -1288,7 +1293,7 @@
   const freshEmbeddedData = db;
 
   /*==DATA_VERSION_START==*/
-  const DATA_VERSION = "2026-11-16T00:00:57.000Z";
+  const DATA_VERSION = "2026-11-16T20:22:02.000Z";
   /*==DATA_VERSION_END==*/
 
   function migrateSpeechesArray(list) {
