@@ -515,7 +515,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto, entonces tus cuotas te caen después de tu pago. Y piensa que la cuota de S/504 es menos de 17 soles al día, lo que gastas en un par de pasajes. ¿Cómo lo ves así?"
+      "texto": "Perfecto, entonces tus cuotas te caen después de tu pago. ¿Cómo lo ves así?"
      },
      {
       "quien": "cliente",
@@ -534,7 +534,7 @@
       "texto": "Genial. Entonces el siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿La rindes hoy o mañana para que no se te pase la campaña?"
      }
     ],
-    "speech": "Buena pregunta, [nombre], mejor verlo ahora. Las cuotas son mensuales y fijas, así que te organizas desde ya: son cinco por ciclo y las cuatro últimas recién desde abril. ¿Cuándo cobras normalmente?\n\nPerfecto, entonces tus cuotas te caen después de tu pago. Y piensa que la cuota de S/504 es menos de 17 soles al día, lo que gastas en un par de pasajes. ¿Cómo lo ves así?\n\nAdemás, si en algún momento se te complica, me escribes y vemos juntos las opciones con el área correspondiente. No estás solo en esto. ¿Con esto queda resuelto lo del pago?\n\nGenial. Entonces el siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿La rindes hoy o mañana para que no se te pase la campaña?",
+    "speech": "Buena pregunta, [nombre], mejor verlo ahora. Las cuotas son mensuales y fijas, así que te organizas desde ya: son cinco por ciclo y las cuatro últimas recién desde abril. ¿Cuándo cobras normalmente?\n\nPerfecto, entonces tus cuotas te caen después de tu pago. ¿Cómo lo ves así?\n\nAdemás, si en algún momento se te complica, me escribes y vemos juntos las opciones con el área correspondiente. No estás solo en esto. ¿Con esto queda resuelto lo del pago?\n\nGenial. Entonces el siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿La rindes hoy o mañana para que no se te pase la campaña?",
     "porQue": "Resuelve la segunda objeción típica después del precio (miedo a no poder pagar una cuota) sin prometer nada que no exista y vuelve enseguida al cierre parcial."
    },
    {

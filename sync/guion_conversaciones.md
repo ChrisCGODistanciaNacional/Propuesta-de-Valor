@@ -114,7 +114,6 @@ más largas y naturales, los costos mejor explicados y la venta resuelta en la m
 - **Primero qué es, después cuánto.** "Tu primera cuota trae tus créditos, la matrícula, el seguro y el examen médico;
   normalmente son S/876, pero hoy te queda en S/570."
 - **Una cifra por frase y máximo 3 por turno.** Lo demás se dice con palabras: "la mitad", "gratis", "un poco más".
-- **Traducirlo a su vida:** "S/504 al mes es menos de 17 soles al día, lo que gastas en un par de pasajes";
-  "con lo que pagas tu plan del celular y un almuerzo afuera a la semana". Solo con cuentas reales (cuota ÷ 30).
+- **Prohibido convertir la cuota en «soles al día»** (p. ej. «S/504 es menos de 17 soles al día», «lo que gastas en pasajes»): no se ve bien, minimiza la inversión y resta seriedad (Christopher, 17/11/2026). La cuota se dice tal cual, al mes, después de explicar qué incluye.
 - **El ahorro con su origen:** "te ahorras S/530: los S/250 de la matrícula y S/56 menos en cada una de tus 5 cuotas".
 - **Validar después de cada número** y dejar que el cliente pregunte el siguiente; nunca soltar la tabla completa.

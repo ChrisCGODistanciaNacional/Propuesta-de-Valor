@@ -179,7 +179,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Y al mes son S/504, menos de 17 soles al día. Encima, con tus estudios de Contabilidad podrías convalidar cursos. ¿Cómo crees que lo tomen tus papás?"
+      "texto": "Y al mes son S/504. Encima, con tus estudios de Contabilidad podrías convalidar cursos. ¿Cómo crees que lo tomen tus papás?"
      },
      {
       "quien": "cliente",
@@ -198,7 +198,7 @@
       "texto": "Perfecto. Conversas con ellos en la cena y rindes tu evaluación mañana, virtual, desde tu laptop con cámara. ¿Te la agendo a las 7 o a las 8 de la noche?"
      }
     ],
-    "speech": "Me parece bien que lo vean juntos, [nombre]. ¿Qué crees que te van a preguntar primero: cuánto es al mes o cuánto hay que dar para empezar?\n\nEntonces llévales esto: hoy no pagan cuotas. Los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota va 24 horas después de tu evaluación. ¿Te hace sentido?\n\nY al mes son S/504, menos de 17 soles al día. Encima, con tus estudios de Contabilidad podrías convalidar cursos. ¿Cómo crees que lo tomen tus papás?\n\nQué bueno, entonces les das la noticia con tu vacante asegurada. Por matricularte tienes de regalo Nexus y el Taller de Excel certificado. ¿Los ves hoy en la noche?\n\nPerfecto. Conversas con ellos en la cena y rindes tu evaluación mañana, virtual, desde tu laptop con cámara. ¿Te la agendo a las 7 o a las 8 de la noche?",
+    "speech": "Me parece bien que lo vean juntos, [nombre]. ¿Qué crees que te van a preguntar primero: cuánto es al mes o cuánto hay que dar para empezar?\n\nEntonces llévales esto: hoy no pagan cuotas. Los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota va 24 horas después de tu evaluación. ¿Te hace sentido?\n\nY al mes son S/504. Encima, con tus estudios de Contabilidad podrías convalidar cursos. ¿Cómo crees que lo tomen tus papás?\n\nQué bueno, entonces les das la noticia con tu vacante asegurada. Por matricularte tienes de regalo Nexus y el Taller de Excel certificado. ¿Los ves hoy en la noche?\n\nPerfecto. Conversas con ellos en la cena y rindes tu evaluación mañana, virtual, desde tu laptop con cámara. ¿Te la agendo a las 7 o a las 8 de la noche?",
     "porQue": "En lugar de la próxima semana, le das lo que debe contar en casa y una fecha cercana para la evaluación. El seguimiento queda con día y hora, como pidió calidad."
    },
    {
@@ -777,7 +777,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Las otras cuatro, recién desde abril, de S/504 cada una. Es menos de 17 soles al día, Juan. Y en el ciclo te ahorras S/530 entre la matrícula y las cuotas. ¿Eso te ayuda a ordenarte?"
+    "texto": "Las otras cuatro, recién desde abril, de S/504 cada una. Y en el ciclo te ahorras S/530 entre la matrícula y las cuotas. ¿Eso te ayuda a ordenarte?"
    },
    {
     "quien": "cliente",
@@ -788,7 +788,7 @@
     "texto": "Genial. Entonces el siguiente paso es tu evaluación de admisión: es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana?"
    }
   ],
-  "speech": "Buena pregunta, Juan. Tu primera cuota trae cuatro cosas: tus créditos del ciclo, que son S/560, y la matrícula de S/250. ¿Vamos bien?\n\nExacto, faltan dos conceptos: el seguro contra accidentes, S/36, y el examen médico, S/30. Con eso llegas a los S/876 en precio normal. ¿Hasta ahí claro?\n\nHoy la matrícula es gratis y tus créditos tienen 10 % menos, así que esa primera cuota baja a S/570. La pagas recién 24 horas después de tu evaluación. ¿Cómo lo ves?\n\nLas otras cuatro, recién desde abril, de S/504 cada una. Es menos de 17 soles al día, Juan. Y en el ciclo te ahorras S/530 entre la matrícula y las cuotas. ¿Eso te ayuda a ordenarte?\n\nGenial. Entonces el siguiente paso es tu evaluación de admisión: es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana?",
+  "speech": "Buena pregunta, Juan. Tu primera cuota trae cuatro cosas: tus créditos del ciclo, que son S/560, y la matrícula de S/250. ¿Vamos bien?\n\nExacto, faltan dos conceptos: el seguro contra accidentes, S/36, y el examen médico, S/30. Con eso llegas a los S/876 en precio normal. ¿Hasta ahí claro?\n\nHoy la matrícula es gratis y tus créditos tienen 10 % menos, así que esa primera cuota baja a S/570. La pagas recién 24 horas después de tu evaluación. ¿Cómo lo ves?\n\nLas otras cuatro, recién desde abril, de S/504 cada una. Y en el ciclo te ahorras S/530 entre la matrícula y las cuotas. ¿Eso te ayuda a ordenarte?\n\nGenial. Entonces el siguiente paso es tu evaluación de admisión: es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana?",
   "porQue": "Juan entiende de dónde salen los S/876 porque escucha cada concepto por separado, y después ve el monto con beneficio. El cierre parcial lo lleva directo a la evaluación.",
   "variantes": [
    {
@@ -2369,10 +2369,10 @@
      },
      {
       "quien": "asesor",
-      "texto": "Dile esto: S/554 al mes, menos de 19 soles al día, y con 10 % menos toda la carrera. ¿Con eso crees que podrías rendir tu evaluación mañana en la noche?"
+      "texto": "Dile esto: S/554 al mes. ¿Con eso crees que podrías rendir tu evaluación mañana en la noche?"
      }
     ],
-    "speech": "Perfecto, Lolo, y justo por eso te conviene asegurar hoy: los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota la pagas 24 horas después de tu evaluación. ¿Te hace sentido?\n\nClaro, es una decisión de familia. ¿Quién más participa? Si está cerca, lo ponemos en altavoz y le explico en dos minutos.\n\nEntiendo. Te dejo por WhatsApp un resumen: matrícula gratis, S/558 de ahorro en el ciclo, Nexus y el Taller de Excel certificado de regalo. ¿Qué crees que ella va a preguntar primero?\n\nDile esto: S/554 al mes, menos de 19 soles al día, y con 10 % menos toda la carrera. ¿Con eso crees que podrías rendir tu evaluación mañana en la noche?",
+    "speech": "Perfecto, Lolo, y justo por eso te conviene asegurar hoy: los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota la pagas 24 horas después de tu evaluación. ¿Te hace sentido?\n\nClaro, es una decisión de familia. ¿Quién más participa? Si está cerca, lo ponemos en altavoz y le explico en dos minutos.\n\nEntiendo. Te dejo por WhatsApp un resumen: matrícula gratis, S/558 de ahorro en el ciclo, Nexus y el Taller de Excel certificado de regalo. ¿Qué crees que ella va a preguntar primero?\n\nDile esto: S/554 al mes. ¿Con eso crees que podrías rendir tu evaluación mañana en la noche?",
     "porQue": "Usas la Forma D: asegurar hoy no lo obliga a pagar cuotas. Le das las palabras para su mamá y cierras con una fecha de evaluación, no con otra llamada."
    },
    {
@@ -2751,7 +2751,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Tercero, las otras cuatro cuotas recién desde abril, de S/563 cada una. Son menos de 19 soles al día. ¿Cómo lo ves con tu sueldo?"
+      "texto": "Tercero, las otras cuatro cuotas recién desde abril, de S/563 cada una. ¿Cómo lo ves con tu sueldo?"
      },
      {
       "quien": "cliente",
@@ -2762,7 +2762,7 @@
       "texto": "Perfecto. Por matricularte tienes de regalo Nexus para adelantar cursos y el Taller de Excel certificado. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?"
      }
     ],
-    "speech": "[nombre], para que lo tengas clarito, te lo explico en tres pasos y solo con los montos de Industrial. Primero, la admisión: hoy cuesta S/100 en vez de S/200, y con eso aseguras tu vacante. ¿Te sirve así?\n\nSegundo, 24 horas después de tu evaluación das tu primera cuota. Normalmente serían S/942, porque trae créditos, matrícula, seguro y examen médico, pero hoy pagas S/629. ¿Vamos bien?\n\nPorque la matrícula de S/250 es gratis y tus créditos tienen 10 % menos. Nada de letra chica, todo te llega por WhatsApp.\n\nTercero, las otras cuatro cuotas recién desde abril, de S/563 cada una. Son menos de 19 soles al día. ¿Cómo lo ves con tu sueldo?\n\nPerfecto. Por matricularte tienes de regalo Nexus para adelantar cursos y el Taller de Excel certificado. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?",
+    "speech": "[nombre], para que lo tengas clarito, te lo explico en tres pasos y solo con los montos de Industrial. Primero, la admisión: hoy cuesta S/100 en vez de S/200, y con eso aseguras tu vacante. ¿Te sirve así?\n\nSegundo, 24 horas después de tu evaluación das tu primera cuota. Normalmente serían S/942, porque trae créditos, matrícula, seguro y examen médico, pero hoy pagas S/629. ¿Vamos bien?\n\nPorque la matrícula de S/250 es gratis y tus créditos tienen 10 % menos. Nada de letra chica, todo te llega por WhatsApp.\n\nTercero, las otras cuatro cuotas recién desde abril, de S/563 cada una. ¿Cómo lo ves con tu sueldo?\n\nPerfecto. Por matricularte tienes de regalo Nexus para adelantar cursos y el Taller de Excel certificado. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?",
     "porQue": "Ordenar los pagos en tres pasos reduce la confusión que aparece cuando se mezclan carreras; cada paso se valida antes del siguiente y termina en la evaluación."
    },
    {
@@ -2928,7 +2928,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Entonces te va a gustar esto: si inicias en esta campaña, tus cuotas tienen 10 % menos toda la carrera y quedan en S/504. Es menos de 17 soles al día. ¿Cómo lo ves?"
+    "texto": "Entonces te va a gustar esto: si inicias en esta campaña, tus cuotas tienen 10 % menos toda la carrera y quedan en S/504. ¿Cómo lo ves?"
    },
    {
     "quien": "cliente",
@@ -2947,7 +2947,7 @@
     "texto": "Y para empezar solo das S/100 de admisión en vez de S/200; la primera cuota va 24 horas después. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy o mañana, y así aseguras el beneficio?"
    }
   ],
-  "speech": "[nombre], antes de hablarte de montos, quiero ajustarlo a tu realidad. ¿Cuánto podrías destinar al mes a tus estudios sin que te afecte en casa?\n\nTe entiendo, es bueno tenerlo claro. La cuota de Administración normalmente es S/560. ¿Ese monto lo cubrirías tú o alguien más te apoya?\n\nEntonces te va a gustar esto: si inicias en esta campaña, tus cuotas tienen 10 % menos toda la carrera y quedan en S/504. Es menos de 17 soles al día. ¿Cómo lo ves?\n\nLo único distinto es la primera cuota, porque trae la matrícula, el seguro y el examen médico. Normalmente es S/876, pero con la matrícula a mitad de precio queda en S/695. ¿Hasta ahí claro?\n\nY para empezar solo das S/100 de admisión en vez de S/200; la primera cuota va 24 horas después. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy o mañana, y así aseguras el beneficio?",
+  "speech": "[nombre], antes de hablarte de montos, quiero ajustarlo a tu realidad. ¿Cuánto podrías destinar al mes a tus estudios sin que te afecte en casa?\n\nTe entiendo, es bueno tenerlo claro. La cuota de Administración normalmente es S/560. ¿Ese monto lo cubrirías tú o alguien más te apoya?\n\nEntonces te va a gustar esto: si inicias en esta campaña, tus cuotas tienen 10 % menos toda la carrera y quedan en S/504. ¿Cómo lo ves?\n\nLo único distinto es la primera cuota, porque trae la matrícula, el seguro y el examen médico. Normalmente es S/876, pero con la matrícula a mitad de precio queda en S/695. ¿Hasta ahí claro?\n\nY para empezar solo das S/100 de admisión en vez de S/200; la primera cuota va 24 horas después. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy o mañana, y así aseguras el beneficio?",
   "variantes": [
    {
     "titulo": "Detectar si hay objeción real",
@@ -3129,7 +3129,7 @@
  },
  "Angelo Jaime Franco Sarmiento|paso4": {
   "stage": "paso4",
-  "base": "0e9d5c26fa1a",
+  "base": "81e31693b4c7",
   "v": 2,
   "conclusion": "Mantuviste una comunicación cordial y buscaste continuar el contacto. Debes reforzar el protocolo de cierre: no terminar la llamada sin completarlo, indicar tu nombre, la Unidad CIE y transferir a la encuesta de satisfacción.",
   "tecId": "tec_16",
@@ -3399,7 +3399,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Entiendo, primero está tu hijo. Justo para eso hay un beneficio: con 10 % menos tu cuota queda en S/499, y se mantiene toda la carrera. Son menos de 17 soles al día. ¿Cómo lo ves frente a lo que pensabas?"
+    "texto": "Entiendo, primero está tu hijo. Justo para eso hay un beneficio: con 10 % menos tu cuota queda en S/499, y se mantiene toda la carrera. ¿Cómo lo ves frente a lo que pensabas?"
    },
    {
     "quien": "cliente",
@@ -3418,7 +3418,7 @@
     "texto": "Y piensa en tu meta: estudiar sin descuidar a tu hijo ni tu trabajo. Además, por matricularte tienes Nexus para adelantar un curso y el Taller de Excel certificado, sin costo. La evaluación es virtual, desde una laptop con cámara. ¿La rindes hoy en la noche o mañana?"
    }
   ],
-  "speech": "Te cuento, [nombre]. La cuota de Educación Inicial es S/554 al mes, y son 5 cuotas por ciclo. Antes de seguir, ¿cuánto tenías pensado invertir al mes en tus estudios?\n\nGracias por decírmelo con confianza. ¿Esos 450 son por tu sueldo o porque tienes otros gastos fijos que cuidar?\n\nEntiendo, primero está tu hijo. Justo para eso hay un beneficio: con 10 % menos tu cuota queda en S/499, y se mantiene toda la carrera. Son menos de 17 soles al día. ¿Cómo lo ves frente a lo que pensabas?\n\nLa primera es un poco mayor porque trae tu cuota, el seguro y el examen médico. Con matrícula serían S/870, pero hoy la matrícula es gratis y queda en S/565. La pagas 24 horas después de tu evaluación. ¿Hasta ahí claro?\n\nY piensa en tu meta: estudiar sin descuidar a tu hijo ni tu trabajo. Además, por matricularte tienes Nexus para adelantar un curso y el Taller de Excel certificado, sin costo. La evaluación es virtual, desde una laptop con cámara. ¿La rindes hoy en la noche o mañana?",
+  "speech": "Te cuento, [nombre]. La cuota de Educación Inicial es S/554 al mes, y son 5 cuotas por ciclo. Antes de seguir, ¿cuánto tenías pensado invertir al mes en tus estudios?\n\nGracias por decírmelo con confianza. ¿Esos 450 son por tu sueldo o porque tienes otros gastos fijos que cuidar?\n\nEntiendo, primero está tu hijo. Justo para eso hay un beneficio: con 10 % menos tu cuota queda en S/499, y se mantiene toda la carrera. ¿Cómo lo ves frente a lo que pensabas?\n\nLa primera es un poco mayor porque trae tu cuota, el seguro y el examen médico. Con matrícula serían S/870, pero hoy la matrícula es gratis y queda en S/565. La pagas 24 horas después de tu evaluación. ¿Hasta ahí claro?\n\nY piensa en tu meta: estudiar sin descuidar a tu hijo ni tu trabajo. Además, por matricularte tienes Nexus para adelantar un curso y el Taller de Excel certificado, sin costo. La evaluación es virtual, desde una laptop con cámara. ¿La rindes hoy en la noche o mañana?",
   "variantes": [
    {
     "titulo": "Su duda, luego en orden",
@@ -3558,7 +3558,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Su cuota sería S/499 con el 10 % menos. La primera, que trae seguro y examen médico, es S/565, recién 24 horas después de su evaluación. Son menos de 17 soles al día. ¿Lo ven posible entre los dos?"
+      "texto": "Su cuota sería S/499 con el 10 % menos. La primera, que trae seguro y examen médico, es S/565, recién 24 horas después de su evaluación. ¿Lo ven posible entre los dos?"
      },
      {
       "quien": "cliente",
@@ -3569,7 +3569,7 @@
       "texto": "Excelente. Además se lleva Nexus para adelantar un curso y el Taller de Excel certificado, sin costo. La evaluación es desde una laptop con cámara y yo la acompaño. ¿Qué fecha les acomoda para que la rinda con normalidad, hoy o mañana?"
      }
     ],
-    "speech": "Claro, [nombre], es una decisión de los dos y está muy bien. ¿Qué crees que te va a preguntar él: el monto, el horario o algo más?\n\nEntonces que lo escuche de primera mano. ¿Está cerca? Si quieres lo pones en altavoz y en dos minutos le explico lo mismo que a ti, ¿te parece?\n\nHola, mucho gusto, te saluda Rosa, de la Unidad CIE de la Universidad Continental. Tu esposa quiere estudiar Educación Inicial a distancia. Hoy solo se pagan S/100 de admisión, y eso reserva su vacante y su descuento. ¿Vamos bien?\n\nSu cuota sería S/499 con el 10 % menos. La primera, que trae seguro y examen médico, es S/565, recién 24 horas después de su evaluación. Son menos de 17 soles al día. ¿Lo ven posible entre los dos?\n\nExcelente. Además se lleva Nexus para adelantar un curso y el Taller de Excel certificado, sin costo. La evaluación es desde una laptop con cámara y yo la acompaño. ¿Qué fecha les acomoda para que la rinda con normalidad, hoy o mañana?",
+    "speech": "Claro, [nombre], es una decisión de los dos y está muy bien. ¿Qué crees que te va a preguntar él: el monto, el horario o algo más?\n\nEntonces que lo escuche de primera mano. ¿Está cerca? Si quieres lo pones en altavoz y en dos minutos le explico lo mismo que a ti, ¿te parece?\n\nHola, mucho gusto, te saluda Rosa, de la Unidad CIE de la Universidad Continental. Tu esposa quiere estudiar Educación Inicial a distancia. Hoy solo se pagan S/100 de admisión, y eso reserva su vacante y su descuento. ¿Vamos bien?\n\nSu cuota sería S/499 con el 10 % menos. La primera, que trae seguro y examen médico, es S/565, recién 24 horas después de su evaluación. ¿Lo ven posible entre los dos?\n\nExcelente. Además se lleva Nexus para adelantar un curso y el Taller de Excel certificado, sin costo. La evaluación es desde una laptop con cámara y yo la acompaño. ¿Qué fecha les acomoda para que la rinda con normalidad, hoy o mañana?",
     "porQue": "Cuando dice que lo verá con su pareja, no la dejas ir: averiguas qué preguntará él y lo sumas en altavoz en ese momento, con las cifras claras y la evaluación con fecha."
    },
    {
@@ -3647,7 +3647,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Cerca, sí. Y piénsalo así: S/569 al mes son unos 19 soles al día, menos que un menú y un pasaje. ¿Lo ves posible así?"
+    "texto": "Cerca, sí. ¿Lo ves posible así?"
    },
    {
     "quien": "cliente",
@@ -3674,7 +3674,7 @@
     "texto": "Genial. Entonces el siguiente paso es tu evaluación: es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana temprano?"
    }
   ],
-  "speech": "Daisy, antes de darte montos quiero entender tu realidad. Si hoy pensaras en una cuota mensual para tu carrera, ¿qué monto sentirías cómodo sin descuadrar la casa?\n\nPerfecto, eso me ayuda bastante. La cuota regular de Psicología es S/632. Con el 10 % en cuotas te queda en S/569, y ese descuento lo mantienes toda la carrera. ¿Hasta ahí vamos bien?\n\nCerca, sí. Y piénsalo así: S/569 al mes son unos 19 soles al día, menos que un menú y un pasaje. ¿Lo ves posible así?\n\nLo único distinto es la primera cuota, porque junta tus créditos, la matrícula, el seguro y el examen médico. Normalmente es S/948, hoy con la matrícula a mitad de precio te queda en S/760. ¿Hasta ahí claro?\n\nRecién 24 horas después de tu evaluación de admisión, no hoy. Hoy solo es la admisión: S/100 en lugar de S/200. ¿Con esto queda resuelto lo del presupuesto?\n\nGenial. Entonces el siguiente paso es tu evaluación: es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana temprano?",
+  "speech": "Daisy, antes de darte montos quiero entender tu realidad. Si hoy pensaras en una cuota mensual para tu carrera, ¿qué monto sentirías cómodo sin descuadrar la casa?\n\nPerfecto, eso me ayuda bastante. La cuota regular de Psicología es S/632. Con el 10 % en cuotas te queda en S/569, y ese descuento lo mantienes toda la carrera. ¿Hasta ahí vamos bien?\n\nCerca, sí. ¿Lo ves posible así?\n\nLo único distinto es la primera cuota, porque junta tus créditos, la matrícula, el seguro y el examen médico. Normalmente es S/948, hoy con la matrícula a mitad de precio te queda en S/760. ¿Hasta ahí claro?\n\nRecién 24 horas después de tu evaluación de admisión, no hoy. Hoy solo es la admisión: S/100 en lugar de S/200. ¿Con esto queda resuelto lo del presupuesto?\n\nGenial. Entonces el siguiente paso es tu evaluación: es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana temprano?",
   "variantes": [
    {
     "titulo": "El ahorro con su origen",
@@ -3986,7 +3986,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Tercero, las otras 4 cuotas recién desde abril, de S/504 cada una. Son menos de 17 soles al día, lo que gastas en un par de pasajes. ¿Te sirve así?"
+      "texto": "Tercero, las otras 4 cuotas recién desde abril, de S/504 cada una. ¿Te sirve así?"
      },
      {
       "quien": "cliente",
@@ -3997,7 +3997,7 @@
       "texto": "Entonces queda así: admisión mañana y evaluación mañana en la noche, desde tu laptop con cámara. De regalo te llevas Nexus y el Taller de Excel certificado. ¿Te acomoda a las 7 o a las 8?"
      }
     ],
-    "speech": "[nombre], lo de la quincena es importante, así que te lo ordeno por fechas para que veas que no pagas todo junto. ¿Qué día cobras?\n\nPerfecto. Primero va la admisión: hoy cuesta S/100 en vez de S/200, y con eso tienes tu vacante. ¿Ese monto lo tienes hoy o mañana?\n\nBien. Segundo, 24 horas después de tu evaluación das tu primera cuota: S/695. Ya trae tus créditos, la matrícula a mitad de precio, el seguro y el examen médico. ¿Hasta ahí vamos bien?\n\nPor eso la ordenamos con tu quincena: rindes la evaluación mañana en la noche y la cuota cae pasado mañana, el día que cobras. ¿Cómo lo ves?\n\nTercero, las otras 4 cuotas recién desde abril, de S/504 cada una. Son menos de 17 soles al día, lo que gastas en un par de pasajes. ¿Te sirve así?\n\nEntonces queda así: admisión mañana y evaluación mañana en la noche, desde tu laptop con cámara. De regalo te llevas Nexus y el Taller de Excel certificado. ¿Te acomoda a las 7 o a las 8?",
+    "speech": "[nombre], lo de la quincena es importante, así que te lo ordeno por fechas para que veas que no pagas todo junto. ¿Qué día cobras?\n\nPerfecto. Primero va la admisión: hoy cuesta S/100 en vez de S/200, y con eso tienes tu vacante. ¿Ese monto lo tienes hoy o mañana?\n\nBien. Segundo, 24 horas después de tu evaluación das tu primera cuota: S/695. Ya trae tus créditos, la matrícula a mitad de precio, el seguro y el examen médico. ¿Hasta ahí vamos bien?\n\nPor eso la ordenamos con tu quincena: rindes la evaluación mañana en la noche y la cuota cae pasado mañana, el día que cobras. ¿Cómo lo ves?\n\nTercero, las otras 4 cuotas recién desde abril, de S/504 cada una. ¿Te sirve así?\n\nEntonces queda así: admisión mañana y evaluación mañana en la noche, desde tu laptop con cámara. De regalo te llevas Nexus y el Taller de Excel certificado. ¿Te acomoda a las 7 o a las 8?",
     "porQue": "Ordenar los pagos por fecha le muestra que no necesita todo hoy. Alinear cada pago con su quincena convierte la objeción en un plan y deja la evaluación agendada."
    },
    {
@@ -4074,7 +4074,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Bien que lo tengas en cuenta. Tu cuota de S/504 es menos de 17 soles al día, y la segunda recién llega en abril. Con el alquiler y la luz pagados, ¿te alcanza para eso?"
+      "texto": "Bien que lo tengas en cuenta. Tu cuota es de S/504 y la segunda recién llega en abril. Con el alquiler y la luz pagados, ¿te alcanza para eso?"
      },
      {
       "quien": "cliente",
@@ -4093,7 +4093,7 @@
       "texto": "Tu evaluación se rinde desde una computadora o laptop con cámara, y yo te acompaño. ¿La rindes hoy o mañana, según el día que cobres, para que la primera cuota caiga con tu quincena?"
      }
     ],
-    "speech": "Perfecto, [nombre], y justo por eso te conviene asegurar ahora: los S/100 de admisión te reservan la vacante y el descuento. La primera cuota la pagas 24 horas después de tu evaluación, no hoy. ¿Te hace sentido?\n\nClaro, nadie quiere eso. ¿Qué otros gastos tienes esta quincena que te preocupan?\n\nBien que lo tengas en cuenta. Tu cuota de S/504 es menos de 17 soles al día, y la segunda recién llega en abril. Con el alquiler y la luz pagados, ¿te alcanza para eso?\n\nEntonces lo que te llevas es bastante: matrícula a mitad de precio, 10 % menos en todas tus cuotas, Nexus para adelantar cursos y el Taller de Excel certificado, sin costo adicional. ¿Cómo lo ves?\n\nTu evaluación se rinde desde una computadora o laptop con cámara, y yo te acompaño. ¿La rindes hoy o mañana, según el día que cobres, para que la primera cuota caiga con tu quincena?",
+    "speech": "Perfecto, [nombre], y justo por eso te conviene asegurar ahora: los S/100 de admisión te reservan la vacante y el descuento. La primera cuota la pagas 24 horas después de tu evaluación, no hoy. ¿Te hace sentido?\n\nClaro, nadie quiere eso. ¿Qué otros gastos tienes esta quincena que te preocupan?\n\nBien que lo tengas en cuenta. Tu cuota es de S/504 y la segunda recién llega en abril. Con el alquiler y la luz pagados, ¿te alcanza para eso?\n\nEntonces lo que te llevas es bastante: matrícula a mitad de precio, 10 % menos en todas tus cuotas, Nexus para adelantar cursos y el Taller de Excel certificado, sin costo adicional. ¿Cómo lo ves?\n\nTu evaluación se rinde desde una computadora o laptop con cámara, y yo te acompaño. ¿La rindes hoy o mañana, según el día que cobres, para que la primera cuota caiga con tu quincena?",
     "porQue": "Usas la Forma D: asegurar hoy no la obliga a pagar la cuota hoy. Preguntar por sus otros gastos muestra que entiendes su economía y hace realista el compromiso."
    },
    {
@@ -4183,7 +4183,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto. La cuota de Administración es S/560, pero hoy con el descuento te queda en S/504. Son menos de 17 soles al día, y ese descuento te dura toda la carrera. ¿Vamos bien?"
+    "texto": "Perfecto. La cuota de Administración es S/560, pero hoy con el descuento te queda en S/504. Y ese descuento te dura toda la carrera. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
@@ -4202,7 +4202,7 @@
     "texto": "Te entiendo. Piensa que, con tu tienda en las tardes, las clases en vivo quedan grabadas, y sumas certificados desde los primeros ciclos para tu negocio. La evaluación es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy o mañana?"
    }
   ],
-  "speech": "Te lo digo ahora, [nombre]. Pero antes, para que el número tenga sentido: ¿qué te animó a pensar en Administración?\n\nQué buena meta, tener algo tuyo. Entonces te sirve aprender a manejar números, personas y ventas desde el primer ciclo. ¿Hoy trabajas?\n\nPerfecto. La cuota de Administración es S/560, pero hoy con el descuento te queda en S/504. Son menos de 17 soles al día, y ese descuento te dura toda la carrera. ¿Vamos bien?\n\nLa primera es un poco más porque trae el seguro y el examen médico: con la campaña queda en S/570. La matrícula, que normalmente es S/250, hoy es gratis. ¿Hasta ahí claro?\n\nTe entiendo. Piensa que, con tu tienda en las tardes, las clases en vivo quedan grabadas, y sumas certificados desde los primeros ciclos para tu negocio. La evaluación es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy o mañana?",
+  "speech": "Te lo digo ahora, [nombre]. Pero antes, para que el número tenga sentido: ¿qué te animó a pensar en Administración?\n\nQué buena meta, tener algo tuyo. Entonces te sirve aprender a manejar números, personas y ventas desde el primer ciclo. ¿Hoy trabajas?\n\nPerfecto. La cuota de Administración es S/560, pero hoy con el descuento te queda en S/504. Y ese descuento te dura toda la carrera. ¿Vamos bien?\n\nLa primera es un poco más porque trae el seguro y el examen médico: con la campaña queda en S/570. La matrícula, que normalmente es S/250, hoy es gratis. ¿Hasta ahí claro?\n\nTe entiendo. Piensa que, con tu tienda en las tardes, las clases en vivo quedan grabadas, y sumas certificados desde los primeros ciclos para tu negocio. La evaluación es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy o mañana?",
   "variantes": [
    {
     "titulo": "Su meta y pagos en orden",
@@ -5226,7 +5226,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Y al mes su cuota con descuento es S/563: menos de 19 soles al día, lo que cuestan un par de pasajes y un menú. ¿Cómo lo ves?"
+      "texto": "Y al mes su cuota con descuento es S/563. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
@@ -5245,7 +5245,7 @@
       "texto": "Perfecto, con sus sílabos lo revisan. Para empezar solo necesita S/100 de admisión, y si lo dejan para después la campaña puede cerrar. ¿Tu hermano rinde su evaluación virtual hoy o mañana, desde una laptop con cámara?"
      }
     ],
-    "speech": "Te entiendo, [nombre], son dos hermanos pensando en estudiar. Por eso quiero que veas una sola cifra: con la campaña tu hermano se ahorra unos S/438 en su primer ciclo. ¿Te cuento de dónde sale?\n\nLa matrícula de S/250 le cuesta S/125, y en cada una de sus 5 cuotas paga unos S/63 menos, toda la carrera. ¿Hasta ahí claro?\n\nY al mes su cuota con descuento es S/563: menos de 19 soles al día, lo que cuestan un par de pasajes y un menú. ¿Cómo lo ves?\n\nEso lo define el área de convalidación revisando sus sílabos; podrían reconocerse cursos parecidos a los que ya llevó, pero no te adelanto ciclos. ¿En qué institución estudió tu hermano?\n\nPerfecto, con sus sílabos lo revisan. Para empezar solo necesita S/100 de admisión, y si lo dejan para después la campaña puede cerrar. ¿Tu hermano rinde su evaluación virtual hoy o mañana, desde una laptop con cámara?",
+    "speech": "Te entiendo, [nombre], son dos hermanos pensando en estudiar. Por eso quiero que veas una sola cifra: con la campaña tu hermano se ahorra unos S/438 en su primer ciclo. ¿Te cuento de dónde sale?\n\nLa matrícula de S/250 le cuesta S/125, y en cada una de sus 5 cuotas paga unos S/63 menos, toda la carrera. ¿Hasta ahí claro?\n\nY al mes su cuota con descuento es S/563. ¿Cómo lo ves?\n\nEso lo define el área de convalidación revisando sus sílabos; podrían reconocerse cursos parecidos a los que ya llevó, pero no te adelanto ciclos. ¿En qué institución estudió tu hermano?\n\nPerfecto, con sus sílabos lo revisan. Para empezar solo necesita S/100 de admisión, y si lo dejan para después la campaña puede cerrar. ¿Tu hermano rinde su evaluación virtual hoy o mañana, desde una laptop con cámara?",
     "porQue": "El ahorro con su origen y la cuota en soles por día bajan la sensación de mucha plata. La convalidación se explica sin prometer ciclos y se confirma dónde estudió."
    },
    {
@@ -5458,7 +5458,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Claro. Hagamos la cuenta juntos: tu cuota de Contabilidad y Finanzas es S/560, y con el descuento queda en S/504. Son menos de 17 soles al día. ¿Cómo lo ves con tu sueldo?"
+      "texto": "Claro. Hagamos la cuenta juntos: tu cuota de Contabilidad y Finanzas es S/560, y con el descuento queda en S/504. ¿Cómo lo ves con tu sueldo?"
      },
      {
       "quien": "cliente",
@@ -5485,7 +5485,7 @@
       "texto": "Listo, mañana a las 11. Yo te escribo al WhatsApp a esa hora para acompañarte, y solo necesitas tu laptop o computadora con cámara. ¿Te queda todo claro?"
      }
     ],
-    "speech": "Juan, me dijiste que mañana me respondes. Para ayudarte a decidir bien, ¿qué te haría decir que sí?\n\nClaro. Hagamos la cuenta juntos: tu cuota de Contabilidad y Finanzas es S/560, y con el descuento queda en S/504. Son menos de 17 soles al día. ¿Cómo lo ves con tu sueldo?\n\nGenial. La primera cuota trae además el seguro y el examen médico, y hoy la matrícula es gratis, así que queda en S/570. La pagas 24 horas después de tu evaluación. ¿Eso cambia lo que pensabas?\n\nPerfecto, entonces dejemos la hora fija para no perder el beneficio vigente. ¿Mañana a las 10, antes de tu turno, te va bien para rendir la evaluación?\n\nListo, mañana a las 11. Yo te escribo al WhatsApp a esa hora para acompañarte, y solo necesitas tu laptop o computadora con cámara. ¿Te queda todo claro?",
+    "speech": "Juan, me dijiste que mañana me respondes. Para ayudarte a decidir bien, ¿qué te haría decir que sí?\n\nClaro. Hagamos la cuenta juntos: tu cuota de Contabilidad y Finanzas es S/560, y con el descuento queda en S/504. ¿Cómo lo ves con tu sueldo?\n\nGenial. La primera cuota trae además el seguro y el examen médico, y hoy la matrícula es gratis, así que queda en S/570. La pagas 24 horas después de tu evaluación. ¿Eso cambia lo que pensabas?\n\nPerfecto, entonces dejemos la hora fija para no perder el beneficio vigente. ¿Mañana a las 10, antes de tu turno, te va bien para rendir la evaluación?\n\nListo, mañana a las 11. Yo te escribo al WhatsApp a esa hora para acompañarte, y solo necesitas tu laptop o computadora con cámara. ¿Te queda todo claro?",
     "porQue": "Pregunta qué lo haría decir que sí y responde con la inversión vigente bien desglosada; con la duda resuelta, fija la hora de la evaluación sin dejarle la continuidad a él."
    },
    {
@@ -6966,7 +6966,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Gracias por la confianza. Son menos de 19 soles al día, y antes de ver si te calza quiero entender tu caso. ¿Ya llevaste estudios superiores o sería tu primera carrera?"
+      "texto": "Gracias por la confianza. Antes de ver si te calza quiero entender tu caso. ¿Ya llevaste estudios superiores o sería tu primera carrera?"
      },
      {
       "quien": "cliente",
@@ -6985,7 +6985,7 @@
       "texto": "Listo, Lolo, ya te ubico mejor. Para armar algo que entre en tu bolsillo, cuéntame: ¿qué te animó a buscar Derecho y cuánto podrías destinar al mes?"
      }
     ],
-    "speech": "Lolo, te saluda Anyhela, de la Unidad CIE de la Universidad Continental. Te llamo por Derecho a distancia, ¿tienes dos minutos?\n\nClaro, te lo envío. Y para que no sea un número suelto, te lo digo ahora: la cuota de Derecho normalmente es S/616, y hoy con el 10 % te queda en unos S/554. ¿Te sirve como referencia?\n\nTe entiendo, Lolo, y por eso no quiero que lo veas solo. ¿Bastante comparado con qué: con lo que ganas, con otra universidad o con lo que pensabas?\n\nGracias por la confianza. Son menos de 19 soles al día, y antes de ver si te calza quiero entender tu caso. ¿Ya llevaste estudios superiores o sería tu primera carrera?\n\nPerfecto. ¿Y hoy trabajas de día? Lo pregunto porque las clases en vivo quedan grabadas, ¿te acomodaría verlas de noche?\n\nListo, Lolo, ya te ubico mejor. Para armar algo que entre en tu bolsillo, cuéntame: ¿qué te animó a buscar Derecho y cuánto podrías destinar al mes?",
+    "speech": "Lolo, te saluda Anyhela, de la Unidad CIE de la Universidad Continental. Te llamo por Derecho a distancia, ¿tienes dos minutos?\n\nClaro, te lo envío. Y para que no sea un número suelto, te lo digo ahora: la cuota de Derecho normalmente es S/616, y hoy con el 10 % te queda en unos S/554. ¿Te sirve como referencia?\n\nTe entiendo, Lolo, y por eso no quiero que lo veas solo. ¿Bastante comparado con qué: con lo que ganas, con otra universidad o con lo que pensabas?\n\nGracias por la confianza. Antes de ver si te calza quiero entender tu caso. ¿Ya llevaste estudios superiores o sería tu primera carrera?\n\nPerfecto. ¿Y hoy trabajas de día? Lo pregunto porque las clases en vivo quedan grabadas, ¿te acomodaría verlas de noche?\n\nListo, Lolo, ya te ubico mejor. Para armar algo que entre en tu bolsillo, cuéntame: ¿qué te animó a buscar Derecho y cuánto podrías destinar al mes?",
     "porQue": "La objeción típica del inicio es pedir solo el precio. Se da una referencia real traducida a su día y se vuelve a los filtros, así la conversación pasa al paso 2 sin cortarse."
    },
    {
@@ -7310,7 +7310,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Claro. Tus cuotas de Administración normalmente son S/560 y con la campaña quedan en S/504. Eso es menos de 17 soles al día. ¿Cómo lo ves?"
+    "texto": "Claro. Tus cuotas de Administración normalmente son S/560 y con la campaña quedan en S/504. ¿Cómo lo ves?"
    },
    {
     "quien": "cliente",
@@ -7337,7 +7337,7 @@
     "texto": "Listo, mañana a las 10. Te escribo por WhatsApp con el enlace; soy Betsabeth, de la Universidad Continental. Gracias, [nombre]; te transfiero a una encuesta breve sobre mi atención. ¡Éxitos!"
    }
   ],
-  "speech": "[nombre], con todo lo que vimos, ¿cómo te sientes para dar el siguiente paso?\n\nMe parece muy bien que lo tomes con calma, es tu carrera. ¿Qué parte necesitas tener más clara para decidir tranquila?\n\nClaro. Tus cuotas de Administración normalmente son S/560 y con la campaña quedan en S/504. Eso es menos de 17 soles al día. ¿Cómo lo ves?\n\nY para empezar no pagas todo: solo tu evaluación de admisión, S/100 en vez de S/200. La primera cuota va 24 horas después. ¿Hasta ahí claro?\n\nEntonces tú decides el momento: ¿la rindes hoy en la noche o mañana? Es virtual, desde tu laptop con cámara.\n\nListo, mañana a las 10. Te escribo por WhatsApp con el enlace; soy Betsabeth, de la Universidad Continental. Gracias, [nombre]; te transfiero a una encuesta breve sobre mi atención. ¡Éxitos!",
+  "speech": "[nombre], con todo lo que vimos, ¿cómo te sientes para dar el siguiente paso?\n\nMe parece muy bien que lo tomes con calma, es tu carrera. ¿Qué parte necesitas tener más clara para decidir tranquila?\n\nClaro. Tus cuotas de Administración normalmente son S/560 y con la campaña quedan en S/504. ¿Cómo lo ves?\n\nY para empezar no pagas todo: solo tu evaluación de admisión, S/100 en vez de S/200. La primera cuota va 24 horas después. ¿Hasta ahí claro?\n\nEntonces tú decides el momento: ¿la rindes hoy en la noche o mañana? Es virtual, desde tu laptop con cámara.\n\nListo, mañana a las 10. Te escribo por WhatsApp con el enlace; soy Betsabeth, de la Universidad Continental. Gracias, [nombre]; te transfiero a una encuesta breve sobre mi atención. ¡Éxitos!",
   "variantes": [
    {
     "titulo": "Capacidad de pago primero",
@@ -9532,7 +9532,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "La cuota de Psicología es S/632, y con el beneficio vigente queda en S/569 toda la carrera. Son unos 19 soles al día. ¿Cómo lo ven?"
+    "texto": "La cuota de Psicología es S/632, y con el beneficio vigente queda en S/569 toda la carrera. ¿Cómo lo ven?"
    },
    {
     "quien": "cliente",
@@ -9551,7 +9551,7 @@
     "texto": "Listo, mañana a las 8. Te mando todo por WhatsApp, Daisy. Te atendió Jostyn, de la Unidad CIE de la Universidad Continental. Te paso a una breve encuesta de satisfacción. ¡Éxitos!"
    }
   ],
-  "speech": "Claro, Daisy, es una decisión de los dos. ¿Él está contigo ahora? Si quieres lo ponemos en altavoz y le cuento en un minuto lo mismo que a ti.\n\nHola, mucho gusto, soy Jostyn de la Universidad Continental. Daisy quiere estudiar Psicología de noche, sin dejar su trabajo. ¿Qué te gustaría saber para apoyarla?\n\nLa cuota de Psicología es S/632, y con el beneficio vigente queda en S/569 toda la carrera. Son unos 19 soles al día. ¿Cómo lo ven?\n\nPerfecto. Entonces el siguiente paso es la evaluación de Daisy, virtual, desde laptop con cámara. ¿La rinde hoy en la noche o mañana?\n\nListo, mañana a las 8. Te mando todo por WhatsApp, Daisy. Te atendió Jostyn, de la Unidad CIE de la Universidad Continental. Te paso a una breve encuesta de satisfacción. ¡Éxitos!",
+  "speech": "Claro, Daisy, es una decisión de los dos. ¿Él está contigo ahora? Si quieres lo ponemos en altavoz y le cuento en un minuto lo mismo que a ti.\n\nHola, mucho gusto, soy Jostyn de la Universidad Continental. Daisy quiere estudiar Psicología de noche, sin dejar su trabajo. ¿Qué te gustaría saber para apoyarla?\n\nLa cuota de Psicología es S/632, y con el beneficio vigente queda en S/569 toda la carrera. ¿Cómo lo ven?\n\nPerfecto. Entonces el siguiente paso es la evaluación de Daisy, virtual, desde laptop con cámara. ¿La rinde hoy en la noche o mañana?\n\nListo, mañana a las 8. Te mando todo por WhatsApp, Daisy. Te atendió Jostyn, de la Unidad CIE de la Universidad Continental. Te paso a una breve encuesta de satisfacción. ¡Éxitos!",
   "variantes": [
    {
     "titulo": "Llevarle respuestas claras",
@@ -10026,7 +10026,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Si un ciclo llevas más o menos créditos, cambia un poco, pero el descuento se mantiene. Son 5 cuotas por ciclo, y S/554 es menos de 19 soles al día. ¿Hasta ahí claro?"
+    "texto": "Si un ciclo llevas más o menos créditos, cambia un poco, pero el descuento se mantiene. Son 5 cuotas por ciclo de S/554. ¿Hasta ahí claro?"
    },
    {
     "quien": "cliente",
@@ -10053,7 +10053,7 @@
     "texto": "Entonces lo tuyo es crecer en tu trabajo con tu título de Derecho, ¿verdad? Por matricularte te llevas Nexus para adelantar cursos y el Taller de Excel certificado. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy o mañana?"
    }
   ],
-  "speech": "Ya te digo, [nombre]. Antes, para darte el dato que te sirve: ¿a qué te dedicas hoy y por qué te animaste por Derecho?\n\nQué buena base, ya conoces el día a día legal. En Derecho la cuota sale de los créditos del ciclo: normalmente son S/616 al mes. Con la campaña te queda en S/554, y ese 10 % menos es para toda tu carrera. ¿Vamos bien?\n\nSi un ciclo llevas más o menos créditos, cambia un poco, pero el descuento se mantiene. Son 5 cuotas por ciclo, y S/554 es menos de 19 soles al día. ¿Hasta ahí claro?\n\nLa primera es un poco más porque junta tus créditos, la matrícula, el seguro contra accidentes y el examen médico. Normalmente serían S/932; hoy, con la matrícula a mitad de precio, pagas S/745. ¿Te sirve así?\n\nExacto, y la pagas recién 24 horas después de tu evaluación. Me dijiste que te interesa terminar antes. ¿Por qué es importante para ti?\n\nEntonces lo tuyo es crecer en tu trabajo con tu título de Derecho, ¿verdad? Por matricularte te llevas Nexus para adelantar cursos y el Taller de Excel certificado. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy o mañana?",
+  "speech": "Ya te digo, [nombre]. Antes, para darte el dato que te sirve: ¿a qué te dedicas hoy y por qué te animaste por Derecho?\n\nQué buena base, ya conoces el día a día legal. En Derecho la cuota sale de los créditos del ciclo: normalmente son S/616 al mes. Con la campaña te queda en S/554, y ese 10 % menos es para toda tu carrera. ¿Vamos bien?\n\nSi un ciclo llevas más o menos créditos, cambia un poco, pero el descuento se mantiene. Son 5 cuotas por ciclo de S/554. ¿Hasta ahí claro?\n\nLa primera es un poco más porque junta tus créditos, la matrícula, el seguro contra accidentes y el examen médico. Normalmente serían S/932; hoy, con la matrícula a mitad de precio, pagas S/745. ¿Te sirve así?\n\nExacto, y la pagas recién 24 horas después de tu evaluación. Me dijiste que te interesa terminar antes. ¿Por qué es importante para ti?\n\nEntonces lo tuyo es crecer en tu trabajo con tu título de Derecho, ¿verdad? Por matricularte te llevas Nexus para adelantar cursos y el Taller de Excel certificado. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy o mañana?",
   "variantes": [
    {
     "titulo": "Paso a paso por pagos",
@@ -10689,7 +10689,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Y si esperas, empiezas un ciclo después y el beneficio es de la campaña vigente. Tu cuota de Derecho con 10 % menos es S/554, menos de 19 soles al día. ¿Cómo lo ves?"
+      "texto": "Y si esperas, empiezas un ciclo después y el beneficio es de la campaña vigente. Tu cuota de Derecho con 10 % menos es S/554. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
@@ -10708,7 +10708,7 @@
       "texto": "Listo, mañana a las 8 p. m. Te dejo todo por WhatsApp. Soy Isai, de la Universidad Continental, y te paso a una breve encuesta de mi atención. ¿De acuerdo?"
      }
     ],
-    "speech": "Te entiendo, [nombre]. ¿Qué es lo que te hace pensar en esperar: el trabajo, el dinero o el tiempo?\n\nClaro, diciembre aprieta. Por eso hoy, para asegurar tu vacante, solo das la admisión: S/100 en vez de S/200. ¿Ese monto lo podrías cubrir?\n\nY si esperas, empiezas un ciclo después y el beneficio es de la campaña vigente. Tu cuota de Derecho con 10 % menos es S/554, menos de 19 soles al día. ¿Cómo lo ves?\n\nEntonces, [nombre], aseguremos marzo. Tu evaluación es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana?\n\nListo, mañana a las 8 p. m. Te dejo todo por WhatsApp. Soy Isai, de la Universidad Continental, y te paso a una breve encuesta de mi atención. ¿De acuerdo?",
+    "speech": "Te entiendo, [nombre]. ¿Qué es lo que te hace pensar en esperar: el trabajo, el dinero o el tiempo?\n\nClaro, diciembre aprieta. Por eso hoy, para asegurar tu vacante, solo das la admisión: S/100 en vez de S/200. ¿Ese monto lo podrías cubrir?\n\nY si esperas, empiezas un ciclo después y el beneficio es de la campaña vigente. Tu cuota de Derecho con 10 % menos es S/554. ¿Cómo lo ves?\n\nEntonces, [nombre], aseguremos marzo. Tu evaluación es virtual, desde tu laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana?\n\nListo, mañana a las 8 p. m. Te dejo todo por WhatsApp. Soy Isai, de la Universidad Continental, y te paso a una breve encuesta de mi atención. ¿De acuerdo?",
     "porQue": "Descubres que el freno es el dinero de diciembre y lo resuelves con el monto mínimo para empezar. El costo de esperar un ciclo sostiene el cierre con fecha y hora."
    },
    {
@@ -11014,7 +11014,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Genial. ¿Y lo de la cuota? Con el 10 % de descuento queda en S/563 al mes, menos de 19 soles al día. ¿Hasta ahí claro?"
+    "texto": "Genial. ¿Y lo de la cuota? Con el 10 % de descuento queda en S/563 al mes. ¿Hasta ahí claro?"
    },
    {
     "quien": "cliente",
@@ -11049,7 +11049,7 @@
     "texto": "Gracias, [nombre]. Te atendió Ana María, de la Universidad Continental. Ahora te derivo a una breve encuesta de mi atención, ¿me apoyas con eso?"
    }
   ],
-  "speech": "Claro, [nombre], ahora mismo te lo envío. Antes, para que se lo expliques bien: ¿te quedó claro que las clases quedan grabadas si tu hermano sale tarde del trabajo?\n\nGenial. ¿Y lo de la cuota? Con el 10 % de descuento queda en S/563 al mes, menos de 19 soles al día. ¿Hasta ahí claro?\n\nPerfecto. ¿Tu hermano está contigo ahora? Si está cerca, lo ponemos en altavoz y en dos minutos le cuento lo mismo.\n\nEntiendo. Dejemos lista su evaluación de admisión: es virtual, desde una laptop con cámara, y no es de conocimientos. ¿La rinde hoy a las 8 y media o mañana a la misma hora?\n\nListo, mañana a las 8:30 p. m. ¿Me pasas su WhatsApp para enviarle el enlace directo? Así él también me ubica.\n\nGracias, [nombre]. Te atendió Ana María, de la Universidad Continental. Ahora te derivo a una breve encuesta de mi atención, ¿me apoyas con eso?",
+  "speech": "Claro, [nombre], ahora mismo te lo envío. Antes, para que se lo expliques bien: ¿te quedó claro que las clases quedan grabadas si tu hermano sale tarde del trabajo?\n\nGenial. ¿Y lo de la cuota? Con el 10 % de descuento queda en S/563 al mes. ¿Hasta ahí claro?\n\nPerfecto. ¿Tu hermano está contigo ahora? Si está cerca, lo ponemos en altavoz y en dos minutos le cuento lo mismo.\n\nEntiendo. Dejemos lista su evaluación de admisión: es virtual, desde una laptop con cámara, y no es de conocimientos. ¿La rinde hoy a las 8 y media o mañana a la misma hora?\n\nListo, mañana a las 8:30 p. m. ¿Me pasas su WhatsApp para enviarle el enlace directo? Así él también me ubica.\n\nGracias, [nombre]. Te atendió Ana María, de la Universidad Continental. Ahora te derivo a una breve encuesta de mi atención, ¿me apoyas con eso?",
   "variantes": [
    {
     "titulo": "Suma al prospecto ahora",
@@ -11081,7 +11081,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Genial. Con el descuento tu cuota queda en S/563, menos de 19 soles al día, y con 10 % menos toda la carrera. ¿Cómo lo ves?"
+      "texto": "Genial. Con el descuento tu cuota queda en S/563. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
@@ -11100,7 +11100,7 @@
       "texto": "Listo, [nombre], mañana a las 8 p. m. Te escribo a tu WhatsApp con el enlace. Soy Ana María, de la Universidad Continental, y ahora te derivo a una breve encuesta de mi atención. ¿Me apoyas?"
      }
     ],
-    "speech": "[nombre], para que tu hermano no se quede con dudas, ¿está cerca? Me encantaría saludarlo y contarle en dos minutos cómo sería su carrera.\n\n¡Hola! Te saluda Ana María, de la Universidad Continental. Tu hermana me contó que te interesa Ingeniería Industrial a distancia. ¿Cómo te llamas?\n\nMucho gusto, [nombre]. Justo para eso: clases de noche, tres por semana, y si sales tarde la clase queda grabada. ¿Eso te ayudaría?\n\nGenial. Con el descuento tu cuota queda en S/563, menos de 19 soles al día, y con 10 % menos toda la carrera. ¿Cómo lo ves?\n\n¡Qué bueno que se apoyen! Entonces el siguiente paso es tu evaluación de admisión, virtual desde una laptop con cámara. ¿Te acomoda hoy en la noche o mañana?\n\nListo, [nombre], mañana a las 8 p. m. Te escribo a tu WhatsApp con el enlace. Soy Ana María, de la Universidad Continental, y ahora te derivo a una breve encuesta de mi atención. ¿Me apoyas?",
+    "speech": "[nombre], para que tu hermano no se quede con dudas, ¿está cerca? Me encantaría saludarlo y contarle en dos minutos cómo sería su carrera.\n\n¡Hola! Te saluda Ana María, de la Universidad Continental. Tu hermana me contó que te interesa Ingeniería Industrial a distancia. ¿Cómo te llamas?\n\nMucho gusto, [nombre]. Justo para eso: clases de noche, tres por semana, y si sales tarde la clase queda grabada. ¿Eso te ayudaría?\n\nGenial. Con el descuento tu cuota queda en S/563. ¿Cómo lo ves?\n\n¡Qué bueno que se apoyen! Entonces el siguiente paso es tu evaluación de admisión, virtual desde una laptop con cámara. ¿Te acomoda hoy en la noche o mañana?\n\nListo, [nombre], mañana a las 8 p. m. Te escribo a tu WhatsApp con el enlace. Soy Ana María, de la Universidad Continental, y ahora te derivo a una breve encuesta de mi atención. ¿Me apoyas?",
     "porQue": "Sumas al prospecto en la misma llamada y le hablas a él con su nombre. Dos cierres parciales y la elección entre hoy o mañana dejan su evaluación agendada."
    },
    {
@@ -12702,7 +12702,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Es una diferencia de unos 54 soles al mes, menos de 2 soles al día. ¿Qué te pesa más, la cuota mensual o la primera, que es más alta?"
+    "texto": "Es una diferencia de unos 54 soles al mes. ¿Qué te pesa más, la cuota mensual o la primera, que es más alta?"
    },
    {
     "quien": "cliente",
@@ -12713,7 +12713,7 @@
     "texto": "Entonces lo tuyo es estudiar Derecho sin dejar el trabajo, con unos 500 al mes, y te preocupa la primera cuota. Justo esa baja bastante porque hoy la matrícula es gratis. ¿Te cuento cómo queda?"
    }
   ],
-  "speech": "Lolo, antes de darte números quiero que te calcen a ti. ¿Hoy estás trabajando?\n\nYa, entonces estudiarías después del trabajo. ¿Y qué te mueve a estudiar Derecho justo ahora?\n\nEso dice mucho, ya ves el Derecho en tu día a día. ¿Cuánto podrías destinar al mes a tus estudios sin descuadrarte?\n\nGracias por la confianza. La cuota de Derecho es S/616, pero hoy con el 10 % queda en unos S/554, y ese descuento es para toda la carrera. ¿Cómo lo ves frente a tus 500?\n\nEs una diferencia de unos 54 soles al mes, menos de 2 soles al día. ¿Qué te pesa más, la cuota mensual o la primera, que es más alta?\n\nEntonces lo tuyo es estudiar Derecho sin dejar el trabajo, con unos 500 al mes, y te preocupa la primera cuota. Justo esa baja bastante porque hoy la matrícula es gratis. ¿Te cuento cómo queda?",
+  "speech": "Lolo, antes de darte números quiero que te calcen a ti. ¿Hoy estás trabajando?\n\nYa, entonces estudiarías después del trabajo. ¿Y qué te mueve a estudiar Derecho justo ahora?\n\nEso dice mucho, ya ves el Derecho en tu día a día. ¿Cuánto podrías destinar al mes a tus estudios sin descuadrarte?\n\nGracias por la confianza. La cuota de Derecho es S/616, pero hoy con el 10 % queda en unos S/554, y ese descuento es para toda la carrera. ¿Cómo lo ves frente a tus 500?\n\nEs una diferencia de unos 54 soles al mes. ¿Qué te pesa más, la cuota mensual o la primera, que es más alta?\n\nEntonces lo tuyo es estudiar Derecho sin dejar el trabajo, con unos 500 al mes, y te preocupa la primera cuota. Justo esa baja bastante porque hoy la matrícula es gratis. ¿Te cuento cómo queda?",
   "variantes": [
    {
     "titulo": "Dos diferenciales ligados a su meta",
@@ -12981,7 +12981,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "La cuota normal es S/616, y con el descuento queda en unos S/554. Eso es menos de 19 soles al día. ¿Cómo lo ves frente a tu presupuesto?"
+      "texto": "La cuota normal es S/616, y con el descuento queda en unos S/554. ¿Cómo lo ves frente a tu presupuesto?"
      },
      {
       "quien": "cliente",
@@ -13016,7 +13016,7 @@
       "texto": "Perfecto. Lo más seguro es rendir la evaluación dentro de la campaña: es virtual, desde una laptop con cámara, y no es un examen de conocimientos. ¿Te acomoda hoy en la noche o mañana?"
      }
     ],
-    "speech": "Lolo, te cuento primero lo que más te conviene: tus cuotas de Derecho tienen 10 % menos durante toda la carrera, no solo este ciclo. ¿Te lo detallo en soles?\n\nLa cuota normal es S/616, y con el descuento queda en unos S/554. Eso es menos de 19 soles al día. ¿Cómo lo ves frente a tu presupuesto?\n\nExacto, con eso ya estás estudiando una carrera. Son 5 cuotas por ciclo, y solo la primera es mayor porque trae seguro y examen médico: queda en unos S/620. ¿Hasta ahí claro?\n\nBien que lo preguntas. La matrícula normalmente es S/250 y hoy es gratis, por eso tu primera cuota baja tanto. Sumado, en el ciclo ahorras S/558. ¿Eso te ayuda a cuadrar tu presupuesto?\n\nTe pido disculpas por la confusión, mejor una sola referencia. El beneficio aplica mientras la campaña siga vigente, y te mando la fecha exacta de cierre por escrito al WhatsApp ahora. ¿Así lo tienes claro?\n\nPerfecto. Lo más seguro es rendir la evaluación dentro de la campaña: es virtual, desde una laptop con cámara, y no es un examen de conocimientos. ¿Te acomoda hoy en la noche o mañana?",
+    "speech": "Lolo, te cuento primero lo que más te conviene: tus cuotas de Derecho tienen 10 % menos durante toda la carrera, no solo este ciclo. ¿Te lo detallo en soles?\n\nLa cuota normal es S/616, y con el descuento queda en unos S/554. ¿Cómo lo ves frente a tu presupuesto?\n\nExacto, con eso ya estás estudiando una carrera. Son 5 cuotas por ciclo, y solo la primera es mayor porque trae seguro y examen médico: queda en unos S/620. ¿Hasta ahí claro?\n\nBien que lo preguntas. La matrícula normalmente es S/250 y hoy es gratis, por eso tu primera cuota baja tanto. Sumado, en el ciclo ahorras S/558. ¿Eso te ayuda a cuadrar tu presupuesto?\n\nTe pido disculpas por la confusión, mejor una sola referencia. El beneficio aplica mientras la campaña siga vigente, y te mando la fecha exacta de cierre por escrito al WhatsApp ahora. ¿Así lo tienes claro?\n\nPerfecto. Lo más seguro es rendir la evaluación dentro de la campaña: es virtual, desde una laptop con cámara, y no es un examen de conocimientos. ¿Te acomoda hoy en la noche o mañana?",
     "porQue": "Arranca por el beneficio que dura toda la carrera y lo baja a su gasto diario; además corrige la confusión de fechas con una sola referencia escrita, lo que devuelve la confianza."
    },
    {
@@ -13522,7 +13522,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Y sobre la cuota: normalmente es S/638 y, si inicias en esta campaña, queda en S/575 toda la carrera. Es menos de 20 soles al día. ¿Cómo lo ves?"
+      "texto": "Y sobre la cuota: normalmente es S/638 y, si inicias en esta campaña, queda en S/575 toda la carrera. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
@@ -13533,7 +13533,7 @@
       "texto": "Para asegurarlo solo das S/100 de admisión en vez de S/200, y la evaluación es virtual desde tu laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?"
      }
     ],
-    "speech": "[nombre], la propuesta te llega por WhatsApp. ¿Qué es lo que más te importa para decidir?\n\nTe entiendo. ¿Qué te pesa más, la cuota de cada mes o lo que pagas al inicio?\n\nEntonces te cuento algo que muchos no toman en cuenta: con tus estudios anteriores, el área académica revisa tus sílabos y puede convalidarte cursos. Eso puede reducir tiempo e inversión. ¿Tiene sentido para ti?\n\nY sobre la cuota: normalmente es S/638 y, si inicias en esta campaña, queda en S/575 toda la carrera. Es menos de 20 soles al día. ¿Cómo lo ves?\n\nPara asegurarlo solo das S/100 de admisión en vez de S/200, y la evaluación es virtual desde tu laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?"
+    "speech": "[nombre], la propuesta te llega por WhatsApp. ¿Qué es lo que más te importa para decidir?\n\nTe entiendo. ¿Qué te pesa más, la cuota de cada mes o lo que pagas al inicio?\n\nEntonces te cuento algo que muchos no toman en cuenta: con tus estudios anteriores, el área académica revisa tus sílabos y puede convalidarte cursos. Eso puede reducir tiempo e inversión. ¿Tiene sentido para ti?\n\nY sobre la cuota: normalmente es S/638 y, si inicias en esta campaña, queda en S/575 toda la carrera. ¿Cómo lo ves?\n\nPara asegurarlo solo das S/100 de admisión en vez de S/200, y la evaluación es virtual desde tu laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?"
    },
    {
     "titulo": "Objeción: espero la convalidación",
@@ -14126,7 +14126,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Tu cuota en esa carrera es S/554, pero con la campaña te queda en S/499, y ese 10 % menos lo tienes toda la carrera. Es menos de 17 soles al día. ¿Vamos bien?"
+    "texto": "Tu cuota en esa carrera es S/554, pero con la campaña te queda en S/499, y ese 10 % menos lo tienes toda la carrera. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
@@ -14145,7 +14145,7 @@
     "texto": "Entonces tu siguiente paso es la evaluación de admisión: virtual, desde tu laptop con cámara, y no es de conocimientos. Me dijiste que sales de clases a las 5:30, ¿la rindes hoy a las 6 o mañana a la misma hora?"
    }
   ],
-  "speech": "[nombre], antes de hablarte de otra carrera quiero entenderte bien. Ya eres docente de primaria, ¿qué quieres lograr con un título universitario?\n\nEntiendo, quieres crecer en lo que ya haces con tus alumnos. ¿Y qué te gustaría hacer distinto en tu aula cuando tengas ese título?\n\nEso que dices es justo lo que forma Educación con especialidad en Innovación y Aprendizaje Digital: diseñas experiencias de aprendizaje con tecnología educativa y lo aplicas en tu propia aula. ¿Te imaginas haciéndolo?\n\nTu cuota en esa carrera es S/554, pero con la campaña te queda en S/499, y ese 10 % menos lo tienes toda la carrera. Es menos de 17 soles al día. ¿Vamos bien?\n\nEso lo define el área académica revisando tus sílabos; yo no te puedo adelantar cuántos cursos. Lo que sí: por matricularte tienes de regalo Nexus y el Taller de Excel certificado. ¿Hasta ahí claro?\n\nEntonces tu siguiente paso es la evaluación de admisión: virtual, desde tu laptop con cámara, y no es de conocimientos. Me dijiste que sales de clases a las 5:30, ¿la rindes hoy a las 6 o mañana a la misma hora?",
+  "speech": "[nombre], antes de hablarte de otra carrera quiero entenderte bien. Ya eres docente de primaria, ¿qué quieres lograr con un título universitario?\n\nEntiendo, quieres crecer en lo que ya haces con tus alumnos. ¿Y qué te gustaría hacer distinto en tu aula cuando tengas ese título?\n\nEso que dices es justo lo que forma Educación con especialidad en Innovación y Aprendizaje Digital: diseñas experiencias de aprendizaje con tecnología educativa y lo aplicas en tu propia aula. ¿Te imaginas haciéndolo?\n\nTu cuota en esa carrera es S/554, pero con la campaña te queda en S/499, y ese 10 % menos lo tienes toda la carrera. ¿Vamos bien?\n\nEso lo define el área académica revisando tus sílabos; yo no te puedo adelantar cuántos cursos. Lo que sí: por matricularte tienes de regalo Nexus y el Taller de Excel certificado. ¿Hasta ahí claro?\n\nEntonces tu siguiente paso es la evaluación de admisión: virtual, desde tu laptop con cámara, y no es de conocimientos. Me dijiste que sales de clases a las 5:30, ¿la rindes hoy a las 6 o mañana a la misma hora?",
   "variantes": [
    {
     "titulo": "Su objetivo y pasos de admisión",
@@ -14269,7 +14269,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Y luego tus cuotas son de S/499, menos de 17 soles al día, lo que gastas en un par de pasajes. ¿Te sirve así?"
+      "texto": "Y luego tus cuotas son de S/499. ¿Te sirve así?"
      },
      {
       "quien": "cliente",
@@ -14288,7 +14288,7 @@
       "texto": "Perfecto. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy a las 6, apenas sales de clases, o mañana a la misma hora?"
      }
     ],
-    "speech": "Claro, [nombre]. Me dijiste que sales a las 5:30, así que lo podemos dejar listo ahora mismo. ¿Qué es lo que quieres pensar, la carrera o la inversión?\n\nTe entiendo. Por eso hoy no pagas cuotas: los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota va 24 horas después de tu evaluación. ¿Te hace sentido?\n\nY luego tus cuotas son de S/499, menos de 17 soles al día, lo que gastas en un par de pasajes. ¿Te sirve así?\n\nAdemás, por matricularte tienes matrícula a mitad de precio, Nexus para adelantar cursos y el Taller de Excel certificado, sin costo adicional. ¿Cómo lo ves?\n\nPerfecto. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy a las 6, apenas sales de clases, o mañana a la misma hora?",
+    "speech": "Claro, [nombre]. Me dijiste que sales a las 5:30, así que lo podemos dejar listo ahora mismo. ¿Qué es lo que quieres pensar, la carrera o la inversión?\n\nTe entiendo. Por eso hoy no pagas cuotas: los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota va 24 horas después de tu evaluación. ¿Te hace sentido?\n\nY luego tus cuotas son de S/499. ¿Te sirve así?\n\nAdemás, por matricularte tienes matrícula a mitad de precio, Nexus para adelantar cursos y el Taller de Excel certificado, sin costo adicional. ¿Cómo lo ves?\n\nPerfecto. La evaluación es virtual, desde tu laptop con cámara. ¿La rindes hoy a las 6, apenas sales de clases, o mañana a la misma hora?",
     "porQue": "Ante el lo pienso, preguntas qué quiere pensar y resuelves esa duda en la misma llamada. Usar su hora de salida evita dejar un te aviso sin fecha."
    },
    {
@@ -14429,7 +14429,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Claro. Tu cuota de Primaria normalmente es de unos S/554, y con el 10 % de campaña te queda en S/499 toda la carrera. Son menos de 17 soles al día. ¿Hasta ahí claro?"
+      "texto": "Claro. Tu cuota de Primaria normalmente es de unos S/554, y con el 10 % de campaña te queda en S/499 toda la carrera. ¿Hasta ahí claro?"
      },
      {
       "quien": "cliente",
@@ -14440,7 +14440,7 @@
       "texto": "La primera cuota trae créditos, matrícula, seguro y examen médico: normalmente unos S/870, y con la matrícula gratis, unos S/565. La pagas 24 horas después de tu evaluación. ¿La rindes hoy después de las 5:30 o mañana?"
      }
     ],
-    "speech": "[nombre], antes de hablarte de otra carrera quiero entenderte bien. ¿Qué buscas lograr con el título universitario, siendo ya docente de primaria?\n\nEspecializarte y crecer en tu colegio. Entonces la carrera que elijas tiene que responder a eso, no solo a cuántos cursos se convalidan. ¿Estás de acuerdo?\n\nEn Educación Primaria estudiarías sin convalidación. En la carrera afín sí se revisan tus estudios, y el área académica define qué cursos. ¿Cuál de las dos se acerca más a tu meta?\n\nSería el plan completo, sí. Lo bueno es que con tu experiencia en aula vas a aprovechar cada curso, y las clases quedan grabadas para tu horario. ¿Cómo lo ves?\n\nClaro. Tu cuota de Primaria normalmente es de unos S/554, y con el 10 % de campaña te queda en S/499 toda la carrera. Son menos de 17 soles al día. ¿Hasta ahí claro?\n\nLa primera cuota trae créditos, matrícula, seguro y examen médico: normalmente unos S/870, y con la matrícula gratis, unos S/565. La pagas 24 horas después de tu evaluación. ¿La rindes hoy después de las 5:30 o mañana?",
+    "speech": "[nombre], antes de hablarte de otra carrera quiero entenderte bien. ¿Qué buscas lograr con el título universitario, siendo ya docente de primaria?\n\nEspecializarte y crecer en tu colegio. Entonces la carrera que elijas tiene que responder a eso, no solo a cuántos cursos se convalidan. ¿Estás de acuerdo?\n\nEn Educación Primaria estudiarías sin convalidación. En la carrera afín sí se revisan tus estudios, y el área académica define qué cursos. ¿Cuál de las dos se acerca más a tu meta?\n\nSería el plan completo, sí. Lo bueno es que con tu experiencia en aula vas a aprovechar cada curso, y las clases quedan grabadas para tu horario. ¿Cómo lo ves?\n\nClaro. Tu cuota de Primaria normalmente es de unos S/554, y con el 10 % de campaña te queda en S/499 toda la carrera. ¿Hasta ahí claro?\n\nLa primera cuota trae créditos, matrícula, seguro y examen médico: normalmente unos S/870, y con la matrícula gratis, unos S/565. La pagas 24 horas después de tu evaluación. ¿La rindes hoy después de las 5:30 o mañana?",
     "porQue": "Preguntar qué busca con el título pone su meta por delante de la convalidación. Comparar ambas opciones con la inversión explicada por partes la deja eligiendo con claridad y lista para la evaluación."
    },
    {
@@ -15338,7 +15338,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Son menos de 17 soles al día, [nombre]. Para empezar no necesitas todo: hoy la admisión es S/100 en vez de S/200, y la primera cuota la pagas 24 horas después de tu evaluación. ¿Vamos bien?"
+    "texto": " Para empezar no necesitas todo: hoy la admisión es S/100 en vez de S/200, y la primera cuota la pagas 24 horas después de tu evaluación. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
@@ -15357,7 +15357,7 @@
     "texto": "La primera cuota es la más alta porque trae tu cuota, la matrícula, el seguro y el examen médico: normalmente S/876, hoy S/695. Desde abril pagas S/504. ¿Rindes tu evaluación virtual hoy en la noche o mañana temprano?"
    }
   ],
-  "speech": "[nombre], antes de hablarte de montos quiero armarlo a tu medida. Para tus estudios, ¿cuánto tenías pensado destinar al mes sin descuadrar tu casa?\n\nTe entiendo, y es bueno tenerlo claro. La cuota normal de Contabilidad y Finanzas es S/560, un poco más de lo que pensabas. ¿Eso es lo que te preocupa o hay algo más?\n\nLo del tiempo ya lo vimos: empiezas virtual, con clases grabadas, y luego evalúas pasarte a semipresencial. Para lo económico hay un beneficio vigente: tu cuota baja a S/504 y se queda así toda la carrera. ¿Eso entra en lo que pensabas?\n\nSon menos de 17 soles al día, [nombre]. Para empezar no necesitas todo: hoy la admisión es S/100 en vez de S/200, y la primera cuota la pagas 24 horas después de tu evaluación. ¿Vamos bien?\n\nClaro. Dime qué parte quieres ver con calma, ¿el monto o el horario? Así lo resolvemos ahora y no te quedas con la duda.\n\nLa primera cuota es la más alta porque trae tu cuota, la matrícula, el seguro y el examen médico: normalmente S/876, hoy S/695. Desde abril pagas S/504. ¿Rindes tu evaluación virtual hoy en la noche o mañana temprano?",
+  "speech": "[nombre], antes de hablarte de montos quiero armarlo a tu medida. Para tus estudios, ¿cuánto tenías pensado destinar al mes sin descuadrar tu casa?\n\nTe entiendo, y es bueno tenerlo claro. La cuota normal de Contabilidad y Finanzas es S/560, un poco más de lo que pensabas. ¿Eso es lo que te preocupa o hay algo más?\n\nLo del tiempo ya lo vimos: empiezas virtual, con clases grabadas, y luego evalúas pasarte a semipresencial. Para lo económico hay un beneficio vigente: tu cuota baja a S/504 y se queda así toda la carrera. ¿Eso entra en lo que pensabas? Para empezar no necesitas todo: hoy la admisión es S/100 en vez de S/200, y la primera cuota la pagas 24 horas después de tu evaluación. ¿Vamos bien?\n\nClaro. Dime qué parte quieres ver con calma, ¿el monto o el horario? Así lo resolvemos ahora y no te quedas con la duda.\n\nLa primera cuota es la más alta porque trae tu cuota, la matrícula, el seguro y el examen médico: normalmente S/876, hoy S/695. Desde abril pagas S/504. ¿Rindes tu evaluación virtual hoy en la noche o mañana temprano?",
   "variantes": [
    {
     "titulo": "Separar tiempo y dinero",
@@ -15555,7 +15555,7 @@
  },
  "Ruth Alexandra Mauricio Verde|paso4": {
   "stage": "paso4",
-  "base": "d170624c9f4e",
+  "base": "c781d7352bba",
   "v": 2,
   "conclusion": "Mantuviste un trato cordial y dejaste abierta la orientación por WhatsApp. Refuerza el cierre: no termines la llamada sin completar el protocolo y transfiere siempre a la encuesta de satisfacción.",
   "tecId": "tec_16",
@@ -16758,7 +16758,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Entonces esto es una inversión para ese ascenso. Tu cuota mensual es de S/560, pero hoy te queda en S/504, y ese 10 % menos lo tienes toda la carrera. Eso es menos de 17 soles al día. ¿Vamos bien?"
+    "texto": "Entonces esto es una inversión para ese ascenso. Tu cuota mensual es de S/560, pero hoy te queda en S/504, y ese 10 % menos lo tienes toda la carrera. ¿Vamos bien?"
    },
    {
     "quien": "cliente",
@@ -16785,7 +16785,7 @@
     "texto": "Exacto, y la pagas recién 24 horas después de tu evaluación. Las demás cuotas, desde abril, son de S/504, según tus créditos. Con tu ascenso en mente, ¿te parece si vemos cómo arrancar este ciclo?"
    }
   ],
-  "speech": "[nombre], antes de hablar de montos quiero entender algo: ¿qué buscas lograr con tu grado universitario?\n\nEntonces esto es una inversión para ese ascenso. Tu cuota mensual es de S/560, pero hoy te queda en S/504, y ese 10 % menos lo tienes toda la carrera. Eso es menos de 17 soles al día. ¿Vamos bien?\n\nSí se paga, pero con 50 % de descuento: normalmente es S/250 y hoy es S/125. Va dentro de tu primera cuota. ¿Hasta ahí claro?\n\nTu primera cuota trae tus créditos, la matrícula, el seguro contra accidentes y el examen médico. Normalmente sería S/876, pero hoy te queda en S/695. ¿Cómo lo ves?\n\nExacto, y la pagas recién 24 horas después de tu evaluación. Las demás cuotas, desde abril, son de S/504, según tus créditos. Con tu ascenso en mente, ¿te parece si vemos cómo arrancar este ciclo?",
+  "speech": "[nombre], antes de hablar de montos quiero entender algo: ¿qué buscas lograr con tu grado universitario?\n\nEntonces esto es una inversión para ese ascenso. Tu cuota mensual es de S/560, pero hoy te queda en S/504, y ese 10 % menos lo tienes toda la carrera. ¿Vamos bien?\n\nSí se paga, pero con 50 % de descuento: normalmente es S/250 y hoy es S/125. Va dentro de tu primera cuota. ¿Hasta ahí claro?\n\nTu primera cuota trae tus créditos, la matrícula, el seguro contra accidentes y el examen médico. Normalmente sería S/876, pero hoy te queda en S/695. ¿Cómo lo ves?\n\nExacto, y la pagas recién 24 horas después de tu evaluación. Las demás cuotas, desde abril, son de S/504, según tus créditos. Con tu ascenso en mente, ¿te parece si vemos cómo arrancar este ciclo?",
   "variantes": [
    {
     "titulo": "Paso a paso, en orden",
@@ -17405,7 +17405,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "S/504 al mes es menos de 17 soles al día. ¿Y para qué te gustaría que te sirva esa inversión?"
+      "texto": "Son S/504 al mes. ¿Y para qué te gustaría que te sirva esa inversión?"
      },
      {
       "quien": "cliente",
@@ -17424,7 +17424,7 @@
       "texto": "Así lo vamos a trabajar. Te explico ahora cómo se ajusta la carrera a tu horario. ¿Te parece?"
      }
     ],
-    "speech": "[nombre], ¿qué te gustaría lograr al terminar la carrera?\n\nBuena pregunta, te lo digo ahora. Antes, para darte la opción correcta, ¿quién te apoyaría con el pago?\n\nPerfecto. En Administración la cuota es S/560, pero hoy con el beneficio te queda en S/504. ¿Vamos bien?\n\nS/504 al mes es menos de 17 soles al día. ¿Y para qué te gustaría que te sirva esa inversión?\n\nEntonces es una inversión en tu ascenso. ¿Ya te ves en ese puesto?\n\nAsí lo vamos a trabajar. Te explico ahora cómo se ajusta la carrera a tu horario. ¿Te parece?",
+    "speech": "[nombre], ¿qué te gustaría lograr al terminar la carrera?\n\nBuena pregunta, te lo digo ahora. Antes, para darte la opción correcta, ¿quién te apoyaría con el pago?\n\nPerfecto. En Administración la cuota es S/560, pero hoy con el beneficio te queda en S/504. ¿Vamos bien?\n\nSon S/504 al mes. ¿Y para qué te gustaría que te sirva esa inversión?\n\nEntonces es una inversión en tu ascenso. ¿Ya te ves en ese puesto?\n\nAsí lo vamos a trabajar. Te explico ahora cómo se ajusta la carrera a tu horario. ¿Te parece?",
     "porQue": "Cuando piden precio antes de terminar de indagar, se valida y se pregunta lo justo para dar el número con contexto."
    },
    {
@@ -17673,7 +17673,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Son cinco en el ciclo. Las otras cuatro, desde abril, son de S/569, y el monto depende de los créditos que lleves. Eso es menos de 19 soles al día. ¿Cómo lo ves?"
+      "texto": "Son cinco en el ciclo. Las otras cuatro, desde abril, son de S/569, y el monto depende de los créditos que lleves. ¿Cómo lo ves?"
      },
      {
       "quien": "cliente",
@@ -17700,7 +17700,7 @@
       "texto": "Perfecto, mañana a las 9 de la noche. Te saluda Edward, de la Universidad Continental. Ahora te paso a una encuesta breve de atención, ¿me ayudas respondiéndola?"
      }
     ],
-    "speech": "Claro, [nombre], es una decisión importante. ¿Qué te gustaría analizar antes de dar el paso: los pagos, el horario o la carrera?\n\nTe lo explico. 24 horas después de tu evaluación pagas tu primera cuota: trae tu cuota del ciclo, el seguro y el examen médico. Con tu beneficio queda en S/635. ¿Hasta ahí claro?\n\nSon cinco en el ciclo. Las otras cuatro, desde abril, son de S/569, y el monto depende de los créditos que lleves. Eso es menos de 19 soles al día. ¿Cómo lo ves?\n\nTodo esto te lo dejo por escrito en tu WhatsApp ahora mismo. ¿Te llegó?\n\nEntonces ya no queda nada pendiente por analizar. ¿Tu evaluación la rindes hoy a las 9 de la noche o mañana a la misma hora?\n\nPerfecto, mañana a las 9 de la noche. Te saluda Edward, de la Universidad Continental. Ahora te paso a una encuesta breve de atención, ¿me ayudas respondiéndola?",
+    "speech": "Claro, [nombre], es una decisión importante. ¿Qué te gustaría analizar antes de dar el paso: los pagos, el horario o la carrera?\n\nTe lo explico. 24 horas después de tu evaluación pagas tu primera cuota: trae tu cuota del ciclo, el seguro y el examen médico. Con tu beneficio queda en S/635. ¿Hasta ahí claro?\n\nSon cinco en el ciclo. Las otras cuatro, desde abril, son de S/569, y el monto depende de los créditos que lleves. ¿Cómo lo ves?\n\nTodo esto te lo dejo por escrito en tu WhatsApp ahora mismo. ¿Te llegó?\n\nEntonces ya no queda nada pendiente por analizar. ¿Tu evaluación la rindes hoy a las 9 de la noche o mañana a la misma hora?\n\nPerfecto, mañana a las 9 de la noche. Te saluda Edward, de la Universidad Continental. Ahora te paso a una encuesta breve de atención, ¿me ayudas respondiéndola?",
     "porQue": "La objeción típica al cierre es lo voy a analizar: preguntas qué analizar, explicas qué incluye el pago tras la evaluación y las cuotas, lo dejas en WhatsApp y cierras con hora, despedida y encuesta."
    },
    {
@@ -17845,7 +17845,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Tercero, las otras cuatro cuotas desde abril, de S/504. Eso es menos de 17 soles al día. ¿Con esto tus papás tendrían lo que necesitan para decidir?"
+      "texto": "Tercero, las otras cuatro cuotas desde abril, de S/504. ¿Con esto tus papás tendrían lo que necesitan para decidir?"
      },
      {
       "quien": "cliente",
@@ -17856,7 +17856,7 @@
       "texto": "Claro, si tu mamá o tu papá están cerca, ponlos en altavoz y se los explico ahora. Si no, te mando todo por WhatsApp. ¿Tu evaluación la rindes hoy en la noche o mañana?"
      }
     ],
-    "speech": "Te entiendo, [nombre]. Antes de ajustar, hay algo que puede ayudarte: tus ciclos de Contabilidad. ¿Cuántos llegaste a aprobar?\n\nEsos ciclos los revisa el área académica por sílabos y decide qué cursos se reconocen. Eso puede acortar tu carrera y bajar la inversión total. ¿Se lo habías contado a tus papás?\n\nEntonces llévales también el orden de pagos. Primero, la admisión: S/100 en vez de S/200. ¿Hasta ahí claro?\n\nSegundo, un día después de la evaluación, tu primera cuota: S/570, con seguro y examen médico incluidos y la matrícula gratis. ¿Vamos bien?\n\nTercero, las otras cuatro cuotas desde abril, de S/504. Eso es menos de 17 soles al día. ¿Con esto tus papás tendrían lo que necesitan para decidir?\n\nClaro, si tu mamá o tu papá están cerca, ponlos en altavoz y se los explico ahora. Si no, te mando todo por WhatsApp. ¿Tu evaluación la rindes hoy en la noche o mañana?",
+    "speech": "Te entiendo, [nombre]. Antes de ajustar, hay algo que puede ayudarte: tus ciclos de Contabilidad. ¿Cuántos llegaste a aprobar?\n\nEsos ciclos los revisa el área académica por sílabos y decide qué cursos se reconocen. Eso puede acortar tu carrera y bajar la inversión total. ¿Se lo habías contado a tus papás?\n\nEntonces llévales también el orden de pagos. Primero, la admisión: S/100 en vez de S/200. ¿Hasta ahí claro?\n\nSegundo, un día después de la evaluación, tu primera cuota: S/570, con seguro y examen médico incluidos y la matrícula gratis. ¿Vamos bien?\n\nTercero, las otras cuatro cuotas desde abril, de S/504. ¿Con esto tus papás tendrían lo que necesitan para decidir?\n\nClaro, si tu mamá o tu papá están cerca, ponlos en altavoz y se los explico ahora. Si no, te mando todo por WhatsApp. ¿Tu evaluación la rindes hoy en la noche o mañana?",
     "porQue": "La convalidación convierte sus estudios previos en ahorro y le da un argumento nuevo para su familia. El orden de pagos le deja todo listo para decidir en la misma llamada."
    },
    {
@@ -17961,7 +17961,7 @@
     "dialogo": [
      {
       "quien": "asesor",
-      "texto": "[nombre], antes de que lo converses en casa, confirmemos. Los S/504 al mes, que son menos de 17 soles al día, ¿están a tu alcance?"
+      "texto": "[nombre], antes de que lo converses en casa, confirmemos. Los S/504 al mes, ¿están a tu alcance?"
      },
      {
       "quien": "cliente",
@@ -17996,7 +17996,7 @@
       "texto": "Entonces el siguiente paso es tu evaluación de admisión: virtual, desde una laptop con cámara, sin examen de conocimientos. Por matricularte tienes Nexus y el Taller de Excel certificado. ¿La rindes hoy en la noche o mañana temprano?"
      }
     ],
-    "speech": "[nombre], antes de que lo converses en casa, confirmemos. Los S/504 al mes, que son menos de 17 soles al día, ¿están a tu alcance?\n\nBien. ¿Y quedó claro que tus ciclos de Contabilidad pasan a revisión de sílabos y pueden ahorrarte tiempo?\n\nEntonces, con esto, ¿quedó resuelto lo que te preocupaba de la inversión?\n\nTe entiendo. ¿Qué crees que te dirían si saben que este ciclo ahorras S/530 y que puedes trabajar y estudiar a la vez?\n\nEntonces el siguiente paso es tu evaluación de admisión: virtual, desde una laptop con cámara, sin examen de conocimientos. Por matricularte tienes Nexus y el Taller de Excel certificado. ¿La rindes hoy en la noche o mañana temprano?",
+    "speech": "[nombre], antes de que lo converses en casa, confirmemos. Los S/504 al mes, ¿están a tu alcance?\n\nBien. ¿Y quedó claro que tus ciclos de Contabilidad pasan a revisión de sílabos y pueden ahorrarte tiempo?\n\nEntonces, con esto, ¿quedó resuelto lo que te preocupaba de la inversión?\n\nTe entiendo. ¿Qué crees que te dirían si saben que este ciclo ahorras S/530 y que puedes trabajar y estudiar a la vez?\n\nEntonces el siguiente paso es tu evaluación de admisión: virtual, desde una laptop con cámara, sin examen de conocimientos. Por matricularte tienes Nexus y el Taller de Excel certificado. ¿La rindes hoy en la noche o mañana temprano?",
     "porQue": "Los cierres parciales confirman monto, convalidación y preocupación uno por uno. Al hacerle imaginar la respuesta de sus papás, él mismo concluye y la evaluación queda para hoy o mañana."
    }
   ]
@@ -19187,7 +19187,7 @@
  },
  "Maria Alejandra Pino Contreras|paso4": {
   "stage": "paso4",
-  "base": "648cffeb770f",
+  "base": "89843af93b13",
   "v": 2,
   "conclusion": "Mantuviste un trato cordial y acompañaste al prospecto. Refuerza el cierre: despídete con tu nombre y la Unidad CIE y transfiere a la encuesta de satisfacción, sin terminar la llamada antes de completar el acompañamiento.",
   "tecId": "tec_16",
@@ -21142,7 +21142,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Son 5 cuotas por ciclo, una al mes. Eso es menos de 19 soles al día. ¿Cómo crees que lo tomen en casa?"
+    "texto": "Son 5 cuotas por ciclo, una al mes. ¿Cómo crees que lo tomen en casa?"
    },
    {
     "quien": "cliente",
@@ -21161,7 +21161,7 @@
     "texto": "Entonces lo tuyo es ser abogada para ayudar a tu familia, con un costo claro para tus papás y tiempo para trabajar. ¿Le pasas el celular a tu mamá y le cuento cómo lo resolvemos?"
    }
   ],
-  "speech": "Marisela, me contaste que quieres Derecho y que estás en quinto de secundaria. Antes de seguir, ¿qué te imaginas haciendo como abogada en Cajamarca dentro de unos años?\n\nQué bonito, quieres ser la que resuelve en tu familia. En la UC eso se entrena con técnicas de litigación oral y casos reales. ¿Tus papás te apoyan en esta decisión?\n\nPerfecto, te lo digo directo para que se lo cuentes tal cual. La cuota de Derecho es S/616, pero hoy con el descuento queda en unos S/554. Y ese 10 % menos es para toda la carrera. ¿Hasta ahí claro?\n\nSon 5 cuotas por ciclo, una al mes. Eso es menos de 19 soles al día. ¿Cómo crees que lo tomen en casa?\n\nBuena pregunta de tu papá. Las clases son virtuales en vivo y quedan grabadas, así que puedes acomodarlas a un trabajo de medio tiempo. ¿Está alguno de tus papás contigo ahora?\n\nEntonces lo tuyo es ser abogada para ayudar a tu familia, con un costo claro para tus papás y tiempo para trabajar. ¿Le pasas el celular a tu mamá y le cuento cómo lo resolvemos?",
+  "speech": "Marisela, me contaste que quieres Derecho y que estás en quinto de secundaria. Antes de seguir, ¿qué te imaginas haciendo como abogada en Cajamarca dentro de unos años?\n\nQué bonito, quieres ser la que resuelve en tu familia. En la UC eso se entrena con técnicas de litigación oral y casos reales. ¿Tus papás te apoyan en esta decisión?\n\nPerfecto, te lo digo directo para que se lo cuentes tal cual. La cuota de Derecho es S/616, pero hoy con el descuento queda en unos S/554. Y ese 10 % menos es para toda la carrera. ¿Hasta ahí claro?\n\nSon 5 cuotas por ciclo, una al mes. ¿Cómo crees que lo tomen en casa?\n\nBuena pregunta de tu papá. Las clases son virtuales en vivo y quedan grabadas, así que puedes acomodarlas a un trabajo de medio tiempo. ¿Está alguno de tus papás contigo ahora?\n\nEntonces lo tuyo es ser abogada para ayudar a tu familia, con un costo claro para tus papás y tiempo para trabajar. ¿Le pasas el celular a tu mamá y le cuento cómo lo resolvemos?",
   "variantes": [
    {
     "titulo": "Dos diferenciales y luego el orden de pago",
@@ -21949,7 +21949,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Tercero, las otras cuatro cuotas desde abril, de S/504 cada una. Son menos de 17 soles al día. ¿Cómo lo ves con tu presupuesto?"
+      "texto": "Tercero, las otras cuatro cuotas desde abril, de S/504 cada una. ¿Cómo lo ves con tu presupuesto?"
      },
      {
       "quien": "cliente",
@@ -21960,7 +21960,7 @@
       "texto": "Perfecto. Y de regalo, Nexus para adelantar cursos y el Taller de Excel certificado. ¿Qué fecha te acomoda para rendir tu evaluación con normalidad, hoy o mañana?"
      }
     ],
-    "speech": "[nombre], te lo explico en tres pasos, cada uno con su beneficio. Primero, la admisión: normalmente S/200, hoy con 50 % menos te queda en S/100. ¿Te sirve así?\n\nSegundo, 24 horas después de tu evaluación das la primera cuota. Normalmente es S/876, porque trae créditos, matrícula, seguro y examen médico. Hoy pagas S/570.\n\nPorque la matrícula es gratis en tu primer ciclo y tus créditos tienen 10 % menos. Esas son las dos condiciones. ¿Hasta ahí claro?\n\nTercero, las otras cuatro cuotas desde abril, de S/504 cada una. Son menos de 17 soles al día. ¿Cómo lo ves con tu presupuesto?\n\nPerfecto. Y de regalo, Nexus para adelantar cursos y el Taller de Excel certificado. ¿Qué fecha te acomoda para rendir tu evaluación con normalidad, hoy o mañana?",
+    "speech": "[nombre], te lo explico en tres pasos, cada uno con su beneficio. Primero, la admisión: normalmente S/200, hoy con 50 % menos te queda en S/100. ¿Te sirve así?\n\nSegundo, 24 horas después de tu evaluación das la primera cuota. Normalmente es S/876, porque trae créditos, matrícula, seguro y examen médico. Hoy pagas S/570.\n\nPorque la matrícula es gratis en tu primer ciclo y tus créditos tienen 10 % menos. Esas son las dos condiciones. ¿Hasta ahí claro?\n\nTercero, las otras cuatro cuotas desde abril, de S/504 cada una. ¿Cómo lo ves con tu presupuesto?\n\nPerfecto. Y de regalo, Nexus para adelantar cursos y el Taller de Excel certificado. ¿Qué fecha te acomoda para rendir tu evaluación con normalidad, hoy o mañana?",
     "porQue": "Ordenar los beneficios según cuándo se pagan, con su condición, deja claro qué aplica hoy y qué después; el cliente no se lleva sorpresas."
    },
    {
@@ -22099,7 +22099,7 @@
  },
  "Orlando Jesus Pintado Sandoval|paso4": {
   "stage": "paso4",
-  "base": "fe5946ac6b73",
+  "base": "1bd2494fb157",
   "v": 2,
   "conclusion": "Mantuviste una comunicación cordial y disposición para resolver dudas. Te faltó adaptar la propuesta a su limitación económica con un compromiso realista y con fecha, y completar el protocolo de cierre hasta la despedida y la encuesta de satisfacción.",
   "tecId": "tec_14",
@@ -22130,7 +22130,7 @@
    },
    {
     "quien": "asesor",
-    "texto": "Un poquito, sí: S/504 al mes es menos de 17 soles al día. Son 5 cuotas por ciclo y la mayoría ya sabes cuánto son. ¿Cómo lo ves?"
+    "texto": "Un poquito, sí: Son S/504 al mes. Son 5 cuotas por ciclo y la mayoría ya sabes cuánto son. ¿Cómo lo ves?"
    },
    {
     "quien": "cliente",
@@ -22157,7 +22157,7 @@
     "texto": "Listo, el 15 a las 7 de la noche. Y solo por matricularte te registro sin costo en Nexus y en el Taller de Excel certificado. ¿Te mando ahora por WhatsApp el resumen con tus montos y tu hora?"
    }
   ],
-  "speech": "Te entiendo, [nombre], y no te voy a pedir que pagues algo que no tienes. Cuéntame, ¿qué día cobras y más o menos cuánto podrías destinar al mes a tus estudios?\n\nPerfecto, veamos si cuadra. La cuota de Administración es S/560, pero con la campaña te queda en S/504, y ese 10 % menos lo tienes toda tu carrera. ¿Vamos bien?\n\nUn poquito, sí: S/504 al mes es menos de 17 soles al día. Son 5 cuotas por ciclo y la mayoría ya sabes cuánto son. ¿Cómo lo ves?\n\nLo único distinto es la primera cuota: trae tus créditos, el seguro y el examen médico, y con la matrícula a mitad de precio queda en S/695. La pagas 24 horas después de tu evaluación, no hoy. ¿Te sirve así?\n\nExacto. Armemos tu fecha con tu quincena: rindes tu evaluación virtual el 15, desde tu laptop con cámara, y tu primera cuota cae al día siguiente con tu sueldo en mano. ¿A qué hora te acomoda ese día?\n\nListo, el 15 a las 7 de la noche. Y solo por matricularte te registro sin costo en Nexus y en el Taller de Excel certificado. ¿Te mando ahora por WhatsApp el resumen con tus montos y tu hora?",
+  "speech": "Te entiendo, [nombre], y no te voy a pedir que pagues algo que no tienes. Cuéntame, ¿qué día cobras y más o menos cuánto podrías destinar al mes a tus estudios?\n\nPerfecto, veamos si cuadra. La cuota de Administración es S/560, pero con la campaña te queda en S/504, y ese 10 % menos lo tienes toda tu carrera. ¿Vamos bien?\n\nUn poquito, sí: Son S/504 al mes. Son 5 cuotas por ciclo y la mayoría ya sabes cuánto son. ¿Cómo lo ves?\n\nLo único distinto es la primera cuota: trae tus créditos, el seguro y el examen médico, y con la matrícula a mitad de precio queda en S/695. La pagas 24 horas después de tu evaluación, no hoy. ¿Te sirve así?\n\nExacto. Armemos tu fecha con tu quincena: rindes tu evaluación virtual el 15, desde tu laptop con cámara, y tu primera cuota cae al día siguiente con tu sueldo en mano. ¿A qué hora te acomoda ese día?\n\nListo, el 15 a las 7 de la noche. Y solo por matricularte te registro sin costo en Nexus y en el Taller de Excel certificado. ¿Te mando ahora por WhatsApp el resumen con tus montos y tu hora?",
   "variantes": [
    {
     "titulo": "Pagos en orden hasta cobrar",
@@ -22293,7 +22293,7 @@
      },
      {
       "quien": "asesor",
-      "texto": "Son S/504 al mes, menos de 17 soles al día. Te lo dejo por WhatsApp en un mensaje corto para que se lo enseñes. ¿Lo conversas hoy en la noche?"
+      "texto": "Son S/504 al mes. Te lo dejo por WhatsApp en un mensaje corto para que se lo enseñes. ¿Lo conversas hoy en la noche?"
      },
      {
       "quien": "cliente",
@@ -22304,7 +22304,7 @@
       "texto": "Perfecto. Entonces dejamos tu evaluación agendada el 15 a las 7 de la noche, el día que cobras, y si tu familia tiene dudas me escribes. ¿La dejamos fija así?"
      }
     ],
-    "speech": "Me parece bien que lo converses, [nombre]. ¿Hay alguien de tu familia contigo ahora? Si lo pones en altavoz, le explico en dos minutos. ¿Te parece?\n\nEntonces llévales esto claro: hoy no pagas cuotas. Los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota va 24 horas después de tu evaluación. ¿Te hace sentido?\n\nClaro. Lo que te llevas por matricularte es bastante: matrícula a mitad de precio, S/405 de ahorro en el ciclo, Nexus y el Taller de Excel certificado, sin costo adicional. ¿Qué crees que te pregunten primero?\n\nSon S/504 al mes, menos de 17 soles al día. Te lo dejo por WhatsApp en un mensaje corto para que se lo enseñes. ¿Lo conversas hoy en la noche?\n\nPerfecto. Entonces dejamos tu evaluación agendada el 15 a las 7 de la noche, el día que cobras, y si tu familia tiene dudas me escribes. ¿La dejamos fija así?",
+    "speech": "Me parece bien que lo converses, [nombre]. ¿Hay alguien de tu familia contigo ahora? Si lo pones en altavoz, le explico en dos minutos. ¿Te parece?\n\nEntonces llévales esto claro: hoy no pagas cuotas. Los S/100 de admisión te reservan la vacante y el descuento, y la primera cuota va 24 horas después de tu evaluación. ¿Te hace sentido?\n\nClaro. Lo que te llevas por matricularte es bastante: matrícula a mitad de precio, S/405 de ahorro en el ciclo, Nexus y el Taller de Excel certificado, sin costo adicional. ¿Qué crees que te pregunten primero?\n\nSon S/504 al mes. Te lo dejo por WhatsApp en un mensaje corto para que se lo enseñes. ¿Lo conversas hoy en la noche?\n\nPerfecto. Entonces dejamos tu evaluación agendada el 15 a las 7 de la noche, el día que cobras, y si tu familia tiene dudas me escribes. ¿La dejamos fija así?",
     "porQue": "Tras resolver el dinero suele aparecer la familia. Le das un mensaje simple para conversarlo hoy y mantienes la evaluación con fecha y hora, en lugar de un te aviso abierto."
    },
    {

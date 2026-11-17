@@ -99,3 +99,11 @@ Toda etapa con texto necesita `conclusion`; `tecId/porQue/dialogo/speech` solo c
   llamada hacia la evaluación de admisión: «¿qué fecha podrías rendirla con normalidad, hoy o mañana, y accedes al beneficio?»
   (virtual, desde computadora o laptop con cámara); nunca «te llamo mañana».
 - `sync/casos_genericos.json`: situación frecuente por etapa (con 3 opciones) para etapas < 75 % sin observación de calidad.
+
+## Limpieza de lo que escribe calidad (17/11/2026, Christopher)
+
+- **«✨ ENFOQUE DE MEJORA»**: es un cierre general que calidad pega al final de la columna de Cerrar. El script lo separa (`separar_enfoque`) y lo deja en `analisis[asesor].enfoque`; la página lo muestra solo en el paso foco de la última auditoría. El hash de la llamada (checklist) usa el texto tal cual, así que los cachés no se pierden.
+- **Comentario copiado de otra evaluación**: si el saludo de «Evidencia / observación» nombra a otro asesor del equipo («¡Hola, Angelo!» en la fila de Jorge Luis), los textos de esa fila no se muestran (`_textoAjeno`), se avisa en `alertasDatos` y la página indica que se pidió corrección. El puntaje sí se usa.
+- **Patrones del historial** (`stages[paso].patrones`): por etapa, los temas que se repiten en 2 o más auditorías del asesor, en lo que hizo bien (`TEMAS_BIEN`) y en lo que debe mejorar (`TEMAS_MEJORA`), con «n de total» y si aparece en la última.
+- En la página, la tarjeta de auditoría quedó: 🔍 Lo que escuchó tu supervisor (bien / mejorar / enfoque / lo que se repite) · 📋 Lo que faltó del checklist + 💬 Preguntas para usar en este paso · 🏆 Cómo mejorarlo (técnica recomendada con su explicación y las conversaciones). «Recomendaciones que quedan» se retiró.
+- Conversaciones: prohibido convertir la cuota en «soles al día» (ver `guion_conversaciones.md` y `guion_inversion.md`).

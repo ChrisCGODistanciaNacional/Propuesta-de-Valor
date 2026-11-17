@@ -710,12 +710,67 @@ def repartir_por_etapa(texto, por_defecto, preferir):
             out[k] = (out[k] + ' ' + t).strip() if k in out else t
     return out
 
+# --- 17/11/2026 (Christopher): limpieza de lo que escribe calidad --------------------------------------------
+# 1) «✨ ENFOQUE DE MEJORA» es un cierre general que calidad pega al final de la columna de Cerrar: no es una
+#    oportunidad de Cerrar. Se separa como enfoque general de la llamada.
+# 2) Si el saludo de «Evidencia / observación» nombra a OTRO asesor del equipo («¡Hola, Angelo!» en la fila de
+#    Jorge Luis), calidad copió el comentario de otra llamada: esos textos no se muestran y se avisa en alertas.
+RX_ENFOQUE = re.compile(r'(?:✨\s*)?ENFOQUE\s+DE\s+MEJORA\s*:?', re.I)
+def _nfkc(s):
+    return unicodedata.normalize('NFKC', str(s or ''))
+def separar_enfoque(t):
+    if not t:
+        return t, ''
+    s = _nfkc(t)
+    m = RX_ENFOQUE.search(s)
+    if not m:
+        return t, ''
+    return s[:m.start()].rstrip(' \n-✨'), s[m.end():].strip()
+_PRIMEROS = {}
+def _primeros_nombres():
+    if not _PRIMEROS:
+        for r in evaluacion:
+            nm = str(r.get(H_ASESOR, '') or '').strip()
+            if nm:
+                _PRIMEROS.setdefault(_plano_et(nm).split(' ')[0], set()).add(norm(nm))
+    return _PRIMEROS
+def texto_ajeno(row):
+    """Nombre del otro asesor si el saludo del comentario no es para el asesor de la fila; si no, None."""
+    if '_textoAjeno' in row:
+        return row['_textoAjeno']
+    row['_textoAjeno'] = None
+    evid = _nfkc(row.get(H_EVID)) if H_EVID else ''
+    m = re.match(r'\W*hola\W*([a-zñ]+)', _plano_et(evid))
+    if not m:
+        return None
+    g = m.group(1)
+    own = _plano_et(row.get(H_ASESOR)).split(' ')
+    if len(g) < 3 or any(SequenceMatcher(None, g, t).ratio() >= 0.75 for t in own if t):
+        return None
+    otros = _primeros_nombres()
+    if g in otros and norm(row.get(H_ASESOR)) not in otros[g]:
+        row['_textoAjeno'] = g.capitalize()
+        _alerta(row, 'texto_copiado', 'Evidencia / observación', g.capitalize(), None,
+                f'El comentario de esta llamada empieza «Hola, {g.capitalize()}»: parece copiado de la evaluación de otro asesor. No se muestra hasta que calidad lo corrija.')
+    return row['_textoAjeno']
+
 def textos_por_etapa(row):
     """Lee lo que escribió el supervisor y lo reparte por etapa.
     Devuelve (etapas {k: {'fortaleza','oportunidad'}}, fortaleza principal k, brecha principal k, fortalezas general, oportunidades general, evidencia, modo).
     modo = 'etapas' (columnas por etapa del formato nuevo) o 'legado' (un texto general: formato anterior)."""
     evid = _txt(row.get(H_EVID)) if H_EVID else ''
+    if texto_ajeno(row):
+        row['_enfoque'] = None
+        return {k: {'fortaleza': '', 'oportunidad': ''} for k in STAGE_KEYS}, None, None, '', '', '', 'ajeno'
     per = {k: (_txt(row.get(H_FORT_E[k])) if H_FORT_E[k] else '', _txt(row.get(H_OPOR_E[k])) if H_OPOR_E[k] else '') for k in STAGE_KEYS}
+    row['_perRaw'] = dict(per)   # textos tal cual (el hash del checklist no cambia por separar el enfoque)
+    enfoques = []
+    for k in STAGE_KEYS:
+        f0, e1 = separar_enfoque(per[k][0]); o0, e2 = separar_enfoque(per[k][1])
+        per[k] = (f0, o0); enfoques += [e for e in (e1, e2) if e]
+    if not enfoques and evid:
+        enfoques = [e for e in [separar_enfoque(evid)[1]] if e]
+    row['_enfoque'] = enfoques[0] if enfoques else None
     llenas = [k for k in STAGE_KEYS if per[k][0] or per[k][1]]
     fecha = parse_date(row.get(H_FECHA))
     forts_g = _txt(row.get(H_FORTS)) if H_FORTS else ''
@@ -764,9 +819,63 @@ def textos_por_etapa(row):
         elif brecha_k not in ro: brecha_k = mas_baja(list(ro)) or brecha_k
     return etapas, fort_k, brecha_k, forts_g, oport_g, evid, modo
 
-def textos_de(row):
+# --- 17/11/2026: patrones del historial por etapa (lo que se repite en sus auditorías, bueno y por mejorar) ---
+TEMAS_BIEN = [
+    ('nombre', 'Usa el nombre del cliente', r'(utiliza(ste|s)? (el )?nombre|nombre (de la|del) (prospect|client))'),
+    ('perfil', 'Identifica carrera, modalidad y ubicación', r'(identificaste la carrera|carrera de interes|modalidad y ubicacion)'),
+    ('modalidad', 'Explica bien la modalidad a distancia', r'(modalidad a distancia|clases en vivo|grabacion|flexibilidad)'),
+    ('admision', 'Explica el proceso de admisión', r'(proceso de admision|evaluacion (virtual|de admision))'),
+    ('inversion', 'Explica la inversión con claridad', r'(costo|inversion|cuota)'),
+    ('valor', 'Presenta la propuesta de valor', r'(propuesta de valor|diferencial)'),
+    ('empatia', 'Trato cordial y empático', r'(cordial|amable|empat|calidez)'),
+    ('parciales', 'Hace cierres parciales', r'cierres? parcial'),
+    ('seguimiento', 'Deja un siguiente paso con fecha y hora', r'(fecha y hora|agend)'),
+    ('indagacion', 'Indaga motivaciones y necesidades', r'(indag|motivacion|necesidad)'),
+    ('dudas', 'Resuelve dudas y objeciones', r'(objecion|dudas|consultas)'),
+]
+TEMAS_MEJORA = [
+    ('despedida', 'Protocolo de despedida y encuesta incompleto', r'(despedida|encuesta|protocolo de (finalizacion|cierre|continuidad)|finalizacion de (la )?llamada)'),
+    ('descuento', 'Ofrece descuentos sin validar la necesidad', r'(descuento|beneficios? superiores|porcentaje(s)? autorizado)'),
+    ('presion', 'Presiona cuando el cliente pide tiempo', r'(presion|tiempos de decision)'),
+    ('seguimiento', 'Seguimiento sin día y hora concretos', r'(fecha y hora|hora (especifica|concreta|exacta|definida)|seguimiento|me avisas|sin agendar)'),
+    ('indagacion', 'Indagación débil: no se conoce la motivación', r'(indagacion|profundiza|motivacion|sondeo|expectativas)'),
+    ('conexion', 'Falta personalizar la atención', r'(personaliz|conexion)'),
+    ('presentacion', 'Presentación incompleta / no usa el nombre', r'(presentacion completa|no se presenta|presentarte|uso del nombre|utiliza(r)? el nombre)'),
+    ('valor', 'Propuesta de valor débil', r'(diferenciales|propuesta de valor)'),
+    ('inversion', 'Inversión incompleta o poco clara', r'(conceptos|seguro contra accidentes|costos de manera completa|inversion)'),
+    ('admision', 'Proceso de admisión incompleto', r'(proceso de admision|camara|evaluacion de (conocimiento|ingreso))'),
+    ('parciales', 'Faltan cierres parciales', r'cierres? parcial'),
+    ('convalidacion', 'Anticipa % o ciclos de convalidación', r'(convalidacion|convalidables)'),
+    ('erronea', 'Información errónea o confusa', r'(informacion (erronea|incorrecta|poco clara)|confus|inconsistencia)'),
+    ('tipificacion', 'Tipificación incorrecta', r'tipific'),
+]
+def patrones_de(rows):
+    """Por etapa: temas que se repiten (2+ auditorías) en lo que hizo bien y en lo que debe mejorar."""
+    validas = []
+    for r in rows:
+        et = textos_por_etapa(r)
+        if et[6] == 'ajeno' or not any(et[0][k]['fortaleza'] or et[0][k]['oportunidad'] for k in STAGE_KEYS):
+            continue
+        validas.append(et[0])
+    out = {}
+    for k in STAGE_KEYS:
+        res = {}
+        for tipo, temas, campo in (('bien', TEMAS_BIEN, 'fortaleza'), ('mejorar', TEMAS_MEJORA, 'oportunidad')):
+            cnt = []
+            for tid, lbl, rx in temas:
+                hits = [i for i, e in enumerate(validas) if e[k][campo] and re.search(rx, _plano_et(e[k][campo]))]
+                if len(hits) >= 2:
+                    cnt.append({'id': tid, 'tema': lbl, 'n': len(hits), 'ultima': (len(validas) - 1) in hits})
+            res[tipo] = sorted(cnt, key=lambda x: (-x['n'], not x['ultima']))[:3]
+        res['total'] = len(validas)
+        out[k] = res if (res['bien'] or res['mejorar']) else None
+    return out
+
+def textos_de(row, raw=False):
     """Textos del supervisor como cadenas (para el hash de la llamada y la lectura del checklist)."""
     etapas, fort_k, brecha_k, forts_g, oport_g, evid, modo = textos_por_etapa(row)
+    if raw and modo == 'etapas' and row.get('_perRaw'):
+        etapas = {k: {'fortaleza': row['_perRaw'][k][0], 'oportunidad': row['_perRaw'][k][1]} for k in STAGE_KEYS}
     if modo == 'etapas':
         forts = '\n'.join(f'{STAGE_LABEL[k].capitalize()}: {etapas[k]["fortaleza"]}' for k in STAGE_KEYS if etapas[k]['fortaleza'])
         oport = '\n'.join(f'{STAGE_LABEL[k].capitalize()}: {etapas[k]["oportunidad"]}' for k in STAGE_KEYS if etapas[k]['oportunidad'])
@@ -774,7 +883,7 @@ def textos_de(row):
     return forts_g, oport_g, evid
 
 def row_base(name, row):
-    forts, oport, evid = textos_de(row)
+    forts, oport, evid = textos_de(row, raw=True)
     fecha = str(row.get(H_FECHA, '') or '').strip()
     return sha12(norm(name) + '|' + norm(fecha) + '|' + norm(forts) + '|' + norm(oport) + '|' + norm(evid) + '|' + CHECK_HASH)
 
@@ -1002,12 +1111,17 @@ for name, lst in hist.items():
                 items[iid] = {'estado': estado, 'evidencia': 'Validado por tu supervisor', 'fecha': None, 'fuente': 'sheet'}
         fuente = 'sheet' if fuente is None else fuente + '+sheet'
 
+    _pat = patrones_de(rows)
+    for k in STAGE_KEYS:
+        stages[k]['patrones'] = _pat.get(k)
+        stages[k]['ajeno'] = last.get('_textoAjeno') or None
     analisis[name] = {
         'sede': d.get('sede') or (str(last.get(H_SEDE, '')).strip() if H_SEDE else None) or None,
         'antiguedad': d.get('antiguedad') or (str(last.get(H_ANTIG, '')).strip() if H_ANTIG else None) or None,
         'numEvaluaciones': len(rows),
         'ultimaFecha': str(last.get(H_FECHA, '')).strip() or None,
         'foco': brecha_k, 'fortalezaPrincipal': fort_k, 'modoFeedback': modo_fb,
+        'enfoque': last.get('_enfoque') or None,
         'stages': stages,
         'scoreGlobal': last.get(H_SCORE),
         'callScorePct': scores[-1],
@@ -1098,6 +1212,7 @@ for row in evaluacion:
     row['_foco'] = bk
     row['_fortalezaPrincipal'] = fk
     row['_modo'] = modo
+    row['_enfoque'] = row.get('_enfoque') or None
     _txt_op = ' '.join([et[k]['oportunidad'] or '' for k in STAGE_KEYS] + [_og or '', _ev or ''])
     if _txt_op.strip():
         TEXTOS_OPORTUNIDAD.append((parse_date(row.get("Fecha")), row[H_ASESOR], _txt_op))
@@ -1143,6 +1258,8 @@ hallazgos['conteos'] = {
 }
 
 # ----------------------------------------------------------------------------- salida
+for _r in evaluacion:
+    _r.pop('_perRaw', None)
 out = {
     'version': 8,
     'generado': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),

@@ -43,7 +43,7 @@ cuatro conceptos: **pago por créditos** (4 créditos), **matrícula** (S/250), 
 
 ## Precios con naturalidad (08/11/2026)
 - Soles enteros, sin céntimos: "unos S/563", nunca "S/563.04". Primero qué incluye, después el monto.
-- Traducir a su día a día con cuentas reales: S/504 al mes = menos de 17 soles al día.
+- **Prohibido convertir la cuota en «soles al día»** (p. ej. «S/504 es menos de 17 soles al día», «lo que gastas en pasajes»): no se ve bien, minimiza la inversión y resta seriedad (Christopher, 17/11/2026). La cuota se dice tal cual, al mes, después de explicar qué incluye.
 - El ahorro siempre con su origen: matrícula gratis (S/250) + S/56 menos en cada una de las 5 cuotas = S/530.
 
 ## Regla de oro: pocos números, una idea por frase, y se cierra HOY
