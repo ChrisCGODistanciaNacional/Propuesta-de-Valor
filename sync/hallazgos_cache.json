@@ -1,20 +1,20 @@
 {
- "actualizado": "17/11/2026",
+ "actualizado": "18/11/2026",
  "periodo": {
-  "desde": "11/11/2026",
-  "hasta": "17/11/2026"
+  "desde": "12/11/2026",
+  "hasta": "18/11/2026"
  },
  "base": {
-  "llamadas": 69,
+  "llamadas": 67,
   "asesores": 22
  },
- "titular": "La despedida sin encuesta (55 llamadas) y la presentación sin nombre ni Unidad CIE (49) siguen arriba. Lo nuevo: decir que el 10 % es «para toda la carrera» sin sus condiciones (8 asesores, 17/11). Lo bueno: proyectar la convalidación con documentos sin prometer resultados.",
+ "titular": "Siguen arriba la despedida sin encuesta ni día y hora (51 llamadas) y la presentación sin nombre ni Unidad CIE (46). Lo nuevo del 18/11: estimar la convalidación para desanimar y usar el descuento como amenaza. Lo bueno: separar qué documentos se necesitan para empezar y cuáles después.",
  "items": [
   {
    "tipo": "mala_costumbre",
    "titulo": "Despedida sin protocolo ni seguimiento agendado",
-   "queVimos": "La llamada termina sin repetir el nombre y la Unidad CIE ni transferir a la encuesta; en 33 llamadas el siguiente paso quedó sin día y hora («el lunes», «en la tarde», «me avisa»), aun cuando el prospecto dio un dato para agendar.",
-   "veces": "55 llamadas sin encuesta · 33 sin día y hora · 21 asesores · 21.ª semana seguida",
+   "queVimos": "La llamada termina sin transferir a la encuesta y, cuando el prospecto pide tiempo o «una hora», el siguiente paso queda sin día, hora ni quién retoma el contacto.",
+   "veces": "51 llamadas sin encuesta · 36 sin día y hora · 19 asesores · 22.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -24,7 +24,6 @@
     "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
     "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
     "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Lisette Valeria Blanco Chuco",
@@ -35,19 +34,18 @@
     "Orlando Jesus Pintado Sandoval",
     "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Aunque John manifiesta que podría regresar el lunes, no confirma que realizará el pago ese día; corresponde establecer una fecha y hora de seguimiento» (17/11).",
+   "ejemplo": "«Procura acordar una hora exacta de seguimiento y definir quién retomará el contacto. Finalmente, recuerda realizar la derivación a la encuesta de satisfacción» (18/11).",
    "porQueImporta": "Es lo que más puntaje resta y lo más fácil de corregir; sin día y hora la iniciativa queda en manos del prospecto y el interés se enfría.",
    "accion": "Cierre fijo: «Tu evaluación queda para [día] a las [hora], desde tu laptop con cámara. Te atendió [tu nombre], de la Unidad CIE de la Universidad Continental; guarda mi WhatsApp. Te transfiero a una breve encuesta, no cuelgues».",
    "tecnica": "tec_16"
   },
   {
    "tipo": "mala_costumbre",
-   "titulo": "Presentación sin nombre ni Unidad CIE",
-   "queVimos": "Se abre solo con «Universidad Continental», el asesor se identifica tarde o no usa el nombre del prospecto durante la llamada.",
-   "veces": "49 llamadas · 19 asesores · 16.ª semana seguida",
+   "titulo": "Presentación incompleta o nombre equivocado",
+   "queVimos": "Se abre sin el nombre del asesor ni la Unidad CIE, no se valida si atiende el prospecto o un familiar, y en algunas llamadas se usa un nombre distinto al del prospecto.",
+   "veces": "46 llamadas · 18 asesores · 17.ª semana seguida",
    "asesores": [
     "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
@@ -57,7 +55,6 @@
     "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
     "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
     "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Lisette Valeria Blanco Chuco",
@@ -65,108 +62,125 @@
     "Milagros Torres Santos",
     "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
+    "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Mantén la presentación institucional desde el inicio de la llamada, incluyendo la identificación de la Unidad CIE» (17/11).",
-   "porQueImporta": "En los primeros segundos el prospecto decide si confía; una presentación incompleta suena a llamada genérica y aumenta los cortes.",
-   "accion": "Apertura en una frase: «[Saludo], [nombre], te saluda [tu nombre], de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en [carrera] a distancia, ¿me regalas dos minutos?». Usar el nombre del prospecto al menos dos veces.",
+   "ejemplo": "«Aunque te diriges a él como Joel durante la atención, hacia el cierre mencionas «Miguel»» (18/11).",
+   "porQueImporta": "En los primeros segundos el prospecto decide si confía; un nombre equivocado o una presentación genérica rompen la confianza ganada.",
+   "accion": "Apertura en una frase: «Hola, [nombre], te saluda [tu nombre], de la Unidad CIE de la Universidad Continental. Te llamo por tu interés en [carrera], ¿me regalas dos minutos?». Si atiende un familiar: «¿Me lo puede poner en altavoz un minuto?».",
    "tecnica": "tec_12"
   },
   {
    "tipo": "mala_practica",
+   "titulo": "Estimar la convalidación sin revisión académica",
+   "queVimos": "Se dan cifras propias sobre costos de documentos o cursos reconocidos y se usan para desanimar o para prometer; también se ofrecen alternativas de trámite sin verificar requisitos ni plazos.",
+   "veces": "3 llamadas · 3 asesores",
+   "asesores": [
+    "Edward Nelson Gonzales Villaneda",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Ruth Alexandra Mauricio Verde"
+   ],
+   "ejemplo": "«Mencionas que obtener documentos podría costar entre S/500 y S/600 y que posiblemente solo se convalidaría un curso, utilizando esta proyección para desaconsejar el proceso» (18/11).",
+   "porQueImporta": "La convalidación la define el área académica; una estimación sin base hace perder una matrícula o genera reclamos cuando el resultado no coincide.",
+   "accion": "«El área académica revisa tus sílabos y define qué cursos se reconocen; no te doy un número sin esa revisión. Pidamos una revisión referencial con lo que tengas y avanzamos con tu admisión en paralelo».",
+   "tecnica": "tec_08"
+  },
+  {
+   "tipo": "mala_practica",
    "titulo": "El 10 % «para toda la carrera» sin condiciones",
-   "queVimos": "Al decir que el descuento en cuotas dura toda la carrera no se explican sus condiciones: promedio ponderado mínimo 10.5, al menos 20 créditos, cuotas pagadas a tiempo, no acumulable, suspensión de un ciclo si se incumple y pérdida definitiva si deja de matricularse sin reservar.",
-   "veces": "10 llamadas · 8 asesores",
+   "queVimos": "Se dice que el descuento en cuotas dura toda la carrera sin explicar cómo se mantiene: aprobar con nota mínima de 10.5, llevar los créditos completos, pagar puntual y no interrumpir los estudios.",
+   "veces": "10 llamadas · 7 asesores · 2.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Cecilia Esther Aliaga Lapa",
     "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
-    "Judith Rocio Vila Incaroca",
     "Melissa Leslie Fernadez Avalos",
     "Patricia Roxana Mercado Zacarias",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Evita afirmar que los beneficios se mantendrán automáticamente durante toda la carrera sin verificar las condiciones» (17/11).",
-   "porQueImporta": "Si el alumno pierde el descuento en el segundo ciclo sin haberlo sabido, se siente engañado: reclamos, deserción y mala referencia.",
-   "accion": "Después de dar la cuota con descuento: «Ese 10 % te acompaña toda la carrera mientras mantengas promedio de 10.5, lleves 20 créditos o más y pagues tus cuotas a tiempo. ¿Hasta ahí claro?». Si pregunta, explicar suspensión y pérdida.",
+   "ejemplo": "«Cuando indiques que el descuento del 10 % se mantiene durante toda la carrera, explica las condiciones para conservarlo» (18/11).",
+   "porQueImporta": "Si el alumno pierde el descuento sin haberlo sabido, se siente engañado: reclamos, deserción y mala referencia.",
+   "accion": "Después de dar la cuota con descuento: «Ese 10 % te acompaña toda la carrera mientras apruebes con 10.5, lleves tus créditos completos y pagues puntual. ¿Hasta ahí claro?».",
    "tecnica": "tec_08"
   },
   {
    "tipo": "mala_practica",
-   "titulo": "Descuento anticipado, fuera del límite o llamado «beca»",
-   "queVimos": "El descuento sale como primer argumento sin preguntar si la cuota normal alcanza; en algunas llamadas se ofreció más de lo autorizado, se prometió mantener el beneficio sin autorización o se llamó «beca» al descuento de campaña.",
-   "veces": "10 llamadas · 6 asesores · 11.ª semana seguida",
+   "titulo": "Descuento anticipado, como amenaza o llamado «beca»",
+   "queVimos": "El descuento sale antes de conocer el presupuesto, se llama «beca» al beneficio de campaña y, en un caso, se dijo que otros asesores podrían quitarle el descuento para dárselo a otro postulante.",
+   "veces": "10 llamadas · 6 asesores · 12.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Justyn Flores Solano",
     "Maria Alejandra Pino Contreras",
     "Milagros Torres Santos",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Ruth Alexandra Mauricio Verde"
+    "Patricia Roxana Mercado Zacarias",
+    "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "ejemplo": "«Evita ofrecer descuentos anticipadamente. Primero identifica el presupuesto, la capacidad de pago y las posibles objeciones económicas» (17/11).",
-   "porQueImporta": "Un descuento sin objeción real baja el valor percibido y deja sin argumento para el cierre; uno no autorizado genera reclamos cuando el monto real no coincide.",
-   "accion": "Antes de cualquier beneficio: «¿La cuota normal se ajusta a lo que tienes pensado invertir?». Solo si dice que no, el beneficio vigente de la Biblioteca, dicho como «beneficio» o «descuento», nunca «beca».",
-   "tecnica": "tec_14"
+   "ejemplo": "«Evita mencionar que otros asesores podrían desactivar descuentos para asignarlos a otros postulantes, ya que esta afirmación puede generar desconfianza» (18/11).",
+   "porQueImporta": "La presión falsa y el descuento sin objeción real bajan la confianza y el valor percibido; la palabra «beca» crea expectativas que no existen en el primer ciclo.",
+   "accion": "Escasez solo verdadera: «El beneficio es de esta campaña». Antes del descuento: «¿La cuota normal se ajusta a lo que tienes pensado invertir?». Y la asesora asignada se explica como orden: «Así tienes una sola persona que conoce tu caso».",
+   "tecnica": "tec_06"
   },
   {
    "tipo": "mala_costumbre",
    "titulo": "Proceso de admisión explicado a medias",
-   "queVimos": "Se pide fecha para la evaluación sin explicar en qué consiste: que es virtual, desde computadora o laptop con cámara, que no es de conocimientos y qué pasos siguen.",
-   "veces": "24 llamadas · 13 asesores",
+   "queVimos": "Se pide fecha para la evaluación sin explicar en qué consiste: virtual, desde computadora o laptop con cámara, no es de conocimientos y qué pasos siguen.",
+   "veces": "26 llamadas · 14 asesores · 2.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
     "Edward Nelson Gonzales Villaneda",
     "Isai Yuliño Mercado Bravo",
     "Jean Carlos Espinoza Atoc",
+    "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Maria Alejandra Pino Contreras",
     "Milagros Torres Santos",
     "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
+    "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
-    "Rosa Victoria Guzman Bonilla",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Refuerza la explicación del proceso de admisión, indicando en qué consiste la evaluación y cuáles son los pasos para realizarla» (17/11).",
+   "ejemplo": "«Complementa la información de fechas y horarios de admisión explicando que la evaluación virtual está orientada a conocer motivaciones, hábitos de estudio y compromiso académico» (18/11).",
    "porQueImporta": "Si el prospecto no sabe qué le espera, posterga o no se conecta; explicar la evaluación quita el miedo y vuelve concreto el cierre.",
    "accion": "Antes de la pregunta de cierre: «Tu evaluación es virtual, desde tu computadora o laptop con cámara, y no es de conocimientos. ¿La rindes hoy en la noche o mañana temprano?».",
    "tecnica": "tec_10"
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Proyectar la convalidación sin prometer resultados",
-   "queVimos": "Ante «¿cuántos cursos me convalidan?» se propuso una proyección académica con sus documentos, aclarando que el resultado depende de la evaluación, y se orientó sobre qué documentos reunir.",
-   "veces": "1 llamada · Judith (17/11) · se suma a lo de quitar la barrera de los documentos de semanas anteriores",
+   "titulo": "Separar documentos para empezar y para después",
+   "queVimos": "Ante un egresado que quería convalidar, se explicó la simulación como proyección y se diferenciaron los documentos para empezar de los que se regularizan después, para que inicie sin esperar todos los sílabos firmados.",
+   "veces": "2 llamadas · Ruth (18/11) y Raul, que aclaró que el área académica define los cursos (18/11)",
    "asesores": [
-    "Judith Rocio Vila Incaroca"
+    "Ruth Alexandra Mauricio Verde",
+    "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "ejemplo": "«Propones solicitar una proyección académica con sus documentos… evitando asegurar un resultado definitivo» (17/11).",
-   "porQueImporta": "Responde la duda que frena la decisión sin inventar porcentajes y deja un siguiente paso concreto: reunir documentos.",
-   "accion": "Frase modelo: «El área académica revisa tus sílabos y te dice qué cursos se reconocen. Mándame tus documentos por WhatsApp y avanzamos con tu evaluación mientras tanto».",
+   "ejemplo": "«Diferencias los documentos necesarios para avanzar inicialmente de aquellos que deberán regularizarse posteriormente, ofreciendo una alternativa para que Joel pueda iniciar la revisión» (18/11).",
+   "porQueImporta": "Quita la barrera del trámite sin prometer resultados y deja un siguiente paso concreto: enviar el certificado.",
+   "accion": "Frase modelo: «Para empezar te basta tu certificado; los sílabos los pides en paralelo. Mándamelo por WhatsApp y avanzamos con tu evaluación mientras el área académica revisa».",
    "tecnica": null
   },
   {
    "tipo": "buena_practica",
    "titulo": "Buscar cómo sí puede pagar",
-   "queVimos": "Ante un prospecto fuera de su ciudad y sin banca móvil, se exploraron alternativas reales (Yape, banca móvil, apoyo de un familiar) en lugar de cerrar la gestión.",
-   "veces": "1 llamada · Milagros (17/11)",
+   "queVimos": "Ante un prospecto fuera de su ciudad y sin banca móvil, o con dificultad económica, se consultaron fechas de pago y alternativas reales en lugar de cerrar la gestión.",
+   "veces": "2 llamadas · Milagros (17/11) y Judith (18/11)",
    "asesores": [
-    "Milagros Torres Santos"
+    "Milagros Torres Santos",
+    "Judith Rocio Vila Incaroca"
    ],
-   "ejemplo": "«Buscas alternativas para facilitar la continuidad de la postulación, consultando sobre la posibilidad de utilizar Yape, banca móvil o apoyo de un familiar» (17/11).",
-   "porQueImporta": "Convierte una barrera logística en un siguiente paso; el cuidado está en no insistir con opciones que no puede usar ni prometer beneficios no autorizados.",
-   "accion": "Preguntar primero «¿qué sí tienes a tu alcance estos días?» y construir el siguiente paso sobre eso, con día y hora.",
+   "ejemplo": "«Mostraste disposición para atender la dificultad económica manifestada por Daisy, consultando sus fechas de pago y planteando alternativas para avanzar con el proceso» (18/11).",
+   "porQueImporta": "Convierte una barrera en un siguiente paso; el cuidado está en no prometer beneficios no autorizados.",
+   "accion": "Preguntar «¿qué día cobras y qué medio de pago tienes a la mano?» y construir el paso sobre eso: la admisión hoy y la primera cuota 24 horas después de la evaluación.",
    "tecnica": null
   }
  ],
  "acciones": [
   "Toda llamada cierra con día y hora de la evaluación, nombre, Unidad CIE, WhatsApp y transferencia a la encuesta.",
-  "Al decir «10 % toda la carrera», sumar en la misma frase las condiciones (10.5, 20 créditos, pago a tiempo); y preguntar el presupuesto antes de cualquier beneficio, sin decir «beca».",
+  "Convalidación y descuentos solo con datos reales: el área académica define los cursos, el 10 % se dice con sus condiciones y nunca se usa el descuento como amenaza ni se llama «beca».",
   "Antes de pedir fecha, explicar la evaluación: virtual, con cámara, no es de conocimientos."
  ]
 }
