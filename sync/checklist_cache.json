@@ -21214,5 +21214,83 @@
     "evidencia": "Acuerda fecha y hora concreta de seguimiento"
    }
   }
+ },
+ "6dee93cb87b2": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "18/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Cumpliste con la presentación correspondiente al inicio de la llamada"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre del prospecto durante la llamada"
+   },
+   "paso1_3": {
+    "estado": "ok",
+    "evidencia": "Presentaste clases grabadas, flexibilidad y doble grado internacional"
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Fortalecer las preguntas filtro para conocer mejor al prospecto"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Conocer su situación académica y laboral para personalizar la asesoría"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conocer sus expectativas frente a la carrera"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste clases grabadas, flexibilidad y doble grado internacional"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante 'estoy consultando', explorar qué necesita en vez de insistir en la matrícula"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establecer compromisos de seguimiento con fecha y hora específicas"
+   }
+  }
  }
 }
