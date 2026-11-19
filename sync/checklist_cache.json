@@ -21292,5 +21292,395 @@
     "evidencia": "Establecer compromisos de seguimiento con fecha y hora específicas"
    }
   }
+ },
+ "a3dbd0dbcd84": {
+  "asesor": "Betsabeth Alexandra Rojas Palacios",
+  "fecha": "19/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Lograste presentarte adecuadamente y validar el interés del prospecto."
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Exploraste su motivación por estudiar Derecho y su situación."
+   },
+   "paso2_2": {
+    "estado": "ok",
+    "evidencia": "Exploraste sus expectativas para orientar la conversación."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Abordaste consultas sobre modalidad y duración."
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Manejaste las inquietudes del prospecto y le brindaste orientación."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Facilitas un canal de contacto."
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Mantienes el acompañamiento y das continuidad a la atención."
+   }
+  }
+ },
+ "c52f620f6d17": {
+  "asesor": "Maria Alejandra Pino Contreras",
+  "fecha": "19/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Realizas una adecuada presentación."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validas el interés de Diana por Educación Inicial y usas su nombre."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones de Diana para estudiar Educación Inicial."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus metas y expectativas."
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificas que no cuenta con laptop y buscas una alternativa."
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Confirmas el envío de información por WhatsApp."
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Concretas un compromiso de seguimiento para las 2:00 p. m."
+   }
+  }
+ },
+ "d6fc37f7ca51": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "19/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Realizas una adecuada presentación."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validas su interés por la carrera de Ingeniería Ambiental."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones del prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Descubre qué expectativas tiene."
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Descubre qué lo lleva a postergar su decisión al próximo año."
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece el manejo de objeciones desde un enfoque consultivo, no solo descuentos."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "93a762a99490": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "19/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Logras generar una apertura adecuada de la interacción."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validas el interés por Ciencia de la Computación."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus motivaciones."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas profesionales y objetivos."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Presentas diferenciales: convenios, bolsa laboral y doble titulación."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Al mencionar a su esposa, explora qué dudas aún podrían existir."
+   },
+   "paso3_6": {
+    "estado": "ok",
+    "evidencia": "Buscas avanzar a través de cierres parciales."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Todo seguimiento debe quedar acordado con fecha y hora específicas."
+   }
+  }
+ },
+ "5440b8721ffe": {
+  "asesor": "Ruth Alexandra Mauricio Verde",
+  "fecha": "19/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Lograste presentarte adecuadamente."
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Exploraste sus estudios previos, experiencia laboral y situación actual."
+   },
+   "paso2_2": {
+    "estado": "ok",
+    "evidencia": "Identificaste su interés por especializarse en Talento Humano."
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificaste su poca disponibilidad de tiempo por el negocio propio."
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Presentaste alternativas a su preocupación por la carga académica."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Ofreciste continuar la comunicación por WhatsApp."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda una hora específica; no dejes el seguimiento abierto al día siguiente."
+   }
+  }
  }
 }
