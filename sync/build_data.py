@@ -235,6 +235,23 @@ for p in PASOS:
     for i, txt in enumerate(p.get('checklist', []), 1):
         CHECK_ITEMS.append({'id': f'{p["id"]}_{i}', 'paso': p['id'], 'num': i, 'texto': txt})
 CHECK_HASH = sha12('|'.join(norm(c['texto']) for c in CHECK_ITEMS))
+# 20/11/2026 (Christopher): el checklist de Solucionar problemas se reordenó en micropasos
+#   1 resumen · 2 diferenciales · 3 comparativos (+ certificaciones, antes ítem 4) · 4 NUEVO validar implicación en su vida
+#   5 objeciones · 6 confirmar que quedó claro. Las lecturas ya hechas con el checklist anterior se reutilizan con este mapa.
+CHECK_HASH_PREV = '5ae314c2c5e6'
+CHECK_REMAP = {'paso3_1': ['paso3_1'], 'paso3_2': ['paso3_2'], 'paso3_3': ['paso3_3', 'paso3_4'], 'paso3_4': [],
+               'paso3_5': ['paso3_5'], 'paso3_6': ['paso3_6']}
+_RANGO = {'ok': 2, 'pendiente': 1, 'sin_evidencia': 0}
+def remap_items(items):
+    out = dict(items)
+    for nid, olds in CHECK_REMAP.items():
+        best = None
+        for o in olds:
+            e = items.get(o) or {}
+            if best is None or _RANGO.get(e.get('estado'), 0) > _RANGO.get(best.get('estado'), 0):
+                best = e
+        out[nid] = best if best and best.get('estado') else {'estado': 'sin_evidencia', 'evidencia': None}
+    return out
 
 
 # ----------------------------------------------------------------------------- 🔰FEEDBACK → evaluacion
@@ -626,6 +643,9 @@ if dash:
 
 
 # ----------------------------------------------------------------------------- CHECKLIST manual (opcional)
+def _plano_check(t):
+    t = unicodedata.normalize('NFD', str(t or '').lower())
+    return ''.join(c for c in t if unicodedata.category(c) != 'Mn')
 check_sheet = {}   # norm(asesor) → {item_id: 'ok'|'pendiente'}
 cv = load_values('checklist.json', required=False)
 if cv and len(cv) >= 2:
@@ -635,6 +655,13 @@ if cv and len(cv) >= 2:
         m = re.match(r'\s*P(\d+)\.(\d+)', h, re.I)
         if m:
             id_by_col[ci] = f'paso{m.group(1)}_{m.group(2)}'
+            # 20/11/2026: si la columna de P3 trae su texto, se ubica por el texto (el orden del paso 3 cambió)
+            if m.group(1) == '3':
+                hp = _plano_check(h)
+                for clave, nid in (('certific', 'paso3_3'), ('comparativ', 'paso3_3'), ('diferencial', 'paso3_2'), ('resumen', 'paso3_1'),
+                                   ('implicacion', 'paso3_4'), ('sirve', 'paso3_4'), ('objecion', 'paso3_5'), ('claro', 'paso3_6')):
+                    if clave in hp:
+                        id_by_col[ci] = nid; break
     for raw in cv[1:]:
         if not raw or not str(raw[0]).strip():
             continue
@@ -884,10 +911,10 @@ def textos_de(row, raw=False):
         return forts, oport, evid
     return forts_g, oport_g, evid
 
-def row_base(name, row):
+def row_base(name, row, chash=None):
     forts, oport, evid = textos_de(row, raw=True)
     fecha = str(row.get(H_FECHA, '') or '').strip()
-    return sha12(norm(name) + '|' + norm(fecha) + '|' + norm(forts) + '|' + norm(oport) + '|' + norm(evid) + '|' + CHECK_HASH)
+    return sha12(norm(name) + '|' + norm(fecha) + '|' + norm(forts) + '|' + norm(oport) + '|' + norm(evid) + '|' + (chash or CHECK_HASH))
 
 
 # ----------------------------------------------------------------------------- cachés de Claude
@@ -947,6 +974,10 @@ def leer_checklist_fila(name, row):
     if not (forts or oport or evid):
         return {it['id']: {'estado': 'sin_evidencia', 'evidencia': None} for it in CHECK_ITEMS}, base, False
     cc = check_cache.get(base)
+    if not cc:   # lectura hecha con el checklist anterior (20/11/2026): se reutiliza con el mapa de ítems
+        cv0 = check_cache.get(row_base(name, row, CHECK_HASH_PREV))
+        if cv0 and isinstance(cv0.get('items'), dict):
+            cc = dict(cv0); cc['items'] = remap_items(cv0['items']); check_cache[base] = cc
     if cc and isinstance(cc.get('items'), dict):
         out = {}
         for it in CHECK_ITEMS:

@@ -15515,14 +15515,14 @@
       "fecha": "17/11/2026"
      },
      "paso3_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null
-     },
-     "paso3_4": {
       "estado": "ok",
       "evidencia": "Mencionas las certificaciones progresivas de la modalidad Distancia",
       "fecha": "17/11/2026"
+     },
+     "paso3_4": {
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null
      },
      "paso3_5": {
       "estado": "pendiente",
@@ -20169,9 +20169,7 @@
      "paso3_4": {
       "estado": "sin_evidencia",
       "evidencia": null,
-      "fecha": null,
-      "retirado": true,
-      "fechaUltimoOk": "27/10/2026"
+      "fecha": null
      },
      "paso3_5": {
       "estado": "ok",
@@ -22975,9 +22973,7 @@
      "paso3_4": {
       "estado": "sin_evidencia",
       "evidencia": null,
-      "fecha": null,
-      "retirado": true,
-      "fechaUltimoOk": "06/10/2026"
+      "fecha": null
      },
      "paso3_5": {
       "estado": "pendiente",
@@ -30367,16 +30363,14 @@
       "fecha": "17/11/2026"
      },
      "paso3_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null,
-      "retirado": true,
-      "fechaUltimoOk": "29/09/2026"
-     },
-     "paso3_4": {
       "estado": "ok",
       "evidencia": "Presentaste las certificaciones progresivas",
       "fecha": "17/11/2026"
+     },
+     "paso3_4": {
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null
      },
      "paso3_5": {
       "estado": "pendiente",
@@ -36815,16 +36809,14 @@
       "fecha": "17/11/2026"
      },
      "paso3_3": {
-      "estado": "sin_evidencia",
-      "evidencia": null,
-      "fecha": null,
-      "retirado": true,
-      "fechaUltimoOk": "02/10/2026"
-     },
-     "paso3_4": {
       "estado": "ok",
       "evidencia": "Presentaste las certificaciones progresivas",
       "fecha": "17/11/2026"
+     },
+     "paso3_4": {
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null
      },
      "paso3_5": {
       "estado": "pendiente",
@@ -40377,9 +40369,7 @@
      "paso3_4": {
       "estado": "sin_evidencia",
       "evidencia": null,
-      "fecha": null,
-      "retirado": true,
-      "fechaUltimoOk": "12/11/2026"
+      "fecha": null
      },
      "paso3_5": {
       "estado": "pendiente",
@@ -47322,14 +47312,14 @@
       "fecha": "17/11/2026"
      },
      "paso3_3": {
-      "estado": "pendiente",
-      "evidencia": "Cuando compare universidades, explora qué factores está evaluando",
-      "fecha": "17/11/2026"
-     },
-     "paso3_4": {
       "estado": "ok",
       "evidencia": "Presentas beneficios como las certificaciones progresivas",
       "fecha": "18/11/2026"
+     },
+     "paso3_4": {
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null
      },
      "paso3_5": {
       "estado": "ok",
@@ -48803,9 +48793,7 @@
      "paso3_4": {
       "estado": "sin_evidencia",
       "evidencia": null,
-      "fecha": null,
-      "retirado": true,
-      "fechaUltimoOk": "22/10/2026"
+      "fecha": null
      },
      "paso3_5": {
       "estado": "pendiente",
