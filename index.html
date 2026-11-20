@@ -1078,6 +1078,34 @@
   .ev2-pat li.warn { background: #FFF4E0; } .ev2-pat li.good { background: var(--good-bg); }
   .ev2-pat li b { font-weight: 600; display: block; } .ev2-pat li small { color: var(--muted); font-size: 11.5px; }
   .ev2-pat li.ult b::after { content: ' •'; color: #E0A12A; }
+  /* v2 20/11/2026: patrones bien / mal separados y casos de práctica del paso */
+  .pat2 { margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; }
+  .pat2-t { font-size: 12px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .pat2-g { display: grid; grid-template-columns: 1.25fr 1fr; gap: 10px; }
+  @media (max-width: 720px) { .pat2-g { grid-template-columns: 1fr; } }
+  .pat2-col { border-radius: 10px; padding: 8px 10px; }
+  .pat2-col.mal { background: #FFF6EC; border: 1px solid #F6D9B0; } .pat2-col.bien { background: var(--good-bg); border: 1px solid #CDE9D6; }
+  .pat2-col h5 { margin: 0 0 6px; font-size: 12.5px; }
+  .pat2-col ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; }
+  .pat2-col li { display: grid; grid-template-columns: 34px 1fr; gap: 6px; align-items: start; font-size: 12.5px; line-height: 1.35; }
+  .pat2-n { font-weight: 800; font-size: 13px; text-align: center; border-radius: 8px; padding: 2px 0; background: #fff; }
+  .pat2-col.mal .pat2-n { color: #B5541B; } .pat2-col.bien .pat2-n { color: #237A45; }
+  .pat2-col li small { display: block; color: var(--muted); font-size: 11px; }
+  .pat2-col li.foco { background: #fff; border-radius: 8px; padding: 5px; box-shadow: 0 0 0 2px #F0A54A inset; }
+  .pat2-foco { display: inline-block; font-size: 10.5px; font-weight: 700; color: #fff; background: #E07B24; border-radius: 6px; padding: 1px 6px; margin-bottom: 2px; }
+  .pat2-q { display: block; margin-top: 3px; font-style: italic; color: #6B5A45; font-size: 11.5px; }
+  .pat2-otro { margin-top: 6px; font-size: 11.5px; color: var(--muted); }
+  .prac { margin-top: 12px; }
+  .prac-g { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; }
+  .prac-c { border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: #fff; display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; line-height: 1.4; }
+  .prac-c.sim { background: #F5F3FF; border-color: #DDD6FE; }
+  .prac-h { display: flex; justify-content: space-between; gap: 6px; align-items: baseline; } .prac-h b { font-size: 13px; } .prac-h small { color: var(--muted); white-space: nowrap; }
+  .prac-x { background: #FFF1F0; border-radius: 8px; padding: 5px 8px; } .prac-x b { color: #B42318; }
+  .prac-p { color: #475467; }
+  .prac-d { display: flex; flex-direction: column; gap: 4px; margin: 2px 0; }
+  .prac-d span { max-width: 88%; padding: 5px 9px; border-radius: 10px; font-size: 12px; }
+  .prac-d .cl { align-self: flex-start; background: #F2F4F7; } .prac-d .as { align-self: flex-end; background: #DCF8C6; }
+  .prac-k { background: #EEF3FF; border-radius: 8px; padding: 5px 8px; font-weight: 600; color: var(--navy); }
   .ev2-c.prg { border-left: 4px solid var(--navy); }
   .ev2-preg { margin: 0; padding-left: 20px; } .ev2-preg li { font-size: 13.5px; line-height: 1.45; padding: 5px 0; border-bottom: 1px dashed var(--line); } .ev2-preg li:last-child { border-bottom: 0; }
   .tec-card { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid #F1D98F; border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
@@ -2702,7 +2730,13 @@
     // 17/11/2026: patrones del historial (lo que se repite en sus auditorías) y enfoque general del supervisor
     const pat = st && st.patrones ? st.patrones : null;
     const patItem = (x, cls) => `<li class="${cls}${x.ultima ? ' ult' : ''}"><b>${escapeHtmlPreserveNL(x.tema)}</b><small>${x.n} de ${pat.total} auditorías${x.ultima ? ' · también en la última' : ''}</small></li>`;
-    const patHTML = pat && ((pat.bien || []).length || (pat.mejorar || []).length) ? `<div class="ev2-pat"><div class="ev2-pat-t">🔁 Lo que se repite en tus ${pat.total} auditorías</div><ul>${(pat.mejorar || []).map(x => patItem(x, 'warn')).join('')}${(pat.bien || []).map(x => patItem(x, 'good')).join('')}</ul></div>` : '';
+    const patV2 = pat && pat.v === 2 ? pat : null;
+    const patLi = (x, cls, foco) => `<li class="${foco ? 'foco' : ''}"><span class="pat2-n">${x.n}/${patV2.total}</span><div>${foco ? '<span class="pat2-foco">📍 Aquí se concentra</span><br>' : ''}<b>${escapeHtmlPreserveNL(x.tema)}</b><small>${(x.fechas || []).map(f => String(f).slice(0, 5)).join(' · ')}${x.ultima ? ' · también en la última' : ''}</small>${foco && x.frase ? `<span class="pat2-q">Calidad: «${escapeHtmlPreserveNL(x.frase)}»</span>` : ''}</div></li>`;
+    const patV2HTML = patV2 ? `<div class="pat2"><div class="pat2-t">🔁 Lo que se repite en tus ${patV2.total} auditorías de ${STAGE_LABELS[stageKey] || 'este paso'}</div><div class="pat2-g">
+        <div class="pat2-col mal"><h5>🔴 Lo que repites por corregir</h5>${(patV2.mejorar || []).length ? `<ol>${patV2.mejorar.map((x, i) => patLi(x, 'mal', i === 0)).join('')}</ol>` : '<small>Nada se repite 2 o más veces. 👏</small>'}</div>
+        <div class="pat2-col bien"><h5>🟢 Lo que repites bien</h5>${(patV2.bien || []).length ? `<ol>${patV2.bien.map(x => patLi(x, 'bien', false)).join('')}</ol>` : '<small>Aún no hay algo bueno que se repita en este paso.</small>'}</div>
+      </div>${(patV2.otroPaso || []).length ? `<div class="pat2-otro">Calidad también anotó aquí temas de otro paso (se ven en su paso): ${patV2.otroPaso.map(o => `${escapeHtmlPreserveNL(o.tema)} (${o.n})`).join(' · ')}</div>` : ''}</div>` : '';
+    const patHTML = patV2 ? patV2HTML : pat && ((pat.bien || []).length || (pat.mejorar || []).length) ? `<div class="ev2-pat"><div class="ev2-pat-t">🔁 Lo que se repite en tus ${pat.total} auditorías</div><ul>${(pat.mejorar || []).map(x => patItem(x, 'warn')).join('')}${(pat.bien || []).map(x => patItem(x, 'good')).join('')}</ul></div>` : '';
     const enf = analysisLatest && analysisLatest.enfoque && analysisLatest.foco === stageKey && sel.entry === history[history.length - 1] ? `<div class="ev2-enf"><span>🎯 Enfoque de mejora que te pide tu supervisor</span>${escapeHtmlPreserveNL(analysisLatest.enfoque)}</div>` : '';
     if (sel.entry.row && sel.entry.row._textoAjeno) {
       obsCls = 'neutral';
@@ -2720,7 +2754,16 @@
     const tecDef = tec ? ((db.tecnicas || []).find(t => t.id === tec.id) || (db.tecnicas || []).find(t => t.titulo === tec.titulo) || {}) : {};
     const tecM = tec && tec.titulo ? /^(\p{Extended_Pictographic}\uFE0F?)\s*(.*)$/u.exec(tec.titulo) : null;
     const tecCard = tec ? `<div class="tec-card"><div class="tec-card-ico">${tecM ? tecM[1] : '🏆'}</div><div><div class="tec-card-k">Técnica recomendada</div><div class="tec-card-n">${escapeHtmlPreserveNL(tecM ? tecM[2] : (tec.titulo || ''))}</div>${tecDef.explicacion ? `<div class="tec-card-d"><b>¿En qué consiste?</b> ${escapeHtmlPreserveNL(tecDef.explicacion)}</div>` : ''}</div></div>` : '';
-    const tecHTML = tec ? `<section class="ev2-c tec"><h4>🏆 Cómo mejorarlo</h4>${tecCard}<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div></section>` : '';
+    const prac = st && st.practica && ((st.practica.casos || []).length || st.practica.simulado) ? st.practica : null;
+    const dlg = d => `<div class="prac-d">${(d || []).map(t => `<span class="${t.quien === 'cliente' ? 'cl' : 'as'}">${escapeHtmlPreserveNL(t.texto)}</span>`).join('')}</div>`;
+    const pracHTML = prac ? `<section class="ev2-c prac"><h4>🎯 Lo que falló en tus llamadas y cómo resolverlo</h4><div class="prac-g">
+        ${(prac.casos || []).map(c => `<div class="prac-c"><div class="prac-h"><b>${escapeHtmlPreserveNL(c.titulo || '')}</b><small>📞 ${escapeHtmlPreserveNL(String(c.fecha || '').slice(0, 5))}</small></div>
+          <div class="prac-p">${escapeHtmlPreserveNL(c.paso || '')}</div><div class="prac-x"><b>❌ Qué falló:</b> ${escapeHtmlPreserveNL(c.fallo || '')}</div>
+          <div><b>✅ Cómo resolverlo:</b></div>${dlg(c.dialogo)}<div class="prac-k">🔑 ${escapeHtmlPreserveNL(c.clave || '')}</div></div>`).join('')}
+        ${prac.simulado ? `<div class="prac-c sim"><div class="prac-h"><b>🧪 Simulación: ${escapeHtmlPreserveNL(prac.simulado.titulo || '')}</b></div><div class="prac-p">${escapeHtmlPreserveNL(prac.simulado.situacion || '')}</div>${dlg(prac.simulado.dialogo)}<div class="prac-k">🔑 ${escapeHtmlPreserveNL(prac.simulado.clave || '')}</div></div>` : ''}
+      </div></section>` : '';
+    // Con casos de práctica del paso, «Cómo mejorarlo» deja solo la técnica: los ejemplos ya son de ESTE paso
+    const tecHTML = tec ? `<section class="ev2-c tec"><h4>🏆 Cómo mejorarlo</h4>${tecCard}${prac ? '' : `<div class="speech-suggest">${speechBlockHTML(tec, 'stage')}${speechActionsHTML(tec)}</div>`}</section>` : '';
     // 17/11/2026: preguntas del paso (antes en «Recomendaciones que quedan») al lado del checklist
     const preg = paso.preguntas && Array.isArray(paso.preguntas.items) ? paso.preguntas.items.filter(Boolean) : [];
     const pregHTML = preg.length ? `<ol class="ev2-preg">${preg.map(q => `<li>${escapeHtmlPreserveNL(q)}</li>`).join('')}</ol>` : '<p class="ev2-empty">Sin preguntas cargadas para este paso.</p>';
@@ -2739,6 +2782,7 @@
           <section class="ev2-c ckc"><h4>📋 Lo que faltó del checklist</h4>${ckHTML}</section>
           <section class="ev2-c prg"><h4>💬 Preguntas para usar en este paso</h4>${pregHTML}</section>
         </div>
+        ${pracHTML}
         ${tecHTML}
         ${imgFootHTML()}
       </div>`;

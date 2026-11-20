@@ -107,3 +107,8 @@ Toda etapa con texto necesita `conclusion`; `tecId/porQue/dialogo/speech` solo c
 - **Patrones del historial** (`stages[paso].patrones`): por etapa, los temas que se repiten en 2 o más auditorías del asesor, en lo que hizo bien (`TEMAS_BIEN`) y en lo que debe mejorar (`TEMAS_MEJORA`), con «n de total» y si aparece en la última.
 - En la página, la tarjeta de auditoría quedó: 🔍 Lo que escuchó tu supervisor (bien / mejorar / enfoque / lo que se repite) · 📋 Lo que faltó del checklist + 💬 Preguntas para usar en este paso · 🏆 Cómo mejorarlo (técnica recomendada con su explicación y las conversaciones). «Recomendaciones que quedan» se retiró.
 - Conversaciones: prohibido convertir la cuota en «soles al día» (ver `guion_conversaciones.md` y `guion_inversion.md`).
+
+## Patrones v2 y casos de práctica por paso (20/11/2026, Christopher)
+
+- `sync/patrones.py` define **señales propias de cada etapa** (por ahora Identificar necesidades): lo que repite mal, lo que repite bien y lo que calidad anotó en esa columna pero es de otro paso (inversión, admisión…). El total son las auditorías con texto en esa etapa. La página muestra bien / mal en dos columnas y marca «📍 Aquí se concentra» en la señal mala más repetida.
+- `sync/practica_cache.json` (`"<asesor>|<paso>"`): «Lo que falló en tus llamadas y cómo resolverlo» = hasta 3 llamadas reales (qué pasó, qué falló de ese paso, diálogo corto que lo resuelve, regla) + 1 situación simulada. Se pide en `pending.json → practica` para la etapa foco o con menos de 75 %; mientras no se reescribe, se muestra la versión anterior.

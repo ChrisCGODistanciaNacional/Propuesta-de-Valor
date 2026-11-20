@@ -1,0 +1,156 @@
+{
+ "Isai Yuliño Mercado Bravo|paso2": {
+  "base": "9a4887579696",
+  "v": 1,
+  "stage": "paso2",
+  "foco": "porque",
+  "casos": [
+   {
+    "fecha": "13/11/2026",
+    "titulo": "Derecho · quiere terminar antes",
+    "paso": "El prospecto dijo que le interesaba reducir la duración de Derecho. Pasaste directo a la evaluación, el horario y las cuotas.",
+    "fallo": "No preguntaste a qué se dedica, por qué Derecho ni por qué le urge terminar antes. Sin eso, la cuota sonó a gasto y no a su meta.",
+    "dialogo": [
+     {
+      "quien": "cliente",
+      "texto": "Me interesa terminar más rápido, ¿se puede?"
+     },
+     {
+      "quien": "asesor",
+      "texto": "Sí se puede avanzar, y te explico cómo. Antes cuéntame, ¿por qué te importa terminar antes?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Es que trabajo en una municipalidad y quiero postular a asesor legal."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Qué buena meta. ¿Y en tu área ya ves temas legales o sería empezar de cero?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Veo trámites, siempre estoy con abogados."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Entonces ya conoces el día a día legal. ¿Para cuándo te gustaría postular a ese puesto?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Si pudiera, en tres o cuatro años."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Perfecto. Entonces lo tuyo es titularte rápido sin dejar la muni para llegar a asesor legal, ¿verdad? Te cuento cómo te ayudamos a adelantar…"
+     }
+    ],
+    "clave": "Cuando el cliente pide algo («terminar antes»), pregunta el porqué antes de responder. Ese porqué es tu argumento para el paso 3."
+   },
+   {
+    "fecha": "10/11/2026",
+    "titulo": "Administración · solo preguntó el precio",
+    "paso": "La prospecta preguntó por el costo. Explicaste bien la admisión y el descuento, pero toda la llamada giró alrededor del precio.",
+    "fallo": "No supiste por qué quiere Administración ni cómo es su día. Sin eso, no pudiste darle 2 diferenciales y la decisión quedó solo en el precio.",
+    "dialogo": [
+     {
+      "quien": "cliente",
+      "texto": "Quiero saber cuánto cuesta Administración."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Claro, te lo detallo en un momento. Para darte el monto que te aplica, ¿hoy trabajas o estudias?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Trabajo en una tienda, de cajera."
+     },
+     {
+      "quien": "asesor",
+      "texto": "¿Y qué te animó a pensar en Administración justo ahora?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Quiero ser encargada de tienda, pero me piden título."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Entiendo, el título es lo que te falta para subir. ¿Qué horario tienes en la tienda?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Salgo a las 7 de la noche."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Entonces necesitas estudiar de noche sin dejar la tienda y titularte para ser encargada, ¿cierto? Te cuento cómo lo haces y cuánto te queda…"
+     }
+    ],
+    "clave": "Al «¿cuánto cuesta?» responde con «te lo digo» y haz 2 o 3 preguntas. El precio llega después, ya conectado a su meta."
+   },
+   {
+    "fecha": "27/10/2026",
+    "titulo": "Harvey · quiere matricularse en diciembre",
+    "paso": "Harvey dijo que prefería matricularse en diciembre. Le insististe en decidir ese mismo día con el descuento.",
+    "fallo": "No preguntaste por qué diciembre: si era dinero, trabajo u otra razón. Sin saberlo, el descuento no atacaba su duda real.",
+    "dialogo": [
+     {
+      "quien": "cliente",
+      "texto": "Creo que mejor me matriculo en diciembre."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Te entiendo, Harvey. ¿Qué pasa en diciembre que te acomoda más?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Me pagan la gratificación."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Ah, ok, entonces es por cómo organizas el pago. Fuera de eso, ¿la carrera y el horario ya te convencen?"
+     },
+     {
+      "quien": "cliente",
+      "texto": "Sí, eso sí."
+     },
+     {
+      "quien": "asesor",
+      "texto": "Perfecto. Entonces lo único que te frena es tener el dinero para la primera cuota, ¿verdad? Déjame mostrarte cómo puedes empezar ahora sin esperar…"
+     }
+    ],
+    "clave": "Cuando el cliente posterga, pregunta qué cambia en esa fecha. Así sabes si es dinero, tiempo o duda, y resuelves eso."
+   }
+  ],
+  "simulado": {
+   "titulo": "«Mándame la info por WhatsApp»",
+   "situacion": "Situación que pasa seguido: apenas empiezas, el cliente te pide que le mandes todo por WhatsApp para revisarlo después.",
+   "dialogo": [
+    {
+     "quien": "cliente",
+     "texto": "Mándame la información por WhatsApp y la reviso."
+    },
+    {
+     "quien": "asesor",
+     "texto": "Claro, te la mando. Para no mandarte de todo, dime: ¿la carrera es para crecer donde trabajas o para cambiar de rubro?"
+    },
+    {
+     "quien": "cliente",
+     "texto": "Para crecer, estoy en almacén y quiero ser jefe."
+    },
+    {
+     "quien": "asesor",
+     "texto": "Buenísimo. ¿Y qué te ha frenado hasta ahora para estudiar?"
+    },
+    {
+     "quien": "cliente",
+     "texto": "El horario, salgo tarde."
+    },
+    {
+     "quien": "asesor",
+     "texto": "Entonces necesitas estudiar sin chocar con tu turno para llegar a jefe de almacén. Te cuento en un minuto cómo funciona eso y te mando por WhatsApp solo lo tuyo, ¿vamos bien?"
+    }
+   ],
+   "clave": "No cortes la indagación por el WhatsApp. Haz una sola pregunta de motivación y otra de obstáculo, y sigue en la llamada."
+  }
+ }
+}

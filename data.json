@@ -15040,41 +15040,41 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 4,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "convalidacion",
-        "tema": "Anticipa % o ciclos de convalidación",
-        "n": 3,
-        "ultima": true
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "02/11/2026",
+         "04/11/2026"
+        ],
+        "frase": "Profundiza en las necesidades de convalidación del prospecto, por ejemplo: ¿por qué le gustaría estudiar Ing Ambiental?,  ¿Dónde y cuánto tiempo estudiaste?, ¿ya eres titulado técn…"
        }
       ],
-      "total": 6
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": true,
+        "fechas": [
+         "04/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Identificas que la prospecto cuenta con formación en Educación, licenciatura y maestría, y que desea aprovechar sus estudios anteriores para reducir la duración de Psicología."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "situacion"
      },
      "ajeno": null
     },
@@ -16217,49 +16217,268 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "admision",
-        "tema": "Explica el proceso de admisión",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 8,
       "mejorar": [
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 7,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "27/10/2026",
+         "02/11/2026",
+         "10/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indaga por qué el prospecto quiere estudiar Derecho, a qué se dedica y por qué le interesa reducir la duración de la carrera, para presentar diferenciales vinculados a su necesidad…"
        },
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
         "n": 6,
-        "ultima": false
+        "ultima": true,
+        "fechas": [
+         "27/10/2026",
+         "04/11/2026",
+         "10/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indaga por qué el prospecto quiere estudiar Derecho, a qué se dedica y por qué le interesa reducir la duración de la carrera, para presentar diferenciales vinculados a su necesidad…"
        },
        {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 6,
+        "ultima": true,
+        "fechas": [
+         "27/10/2026",
+         "02/11/2026",
+         "10/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indaga por qué el prospecto quiere estudiar Derecho, a qué se dedica y por qué le interesa reducir la duración de la carrera, para presentar diferenciales vinculados a su necesidad…"
+       },
+       {
+        "id": "repregunta",
+        "tema": "No repregunta lo que el cliente deja caer (postergar, acortar, comparar)",
         "n": 4,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "27/10/2026",
+         "27/10/2026",
+         "02/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indaga por qué el prospecto quiere estudiar Derecho, a qué se dedica y por qué le interesa reducir la duración de la carrera, para presentar diferenciales vinculados a su necesidad…"
+       },
+       {
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
+        "n": 4,
+        "ultima": false,
+        "fechas": [
+         "27/10/2026",
+         "27/10/2026",
+         "27/10/2026",
+         "10/11/2026"
+        ],
+        "frase": "Indaga qué motiva a la prospecta a estudiar Administración y cuál es su situación actual, y presenta al menos dos diferenciales de la universidad o la carrera vinculados a sus resp…"
        }
       ],
-      "total": 8
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 4,
+        "ultima": false,
+        "fechas": [
+         "27/10/2026",
+         "27/10/2026",
+         "02/11/2026",
+         "04/11/2026"
+        ],
+        "frase": "Indagaste sobre sus estudios previos y su situación académica."
+       },
+       {
+        "id": "presupuesto",
+        "tema": "Pregunta por su presupuesto o posibilidades",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "27/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Además, reconoces que su presupuesto máximo es de S/350 mensuales por persona, información relevante para orientar la propuesta económica y evaluar alternativas de formación."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Inversión y cuotas",
+        "n": 4
+       },
+       {
+        "tema": "Proceso de admisión",
+        "n": 3
+       },
+       {
+        "tema": "Modalidad y horarios de clase",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
-     "ajeno": null
+     "ajeno": null,
+     "practica": {
+      "casos": [
+       {
+        "fecha": "13/11/2026",
+        "titulo": "Derecho · quiere terminar antes",
+        "paso": "El prospecto dijo que le interesaba reducir la duración de Derecho. Pasaste directo a la evaluación, el horario y las cuotas.",
+        "fallo": "No preguntaste a qué se dedica, por qué Derecho ni por qué le urge terminar antes. Sin eso, la cuota sonó a gasto y no a su meta.",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Me interesa terminar más rápido, ¿se puede?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Sí se puede avanzar, y te explico cómo. Antes cuéntame, ¿por qué te importa terminar antes?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Es que trabajo en una municipalidad y quiero postular a asesor legal."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué buena meta. ¿Y en tu área ya ves temas legales o sería empezar de cero?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Veo trámites, siempre estoy con abogados."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces ya conoces el día a día legal. ¿Para cuándo te gustaría postular a ese puesto?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Si pudiera, en tres o cuatro años."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Entonces lo tuyo es titularte rápido sin dejar la muni para llegar a asesor legal, ¿verdad? Te cuento cómo te ayudamos a adelantar…"
+         }
+        ],
+        "clave": "Cuando el cliente pide algo («terminar antes»), pregunta el porqué antes de responder. Ese porqué es tu argumento para el paso 3."
+       },
+       {
+        "fecha": "10/11/2026",
+        "titulo": "Administración · solo preguntó el precio",
+        "paso": "La prospecta preguntó por el costo. Explicaste bien la admisión y el descuento, pero toda la llamada giró alrededor del precio.",
+        "fallo": "No supiste por qué quiere Administración ni cómo es su día. Sin eso, no pudiste darle 2 diferenciales y la decisión quedó solo en el precio.",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Quiero saber cuánto cuesta Administración."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Claro, te lo detallo en un momento. Para darte el monto que te aplica, ¿hoy trabajas o estudias?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Trabajo en una tienda, de cajera."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¿Y qué te animó a pensar en Administración justo ahora?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Quiero ser encargada de tienda, pero me piden título."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entiendo, el título es lo que te falta para subir. ¿Qué horario tienes en la tienda?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Salgo a las 7 de la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces necesitas estudiar de noche sin dejar la tienda y titularte para ser encargada, ¿cierto? Te cuento cómo lo haces y cuánto te queda…"
+         }
+        ],
+        "clave": "Al «¿cuánto cuesta?» responde con «te lo digo» y haz 2 o 3 preguntas. El precio llega después, ya conectado a su meta."
+       },
+       {
+        "fecha": "27/10/2026",
+        "titulo": "Harvey · quiere matricularse en diciembre",
+        "paso": "Harvey dijo que prefería matricularse en diciembre. Le insististe en decidir ese mismo día con el descuento.",
+        "fallo": "No preguntaste por qué diciembre: si era dinero, trabajo u otra razón. Sin saberlo, el descuento no atacaba su duda real.",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Creo que mejor me matriculo en diciembre."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, Harvey. ¿Qué pasa en diciembre que te acomoda más?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me pagan la gratificación."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Ah, ok, entonces es por cómo organizas el pago. Fuera de eso, ¿la carrera y el horario ya te convencen?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, eso sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Entonces lo único que te frena es tener el dinero para la primera cuota, ¿verdad? Déjame mostrarte cómo puedes empezar ahora sin esperar…"
+         }
+        ],
+        "clave": "Cuando el cliente posterga, pregunta qué cambia en esa fecha. Así sabes si es dinero, tiempo o duda, y resuelves eso."
+       }
+      ],
+      "simulado": {
+       "titulo": "«Mándame la info por WhatsApp»",
+       "situacion": "Situación que pasa seguido: apenas empiezas, el cliente te pide que le mandes todo por WhatsApp para revisarlo después.",
+       "dialogo": [
+        {
+         "quien": "cliente",
+         "texto": "Mándame la información por WhatsApp y la reviso."
+        },
+        {
+         "quien": "asesor",
+         "texto": "Claro, te la mando. Para no mandarte de todo, dime: ¿la carrera es para crecer donde trabajas o para cambiar de rubro?"
+        },
+        {
+         "quien": "cliente",
+         "texto": "Para crecer, estoy en almacén y quiero ser jefe."
+        },
+        {
+         "quien": "asesor",
+         "texto": "Buenísimo. ¿Y qué te ha frenado hasta ahora para estudiar?"
+        },
+        {
+         "quien": "cliente",
+         "texto": "El horario, salgo tarde."
+        },
+        {
+         "quien": "asesor",
+         "texto": "Entonces necesitas estudiar sin chocar con tu turno para llegar a jefe de almacén. Te cuento en un minuto cómo funciona eso y te mando por WhatsApp solo lo tuyo, ¿vamos bien?"
+        }
+       ],
+       "clave": "No cortes la indagación por el WhatsApp. Haz una sola pregunta de motivación y otra de obstáculo, y sigue en la llamada."
+      }
+     }
     },
     "paso3": {
      "pct": 77,
@@ -17662,47 +17881,68 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "admision",
-        "tema": "Explica el proceso de admisión",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 6,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 3,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "16/10/2026",
+         "13/11/2026",
+         "18/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones y expectativas de la prospecta para estudiar Educación Inicial, conectando la propuesta académica con sus objetivos personales y profesionales."
        },
        {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
         "n": 2,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "13/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Asimismo, cuando comuniques que el descuento del 25 % puede mantenerse durante la carrera, explica las condiciones para conservarlo: aprobar los cursos con nota mínima de 10.5, lle…"
        }
       ],
-      "total": 7
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "03/11/2026",
+         "09/11/2026"
+        ],
+        "frase": "Consultaste sobre sus estudios previos y la posibilidad de convalidar cursos."
+       },
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "09/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indagaste la situación de su instituto y su experiencia laboral, y con esa información le presentaste la posibilidad de convalidar por experiencia."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 4
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 3
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -19058,41 +19298,69 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 2,
-        "ultima": true
-       }
-      ],
+      "v": 2,
+      "total": 7,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 5,
-        "ultima": false
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 6,
+        "ultima": true,
+        "fechas": [
+         "27/10/2026",
+         "27/10/2026",
+         "05/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indaga por qué el prospecto quiere estudiar Psicología y en qué trabaja."
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
-        "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
+        "id": "repregunta",
+        "tema": "No repregunta lo que el cliente deja caer (postergar, acortar, comparar)",
         "n": 2,
-        "ultima": true
+        "ultima": false,
+        "fechas": [
+         "27/10/2026",
+         "05/11/2026"
+        ],
+        "frase": "Explora qué busca lograr con esta segunda carrera, sus expectativas profesionales y los factores que considera al momento de elegir una universidad."
+       },
+       {
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "13/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Esta información permitirá personalizar la propuesta académica e incorporar al menos dos diferenciales vinculados con sus objetivos profesionales y familiares."
        }
       ],
-      "total": 8
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "27/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Además, identificas que su hija también está considerando continuar estudios, información relevante para ampliar la orientación y comprender mejor las necesidades familiares."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 2
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -20523,7 +20791,14 @@
       ],
       "tema": null
      },
-     "patrones": null,
+     "patrones": {
+      "v": 2,
+      "total": 2,
+      "mejorar": [],
+      "bien": [],
+      "otroPaso": [],
+      "foco": null
+     },
      "ajeno": null
     },
     "paso3": {
@@ -21920,47 +22195,58 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 9,
       "mejorar": [
        {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 5,
-        "ultima": false
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 8,
+        "ultima": true,
+        "fechas": [
+         "17/11/2026",
+         "17/11/2026",
+         "17/11/2026",
+         "18/11/2026"
+        ],
+        "frase": "Es importante profundizar en las motivaciones de Leidy, conocer por qué desea estudiar Educación Inicial, qué expectativas tiene y qué busca alcanzar profesionalmente."
        },
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 4,
-        "ultima": true
-       },
-       {
-        "id": "conexion",
-        "tema": "Falta personalizar la atención",
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
         "n": 2,
-        "ultima": true
+        "ultima": false,
+        "fechas": [
+         "04/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Aprovecha esta información para presentar beneficios académicos relacionados con su disponibilidad."
        }
       ],
-      "total": 9
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "17/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "También identificas que espera trasladarse a una provincia el lunes para intentar continuar con su proceso."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Inversión y cuotas",
+        "n": 4
+       },
+       {
+        "tema": "Proceso de admisión",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -23344,22 +23630,33 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [],
+      "v": 2,
+      "total": 3,
       "mejorar": [
        {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 2,
-        "ultima": false
+        "ultima": true,
+        "fechas": [
+         "03/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indaga qué motiva a la prospecta a estudiar Psicología después de su formación en Fisioterapia y si trabaja actualmente, para vincular los beneficios con su situación."
        }
       ],
-      "total": 4
+      "bien": [],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 2
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -25630,47 +25927,31 @@
      "tecnica": null,
      "caso": null,
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "admision",
-        "tema": "Explica el proceso de admisión",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 2,
-        "ultima": true
-       }
-      ],
+      "v": 2,
+      "total": 4,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "conexion",
-        "tema": "Falta personalizar la atención",
-        "n": 2,
-        "ultima": false
+        "ultima": true,
+        "fechas": [
+         "13/10/2026",
+         "06/11/2026",
+         "10/11/2026",
+         "15/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones y expectativas de la prospecto para identificar qué factores influyen en su decisión."
        }
       ],
-      "total": 5
+      "bien": [],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": "Angelo"
     },
@@ -26450,41 +26731,60 @@
      "tecnica": null,
      "caso": null,
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 5,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 4,
-        "ultima": true
-       }
-      ],
+      "v": 2,
+      "total": 10,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 8,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "10/11/2026",
+         "11/11/2026",
+         "11/11/2026",
+         "15/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones y expectativas de la prospecto para identificar qué factores influyen en su decisión."
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
-        "n": 5,
-        "ultima": false
-       },
-       {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
         "n": 4,
-        "ultima": true
+        "ultima": false,
+        "fechas": [
+         "13/10/2026",
+         "27/10/2026",
+         "27/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Esta información permitirá relacionar su formación técnica con las oportunidades académicas y laborales de la carrera, presentando al menos dos diferenciales institucionales releva…"
+       },
+       {
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "27/10/2026",
+         "10/11/2026",
+         "11/11/2026"
+        ],
+        "frase": "En la inversión, comunica el beneficio de matrícula vigente según la condición oficial: en esta llamada indicaste que la matrícula estaba exonerada hasta ese día, mientras que hora…"
        }
       ],
-      "total": 12
+      "bien": [],
+      "otroPaso": [
+       {
+        "tema": "Inversión y cuotas",
+        "n": 4
+       },
+       {
+        "tema": "Proceso de admisión",
+        "n": 3
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": "Angelo"
     },
@@ -27872,22 +28172,59 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [],
+      "v": 2,
+      "total": 3,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 4,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 3,
+        "ultima": true,
+        "fechas": [
+         "13/10/2026",
+         "16/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Profundiza en las motivaciones del prospecto para estudiar Derecho, su situación laboral y sus expectativas profesionales."
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
         "n": 2,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "13/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Profundiza en las motivaciones del prospecto para estudiar Derecho, su situación laboral y sus expectativas profesionales."
+       },
+       {
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 2,
+        "ultima": true,
+        "fechas": [
+         "16/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Esta información permitirá adaptar la propuesta comercial e incorporar al menos dos diferenciales académicos relacionados con sus objetivos, evitando que la conversación se concent…"
        }
       ],
-      "total": 5
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": true,
+        "fechas": [
+         "16/10/2026",
+         "27/10/2026"
+        ],
+        "frase": "Además, identificas que necesita evaluar su presupuesto antes de comprometerse con una inscripción y que mantiene interés en iniciar estudios durante el periodo académico de marzo …"
+       }
+      ],
+      "otroPaso": [],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -29275,47 +29612,53 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 5,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 6,
       "mejorar": [
        {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 4,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "09/11/2026",
+         "15/11/2026",
+         "18/11/2026",
+         "18/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones de Carmen para estudiar Ingeniería Ambiental, su situación actual y los factores que influyen en su decisión."
        },
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 4,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
         "n": 2,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "17/11/2026",
+         "18/11/2026"
+        ],
+        "frase": "Asimismo, cuando indiques que el descuento del 10 % se mantiene durante toda la carrera, explica las condiciones para conservarlo: aprobar los cursos con nota mínima de 10.5, lleva…"
+       },
+       {
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
+        "n": 2,
+        "ultima": true,
+        "fechas": [
+         "04/11/2026",
+         "18/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones de Carmen para estudiar Ingeniería Ambiental, su situación actual y los factores que influyen en su decisión."
        }
       ],
-      "total": 6
+      "bien": [],
+      "otroPaso": [
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -30687,47 +31030,92 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 3,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 10,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 6,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 3,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "26/10/2026",
+         "02/11/2026",
+         "15/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones y expectativas de la prospecto para identificar qué factores influyen en su decisión."
+       },
+       {
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "30/10/2026",
+         "02/11/2026"
+        ],
+        "frase": "Pregunta qué aspectos son más importantes para ella: inversión, modalidad, prestigio, horarios o campo laboral."
+       },
+       {
+        "id": "repregunta",
+        "tema": "No repregunta lo que el cliente deja caer (postergar, acortar, comparar)",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "11/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Profundiza en lo que el prospecto busca al comparar universidades: cantidad de créditos convalidables, duración de la carrera, inversión y reconocimiento académico."
+       },
+       {
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "02/11/2026"
+        ],
+        "frase": "Refuerza la propuesta de valor de Psicología mencionando al menos dos diferenciales concretos que permitan distinguir a la Universidad Continental frente a otras alternativas."
        }
       ],
-      "total": 10
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "26/10/2026",
+         "30/10/2026"
+        ],
+        "frase": "Indagaste sobre su situación académica, el instituto donde estudia, el ciclo que cursa y los motivos por los que desea cambiarse."
+       },
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "26/10/2026",
+         "11/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Explicaste los requisitos para la convalidación y los beneficios del convenio con la Policía, destacando la exoneración de matrícula y el descuento en las cuotas durante la carrera…"
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 2
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -32109,47 +32497,89 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 5,
-        "ultima": false
-       },
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 5,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 4,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 9,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 7,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 6,
+        "ultima": true,
+        "fechas": [
+         "13/11/2026",
+         "16/11/2026",
+         "18/11/2026",
+         "19/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones de Diana para estudiar Educación Inicial, sus metas y expectativas."
        },
        {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
         "n": 4,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "04/11/2026",
+         "09/11/2026",
+         "16/11/2026"
+        ],
+        "frase": "Recuerda que el descuento máximo autorizado es del 15 % y que no debes utilizar el término «beca» para comunicar descuentos comerciales."
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
         "n": 2,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "18/11/2026"
+        ],
+        "frase": "Es importante profundizar en las necesidades y expectativas del prospecto antes de presentar la propuesta académica, destacando los diferenciales de la Universidad Continental y co…"
        }
       ],
-      "total": 10
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "04/11/2026"
+        ],
+        "frase": "Indagaste sobre los montos de la propuesta que recibió de otra universidad, lo que te permitió conocer las condiciones que está evaluando."
+       },
+       {
+        "id": "presupuesto",
+        "tema": "Pregunta por su presupuesto o posibilidades",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "30/10/2026",
+         "13/11/2026"
+        ],
+        "frase": "Además, exploraste el presupuesto del prospecto y le presentaste una alternativa económica mediante el descuento del 10%."
+       },
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "30/10/2026"
+        ],
+        "frase": "Indagaste sobre sus estudios anteriores, documentos para convalidación, disponibilidad y presupuesto."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 3
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -34012,47 +34442,60 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 6,
-        "ultima": true
-       },
-       {
-        "id": "admision",
-        "tema": "Explica el proceso de admisión",
-        "n": 5,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 4,
-        "ultima": true
-       }
-      ],
+      "v": 2,
+      "total": 10,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 6,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "10/11/2026",
+         "13/11/2026",
+         "13/11/2026",
+         "15/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones y expectativas de la prospecto para identificar qué factores influyen en su decisión."
        },
        {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
         "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "admision",
-        "tema": "Proceso de admisión incompleto",
-        "n": 2,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "23/10/2026",
+         "17/11/2026"
+        ],
+        "frase": "Cuando comuniques que el descuento se mantiene durante toda la carrera, explica todas las condiciones: promedio ponderado mínimo de 10.5, matrícula mínima de 20 créditos y puntuali…"
        }
       ],
-      "total": 12
+      "bien": [
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 5,
+        "ultima": false,
+        "fechas": [
+         "26/10/2026",
+         "05/11/2026",
+         "13/11/2026",
+         "16/11/2026"
+        ],
+        "frase": "Detallaste los documentos necesarios para realizar la convalidación y el proceso de admisión."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 7
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 3
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -35512,47 +35955,81 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 5,
-        "ultima": true
-       },
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 3,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 9,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 4,
-        "ultima": true
-       },
-       {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 3,
-        "ultima": false
+        "ultima": true,
+        "fechas": [
+         "28/10/2026",
+         "10/11/2026",
+         "19/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones del prospecto."
        },
        {
-        "id": "seguimiento",
-        "tema": "Seguimiento sin día y hora concretos",
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
         "n": 2,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "14/10/2026",
+         "17/11/2026"
+        ],
+        "frase": "Cuando el prospecto consulte si los descuentos se mantienen durante toda la carrera, explica detalladamente todas las condiciones."
+       },
+       {
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "14/10/2026",
+         "23/10/2026"
+        ],
+        "frase": "Fortalece tu propuesta de valor integrando al menos dos diferenciales de la Universidad Continental relacionados con las necesidades de Fiorella."
        }
       ],
-      "total": 10
+      "bien": [
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 5,
+        "ultima": true,
+        "fechas": [
+         "14/10/2026",
+         "23/10/2026",
+         "10/11/2026",
+         "19/11/2026"
+        ],
+        "frase": "Indagas sobre su formación previa en Biología, año de egreso y documentación disponible, identificando la posibilidad de realizar una convalidación."
+       },
+       {
+        "id": "presupuesto",
+        "tema": "Pregunta por su presupuesto o posibilidades",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "05/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Indagaste sobre el presupuesto de la prospecto y detectaste su preocupación por el costo de la mensualidad."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Inversión y cuotas",
+        "n": 4
+       },
+       {
+        "tema": "Proceso de admisión",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -36677,41 +37154,38 @@
       "generico": true
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 3,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 5,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 5,
-        "ultima": true
-       },
-       {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
-        "n": 2,
-        "ultima": false
+        "ultima": true,
+        "fechas": [
+         "06/11/2026",
+         "10/11/2026",
+         "10/11/2026",
+         "11/11/2026"
+        ],
+        "frase": "Continúa profundizando en las necesidades y expectativas del prospecto, especialmente cuando existen experiencias académicas anteriores que pueden influir en su decisión de matrícu…"
        }
       ],
-      "total": 7
+      "bien": [
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "06/11/2026",
+         "10/11/2026"
+        ],
+        "frase": "Atendiste sus consultas sobre convalidaciones, admisión y costos, brindando orientación durante la conversación."
+       }
+      ],
+      "otroPaso": [],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -37577,35 +38051,47 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 2,
-        "ultima": true
-       }
-      ],
+      "v": 2,
+      "total": 3,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 3,
-        "ultima": true
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 2,
+        "ultima": true,
+        "fechas": [
+         "16/10/2026",
+         "23/10/2026"
+        ],
+        "frase": "Profundiza en las necesidades de la prospecto y fortalece tu propuesta de valor integrando al menos dos diferenciales de la Universidad Continental relacionados con sus objetivos."
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
-        "n": 3,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "16/10/2026",
+         "16/10/2026"
+        ],
+        "frase": "Presenta al menos dos diferenciales institucionales de forma clara y verificable, evitando afirmaciones que puedan generar expectativas no sustentadas sobre oportunidades laborales…"
        }
       ],
-      "total": 3
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": true,
+        "fechas": [
+         "16/10/2026",
+         "23/10/2026"
+        ],
+        "frase": "Indagas sobre la motivación de Marisela para estudiar Derecho, identificas que cursa quinto de secundaria y conoces su ubicación en Cajamarca."
+       }
+      ],
+      "otroPaso": [],
+      "foco": "conecta"
      },
      "ajeno": null
     },
@@ -39033,47 +39519,86 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 6,
-        "ultima": false
-       },
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 3,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 16,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 13,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 11,
+        "ultima": true,
+        "fechas": [
+         "10/11/2026",
+         "12/11/2026",
+         "16/11/2026",
+         "19/11/2026"
+        ],
+        "frase": "Es importante que, además de identificar el interés del prospecto, profundices en sus expectativas profesionales, motivaciones y objetivos."
        },
        {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
-        "n": 9,
-        "ultima": false
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
+        "n": 7,
+        "ultima": false,
+        "fechas": [
+         "12/11/2026",
+         "13/11/2026",
+         "16/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Recuerda que debemos comunicar “descuento” o “beneficio económico”."
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
         "n": 5,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "26/10/2026",
+         "28/10/2026",
+         "17/11/2026"
+        ],
+        "frase": "Refuerza la propuesta de valor mencionando al menos dos diferenciales de la Universidad Continental."
+       },
+       {
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "12/10/2026",
+         "05/11/2026",
+         "12/11/2026"
+        ],
+        "frase": "Es importante profundizar en las motivaciones del prospecto, sus objetivos profesionales y su situación actual."
        }
       ],
-      "total": 17
+      "bien": [
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "29/10/2026",
+         "05/11/2026",
+         "10/11/2026"
+        ],
+        "frase": "Reconoces que busca estudiar Contabilidad y consultas sobre sus estudios anteriores para orientarla respecto a la convalidación."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 4
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 3
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -40499,47 +41024,82 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 6,
-        "ultima": true
-       },
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 11,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 6,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 7,
+        "ultima": true,
+        "fechas": [
+         "04/11/2026",
+         "05/11/2026",
+         "11/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Mantén la claridad en la explicación de los beneficios comerciales, detallando los porcentajes, importes y condiciones para evitar expectativas incorrectas."
        },
        {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 4,
-        "ultima": false
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "04/11/2026"
+        ],
+        "frase": "En la inversión, además de la cuota y el descuento, explica siempre la matrícula, que las cuotas dependen de los créditos, el número de cuotas, el seguro médico y las condiciones d…"
        },
        {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
-        "n": 3,
-        "ultima": false
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "26/10/2026",
+         "02/11/2026"
+        ],
+        "frase": "Explicas claramente las características de la modalidad a Distancia: la frecuencia de clases (3 veces por semana), los horarios nocturnos (2 horas y 15 minutos aprox.), la flexibil…"
        }
       ],
-      "total": 14
+      "bien": [
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 6,
+        "ultima": true,
+        "fechas": [
+         "04/11/2026",
+         "11/11/2026",
+         "13/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Brindaste información sobre los requisitos de convalidación y el proceso de admisión."
+       },
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "26/10/2026",
+         "30/10/2026"
+        ],
+        "frase": "Consultaste sobre sus estudios previos y disponibilidad horaria, identificando que necesita estudiar en horario nocturno debido a sus actividades laborales."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 6
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 4
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -42004,41 +42564,71 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 2,
-        "ultima": false
-       },
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 6,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 3,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 5,
+        "ultima": true,
+        "fechas": [
+         "02/11/2026",
+         "13/11/2026",
+         "15/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones de Catherine para estudiar Psicología, su carrera de procedencia y los objetivos profesionales que desea alcanzar."
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
         "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "convalidacion",
-        "tema": "Anticipa % o ciclos de convalidación",
-        "n": 2,
-        "ultima": false
+        "ultima": true,
+        "fechas": [
+         "13/10/2026",
+         "13/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Esta información permitirá presentar una propuesta de valor vinculada con su perfil y explicar al menos dos diferenciales académicos o institucionales relevantes."
        }
       ],
-      "total": 7
+      "bien": [
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 3,
+        "ultima": true,
+        "fechas": [
+         "13/10/2026",
+         "02/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Identificas que Catherine busca conocer sus posibilidades de convalidación antes de decidir si inicia una nueva carrera."
+       },
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 2,
+        "ultima": true,
+        "fechas": [
+         "13/10/2026",
+         "17/11/2026"
+        ],
+        "frase": "Identificas que Catherine busca conocer sus posibilidades de convalidación antes de decidir si inicia una nueva carrera."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 3
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -43458,41 +44048,37 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "inversion",
-        "tema": "Explica la inversión con claridad",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 2,
-        "ultima": true
-       },
-       {
-        "id": "admision",
-        "tema": "Explica el proceso de admisión",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 3,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 3,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "02/11/2026",
+         "13/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones de la futura estudiante para elegir Derecho y en los factores que influyen en su decisión de estudiar a distancia."
        }
       ],
-      "total": 5
+      "bien": [
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "02/11/2026",
+         "13/11/2026"
+        ],
+        "frase": "Explicaste la convalidación con transparencia, aclarando que depende de la similitud de las carreras y del tiempo de egreso."
+       }
+      ],
+      "otroPaso": [],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -44343,47 +44929,96 @@
       "tema": "inversion"
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 4,
-        "ultima": true
-       },
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "admision",
-        "tema": "Explica el proceso de admisión",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 10,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 7,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 8,
+        "ultima": true,
+        "fechas": [
+         "10/11/2026",
+         "13/11/2026",
+         "13/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Profundiza en los objetivos profesionales de Maricielo y en lo que espera conseguir al obtener un título universitario, considerando que ya trabaja en el sector contable."
        },
        {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
-        "n": 6,
-        "ultima": true
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
+        "n": 3,
+        "ultima": true,
+        "fechas": [
+         "10/11/2026",
+         "13/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Asimismo, al presentar la inversión, desglosa matrícula, primera cuota, seguro y examen médico, y explica que la renovación del descuento del 10 % requiere cumplir condiciones acad…"
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
-        "n": 5,
-        "ultima": false
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 3,
+        "ultima": true,
+        "fechas": [
+         "13/10/2026",
+         "16/10/2026",
+         "17/11/2026"
+        ],
+        "frase": "Utiliza esta información para presentar al menos dos diferenciales académicos o institucionales específicos y vinculados con su perfil, más allá de explicar las características gen…"
+       },
+       {
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "13/10/2026",
+         "16/10/2026",
+         "07/11/2026"
+        ],
+        "frase": "Profundiza en la situación laboral de Roy."
        }
       ],
-      "total": 10
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 4,
+        "ultima": true,
+        "fechas": [
+         "16/10/2026",
+         "17/11/2026",
+         "17/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Identificas que Augusto necesita obtener un título universitario para cumplir un requisito laboral, que cuenta con estudios técnicos en SENATI y que actualmente ocupa el cargo de g…"
+       },
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "16/10/2026",
+         "13/11/2026"
+        ],
+        "frase": "Indagaste la carrera técnica del prospecto, su año de egreso, si su institución sigue activa y su área laboral actual, y usaste esa información para presentarle la posibilidad de c…"
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 5
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 4
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -45849,47 +46484,85 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "indagacion",
-        "tema": "Indaga motivaciones y necesidades",
-        "n": 7,
-        "ultima": true
-       },
-       {
-        "id": "valor",
-        "tema": "Presenta la propuesta de valor",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 2,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 12,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
         "n": 8,
-        "ultima": true
+        "ultima": true,
+        "fechas": [
+         "15/11/2026",
+         "17/11/2026",
+         "18/11/2026",
+         "19/11/2026"
+        ],
+        "frase": "Sigue profundizando en las motivaciones del prospecto y conecta los beneficios con su experiencia previa."
        },
        {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
-        "n": 3,
-        "ultima": false
+        "id": "precio",
+        "tema": "Salta al precio o al descuento antes de conocer la necesidad",
+        "n": 4,
+        "ultima": false,
+        "fechas": [
+         "14/10/2026",
+         "11/11/2026",
+         "16/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Cuando comuniques que el descuento del 25% se mantiene durante toda la carrera, explica detalladamente todas las condiciones: promedio ponderado mínimo de 10.5, matrícula mínima de…"
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
         "n": 3,
-        "ultima": false
+        "ultima": true,
+        "fechas": [
+         "19/10/2026",
+         "28/10/2026",
+         "19/11/2026"
+        ],
+        "frase": "Sigue profundizando en las motivaciones del prospecto y conecta los beneficios con su experiencia previa."
        }
       ],
-      "total": 11
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "19/10/2026",
+         "07/11/2026",
+         "18/11/2026"
+        ],
+        "frase": "Identificas que Joel estudió Ingeniería Agroindustrial, egresó en 2022 y actualmente trabaja."
+       },
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 3,
+        "ultima": false,
+        "fechas": [
+         "10/11/2026",
+         "11/11/2026",
+         "17/11/2026"
+        ],
+        "frase": "Profundizaste en su necesidad de convalidación y planteaste la alternativa de reconocimiento por experiencia laboral."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 5
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },
@@ -47327,47 +48000,94 @@
       "tema": null
      },
      "patrones": {
-      "bien": [
-       {
-        "id": "dudas",
-        "tema": "Resuelve dudas y objeciones",
-        "n": 3,
-        "ultima": true
-       },
-       {
-        "id": "modalidad",
-        "tema": "Explica bien la modalidad a distancia",
-        "n": 3,
-        "ultima": false
-       },
-       {
-        "id": "admision",
-        "tema": "Explica el proceso de admisión",
-        "n": 3,
-        "ultima": false
-       }
-      ],
+      "v": 2,
+      "total": 12,
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
-        "n": 9,
-        "ultima": true
+        "id": "porque",
+        "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
+        "n": 10,
+        "ultima": true,
+        "fechas": [
+         "13/11/2026",
+         "15/11/2026",
+         "17/11/2026",
+         "18/11/2026"
+        ],
+        "frase": "Profundiza en los motivos por los que desea estudiar Ingeniería Ambiental y en la importancia que tiene la convalidación para su decisión."
        },
        {
-        "id": "seguimiento",
-        "tema": "Seguimiento sin día y hora concretos",
-        "n": 4,
-        "ultima": false
-       },
-       {
-        "id": "inversion",
-        "tema": "Inversión incompleta o poco clara",
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
         "n": 3,
-        "ultima": false
+        "ultima": false,
+        "fechas": [
+         "22/10/2026",
+         "30/10/2026",
+         "10/11/2026"
+        ],
+        "frase": "No te limites a identificar su disponibilidad horaria."
+       },
+       {
+        "id": "conecta",
+        "tema": "No conecta lo que descubrió con 2 diferenciales",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "28/10/2026",
+         "11/11/2026"
+        ],
+        "frase": "Profundiza en las motivaciones profesionales de Alex y conecta los beneficios de Ingeniería Industrial con sus objetivos."
        }
       ],
-      "total": 11
+      "bien": [
+       {
+        "id": "datos",
+        "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
+        "n": 3,
+        "ultima": true,
+        "fechas": [
+         "22/10/2026",
+         "28/10/2026",
+         "18/11/2026"
+        ],
+        "frase": "Identificas que la prospecto cuenta con estudios técnicos en Contabilidad culminados en 2018 y que su interés está relacionado con aprovechar esa formación mediante un proceso de c…"
+       },
+       {
+        "id": "convalida",
+        "tema": "Explora estudios previos para convalidar",
+        "n": 3,
+        "ultima": true,
+        "fechas": [
+         "22/10/2026",
+         "28/10/2026",
+         "18/11/2026"
+        ],
+        "frase": "Identificas que la prospecto cuenta con estudios técnicos en Contabilidad culminados en 2018 y que su interés está relacionado con aprovechar esa formación mediante un proceso de c…"
+       },
+       {
+        "id": "presupuesto",
+        "tema": "Pregunta por su presupuesto o posibilidades",
+        "n": 2,
+        "ultima": false,
+        "fechas": [
+         "10/11/2026",
+         "11/11/2026"
+        ],
+        "frase": "Además, consultaste si la mensualidad de S/646 estaba dentro de su presupuesto, obteniendo una respuesta positiva."
+       }
+      ],
+      "otroPaso": [
+       {
+        "tema": "Proceso de admisión",
+        "n": 3
+       },
+       {
+        "tema": "Inversión y cuotas",
+        "n": 2
+       }
+      ],
+      "foco": "porque"
      },
      "ajeno": null
     },

@@ -26,6 +26,8 @@ Uso:  python3 sync/build_data.py          (desde la raíz del repo; escribe data
 """
 import json, re, sys, os, hashlib, unicodedata, datetime, calendar, copy
 from difflib import SequenceMatcher
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import patrones as PAT2   # v2 (20/11/2026): señales propias de cada etapa, bien/mal separados
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SYNC = os.path.join(ROOT, 'sync')
@@ -915,7 +917,8 @@ def caso_generico(k):
     return {'tipo': 'speech', 'texto': principal['texto'], 'porQue': principal['porQue'], 'base': 'generico-' + k, 'dialogo': principal['dialogo'],
             'variantes': [principal] + variantes, 'tema': None, 'generico': True}
 check_cache = load_json(os.path.join(SYNC, 'checklist_cache.json'), {})
-pending = {'LEER_PRIMERO': 'Antes de escribir cualquier conversacion de ejemplo lee con Read sync/guion_conversaciones.md (manda sobre el prompt) y, si tema=inversion, sync/guion_inversion.md. Cada caso con oportunidad lleva 5 opciones (opcion 1 en dialogo/speech/porQue/titulo + 4 en variantes) y "v": 2: opciones 1-3 grupo "resolver" (tres formas distintas de resolver lo observado) y 4-5 grupo "cerrar" (como continuar o cerrar esa etapa). Dialogos de 8 a 12 turnos, naturales; precios en soles enteros (sin centimos), primero que incluye y luego el monto; se resuelve en la misma llamada. necesita=reescribir: conserva conclusion/base/tecId y reescribe titulo/dialogo/speech/porQue/variantes con el estilo nuevo.', 'casos': [], 'checklist': []}
+practica_cache = load_json(os.path.join(SYNC, 'practica_cache.json'), {})   # 20/11/2026: casos de práctica por paso
+pending = {'LEER_PRIMERO': 'Antes de escribir cualquier conversacion de ejemplo lee con Read sync/guion_conversaciones.md (manda sobre el prompt) y, si tema=inversion, sync/guion_inversion.md. Cada caso con oportunidad lleva 5 opciones (opcion 1 en dialogo/speech/porQue/titulo + 4 en variantes) y "v": 2: opciones 1-3 grupo "resolver" (tres formas distintas de resolver lo observado) y 4-5 grupo "cerrar" (como continuar o cerrar esa etapa). Dialogos de 8 a 12 turnos, naturales; precios en soles enteros (sin centimos), primero que incluye y luego el monto; se resuelve en la misma llamada. necesita=reescribir: conserva conclusion/base/tecId y reescribe titulo/dialogo/speech/porQue/variantes con el estilo nuevo. PRACTICA (20/11/2026): por cada item de "practica" escribe en sync/practica_cache.json la clave "<asesor>|<stage>" = {"base", "v": 1, "stage", "foco", "casos": [hasta 3 llamadas reales de sus auditorias, la mas reciente primero: {"fecha", "titulo" (cliente/carrera + lo que pidio, 3-7 palabras), "paso" (que paso en la llamada, 1-2 frases), "fallo" (que fallo DE ESE PASO y que consecuencia tuvo, 1-2 frases), "dialogo" (6-8 turnos cliente/asesor que resuelven SOLO ese paso; el paso 2 termina con resumen + puente, sin precios), "clave" (regla de una frase para la proxima llamada)}], "simulado": {"titulo", "situacion" (situacion frecuente que no salio en sus llamadas), "dialogo", "clave"}}. Nada generico: todo sale de la frase de calidad y de la senal foco.', 'casos': [], 'checklist': [], 'practica': []}
 
 # Observaciones sobre la inversión (precio, cuotas, desglose, objeción económica): las 3 opciones del
 # ejemplo se arman con el guion del supervisor (sync/guion_inversion.md).
@@ -1112,8 +1115,27 @@ for name, lst in hist.items():
         fuente = 'sheet' if fuente is None else fuente + '+sheet'
 
     _pat = patrones_de(rows)
+    _et_rows = [(str(r.get(H_FECHA, '') or '').strip(), textos_por_etapa(r)) for r in rows]
     for k in STAGE_KEYS:
         stages[k]['patrones'] = _pat.get(k)
+        # v2 (20/11/2026): si la etapa tiene señales propias, se usan (bien/mal separados, foco y lo de otro paso aparte)
+        _items = [(f, e[0][k]['fortaleza'], e[0][k]['oportunidad']) for f, e in _et_rows
+                  if e[6] != 'ajeno' and (e[0][k]['fortaleza'] or e[0][k]['oportunidad'])]
+        _p2 = PAT2.patrones_etapa(k, _items)
+        if _p2:
+            stages[k]['patrones'] = _p2
+            # Casos de práctica del paso: lo que falló en SUS llamadas y cómo resolverlo + 1 situación simulada
+            _ops = [PAT2.solo_etapa(op) for _f, _fo, op in _items if op]
+            if _ops:
+                _pb = sha12(k + '|' + '|'.join(norm(o) for o in _ops))
+                _pc = practica_cache.get(f'{name}|{k}')
+                if _pc and _pc.get('base') == _pb:
+                    stages[k]['practica'] = {'casos': _pc.get('casos') or [], 'simulado': _pc.get('simulado')}
+                elif k == brecha_k or (stages[k]['pct'] is not None and stages[k]['pct'] < UMBRAL_GENERICO):
+                    if _pc:   # mientras se reescribe, se muestra la versión anterior
+                        stages[k]['practica'] = {'casos': _pc.get('casos') or [], 'simulado': _pc.get('simulado')}
+                    pending.setdefault('practica', []).append({'asesor': name, 'stage': k, 'base': _pb, 'foco': _p2.get('foco'),
+                        'patrones': _p2, 'auditorias': [{'fecha': f, 'fortaleza': fo, 'oportunidad': PAT2.solo_etapa(op)} for f, fo, op in _items[-4:]]})
         stages[k]['ajeno'] = last.get('_textoAjeno') or None
     analisis[name] = {
         'sede': d.get('sede') or (str(last.get(H_SEDE, '')).strip() if H_SEDE else None) or None,
@@ -1286,7 +1308,7 @@ if FILAS_VACIAS:
     print(f'filas en blanco de 🔰FEEDBACK ignoradas: {FILAS_VACIAS}')
 for a in ALERTAS_DATOS:
     print(f'⚠️ 🔰FEEDBACK {a["asesor"]} {a["fecha"] or "(sin fecha)"}: {a["mensaje"]}')
-print(f'PENDIENTES: casos={len(pending["casos"])} checklist={len(pending["checklist"])}  (ver sync/pending.json)')
+print(f'PENDIENTES: casos={len(pending["casos"])} checklist={len(pending["checklist"])} practica={len(pending.get("practica", []))}  (ver sync/pending.json)')
 if pending['casos']: print('⚠️ Antes de escribir los casos pendientes lee sync/guion_conversaciones.md (y sync/guion_inversion.md si tema=inversion).')
 if DRY:
     print('(modo --dry: data.json no se escribió)')
