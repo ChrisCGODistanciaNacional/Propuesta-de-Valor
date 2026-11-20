@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-11-19T23:14:34Z",
+ "generado": "2026-11-20T14:14:58Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -16949,13 +16949,13 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 54,
    "cuartilCalidad": "Q4",
-   "matriculas": 5,
+   "matriculas": 6,
    "meta": 26,
-   "avanceMes": 19.23,
+   "avanceMes": 23.08,
    "avanceRitmo": null,
-   "avanceMeta": 19.23,
+   "avanceMeta": 23.08,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q2",
+   "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
@@ -16967,7 +16967,7 @@
    },
    "puesto": 13,
    "totalAsesores": 26,
-   "indice": 36.6,
+   "indice": 38.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -18330,7 +18330,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 5,
+   "puesto": 7,
    "totalAsesores": 26,
    "indice": 48.6,
    "tecnicasDominadas": 0,
@@ -24024,7 +24024,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 6,
+   "puesto": 8,
    "totalAsesores": 26,
    "indice": 48.4,
    "tecnicasDominadas": 0,
@@ -34887,11 +34887,289 @@
      "avg": 90,
      "fortaleza": "Realizas una adecuada presentación, retomas la solicitud de información del prospecto y validas su interés por la carrera de Ingeniería Ambiental, generando continuidad en la gestión.",
      "oportunidad": "Continúa fortaleciendo el cumplimiento del protocolo de presentación y atención inicial, cuidando que la apertura de la llamada sea clara y completa.",
-     "conclusion": null,
+     "conclusion": "Te presentaste bien, retomaste la solicitud de información del prospecto y validaste su interés en Ingeniería Ambiental, lo que dio continuidad a la gestión. Sigue cuidando que la apertura sea clara y completa: tu nombre, la universidad y el motivo en la primera frase.",
      "rol": "oportunidad",
      "texto": "Continúa fortaleciendo el cumplimiento del protocolo de presentación y atención inicial, cuidando que la apertura de la llamada sea clara y completa.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_12",
+      "titulo": "🕊️ Dar la sensación de control",
+      "ejemplo": "\"Al final, la decisión de dar este paso para tu crecimiento profesional es 100% tuya. Yo estoy aquí para guiarte en el proceso de admisión.\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental. Te llamo por la información que pediste de Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?\n\nGracias, [nombre]. Voy a ser tu asesora durante todo el proceso, así tienes una sola persona para tus dudas. ¿Ya habías revisado algo de la carrera?\n\nQué bueno. ¿Qué fue lo que más te llamó la atención?\n\nJusto para eso está pensada: clases en vivo que quedan grabadas, para que estudies sin dejar tu trabajo. ¿Hasta ahí vamos bien?\n\nPerfecto. Para orientarte bien, cuéntame: ¿hoy a qué te dedicas y qué te animó a buscar Ambiental justo ahora?",
+      "porQue": "En la primera frase el prospecto sabe quién llama, de dónde y por qué, así no desconfía. Cerrar con una pregunta sobre su trabajo y su motivo abre directo la indagación.",
+      "base": "7768462dbfb7",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental. Te llamo por la información que pediste de Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, dime."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Gracias, [nombre]. Voy a ser tu asesora durante todo el proceso, así tienes una sola persona para tus dudas. ¿Ya habías revisado algo de la carrera?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Un poco, en la página."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Qué bueno. ¿Qué fue lo que más te llamó la atención?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Que es a distancia, porque trabajo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Justo para eso está pensada: clases en vivo que quedan grabadas, para que estudies sin dejar tu trabajo. ¿Hasta ahí vamos bien?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. Para orientarte bien, cuéntame: ¿hoy a qué te dedicas y qué te animó a buscar Ambiental justo ahora?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Nombre, universidad y motivo juntos",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental. Te llamo por la información que pediste de Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, dime."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre]. Voy a ser tu asesora durante todo el proceso, así tienes una sola persona para tus dudas. ¿Ya habías revisado algo de la carrera?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Un poco, en la página."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bueno. ¿Qué fue lo que más te llamó la atención?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Que es a distancia, porque trabajo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Justo para eso está pensada: clases en vivo que quedan grabadas, para que estudies sin dejar tu trabajo. ¿Hasta ahí vamos bien?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Para orientarte bien, cuéntame: ¿hoy a qué te dedicas y qué te animó a buscar Ambiental justo ahora?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental. Te llamo por la información que pediste de Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?\n\nGracias, [nombre]. Voy a ser tu asesora durante todo el proceso, así tienes una sola persona para tus dudas. ¿Ya habías revisado algo de la carrera?\n\nQué bueno. ¿Qué fue lo que más te llamó la atención?\n\nJusto para eso está pensada: clases en vivo que quedan grabadas, para que estudies sin dejar tu trabajo. ¿Hasta ahí vamos bien?\n\nPerfecto. Para orientarte bien, cuéntame: ¿hoy a qué te dedicas y qué te animó a buscar Ambiental justo ahora?",
+        "porQue": "En la primera frase el prospecto sabe quién llama, de dónde y por qué, así no desconfía. Cerrar con una pregunta sobre su trabajo y su motivo abre directo la indagación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Retoma su solicitud primero",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], ¿cómo estás? Hace poco dejaste tus datos para Ingeniería Ambiental en la Universidad Continental, ¿lo recuerdas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ah, sí, algo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te saluda Melissa, soy la asesora que va a acompañarte con esa solicitud. Te llamo para resolver tus dudas en un par de minutos. ¿Te parece?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, está bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. ¿Buscabas la carrera para empezar desde cero o ya tienes algunos estudios?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Tengo un técnico, pero no del rubro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Igual suma, porque ya sabes lo que es organizarte para estudiar. ¿Te imaginas trabajando en temas ambientales en minería, energía o una consultora?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, me gustaría algo así."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Me encanta que lo tengas claro, [nombre]. Cuéntame un poco más: ¿en qué trabajas hoy y qué horario manejas?"
+         }
+        ],
+        "texto": "Hola, [nombre], ¿cómo estás? Hace poco dejaste tus datos para Ingeniería Ambiental en la Universidad Continental, ¿lo recuerdas?\n\nTe saluda Melissa, soy la asesora que va a acompañarte con esa solicitud. Te llamo para resolver tus dudas en un par de minutos. ¿Te parece?\n\nGenial. ¿Buscabas la carrera para empezar desde cero o ya tienes algunos estudios?\n\nIgual suma, porque ya sabes lo que es organizarte para estudiar. ¿Te imaginas trabajando en temas ambientales en minería, energía o una consultora?\n\nMe encanta que lo tengas claro, [nombre]. Cuéntame un poco más: ¿en qué trabajas hoy y qué horario manejas?",
+        "porQue": "Recordarle que él mismo pidió la información baja la guardia y da continuidad. Luego la presentación personal deja claro quién lo acompañará y la pregunta abre el paso 2.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si pregunta quién llama",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, ¿hablo con [nombre]?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, ¿quién habla?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te saluda Melissa, de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Tienes un par de minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "¿Continental? Ah, ya, sí pedí info."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Exacto. Voy a ser tu asesora, así que cualquier duda que tengas la vemos conmigo. ¿Qué te gustaría saber primero?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Más que nada cómo son las clases."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Son en vivo, en la noche, y quedan grabadas por si un día no llegas. Tú decides cuándo repasar. ¿Te sirve así?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, eso me ayudaría."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bueno. Y para recomendarte bien, [nombre], ¿hoy trabajas o estudias? ¿Qué horario tienes normalmente?"
+         }
+        ],
+        "texto": "Hola, ¿hablo con [nombre]?\n\nTe saluda Melissa, de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Tienes un par de minutos?\n\nExacto. Voy a ser tu asesora, así que cualquier duda que tengas la vemos conmigo. ¿Qué te gustaría saber primero?\n\nSon en vivo, en la noche, y quedan grabadas por si un día no llegas. Tú decides cuándo repasar. ¿Te sirve así?\n\nQué bueno. Y para recomendarte bien, [nombre], ¿hoy trabajas o estudias? ¿Qué horario tienes normalmente?",
+        "porQue": "Cuando el prospecto pregunta quién llama, responder con nombre, universidad y motivo en una sola frase genera confianza al instante. Dejar que él elija por dónde empezar le da control.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si dice que está ocupado",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental, por tu interés en Ingeniería Ambiental. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Uy, estoy en el trabajo, un poco ocupado."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, por eso seré breve: te lo cuento en un minuto y tú me dices si te interesa. ¿Va?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, rápido."
+         },
+         {
+          "quien": "asesor",
+          "texto": "La carrera es a distancia, con clases en vivo de noche que quedan grabadas. Así estudias sin dejar tu trabajo. ¿Eso es lo que estabas buscando?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, justo eso."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Además, en sexto ciclo ya recibes tu primera certificación en Monitoreo Ambiental, para tu CV. ¿Te imaginas sumándola mientras trabajas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Suena bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces aprovechemos este minuto, [nombre]. Una sola pregunta: ¿en qué trabajas hoy? Así te digo cómo encaja la carrera con tu horario."
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental, por tu interés en Ingeniería Ambiental. ¿Me regalas dos minutos?\n\nTe entiendo, por eso seré breve: te lo cuento en un minuto y tú me dices si te interesa. ¿Va?\n\nLa carrera es a distancia, con clases en vivo de noche que quedan grabadas. Así estudias sin dejar tu trabajo. ¿Eso es lo que estabas buscando?\n\nPerfecto. Además, en sexto ciclo ya recibes tu primera certificación en Monitoreo Ambiental, para tu CV. ¿Te imaginas sumándola mientras trabajas?\n\nEntonces aprovechemos este minuto, [nombre]. Una sola pregunta: ¿en qué trabajas hoy? Así te digo cómo encaja la carrera con tu horario.",
+        "porQue": "No se agenda otra llamada: se respeta su tiempo con algo corto y útil, se le da un motivo concreto y se sigue indagando en la misma conversación.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Abre la indagación",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias. Para no hablarte de todo, quiero entender primero qué buscas. ¿Qué te animó a mirar Ingeniería Ambiental?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Siempre me gustó el tema del medio ambiente."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bonito que nazca de algo que te gusta. ¿Hoy trabajas en algo relacionado?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, trabajo en ventas."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Ya. ¿Y cómo te ves en unos años, en una empresa minera, una consultora o en el Estado?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Creo que en una consultora."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buenísimo, es una de las salidas más fuertes. ¿Y qué horario tienes en ventas? Así vemos cómo encajas las clases."
+         },
+         {
+          "quien": "cliente",
+          "texto": "Salgo como a las siete."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, [nombre]: trabajas en ventas hasta las siete y quieres pasarte a una consultora ambiental. ¿Te cuento cómo lo resolvemos con la modalidad a distancia?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Melissa de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?\n\nGracias. Para no hablarte de todo, quiero entender primero qué buscas. ¿Qué te animó a mirar Ingeniería Ambiental?\n\nQué bonito que nazca de algo que te gusta. ¿Hoy trabajas en algo relacionado?\n\nYa. ¿Y cómo te ves en unos años, en una empresa minera, una consultora o en el Estado?\n\nBuenísimo, es una de las salidas más fuertes. ¿Y qué horario tienes en ventas? Así vemos cómo encajas las clases.\n\nPerfecto, [nombre]: trabajas en ventas hasta las siete y quieres pasarte a una consultora ambiental. ¿Te cuento cómo lo resolvemos con la modalidad a distancia?",
+        "porQue": "Una apertura completa que termina en preguntas abiertas pasa natural al paso 2. El resumen final con sus palabras prepara la solución sin explicar todo de golpe.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -35628,11 +35906,329 @@
      "avg": 70,
      "fortaleza": "Mantienes una comunicación fluida, un tono cordial y explicas los beneficios de manera comprensible, procurando orientar al prospecto durante la interacción.",
      "oportunidad": "Mantén el control de la interacción hasta su finalización, asegurando un cierre adecuado y evitando cualquier desconexión que pueda afectar la experiencia del prospecto.",
-     "conclusion": null,
+     "conclusion": "Mantuviste una comunicación fluida y cordial y explicaste los beneficios de forma comprensible. Te faltó sostener el control hasta el final: cierra con la fecha de la evaluación, el WhatsApp y la despedida completa, sin que la llamada se corte antes.",
      "rol": "oportunidad",
      "texto": "Mantén el control de la interacción hasta su finalización, asegurando un cierre adecuado y evitando cualquier desconexión que pueda afectar la experiencia del prospecto.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_16",
+      "titulo": "📅 Si no confirma al momento, termina con un próximo paso",
+      "ejemplo": "\"¿Te llamo mañana para conocer si podemos empezar tu proceso de admisión? ¿Te parece? O si decides antes, avísame y estaré muy atento. ¿Quedamos para mañana?\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "[nombre], ya casi terminamos. Te cuento lo que falta: elegimos el día de tu evaluación, te paso mi WhatsApp y listo. ¿Te parece?\n\nLa evaluación es virtual, desde una computadora o laptop con cámara, y no es un examen de conocimientos. ¿La rindes hoy en la noche o mañana temprano?\n\nPerfecto. ¿A qué hora estarás frente a la computadora, en la mañana o después del trabajo?\n\nAnotado: mañana a las ocho de la noche. Te escribo ahora por WhatsApp con el enlace y los pasos. ¿Este número tiene WhatsApp?\n\nGenial. Recuerda que, al matricularte, te registramos sin costo en Nexus y en el Taller de Excel certificado. ¿Alguna duda antes de despedirnos?\n\nGracias, [nombre]. Fue un gusto, cualquier cosa me escribes. Te voy a transferir a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?",
+      "porQue": "Anunciar lo que falta mantiene al prospecto en la línea hasta el final. Fecha, hora, WhatsApp y encuesta quedan completos y la llamada no termina abruptamente.",
+      "base": "c94a54b6693c",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "[nombre], ya casi terminamos. Te cuento lo que falta: elegimos el día de tu evaluación, te paso mi WhatsApp y listo. ¿Te parece?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, dale."
+       },
+       {
+        "quien": "asesor",
+        "texto": "La evaluación es virtual, desde una computadora o laptop con cámara, y no es un examen de conocimientos. ¿La rindes hoy en la noche o mañana temprano?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Mañana, creo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. ¿A qué hora estarás frente a la computadora, en la mañana o después del trabajo?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Como a las ocho de la noche."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Anotado: mañana a las ocho de la noche. Te escribo ahora por WhatsApp con el enlace y los pasos. ¿Este número tiene WhatsApp?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, ese mismo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Genial. Recuerda que, al matricularte, te registramos sin costo en Nexus y en el Taller de Excel certificado. ¿Alguna duda antes de despedirnos?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "No, todo claro."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Gracias, [nombre]. Fue un gusto, cualquier cosa me escribes. Te voy a transferir a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Anuncia los pasos del cierre",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], ya casi terminamos. Te cuento lo que falta: elegimos el día de tu evaluación, te paso mi WhatsApp y listo. ¿Te parece?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, dale."
+         },
+         {
+          "quien": "asesor",
+          "texto": "La evaluación es virtual, desde una computadora o laptop con cámara, y no es un examen de conocimientos. ¿La rindes hoy en la noche o mañana temprano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana, creo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. ¿A qué hora estarás frente a la computadora, en la mañana o después del trabajo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Como a las ocho de la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Anotado: mañana a las ocho de la noche. Te escribo ahora por WhatsApp con el enlace y los pasos. ¿Este número tiene WhatsApp?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, ese mismo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. Recuerda que, al matricularte, te registramos sin costo en Nexus y en el Taller de Excel certificado. ¿Alguna duda antes de despedirnos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, todo claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre]. Fue un gusto, cualquier cosa me escribes. Te voy a transferir a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?"
+         }
+        ],
+        "texto": "[nombre], ya casi terminamos. Te cuento lo que falta: elegimos el día de tu evaluación, te paso mi WhatsApp y listo. ¿Te parece?\n\nLa evaluación es virtual, desde una computadora o laptop con cámara, y no es un examen de conocimientos. ¿La rindes hoy en la noche o mañana temprano?\n\nPerfecto. ¿A qué hora estarás frente a la computadora, en la mañana o después del trabajo?\n\nAnotado: mañana a las ocho de la noche. Te escribo ahora por WhatsApp con el enlace y los pasos. ¿Este número tiene WhatsApp?\n\nGenial. Recuerda que, al matricularte, te registramos sin costo en Nexus y en el Taller de Excel certificado. ¿Alguna duda antes de despedirnos?\n\nGracias, [nombre]. Fue un gusto, cualquier cosa me escribes. Te voy a transferir a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?",
+        "porQue": "Anunciar lo que falta mantiene al prospecto en la línea hasta el final. Fecha, hora, WhatsApp y encuesta quedan completos y la llamada no termina abruptamente.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Confirma datos antes de despedirte",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], antes de despedirnos confirmo tres datos para que no se pierda nada. ¿Tu correo sigue siendo el que registraste?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, ese es."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. ¿Y este número es el de WhatsApp? Ahí te dejo todo por escrito."
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Último dato: tu evaluación de admisión. Es virtual, desde computadora o laptop con cámara. ¿La dejamos para hoy o para mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Hoy no puedo, mañana sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Bien. ¿Mañana a qué hora te acomoda más?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las siete."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Listo, mañana a las siete. Así aseguras tu vacante en Ingeniería Ambiental y el beneficio de la campaña. ¿Vamos bien?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, gracias."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias a ti, [nombre]. Te escribo en este momento por WhatsApp. Te transfiero a una corta encuesta de atención, me ayudas mucho respondiéndola."
+         }
+        ],
+        "texto": "[nombre], antes de despedirnos confirmo tres datos para que no se pierda nada. ¿Tu correo sigue siendo el que registraste?\n\nPerfecto. ¿Y este número es el de WhatsApp? Ahí te dejo todo por escrito.\n\nÚltimo dato: tu evaluación de admisión. Es virtual, desde computadora o laptop con cámara. ¿La dejamos para hoy o para mañana?\n\nBien. ¿Mañana a qué hora te acomoda más?\n\nListo, mañana a las siete. Así aseguras tu vacante en Ingeniería Ambiental y el beneficio de la campaña. ¿Vamos bien?\n\nGracias a ti, [nombre]. Te escribo en este momento por WhatsApp. Te transfiero a una corta encuesta de atención, me ayudas mucho respondiéndola.",
+        "porQue": "Confirmar datos uno por uno mantiene la conversación ordenada y evita cortes antes de tiempo. Cada dato confirmado es un pequeño sí que lleva a la evaluación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Resume antes de colgar",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], hagamos un resumen rápido para que te quede claro. ¿Te parece?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Estudias Ingeniería Ambiental a distancia, con clases de noche que quedan grabadas, y no dejas tu trabajo. ¿Hasta ahí bien?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "El siguiente paso es tu evaluación de admisión, virtual y con cámara. ¿Cuál te acomoda más, hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana en la tarde."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, ¿a las cuatro o a las seis?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las seis."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Mañana a las seis, anotado. Te mando por WhatsApp el enlace y te acompaño en el proceso. ¿Te queda alguna duda?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, ninguna."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Excelente, [nombre]. Gracias por tu tiempo. Ahora te transfiero a una breve encuesta sobre la atención, ¿me apoyas respondiéndola?"
+         }
+        ],
+        "texto": "[nombre], hagamos un resumen rápido para que te quede claro. ¿Te parece?\n\nEstudias Ingeniería Ambiental a distancia, con clases de noche que quedan grabadas, y no dejas tu trabajo. ¿Hasta ahí bien?\n\nEl siguiente paso es tu evaluación de admisión, virtual y con cámara. ¿Cuál te acomoda más, hoy o mañana?\n\nPerfecto, ¿a las cuatro o a las seis?\n\nMañana a las seis, anotado. Te mando por WhatsApp el enlace y te acompaño en el proceso. ¿Te queda alguna duda?\n\nExcelente, [nombre]. Gracias por tu tiempo. Ahora te transfiero a una breve encuesta sobre la atención, ¿me apoyas respondiéndola?",
+        "porQue": "El resumen final ordena el cierre y confirma que entendió todo. Dar dos horarios concretos da control y asegura la evaluación antes de despedirse.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si dice 'ya, después veo'",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], ¿cuándo te acomoda rendir tu evaluación de admisión, hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, ya, después lo veo y te aviso."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Claro. Solo para ayudarte: ¿qué te gustaría revisar antes de decidir? Así lo resolvemos ahora."
+         },
+         {
+          "quien": "cliente",
+          "texto": "Es que no sé si tendré tiempo de estudiar."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo. Las clases son en la noche y quedan grabadas; si un día sales tarde, la ves después. ¿Eso te deja más tranquila?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, un poco más."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y la evaluación toma poco tiempo, desde tu laptop con cámara. No es un examen de conocimientos. ¿Hoy en la noche o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana en la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, mañana a las ocho. Te escribo por WhatsApp con los pasos. ¿Algo más que quieras saber?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre]. Te transfiero a una breve encuesta sobre mi atención, me ayudas mucho respondiéndola."
+         }
+        ],
+        "texto": "[nombre], ¿cuándo te acomoda rendir tu evaluación de admisión, hoy o mañana?\n\nClaro. Solo para ayudarte: ¿qué te gustaría revisar antes de decidir? Así lo resolvemos ahora.\n\nTe entiendo. Las clases son en la noche y quedan grabadas; si un día sales tarde, la ves después. ¿Eso te deja más tranquila?\n\nY la evaluación toma poco tiempo, desde tu laptop con cámara. No es un examen de conocimientos. ¿Hoy en la noche o mañana?\n\nPerfecto, mañana a las ocho. Te escribo por WhatsApp con los pasos. ¿Algo más que quieras saber?\n\nGracias, [nombre]. Te transfiero a una breve encuesta sobre mi atención, me ayudas mucho respondiéndola.",
+        "porQue": "Preguntar qué falta antes de soltar la llamada evita que se vaya con la duda. Resuelta la objeción, la evaluación queda con día y hora en la misma llamada.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Fecha, WhatsApp y encuesta",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Entonces, [nombre], aseguramos tu vacante en Ingeniería Ambiental con la evaluación. ¿La rindes hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Hoy, si se puede."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Claro que se puede. ¿Tienes una computadora o laptop con cámara a la mano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, mi laptop."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. ¿A qué hora estarás libre hoy?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las nueve."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Hoy a las nueve, anotado. Te escribo ahora mismo por WhatsApp con el enlace. ¿Lo recibes en este número?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. Al matricularte, además, te registramos gratis en Nexus para adelantar cursos y en el Taller de Excel certificado. ¿Algo más antes de terminar?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, gracias."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias a ti, [nombre], y bienvenida al proceso. Te transfiero a una breve encuesta sobre la atención, ¿me ayudas respondiéndola?"
+         }
+        ],
+        "texto": "Entonces, [nombre], aseguramos tu vacante en Ingeniería Ambiental con la evaluación. ¿La rindes hoy o mañana?\n\nClaro que se puede. ¿Tienes una computadora o laptop con cámara a la mano?\n\nPerfecto. ¿A qué hora estarás libre hoy?\n\nHoy a las nueve, anotado. Te escribo ahora mismo por WhatsApp con el enlace. ¿Lo recibes en este número?\n\nGenial. Al matricularte, además, te registramos gratis en Nexus para adelantar cursos y en el Taller de Excel certificado. ¿Algo más antes de terminar?\n\nGracias a ti, [nombre], y bienvenida al proceso. Te transfiero a una breve encuesta sobre la atención, ¿me ayudas respondiéndola?",
+        "porQue": "Es el cierre completo: fecha, hora, equipo, WhatsApp, regalo por matricularse y recién ahí la despedida y la encuesta. Nada queda a medias.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -35662,11 +36258,11 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 72,
    "cuartilCalidad": "Q4",
-   "matriculas": 6,
+   "matriculas": 7,
    "meta": 26,
-   "avanceMes": 23.08,
+   "avanceMes": 26.92,
    "avanceRitmo": null,
-   "avanceMeta": 23.08,
+   "avanceMeta": 26.92,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -35678,9 +36274,9 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 8,
+   "puesto": 5,
    "totalAsesores": 26,
-   "indice": 47.5,
+   "indice": 49.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -37826,11 +38422,285 @@
      "avg": 92,
      "fortaleza": "Logras generar una apertura adecuada de la interacción, validar el interés del prospecto por la carrera de Ciencia de la Computación y establecer una comunicación inicial favorable que permite continuar con el asesoramiento.",
      "oportunidad": "Continúa fortaleciendo la apertura de tus llamadas, manteniendo una presentación institucional clara y una validación genuina del interés, para que el prospecto identifique desde el inicio quién lo atiende y cómo puedes ayudarlo.",
-     "conclusion": null,
+     "conclusion": "Abriste bien la llamada, validaste su interés en Ciencia de la Computación y lograste una comunicación favorable. Refuerza la presentación institucional: que desde el inicio sepa quién lo atiende, de dónde llamas y en qué lo puedes ayudar.",
      "rol": "oportunidad",
      "texto": "Continúa fortaleciendo la apertura de tus llamadas, manteniendo una presentación institucional clara y una validación genuina del interés, para que el prospecto identifique desde el inicio quién lo atiende y cómo puedes ayudarlo.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_12",
+      "titulo": "🕊️ Dar la sensación de control",
+      "ejemplo": "\"Al final, la decisión de dar este paso para tu crecimiento profesional es 100% tuya. Yo estoy aquí para guiarte en el proceso de admisión.\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental. Te llamo por tu interés en Ciencia de la Computación a distancia. ¿Me regalas dos minutos?\n\nGracias. Soy tu asesor: te ayudo a ver si la carrera encaja con tu tiempo y tus metas. ¿Te parece?\n\n¿Qué te llamó la atención de Ciencia de la Computación?\n\nBuenísimo. La carrera abre puertas en software, ciberseguridad y ciencia de datos. ¿Ya has programado algo por tu cuenta?\n\nEso ya es una base, [nombre]. Para orientarte bien, ¿hoy trabajas o estudias y qué horario tienes?",
+      "porQue": "Decir en qué lo vas a ayudar convierte la llamada en asesoría, no en venta. La pregunta final sobre su trabajo y su horario abre la indagación.",
+      "base": "ab90a74d98c1",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental. Te llamo por tu interés en Ciencia de la Computación a distancia. ¿Me regalas dos minutos?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, claro."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Gracias. Soy tu asesor: te ayudo a ver si la carrera encaja con tu tiempo y tus metas. ¿Te parece?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, perfecto."
+       },
+       {
+        "quien": "asesor",
+        "texto": "¿Qué te llamó la atención de Ciencia de la Computación?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Me gusta la programación."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Buenísimo. La carrera abre puertas en software, ciberseguridad y ciencia de datos. ¿Ya has programado algo por tu cuenta?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Algo, con tutoriales."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Eso ya es una base, [nombre]. Para orientarte bien, ¿hoy trabajas o estudias y qué horario tienes?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Quién soy y en qué ayudo",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental. Te llamo por tu interés en Ciencia de la Computación a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias. Soy tu asesor: te ayudo a ver si la carrera encaja con tu tiempo y tus metas. ¿Te parece?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, perfecto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¿Qué te llamó la atención de Ciencia de la Computación?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me gusta la programación."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buenísimo. La carrera abre puertas en software, ciberseguridad y ciencia de datos. ¿Ya has programado algo por tu cuenta?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Algo, con tutoriales."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Eso ya es una base, [nombre]. Para orientarte bien, ¿hoy trabajas o estudias y qué horario tienes?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental. Te llamo por tu interés en Ciencia de la Computación a distancia. ¿Me regalas dos minutos?\n\nGracias. Soy tu asesor: te ayudo a ver si la carrera encaja con tu tiempo y tus metas. ¿Te parece?\n\n¿Qué te llamó la atención de Ciencia de la Computación?\n\nBuenísimo. La carrera abre puertas en software, ciberseguridad y ciencia de datos. ¿Ya has programado algo por tu cuenta?\n\nEso ya es una base, [nombre]. Para orientarte bien, ¿hoy trabajas o estudias y qué horario tienes?",
+        "porQue": "Decir en qué lo vas a ayudar convierte la llamada en asesoría, no en venta. La pregunta final sobre su trabajo y su horario abre la indagación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Valida el interés con pregunta",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], soy Jostyn, asesor de la Universidad Continental. Vi que te interesa Ciencia de la Computación a distancia, ¿lo sigues considerando?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, estoy viendo opciones."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bueno que estés comparando, así eliges con calma. ¿Qué es lo más importante para ti al elegir?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Que pueda trabajar y estudiar."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo. Las clases son en vivo de noche y quedan grabadas. ¿Te sirve así?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, eso me sirve."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. ¿Y qué te gustaría hacer cuando termines, desarrollar software, datos, ciberseguridad?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Creo que ciberseguridad."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Excelente elección, [nombre]. Cuéntame más: ¿en qué trabajas hoy y cuánto tiempo libre te queda en la semana?"
+         }
+        ],
+        "texto": "Hola, [nombre], soy Jostyn, asesor de la Universidad Continental. Vi que te interesa Ciencia de la Computación a distancia, ¿lo sigues considerando?\n\nQué bueno que estés comparando, así eliges con calma. ¿Qué es lo más importante para ti al elegir?\n\nTe entiendo. Las clases son en vivo de noche y quedan grabadas. ¿Te sirve así?\n\nGenial. ¿Y qué te gustaría hacer cuando termines, desarrollar software, datos, ciberseguridad?\n\nExcelente elección, [nombre]. Cuéntame más: ¿en qué trabajas hoy y cuánto tiempo libre te queda en la semana?",
+        "porQue": "Validar si sigue interesado lo hace protagonista desde el inicio. Preguntar qué es lo más importante para él muestra que lo vas a asesorar, no a presionar.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si arranca preguntando",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Aló, ¿sí?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental, por tu interés en Ciencia de la Computación. ¿Te agarro en buen momento?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, justo quería saber si es todo virtual."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buena pregunta. Es a distancia: clases en vivo de noche que quedan grabadas, y tú organizas tu semana. ¿Eso es lo que buscabas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, porque trabajo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Voy a ser tu asesor durante todo el proceso, así que cualquier duda la ves conmigo. ¿En qué trabajas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "En soporte técnico."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¡Mira qué bien! Ya estás cerca del mundo tecnológico. ¿Qué te gustaría lograr con la carrera, [nombre]?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental, por tu interés en Ciencia de la Computación. ¿Te agarro en buen momento?\n\nBuena pregunta. Es a distancia: clases en vivo de noche que quedan grabadas, y tú organizas tu semana. ¿Eso es lo que buscabas?\n\nPerfecto. Voy a ser tu asesor durante todo el proceso, así que cualquier duda la ves conmigo. ¿En qué trabajas?\n\n¡Mira qué bien! Ya estás cerca del mundo tecnológico. ¿Qué te gustaría lograr con la carrera, [nombre]?",
+        "porQue": "Cuando el cliente arranca preguntando, se responde y se presenta en la misma frase. Así se mantiene la identidad institucional sin frenar su curiosidad.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si dice 'solo estaba mirando'",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental, por tu interés en Ciencia de la Computación. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ah, solo estaba mirando, nada serio."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Tranquilo, para eso estoy: para que mires con información real. ¿Qué te llevó a mirar esta carrera?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me gusta la tecnología, pero no sé si es para mí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Es una duda muy común. ¿Qué parte te genera más duda: el tiempo, las matemáticas o la modalidad?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "El tiempo, trabajo todo el día."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muchos alumnos están igual. Las clases quedan grabadas y en sexto ciclo ya tienes tu primera certificación en Base de Datos Distribuidas. ¿Te imaginas sumándola a tu CV?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, suena interesante."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces vale la pena mirarlo en serio, [nombre]. ¿En qué trabajas y a qué hora sales?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Jostyn de la Universidad Continental, por tu interés en Ciencia de la Computación. ¿Me regalas dos minutos?\n\nTranquilo, para eso estoy: para que mires con información real. ¿Qué te llevó a mirar esta carrera?\n\nEs una duda muy común. ¿Qué parte te genera más duda: el tiempo, las matemáticas o la modalidad?\n\nMuchos alumnos están igual. Las clases quedan grabadas y en sexto ciclo ya tienes tu primera certificación en Base de Datos Distribuidas. ¿Te imaginas sumándola a tu CV?\n\nEntonces vale la pena mirarlo en serio, [nombre]. ¿En qué trabajas y a qué hora sales?",
+        "porQue": "Convertir el 'solo miro' en una pregunta sobre su duda real mantiene la conversación viva. La certificación progresiva da un motivo concreto para seguir.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Abre la indagación",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Jostyn, asesor de la Universidad Continental. Te llamo por Ciencia de la Computación a distancia. ¿Tienes dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, dime."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias. Primero quiero conocerte un poco para no hablarte de más. ¿Hoy a qué te dedicas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Trabajo en un almacén."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Ya. ¿Y qué te animó a buscar Computación justo ahora?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Quiero cambiar de rubro, ganar mejor."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, es un gran motivo. ¿Ya estudiaste algo antes, técnico o universidad?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, nada."
+         },
+         {
+          "quien": "asesor",
+          "texto": "No pasa nada, empiezas desde cero con todo el acompañamiento. ¿Qué horario tienes en el almacén?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "De ocho a seis."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces, [nombre], trabajas de ocho a seis y quieres pasarte a tecnología para ganar mejor. ¿Te cuento cómo encaja la carrera con eso?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Jostyn, asesor de la Universidad Continental. Te llamo por Ciencia de la Computación a distancia. ¿Tienes dos minutos?\n\nGracias. Primero quiero conocerte un poco para no hablarte de más. ¿Hoy a qué te dedicas?\n\nYa. ¿Y qué te animó a buscar Computación justo ahora?\n\nTe entiendo, es un gran motivo. ¿Ya estudiaste algo antes, técnico o universidad?\n\nNo pasa nada, empiezas desde cero con todo el acompañamiento. ¿Qué horario tienes en el almacén?\n\nEntonces, [nombre], trabajas de ocho a seis y quieres pasarte a tecnología para ganar mejor. ¿Te cuento cómo encaja la carrera con eso?",
+        "porQue": "La presentación completa da paso a preguntas abiertas. El resumen con sus palabras deja lista la solución del paso 3.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -38891,11 +39761,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 60,
    "cuartilCalidad": "Q4",
-   "matriculas": 9,
+   "matriculas": 10,
    "meta": 26,
-   "avanceMes": 34.62,
+   "avanceMes": 38.46,
    "avanceRitmo": null,
-   "avanceMeta": 34.62,
+   "avanceMeta": 38.46,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -38907,9 +39777,9 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 9,
+   "puesto": 6,
    "totalAsesores": 26,
-   "indice": 47.3,
+   "indice": 49.2,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -40427,7 +41297,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 7,
+   "puesto": 9,
    "totalAsesores": 26,
    "indice": 48.0,
    "tecnicasDominadas": 0,
@@ -42846,11 +43716,293 @@
      "avg": 87,
      "fortaleza": "Inicias la atención oportunamente, te identificas como asesor de Universidad Continental y confirmas el interés de Augusto por Ingeniería Industrial en modalidad Distancia. Asimismo, mantienes una comunicación cordial y utilizas su nombre durante el desarrollo de la conversación, generando cercanía y disposición para resolver sus consultas.",
      "oportunidad": "Cuando el prospecto manifieste dudas sobre el reconocimiento oficial de los estudios virtuales, verifica qué documentación necesita presentar ante su empleador y explica únicamente las condiciones institucionales confirmadas. Esto permitirá transmitir seguridad sin generar expectativas sobre documentos o registros que todavía no se han validado.",
-     "conclusion": null,
+     "conclusion": "Iniciaste a tiempo, te identificaste como asesor de la Universidad Continental y confirmaste el interés de Augusto en Ingeniería Industrial, usando su nombre con cercanía. Cuando dude del reconocimiento de lo virtual, pregunta qué documento le pide su empleador y explica solo lo confirmado por la universidad.",
      "rol": "oportunidad",
      "texto": "Cuando el prospecto manifieste dudas sobre el reconocimiento oficial de los estudios virtuales, verifica qué documentación necesita presentar ante su empleador y explica únicamente las condiciones institucionales confirmadas. Esto permitirá transmitir seguridad sin generar expectativas sobre documentos o registros que todavía no se han validado.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_08",
+      "titulo": "🛡️ Mata la objeción antes de que nazca",
+      "ejemplo": "\"Sabemos que trabajas y no tienes tiempo para trasladarte; por eso nuestras clases grabadas y la biblioteca digital están disponibles las 24 horas del día.\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "Hola, Augusto, te saluda Jean Carlos de la Universidad Continental. Te llamo por tu interés en Ingeniería Industrial a distancia. ¿Me regalas dos minutos?\n\nBuena pregunta, Augusto. Para responderte exacto, ¿qué te pide tu empresa: el título, el grado de bachiller o algún documento en especial?\n\nPerfecto. Lo que te puedo confirmar es que la Universidad Continental está licenciada por SUNEDU y tiene más de 28 años formando profesionales. ¿Hasta ahí bien?\n\nY si tu empresa pide algún formato específico, anótalo y lo validamos con el área académica antes de que te inscribas; no te voy a prometer nada que no esté confirmado. ¿Te parece justo?\n\nGenial. Cuéntame, Augusto, ¿en qué área trabajas y por qué te piden el título justo ahora?",
+      "porQue": "Preguntar qué documento exige la empresa evita prometer algo no confirmado. Con el respaldo real y la promesa de validar lo específico gana confianza y abre la indagación.",
+      "base": "ac4f0cd80d05",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Hola, Augusto, te saluda Jean Carlos de la Universidad Continental. Te llamo por tu interés en Ingeniería Industrial a distancia. ¿Me regalas dos minutos?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, pero tengo una duda: ¿lo virtual es reconocido?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Buena pregunta, Augusto. Para responderte exacto, ¿qué te pide tu empresa: el título, el grado de bachiller o algún documento en especial?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Me piden título universitario para el puesto."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. Lo que te puedo confirmar es que la Universidad Continental está licenciada por SUNEDU y tiene más de 28 años formando profesionales. ¿Hasta ahí bien?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, eso me tranquiliza."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Y si tu empresa pide algún formato específico, anótalo y lo validamos con el área académica antes de que te inscribas; no te voy a prometer nada que no esté confirmado. ¿Te parece justo?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, me parece bien."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Genial. Cuéntame, Augusto, ¿en qué área trabajas y por qué te piden el título justo ahora?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Pregunta qué pide su empresa",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, Augusto, te saluda Jean Carlos de la Universidad Continental. Te llamo por tu interés en Ingeniería Industrial a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, pero tengo una duda: ¿lo virtual es reconocido?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buena pregunta, Augusto. Para responderte exacto, ¿qué te pide tu empresa: el título, el grado de bachiller o algún documento en especial?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me piden título universitario para el puesto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Lo que te puedo confirmar es que la Universidad Continental está licenciada por SUNEDU y tiene más de 28 años formando profesionales. ¿Hasta ahí bien?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, eso me tranquiliza."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y si tu empresa pide algún formato específico, anótalo y lo validamos con el área académica antes de que te inscribas; no te voy a prometer nada que no esté confirmado. ¿Te parece justo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, me parece bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. Cuéntame, Augusto, ¿en qué área trabajas y por qué te piden el título justo ahora?"
+         }
+        ],
+        "texto": "Hola, Augusto, te saluda Jean Carlos de la Universidad Continental. Te llamo por tu interés en Ingeniería Industrial a distancia. ¿Me regalas dos minutos?\n\nBuena pregunta, Augusto. Para responderte exacto, ¿qué te pide tu empresa: el título, el grado de bachiller o algún documento en especial?\n\nPerfecto. Lo que te puedo confirmar es que la Universidad Continental está licenciada por SUNEDU y tiene más de 28 años formando profesionales. ¿Hasta ahí bien?\n\nY si tu empresa pide algún formato específico, anótalo y lo validamos con el área académica antes de que te inscribas; no te voy a prometer nada que no esté confirmado. ¿Te parece justo?\n\nGenial. Cuéntame, Augusto, ¿en qué área trabajas y por qué te piden el título justo ahora?",
+        "porQue": "Preguntar qué documento exige la empresa evita prometer algo no confirmado. Con el respaldo real y la promesa de validar lo específico gana confianza y abre la indagación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Respaldo confirmado, sin prometer",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, Augusto, soy Jean Carlos, asesor de la Universidad Continental, por tu interés en Ingeniería Industrial. ¿Tienes un par de minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí. Aunque no sé si en mi trabajo aceptan estudios virtuales."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, es una duda muy válida. Te cuento lo que está confirmado: la universidad cuenta con licenciamiento SUNEDU y su educación en línea tiene 5 estrellas QS Stars. ¿Vamos bien?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya. ¿Y eso lo acepta mi empresa?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Eso depende de lo que pida tu empresa, por eso prefiero no adelantarme. ¿Te dijeron qué documento exacto necesitan?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Solo dijeron título universitario."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, eso es lo que obtienes al terminar la carrera. Si luego te piden algo más específico, lo revisamos juntos con el área académica. ¿Te sirve así?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, está bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buenísimo, Augusto. ¿Desde cuándo trabajas en esa empresa y en qué cargo estás?"
+         }
+        ],
+        "texto": "Hola, Augusto, soy Jean Carlos, asesor de la Universidad Continental, por tu interés en Ingeniería Industrial. ¿Tienes un par de minutos?\n\nTe entiendo, es una duda muy válida. Te cuento lo que está confirmado: la universidad cuenta con licenciamiento SUNEDU y su educación en línea tiene 5 estrellas QS Stars. ¿Vamos bien?\n\nEso depende de lo que pida tu empresa, por eso prefiero no adelantarme. ¿Te dijeron qué documento exacto necesitan?\n\nPerfecto, eso es lo que obtienes al terminar la carrera. Si luego te piden algo más específico, lo revisamos juntos con el área académica. ¿Te sirve así?\n\nBuenísimo, Augusto. ¿Desde cuándo trabajas en esa empresa y en qué cargo estás?",
+        "porQue": "Separar lo confirmado de lo que depende del empleador transmite seguridad sin crear expectativas. La pregunta sobre su cargo deja lista la etapa 2.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Desde su duda: ¿es válido?",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Aló."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Hola, Augusto, te saluda Jean Carlos de la Universidad Continental, por Ingeniería Industrial a distancia. ¿Te agarro en buen momento?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí. Justo quería saber si el título virtual sirve igual."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Es la pregunta más importante, gracias por hacerla. Antes de responderte, ¿para qué necesitas el título: un ascenso, un requisito o un cambio de trabajo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Un requisito de mi empresa."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entendido. Lo confirmado es que la Universidad Continental está licenciada por SUNEDU y tiene acreditaciones internacionales. ¿Eso responde parte de tu duda?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, en parte."
+         },
+         {
+          "quien": "asesor",
+          "texto": "La otra parte la vemos con lo que pida tu empresa: si te dan un documento o requisito por escrito, lo revisamos con el área académica. ¿Lo tienes a la mano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, pero lo puedo pedir."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, Augusto. Mientras tanto, cuéntame un poco de ti: ¿en qué trabajas y qué estudios tienes hoy?"
+         }
+        ],
+        "texto": "Hola, Augusto, te saluda Jean Carlos de la Universidad Continental, por Ingeniería Industrial a distancia. ¿Te agarro en buen momento?\n\nEs la pregunta más importante, gracias por hacerla. Antes de responderte, ¿para qué necesitas el título: un ascenso, un requisito o un cambio de trabajo?\n\nEntendido. Lo confirmado es que la Universidad Continental está licenciada por SUNEDU y tiene acreditaciones internacionales. ¿Eso responde parte de tu duda?\n\nLa otra parte la vemos con lo que pida tu empresa: si te dan un documento o requisito por escrito, lo revisamos con el área académica. ¿Lo tienes a la mano?\n\nPerfecto, Augusto. Mientras tanto, cuéntame un poco de ti: ¿en qué trabajas y qué estudios tienes hoy?",
+        "porQue": "Preguntar para qué necesita el título antes de responder permite dar solo la información que aplica. Así la duda se convierte en la puerta de entrada a la indagación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si dice 'no tengo tiempo'",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, con lo del reconocimiento más claro, ¿qué otra duda te frena para estudiar?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "El tiempo. Soy gerente, salgo tarde."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, con un cargo así el día se va rápido. Las clases son en vivo de noche y quedan grabadas, así que si sales tarde, la ves después. ¿Eso te ayudaría?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, eso sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Además, tú eliges cuándo repasar y avanzas a tu ritmo dentro del ciclo. ¿Te imaginas estudiando un par de horas en la noche?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, podría."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muchos de nuestros alumnos trabajan a tiempo completo y lo logran así. ¿Cuántas horas libres tienes realmente en la semana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Unas diez, más o menos."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Con eso trabajamos bien, Augusto. ¿Y qué estudios tienes hoy, técnicos o universitarios?"
+         }
+        ],
+        "texto": "Augusto, con lo del reconocimiento más claro, ¿qué otra duda te frena para estudiar?\n\nTe entiendo, con un cargo así el día se va rápido. Las clases son en vivo de noche y quedan grabadas, así que si sales tarde, la ves después. ¿Eso te ayudaría?\n\nAdemás, tú eliges cuándo repasar y avanzas a tu ritmo dentro del ciclo. ¿Te imaginas estudiando un par de horas en la noche?\n\nMuchos de nuestros alumnos trabajan a tiempo completo y lo logran así. ¿Cuántas horas libres tienes realmente en la semana?\n\nCon eso trabajamos bien, Augusto. ¿Y qué estudios tienes hoy, técnicos o universitarios?",
+        "porQue": "Tras la duda de reconocimiento llega la del tiempo; se responde con clases grabadas y prueba social. Preguntar sus horas reales lleva directo a conocer su perfil.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Abre la indagación",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, ya te conté lo confirmado del reconocimiento. Para orientarte mejor, ¿me cuentas un poco de ti?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¿En qué trabajas hoy y desde cuándo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Soy gerente de postventa, hace cinco años."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué buen cargo. ¿Y qué estudios tienes hasta ahora?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Un técnico en SENATI."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Excelente base. ¿Tu empresa te dio un plazo para tener el título?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No exacto, pero quieren que avance."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entiendo. ¿Y qué te atrae de Industrial frente a otras carreras?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Que tiene que ver con procesos."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces, Augusto: eres gerente, tienes base técnica de SENATI y tu empresa te pide el título. ¿Te cuento qué carrera aprovecha mejor tu experiencia?"
+         }
+        ],
+        "texto": "Augusto, ya te conté lo confirmado del reconocimiento. Para orientarte mejor, ¿me cuentas un poco de ti?\n\n¿En qué trabajas hoy y desde cuándo?\n\nQué buen cargo. ¿Y qué estudios tienes hasta ahora?\n\nExcelente base. ¿Tu empresa te dio un plazo para tener el título?\n\nEntiendo. ¿Y qué te atrae de Industrial frente a otras carreras?\n\nEntonces, Augusto: eres gerente, tienes base técnica de SENATI y tu empresa te pide el título. ¿Te cuento qué carrera aprovecha mejor tu experiencia?",
+        "porQue": "Tras resolver la duda inicial, las preguntas abiertas descubren su cargo, estudios y motivación. El resumen con sus palabras abre la solución.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -42891,11 +44043,305 @@
      "avg": 75,
      "fortaleza": "Identificas que Augusto necesita obtener un título universitario para cumplir un requisito laboral, que cuenta con estudios técnicos en SENATI y que actualmente ocupa el cargo de gerente de postventa. Aprovechas esta información para presentar alternativas académicas relacionadas con su experiencia, especialmente Ingeniería Empresarial, logrando despertar su interés. Además, explicas la flexibilidad de la modalidad Distancia y el acceso a clases grabadas.",
      "oportunidad": "Profundiza en los requisitos académicos solicitados por la empresa de Augusto y en los factores que determinarán su elección entre Ingeniería Industrial e Ingeniería Empresarial. Asimismo, al presentar la inversión, desglosa matrícula, primera cuota, seguro y examen médico, y explica que la renovación del descuento del 10 % requiere cumplir condiciones académicas y de pago, como aprobar con 10.5, llevar los créditos completos, mantener pagos puntuales y continuidad en los estudios.",
-     "conclusion": null,
+     "conclusion": "Identificaste que Augusto necesita el título por un requisito laboral, su base en SENATI y su cargo de gerente, y lo conectaste con Ingeniería Empresarial. Profundiza qué exige su empresa y qué lo hará elegir entre Industrial y Empresarial; en la inversión, desglosa la primera cuota y aclara qué condiciones mantienen el 10 %.",
      "rol": "oportunidad",
      "texto": "Profundiza en los requisitos académicos solicitados por la empresa de Augusto y en los factores que determinarán su elección entre Ingeniería Industrial e Ingeniería Empresarial. Asimismo, al presentar la inversión, desglosa matrícula, primera cuota, seguro y examen médico, y explica que la renovación del descuento del 10 % requiere cumplir condiciones académicas y de pago, como aprobar con 10.5, llevar los créditos completos, mantener pagos puntuales y continuidad en los estudios.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_10",
+      "titulo": "✅ Construye pequeños \"sí\" (micro-compromisos)",
+      "ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "Augusto, antes de hablar de números, ¿tu empresa te pide una carrera en especial o solo un título universitario?\n\nPerfecto. Entre Industrial y Empresarial, ¿qué pesa más para ti: procesos y producción, o gestión de proyectos y operaciones?\n\nEn Industrial la cuota es S/626, pero hoy con el 10 % te queda en S/563. Ese 10 % lo tienes toda la carrera. ¿Vamos bien?\n\nSí, mientras cumplas cuatro condiciones: aprobar con 10.5, llevar tus créditos completos, pagar puntual y no dejar de estudiar. ¿Hasta ahí claro?\n\nSolo la primera cuota es mayor porque trae matrícula, seguro y examen médico. Normalmente son S/942, pero con la matrícula gratis queda en S/629. ¿Cómo lo ves?\n\nY la admisión te sale a la mitad: S/100. Solo por matricularte te registramos gratis en Nexus y el Taller de Excel certificado. ¿Rindes tu evaluación hoy o mañana, desde tu laptop con cámara?",
+      "porQue": "Primero confirma qué exige su empresa y qué lo hará elegir; después explica la cuota y las condiciones del 10 % sin prometer de más. La primera cuota se desglosa y se cierra hacia la evaluación.",
+      "base": "7fba977e2044",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Augusto, antes de hablar de números, ¿tu empresa te pide una carrera en especial o solo un título universitario?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Solo el título, pero que tenga que ver con mi trabajo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. Entre Industrial y Empresarial, ¿qué pesa más para ti: procesos y producción, o gestión de proyectos y operaciones?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Creo que procesos. ¿Cuánto es al mes?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "En Industrial la cuota es S/626, pero hoy con el 10 % te queda en S/563. Ese 10 % lo tienes toda la carrera. ¿Vamos bien?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "¿Toda la carrera?"
+       },
+       {
+        "quien": "asesor",
+        "texto": "Sí, mientras cumplas cuatro condiciones: aprobar con 10.5, llevar tus créditos completos, pagar puntual y no dejar de estudiar. ¿Hasta ahí claro?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Ya, entiendo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Solo la primera cuota es mayor porque trae matrícula, seguro y examen médico. Normalmente son S/942, pero con la matrícula gratis queda en S/629. ¿Cómo lo ves?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Está bien, lo veo posible."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Y la admisión te sale a la mitad: S/100. Solo por matricularte te registramos gratis en Nexus y el Taller de Excel certificado. ¿Rindes tu evaluación hoy o mañana, desde tu laptop con cámara?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "De la cuota hacia arriba",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, antes de hablar de números, ¿tu empresa te pide una carrera en especial o solo un título universitario?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Solo el título, pero que tenga que ver con mi trabajo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Entre Industrial y Empresarial, ¿qué pesa más para ti: procesos y producción, o gestión de proyectos y operaciones?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Creo que procesos. ¿Cuánto es al mes?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "En Industrial la cuota es S/626, pero hoy con el 10 % te queda en S/563. Ese 10 % lo tienes toda la carrera. ¿Vamos bien?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "¿Toda la carrera?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Sí, mientras cumplas cuatro condiciones: aprobar con 10.5, llevar tus créditos completos, pagar puntual y no dejar de estudiar. ¿Hasta ahí claro?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, entiendo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Solo la primera cuota es mayor porque trae matrícula, seguro y examen médico. Normalmente son S/942, pero con la matrícula gratis queda en S/629. ¿Cómo lo ves?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Está bien, lo veo posible."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y la admisión te sale a la mitad: S/100. Solo por matricularte te registramos gratis en Nexus y el Taller de Excel certificado. ¿Rindes tu evaluación hoy o mañana, desde tu laptop con cámara?"
+         }
+        ],
+        "texto": "Augusto, antes de hablar de números, ¿tu empresa te pide una carrera en especial o solo un título universitario?\n\nPerfecto. Entre Industrial y Empresarial, ¿qué pesa más para ti: procesos y producción, o gestión de proyectos y operaciones?\n\nEn Industrial la cuota es S/626, pero hoy con el 10 % te queda en S/563. Ese 10 % lo tienes toda la carrera. ¿Vamos bien?\n\nSí, mientras cumplas cuatro condiciones: aprobar con 10.5, llevar tus créditos completos, pagar puntual y no dejar de estudiar. ¿Hasta ahí claro?\n\nSolo la primera cuota es mayor porque trae matrícula, seguro y examen médico. Normalmente son S/942, pero con la matrícula gratis queda en S/629. ¿Cómo lo ves?\n\nY la admisión te sale a la mitad: S/100. Solo por matricularte te registramos gratis en Nexus y el Taller de Excel certificado. ¿Rindes tu evaluación hoy o mañana, desde tu laptop con cámara?",
+        "porQue": "Primero confirma qué exige su empresa y qué lo hará elegir; después explica la cuota y las condiciones del 10 % sin prometer de más. La primera cuota se desglosa y se cierra hacia la evaluación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Paso a paso, en orden de pago",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, tú que vienes de SENATI y lideras postventa, ¿te ves más mejorando procesos o dirigiendo proyectos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mejorando procesos, eso hago todos los días."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces Industrial encaja con lo que ya haces. ¿Te explico la inversión en el orden en que pagarías?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, por favor."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Primero, tu evaluación de admisión: normalmente S/200, hoy S/100. Con eso aseguras tu vacante. ¿Te hace sentido?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Segundo, 24 horas después pagas tu primera cuota. Incluye tus créditos, la matrícula de S/250, el seguro y el examen médico; pero la matrícula hoy es gratis, así que queda en S/629. ¿Hasta ahí bien?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí. ¿Y las demás?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Tercero, las otras cuatro cuotas desde abril, de S/563 cada una, con el 10 % de descuento. Ese descuento se renueva si apruebas con 10.5, llevas tus créditos completos y pagas puntual. ¿Cómo lo ves?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Claro, se entiende."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Este ciclo te ahorras unos S/563. Además, por matricularte, Nexus y el Taller de Excel certificado sin costo. ¿Qué día rindes tu evaluación con normalidad, hoy o mañana?"
+         }
+        ],
+        "texto": "Augusto, tú que vienes de SENATI y lideras postventa, ¿te ves más mejorando procesos o dirigiendo proyectos?\n\nEntonces Industrial encaja con lo que ya haces. ¿Te explico la inversión en el orden en que pagarías?\n\nPrimero, tu evaluación de admisión: normalmente S/200, hoy S/100. Con eso aseguras tu vacante. ¿Te hace sentido?\n\nSegundo, 24 horas después pagas tu primera cuota. Incluye tus créditos, la matrícula de S/250, el seguro y el examen médico; pero la matrícula hoy es gratis, así que queda en S/629. ¿Hasta ahí bien?\n\nTercero, las otras cuatro cuotas desde abril, de S/563 cada una, con el 10 % de descuento. Ese descuento se renueva si apruebas con 10.5, llevas tus créditos completos y pagas puntual. ¿Cómo lo ves?\n\nEste ciclo te ahorras unos S/563. Además, por matricularte, Nexus y el Taller de Excel certificado sin costo. ¿Qué día rindes tu evaluación con normalidad, hoy o mañana?",
+        "porQue": "Ordenar los pagos en tres pasos hace que la primera cuota se entienda sin tablas. Las condiciones del 10 % quedan claras y la conversación termina en la evaluación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Primero el valor, luego el número",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, ¿qué pasa en tu trabajo si este año no avanzas con el título?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me podrían pasar por alto para el próximo puesto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entiendo, entonces no es solo un estudio, es tu crecimiento en la empresa. ¿Qué carrera crees que te ayuda más allí: Industrial o Empresarial?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Industrial, por los procesos. Pero ¿no será caro?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te muestro una sola cifra primero: este ciclo te ahorras unos S/563. Son la matrícula de S/250, que es gratis, más unos S/63 menos en cada una de tus 5 cuotas. ¿Hasta ahí claro?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, es bastante."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y ese 10 % en cuotas sigue toda la carrera si apruebas con 10.5, llevas tus créditos completos y pagas puntual. Depende de ti. ¿Te sirve así?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, me parece justo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Para empezar solo necesitas S/100 de admisión; la primera cuota va 24 horas después. ¿Rendimos tu evaluación hoy o mañana, desde tu laptop con cámara?"
+         }
+        ],
+        "texto": "Augusto, ¿qué pasa en tu trabajo si este año no avanzas con el título?\n\nEntiendo, entonces no es solo un estudio, es tu crecimiento en la empresa. ¿Qué carrera crees que te ayuda más allí: Industrial o Empresarial?\n\nTe muestro una sola cifra primero: este ciclo te ahorras unos S/563. Son la matrícula de S/250, que es gratis, más unos S/63 menos en cada una de tus 5 cuotas. ¿Hasta ahí claro?\n\nY ese 10 % en cuotas sigue toda la carrera si apruebas con 10.5, llevas tus créditos completos y pagas puntual. Depende de ti. ¿Te sirve así?\n\nPara empezar solo necesitas S/100 de admisión; la primera cuota va 24 horas después. ¿Rendimos tu evaluación hoy o mañana, desde tu laptop con cámara?",
+        "porQue": "Partir del costo de no avanzar en su empresa da sentido a la inversión. El ahorro con su origen y las condiciones claras evitan malentendidos y dejan lista la evaluación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si dice 'reviso las alternativas'",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, ¿cómo lo ves para empezar este ciclo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me gusta, pero quiero revisar bien Industrial y Empresarial antes."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Me parece muy bien que lo pienses. ¿Qué te falta saber para decidir entre las dos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Cuál me sirve más en mi trabajo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "En Industrial optimizas procesos productivos; en Empresarial gestionas proyectos y operaciones. Tú hoy mejoras procesos de postventa. ¿Con cuál te identificas más?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Con Industrial, la verdad."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces ya lo decidiste tú. Los S/100 de admisión te reservan la vacante y el descuento; la primera cuota de S/629 recién va 24 horas después. ¿Te hace sentido?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Además te llevas la matrícula gratis, Nexus y el Taller de Excel certificado, sin costo. ¿Qué fecha te acomoda para tu evaluación con normalidad, hoy o mañana?"
+         }
+        ],
+        "texto": "Augusto, ¿cómo lo ves para empezar este ciclo?\n\nMe parece muy bien que lo pienses. ¿Qué te falta saber para decidir entre las dos?\n\nEn Industrial optimizas procesos productivos; en Empresarial gestionas proyectos y operaciones. Tú hoy mejoras procesos de postventa. ¿Con cuál te identificas más?\n\nEntonces ya lo decidiste tú. Los S/100 de admisión te reservan la vacante y el descuento; la primera cuota de S/629 recién va 24 horas después. ¿Te hace sentido?\n\nAdemás te llevas la matrícula gratis, Nexus y el Taller de Excel certificado, sin costo. ¿Qué fecha te acomoda para tu evaluación con normalidad, hoy o mañana?",
+        "porQue": "Preguntar qué falta para decidir convierte 'lo reviso' en una decisión en la misma llamada. Comparar con su propio trabajo hace que él concluya cuál carrera elegir.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Cierre hacia la evaluación",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, resumo: eres gerente de postventa, tienes base de SENATI y tu empresa te pide el título. Industrial te da justo eso. ¿Correcto?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Correcto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "La admisión hoy es S/100, la primera cuota S/629 y desde abril S/563, con el 10 % mientras cumplas las condiciones. ¿Alguna duda con eso?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, quedó claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. La evaluación es virtual, desde computadora o laptop con cámara, y no es un examen de conocimientos. ¿Tienes laptop a la mano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, la del trabajo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. ¿La rindes hoy en la noche o mañana temprano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Hoy, después de las ocho."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Excelente, hoy a las ocho. Te dejo los pasos por WhatsApp y te acompaño en el proceso. ¿Cómo te sientes con empezar este ciclo, Augusto?"
+         }
+        ],
+        "texto": "Augusto, resumo: eres gerente de postventa, tienes base de SENATI y tu empresa te pide el título. Industrial te da justo eso. ¿Correcto?\n\nLa admisión hoy es S/100, la primera cuota S/629 y desde abril S/563, con el 10 % mientras cumplas las condiciones. ¿Alguna duda con eso?\n\nPerfecto. La evaluación es virtual, desde computadora o laptop con cámara, y no es un examen de conocimientos. ¿Tienes laptop a la mano?\n\nGenial. ¿La rindes hoy en la noche o mañana temprano?\n\nExcelente, hoy a las ocho. Te dejo los pasos por WhatsApp y te acompaño en el proceso. ¿Cómo te sientes con empezar este ciclo, Augusto?",
+        "porQue": "El resumen con sus palabras confirma la carrera y la inversión ya explicada. Dar control sobre el momento de la evaluación cierra el avance hoy.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": "inversion"
+     },
      "patrones": {
       "bien": [
        {
@@ -43275,11 +44721,317 @@
      "avg": 88,
      "fortaleza": "Realizas intentos de avance hacia el proceso de admisión y consultas si la inversión resulta factible para Augusto. También identificas que necesita revisar las alternativas antes de decidir y mantienes disponible el contacto por WhatsApp. Finalmente, realizas una despedida cordial y mencionas la encuesta de satisfacción.",
      "oportunidad": "comercial estableciendo una fecha y hora concreta de seguimiento, especialmente cuando Augusto manifiesta que revisará las alternativas académicas antes de decidir. Asimismo, confirma el envío de la información por el correo electrónico solicitado y utiliza el próximo contacto para resolver sus dudas, validar la carrera elegida y orientar el siguiente paso hacia la postulación.",
-     "conclusion": null,
+     "conclusion": "Intentaste avanzar a la admisión, validaste si la inversión era viable, ofreciste WhatsApp y te despediste con cordialidad. Cuando Augusto diga que revisará alternativas, acuerda fecha y hora concretas, confirma el envío al correo que pidió y usa ese momento para llevarlo a la postulación.",
      "rol": "oportunidad",
      "texto": "comercial estableciendo una fecha y hora concreta de seguimiento, especialmente cuando Augusto manifiesta que revisará las alternativas académicas antes de decidir. Asimismo, confirma el envío de la información por el correo electrónico solicitado y utiliza el próximo contacto para resolver sus dudas, validar la carrera elegida y orientar el siguiente paso hacia la postulación.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_16",
+      "titulo": "📅 Si no confirma al momento, termina con un próximo paso",
+      "ejemplo": "\"¿Te llamo mañana para conocer si podemos empezar tu proceso de admisión? ¿Te parece? O si decides antes, avísame y estaré muy atento. ¿Quedamos para mañana?\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "Claro, Augusto. Para ayudarte a revisarlas bien, ¿entre qué carreras estás dudando?\n\nPerfecto. Industrial va más a procesos y producción; Empresarial a proyectos y operaciones. ¿Cuál se parece más a tu día a día en postventa?\n\nEntonces ya tienes una favorita. ¿Qué te falta para confirmarla?\n\nTe la envío ahora a tu correo. ¿Me confirmas cuál es?\n\nListo, en un minuto la tienes. Revísala hoy y agendamos tu evaluación mañana a las ocho de la noche, así aseguras el beneficio. ¿Te parece bien esa hora?",
+      "porQue": "Preguntar qué alternativas revisará convierte la duda en algo concreto. La malla va al correo en ese momento y el siguiente paso queda con día y hora de la evaluación.",
+      "base": "a4e1d5066d27",
+      "dialogo": [
+       {
+        "quien": "cliente",
+        "texto": "Déjame revisar las alternativas y te aviso."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Claro, Augusto. Para ayudarte a revisarlas bien, ¿entre qué carreras estás dudando?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Industrial y Empresarial."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. Industrial va más a procesos y producción; Empresarial a proyectos y operaciones. ¿Cuál se parece más a tu día a día en postventa?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Industrial, creo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Entonces ya tienes una favorita. ¿Qué te falta para confirmarla?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Revisar la malla con calma."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te la envío ahora a tu correo. ¿Me confirmas cuál es?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "El mismo que registré en el formulario."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Listo, en un minuto la tienes. Revísala hoy y agendamos tu evaluación mañana a las ocho de la noche, así aseguras el beneficio. ¿Te parece bien esa hora?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Qué alternativa falta revisar",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Déjame revisar las alternativas y te aviso."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Claro, Augusto. Para ayudarte a revisarlas bien, ¿entre qué carreras estás dudando?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Industrial y Empresarial."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Industrial va más a procesos y producción; Empresarial a proyectos y operaciones. ¿Cuál se parece más a tu día a día en postventa?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Industrial, creo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces ya tienes una favorita. ¿Qué te falta para confirmarla?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Revisar la malla con calma."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te la envío ahora a tu correo. ¿Me confirmas cuál es?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "El mismo que registré en el formulario."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Listo, en un minuto la tienes. Revísala hoy y agendamos tu evaluación mañana a las ocho de la noche, así aseguras el beneficio. ¿Te parece bien esa hora?"
+         }
+        ],
+        "texto": "Claro, Augusto. Para ayudarte a revisarlas bien, ¿entre qué carreras estás dudando?\n\nPerfecto. Industrial va más a procesos y producción; Empresarial a proyectos y operaciones. ¿Cuál se parece más a tu día a día en postventa?\n\nEntonces ya tienes una favorita. ¿Qué te falta para confirmarla?\n\nTe la envío ahora a tu correo. ¿Me confirmas cuál es?\n\nListo, en un minuto la tienes. Revísala hoy y agendamos tu evaluación mañana a las ocho de la noche, así aseguras el beneficio. ¿Te parece bien esa hora?",
+        "porQue": "Preguntar qué alternativas revisará convierte la duda en algo concreto. La malla va al correo en ese momento y el siguiente paso queda con día y hora de la evaluación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Confirma el correo en línea",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, me pediste la información al correo. ¿Me lo dictas para enviarla ahora mismo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, es el que registré."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, lo tengo. Te envío en este momento la malla de Industrial y de Empresarial. ¿Me confirmas si te llegó?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, ya me llegó."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. Mírala conmigo un segundo: en Industrial tienes certificaciones en Mantenimiento Industrial y Gestión de la Producción. ¿Se relaciona con lo que haces?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, bastante."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces ya tienes lo que necesitabas para decidir. ¿Qué día rindes tu evaluación de admisión, hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Bien. ¿A qué hora te acomoda?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las siete de la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Anotado: mañana a las siete. Te escribo por WhatsApp con el enlace. ¿Algo más que quieras revisar antes, Augusto?"
+         }
+        ],
+        "texto": "Augusto, me pediste la información al correo. ¿Me lo dictas para enviarla ahora mismo?\n\nPerfecto, lo tengo. Te envío en este momento la malla de Industrial y de Empresarial. ¿Me confirmas si te llegó?\n\nGenial. Mírala conmigo un segundo: en Industrial tienes certificaciones en Mantenimiento Industrial y Gestión de la Producción. ¿Se relaciona con lo que haces?\n\nEntonces ya tienes lo que necesitabas para decidir. ¿Qué día rindes tu evaluación de admisión, hoy o mañana?\n\nBien. ¿A qué hora te acomoda?\n\nAnotado: mañana a las siete. Te escribo por WhatsApp con el enlace. ¿Algo más que quieras revisar antes, Augusto?",
+        "porQue": "Enviar y confirmar el correo durante la llamada evita que la información se pierda. Revisarla juntos resuelve la duda y fija la evaluación con hora.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Día y hora con su agenda",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Lo voy a pensar y te digo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Me parece bien que lo pienses, Augusto. Para que no se te pase con tu trabajo, ¿cuándo tienes un espacio libre esta semana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana en la noche, quizá."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Te propongo algo: usa ese espacio para rendir tu evaluación, que es virtual desde tu laptop con cámara. ¿A qué hora mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No sé si ya estaré listo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "No es un examen de conocimientos, así que no necesitas prepararte. ¿Qué te falta para sentirte listo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Elegir la carrera."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Hoy me dijiste que lo tuyo son los procesos. ¿Eso apunta más a Industrial o a Empresarial?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A Industrial."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces mañana a las ocho rindes tu evaluación para Industrial. Te envío la información al correo y el enlace por WhatsApp. ¿Te queda bien?"
+         }
+        ],
+        "texto": "Me parece bien que lo pienses, Augusto. Para que no se te pase con tu trabajo, ¿cuándo tienes un espacio libre esta semana?\n\nPerfecto. Te propongo algo: usa ese espacio para rendir tu evaluación, que es virtual desde tu laptop con cámara. ¿A qué hora mañana?\n\nNo es un examen de conocimientos, así que no necesitas prepararte. ¿Qué te falta para sentirte listo?\n\nHoy me dijiste que lo tuyo son los procesos. ¿Eso apunta más a Industrial o a Empresarial?\n\nEntonces mañana a las ocho rindes tu evaluación para Industrial. Te envío la información al correo y el enlace por WhatsApp. ¿Te queda bien?",
+        "porQue": "Usar su propio espacio libre como fecha para la evaluación evita el seguimiento abierto. Recordarle lo que él dijo le ayuda a concluir la carrera.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si dice 'lo consulto en el trabajo'",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, ¿qué día te acomoda rendir tu evaluación, hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Antes quiero consultarlo con mi jefe."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Me parece bien. ¿Qué te gustaría que te confirme tu jefe?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Si le sirve que sea Industrial."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buena idea. ¿Puedes escribirle ahora y preguntarle? Mientras, te envío la malla para que se la reenvíes."
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, le escribo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Y recuerda que la evaluación solo reserva tu vacante y el beneficio; la primera cuota va 24 horas después. ¿Te hace sentido?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí. Ya me respondió que está bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¡Excelente! Entonces ya tienes el visto bueno. ¿La rindes hoy en la noche o mañana temprano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana temprano."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, mañana a las ocho. Te mando el enlace por WhatsApp y la malla a tu correo. ¿Algo más, Augusto?"
+         }
+        ],
+        "texto": "Augusto, ¿qué día te acomoda rendir tu evaluación, hoy o mañana?\n\nMe parece bien. ¿Qué te gustaría que te confirme tu jefe?\n\nBuena idea. ¿Puedes escribirle ahora y preguntarle? Mientras, te envío la malla para que se la reenvíes.\n\nPerfecto. Y recuerda que la evaluación solo reserva tu vacante y el beneficio; la primera cuota va 24 horas después. ¿Te hace sentido?\n\n¡Excelente! Entonces ya tienes el visto bueno. ¿La rindes hoy en la noche o mañana temprano?\n\nPerfecto, mañana a las ocho. Te mando el enlace por WhatsApp y la malla a tu correo. ¿Algo más, Augusto?",
+        "porQue": "La consulta con el jefe se resuelve en la misma llamada pidiéndole que le escriba ya. Así la objeción no deja el seguimiento abierto y la evaluación queda fijada.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Evaluación, WhatsApp y encuesta",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Augusto, entonces quedamos en Industrial. ¿Rindes tu evaluación hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana a las siete de la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, mañana a las siete. Necesitas una computadora o laptop con cámara y buena conexión. ¿La tienes a la mano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, todo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. Ya te envié la información a tu correo, ¿la puedes ver?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, ahí está."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y te escribo ahora por WhatsApp con el enlace de la evaluación y mi contacto, para cualquier duda. ¿Este número tiene WhatsApp?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Excelente. Por matricularte te registramos gratis en Nexus y en el Taller de Excel certificado. ¿Alguna duda antes de despedirnos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, gracias."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias a ti, Augusto, éxitos mañana. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?"
+         }
+        ],
+        "texto": "Augusto, entonces quedamos en Industrial. ¿Rindes tu evaluación hoy o mañana?\n\nPerfecto, mañana a las siete. Necesitas una computadora o laptop con cámara y buena conexión. ¿La tienes a la mano?\n\nGenial. Ya te envié la información a tu correo, ¿la puedes ver?\n\nY te escribo ahora por WhatsApp con el enlace de la evaluación y mi contacto, para cualquier duda. ¿Este número tiene WhatsApp?\n\nExcelente. Por matricularte te registramos gratis en Nexus y en el Taller de Excel certificado. ¿Alguna duda antes de despedirnos?\n\nGracias a ti, Augusto, éxitos mañana. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?",
+        "porQue": "El cierre deja fecha, hora, requisitos, correo y WhatsApp confirmados. Solo después llegan la despedida y la encuesta, con el siguiente paso asegurado.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -43474,11 +45226,293 @@
      "avg": 96,
      "fortaleza": "Lograste establecer contacto oportunamente, presentarte adecuadamente, confirmar el interés del prospecto y explorar sus estudios previos, experiencia laboral y situación actual. Esto te permitió conocer mejor su perfil antes de desarrollar la propuesta.",
      "oportunidad": "Continúa manteniendo una presentación clara y completa, transmitiendo seguridad desde el primer contacto y validando el interés del prospecto antes de desarrollar la asesoría.",
-     "conclusion": null,
+     "conclusion": "Estableciste contacto a tiempo, te presentaste bien, confirmaste el interés y exploraste sus estudios, experiencia y situación actual antes de proponer. Sigue así: presentación clara y completa, con seguridad desde el primer segundo y validando el interés antes de asesorar.",
      "rol": "oportunidad",
      "texto": "Continúa manteniendo una presentación clara y completa, transmitiendo seguridad desde el primer contacto y validando el interés del prospecto antes de desarrollar la asesoría.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_12",
+      "titulo": "🕊️ Dar la sensación de control",
+      "ejemplo": "\"Al final, la decisión de dar este paso para tu crecimiento profesional es 100% tuya. Yo estoy aquí para guiarte en el proceso de admisión.\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Te llamo por tu interés en Administración y Gestión del Talento Humano a distancia. ¿Me regalas dos minutos?\n\nGracias. Voy a ser tu asesora en todo el proceso. ¿Sigues interesado en estudiar la carrera?\n\nQué bueno. ¿Qué te llamó la atención de Talento Humano?\n\nInteresante, entonces ya vives el tema todos los días. ¿Hace cuánto tienes tu negocio?\n\nMucha experiencia, [nombre]. Cuéntame, ¿qué estudios tienes hoy y cuánto tiempo le dedicas al negocio en el día?",
+      "porQue": "Nombre, universidad, carrera y una pregunta de validación en el primer turno transmiten seguridad. Preguntar por su experiencia abre la indagación con su propia historia.",
+      "base": "c5f8ce1b86ef",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Te llamo por tu interés en Administración y Gestión del Talento Humano a distancia. ¿Me regalas dos minutos?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, dime."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Gracias. Voy a ser tu asesora en todo el proceso. ¿Sigues interesado en estudiar la carrera?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, lo estoy evaluando."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Qué bueno. ¿Qué te llamó la atención de Talento Humano?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Que tengo gente a cargo en mi negocio."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Interesante, entonces ya vives el tema todos los días. ¿Hace cuánto tienes tu negocio?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Unos cuatro años."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Mucha experiencia, [nombre]. Cuéntame, ¿qué estudios tienes hoy y cuánto tiempo le dedicas al negocio en el día?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Presentación con seguridad",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Te llamo por tu interés en Administración y Gestión del Talento Humano a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, dime."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias. Voy a ser tu asesora en todo el proceso. ¿Sigues interesado en estudiar la carrera?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, lo estoy evaluando."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bueno. ¿Qué te llamó la atención de Talento Humano?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Que tengo gente a cargo en mi negocio."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Interesante, entonces ya vives el tema todos los días. ¿Hace cuánto tienes tu negocio?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Unos cuatro años."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Mucha experiencia, [nombre]. Cuéntame, ¿qué estudios tienes hoy y cuánto tiempo le dedicas al negocio en el día?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Te llamo por tu interés en Administración y Gestión del Talento Humano a distancia. ¿Me regalas dos minutos?\n\nGracias. Voy a ser tu asesora en todo el proceso. ¿Sigues interesado en estudiar la carrera?\n\nQué bueno. ¿Qué te llamó la atención de Talento Humano?\n\nInteresante, entonces ya vives el tema todos los días. ¿Hace cuánto tienes tu negocio?\n\nMucha experiencia, [nombre]. Cuéntame, ¿qué estudios tienes hoy y cuánto tiempo le dedicas al negocio en el día?",
+        "porQue": "Nombre, universidad, carrera y una pregunta de validación en el primer turno transmiten seguridad. Preguntar por su experiencia abre la indagación con su propia historia.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Valida antes de asesorar",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], soy Ruth, asesora de la Universidad Continental. Dejaste tus datos para Talento Humano a distancia, ¿lo sigues considerando?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, pero todavía no decido nada."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Tranquilo, para eso estoy: para que decidas con información. ¿Qué te gustaría resolver primero?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Si me da el tiempo, tengo mi negocio."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entiendo. Las clases son en vivo de noche y quedan grabadas, así no descuidas tu negocio. ¿Eso te ayudaría?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, bastante."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bueno. ¿Y qué esperas lograr con la carrera?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Manejar mejor a mi personal."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muy buen objetivo, [nombre]. ¿Cuántas personas tienes a cargo hoy y qué es lo que más te cuesta con ellas?"
+         }
+        ],
+        "texto": "Hola, [nombre], soy Ruth, asesora de la Universidad Continental. Dejaste tus datos para Talento Humano a distancia, ¿lo sigues considerando?\n\nTranquilo, para eso estoy: para que decidas con información. ¿Qué te gustaría resolver primero?\n\nEntiendo. Las clases son en vivo de noche y quedan grabadas, así no descuidas tu negocio. ¿Eso te ayudaría?\n\nQué bueno. ¿Y qué esperas lograr con la carrera?\n\nMuy buen objetivo, [nombre]. ¿Cuántas personas tienes a cargo hoy y qué es lo que más te cuesta con ellas?",
+        "porQue": "Validar si sigue interesado y preguntar qué quiere resolver primero lo hace sentir escuchado. La última pregunta profundiza en su necesidad real.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si arranca preguntando precio",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Aló, ¿cuánto cuesta la carrera?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Con gusto te detallo la inversión. Antes, ¿me confirmas qué carrera te interesa?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Talento Humano."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. El monto depende de tu plan y de si convalidas algo, así que te doy el número exacto en un momento. ¿Ya estudiaste algo antes?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, un técnico en logística."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muy bien, eso suma. ¿Hoy trabajas en logística?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, ahora tengo un negocio propio."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¡Qué bien! ¿Y por qué Talento Humano ahora, con tu negocio en marcha?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Porque tengo trabajadores y quiero gestionarlos mejor."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, [nombre]. Con eso ya puedo orientarte mejor. ¿Cuántas personas tienes a tu cargo?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Con gusto te detallo la inversión. Antes, ¿me confirmas qué carrera te interesa?\n\nPerfecto. El monto depende de tu plan y de si convalidas algo, así que te doy el número exacto en un momento. ¿Ya estudiaste algo antes?\n\nMuy bien, eso suma. ¿Hoy trabajas en logística?\n\n¡Qué bien! ¿Y por qué Talento Humano ahora, con tu negocio en marcha?\n\nTe entiendo, [nombre]. Con eso ya puedo orientarte mejor. ¿Cuántas personas tienes a tu cargo?",
+        "porQue": "Si el cliente arranca con el precio, se responde con amabilidad, se presenta y se gana el derecho a preguntar. Así el monto llega después con sentido.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si atiende apurado",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental, por tu interés en Talento Humano a distancia. ¿Tienes dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Estoy atendiendo en mi negocio, rápido nomás."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Claro, te lo resumo en un minuto. La carrera es a distancia, de noche y con clases grabadas, pensada para quien trabaja o tiene negocio. ¿Va con lo que buscas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, por eso pregunté."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. Además, en octavo ciclo ya tienes una certificación en Contrataciones y Nóminas, útil para tu negocio. ¿Te imaginas aplicándolo con tu personal?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Eso me serviría."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. Una sola pregunta para orientarte: ¿cuántas personas trabajan contigo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Seis."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Seis personas ya es un equipo, [nombre]. ¿Qué es lo que más te cuesta con ellos: contratar, organizarlos o retenerlos?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental, por tu interés en Talento Humano a distancia. ¿Tienes dos minutos?\n\nClaro, te lo resumo en un minuto. La carrera es a distancia, de noche y con clases grabadas, pensada para quien trabaja o tiene negocio. ¿Va con lo que buscas?\n\nPerfecto. Además, en octavo ciclo ya tienes una certificación en Contrataciones y Nóminas, útil para tu negocio. ¿Te imaginas aplicándolo con tu personal?\n\nGenial. Una sola pregunta para orientarte: ¿cuántas personas trabajan contigo?\n\nSeis personas ya es un equipo, [nombre]. ¿Qué es lo que más te cuesta con ellos: contratar, organizarlos o retenerlos?",
+        "porQue": "No se agenda otra llamada: se da algo corto y útil para su negocio y se sigue con una pregunta clave. Respeta su tiempo y mantiene la conversación.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Puente a su experiencia",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Te llamo por Talento Humano a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias. Para orientarte bien quiero conocerte primero. ¿Hoy a qué te dedicas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Tengo un negocio y antes trabajé en logística."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué buena experiencia. ¿Dirigías personas en logística?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, tenía un equipo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces ya sabes lo que es liderar. ¿Y qué estudios tienes?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Un técnico."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muy bien. ¿Qué tiempo libre te deja el negocio?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Las noches, más que nada."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces, [nombre]: tienes negocio propio, experiencia liderando equipos y las noches libres. ¿Qué te gustaría lograr con la carrera?"
+         }
+        ],
+        "texto": "Hola, [nombre], te saluda Ruth de la Universidad Continental. Te llamo por Talento Humano a distancia. ¿Me regalas dos minutos?\n\nGracias. Para orientarte bien quiero conocerte primero. ¿Hoy a qué te dedicas?\n\nQué buena experiencia. ¿Dirigías personas en logística?\n\nEntonces ya sabes lo que es liderar. ¿Y qué estudios tienes?\n\nMuy bien. ¿Qué tiempo libre te deja el negocio?\n\nEntonces, [nombre]: tienes negocio propio, experiencia liderando equipos y las noches libres. ¿Qué te gustaría lograr con la carrera?",
+        "porQue": "La presentación clara da paso a preguntas que recogen su experiencia. El resumen deja preparada la indagación profunda de su motivación.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -43507,11 +45541,313 @@
      "avg": 92,
      "fortaleza": "Identificaste aspectos importantes de su necesidad, como su disponibilidad de tiempo por el negocio propio, su experiencia dirigiendo personas y su interés por complementar su formación en Administración con especialización en Talento Humano.",
      "oportunidad": "Sigue profundizando en las motivaciones del prospecto y conecta los beneficios con su experiencia previa. En este caso, podías potenciar aún más la propuesta relacionando su experiencia en logística, negocio propio y liderazgo con las competencias que desarrollará en Gestión del Talento Humano.",
-     "conclusion": null,
+     "conclusion": "Identificaste su poco tiempo por el negocio propio, su experiencia dirigiendo personas y su interés en Talento Humano. Te faltó conectar esa experiencia en logística, negocio y liderazgo con lo que desarrollará en la carrera, para que vea el valor en su propia historia.",
      "rol": "oportunidad",
      "texto": "Sigue profundizando en las motivaciones del prospecto y conecta los beneficios con su experiencia previa. En este caso, podías potenciar aún más la propuesta relacionando su experiencia en logística, negocio propio y liderazgo con las competencias que desarrollará en Gestión del Talento Humano.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_09",
+      "titulo": "🪞 Devuelve el dolor con las palabras del cliente",
+      "ejemplo": "Si dijo \"siento que se me está yendo el tiempo\": \"te entiendo, sientes que el tiempo se te va y quieres retomar tu carrera ya por eso puedes aplicar bajo este beneficio y sacar el mejor provecho de tu inversión\"."
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "[nombre], me contaste que dirigiste equipos en logística y que hoy tienes tu negocio. ¿Qué es lo que más te ha costado con tu personal?\n\nTe entiendo, la rotación cansa. Justo la carrera te forma en selección, evaluación y promoción del personal: lo que haces por intuición, lo harás con método. ¿Te imaginas aplicándolo?\n\nY tu experiencia liderando en logística no se pierde, te da ventaja en los cursos. ¿Qué te gustaría que cambie en tu negocio en un año?\n\nMuy claro. ¿Y cuánto tiempo libre te queda en la noche?\n\nEntonces, [nombre]: quieres un equipo estable, ya tienes experiencia liderando y tienes tus noches. ¿Te cuento cómo encaja la carrera con eso?",
+      "porQue": "Devolverle su experiencia con sus palabras y unirla a lo que aprenderá hace que vea el valor en su propia historia. El resumen abre la solución.",
+      "base": "dbc8388e4d0c",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "[nombre], me contaste que dirigiste equipos en logística y que hoy tienes tu negocio. ¿Qué es lo que más te ha costado con tu personal?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Que se queden. Rotan mucho."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te entiendo, la rotación cansa. Justo la carrera te forma en selección, evaluación y promoción del personal: lo que haces por intuición, lo harás con método. ¿Te imaginas aplicándolo?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, me serviría."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Y tu experiencia liderando en logística no se pierde, te da ventaja en los cursos. ¿Qué te gustaría que cambie en tu negocio en un año?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Tener un equipo más estable."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Muy claro. ¿Y cuánto tiempo libre te queda en la noche?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Unas dos horas."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Entonces, [nombre]: quieres un equipo estable, ya tienes experiencia liderando y tienes tus noches. ¿Te cuento cómo encaja la carrera con eso?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Devuélvele su experiencia",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], me contaste que dirigiste equipos en logística y que hoy tienes tu negocio. ¿Qué es lo que más te ha costado con tu personal?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Que se queden. Rotan mucho."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, la rotación cansa. Justo la carrera te forma en selección, evaluación y promoción del personal: lo que haces por intuición, lo harás con método. ¿Te imaginas aplicándolo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, me serviría."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y tu experiencia liderando en logística no se pierde, te da ventaja en los cursos. ¿Qué te gustaría que cambie en tu negocio en un año?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Tener un equipo más estable."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muy claro. ¿Y cuánto tiempo libre te queda en la noche?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Unas dos horas."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces, [nombre]: quieres un equipo estable, ya tienes experiencia liderando y tienes tus noches. ¿Te cuento cómo encaja la carrera con eso?"
+         }
+        ],
+        "texto": "[nombre], me contaste que dirigiste equipos en logística y que hoy tienes tu negocio. ¿Qué es lo que más te ha costado con tu personal?\n\nTe entiendo, la rotación cansa. Justo la carrera te forma en selección, evaluación y promoción del personal: lo que haces por intuición, lo harás con método. ¿Te imaginas aplicándolo?\n\nY tu experiencia liderando en logística no se pierde, te da ventaja en los cursos. ¿Qué te gustaría que cambie en tu negocio en un año?\n\nMuy claro. ¿Y cuánto tiempo libre te queda en la noche?\n\nEntonces, [nombre]: quieres un equipo estable, ya tienes experiencia liderando y tienes tus noches. ¿Te cuento cómo encaja la carrera con eso?",
+        "porQue": "Devolverle su experiencia con sus palabras y unirla a lo que aprenderá hace que vea el valor en su propia historia. El resumen abre la solución.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Pregunta por su equipo",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], cuéntame de tu equipo. ¿Cuántas personas trabajan contigo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ocho."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Ocho personas ya es una empresa. ¿Cómo eliges a quién contratar hoy?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Por recomendación, a ojo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muchos lo hacen así al inicio. En la carrera aprendes reclutamiento y selección con herramientas, y en octavo ciclo te certificas en Contrataciones y Nóminas. ¿Te ayudaría en tu negocio?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, mucho."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y lo que aprendiste dirigiendo en logística te sirve como base. ¿Alguna vez pensaste en asesorar a otras empresas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No lo había pensado."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Es una salida real: hay egresados que crean su propia consultora de talento. ¿Te gustaría tener esa opción?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, suena bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces, [nombre], quieres contratar con método y abrir una puerta más con tu experiencia. ¿Te muestro cómo lo logras estudiando de noche?"
+         }
+        ],
+        "texto": "[nombre], cuéntame de tu equipo. ¿Cuántas personas trabajan contigo?\n\nOcho personas ya es una empresa. ¿Cómo eliges a quién contratar hoy?\n\nMuchos lo hacen así al inicio. En la carrera aprendes reclutamiento y selección con herramientas, y en octavo ciclo te certificas en Contrataciones y Nóminas. ¿Te ayudaría en tu negocio?\n\nY lo que aprendiste dirigiendo en logística te sirve como base. ¿Alguna vez pensaste en asesorar a otras empresas?\n\nEs una salida real: hay egresados que crean su propia consultora de talento. ¿Te gustaría tener esa opción?\n\nEntonces, [nombre], quieres contratar con método y abrir una puerta más con tu experiencia. ¿Te muestro cómo lo logras estudiando de noche?",
+        "porQue": "Las preguntas sobre su equipo revelan una necesidad concreta. Conectarla con un curso y una certificación real le muestra un beneficio inmediato.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Del negocio al título",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], tienes negocio propio y experiencia en logística. ¿Qué te motiva a sumar un título ahora?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Quiero hacer las cosas más profesionales."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Me encanta esa respuesta. ¿En qué área sientes que te falta más formación?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "En manejar personas, pagos, contratos."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Justo eso desarrollas: gestión del personal, contratos y nóminas, más relaciones laborales al final de la carrera. ¿Hasta ahí te hace sentido?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, es lo que necesito."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y tu experiencia en logística y liderazgo hace que entiendas los casos más rápido. ¿Te ves aplicándolo en tu negocio mientras estudias?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, al toque."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bueno. ¿Hay alguien en casa o en el negocio que te apoye mientras estudias?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mi esposa me ayuda con el negocio."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Excelente apoyo, [nombre]. Entonces lo tuyo es profesionalizar tu negocio sin dejarlo. ¿Te cuento cómo lo hacemos posible?"
+         }
+        ],
+        "texto": "[nombre], tienes negocio propio y experiencia en logística. ¿Qué te motiva a sumar un título ahora?\n\nMe encanta esa respuesta. ¿En qué área sientes que te falta más formación?\n\nJusto eso desarrollas: gestión del personal, contratos y nóminas, más relaciones laborales al final de la carrera. ¿Hasta ahí te hace sentido?\n\nY tu experiencia en logística y liderazgo hace que entiendas los casos más rápido. ¿Te ves aplicándolo en tu negocio mientras estudias?\n\nQué bueno. ¿Hay alguien en casa o en el negocio que te apoye mientras estudias?\n\nExcelente apoyo, [nombre]. Entonces lo tuyo es profesionalizar tu negocio sin dejarlo. ¿Te cuento cómo lo hacemos posible?",
+        "porQue": "Preguntar qué le falta conecta su experiencia con los cursos concretos. Ver que aplicará lo aprendido mientras estudia aumenta su motivación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si dice 'ya sé dirigir gente'",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], ¿cómo te ves usando lo que aprendes en tu negocio?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "La verdad, ya sé dirigir gente. No sé si necesito la carrera."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Se nota que tienes experiencia. Déjame preguntarte: ¿tus procesos de contratación y pago están por escrito o los manejas tú?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Los manejo yo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Ahí está la diferencia: la carrera te da método para que no dependa solo de ti. ¿Qué pasaría si mañana quisieras abrir otro local?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Necesitaría a alguien que haga lo mío."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Exacto. Con lo que aprendes podrías formar a esa persona y crecer. ¿Te imaginas ese segundo local?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, sería bueno."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y además te llevas un título y certificaciones para tu CV. ¿Te hace sentido que tu experiencia más la carrera te lleven más lejos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, visto así, sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, [nombre]. Entonces lo que buscas es crecer tu negocio con método. ¿Te cuento cómo encaja la carrera con tu tiempo?"
+         }
+        ],
+        "texto": "[nombre], ¿cómo te ves usando lo que aprendes en tu negocio?\n\nSe nota que tienes experiencia. Déjame preguntarte: ¿tus procesos de contratación y pago están por escrito o los manejas tú?\n\nAhí está la diferencia: la carrera te da método para que no dependa solo de ti. ¿Qué pasaría si mañana quisieras abrir otro local?\n\nExacto. Con lo que aprendes podrías formar a esa persona y crecer. ¿Te imaginas ese segundo local?\n\nY además te llevas un título y certificaciones para tu CV. ¿Te hace sentido que tu experiencia más la carrera te lleven más lejos?\n\nPerfecto, [nombre]. Entonces lo que buscas es crecer tu negocio con método. ¿Te cuento cómo encaja la carrera con tu tiempo?",
+        "porQue": "La objeción se responde con preguntas que lo hacen concluir por sí mismo. Su experiencia pasa a ser la base para crecer, no un motivo para no estudiar.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Resume y abre la solución",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], déjame resumir para ver si te entendí bien. ¿Te parece?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Tienes un negocio propio, dirigiste equipos en logística y quieres manejar mejor a tu personal. ¿Correcto?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, así es."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y tu tiempo es en las noches, porque en el día atiendes tu negocio. ¿Algo más que deba saber?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Que no quiero algo muy teórico."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buen punto. La carrera tiene cursos de selección, evaluación y nóminas, que aplicas desde el primer día con tu equipo. ¿Eso es lo que buscas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, exacto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Además, tienes inglés incluido en la malla y bolsa de trabajo desde el inicio. ¿Te ayudaría?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me gusta."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces, [nombre], te cuento cómo estudiarías de noche sin descuidar tu negocio y qué necesitas para empezar este ciclo. ¿Vamos?"
+         }
+        ],
+        "texto": "[nombre], déjame resumir para ver si te entendí bien. ¿Te parece?\n\nTienes un negocio propio, dirigiste equipos en logística y quieres manejar mejor a tu personal. ¿Correcto?\n\nY tu tiempo es en las noches, porque en el día atiendes tu negocio. ¿Algo más que deba saber?\n\nBuen punto. La carrera tiene cursos de selección, evaluación y nóminas, que aplicas desde el primer día con tu equipo. ¿Eso es lo que buscas?\n\nAdemás, tienes inglés incluido en la malla y bolsa de trabajo desde el inicio. ¿Te ayudaría?\n\nEntonces, [nombre], te cuento cómo estudiarías de noche sin descuidar tu negocio y qué necesitas para empezar este ciclo. ¿Vamos?",
+        "porQue": "El resumen con sus palabras confirma la necesidad y abre la solución. Cada beneficio responde a algo que dijo, no a un catálogo.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -43879,11 +46215,325 @@
      "avg": 85,
      "fortaleza": "Lograste mantener la disposición del prospecto para continuar con el proceso, acordar la gestión de la simulación y establecer contacto posterior. Además, ofreciste continuar la comunicación por WhatsApp y cumpliste con el protocolo de cierre de la interacción.",
      "oportunidad": "Mantén el cuidado del protocolo hasta el último momento de la interacción, procurando que la finalización de la llamada se desarrolle de manera ordenada, sin interrupciones ni cortes que puedan afectar la experiencia del prospecto.",
-     "conclusion": null,
+     "conclusion": "Mantuviste su disposición a continuar, acordaste el siguiente paso, ofreciste WhatsApp y cumpliste el protocolo de cierre. Cuida el último tramo: que la llamada termine de forma ordenada, sin interrupciones ni cortes.",
      "rol": "oportunidad",
      "texto": "Mantén el cuidado del protocolo hasta el último momento de la interacción, procurando que la finalización de la llamada se desarrolle de manera ordenada, sin interrupciones ni cortes que puedan afectar la experiencia del prospecto.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_16",
+      "titulo": "📅 Si no confirma al momento, termina con un próximo paso",
+      "ejemplo": "\"¿Te llamo mañana para conocer si podemos empezar tu proceso de admisión? ¿Te parece? O si decides antes, avísame y estaré muy atento. ¿Quedamos para mañana?\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "[nombre], ya estamos en lo último, solo un minuto más para dejar todo listo. ¿Te parece?\n\nQuedamos en que rindes tu evaluación de admisión. Es virtual, desde computadora o laptop con cámara. ¿Hoy o mañana?\n\nPerfecto. ¿A qué hora cierras tu negocio?\n\nEntonces mañana a las nueve, ya más tranquilo. ¿Te acomoda?\n\nTe escribo ahora por WhatsApp con el enlace y mi contacto. ¿Algo más que quieras preguntarme?\n\nGracias, [nombre], fue un gusto. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?",
+      "porQue": "Avisar que falta solo un minuto mantiene al prospecto en la línea. El cierre termina ordenado: evaluación con hora, WhatsApp, despedida y encuesta.",
+      "base": "f9663bb2c052",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "[nombre], ya estamos en lo último, solo un minuto más para dejar todo listo. ¿Te parece?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, dale."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Quedamos en que rindes tu evaluación de admisión. Es virtual, desde computadora o laptop con cámara. ¿Hoy o mañana?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Mañana en la noche."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. ¿A qué hora cierras tu negocio?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "A las ocho."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Entonces mañana a las nueve, ya más tranquilo. ¿Te acomoda?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, perfecto."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te escribo ahora por WhatsApp con el enlace y mi contacto. ¿Algo más que quieras preguntarme?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "No, todo claro."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Gracias, [nombre], fue un gusto. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Avisa que ya vas cerrando",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], ya estamos en lo último, solo un minuto más para dejar todo listo. ¿Te parece?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, dale."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Quedamos en que rindes tu evaluación de admisión. Es virtual, desde computadora o laptop con cámara. ¿Hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana en la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. ¿A qué hora cierras tu negocio?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las ocho."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces mañana a las nueve, ya más tranquilo. ¿Te acomoda?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, perfecto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te escribo ahora por WhatsApp con el enlace y mi contacto. ¿Algo más que quieras preguntarme?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, todo claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre], fue un gusto. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?"
+         }
+        ],
+        "texto": "[nombre], ya estamos en lo último, solo un minuto más para dejar todo listo. ¿Te parece?\n\nQuedamos en que rindes tu evaluación de admisión. Es virtual, desde computadora o laptop con cámara. ¿Hoy o mañana?\n\nPerfecto. ¿A qué hora cierras tu negocio?\n\nEntonces mañana a las nueve, ya más tranquilo. ¿Te acomoda?\n\nTe escribo ahora por WhatsApp con el enlace y mi contacto. ¿Algo más que quieras preguntarme?\n\nGracias, [nombre], fue un gusto. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?",
+        "porQue": "Avisar que falta solo un minuto mantiene al prospecto en la línea. El cierre termina ordenado: evaluación con hora, WhatsApp, despedida y encuesta.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Repite el acuerdo con sus palabras",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], antes de terminar te repito lo que acordamos, para que no quede ninguna duda. ¿Va?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Va."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Estudias Talento Humano de noche, sin descuidar tu negocio, y el siguiente paso es tu evaluación. ¿Así lo entendiste también?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¿La dejamos para hoy o para mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Hoy, en la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. ¿A qué hora estarás frente a la computadora?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las nueve y media."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Anotado: hoy a las nueve y media. Te mando el enlace por WhatsApp en este momento. ¿Te llegó?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, ya está."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Excelente, [nombre]. Gracias por tu tiempo. Ahora te paso a una corta encuesta de atención, me ayudas mucho respondiéndola."
+         }
+        ],
+        "texto": "[nombre], antes de terminar te repito lo que acordamos, para que no quede ninguna duda. ¿Va?\n\nEstudias Talento Humano de noche, sin descuidar tu negocio, y el siguiente paso es tu evaluación. ¿Así lo entendiste también?\n\n¿La dejamos para hoy o para mañana?\n\nPerfecto. ¿A qué hora estarás frente a la computadora?\n\nAnotado: hoy a las nueve y media. Te mando el enlace por WhatsApp en este momento. ¿Te llegó?\n\nExcelente, [nombre]. Gracias por tu tiempo. Ahora te paso a una corta encuesta de atención, me ayudas mucho respondiéndola.",
+        "porQue": "Repetir el acuerdo confirma que ambos entendieron lo mismo. Confirmar que el WhatsApp llegó antes de despedirse evita cortes con cosas pendientes.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Despedida sin apuro",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], ya tienes tu evaluación mañana a las ocho y el enlace en tu WhatsApp. ¿Hay algo más que te preocupe?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mmm, que se me pase la hora."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo, con el negocio es fácil. Te dejo un mensaje recordatorio por WhatsApp. ¿Te ayudaría?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, gracias."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Listo. Y si se te presenta algo, me escribes y lo resolvemos por ahí. ¿Te parece?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Perfecto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Recuerda que al matricularte te registramos gratis en Nexus y el Taller de Excel certificado. ¿Te gustaría aprovecharlos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. ¿Alguna otra duda antes de despedirnos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, ninguna."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre], te espero mañana. Te transfiero a una breve encuesta sobre mi atención, ¿me apoyas respondiéndola?"
+         }
+        ],
+        "texto": "[nombre], ya tienes tu evaluación mañana a las ocho y el enlace en tu WhatsApp. ¿Hay algo más que te preocupe?\n\nTe entiendo, con el negocio es fácil. Te dejo un mensaje recordatorio por WhatsApp. ¿Te ayudaría?\n\nListo. Y si se te presenta algo, me escribes y lo resolvemos por ahí. ¿Te parece?\n\nRecuerda que al matricularte te registramos gratis en Nexus y el Taller de Excel certificado. ¿Te gustaría aprovecharlos?\n\nGenial. ¿Alguna otra duda antes de despedirnos?\n\nGracias, [nombre], te espero mañana. Te transfiero a una breve encuesta sobre mi atención, ¿me apoyas respondiéndola?",
+        "porQue": "Preguntar si queda alguna preocupación antes de colgar evita que la llamada termine de golpe. La despedida es calmada y completa.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si lo interrumpen en su negocio",
+        "dialogo": [
+         {
+          "quien": "cliente",
+          "texto": "Disculpa, me llegó un cliente."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Tranquilo, [nombre], te espero un momento. Solo nos falta la hora de tu evaluación."
+         },
+         {
+          "quien": "cliente",
+          "texto": "Ya, dime."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias. La evaluación es virtual, con cámara. ¿Hoy en la noche o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. ¿A qué hora ya cerraste?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las ocho."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces mañana a las ocho y media. Te escribo el enlace por WhatsApp para que no tengas que anotarlo. ¿Va?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Va, gracias."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias a ti, [nombre], atiende tranquilo a tu cliente. Te paso a una corta encuesta sobre la atención, ¿me ayudas respondiéndola?"
+         }
+        ],
+        "texto": "Tranquilo, [nombre], te espero un momento. Solo nos falta la hora de tu evaluación.\n\nGracias. La evaluación es virtual, con cámara. ¿Hoy en la noche o mañana?\n\nPerfecto. ¿A qué hora ya cerraste?\n\nEntonces mañana a las ocho y media. Te escribo el enlace por WhatsApp para que no tengas que anotarlo. ¿Va?\n\nGracias a ti, [nombre], atiende tranquilo a tu cliente. Te paso a una corta encuesta sobre la atención, ¿me ayudas respondiéndola?",
+        "porQue": "Ante una interrupción se espera, se reduce lo que falta a un solo dato y se termina ordenado. La llamada no se corta con el acuerdo a medias.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Cierre completo y encuesta",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], entonces aseguramos tu vacante en Talento Humano con la evaluación. ¿Hoy o mañana?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Mañana."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¿A qué hora te acomoda?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "A las nueve de la noche."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, mañana a las nueve. Necesitas una computadora o laptop con cámara. ¿La tienes?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, en casa."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Genial. Te escribo ahora por WhatsApp con el enlace y mi contacto. ¿Este número tiene WhatsApp?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Y por matricularte te registramos sin costo en Nexus para adelantar cursos y en el Taller de Excel certificado. ¿Alguna duda antes de terminar?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, todo bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre], éxitos mañana. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?"
+         }
+        ],
+        "texto": "[nombre], entonces aseguramos tu vacante en Talento Humano con la evaluación. ¿Hoy o mañana?\n\n¿A qué hora te acomoda?\n\nPerfecto, mañana a las nueve. Necesitas una computadora o laptop con cámara. ¿La tienes?\n\nGenial. Te escribo ahora por WhatsApp con el enlace y mi contacto. ¿Este número tiene WhatsApp?\n\nY por matricularte te registramos sin costo en Nexus para adelantar cursos y en el Taller de Excel certificado. ¿Alguna duda antes de terminar?\n\nGracias, [nombre], éxitos mañana. Te transfiero a una breve encuesta sobre mi atención, ¿me ayudas respondiéndola?",
+        "porQue": "Cada dato del cierre queda confirmado antes de despedirse: fecha, hora, equipo, WhatsApp y regalo por matricularse. Recién después, la encuesta.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -43919,11 +46569,11 @@
    "cuartilUltima": "Q1",
    "calidadPromedio": 86,
    "cuartilCalidad": "Q2",
-   "matriculas": 2,
+   "matriculas": 3,
    "meta": 26,
-   "avanceMes": 7.69,
+   "avanceMes": 11.54,
    "avanceRitmo": null,
-   "avanceMeta": 7.69,
+   "avanceMeta": 11.54,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q3",
    "cuadrante": "naranja",
@@ -43937,7 +46587,7 @@
    },
    "puesto": 14,
    "totalAsesores": 26,
-   "indice": 46.8,
+   "indice": 48.8,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -44060,11 +46710,313 @@
      "avg": 94,
      "fortaleza": "Inicias la atención dentro del tiempo establecido, te identificas con tu nombre y confirmas el interés previamente registrado en Ingeniería Ambiental. Asimismo, mantienes un trato respetuoso durante la conversación y muestras disposición para orientar a la prospecto respecto a sus estudios técnicos anteriores.",
      "oportunidad": "Refuerza la personalización verificando el nombre correcto de la prospecto antes de utilizarlo durante la llamada. Asimismo, procura mantener un enfoque consultivo y evitar recomendaciones demasiado concluyentes antes de comprender completamente sus expectativas académicas.",
-     "conclusion": null,
+     "conclusion": "Iniciaste a tiempo, te identificaste, confirmaste su interés en Ingeniería Ambiental y fuiste respetuoso. Verifica el nombre correcto de la prospecto antes de usarlo y evita recomendaciones concluyentes antes de entender qué espera de sus estudios.",
      "rol": "oportunidad",
      "texto": "Refuerza la personalización verificando el nombre correcto de la prospecto antes de utilizarlo durante la llamada. Asimismo, procura mantener un enfoque consultivo y evitar recomendaciones demasiado concluyentes antes de comprender completamente sus expectativas académicas.",
-     "tecnica": null,
-     "caso": null,
+     "tecnica": {
+      "id": "tec_01",
+      "titulo": "🧠 Haz que el cliente concluya por sí mismo",
+      "ejemplo": "\"De todo lo que te conté, ¿qué es lo que más te acomoda a ti?\""
+     },
+     "caso": {
+      "tipo": "speech",
+      "texto": "Hola, buenas tardes, ¿hablo con [nombre]?\n\nTe saluda Raúl de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?\n\nGracias, [nombre]. ¿Prefieres que te llame así o de otra forma?\n\nPerfecto. ¿Qué te animó a buscar Ingeniería Ambiental?\n\nQué bueno que quieras avanzar. ¿Qué técnico estudiaste y qué esperas lograr con la carrera?",
+      "porQue": "Confirmar el nombre antes de usarlo evita errores que restan confianza. Preguntar qué espera de la carrera, sin recomendar todavía, abre la indagación.",
+      "base": "72453833e699",
+      "dialogo": [
+       {
+        "quien": "asesor",
+        "texto": "Hola, buenas tardes, ¿hablo con [nombre]?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, soy yo."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Te saluda Raúl de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Sí, claro."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Gracias, [nombre]. ¿Prefieres que te llame así o de otra forma?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Así está bien."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Perfecto. ¿Qué te animó a buscar Ingeniería Ambiental?"
+       },
+       {
+        "quien": "cliente",
+        "texto": "Estudié un técnico y quiero seguir."
+       },
+       {
+        "quien": "asesor",
+        "texto": "Qué bueno que quieras avanzar. ¿Qué técnico estudiaste y qué esperas lograr con la carrera?"
+       }
+      ],
+      "variantes": [
+       {
+        "titulo": "Confirma el nombre primero",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, buenas tardes, ¿hablo con [nombre]?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, soy yo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te saluda Raúl de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, claro."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre]. ¿Prefieres que te llame así o de otra forma?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Así está bien."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto. ¿Qué te animó a buscar Ingeniería Ambiental?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Estudié un técnico y quiero seguir."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué bueno que quieras avanzar. ¿Qué técnico estudiaste y qué esperas lograr con la carrera?"
+         }
+        ],
+        "texto": "Hola, buenas tardes, ¿hablo con [nombre]?\n\nTe saluda Raúl de la Universidad Continental. Te llamo por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?\n\nGracias, [nombre]. ¿Prefieres que te llame así o de otra forma?\n\nPerfecto. ¿Qué te animó a buscar Ingeniería Ambiental?\n\nQué bueno que quieras avanzar. ¿Qué técnico estudiaste y qué esperas lograr con la carrera?",
+        "porQue": "Confirmar el nombre antes de usarlo evita errores que restan confianza. Preguntar qué espera de la carrera, sin recomendar todavía, abre la indagación.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Pregunta antes de recomendar",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, ¿hablo con [nombre]? Te saluda Raúl de la Universidad Continental, por tu interés en Ingeniería Ambiental."
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, soy yo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre]. Antes de contarte de la carrera, quiero entender qué buscas. ¿Qué te gustaría hacer al terminar?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Trabajar en algo de medio ambiente, no sé bien qué."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Es normal no tenerlo claro aún. ¿Te ves más en una empresa, en una consultora o en el Estado?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Quizás en una empresa minera."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Interesante. ¿Y qué estudiaste antes?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Un técnico en laboratorio."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muy bien. ¿Qué parte de ese técnico disfrutaste más?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Hacer análisis de muestras."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué interesante, [nombre]. Con eso en mente, ¿qué te gustaría que te dé la carrera que hoy no tienes?"
+         }
+        ],
+        "texto": "Hola, ¿hablo con [nombre]? Te saluda Raúl de la Universidad Continental, por tu interés en Ingeniería Ambiental.\n\nGracias, [nombre]. Antes de contarte de la carrera, quiero entender qué buscas. ¿Qué te gustaría hacer al terminar?\n\nEs normal no tenerlo claro aún. ¿Te ves más en una empresa, en una consultora o en el Estado?\n\nInteresante. ¿Y qué estudiaste antes?\n\nMuy bien. ¿Qué parte de ese técnico disfrutaste más?\n\nQué interesante, [nombre]. Con eso en mente, ¿qué te gustaría que te dé la carrera que hoy no tienes?",
+        "porQue": "Preguntar antes de recomendar permite entender sus expectativas reales. Así la solución vendrá después, basada en lo que ella misma dijo.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si te corrige el nombre",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, ¿hablo con [nombre]?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "No, es [nombre] con otra escritura. Me dicen distinto."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias por corregirme. ¿Cómo prefieres que te llame?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Por mi segundo nombre."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Perfecto, así lo anoto. Te saluda Raúl de la Universidad Continental, por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, dime."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias. ¿Qué te motivó a mirar esta carrera?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Me interesa el cuidado del agua."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Qué buen tema. ¿Trabajas o estudias actualmente?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Trabajo medio tiempo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entendido. Antes de recomendarte algo, ¿qué esperas de la carrera y cuánto tiempo puedes dedicarle?"
+         }
+        ],
+        "texto": "Hola, ¿hablo con [nombre]?\n\nGracias por corregirme. ¿Cómo prefieres que te llame?\n\nPerfecto, así lo anoto. Te saluda Raúl de la Universidad Continental, por tu interés en Ingeniería Ambiental a distancia. ¿Me regalas dos minutos?\n\nGracias. ¿Qué te motivó a mirar esta carrera?\n\nQué buen tema. ¿Trabajas o estudias actualmente?\n\nEntendido. Antes de recomendarte algo, ¿qué esperas de la carrera y cuánto tiempo puedes dedicarle?",
+        "porQue": "Agradecer la corrección y preguntar cómo prefiere que la llamen la hace sentir respetada. Se retoma la presentación y se indaga sin conclusiones apresuradas.",
+        "grupo": "resolver"
+       },
+       {
+        "titulo": "Si pregunta '¿me conviene?'",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "[nombre], ¿qué te gustaría saber primero?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "¿Tú qué dices, me conviene Ambiental o mejor otra carrera?"
+         },
+         {
+          "quien": "asesor",
+          "texto": "Buena pregunta. Para no recomendarte a la ligera, ¿qué es lo que más te gusta hacer?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Trabajar en campo, con muestras."
+         },
+         {
+          "quien": "asesor",
+          "texto": "¿Y qué te gustaría resolver con tu trabajo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Problemas de contaminación."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Escuchándote, ¿qué carrera crees que se acerca más a eso?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Creo que Ambiental."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Coincide con lo que dices: en sexto ciclo tienes certificación en Monitoreo Ambiental. ¿Te imaginas aplicándolo en campo?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, me encantaría."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces ya tienes una dirección, [nombre]. ¿Qué estudiaste antes y cuánto tiempo libre tienes en la semana?"
+         }
+        ],
+        "texto": "[nombre], ¿qué te gustaría saber primero?\n\nBuena pregunta. Para no recomendarte a la ligera, ¿qué es lo que más te gusta hacer?\n\n¿Y qué te gustaría resolver con tu trabajo?\n\nEscuchándote, ¿qué carrera crees que se acerca más a eso?\n\nCoincide con lo que dices: en sexto ciclo tienes certificación en Monitoreo Ambiental. ¿Te imaginas aplicándolo en campo?\n\nEntonces ya tienes una dirección, [nombre]. ¿Qué estudiaste antes y cuánto tiempo libre tienes en la semana?",
+        "porQue": "En lugar de dar una recomendación concluyente, se hacen preguntas para que ella concluya. Así la decisión es suya y la indagación continúa.",
+        "grupo": "cerrar"
+       },
+       {
+        "titulo": "Abre la indagación",
+        "dialogo": [
+         {
+          "quien": "asesor",
+          "texto": "Hola, ¿hablo con [nombre]? Te saluda Raúl de la Universidad Continental, por tu interés en Ingeniería Ambiental a distancia."
+         },
+         {
+          "quien": "cliente",
+          "texto": "Sí, soy yo."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Gracias, [nombre]. Quiero conocerte primero para orientarte bien. ¿Hoy a qué te dedicas?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Trabajo en una tienda."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Ya. ¿Y qué estudios tienes?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Un técnico en laboratorio."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Muy buena base. ¿Qué te gustaría que cambie en tu vida con la carrera?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "Trabajar en lo mío, ganar mejor."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Te entiendo. ¿Qué horario tienes en la tienda?"
+         },
+         {
+          "quien": "cliente",
+          "texto": "De diez a seis."
+         },
+         {
+          "quien": "asesor",
+          "texto": "Entonces, [nombre]: tienes técnico en laboratorio, trabajas hasta las seis y quieres trabajar en lo tuyo. ¿Te cuento cómo encaja Ambiental con eso?"
+         }
+        ],
+        "texto": "Hola, ¿hablo con [nombre]? Te saluda Raúl de la Universidad Continental, por tu interés en Ingeniería Ambiental a distancia.\n\nGracias, [nombre]. Quiero conocerte primero para orientarte bien. ¿Hoy a qué te dedicas?\n\nYa. ¿Y qué estudios tienes?\n\nMuy buena base. ¿Qué te gustaría que cambie en tu vida con la carrera?\n\nTe entiendo. ¿Qué horario tienes en la tienda?\n\nEntonces, [nombre]: tienes técnico en laboratorio, trabajas hasta las seis y quieres trabajar en lo tuyo. ¿Te cuento cómo encaja Ambiental con eso?",
+        "porQue": "La presentación correcta abre preguntas sobre su vida y sus metas. El resumen con sus palabras prepara la solución sin adelantar conclusiones.",
+        "grupo": "cerrar"
+       }
+      ],
+      "tema": null
+     },
      "patrones": {
       "bien": [
        {
@@ -45174,10 +48126,10 @@
   }
  },
  "equipo": {
-  "fecha": "19/11/2026",
+  "fecha": "20/11/2026",
   "mes": "noviembre",
   "diasHabiles": {
-   "transcurridos": 16,
+   "transcurridos": 17,
    "total": 25
   },
   "avanceModo": "tablero",
@@ -45222,11 +48174,11 @@
     "Diana Carol Taipe Rojas",
     "Jean Carlos Espinoza Atoc",
     "Cecilia Esther Aliaga Lapa",
+    "Melissa Leslie Fernadez Avalos",
+    "Justyn Flores Solano",
     "Judith Rocio Vila Incaroca",
     "Lisette Valeria Blanco Chuco",
     "Orlando Jesus Pintado Sandoval",
-    "Melissa Leslie Fernadez Avalos",
-    "Justyn Flores Solano",
     "Angelo Jaime Franco Sarmiento",
     "Ana Maria Padilla Parra",
     "Milagros Torres Santos",
@@ -45346,8 +48298,40 @@
     "evaluaciones": 5
    },
    {
-    "asesor": "Judith Rocio Vila Incaroca",
+    "asesor": "Melissa Leslie Fernadez Avalos",
     "puesto": 5,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 72,
+    "cuartilCalidad": "Q4",
+    "matriculas": 7,
+    "meta": 26,
+    "avanceMeta": 26.92,
+    "avanceMes": 26.92,
+    "cuartilMatriculas": "Q1",
+    "indice": 49.5,
+    "tecnicas": 0,
+    "evaluaciones": 13
+   },
+   {
+    "asesor": "Justyn Flores Solano",
+    "puesto": 6,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 60,
+    "cuartilCalidad": "Q4",
+    "matriculas": 10,
+    "meta": 26,
+    "avanceMeta": 38.46,
+    "avanceMes": 38.46,
+    "cuartilMatriculas": "Q1",
+    "indice": 49.2,
+    "tecnicas": 0,
+    "evaluaciones": 22
+   },
+   {
+    "asesor": "Judith Rocio Vila Incaroca",
+    "puesto": 7,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 78,
@@ -45363,7 +48347,7 @@
    },
    {
     "asesor": "Lisette Valeria Blanco Chuco",
-    "puesto": 6,
+    "puesto": 8,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 66,
@@ -45379,7 +48363,7 @@
    },
    {
     "asesor": "Orlando Jesus Pintado Sandoval",
-    "puesto": 7,
+    "puesto": 9,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 73,
@@ -45392,38 +48376,6 @@
     "indice": 48.0,
     "tecnicas": 0,
     "evaluaciones": 18
-   },
-   {
-    "asesor": "Melissa Leslie Fernadez Avalos",
-    "puesto": 8,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 72,
-    "cuartilCalidad": "Q4",
-    "matriculas": 6,
-    "meta": 26,
-    "avanceMeta": 23.08,
-    "avanceMes": 23.08,
-    "cuartilMatriculas": "Q1",
-    "indice": 47.5,
-    "tecnicas": 0,
-    "evaluaciones": 13
-   },
-   {
-    "asesor": "Justyn Flores Solano",
-    "puesto": 9,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 60,
-    "cuartilCalidad": "Q4",
-    "matriculas": 9,
-    "meta": 26,
-    "avanceMeta": 34.62,
-    "avanceMes": 34.62,
-    "cuartilMatriculas": "Q1",
-    "indice": 47.3,
-    "tecnicas": 0,
-    "evaluaciones": 22
    },
    {
     "asesor": "Angelo Jaime Franco Sarmiento",
@@ -45480,12 +48432,12 @@
     "cuadrante": "amarillo",
     "calidad": 54,
     "cuartilCalidad": "Q4",
-    "matriculas": 5,
+    "matriculas": 6,
     "meta": 26,
-    "avanceMeta": 19.23,
-    "avanceMes": 19.23,
-    "cuartilMatriculas": "Q2",
-    "indice": 36.6,
+    "avanceMeta": 23.08,
+    "avanceMes": 23.08,
+    "cuartilMatriculas": "Q1",
+    "indice": 38.5,
     "tecnicas": 0,
     "evaluaciones": 10
    },
@@ -45496,12 +48448,12 @@
     "cuadrante": "naranja",
     "calidad": 86,
     "cuartilCalidad": "Q2",
-    "matriculas": 2,
+    "matriculas": 3,
     "meta": 26,
-    "avanceMeta": 7.69,
-    "avanceMes": 7.69,
+    "avanceMeta": 11.54,
+    "avanceMes": 11.54,
     "cuartilMatriculas": "Q3",
-    "indice": 46.8,
+    "indice": 48.8,
     "tecnicas": 0,
     "evaluaciones": 12
    },
