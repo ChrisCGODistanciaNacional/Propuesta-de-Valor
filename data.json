@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-11-21T14:14:16Z",
+ "generado": "2026-11-21T23:08:36Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -17730,7 +17730,7 @@
    "avanceRitmo": null,
    "avanceMeta": 23.08,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q1",
+   "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
@@ -19122,7 +19122,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 8,
+   "puesto": 9,
    "totalAsesores": 26,
    "indice": 48.6,
    "tecnicasDominadas": 0,
@@ -20638,7 +20638,7 @@
    "avanceRitmo": null,
    "avanceMeta": 23.08,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q1",
+   "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
@@ -23479,11 +23479,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 60,
    "cuartilCalidad": "Q4",
-   "matriculas": 6,
+   "matriculas": 7,
    "meta": 26,
-   "avanceMes": 23.08,
+   "avanceMes": 26.92,
    "avanceRitmo": null,
-   "avanceMeta": 23.08,
+   "avanceMeta": 26.92,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -23497,7 +23497,7 @@
    },
    "puesto": 12,
    "totalAsesores": 26,
-   "indice": 41.5,
+   "indice": 43.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -24908,7 +24908,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 9,
+   "puesto": 10,
    "totalAsesores": 26,
    "indice": 48.4,
    "tecnicasDominadas": 0,
@@ -35159,7 +35159,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 7,
+   "puesto": 8,
    "totalAsesores": 26,
    "indice": 49.1,
    "tecnicasDominadas": 0,
@@ -36685,11 +36685,11 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 72,
    "cuartilCalidad": "Q4",
-   "matriculas": 7,
+   "matriculas": 8,
    "meta": 26,
-   "avanceMes": 26.92,
+   "avanceMes": 30.77,
    "avanceRitmo": null,
-   "avanceMeta": 26.92,
+   "avanceMeta": 30.77,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -36701,9 +36701,9 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 5,
+   "puesto": 4,
    "totalAsesores": 26,
-   "indice": 49.5,
+   "indice": 51.4,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -40236,7 +40236,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 6,
+   "puesto": 7,
    "totalAsesores": 26,
    "indice": 49.2,
    "tecnicasDominadas": 0,
@@ -41679,11 +41679,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 72,
    "cuartilCalidad": "Q4",
-   "matriculas": 6,
+   "matriculas": 7,
    "meta": 26,
-   "avanceMes": 23.08,
+   "avanceMes": 26.92,
    "avanceRitmo": null,
-   "avanceMeta": 23.08,
+   "avanceMeta": 26.92,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -41695,9 +41695,9 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 10,
+   "puesto": 6,
    "totalAsesores": 26,
-   "indice": 47.5,
+   "indice": 49.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -43996,7 +43996,7 @@
    "avanceRitmo": null,
    "avanceMeta": 23.08,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q1",
+   "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
@@ -44006,7 +44006,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 4,
+   "puesto": 5,
    "totalAsesores": 26,
    "indice": 49.5,
    "tecnicasDominadas": 0,
@@ -48244,7 +48244,7 @@
   },
   "avanceModo": "tablero",
   "cortesMatriculas": {
-   "Q1": 6.0,
+   "Q1": 7.0,
    "Q2": 4.5,
    "Q3": 1.0
   },
@@ -48283,13 +48283,13 @@
     "Diana Carol Taipe Rojas",
     "Maria Alejandra Pino Contreras",
     "Jean Carlos Espinoza Atoc",
-    "Cecilia Esther Aliaga Lapa",
     "Melissa Leslie Fernadez Avalos",
+    "Cecilia Esther Aliaga Lapa",
+    "Orlando Jesus Pintado Sandoval",
     "Justyn Flores Solano",
     "Angelo Jaime Franco Sarmiento",
     "Judith Rocio Vila Incaroca",
     "Lisette Valeria Blanco Chuco",
-    "Orlando Jesus Pintado Sandoval",
     "Ana Maria Padilla Parra",
     "Milagros Torres Santos",
     "Isai Yuliño Mercado Bravo"
@@ -48392,8 +48392,24 @@
     "evaluaciones": 13
    },
    {
-    "asesor": "Cecilia Esther Aliaga Lapa",
+    "asesor": "Melissa Leslie Fernadez Avalos",
     "puesto": 4,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 72,
+    "cuartilCalidad": "Q4",
+    "matriculas": 8,
+    "meta": 26,
+    "avanceMeta": 30.77,
+    "avanceMes": 30.77,
+    "cuartilMatriculas": "Q1",
+    "indice": 51.4,
+    "tecnicas": 0,
+    "evaluaciones": 13
+   },
+   {
+    "asesor": "Cecilia Esther Aliaga Lapa",
+    "puesto": 5,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 76,
@@ -48402,14 +48418,14 @@
     "meta": 26,
     "avanceMeta": 23.08,
     "avanceMes": 23.08,
-    "cuartilMatriculas": "Q1",
+    "cuartilMatriculas": "Q2",
     "indice": 49.5,
     "tecnicas": 0,
     "evaluaciones": 5
    },
    {
-    "asesor": "Melissa Leslie Fernadez Avalos",
-    "puesto": 5,
+    "asesor": "Orlando Jesus Pintado Sandoval",
+    "puesto": 6,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 72,
@@ -48421,11 +48437,11 @@
     "cuartilMatriculas": "Q1",
     "indice": 49.5,
     "tecnicas": 0,
-    "evaluaciones": 13
+    "evaluaciones": 19
    },
    {
     "asesor": "Justyn Flores Solano",
-    "puesto": 6,
+    "puesto": 7,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 60,
@@ -48441,7 +48457,7 @@
    },
    {
     "asesor": "Angelo Jaime Franco Sarmiento",
-    "puesto": 7,
+    "puesto": 8,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 79,
@@ -48457,7 +48473,7 @@
    },
    {
     "asesor": "Judith Rocio Vila Incaroca",
-    "puesto": 8,
+    "puesto": 9,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 78,
@@ -48473,7 +48489,7 @@
    },
    {
     "asesor": "Lisette Valeria Blanco Chuco",
-    "puesto": 9,
+    "puesto": 10,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 66,
@@ -48488,22 +48504,6 @@
     "evaluaciones": 5
    },
    {
-    "asesor": "Orlando Jesus Pintado Sandoval",
-    "puesto": 10,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 72,
-    "cuartilCalidad": "Q4",
-    "matriculas": 6,
-    "meta": 26,
-    "avanceMeta": 23.08,
-    "avanceMes": 23.08,
-    "cuartilMatriculas": "Q1",
-    "indice": 47.5,
-    "tecnicas": 0,
-    "evaluaciones": 19
-   },
-   {
     "asesor": "Ana Maria Padilla Parra",
     "puesto": 11,
     "sede": "HYO",
@@ -48514,7 +48514,7 @@
     "meta": 26,
     "avanceMeta": 23.08,
     "avanceMes": 23.08,
-    "cuartilMatriculas": "Q1",
+    "cuartilMatriculas": "Q2",
     "indice": 44.5,
     "tecnicas": 0,
     "evaluaciones": 11
@@ -48526,12 +48526,12 @@
     "cuadrante": "amarillo",
     "calidad": 60,
     "cuartilCalidad": "Q4",
-    "matriculas": 6,
+    "matriculas": 7,
     "meta": 26,
-    "avanceMeta": 23.08,
-    "avanceMes": 23.08,
+    "avanceMeta": 26.92,
+    "avanceMes": 26.92,
     "cuartilMatriculas": "Q1",
-    "indice": 41.5,
+    "indice": 43.5,
     "tecnicas": 0,
     "evaluaciones": 13
    },
@@ -48546,7 +48546,7 @@
     "meta": 26,
     "avanceMeta": 23.08,
     "avanceMes": 23.08,
-    "cuartilMatriculas": "Q1",
+    "cuartilMatriculas": "Q2",
     "indice": 38.5,
     "tecnicas": 0,
     "evaluaciones": 10
@@ -48762,7 +48762,7 @@
   ]
  },
  "hallazgos": {
-  "actualizado": "20/11/2026",
+  "actualizado": "21/11/2026",
   "periodo": {
    "desde": "14/11/2026",
    "hasta": "20/11/2026"
