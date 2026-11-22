@@ -22462,5 +22462,83 @@
     "evidencia": "Acuerda una fecha y hora específica para retomar la conversación"
    }
   }
+ },
+ "21309d7af399": {
+  "asesor": "Jorge Luis Valencia Cardenas",
+  "fecha": "22/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te identificas como asesor educativo de Universidad Continental; falta nombrar la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Usas el nombre del prospecto y confirmas interés en Administración y Negocios Internacionales"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Confirma con mayor precisión el periodo en que Jefferson desea comenzar"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificas que trabaja como chef y necesita modalidad compatible con su trabajo"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus motivaciones profesionales y proyectos personales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Relaciona los diferenciales de la carrera con su experiencia como chef"
+   },
+   "paso3_3": {
+    "estado": "ok",
+    "evidencia": "Presentas clases grabadas, certificaciones progresivas, laboratorios y simuladores virtuales"
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante la objeción de proyectos y gastos, profundiza en los motivos"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece los cierres parciales con preguntas que obtengan compromisos concretos"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Ofreces seguir por WhatsApp, pero falta despedirte con tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda una fecha y hora de seguimiento por WhatsApp"
+   }
+  }
  }
 }
