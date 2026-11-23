@@ -1,20 +1,20 @@
 {
- "actualizado": "22/11/2026",
+ "actualizado": "23/11/2026",
  "periodo": {
-  "desde": "16/11/2026",
-  "hasta": "22/11/2026"
+  "desde": "17/11/2026",
+  "hasta": "23/11/2026"
  },
  "base": {
-  "llamadas": 57,
+  "llamadas": 56,
   "asesores": 18
  },
- "titular": "Siguen arriba la despedida sin encuesta ni día y hora (37 llamadas) y la presentación sin nombre ni Unidad CIE (37). Aparecen muletillas («en sí», «genial», «laburando») y anunciar alzas de pensión sin respaldo. Lo bueno: alternativas reales para rendir sin laptop.",
+ "titular": "Lo que más se repite: presentación sin nombre ni Unidad CIE (37 llamadas) y despedida sin encuesta (35) ni día y hora (29). Crecen las llamadas que solo informan, sin cierres parciales ni el «para qué» del prospecto. Lo bueno: Nexus y Excel usados como beneficio concreto.",
  "items": [
   {
    "tipo": "mala_costumbre",
    "titulo": "Despedida sin protocolo ni seguimiento agendado",
-   "queVimos": "La llamada termina sin transferir a la encuesta y, cuando el prospecto no decide, sin día y hora concretos para la evaluación o el siguiente paso.",
-   "veces": "37 llamadas sin encuesta · 33 sin día y hora · 17 asesores · 24.ª semana seguida",
+   "queVimos": "La llamada termina sin nombre ni Unidad CIE al despedirse, sin transferir a la encuesta y, cuando el prospecto no decide, sin día y hora concretos para la evaluación.",
+   "veces": "35 llamadas sin encuesta · 29 sin día y hora · 17 asesores · 25.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
@@ -34,16 +34,16 @@
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Acuerda una fecha y hora de seguimiento por WhatsApp. Finalmente, recuerda despedirte mencionando tu nombre y la Unidad CIE, además de realizar la derivación a la encuesta de satisfacción.» (calidad, 22/11)",
+   "ejemplo": "«Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.» (calidad, 23/11)",
    "porQueImporta": "Sin hora acordada el prospecto se enfría y la oportunidad se pierde; sin encuesta no medimos la atención.",
-   "accion": "Antes de colgar: «Quedamos mañana a las 7 en tu evaluación, te llega todo por WhatsApp. Te atendió [nombre], de la Unidad CIE; te transfiero a una breve encuesta».",
+   "accion": "Antes de colgar: «Quedamos mañana a las 7 en tu evaluación, te llega todo por WhatsApp. Te atendió [nombre], de la Unidad CIE; al colgar te llega una breve encuesta».",
    "tecnica": "tec_16"
   },
   {
    "tipo": "mala_costumbre",
    "titulo": "Presentación incompleta al iniciar",
-   "queVimos": "Se saluda sin nombre del asesor o sin Unidad CIE, se confunde la carrera de interés o casi no se usa el nombre del prospecto.",
-   "veces": "37 llamadas · 16 asesores · 19.ª semana seguida",
+   "queVimos": "Se saluda sin el nombre del asesor o sin la Unidad CIE, y casi no se usa el nombre del prospecto durante la llamada.",
+   "veces": "37 llamadas · 16 asesores · 20.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
@@ -62,42 +62,82 @@
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Recuerda incorporar expresamente el nombre de la Unidad CIE en tu presentación inicial.» (calidad, 22/11)",
-   "porQueImporta": "Los primeros segundos deciden si el prospecto confía o corta; un error de carrera resta credibilidad a todo lo demás.",
-   "accion": "Primera frase fija: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental; te llamo por tu interés en [carrera]». Confirmar la carrera antes de seguir.",
+   "ejemplo": "«Fortalece tu presentación inicial mencionando tu nombre y Unidad CIE, ya que es importante que desde los primeros segundos el prospecto identifique quién lo está atendiendo.» (calidad, 23/11)",
+   "porQueImporta": "Los primeros segundos deciden si el prospecto confía o corta; sin respaldo institucional la llamada parece una más.",
+   "accion": "Primera frase fija: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental; te llamo por tu interés en [carrera]». Usar su nombre uno de cada dos turnos.",
    "tecnica": "tec_05"
   },
   {
-   "tipo": "mala_practica",
-   "titulo": "Prometer como fijo lo que tiene condiciones",
-   "queVimos": "Se dice que el 10 % dura toda la carrera sin sus condiciones, que se termina en tres años y medio, se dan proyecciones de convalidación como seguras o se anuncian alzas de pensión sin información institucional.",
-   "veces": "al menos 9 llamadas · 7 asesores · 4.ª semana seguida",
+   "tipo": "mala_costumbre",
+   "titulo": "Informar sin cierres parciales",
+   "queVimos": "Se explican modalidad, horarios, beneficios e inversión de corrido, sin validar después de cada punto si responde a lo que el prospecto necesita, y la llamada queda en información.",
+   "veces": "21 llamadas · 12 asesores",
    "asesores": [
-    "Melissa Leslie Fernadez Avalos",
-    "Patricia Roxana Mercado Zacarias",
-    "Cecilia Esther Aliaga Lapa",
-    "Milagros Torres Santos",
-    "Jean Carlos Espinoza Atoc",
+    "Betsabeth Alexandra Rojas Palacios",
     "Edward Nelson Gonzales Villaneda",
-    "Jorge Luis Valencia Cardenas"
+    "Jean Carlos Espinoza Atoc",
+    "Jorge Luis Valencia Cardenas",
+    "Judith Rocio Vila Incaroca",
+    "Justyn Flores Solano",
+    "Maria Alejandra Pino Contreras",
+    "Milagros Torres Santos",
+    "Nicol Alisson Romero Espinoza",
+    "Patricia Roxana Mercado Zacarias",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Evita asegurar futuros incrementos de pensiones si no cuentas con información institucional confirmada.» (calidad, 22/11)",
-   "porQueImporta": "Una promesa que luego no se cumple genera reclamos y deserción en el primer ciclo, y daña la confianza en todo el equipo.",
-   "accion": "Decir solo lo confirmado y con su condición: «El 10 % se mantiene toda la carrera si pagas a tiempo y apruebas tus cursos». Nunca usar «va a subir» como presión: la urgencia real es la campaña vigente.",
-   "tecnica": "tec_08"
+   "ejemplo": "«Fortalece el manejo comercial de la llamada realizando cierres parciales después de explicar los beneficios, horarios y condiciones de la carrera.» (calidad, 23/11)",
+   "porQueImporta": "Sin pequeños sí no hay avance: el prospecto termina informado pero sin decisión, y el cierre llega en frío.",
+   "accion": "Después de cada beneficio, una validación corta y distinta: «¿Eso te acomoda con tu horario?», «¿Te sirve para tu meta?», y recién con tres sí pasar a la evaluación de admisión hoy o mañana.",
+   "tecnica": "tec_10"
+  },
+  {
+   "tipo": "mala_practica",
+   "titulo": "Indagar la consulta pero no el «para qué»",
+   "queVimos": "Se identifican las preguntas del prospecto (admisión, inicio, modalidad), pero no qué quiere lograr con la carrera, su disponibilidad ni quién financia; luego la propuesta y las objeciones se responden solo con información.",
+   "veces": "9 llamadas · 8 asesores",
+   "asesores": [
+    "Betsabeth Alexandra Rojas Palacios",
+    "Edward Nelson Gonzales Villaneda",
+    "Justyn Flores Solano",
+    "Maria Alejandra Pino Contreras",
+    "Milagros Torres Santos",
+    "Orlando Jesus Pintado Sandoval",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Ruth Alexandra Mauricio Verde"
+   ],
+   "ejemplo": "«Si bien identificaste sus consultas, es importante conocer qué busca alcanzar estudiando y qué factores influyen en su decisión.» (calidad, 23/11)",
+   "porQueImporta": "Sin la meta del cliente no hay con qué conectar el valor; ante «está caro» o «estoy comparando» el asesor solo puede justificar.",
+   "accion": "Antes de hablar de costos: «¿Qué te gustaría lograr cuando tengas tu título?» y «¿Lo pagarías tú o alguien te apoya?». Cerrar el paso 2 con un resumen en sus palabras.",
+   "tecnica": "tec_09"
   },
   {
    "tipo": "mania",
    "titulo": "Muletillas y jerga en la llamada",
    "queVimos": "Se repiten «en sí» y «genial» a lo largo de la llamada y aparecen expresiones coloquiales como «laburando», que restan seriedad al asesor.",
-   "veces": "3 llamadas · 2 asesores",
+   "veces": "4 llamadas · 3 asesores · 2.ª semana seguida",
    "asesores": [
+    "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
     "Jorge Luis Valencia Cardenas"
    ],
    "ejemplo": "«Reduce el uso reiterado de muletillas como «en sí» y «genial», así como expresiones coloquiales como «laburando».» (calidad, 22/11)",
    "porQueImporta": "La muletilla repetida se nota más que el contenido y le quita autoridad justo cuando se habla de inversión y cierre.",
    "accion": "Alternar validaciones («¿vamos bien?», «¿te sirve así?», «¿cómo lo ves?») y cambiar «laburando» por «trabajando». Escuchar una grabación propia y contar cuántas veces aparece la muletilla.",
+   "tecnica": null
+  },
+  {
+   "tipo": "buena_practica",
+   "titulo": "Nexus y Excel como beneficio concreto",
+   "queVimos": "Se presentó Nexus como forma de adelantar un curso y familiarizarse con el campus antes del inicio de clases, junto al Taller de Excel, conectándolo con lo que buscaba el prospecto.",
+   "veces": "2 llamadas · Edward (17/11) y Patricia (18/11)",
+   "asesores": [
+    "Edward Nelson Gonzales Villaneda",
+    "Patricia Roxana Mercado Zacarias"
+   ],
+   "ejemplo": "«Presentas la posibilidad de adelantar un curso mediante Nexus, destacando cómo esta alternativa puede ayudar a la estudiante a familiarizarse con el entorno académico antes del inicio regular de clases.» (calidad, 18/11)",
+   "porQueImporta": "Es un motivador distinto al descuento: responde al «quiero terminar rápido» y al miedo a lo virtual.",
+   "accion": "Decirlo como regalo por matricularse y con su condición: «Por matricularte te registramos sin costo en Nexus para adelantar cursos, según la programación vigente».",
    "tecnica": null
   },
   {
@@ -113,24 +153,11 @@
    "porQueImporta": "Quita una barrera real sin bajar el precio; el siguiente paso es validar con un cierre parcial si la alternativa le sirve.",
    "accion": "Ofrecer la alternativa y confirmarla: «¿La cabina que tienes cerca tiene cámara? Entonces, ¿mañana a las 5 la rindes desde ahí?».",
    "tecnica": "tec_10"
-  },
-  {
-   "tipo": "buena_practica",
-   "titulo": "Confirmar en línea que llegó el WhatsApp",
-   "queVimos": "Se envió la información académica y económica por WhatsApp y se confirmó durante la llamada que el prospecto la recibió.",
-   "veces": "1 llamada · Edward (20/11)",
-   "asesores": [
-    "Edward Nelson Gonzales Villaneda"
-   ],
-   "ejemplo": "«Ofreces enviar la información académica y económica por WhatsApp, confirmas que la prospecto recibió los mensajes y mantienes abierto el canal para resolver consultas.» (calidad, 20/11)",
-   "porQueImporta": "El mensaje revisado juntos se entiende y se recuerda; enviado y no confirmado, se pierde entre otros chats.",
-   "accion": "«Te lo acabo de enviar, ¿te llegó? Ábrelo conmigo un momento y lo revisamos juntos».",
-   "tecnica": null
   }
  ],
  "acciones": [
-  "Toda llamada cierra completa: día y hora de la evaluación, nombre, Unidad CIE, WhatsApp confirmado y transferencia a la encuesta.",
-  "Cada beneficio se dice con su condición y solo con información confirmada: nada de alzas de pensión, duraciones o convalidaciones garantizadas.",
-  "Esta semana, cada asesor escucha una llamada suya y elimina su muletilla principal, alternando validaciones."
+  "Toda llamada cierra completa: día y hora de la evaluación, nombre, Unidad CIE, WhatsApp confirmado y encuesta.",
+  "En el paso 2, preguntar siempre qué quiere lograr y quién financia antes de hablar de costos, y cerrar con un resumen.",
+  "En el paso 3, un cierre parcial después de cada beneficio: tres sí antes de proponer la evaluación de admisión."
  ]
 }

@@ -22540,5 +22540,239 @@
     "evidencia": "Acuerda una fecha y hora de seguimiento por WhatsApp"
    }
   }
+ },
+ "81c1d4fed17a": {
+  "asesor": "Betsabeth Alexandra Rojas Palacios",
+  "fecha": "23/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece tu presentación inicial mencionando tu nombre y Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Procura utilizar el nombre del prospecto de manera recurrente"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Preguntas por su ubicación, experiencia laboral y disponibilidad horaria"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Identificas su experiencia como auxiliar; profundiza en sus motivaciones y objetivos"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conocer qué oportunidades laborales busca y qué expectativas tiene"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Brindas información sobre modalidad virtual, horarios y duración de la carrera"
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Aclaras su inquietud sobre culminar la carrera en menor tiempo"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales tras explicar beneficios, horarios y condiciones"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Orienta la interacción hacia acuerdos y próximos pasos"
+   }
+  }
+ },
+ "bdd5c8f0d815": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "23/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Buena apertura, presentándote y confirmando el motivo de contacto"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre del prospecto"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en la motivación del prospecto y su disponibilidad de tiempo"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas profesionales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus posibilidades económicas"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Evita interrumpir; ante la objeción económica explora primero la dificultad"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Al finalizar, recuerda mencionar tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Compartiste información por WhatsApp y gestionaste el seguimiento"
+   }
+  }
+ },
+ "2d5a0e24df88": {
+  "asesor": "Raul Aaron Manuel Ipanaque Escobar",
+  "fecha": "23/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Presentación con tu nombre, la Universidad Continental y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validaste el interés de Nathalie por estudiar Derecho"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Realizaste preguntas para conocer su situación"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones de Nathalie para estudiar Derecho"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conocer qué busca alcanzar estudiando y qué influye en su decisión"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Mencionaste diferenciales como el inglés incluido en la malla"
+   },
+   "paso3_3": {
+    "estado": "ok",
+    "evidencia": "Mencionaste las certificaciones progresivas"
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece el manejo de objeciones sobre duración, comparación y pagos"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales para validar modalidad, beneficios e inversión"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento concreto con día y hora"
+   }
+  }
  }
 }
