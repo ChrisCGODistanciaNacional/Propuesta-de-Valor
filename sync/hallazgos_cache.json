@@ -1,163 +1,147 @@
 {
- "actualizado": "23/11/2026",
+ "actualizado": "24/11/2026",
  "periodo": {
-  "desde": "17/11/2026",
-  "hasta": "23/11/2026"
+  "desde": "18/11/2026",
+  "hasta": "24/11/2026"
  },
  "base": {
-  "llamadas": 56,
-  "asesores": 18
+  "llamadas": 36,
+  "asesores": 15
  },
- "titular": "Lo que más se repite: presentación sin nombre ni Unidad CIE (37 llamadas) y despedida sin encuesta (35) ni día y hora (29). Crecen las llamadas que solo informan, sin cierres parciales ni el «para qué» del prospecto. Lo bueno: Nexus y Excel usados como beneficio concreto.",
+ "titular": "Sigue lo mismo arriba: presentación sin nombre ni Unidad CIE (32 llamadas) y cierre sin encuesta ni día y hora (24). Lo nuevo y grave: dos llamadas cortadas a propósito y objeciones económicas aceptadas sin indagar. Lo bueno: Nexus usado para resolver un miedo concreto y un «lo converso con mi esposo» bien manejado.",
  "items": [
   {
    "tipo": "mala_costumbre",
-   "titulo": "Despedida sin protocolo ni seguimiento agendado",
-   "queVimos": "La llamada termina sin nombre ni Unidad CIE al despedirse, sin transferir a la encuesta y, cuando el prospecto no decide, sin día y hora concretos para la evaluación.",
-   "veces": "35 llamadas sin encuesta · 29 sin día y hora · 17 asesores · 25.ª semana seguida",
+   "titulo": "Cierre sin protocolo ni día y hora",
+   "queVimos": "La llamada termina sin encuesta, sin nombre ni Unidad CIE, y el seguimiento queda abierto («te escribo», «me avisas») en vez de una fecha y hora para la evaluación.",
+   "veces": "24 llamadas sin encuesta · 24 sin día y hora · 15 asesores · 26.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
-    "Cecilia Esther Aliaga Lapa",
-    "Diana Carol Taipe Rojas",
     "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
     "Jorge Luis Valencia Cardenas",
     "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Milagros Torres Santos",
-    "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
     "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.» (calidad, 23/11)",
-   "porQueImporta": "Sin hora acordada el prospecto se enfría y la oportunidad se pierde; sin encuesta no medimos la atención.",
-   "accion": "Antes de colgar: «Quedamos mañana a las 7 en tu evaluación, te llega todo por WhatsApp. Te atendió [nombre], de la Unidad CIE; al colgar te llega una breve encuesta».",
+   "ejemplo": "«Establece un seguimiento con fecha y hora específicas y finaliza cumpliendo el protocolo de cierre, incluyendo la encuesta de satisfacción» (calidad, 24/11).",
+   "porQueImporta": "Sin día y hora el prospecto se enfría y la llamada siguiente empieza de cero; sin protocolo se pierde puntaje en Cerrar (23 % del score).",
+   "accion": "Antes de despedirte: «Entonces tu evaluación queda para mañana a las 7 p. m., desde tu laptop con cámara. Soy [nombre], de la Unidad CIE; te escribo a este WhatsApp. Te paso a una breve encuesta».",
    "tecnica": "tec_16"
   },
   {
    "tipo": "mala_costumbre",
    "titulo": "Presentación incompleta al iniciar",
-   "queVimos": "Se saluda sin el nombre del asesor o sin la Unidad CIE, y casi no se usa el nombre del prospecto durante la llamada.",
-   "veces": "37 llamadas · 16 asesores · 20.ª semana seguida",
+   "queVimos": "El asesor saluda sin decir su nombre o sin la Unidad CIE, y usa poco el nombre del prospecto durante la llamada.",
+   "veces": "32 llamadas · 15 asesores · 21.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
-    "Cecilia Esther Aliaga Lapa",
-    "Diana Carol Taipe Rojas",
     "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
     "Jorge Luis Valencia Cardenas",
     "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Maria Alejandra Pino Contreras",
+    "Melissa Leslie Fernadez Avalos",
     "Milagros Torres Santos",
-    "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
     "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Fortalece tu presentación inicial mencionando tu nombre y Unidad CIE, ya que es importante que desde los primeros segundos el prospecto identifique quién lo está atendiendo.» (calidad, 23/11)",
-   "porQueImporta": "Los primeros segundos deciden si el prospecto confía o corta; sin respaldo institucional la llamada parece una más.",
-   "accion": "Primera frase fija: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental; te llamo por tu interés en [carrera]». Usar su nombre uno de cada dos turnos.",
-   "tecnica": "tec_05"
-  },
-  {
-   "tipo": "mala_costumbre",
-   "titulo": "Informar sin cierres parciales",
-   "queVimos": "Se explican modalidad, horarios, beneficios e inversión de corrido, sin validar después de cada punto si responde a lo que el prospecto necesita, y la llamada queda en información.",
-   "veces": "21 llamadas · 12 asesores",
-   "asesores": [
-    "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
-    "Jean Carlos Espinoza Atoc",
-    "Jorge Luis Valencia Cardenas",
-    "Judith Rocio Vila Incaroca",
-    "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
-    "Milagros Torres Santos",
-    "Nicol Alisson Romero Espinoza",
-    "Patricia Roxana Mercado Zacarias",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Ruth Alexandra Mauricio Verde"
-   ],
-   "ejemplo": "«Fortalece el manejo comercial de la llamada realizando cierres parciales después de explicar los beneficios, horarios y condiciones de la carrera.» (calidad, 23/11)",
-   "porQueImporta": "Sin pequeños sí no hay avance: el prospecto termina informado pero sin decisión, y el cierre llega en frío.",
-   "accion": "Después de cada beneficio, una validación corta y distinta: «¿Eso te acomoda con tu horario?», «¿Te sirve para tu meta?», y recién con tres sí pasar a la evaluación de admisión hoy o mañana.",
-   "tecnica": "tec_10"
+   "ejemplo": "«Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional» (calidad, 23/11).",
+   "porQueImporta": "Es lo primero que escucha el prospecto: sin nombre ni institución baja la confianza y el paso 1 pierde puntos fáciles.",
+   "accion": "Primera frase fija: «Hola, [nombre del prospecto], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental, te llamo por tu interés en [carrera]».",
+   "tecnica": null
   },
   {
    "tipo": "mala_practica",
-   "titulo": "Indagar la consulta pero no el «para qué»",
-   "queVimos": "Se identifican las preguntas del prospecto (admisión, inicio, modalidad), pero no qué quiere lograr con la carrera, su disponibilidad ni quién financia; luego la propuesta y las objeciones se responden solo con información.",
-   "veces": "9 llamadas · 8 asesores",
+   "titulo": "Aceptar la objeción económica sin indagar",
+   "queVimos": "Cuando el prospecto dice que no tiene dinero, que paga después de la quincena o que su pensión actual es alta, se acepta y se deja para después, o se insiste solo con el descuento, sin preguntar cuánto puede invertir ni desde cuándo.",
+   "veces": "6 llamadas · 5 asesores",
    "asesores": [
     "Betsabeth Alexandra Rojas Palacios",
     "Edward Nelson Gonzales Villaneda",
-    "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
-    "Milagros Torres Santos",
-    "Orlando Jesus Pintado Sandoval",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Ruth Alexandra Mauricio Verde"
+    "Jean Carlos Espinoza Atoc",
+    "Jorge Luis Valencia Cardenas",
+    "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "ejemplo": "«Si bien identificaste sus consultas, es importante conocer qué busca alcanzar estudiando y qué factores influyen en su decisión.» (calidad, 23/11)",
-   "porQueImporta": "Sin la meta del cliente no hay con qué conectar el valor; ante «está caro» o «estoy comparando» el asesor solo puede justificar.",
-   "accion": "Antes de hablar de costos: «¿Qué te gustaría lograr cuando tengas tu título?» y «¿Lo pagarías tú o alguien te apoya?». Cerrar el paso 2 con un resumen en sus palabras.",
-   "tecnica": "tec_09"
+   "ejemplo": "«Evita cerrar la conversación únicamente aceptando que vuelva a consultar en esa fecha. Profundiza en su situación, consulta cuánto podría invertir» (calidad, 24/11).",
+   "porQueImporta": "La objeción económica es la más frecuente en noviembre; si no se indaga, se pierde el beneficio de campaña y la venta se va a diciembre o a otra universidad.",
+   "accion": "Preguntar antes de responder: «¿Cuánto te acomodaría invertir al mes y desde qué fecha?». Luego explicar que hoy solo se paga la admisión y la primera cuota va 24 horas después de la evaluación (guion de inversión, Forma D).",
+   "tecnica": "tec_14"
+  },
+  {
+   "tipo": "mala_practica",
+   "titulo": "Cortar la llamada a propósito",
+   "queVimos": "Calidad detectó llamadas finalizadas intencionalmente por el asesor antes de cerrar la atención.",
+   "veces": "2 llamadas · 2 asesores",
+   "asesores": [
+    "Angelo Jaime Franco Sarmiento",
+    "Raul Aaron Manuel Ipanaque Escobar"
+   ],
+   "ejemplo": "«Evita finalizar intencionalmente la comunicación. Es importante mantener una gestión adecuada hasta que corresponda cerrar la atención» (calidad, 24/11).",
+   "porQueImporta": "Es una falta grave de protocolo: deja al prospecto sin respuesta, daña la imagen de la universidad y se pierde una oportunidad ya contactada.",
+   "accion": "Conversarlo uno a uno esta semana. Si la llamada no avanza, se cierra con protocolo: siguiente paso con día y hora, nombre, WhatsApp y encuesta.",
+   "tecnica": null
   },
   {
    "tipo": "mania",
-   "titulo": "Muletillas y jerga en la llamada",
-   "queVimos": "Se repiten «en sí» y «genial» a lo largo de la llamada y aparecen expresiones coloquiales como «laburando», que restan seriedad al asesor.",
-   "veces": "4 llamadas · 3 asesores · 2.ª semana seguida",
+   "titulo": "Frases que suenan a impaciencia o presión",
+   "queVimos": "Se repiten expresiones como «ya te mencioné», «es lo mismo», muletillas («en sí», «genial») o frases que el prospecto percibe como presión cuando muestra preocupación.",
+   "veces": "5 llamadas · 4 asesores · 3.ª semana seguida",
    "asesores": [
-    "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
-    "Jorge Luis Valencia Cardenas"
+    "Justyn Flores Solano",
+    "Maria Alejandra Pino Contreras",
+    "Orlando Jesus Pintado Sandoval"
    ],
-   "ejemplo": "«Reduce el uso reiterado de muletillas como «en sí» y «genial», así como expresiones coloquiales como «laburando».» (calidad, 22/11)",
-   "porQueImporta": "La muletilla repetida se nota más que el contenido y le quita autoridad justo cuando se habla de inversión y cierre.",
-   "accion": "Alternar validaciones («¿vamos bien?», «¿te sirve así?», «¿cómo lo ves?») y cambiar «laburando» por «trabajando». Escuchar una grabación propia y contar cuántas veces aparece la muletilla.",
+   "ejemplo": "«Evita expresiones como «ya te mencioné», ya que pueden transmitir impaciencia o generar una percepción negativa en el prospecto» (calidad, 18/11).",
+   "porQueImporta": "El prospecto deja de preguntar y se cierra; una duda sin resolver termina en «lo voy a pensar».",
+   "accion": "Reemplazar por: «Buena pregunta, te lo explico de otra forma…» o «Entiendo que te preocupe, veámoslo juntos». Escuchar una grabación propia por semana para detectar la muletilla.",
    "tecnica": null
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Nexus y Excel como beneficio concreto",
-   "queVimos": "Se presentó Nexus como forma de adelantar un curso y familiarizarse con el campus antes del inicio de clases, junto al Taller de Excel, conectándolo con lo que buscaba el prospecto.",
-   "veces": "2 llamadas · Edward (17/11) y Patricia (18/11)",
+   "titulo": "Nexus para resolver un miedo concreto",
+   "queVimos": "Ante el temor a no manejar herramientas digitales, se presentó Nexus como la forma de familiarizarse con el entorno virtual antes de empezar clases.",
+   "veces": "2 llamadas · María Alejandra (24/11) y Patricia (18/11) · 2.ª semana seguida",
    "asesores": [
-    "Edward Nelson Gonzales Villaneda",
+    "Maria Alejandra Pino Contreras",
     "Patricia Roxana Mercado Zacarias"
    ],
-   "ejemplo": "«Presentas la posibilidad de adelantar un curso mediante Nexus, destacando cómo esta alternativa puede ayudar a la estudiante a familiarizarse con el entorno académico antes del inicio regular de clases.» (calidad, 18/11)",
-   "porQueImporta": "Es un motivador distinto al descuento: responde al «quiero terminar rápido» y al miedo a lo virtual.",
-   "accion": "Decirlo como regalo por matricularse y con su condición: «Por matricularte te registramos sin costo en Nexus para adelantar cursos, según la programación vigente».",
-   "tecnica": null
+   "ejemplo": "«Identificaste una preocupación importante de la prospecto relacionada con el manejo de herramientas digitales y presentaste el ciclo Nexus como una alternativa» (calidad, 24/11).",
+   "porQueImporta": "Convierte un beneficio en la respuesta a una objeción real, no en un dato más de la lista.",
+   "accion": "Usarlo así: «Si te preocupa lo virtual, con Nexus empiezas un curso antes y llegas a marzo ya acostumbrada al campus, sin costo por matricularte».",
+   "tecnica": "tec_08"
   },
   {
    "tipo": "buena_practica",
-   "titulo": "Alternativas reales para rendir sin laptop",
-   "queVimos": "Ante un prospecto sin computadora, se ofrecieron opciones concretas para rendir la evaluación: cabina de internet cercana, validación en el campus o una propuesta adaptada a su comunidad.",
-   "veces": "2 llamadas · Betsabeth (cabina o campus, 20/11) y Jean Carlos (sin computadora en su comunidad, 20/11) · 2.ª semana seguida",
+   "titulo": "«Lo converso con mi esposo» sin presionar",
+   "queVimos": "Se entendió que la prospecta debía conversarlo en casa, se explicaron las alternativas de pago sin presionar y se acordó una hora concreta de respuesta.",
+   "veces": "1 llamada · Melissa (24/11)",
    "asesores": [
-    "Betsabeth Alexandra Rojas Palacios",
-    "Jean Carlos Espinoza Atoc"
+    "Melissa Leslie Fernadez Avalos"
    ],
-   "ejemplo": "«Brindas información sobre las alternativas disponibles para que Carlos pueda continuar con su proceso, explicando el uso de la cabina de internet, la validación de códigos en el campus y los canales oficiales de pago.» (calidad, 20/11)",
-   "porQueImporta": "Quita una barrera real sin bajar el precio; el siguiente paso es validar con un cierre parcial si la alternativa le sirve.",
-   "accion": "Ofrecer la alternativa y confirmarla: «¿La cabina que tienes cerca tiene cámara? Entonces, ¿mañana a las 5 la rindes desde ahí?».",
-   "tecnica": "tec_10"
+   "ejemplo": "«Explicaste las alternativas de pago sin presionarla y conseguiste un compromiso de respuesta» (calidad, 24/11).",
+   "porQueImporta": "Mantiene el interés y deja un compromiso medible; el siguiente nivel es incluir a la pareja en la misma llamada o agendar la evaluación.",
+   "accion": "Sumar: «¿Puedes ponerlo en altavoz un minuto? Así le explico yo lo de la primera cuota y lo dejan decidido hoy».",
+   "tecnica": "tec_14"
   }
  ],
  "acciones": [
-  "Toda llamada cierra completa: día y hora de la evaluación, nombre, Unidad CIE, WhatsApp confirmado y encuesta.",
-  "En el paso 2, preguntar siempre qué quiere lograr y quién financia antes de hablar de costos, y cerrar con un resumen.",
-  "En el paso 3, un cierre parcial después de cada beneficio: tres sí antes de proponer la evaluación de admisión."
+  "Conversar uno a uno los dos casos de llamada cortada y recordar que toda llamada se cierra con protocolo.",
+  "Objeción económica: primero preguntar cuánto y desde cuándo puede invertir; después explicar que hoy solo va la admisión (Forma D del guion).",
+  "Toda llamada termina con día y hora de la evaluación, nombre, Unidad CIE, WhatsApp y encuesta."
  ]
 }
