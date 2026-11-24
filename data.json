@@ -1,6 +1,6 @@
 {
  "version": 8,
- "generado": "2026-11-23T23:15:26Z",
+ "generado": "2026-11-24T14:09:52Z",
  "evaluacion": [
   {
    "Evaluador": "C&C",
@@ -15601,6 +15601,106 @@
    "_foco": "paso4",
    "_fortalezaPrincipal": "paso1",
    "_modo": "etapas"
+  },
+  {
+   "Evaluador": "Supervisor Luis",
+   "ASESOR": "Edward Nelson Gonzales Villaneda",
+   "Sede": "",
+   "Fecha ingreso": "",
+   "Antigüedad (meses)": "",
+   "Tramo antigüedad": "",
+   "Ganar confianza\n(15%)": "100%",
+   "Identificar necesidades\n(26%)": "100%",
+   "Solucionar problemas\n(36%)": "69%",
+   "Cerrar\n(23%)": "100%",
+   "Score cualitativo": "89,00%",
+   "Cuartil": "Q2",
+   "Fortaleza principal": "",
+   "Brecha principal": "",
+   "Evidencia / observación": "👋 Orlando, te comparto tu feedback de la llamada realizada a Jordi Nemia-Solaya, interesado en la carrera de Administración y Finanzas. El objetivo es reforzar tus buenas prácticas y trabajar algunos puntos para mejorar tu gestión comercial. 💪\n\n🌟 𝗙𝗢𝗥𝗧𝗔𝗟𝗘𝗭𝗔𝗦\n\n𝟭. 𝗚𝗮𝗻𝗮𝗿 𝗰𝗼𝗻𝗳𝗶𝗮𝗻𝘇𝗮\nLograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.\n\n𝟮. 𝗜𝗱𝗲𝗻𝘁𝗶𝗳𝗶𝗰𝗮𝗿 𝗻𝗲𝗰𝗲𝘀𝗶𝗱𝗮𝗱𝗲𝘀\nIdentificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.\n\n𝟯. 𝗦𝗼𝗹𝘂𝗰𝗶𝗼𝗻𝗮𝗿 𝗽𝗿𝗼𝗯𝗹𝗲𝗺𝗮𝘀\nBrindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.\n\n𝟰. 𝗖𝗶𝗲𝗿𝗿𝗲\nMantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.\n\n🎯 𝗢𝗣𝗢𝗥𝗧𝗨𝗡𝗜𝗗𝗔𝗗𝗘𝗦 𝗗𝗘 𝗠𝗘𝗝𝗢𝗥𝗔\n\n𝟭. 𝗚𝗮𝗻𝗮𝗿 𝗰𝗼𝗻𝗳𝗶𝗮𝗻𝘇𝗮\nRecuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.\n\n𝟮. 𝗜𝗱𝗲𝗻𝘁𝗶𝗳𝗶𝗰𝗮𝗿 𝗻𝗲𝗰𝗲𝘀𝗶𝗱𝗮𝗱𝗲𝘀\nProfundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.\n\n𝟯. 𝗦𝗼𝗹𝘂𝗰𝗶𝗼𝗻𝗮𝗿 𝗽𝗿𝗼𝗯𝗹𝗲𝗺𝗮𝘀\nOrganiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.\n\n𝟰. 𝗖𝗶𝗲𝗿𝗿𝗲\nEvita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
+   "Ganar confianza\n(15%) - Fortaleza": "Lograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.",
+   "Identificar necesidades\n(26%) - Fortaleza": "Identificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.",
+   "Solucionar problemas\n(36%) - Fortaleza": "Brindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.",
+   "Cerrar\n(23%) - Fortaleza": "Mantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.",
+   "Ganar confianza\n(15%) - Oportunidades": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.",
+   "Identificar necesidades\n(26%) - Oportunidades": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.",
+   "Solucionar problemas\n(36%) - Oportunidades": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.",
+   "Cerrar\n(23%) - Oportunidades": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
+   "FECHA DE EVA.": "23/11/2026",
+   "Fecha": "23/11/2026",
+   "_textoAjeno": null,
+   "_enfoque": null,
+   "_etapas": {
+    "paso1": {
+     "fortaleza": "Lograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.",
+     "oportunidad": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio."
+    },
+    "paso2": {
+     "fortaleza": "Identificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.",
+     "oportunidad": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita."
+    },
+    "paso3": {
+     "fortaleza": "Brindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.",
+     "oportunidad": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada."
+    },
+    "paso4": {
+     "fortaleza": "Mantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.",
+     "oportunidad": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀"
+    }
+   },
+   "_foco": "paso3",
+   "_fortalezaPrincipal": "paso1",
+   "_modo": "etapas"
+  },
+  {
+   "Evaluador": "Supervisor Luis",
+   "ASESOR": "Jimena del Rosario Vera Osores",
+   "Sede": "",
+   "Fecha ingreso": "",
+   "Antigüedad (meses)": "",
+   "Tramo antigüedad": "",
+   "Ganar confianza\n(15%)": "100%",
+   "Identificar necesidades\n(26%)": "77%",
+   "Solucionar problemas\n(36%)": "56%",
+   "Cerrar\n(23%)": "78%",
+   "Score cualitativo": "73,00%",
+   "Cuartil": "Q4",
+   "Fortaleza principal": "",
+   "Brecha principal": "",
+   "Evidencia / observación": "👋 Orlando, te comparto tu feedback de la llamada realizada a Jordi Nemia-Solaya, interesado en la carrera de Administración y Finanzas. El objetivo es reforzar tus buenas prácticas y trabajar algunos puntos para mejorar tu gestión comercial. 💪\n\n🌟 𝗙𝗢𝗥𝗧𝗔𝗟𝗘𝗭𝗔𝗦\n\n𝟭. 𝗚𝗮𝗻𝗮𝗿 𝗰𝗼𝗻𝗳𝗶𝗮𝗻𝘇𝗮\nLograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.\n\n𝟮. 𝗜𝗱𝗲𝗻𝘁𝗶𝗳𝗶𝗰𝗮𝗿 𝗻𝗲𝗰𝗲𝘀𝗶𝗱𝗮𝗱𝗲𝘀\nIdentificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.\n\n𝟯. 𝗦𝗼𝗹𝘂𝗰𝗶𝗼𝗻𝗮𝗿 𝗽𝗿𝗼𝗯𝗹𝗲𝗺𝗮𝘀\nBrindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.\n\n𝟰. 𝗖𝗶𝗲𝗿𝗿𝗲\nMantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.\n\n🎯 𝗢𝗣𝗢𝗥𝗧𝗨𝗡𝗜𝗗𝗔𝗗𝗘𝗦 𝗗𝗘 𝗠𝗘𝗝𝗢𝗥𝗔\n\n𝟭. 𝗚𝗮𝗻𝗮𝗿 𝗰𝗼𝗻𝗳𝗶𝗮𝗻𝘇𝗮\nRecuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.\n\n𝟮. 𝗜𝗱𝗲𝗻𝘁𝗶𝗳𝗶𝗰𝗮𝗿 𝗻𝗲𝗰𝗲𝘀𝗶𝗱𝗮𝗱𝗲𝘀\nProfundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.\n\n𝟯. 𝗦𝗼𝗹𝘂𝗰𝗶𝗼𝗻𝗮𝗿 𝗽𝗿𝗼𝗯𝗹𝗲𝗺𝗮𝘀\nOrganiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.\n\n𝟰. 𝗖𝗶𝗲𝗿𝗿𝗲\nEvita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
+   "Ganar confianza\n(15%) - Fortaleza": "Lograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.",
+   "Identificar necesidades\n(26%) - Fortaleza": "Identificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.",
+   "Solucionar problemas\n(36%) - Fortaleza": "Brindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.",
+   "Cerrar\n(23%) - Fortaleza": "Mantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.",
+   "Ganar confianza\n(15%) - Oportunidades": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.",
+   "Identificar necesidades\n(26%) - Oportunidades": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.",
+   "Solucionar problemas\n(36%) - Oportunidades": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.",
+   "Cerrar\n(23%) - Oportunidades": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
+   "FECHA DE EVA.": "23/11/2026",
+   "Fecha": "23/11/2026",
+   "_textoAjeno": null,
+   "_enfoque": null,
+   "_etapas": {
+    "paso1": {
+     "fortaleza": "Lograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.",
+     "oportunidad": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio."
+    },
+    "paso2": {
+     "fortaleza": "Identificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.",
+     "oportunidad": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita."
+    },
+    "paso3": {
+     "fortaleza": "Brindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.",
+     "oportunidad": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada."
+    },
+    "paso4": {
+     "fortaleza": "Mantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.",
+     "oportunidad": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀"
+    }
+   },
+   "_foco": "paso3",
+   "_fortalezaPrincipal": "paso1",
+   "_modo": "etapas"
   }
  ],
  "tecnicas": [],
@@ -23526,7 +23626,7 @@
    "avanceRitmo": null,
    "avanceMeta": 26.92,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q1",
+   "cuartilMatriculas": "Q2",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
@@ -24933,11 +25033,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 66,
    "cuartilCalidad": "Q4",
-   "matriculas": 10,
+   "matriculas": 11,
    "meta": 26,
-   "avanceMes": 38.46,
+   "avanceMes": 42.31,
    "avanceRitmo": null,
-   "avanceMeta": 38.46,
+   "avanceMeta": 42.31,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -24951,7 +25051,7 @@
    },
    "puesto": 4,
    "totalAsesores": 26,
-   "indice": 52.2,
+   "indice": 54.2,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -25056,11 +25156,11 @@
   "Edward Nelson Gonzales Villaneda": {
    "sede": "HYO",
    "antiguedad": null,
-   "numEvaluaciones": 19,
-   "ultimaFecha": "20/11/2026",
-   "foco": null,
-   "fortalezaPrincipal": null,
-   "modoFeedback": "ajeno",
+   "numEvaluaciones": 20,
+   "ultimaFecha": "23/11/2026",
+   "foco": "paso3",
+   "fortalezaPrincipal": "paso1",
+   "modoFeedback": "etapas",
    "enfoque": null,
    "stages": {
     "paso1": {
@@ -25068,11 +25168,11 @@
      "prev": 100,
      "delta": 0,
      "avg": 99,
-     "fortaleza": null,
-     "oportunidad": null,
+     "fortaleza": "Lograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.",
+     "oportunidad": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.",
      "conclusion": null,
-     "rol": null,
-     "texto": null,
+     "rol": "oportunidad",
+     "texto": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.",
      "tecnica": null,
      "caso": null,
      "patrones": {
@@ -25081,7 +25181,7 @@
         "id": "empatia",
         "tema": "Trato cordial y empático",
         "n": 6,
-        "ultima": true
+        "ultima": false
        },
        {
         "id": "perfil",
@@ -25101,13 +25201,13 @@
         "id": "conexion",
         "tema": "Falta personalizar la atención",
         "n": 3,
-        "ultima": true
+        "ultima": false
        },
        {
         "id": "despedida",
         "tema": "Protocolo de despedida y encuesta incompleto",
         "n": 2,
-        "ultima": true
+        "ultima": false
        },
        {
         "id": "presion",
@@ -25116,292 +25216,57 @@
         "ultima": false
        }
       ],
-      "total": 15
+      "total": 16
      },
-     "ajeno": "Maria"
+     "ajeno": null
     },
     "paso2": {
-     "pct": 35,
-     "prev": 76,
-     "delta": -41,
-     "avg": 59,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es dar toda la información sin preguntar primero qué busca el prospecto, si trabaja, cuánto tiempo tiene y qué lo frena.",
-     "rol": "generico",
-     "texto": null,
-     "tecnica": {
-      "id": "tec_09",
-      "titulo": "🪞 Devuelve el dolor con las palabras del cliente",
-      "ejemplo": "Si dijo \"siento que se me está yendo el tiempo\": \"te entiendo, sientes que el tiempo se te va y quieres retomar tu carrera ya por eso puedes aplicar bajo este beneficio y sacar el mejor provecho de tu inversión\"."
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "[nombre], antes de contarte de [carrera] quiero entender tu situación, así no te doy información de más. ¿Hoy trabajas? ¿En qué horario?\n\nHasta las 6, de lunes a sábado. ¿Y qué quieres lograr con la carrera: subir donde estás, cambiar de trabajo o tener algo propio?\n\nEntonces el problema no es la carrera: es que sin título te quedas donde estás aunque hagas bien tu trabajo. ¿Y qué te ha frenado hasta hoy: el tiempo, la inversión o no saber cómo es el proceso?\n\nResumo, [nombre]: trabajas hasta las 6, quieres el título para que te asciendan y lo que te frena es el tiempo. Te cuento cómo lo resolvemos con tu horario, ¿vamos?",
-      "porQue": "Tres preguntas cortas (trabajo, meta, freno), cada respuesta devuelta con sus propias palabras y un resumen final: la solución que viene habla de su ascenso y de su horario, no de un libreto.",
-      "base": "generico-paso2",
-      "dialogo": [
-       {
-        "quien": "asesor",
-        "texto": "[nombre], antes de contarte de [carrera] quiero entender tu situación, así no te doy información de más. ¿Hoy trabajas? ¿En qué horario?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, de lunes a sábado hasta las 6."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Hasta las 6, de lunes a sábado. ¿Y qué quieres lograr con la carrera: subir donde estás, cambiar de trabajo o tener algo propio?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Subir. En mi empresa sin título no te ascienden."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Entonces el problema no es la carrera: es que sin título te quedas donde estás aunque hagas bien tu trabajo. ¿Y qué te ha frenado hasta hoy: el tiempo, la inversión o no saber cómo es el proceso?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "El tiempo, más que nada."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Resumo, [nombre]: trabajas hasta las 6, quieres el título para que te asciendan y lo que te frena es el tiempo. Te cuento cómo lo resolvemos con tu horario, ¿vamos?"
-       }
-      ],
-      "variantes": [
-       {
-        "titulo": "Tres preguntas antes de informar",
-        "dialogo": [
-         {
-          "quien": "asesor",
-          "texto": "[nombre], antes de contarte de [carrera] quiero entender tu situación, así no te doy información de más. ¿Hoy trabajas? ¿En qué horario?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, de lunes a sábado hasta las 6."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Hasta las 6, de lunes a sábado. ¿Y qué quieres lograr con la carrera: subir donde estás, cambiar de trabajo o tener algo propio?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Subir. En mi empresa sin título no te ascienden."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces el problema no es la carrera: es que sin título te quedas donde estás aunque hagas bien tu trabajo. ¿Y qué te ha frenado hasta hoy: el tiempo, la inversión o no saber cómo es el proceso?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "El tiempo, más que nada."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Resumo, [nombre]: trabajas hasta las 6, quieres el título para que te asciendan y lo que te frena es el tiempo. Te cuento cómo lo resolvemos con tu horario, ¿vamos?"
-         }
-        ],
-        "texto": "[nombre], antes de contarte de [carrera] quiero entender tu situación, así no te doy información de más. ¿Hoy trabajas? ¿En qué horario?\n\nHasta las 6, de lunes a sábado. ¿Y qué quieres lograr con la carrera: subir donde estás, cambiar de trabajo o tener algo propio?\n\nEntonces el problema no es la carrera: es que sin título te quedas donde estás aunque hagas bien tu trabajo. ¿Y qué te ha frenado hasta hoy: el tiempo, la inversión o no saber cómo es el proceso?\n\nResumo, [nombre]: trabajas hasta las 6, quieres el título para que te asciendan y lo que te frena es el tiempo. Te cuento cómo lo resolvemos con tu horario, ¿vamos?",
-        "porQue": "Tres preguntas cortas (trabajo, meta, freno), cada respuesta devuelta con sus propias palabras y un resumen final: la solución que viene habla de su ascenso y de su horario, no de un libreto.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Cuando ya estudió y lo dejó",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Yo ya estudié dos años en un instituto, pero lo dejé."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Qué bueno que me lo cuentes, [nombre]. ¿Qué estudiaste y qué pasó para que lo dejaras?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Computación. Me salió trabajo y no me alcanzaba ni el tiempo ni la plata."
-         },
-         {
-          "quien": "asesor",
-          "texto": "O sea, no lo dejaste por falta de ganas: el trabajo y la plata te obligaron. ¿Y hoy qué cambió? ¿Tienes algo más estable?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, ahora tengo trabajo fijo, pero sigo con poco tiempo."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entiendo. Y cuando piensas en retomar, ¿qué te daría más miedo: volver a dejarlo o empezar otra vez desde cero?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Empezar desde cero, ya perdí dos años."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces lo tuyo es retomar sin perder esos dos años y con un horario que respete tu trabajo fijo, [nombre]. Te cuento cómo se evalúa la convalidación y cómo son las clases, ¿te parece?"
-         }
-        ],
-        "texto": "Qué bueno que me lo cuentes, [nombre]. ¿Qué estudiaste y qué pasó para que lo dejaras?\n\nO sea, no lo dejaste por falta de ganas: el trabajo y la plata te obligaron. ¿Y hoy qué cambió? ¿Tienes algo más estable?\n\nEntiendo. Y cuando piensas en retomar, ¿qué te daría más miedo: volver a dejarlo o empezar otra vez desde cero?\n\nEntonces lo tuyo es retomar sin perder esos dos años y con un horario que respete tu trabajo fijo, [nombre]. Te cuento cómo se evalúa la convalidación y cómo son las clases, ¿te parece?",
-        "porQue": "Indaga el estudio previo, el motivo real del abandono y el miedo a empezar de cero, devolviéndolo con sus palabras y sin prometer convalidación: la propuesta que sigue sale de su historia.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Cuando solo pregunta el precio",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Solo dime cuánto cuesta y ya."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Claro, [nombre], te doy las cifras exactas. Para no darte un monto que no te sirva, dime: ¿es para ti y qué carrera estás viendo?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Para mí, [carrera]."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Perfecto. ¿Y hoy trabajas? Te lo pregunto porque si trabajas, la inversión se ve distinta: la pagas con tu sueldo y en cuotas, no de golpe."
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, trabajo todo el día. Por eso quiero saber si me alcanza."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces lo que te preocupa no es el precio en sí, sino que te alcance con lo que ganas sin descuidar tu casa. ¿Más o menos cuánto podrías destinar al mes a tus estudios?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Unos 500, máximo 600."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Listo, [nombre]: trabajas todo el día, [carrera] para ti y entre 500 y 600 al mes. Con eso ya te explico la inversión completa y cómo calza con tu bolsillo. ¿Vamos?"
-         }
-        ],
-        "texto": "Claro, [nombre], te doy las cifras exactas. Para no darte un monto que no te sirva, dime: ¿es para ti y qué carrera estás viendo?\n\nPerfecto. ¿Y hoy trabajas? Te lo pregunto porque si trabajas, la inversión se ve distinta: la pagas con tu sueldo y en cuotas, no de golpe.\n\nEntonces lo que te preocupa no es el precio en sí, sino que te alcance con lo que ganas sin descuidar tu casa. ¿Más o menos cuánto podrías destinar al mes a tus estudios?\n\nListo, [nombre]: trabajas todo el día, [carrera] para ti y entre 500 y 600 al mes. Con eso ya te explico la inversión completa y cómo calza con tu bolsillo. ¿Vamos?",
-        "porQue": "No esquiva el precio: lo promete, gana las preguntas clave (carrera, trabajo, presupuesto) y devuelve el verdadero temor con sus palabras («que te alcance»); así la inversión que explicas después le habla a su bolsillo.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Resumir y abrir la solución",
-        "dialogo": [
-         {
-          "quien": "asesor",
-          "texto": "[nombre], déjame ver si te entendí bien. Trabajas de lunes a sábado, sales a las seis y quieres el título para el ascenso que te ofrecen. ¿Es así?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, eso."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y lo que más te preocupa es no tener tiempo y no poder pagar todo de golpe. ¿Me faltó algo?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "No, más o menos eso es."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Perfecto. Entonces lo que buscas es estudiar de noche, sin dejar tu trabajo y pagando por mes. ¿Te imaginas ya con tu certificado del primer año en tu CV mientras sigues trabajando?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sería bueno, la verdad."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Eso es justo lo que resuelve la modalidad a distancia. Te cuento cómo sería tu semana y cuánto pagarías por mes, para que lo veas con números reales. ¿Te parece?"
-         }
-        ],
-        "texto": "[nombre], déjame ver si te entendí bien. Trabajas de lunes a sábado, sales a las seis y quieres el título para el ascenso que te ofrecen. ¿Es así?\n\nY lo que más te preocupa es no tener tiempo y no poder pagar todo de golpe. ¿Me faltó algo?\n\nPerfecto. Entonces lo que buscas es estudiar de noche, sin dejar tu trabajo y pagando por mes. ¿Te imaginas ya con tu certificado del primer año en tu CV mientras sigues trabajando?\n\nEso es justo lo que resuelve la modalidad a distancia. Te cuento cómo sería tu semana y cuánto pagarías por mes, para que lo veas con números reales. ¿Te parece?",
-        "porQue": "Cierra la indagación con un espejo de lo que dijo el cliente y pide su «sí»: con eso la solución que viene después suena hecha para él.",
-        "grupo": "cerrar"
-       },
-       {
-        "titulo": "Cuando la necesidad ya está clara",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Lo que quiero es empezar este año, no seguir postergándolo."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Me encanta escucharlo, [nombre]. ¿Cuántas veces lo has postergado ya?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Uf, como tres veces."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces hoy es el día de no postergarlo más. Con la modalidad a distancia estudias con clases en vivo en la noche y grabadas, sin dejar lo que haces. ¿Eso es lo que necesitabas?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, justo eso."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Perfecto. El primer paso es tu evaluación de admisión, virtual, desde tu computadora o laptop con cámara. No es de conocimientos, es para conocerte. ¿Hasta ahí claro?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, claro."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y si la rindes esta semana, entras con la campaña: la admisión a la mitad y la matrícula gratis. ¿Te acomoda rendirla hoy o mañana?"
-         }
-        ],
-        "texto": "Me encanta escucharlo, [nombre]. ¿Cuántas veces lo has postergado ya?\n\nEntonces hoy es el día de no postergarlo más. Con la modalidad a distancia estudias con clases en vivo en la noche y grabadas, sin dejar lo que haces. ¿Eso es lo que necesitabas?\n\nPerfecto. El primer paso es tu evaluación de admisión, virtual, desde tu computadora o laptop con cámara. No es de conocimientos, es para conocerte. ¿Hasta ahí claro?\n\nY si la rindes esta semana, entras con la campaña: la admisión a la mitad y la matrícula gratis. ¿Te acomoda rendirla hoy o mañana?",
-        "porQue": "Si la necesidad quedó clara, no se alarga la indagación: se conecta con una sola solución y se avanza al paso de la evaluación en la misma llamada.",
-        "grupo": "cerrar"
-       }
-      ],
-      "tema": null,
-      "generico": true
-     },
+     "pct": 100,
+     "prev": 35,
+     "delta": 65,
+     "avg": 61,
+     "fortaleza": "Identificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.",
+     "oportunidad": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.",
+     "conclusion": null,
+     "rol": "oportunidad",
+     "texto": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.",
+     "tecnica": null,
+     "caso": null,
      "patrones": {
       "v": 2,
-      "total": 15,
+      "total": 16,
       "mejorar": [
        {
         "id": "porque",
         "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
-        "n": 12,
-        "ultima": false,
+        "n": 13,
+        "ultima": true,
         "fechas": [
-         "11/11/2026",
          "17/11/2026",
          "17/11/2026",
-         "18/11/2026"
+         "18/11/2026",
+         "23/11/2026"
         ],
-        "frase": "Debemos profundizar en las necesidades del prospecto, identificar sus motivaciones, situación académica y expectativas, para construir una propuesta de valor que responda específic…"
+        "frase": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas."
        },
        {
         "id": "situacion",
         "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
-        "n": 7,
+        "n": 8,
         "ultima": true,
         "fechas": [
-         "10/11/2026",
          "18/11/2026",
          "20/11/2026",
-         "20/11/2026"
+         "20/11/2026",
+         "23/11/2026"
         ],
-        "frase": "Fortalece la indagación mediante preguntas abiertas que permitan conocer la situación laboral, disponibilidad de tiempo y objetivos académicos de la prospecto."
+        "frase": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas."
        },
        {
         "id": "precio",
         "tema": "Salta al precio o al descuento antes de conocer la necesidad",
         "n": 5,
-        "ultima": true,
+        "ultima": false,
         "fechas": [
          "17/11/2026",
          "17/11/2026",
@@ -25414,7 +25279,7 @@
         "id": "conecta",
         "tema": "No conecta lo que descubrió con 2 diferenciales",
         "n": 4,
-        "ultima": true,
+        "ultima": false,
         "fechas": [
          "16/10/2026",
          "27/10/2026",
@@ -25428,21 +25293,21 @@
        {
         "id": "convalida",
         "tema": "Explora estudios previos para convalidar",
-        "n": 5,
-        "ultima": false,
+        "n": 6,
+        "ultima": true,
         "fechas": [
-         "16/10/2026",
          "27/10/2026",
          "05/11/2026",
-         "10/11/2026"
+         "10/11/2026",
+         "23/11/2026"
         ],
-        "frase": "Identificaste los estudios técnicos del prospecto y explicaste correctamente que la convalidación aplica entre carreras afines, como Computación e Informática con Ingeniería de Sis…"
+        "frase": "Identificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos."
        },
        {
         "id": "datos",
         "tema": "Identifica dónde vive, si trabaja y qué estudió antes",
         "n": 2,
-        "ultima": true,
+        "ultima": false,
         "fechas": [
          "27/10/2026",
          "20/11/2026"
@@ -25462,274 +25327,27 @@
       ],
       "foco": "porque"
      },
-     "ajeno": "Maria"
+     "ajeno": null
     },
     "paso3": {
-     "pct": 58,
-     "prev": 63,
-     "delta": -5,
+     "pct": 69,
+     "prev": 58,
+     "delta": 11,
      "avg": 54,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es explicar la inversión de corrido, sin desglosar la primera cuota ni validar que el prospecto va entendiendo.",
-     "rol": "generico",
-     "texto": null,
-     "tecnica": {
-      "id": "tec_10",
-      "titulo": "✅ Construye pequeños \"sí\" (micro-compromisos)",
-      "ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?\n\nLa primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?\n\nHoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?\n\nY las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es.",
-      "porQue": "Una cifra por idea y una validación distinta después de cada bloque: el prospecto dice «sí» tres veces antes de llegar al ahorro, y el cierre parcial abre el proceso de admisión. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
-      "base": "generico-paso3",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "¿Y cuánto es al mes?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ya. ¿Y la primera cuota también es así?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "La primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, ¿y con el descuento?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "Hoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ah ya, eso sí cambia."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Y las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es."
-       }
-      ],
-      "variantes": [
-       {
-        "titulo": "De las cuotas hacia arriba",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "¿Y cuánto es al mes?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ya. ¿Y la primera cuota también es así?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "La primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, ¿y con el descuento?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Hoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ah ya, eso sí cambia."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es."
-         }
-        ],
-        "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?\n\nLa primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?\n\nHoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?\n\nY las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es.",
-        "porQue": "Una cifra por idea y una validación distinta después de cada bloque: el prospecto dice «sí» tres veces antes de llegar al ahorro, y el cierre parcial abre el proceso de admisión. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Paso a paso, en orden de pago",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "¿Qué tendría que pagar primero?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Son tres pasos, [nombre]. Primero la admisión: normalmente S/200, hoy S/100, y con eso ya reservas tu vacante en [carrera]. ¿Te sirve así?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí. ¿Y después?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Segundo, 24 horas después de tu evaluación, la primera cuota. Es la única un poco mayor porque incluye matrícula, seguro y examen médico: normalmente S/876, pero hoy la matrícula es gratis y queda en S/570. ¿Vamos bien?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ya. ¿Y las demás?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Tercero, las otras cuatro cuotas recién desde abril, de S/504 cada una en vez de S/560, porque el 10 % lo tienes toda la carrera. ¿Hasta aquí todo claro?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, ahora sí entiendo."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces, [nombre], ya sabes qué pagas, cuándo y cuánto te ahorras: S/530 este ciclo. ¿Eso responde lo que te preocupaba del pago? Si es así, te explico cómo es la evaluación de admisión."
-         }
-        ],
-        "texto": "Son tres pasos, [nombre]. Primero la admisión: normalmente S/200, hoy S/100, y con eso ya reservas tu vacante en [carrera]. ¿Te sirve así?\n\nSegundo, 24 horas después de tu evaluación, la primera cuota. Es la única un poco mayor porque incluye matrícula, seguro y examen médico: normalmente S/876, pero hoy la matrícula es gratis y queda en S/570. ¿Vamos bien?\n\nTercero, las otras cuatro cuotas recién desde abril, de S/504 cada una en vez de S/560, porque el 10 % lo tienes toda la carrera. ¿Hasta aquí todo claro?\n\nEntonces, [nombre], ya sabes qué pagas, cuándo y cuánto te ahorras: S/530 este ciclo. ¿Eso responde lo que te preocupaba del pago? Si es así, te explico cómo es la evaluación de admisión.",
-        "porQue": "El orden real de pago, un paso por turno y un «sí» tras cada uno: el prospecto llega al ahorro de S/530 entendiendo de dónde sale, y el cierre parcial abre la evaluación. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Primero el valor, luego el número",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Está un poco caro, lo voy a pensar."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Te entiendo, [nombre], es una decisión importante. Antes de pensarlo, ¿me dices qué parte te pareció cara: la cuota del mes o el primer pago?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "El primer pago, me parece mucho de golpe."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Tiene sentido, porque la primera cuota junta créditos, matrícula, seguro y examen médico; por eso normalmente es S/876. Pero hoy la matrícula de S/250 te sale gratis, así que pagas S/570. ¿Hasta ahí claro?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, eso ya es menos."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y ese pago no es hoy: hoy solo das S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Eso te ayudaría a organizarte?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, así sí me cuadra."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces lo que te parecía caro ya tiene nombre y descuento, [nombre]. Piensa que si lo dejas para el otro ciclo, son meses más sin avanzar hacia tu meta.\n\n¿Con esto queda resuelto lo del pago? Te cuento cómo es tu evaluación de admisión."
-         }
-        ],
-        "texto": "Te entiendo, [nombre], es una decisión importante. Antes de pensarlo, ¿me dices qué parte te pareció cara: la cuota del mes o el primer pago?\n\nTiene sentido, porque la primera cuota junta créditos, matrícula, seguro y examen médico; por eso normalmente es S/876. Pero hoy la matrícula de S/250 te sale gratis, así que pagas S/570. ¿Hasta ahí claro?\n\nY ese pago no es hoy: hoy solo das S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Eso te ayudaría a organizarte?\n\nEntonces lo que te parecía caro ya tiene nombre y descuento, [nombre]. Piensa que si lo dejas para el otro ciclo, son meses más sin avanzar hacia tu meta.\n\n¿Con esto queda resuelto lo del pago? Te cuento cómo es tu evaluación de admisión.",
-        "porQue": "Ante el «lo voy a pensar» no suelta cifras de corrido: pregunta qué le pareció caro, desglosa solo eso y consigue pequeños «sí» con el primer paso de S/100 y el costo de perder un ciclo. Cifras de Administración; ajusta con la Biblioteca.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Si aparece otra duda de pago",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Ya entendí los montos, pero ¿y si un mes no llego a pagar?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Buena pregunta, [nombre], mejor verlo ahora. Las cuotas son mensuales y fijas, así que te organizas desde ya: son cinco por ciclo y las cuatro últimas recién desde abril. ¿Cuándo cobras normalmente?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "A fin de mes."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Perfecto, entonces tus cuotas te caen después de tu pago. ¿Cómo lo ves así?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Visto así, sí se puede."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Además, si en algún momento se te complica, me escribes y vemos juntos las opciones con el área correspondiente. No estás solo en esto. ¿Con esto queda resuelto lo del pago?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, ya me quedó claro."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Genial. Entonces el siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿La rindes hoy o mañana para que no se te pase la campaña?"
-         }
-        ],
-        "texto": "Buena pregunta, [nombre], mejor verlo ahora. Las cuotas son mensuales y fijas, así que te organizas desde ya: son cinco por ciclo y las cuatro últimas recién desde abril. ¿Cuándo cobras normalmente?\n\nPerfecto, entonces tus cuotas te caen después de tu pago. ¿Cómo lo ves así?\n\nAdemás, si en algún momento se te complica, me escribes y vemos juntos las opciones con el área correspondiente. No estás solo en esto. ¿Con esto queda resuelto lo del pago?\n\nGenial. Entonces el siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿La rindes hoy o mañana para que no se te pase la campaña?",
-        "porQue": "Resuelve la segunda objeción típica después del precio (miedo a no poder pagar una cuota) sin prometer nada que no exista y vuelve enseguida al cierre parcial.",
-        "grupo": "cerrar"
-       },
-       {
-        "titulo": "Del «me convence» a la evaluación",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Me parece bien, la verdad."
-         },
-         {
-          "quien": "asesor",
-          "texto": "¡Qué bueno, [nombre]! Entonces ya resolvimos tu horario y el pago mensual. ¿Hay algo más que te frene para empezar?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "No, creo que no."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Perfecto. Te cuento cómo sigue: primero tu evaluación de admisión, que es virtual desde una computadora o laptop con cámara, y dura poco. No es de conocimientos. ¿Vamos bien?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ya, ¿y qué necesito?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Solo tu DNI, una laptop o computadora con cámara y un lugar tranquilo. La admisión hoy está a S/100 en lugar de S/200, y la matrícula te sale gratis."
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ah, bien."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y por matricularte te registro sin costo en Nexus, para adelantar cursos antes de marzo, y en el Taller de Excel certificado. ¿Qué te acomoda más para la evaluación, hoy en la noche o mañana temprano?"
-         }
-        ],
-        "texto": "¡Qué bueno, [nombre]! Entonces ya resolvimos tu horario y el pago mensual. ¿Hay algo más que te frene para empezar?\n\nPerfecto. Te cuento cómo sigue: primero tu evaluación de admisión, que es virtual desde una computadora o laptop con cámara, y dura poco. No es de conocimientos. ¿Vamos bien?\n\nSolo tu DNI, una laptop o computadora con cámara y un lugar tranquilo. La admisión hoy está a S/100 en lugar de S/200, y la matrícula te sale gratis.\n\nY por matricularte te registro sin costo en Nexus, para adelantar cursos antes de marzo, y en el Taller de Excel certificado. ¿Qué te acomoda más para la evaluación, hoy en la noche o mañana temprano?",
-        "porQue": "Cuando el cliente ya aceptó la solución, no se repite el precio: se confirma con un cierre parcial y se lleva al proceso con los regalos por matricularse.",
-        "grupo": "cerrar"
-       }
-      ],
-      "tema": null,
-      "generico": true
-     },
+     "fortaleza": "Brindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.",
+     "oportunidad": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.",
+     "conclusion": null,
+     "rol": "oportunidad",
+     "texto": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.",
+     "tecnica": null,
+     "caso": null,
      "patrones": {
       "bien": [
        {
         "id": "admision",
         "tema": "Explica el proceso de admisión",
         "n": 4,
-        "ultima": true
+        "ultima": false
        },
        {
         "id": "inversion",
@@ -25746,38 +25364,38 @@
       ],
       "mejorar": [
        {
-        "id": "indagacion",
-        "tema": "Indagación débil: no se conoce la motivación",
+        "id": "descuento",
+        "tema": "Ofrece descuentos sin validar la necesidad",
         "n": 5,
         "ultima": true
        },
        {
-        "id": "descuento",
-        "tema": "Ofrece descuentos sin validar la necesidad",
-        "n": 4,
+        "id": "indagacion",
+        "tema": "Indagación débil: no se conoce la motivación",
+        "n": 5,
         "ultima": false
        },
        {
         "id": "parciales",
         "tema": "Faltan cierres parciales",
         "n": 3,
-        "ultima": true
+        "ultima": false
        }
       ],
-      "total": 15
+      "total": 16
      },
-     "ajeno": "Maria"
+     "ajeno": null
     },
     "paso4": {
-     "pct": 78,
-     "prev": 100,
-     "delta": -22,
-     "avg": 84,
-     "fortaleza": null,
-     "oportunidad": null,
+     "pct": 100,
+     "prev": 78,
+     "delta": 22,
+     "avg": 85,
+     "fortaleza": "Mantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.",
+     "oportunidad": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
      "conclusion": null,
-     "rol": null,
-     "texto": null,
+     "rol": "oportunidad",
+     "texto": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
      "tecnica": null,
      "caso": null,
      "patrones": {
@@ -25786,25 +25404,31 @@
         "id": "dudas",
         "tema": "Resuelve dudas y objeciones",
         "n": 4,
-        "ultima": true
+        "ultima": false
        },
        {
         "id": "empatia",
         "tema": "Trato cordial y empático",
+        "n": 3,
+        "ultima": true
+       },
+       {
+        "id": "nombre",
+        "tema": "Usa el nombre del cliente",
         "n": 2,
-        "ultima": false
+        "ultima": true
        }
       ],
       "mejorar": [
        {
-        "id": "seguimiento",
-        "tema": "Seguimiento sin día y hora concretos",
-        "n": 11,
+        "id": "despedida",
+        "tema": "Protocolo de despedida y encuesta incompleto",
+        "n": 12,
         "ultima": true
        },
        {
-        "id": "despedida",
-        "tema": "Protocolo de despedida y encuesta incompleto",
+        "id": "seguimiento",
+        "tema": "Seguimiento sin día y hora concretos",
         "n": 11,
         "ultima": false
        },
@@ -25815,17 +25439,17 @@
         "ultima": false
        }
       ],
-      "total": 15
+      "total": 16
      },
-     "ajeno": "Maria"
+     "ajeno": null
     }
    },
-   "scoreGlobal": "63,00%",
-   "callScorePct": 63,
-   "scorePrev": 81,
-   "scoreDelta": -18,
-   "cuartilUltima": "Q4",
-   "calidadPromedio": 70,
+   "scoreGlobal": "89,00%",
+   "callScorePct": 89,
+   "scorePrev": 63,
+   "scoreDelta": 26,
+   "cuartilUltima": "Q2",
+   "calidadPromedio": 71,
    "cuartilCalidad": "Q4",
    "matriculas": 4,
    "meta": 26,
@@ -25845,14 +25469,14 @@
    },
    "puesto": 20,
    "totalAsesores": 26,
-   "indice": 42.7,
+   "indice": 43.2,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
-    "evaluacionesLeidas": 3,
-    "pendientes": 0,
+    "evaluacionesLeidas": 2,
+    "pendientes": 1,
     "items": {
      "paso1_1": {
       "estado": "ok",
@@ -25885,9 +25509,11 @@
       "fecha": "20/11/2026"
      },
      "paso2_3": {
-      "estado": "ok",
-      "evidencia": "Identificas que no logró obtener su título y las exigencias de su centro laboral",
-      "fecha": "20/11/2026"
+      "estado": "sin_evidencia",
+      "evidencia": null,
+      "fecha": null,
+      "retirado": true,
+      "fechaUltimoOk": "20/11/2026"
      },
      "paso2_4": {
       "estado": "pendiente",
@@ -27380,7 +27006,7 @@
    "avanceRitmo": null,
    "avanceMeta": 3.85,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
+   "cuartilMatriculas": "Q4",
    "cuadrante": "rojo",
    "enMes": true,
    "enMatriz": true,
@@ -27497,11 +27123,11 @@
   "Jimena del Rosario Vera Osores": {
    "sede": "HYO",
    "antiguedad": null,
-   "numEvaluaciones": 16,
-   "ultimaFecha": "22/11/2026",
-   "foco": null,
-   "fortalezaPrincipal": null,
-   "modoFeedback": "ajeno",
+   "numEvaluaciones": 17,
+   "ultimaFecha": "23/11/2026",
+   "foco": "paso3",
+   "fortalezaPrincipal": "paso1",
+   "modoFeedback": "etapas",
    "enfoque": null,
    "stages": {
     "paso1": {
@@ -27509,11 +27135,11 @@
      "prev": 100,
      "delta": 0,
      "avg": 87,
-     "fortaleza": null,
-     "oportunidad": null,
+     "fortaleza": "Lograste una buena apertura, presentándote y confirmando el motivo de contacto. Generaste confianza y mantuviste una comunicación adecuada para conocer el interés del prospecto.",
+     "oportunidad": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.",
      "conclusion": null,
-     "rol": null,
-     "texto": null,
+     "rol": "oportunidad",
+     "texto": "Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional y generar mayor confianza desde el inicio.",
      "tecnica": null,
      "caso": null,
      "patrones": {
@@ -27522,13 +27148,13 @@
         "id": "dudas",
         "tema": "Resuelve dudas y objeciones",
         "n": 6,
-        "ultima": true
+        "ultima": false
        },
        {
         "id": "perfil",
         "tema": "Identifica carrera, modalidad y ubicación",
         "n": 3,
-        "ultima": true
+        "ultima": false
        }
       ],
       "mejorar": [
@@ -27545,38 +27171,38 @@
         "ultima": false
        }
       ],
-      "total": 12
+      "total": 13
      },
-     "ajeno": "Maria"
+     "ajeno": null
     },
     "paso2": {
-     "pct": 100,
-     "prev": 77,
-     "delta": 23,
+     "pct": 77,
+     "prev": 100,
+     "delta": -23,
      "avg": 76,
-     "fortaleza": null,
-     "oportunidad": null,
+     "fortaleza": "Identificaste que buscaba una segunda carrera relacionada con Finanzas y conociste su interés en convalidar cursos. Lograste reconocer su objetivo académico y orientar la conversación hacia su necesidad.",
+     "oportunidad": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.",
      "conclusion": null,
-     "rol": null,
-     "texto": null,
+     "rol": "oportunidad",
+     "texto": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas. Esto te permitirá construir una propuesta más personalizada y alineada con lo que realmente necesita.",
      "tecnica": null,
      "caso": null,
      "patrones": {
       "v": 2,
-      "total": 10,
+      "total": 11,
       "mejorar": [
        {
         "id": "porque",
         "tema": "No pregunta el «para qué»: por qué esa carrera y qué quiere lograr",
-        "n": 8,
+        "n": 9,
         "ultima": true,
         "fechas": [
-         "27/10/2026",
          "10/11/2026",
          "11/11/2026",
-         "11/11/2026"
+         "11/11/2026",
+         "23/11/2026"
         ],
-        "frase": "Profundiza en la motivación del prospecto: por qué eligió Administración y Gestión Pública, en qué trabaja y qué objetivo busca."
+        "frase": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas."
        },
        {
         "id": "conecta",
@@ -27592,27 +27218,28 @@
         "frase": "Esta información permitirá relacionar su formación técnica con las oportunidades académicas y laborales de la carrera, presentando al menos dos diferenciales institucionales releva…"
        },
        {
+        "id": "situacion",
+        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
+        "n": 3,
+        "ultima": true,
+        "fechas": [
+         "30/09/2026",
+         "13/10/2026",
+         "23/11/2026"
+        ],
+        "frase": "Profundiza en la motivación del prospecto, sus expectativas profesionales, disponibilidad de tiempo y posibilidades económicas."
+       },
+       {
         "id": "precio",
         "tema": "Salta al precio o al descuento antes de conocer la necesidad",
         "n": 3,
-        "ultima": true,
+        "ultima": false,
         "fechas": [
          "27/10/2026",
          "10/11/2026",
          "11/11/2026"
         ],
         "frase": "En la inversión, comunica el beneficio de matrícula vigente según la condición oficial: en esta llamada indicaste que la matrícula estaba exonerada hasta ese día, mientras que hora…"
-       },
-       {
-        "id": "situacion",
-        "tema": "No profundiza su situación: trabajo, horarios, disponibilidad",
-        "n": 2,
-        "ultima": false,
-        "fechas": [
-         "30/09/2026",
-         "13/10/2026"
-        ],
-        "frase": "Profundiza en la situación académica y las motivaciones de Luz antes de desarrollar la propuesta."
        }
       ],
       "bien": [],
@@ -27628,267 +27255,20 @@
       ],
       "foco": "porque"
      },
-     "ajeno": "Maria"
+     "ajeno": null
     },
     "paso3": {
-     "pct": 69,
+     "pct": 56,
      "prev": 69,
-     "delta": 0,
+     "delta": -13,
      "avg": 55,
-     "fortaleza": null,
-     "oportunidad": null,
-     "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es explicar la inversión de corrido, sin desglosar la primera cuota ni validar que el prospecto va entendiendo.",
-     "rol": "generico",
-     "texto": null,
-     "tecnica": {
-      "id": "tec_10",
-      "titulo": "✅ Construye pequeños \"sí\" (micro-compromisos)",
-      "ejemplo": "\"¿Verdad que te conviene no dejar de trabajar mientras estudias?\""
-     },
-     "caso": {
-      "tipo": "speech",
-      "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?\n\nLa primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?\n\nHoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?\n\nY las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es.",
-      "porQue": "Una cifra por idea y una validación distinta después de cada bloque: el prospecto dice «sí» tres veces antes de llegar al ahorro, y el cierre parcial abre el proceso de admisión. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
-      "base": "generico-paso3",
-      "dialogo": [
-       {
-        "quien": "cliente",
-        "texto": "¿Y cuánto es al mes?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ya. ¿Y la primera cuota también es así?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "La primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Sí, ¿y con el descuento?"
-       },
-       {
-        "quien": "asesor",
-        "texto": "Hoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?"
-       },
-       {
-        "quien": "cliente",
-        "texto": "Ah ya, eso sí cambia."
-       },
-       {
-        "quien": "asesor",
-        "texto": "Y las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es."
-       }
-      ],
-      "variantes": [
-       {
-        "titulo": "De las cuotas hacia arriba",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "¿Y cuánto es al mes?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ya. ¿Y la primera cuota también es así?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "La primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, ¿y con el descuento?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Hoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ah ya, eso sí cambia."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es."
-         }
-        ],
-        "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?\n\nLa primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?\n\nHoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?\n\nY las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es.",
-        "porQue": "Una cifra por idea y una validación distinta después de cada bloque: el prospecto dice «sí» tres veces antes de llegar al ahorro, y el cierre parcial abre el proceso de admisión. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Paso a paso, en orden de pago",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "¿Qué tendría que pagar primero?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Son tres pasos, [nombre]. Primero la admisión: normalmente S/200, hoy S/100, y con eso ya reservas tu vacante en [carrera]. ¿Te sirve así?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí. ¿Y después?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Segundo, 24 horas después de tu evaluación, la primera cuota. Es la única un poco mayor porque incluye matrícula, seguro y examen médico: normalmente S/876, pero hoy la matrícula es gratis y queda en S/570. ¿Vamos bien?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ya. ¿Y las demás?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Tercero, las otras cuatro cuotas recién desde abril, de S/504 cada una en vez de S/560, porque el 10 % lo tienes toda la carrera. ¿Hasta aquí todo claro?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, ahora sí entiendo."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces, [nombre], ya sabes qué pagas, cuándo y cuánto te ahorras: S/530 este ciclo. ¿Eso responde lo que te preocupaba del pago? Si es así, te explico cómo es la evaluación de admisión."
-         }
-        ],
-        "texto": "Son tres pasos, [nombre]. Primero la admisión: normalmente S/200, hoy S/100, y con eso ya reservas tu vacante en [carrera]. ¿Te sirve así?\n\nSegundo, 24 horas después de tu evaluación, la primera cuota. Es la única un poco mayor porque incluye matrícula, seguro y examen médico: normalmente S/876, pero hoy la matrícula es gratis y queda en S/570. ¿Vamos bien?\n\nTercero, las otras cuatro cuotas recién desde abril, de S/504 cada una en vez de S/560, porque el 10 % lo tienes toda la carrera. ¿Hasta aquí todo claro?\n\nEntonces, [nombre], ya sabes qué pagas, cuándo y cuánto te ahorras: S/530 este ciclo. ¿Eso responde lo que te preocupaba del pago? Si es así, te explico cómo es la evaluación de admisión.",
-        "porQue": "El orden real de pago, un paso por turno y un «sí» tras cada uno: el prospecto llega al ahorro de S/530 entendiendo de dónde sale, y el cierre parcial abre la evaluación. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Primero el valor, luego el número",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Está un poco caro, lo voy a pensar."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Te entiendo, [nombre], es una decisión importante. Antes de pensarlo, ¿me dices qué parte te pareció cara: la cuota del mes o el primer pago?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "El primer pago, me parece mucho de golpe."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Tiene sentido, porque la primera cuota junta créditos, matrícula, seguro y examen médico; por eso normalmente es S/876. Pero hoy la matrícula de S/250 te sale gratis, así que pagas S/570. ¿Hasta ahí claro?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, eso ya es menos."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y ese pago no es hoy: hoy solo das S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Eso te ayudaría a organizarte?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, así sí me cuadra."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Entonces lo que te parecía caro ya tiene nombre y descuento, [nombre]. Piensa que si lo dejas para el otro ciclo, son meses más sin avanzar hacia tu meta.\n\n¿Con esto queda resuelto lo del pago? Te cuento cómo es tu evaluación de admisión."
-         }
-        ],
-        "texto": "Te entiendo, [nombre], es una decisión importante. Antes de pensarlo, ¿me dices qué parte te pareció cara: la cuota del mes o el primer pago?\n\nTiene sentido, porque la primera cuota junta créditos, matrícula, seguro y examen médico; por eso normalmente es S/876. Pero hoy la matrícula de S/250 te sale gratis, así que pagas S/570. ¿Hasta ahí claro?\n\nY ese pago no es hoy: hoy solo das S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Eso te ayudaría a organizarte?\n\nEntonces lo que te parecía caro ya tiene nombre y descuento, [nombre]. Piensa que si lo dejas para el otro ciclo, son meses más sin avanzar hacia tu meta.\n\n¿Con esto queda resuelto lo del pago? Te cuento cómo es tu evaluación de admisión.",
-        "porQue": "Ante el «lo voy a pensar» no suelta cifras de corrido: pregunta qué le pareció caro, desglosa solo eso y consigue pequeños «sí» con el primer paso de S/100 y el costo de perder un ciclo. Cifras de Administración; ajusta con la Biblioteca.",
-        "grupo": "resolver"
-       },
-       {
-        "titulo": "Si aparece otra duda de pago",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Ya entendí los montos, pero ¿y si un mes no llego a pagar?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Buena pregunta, [nombre], mejor verlo ahora. Las cuotas son mensuales y fijas, así que te organizas desde ya: son cinco por ciclo y las cuatro últimas recién desde abril. ¿Cuándo cobras normalmente?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "A fin de mes."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Perfecto, entonces tus cuotas te caen después de tu pago. ¿Cómo lo ves así?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Visto así, sí se puede."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Además, si en algún momento se te complica, me escribes y vemos juntos las opciones con el área correspondiente. No estás solo en esto. ¿Con esto queda resuelto lo del pago?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Sí, ya me quedó claro."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Genial. Entonces el siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿La rindes hoy o mañana para que no se te pase la campaña?"
-         }
-        ],
-        "texto": "Buena pregunta, [nombre], mejor verlo ahora. Las cuotas son mensuales y fijas, así que te organizas desde ya: son cinco por ciclo y las cuatro últimas recién desde abril. ¿Cuándo cobras normalmente?\n\nPerfecto, entonces tus cuotas te caen después de tu pago. ¿Cómo lo ves así?\n\nAdemás, si en algún momento se te complica, me escribes y vemos juntos las opciones con el área correspondiente. No estás solo en esto. ¿Con esto queda resuelto lo del pago?\n\nGenial. Entonces el siguiente paso es tu evaluación de admisión, virtual, desde una computadora o laptop con cámara. ¿La rindes hoy o mañana para que no se te pase la campaña?",
-        "porQue": "Resuelve la segunda objeción típica después del precio (miedo a no poder pagar una cuota) sin prometer nada que no exista y vuelve enseguida al cierre parcial.",
-        "grupo": "cerrar"
-       },
-       {
-        "titulo": "Del «me convence» a la evaluación",
-        "dialogo": [
-         {
-          "quien": "cliente",
-          "texto": "Me parece bien, la verdad."
-         },
-         {
-          "quien": "asesor",
-          "texto": "¡Qué bueno, [nombre]! Entonces ya resolvimos tu horario y el pago mensual. ¿Hay algo más que te frene para empezar?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "No, creo que no."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Perfecto. Te cuento cómo sigue: primero tu evaluación de admisión, que es virtual desde una computadora o laptop con cámara, y dura poco. No es de conocimientos. ¿Vamos bien?"
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ya, ¿y qué necesito?"
-         },
-         {
-          "quien": "asesor",
-          "texto": "Solo tu DNI, una laptop o computadora con cámara y un lugar tranquilo. La admisión hoy está a S/100 en lugar de S/200, y la matrícula te sale gratis."
-         },
-         {
-          "quien": "cliente",
-          "texto": "Ah, bien."
-         },
-         {
-          "quien": "asesor",
-          "texto": "Y por matricularte te registro sin costo en Nexus, para adelantar cursos antes de marzo, y en el Taller de Excel certificado. ¿Qué te acomoda más para la evaluación, hoy en la noche o mañana temprano?"
-         }
-        ],
-        "texto": "¡Qué bueno, [nombre]! Entonces ya resolvimos tu horario y el pago mensual. ¿Hay algo más que te frene para empezar?\n\nPerfecto. Te cuento cómo sigue: primero tu evaluación de admisión, que es virtual desde una computadora o laptop con cámara, y dura poco. No es de conocimientos. ¿Vamos bien?\n\nSolo tu DNI, una laptop o computadora con cámara y un lugar tranquilo. La admisión hoy está a S/100 en lugar de S/200, y la matrícula te sale gratis.\n\nY por matricularte te registro sin costo en Nexus, para adelantar cursos antes de marzo, y en el Taller de Excel certificado. ¿Qué te acomoda más para la evaluación, hoy en la noche o mañana temprano?",
-        "porQue": "Cuando el cliente ya aceptó la solución, no se repite el precio: se confirma con un cierre parcial y se lleva al proceso con los regalos por matricularse.",
-        "grupo": "cerrar"
-       }
-      ],
-      "tema": null,
-      "generico": true
-     },
+     "fortaleza": "Brindaste alternativas para avanzar con la información de convalidación y explicaste opciones para continuar con el proceso mientras revisaba sus documentos. También compartiste información por WhatsApp y gestionaste el seguimiento.",
+     "oportunidad": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.",
+     "conclusion": null,
+     "rol": "oportunidad",
+     "texto": "Organiza mejor la explicación de costos, descuentos y sus condiciones para evitar confusiones. Frente a una objeción económica, explora primero la dificultad y utiliza la negociación de manera consultiva, buscando generar avances concretos durante la llamada.",
+     "tecnica": null,
+     "caso": null,
      "patrones": {
       "bien": [
        {
@@ -27912,26 +27292,26 @@
         "ultima": false
        },
        {
-        "id": "valor",
-        "tema": "Propuesta de valor débil",
+        "id": "descuento",
+        "tema": "Ofrece descuentos sin validar la necesidad",
         "n": 2,
-        "ultima": false
+        "ultima": true
        }
       ],
-      "total": 12
+      "total": 13
      },
-     "ajeno": "Maria"
+     "ajeno": null
     },
     "paso4": {
      "pct": 78,
-     "prev": 72,
-     "delta": 6,
-     "avg": 65,
-     "fortaleza": null,
-     "oportunidad": null,
+     "prev": 78,
+     "delta": 0,
+     "avg": 66,
+     "fortaleza": "Mantuviste una actitud cordial durante la interacción y utilizaste el nombre del prospecto, lo que favoreció una comunicación más cercana.",
+     "oportunidad": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
      "conclusion": null,
-     "rol": null,
-     "texto": null,
+     "rol": "oportunidad",
+     "texto": "Evita interrumpir al prospecto y procura que la conversación sea más fluida. Al finalizar, recuerda mencionar tu nombre, la Unidad CIE y realizar el protocolo de cierre correspondiente, incluyendo la encuesta de satisfacción.\n💡 Sigue fortaleciendo tus habilidades comerciales. Tienes una buena base en la atención y en la identificación del interés; el siguiente paso es convertir esa gestión en una experiencia más consultiva, clara y orientada al cierre. 🚀",
      "tecnica": null,
      "caso": null,
      "patrones": {
@@ -27941,45 +27321,51 @@
         "tema": "Resuelve dudas y objeciones",
         "n": 4,
         "ultima": false
+       },
+       {
+        "id": "empatia",
+        "tema": "Trato cordial y empático",
+        "n": 2,
+        "ultima": true
        }
       ],
       "mejorar": [
        {
         "id": "despedida",
         "tema": "Protocolo de despedida y encuesta incompleto",
-        "n": 10,
+        "n": 11,
         "ultima": true
        },
        {
         "id": "seguimiento",
         "tema": "Seguimiento sin día y hora concretos",
         "n": 10,
-        "ultima": true
+        "ultima": false
        },
        {
         "id": "presion",
         "tema": "Presiona cuando el cliente pide tiempo",
         "n": 3,
-        "ultima": true
+        "ultima": false
        }
       ],
-      "total": 12
+      "total": 13
      },
-     "ajeno": "Maria"
+     "ajeno": null
     }
    },
-   "scoreGlobal": "84,00%",
-   "callScorePct": 84,
-   "scorePrev": 77,
-   "scoreDelta": 7,
-   "cuartilUltima": "Q3",
+   "scoreGlobal": "73,00%",
+   "callScorePct": 73,
+   "scorePrev": 84,
+   "scoreDelta": -11,
+   "cuartilUltima": "Q4",
    "calidadPromedio": 67,
    "cuartilCalidad": "Q4",
-   "matriculas": 1,
+   "matriculas": 2,
    "meta": 26,
-   "avanceMes": 3.85,
+   "avanceMes": 7.69,
    "avanceRitmo": null,
-   "avanceMeta": 3.85,
+   "avanceMeta": 7.69,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q3",
    "cuadrante": "rojo",
@@ -27991,16 +27377,16 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 26,
+   "puesto": 24,
    "totalAsesores": 26,
-   "indice": 35.4,
+   "indice": 37.3,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
     "fuente": "analisis",
     "ventana": 3,
-    "evaluacionesLeidas": 3,
-    "pendientes": 0,
+    "evaluacionesLeidas": 2,
+    "pendientes": 1,
     "items": {
      "paso1_1": {
       "estado": "sin_evidencia",
@@ -30747,7 +30133,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 25,
+   "puesto": 26,
    "totalAsesores": 26,
    "indice": 36.3,
    "tecnicasDominadas": 0,
@@ -32133,13 +31519,13 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 76,
    "cuartilCalidad": "Q3",
-   "matriculas": 6,
+   "matriculas": 8,
    "meta": 26,
-   "avanceMes": 23.08,
+   "avanceMes": 30.77,
    "avanceRitmo": null,
-   "avanceMeta": 23.08,
+   "avanceMeta": 30.77,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q2",
+   "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
    "enMes": true,
    "enMatriz": true,
@@ -32149,9 +31535,9 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 6,
+   "puesto": 5,
    "totalAsesores": 26,
-   "indice": 49.5,
+   "indice": 53.4,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -33545,11 +32931,11 @@
    "cuartilUltima": "Q4",
    "calidadPromedio": 74,
    "cuartilCalidad": "Q4",
-   "matriculas": 19,
+   "matriculas": 20,
    "meta": 26,
-   "avanceMes": 73.08,
+   "avanceMes": 76.92,
    "avanceRitmo": null,
-   "avanceMeta": 73.08,
+   "avanceMeta": 76.92,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -33563,7 +32949,7 @@
    },
    "puesto": 2,
    "totalAsesores": 26,
-   "indice": 73.5,
+   "indice": 75.5,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -36102,7 +35488,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 5,
+   "puesto": 6,
    "totalAsesores": 26,
    "indice": 51.4,
    "tecnicasDominadas": 0,
@@ -36646,7 +36032,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 24,
+   "puesto": 25,
    "totalAsesores": 26,
    "indice": 37.0,
    "tecnicasDominadas": 0,
@@ -41037,11 +40423,11 @@
    "cuartilUltima": "Q3",
    "calidadPromedio": 72,
    "cuartilCalidad": "Q4",
-   "matriculas": 7,
+   "matriculas": 8,
    "meta": 26,
-   "avanceMes": 26.92,
+   "avanceMes": 30.77,
    "avanceRitmo": null,
-   "avanceMeta": 26.92,
+   "avanceMeta": 30.77,
    "avanceModo": "tablero",
    "cuartilMatriculas": "Q1",
    "cuadrante": "amarillo",
@@ -41053,9 +40439,9 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 8,
+   "puesto": 7,
    "totalAsesores": 26,
-   "indice": 49.5,
+   "indice": 51.4,
    "tecnicasDominadas": 0,
    "tecnicasTotal": 16,
    "checklist": {
@@ -42495,7 +41881,7 @@
     "avance": null,
     "cuartil": null
    },
-   "puesto": 7,
+   "puesto": 8,
    "totalAsesores": 26,
    "indice": 49.5,
    "tecnicasDominadas": 0,
@@ -45718,7 +45104,7 @@
    "avanceRitmo": null,
    "avanceMeta": 3.85,
    "avanceModo": "tablero",
-   "cuartilMatriculas": "Q3",
+   "cuartilMatriculas": "Q4",
    "cuadrante": "rojo",
    "enMes": true,
    "enMatriz": true,
@@ -45834,32 +45220,32 @@
   }
  },
  "equipo": {
-  "fecha": "23/11/2026",
+  "fecha": "24/11/2026",
   "mes": "noviembre",
   "diasHabiles": {
-   "transcurridos": 19,
+   "transcurridos": 20,
    "total": 25
   },
   "avanceModo": "tablero",
   "cortesMatriculas": {
-   "Q1": 7.0,
+   "Q1": 8.0,
    "Q2": 5.0,
-   "Q3": 1.0
+   "Q3": 1.25
   },
   "fuente": "🧮ING/MAT (matrículas de noviembre, cuartil por aporte en el equipo) · Matriz DASHBOARD (calidad)",
   "mesCalculo": "noviembre",
   "mesTablero": "noviembre",
   "mapaCalor": {
    "paso1": 83.77,
-   "paso2": 75.62,
+   "paso2": 75.69,
    "paso3": 61.31,
-   "paso4": 75.58
+   "paso4": 75.65
   },
   "mapaCalorLocal": {
    "paso1": 83.77,
-   "paso2": 75.62,
+   "paso2": 75.69,
    "paso3": 61.31,
-   "paso4": 75.58
+   "paso4": 75.65
   },
   "focoCualitativo": {
    "paso": "paso3",
@@ -45882,10 +45268,10 @@
     "Maria Alejandra Pino Contreras",
     "Jean Carlos Espinoza Atoc",
     "Lisette Valeria Blanco Chuco",
-    "Melissa Leslie Fernadez Avalos",
     "Betsabeth Alexandra Rojas Palacios",
-    "Cecilia Esther Aliaga Lapa",
+    "Melissa Leslie Fernadez Avalos",
     "Orlando Jesus Pintado Sandoval",
+    "Cecilia Esther Aliaga Lapa",
     "Justyn Flores Solano",
     "Angelo Jaime Franco Sarmiento",
     "Judith Rocio Vila Incaroca",
@@ -45905,9 +45291,9 @@
     "Raul Aaron Manuel Ipanaque Escobar",
     "Lucero Ximena Hujaynatis Jacay",
     "Jorge Luis Valencia Cardenas",
+    "Jimena del Rosario Vera Osores",
     "Rosa Victoria Guzman Bonilla",
-    "Patricia Roxana Mercado Zacarias",
-    "Jimena del Rosario Vera Osores"
+    "Patricia Roxana Mercado Zacarias"
    ],
    "sinMatriz": []
   },
@@ -45964,12 +45350,12 @@
     "cuadrante": "amarillo",
     "calidad": 74,
     "cuartilCalidad": "Q4",
-    "matriculas": 19,
+    "matriculas": 20,
     "meta": 26,
-    "avanceMeta": 73.08,
-    "avanceMes": 73.08,
+    "avanceMeta": 76.92,
+    "avanceMes": 76.92,
     "cuartilMatriculas": "Q1",
-    "indice": 73.5,
+    "indice": 75.5,
     "tecnicas": 0,
     "evaluaciones": 15
    },
@@ -45996,18 +45382,34 @@
     "cuadrante": "amarillo",
     "calidad": 66,
     "cuartilCalidad": "Q4",
-    "matriculas": 10,
+    "matriculas": 11,
     "meta": 26,
-    "avanceMeta": 38.46,
-    "avanceMes": 38.46,
+    "avanceMeta": 42.31,
+    "avanceMes": 42.31,
     "cuartilMatriculas": "Q1",
-    "indice": 52.2,
+    "indice": 54.2,
     "tecnicas": 0,
     "evaluaciones": 5
    },
    {
-    "asesor": "Melissa Leslie Fernadez Avalos",
+    "asesor": "Betsabeth Alexandra Rojas Palacios",
     "puesto": 5,
+    "sede": "LIMA",
+    "cuadrante": "amarillo",
+    "calidad": 76,
+    "cuartilCalidad": "Q3",
+    "matriculas": 8,
+    "meta": 26,
+    "avanceMeta": 30.77,
+    "avanceMes": 30.77,
+    "cuartilMatriculas": "Q1",
+    "indice": 53.4,
+    "tecnicas": 0,
+    "evaluaciones": 17
+   },
+   {
+    "asesor": "Melissa Leslie Fernadez Avalos",
+    "puesto": 6,
     "sede": "LIMA",
     "cuadrante": "amarillo",
     "calidad": 72,
@@ -46022,24 +45424,24 @@
     "evaluaciones": 14
    },
    {
-    "asesor": "Betsabeth Alexandra Rojas Palacios",
-    "puesto": 6,
+    "asesor": "Orlando Jesus Pintado Sandoval",
+    "puesto": 7,
     "sede": "LIMA",
     "cuadrante": "amarillo",
-    "calidad": 76,
-    "cuartilCalidad": "Q3",
-    "matriculas": 6,
+    "calidad": 72,
+    "cuartilCalidad": "Q4",
+    "matriculas": 8,
     "meta": 26,
-    "avanceMeta": 23.08,
-    "avanceMes": 23.08,
-    "cuartilMatriculas": "Q2",
-    "indice": 49.5,
+    "avanceMeta": 30.77,
+    "avanceMes": 30.77,
+    "cuartilMatriculas": "Q1",
+    "indice": 51.4,
     "tecnicas": 0,
-    "evaluaciones": 17
+    "evaluaciones": 21
    },
    {
     "asesor": "Cecilia Esther Aliaga Lapa",
-    "puesto": 7,
+    "puesto": 8,
     "sede": "HYO",
     "cuadrante": "amarillo",
     "calidad": 76,
@@ -46052,22 +45454,6 @@
     "indice": 49.5,
     "tecnicas": 0,
     "evaluaciones": 5
-   },
-   {
-    "asesor": "Orlando Jesus Pintado Sandoval",
-    "puesto": 8,
-    "sede": "LIMA",
-    "cuadrante": "amarillo",
-    "calidad": 72,
-    "cuartilCalidad": "Q4",
-    "matriculas": 7,
-    "meta": 26,
-    "avanceMeta": 26.92,
-    "avanceMes": 26.92,
-    "cuartilMatriculas": "Q1",
-    "indice": 49.5,
-    "tecnicas": 0,
-    "evaluaciones": 21
    },
    {
     "asesor": "Justyn Flores Solano",
@@ -46144,7 +45530,7 @@
     "meta": 26,
     "avanceMeta": 26.92,
     "avanceMes": 26.92,
-    "cuartilMatriculas": "Q1",
+    "cuartilMatriculas": "Q2",
     "indice": 43.5,
     "tecnicas": 0,
     "evaluaciones": 13
@@ -46250,16 +45636,16 @@
     "puesto": 20,
     "sede": "HYO",
     "cuadrante": "rojo",
-    "calidad": 70,
+    "calidad": 71,
     "cuartilCalidad": "Q4",
     "matriculas": 4,
     "meta": 26,
     "avanceMeta": 15.38,
     "avanceMes": 15.38,
     "cuartilMatriculas": "Q3",
-    "indice": 42.7,
+    "indice": 43.2,
     "tecnicas": 0,
-    "evaluaciones": 19
+    "evaluaciones": 20
    },
    {
     "asesor": "Raul Aaron Manuel Ipanaque Escobar",
@@ -46272,7 +45658,7 @@
     "meta": 26,
     "avanceMeta": 3.85,
     "avanceMes": 3.85,
-    "cuartilMatriculas": "Q3",
+    "cuartilMatriculas": "Q4",
     "indice": 39.4,
     "tecnicas": 0,
     "evaluaciones": 15
@@ -46304,14 +45690,30 @@
     "meta": 26,
     "avanceMeta": 3.85,
     "avanceMes": 3.85,
-    "cuartilMatriculas": "Q3",
+    "cuartilMatriculas": "Q4",
     "indice": 37.9,
     "tecnicas": 0,
     "evaluaciones": 9
    },
    {
-    "asesor": "Rosa Victoria Guzman Bonilla",
+    "asesor": "Jimena del Rosario Vera Osores",
     "puesto": 24,
+    "sede": "HYO",
+    "cuadrante": "rojo",
+    "calidad": 67,
+    "cuartilCalidad": "Q4",
+    "matriculas": 2,
+    "meta": 26,
+    "avanceMeta": 7.69,
+    "avanceMes": 7.69,
+    "cuartilMatriculas": "Q3",
+    "indice": 37.3,
+    "tecnicas": 0,
+    "evaluaciones": 17
+   },
+   {
+    "asesor": "Rosa Victoria Guzman Bonilla",
+    "puesto": 25,
     "sede": "LIMA",
     "cuadrante": "rojo",
     "calidad": 74,
@@ -46327,7 +45729,7 @@
    },
    {
     "asesor": "Patricia Roxana Mercado Zacarias",
-    "puesto": 25,
+    "puesto": 26,
     "sede": "HYO",
     "cuadrante": "rojo",
     "calidad": 65,
@@ -46340,22 +45742,6 @@
     "indice": 36.3,
     "tecnicas": 0,
     "evaluaciones": 9
-   },
-   {
-    "asesor": "Jimena del Rosario Vera Osores",
-    "puesto": 26,
-    "sede": "HYO",
-    "cuadrante": "rojo",
-    "calidad": 67,
-    "cuartilCalidad": "Q4",
-    "matriculas": 1,
-    "meta": 26,
-    "avanceMeta": 3.85,
-    "avanceMes": 3.85,
-    "cuartilMatriculas": "Q3",
-    "indice": 35.4,
-    "tecnicas": 0,
-    "evaluaciones": 16
    }
   ]
  },
@@ -46525,12 +45911,12 @@
    "acumulado": {
     "desde": "02/09/2026",
     "hasta": "23/11/2026",
-    "llamadas": 281,
+    "llamadas": 283,
     "temas": [
      {
       "id": "encuesta",
       "tema": "No deriva a la encuesta de satisfacción",
-      "llamadas": 193,
+      "llamadas": 195,
       "asesores": 25,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -46563,7 +45949,7 @@
      {
       "id": "presentacion",
       "tema": "Presentación tardía / no usa el nombre del prospecto",
-      "llamadas": 179,
+      "llamadas": 181,
       "asesores": 25,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -46725,7 +46111,7 @@
      {
       "id": "indagacion",
       "tema": "Indagación débil: no se conoce la motivación",
-      "llamadas": 65,
+      "llamadas": 67,
       "asesores": 23,
       "nombres": [
        "Ana Maria Padilla Parra",
@@ -46783,7 +46169,7 @@
      {
       "id": "erronea",
       "tema": "Información errónea o confusa",
-      "llamadas": 31,
+      "llamadas": 33,
       "asesores": 19,
       "nombres": [
        "Angel Raul Villanueva Fernandez",
@@ -46849,13 +46235,13 @@
    "ultimos7": {
     "desde": "17/11/2026",
     "hasta": "23/11/2026",
-    "llamadas": 47,
+    "llamadas": 49,
     "temas": [
      {
       "id": "presentacion",
       "tema": "Presentación tardía / no usa el nombre del prospecto",
-      "llamadas": 37,
-      "asesores": 16,
+      "llamadas": 39,
+      "asesores": 17,
       "nombres": [
        "Angelo Jaime Franco Sarmiento",
        "Betsabeth Alexandra Rojas Palacios",
@@ -46863,6 +46249,7 @@
        "Diana Carol Taipe Rojas",
        "Edward Nelson Gonzales Villaneda",
        "Jean Carlos Espinoza Atoc",
+       "Jimena del Rosario Vera Osores",
        "Jorge Luis Valencia Cardenas",
        "Judith Rocio Vila Incaroca",
        "Justyn Flores Solano",
@@ -46878,8 +46265,8 @@
      {
       "id": "encuesta",
       "tema": "No deriva a la encuesta de satisfacción",
-      "llamadas": 35,
-      "asesores": 17,
+      "llamadas": 37,
+      "asesores": 18,
       "nombres": [
        "Angelo Jaime Franco Sarmiento",
        "Betsabeth Alexandra Rojas Palacios",
@@ -46887,6 +46274,7 @@
        "Diana Carol Taipe Rojas",
        "Edward Nelson Gonzales Villaneda",
        "Jean Carlos Espinoza Atoc",
+       "Jimena del Rosario Vera Osores",
        "Jorge Luis Valencia Cardenas",
        "Judith Rocio Vila Incaroca",
        "Justyn Flores Solano",
@@ -46986,11 +46374,12 @@
      {
       "id": "indagacion",
       "tema": "Indagación débil: no se conoce la motivación",
-      "llamadas": 9,
-      "asesores": 8,
+      "llamadas": 11,
+      "asesores": 9,
       "nombres": [
        "Betsabeth Alexandra Rojas Palacios",
        "Edward Nelson Gonzales Villaneda",
+       "Jimena del Rosario Vera Osores",
        "Justyn Flores Solano",
        "Maria Alejandra Pino Contreras",
        "Milagros Torres Santos",
@@ -47016,9 +46405,11 @@
      {
       "id": "erronea",
       "tema": "Información errónea o confusa",
-      "llamadas": 3,
-      "asesores": 3,
+      "llamadas": 5,
+      "asesores": 5,
       "nombres": [
+       "Edward Nelson Gonzales Villaneda",
+       "Jimena del Rosario Vera Osores",
        "Judith Rocio Vila Incaroca",
        "Orlando Jesus Pintado Sandoval",
        "Ruth Alexandra Mauricio Verde"
