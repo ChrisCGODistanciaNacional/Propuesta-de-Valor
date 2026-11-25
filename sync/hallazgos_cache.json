@@ -1,147 +1,132 @@
 {
- "actualizado": "24/11/2026",
+ "actualizado": "25/11/2026",
  "periodo": {
-  "desde": "18/11/2026",
-  "hasta": "24/11/2026"
+  "desde": "19/11/2026",
+  "hasta": "25/11/2026"
  },
  "base": {
-  "llamadas": 36,
-  "asesores": 15
+  "llamadas": 52,
+  "asesores": 16
  },
- "titular": "Sigue lo mismo arriba: presentación sin nombre ni Unidad CIE (32 llamadas) y cierre sin encuesta ni día y hora (24). Lo nuevo y grave: dos llamadas cortadas a propósito y objeciones económicas aceptadas sin indagar. Lo bueno: Nexus usado para resolver un miedo concreto y un «lo converso con mi esposo» bien manejado.",
+ "titular": "Lo más repetido sigue siendo el protocolo: 31 llamadas sin presentación completa y 25 sin encuesta. Sube lo grave: 14 llamadas cortadas o cerradas de golpe (4 a propósito) y 8 con convalidación o duración prometidas sin evaluación. Lo bueno: alternativas para rendir la evaluación sin laptop.",
  "items": [
   {
-   "tipo": "mala_costumbre",
-   "titulo": "Cierre sin protocolo ni día y hora",
-   "queVimos": "La llamada termina sin encuesta, sin nombre ni Unidad CIE, y el seguimiento queda abierto («te escribo», «me avisas») en vez de una fecha y hora para la evaluación.",
-   "veces": "24 llamadas sin encuesta · 24 sin día y hora · 15 asesores · 26.ª semana seguida",
+   "tipo": "mala_practica",
+   "titulo": "Llamadas cortadas o cerradas de golpe",
+   "queVimos": "Calidad marcó llamadas que terminan antes de cerrar la atención: en 4 el asesor finalizó la comunicación a propósito y en el resto la llamada se cortó o se cerró de forma abrupta, sin siguiente paso ni despedida.",
+   "veces": "14 llamadas · 10 asesores (4 cortadas a propósito) · 2.ª semana seguida",
    "asesores": [
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
     "Edward Nelson Gonzales Villaneda",
+    "Jimena del Rosario Vera Osores",
+    "Justyn Flores Solano",
+    "Maria Alejandra Pino Contreras",
+    "Melissa Leslie Fernadez Avalos",
+    "Orlando Jesus Pintado Sandoval",
+    "Raul Aaron Manuel Ipanaque Escobar",
+    "Ruth Alexandra Mauricio Verde"
+   ],
+   "ejemplo": "«Evita finalizar intencionalmente la llamada. Mantén la comunicación hasta completar adecuadamente la atención» (calidad, 25/11).",
+   "porQueImporta": "Pasó de 2 a 4 cortes a propósito en una semana. Es una falta grave: el prospecto ya contactado queda sin respuesta, se pierde la oportunidad y daña la imagen de la universidad.",
+   "accion": "Conversación uno a uno con los 4 casos a propósito esta semana. Regla para todos: si la llamada no avanza, se cierra igual con protocolo («Te dejo la información en este WhatsApp; ¿tu evaluación la rindes hoy o mañana?», nombre, Unidad CIE y encuesta). Si se cae por señal, se devuelve la llamada en el momento.",
+   "tecnica": null
+  },
+  {
+   "tipo": "mala_practica",
+   "titulo": "Prometer convalidación o duración sin evaluación",
+   "queVimos": "Se dice cuántos cursos se van a convalidar, un porcentaje o que la carrera se termina en tres años y medio con ciclos de verano, sin que exista la evaluación académica de los sílabos.",
+   "veces": "8 llamadas · 5 asesores",
+   "asesores": [
+    "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
     "Jimena del Rosario Vera Osores",
     "Jorge Luis Valencia Cardenas",
-    "Judith Rocio Vila Incaroca",
+    "Milagros Torres Santos"
+   ],
+   "ejemplo": "«Evita generar expectativas sobre la cantidad de cursos que podrían reconocerse o sobre un porcentaje específico sin contar con una evaluación académica» (calidad, 25/11).",
+   "porQueImporta": "Si el resultado real es menor, el estudiante se siente engañado: reclamos, retiro y mala referencia. Además genera observaciones de calidad por información incorrecta.",
+   "accion": "Frase fija: «Con tu récord de notas te hago una simulación referencial; el número exacto de cursos lo define la evaluación de tus sílabos». Para la duración: «Puedes adelantar cursos en verano, según la programación y tus prerrequisitos».",
+   "tecnica": null
+  },
+  {
+   "tipo": "mala_practica",
+   "titulo": "Descuento por delante y objeción sin indagar",
+   "queVimos": "Cuando el prospecto dice que no tiene presupuesto, que espera un desembolso o que quiere empezar después, se insiste solo con el descuento o se acepta la fecha sin preguntar. En 2 llamadas se ofreció el 25 % territorial sin que hubiera objeción económica.",
+   "veces": "10 llamadas · 6 asesores · 2.ª semana seguida",
+   "asesores": [
+    "Betsabeth Alexandra Rojas Palacios",
+    "Edward Nelson Gonzales Villaneda",
+    "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
+    "Melissa Leslie Fernadez Avalos",
+    "Raul Aaron Manuel Ipanaque Escobar"
+   ],
+   "ejemplo": "«Utiliza los descuentos como herramientas de negociación consultiva y no como argumentos iniciales de venta» (calidad, 25/11).",
+   "porQueImporta": "El descuento dado al inicio deja de ser argumento cuando aparece la objeción real, y sin indagar la venta se va a diciembre o a otra universidad.",
+   "accion": "Primero preguntar: «¿Qué es lo que más te hace dudar: el monto mensual o la fecha de inicio? ¿Cuánto te acomodaría invertir al mes?». Después, Forma C o D del guion: hoy solo va la admisión y la primera cuota es 24 horas después de la evaluación. Cerrar con «¿la rindes hoy o mañana?».",
+   "tecnica": "tec_14"
+  },
+  {
+   "tipo": "mala_costumbre",
+   "titulo": "Protocolo incompleto al abrir y al cerrar",
+   "queVimos": "Al inicio falta el nombre del asesor o la Unidad CIE y se usa poco el nombre del prospecto; al final no hay encuesta y el seguimiento queda abierto o a la espera de que el prospecto confirme, en vez de una fecha para la evaluación.",
+   "veces": "31 llamadas sin presentación completa · 25 sin encuesta · 18 sin día y hora · 14 asesores · 27.ª semana seguida (presentación: 22.ª)",
+   "asesores": [
+    "Angelo Jaime Franco Sarmiento",
+    "Betsabeth Alexandra Rojas Palacios",
+    "Diana Carol Taipe Rojas",
+    "Edward Nelson Gonzales Villaneda",
+    "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
+    "Jorge Luis Valencia Cardenas",
     "Justyn Flores Solano",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Milagros Torres Santos",
     "Orlando Jesus Pintado Sandoval",
-    "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Establece un seguimiento con fecha y hora específicas y finaliza cumpliendo el protocolo de cierre, incluyendo la encuesta de satisfacción» (calidad, 24/11).",
-   "porQueImporta": "Sin día y hora el prospecto se enfría y la llamada siguiente empieza de cero; sin protocolo se pierde puntaje en Cerrar (23 % del score).",
-   "accion": "Antes de despedirte: «Entonces tu evaluación queda para mañana a las 7 p. m., desde tu laptop con cámara. Soy [nombre], de la Unidad CIE; te escribo a este WhatsApp. Te paso a una breve encuesta».",
+   "ejemplo": "«Establece una fecha y hora específica para el seguimiento, especialmente cuando quedas a la espera de documentación como el récord de notas» (calidad, 25/11).",
+   "porQueImporta": "Son puntos fáciles que se pierden en cada evaluación, y sin fecha el prospecto se enfría y la siguiente llamada empieza de cero.",
+   "accion": "Apertura: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental». Cierre: «¿Tu evaluación la rindes hoy o mañana, desde tu laptop con cámara? Soy [nombre], de la Unidad CIE; te dejo todo en este WhatsApp. Te paso a una breve encuesta».",
    "tecnica": "tec_16"
   },
   {
-   "tipo": "mala_costumbre",
-   "titulo": "Presentación incompleta al iniciar",
-   "queVimos": "El asesor saluda sin decir su nombre o sin la Unidad CIE, y usa poco el nombre del prospecto durante la llamada.",
-   "veces": "32 llamadas · 15 asesores · 21.ª semana seguida",
+   "tipo": "buena_practica",
+   "titulo": "Alternativa para rendir la evaluación sin laptop",
+   "queVimos": "Ante prospectos sin computadora o sin cobertura, se buscó cómo pudieran rendir la evaluación (cabina de internet, ir al campus) en lugar de dejar la venta para después.",
+   "veces": "3 llamadas · María Alejandra (19/11), Betsabeth (20/11) y Jean Carlos (20/11)",
    "asesores": [
-    "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
-    "Jorge Luis Valencia Cardenas",
-    "Judith Rocio Vila Incaroca",
-    "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
-    "Melissa Leslie Fernadez Avalos",
-    "Milagros Torres Santos",
-    "Orlando Jesus Pintado Sandoval",
-    "Patricia Roxana Mercado Zacarias",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Ruth Alexandra Mauricio Verde"
+    "Maria Alejandra Pino Contreras"
    ],
-   "ejemplo": "«Recuerda mencionar siempre la Unidad CIE durante tu presentación para reforzar la identificación institucional» (calidad, 23/11).",
-   "porQueImporta": "Es lo primero que escucha el prospecto: sin nombre ni institución baja la confianza y el paso 1 pierde puntos fáciles.",
-   "accion": "Primera frase fija: «Hola, [nombre del prospecto], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental, te llamo por tu interés en [carrera]».",
+   "ejemplo": "«Identificas la dificultad que presenta al no contar con laptop y buscas una alternativa para que pueda rendir su evaluación» (calidad, 19/11).",
+   "porQueImporta": "Quita una barrera real del paso que más se traba (la evaluación con cámara) y mantiene viva una venta que se habría perdido.",
+   "accion": "Llevarlo al cierre en la misma llamada: «Si no tienes laptop, la puedes rendir desde una cabina con cámara. ¿Te queda más cerca hoy en la tarde o mañana?».",
    "tecnica": null
   },
   {
-   "tipo": "mala_practica",
-   "titulo": "Aceptar la objeción económica sin indagar",
-   "queVimos": "Cuando el prospecto dice que no tiene dinero, que paga después de la quincena o que su pensión actual es alta, se acepta y se deja para después, o se insiste solo con el descuento, sin preguntar cuánto puede invertir ni desde cuándo.",
-   "veces": "6 llamadas · 5 asesores",
+   "tipo": "buena_practica",
+   "titulo": "El récord de notas como primer compromiso",
+   "queVimos": "En prospectos de convalidación se consiguió que enviaran su récord de notas o certificado por WhatsApp para revisar su caso, con un plazo corto.",
+   "veces": "3 llamadas · Betsabeth (24/11), Orlando (24/11) y Jean Carlos (25/11)",
    "asesores": [
     "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
-    "Jorge Luis Valencia Cardenas",
-    "Raul Aaron Manuel Ipanaque Escobar"
-   ],
-   "ejemplo": "«Evita cerrar la conversación únicamente aceptando que vuelva a consultar en esa fecha. Profundiza en su situación, consulta cuánto podría invertir» (calidad, 24/11).",
-   "porQueImporta": "La objeción económica es la más frecuente en noviembre; si no se indaga, se pierde el beneficio de campaña y la venta se va a diciembre o a otra universidad.",
-   "accion": "Preguntar antes de responder: «¿Cuánto te acomodaría invertir al mes y desde qué fecha?». Luego explicar que hoy solo se paga la admisión y la primera cuota va 24 horas después de la evaluación (guion de inversión, Forma D).",
-   "tecnica": "tec_14"
-  },
-  {
-   "tipo": "mala_practica",
-   "titulo": "Cortar la llamada a propósito",
-   "queVimos": "Calidad detectó llamadas finalizadas intencionalmente por el asesor antes de cerrar la atención.",
-   "veces": "2 llamadas · 2 asesores",
-   "asesores": [
-    "Angelo Jaime Franco Sarmiento",
-    "Raul Aaron Manuel Ipanaque Escobar"
-   ],
-   "ejemplo": "«Evita finalizar intencionalmente la comunicación. Es importante mantener una gestión adecuada hasta que corresponda cerrar la atención» (calidad, 24/11).",
-   "porQueImporta": "Es una falta grave de protocolo: deja al prospecto sin respuesta, daña la imagen de la universidad y se pierde una oportunidad ya contactada.",
-   "accion": "Conversarlo uno a uno esta semana. Si la llamada no avanza, se cierra con protocolo: siguiente paso con día y hora, nombre, WhatsApp y encuesta.",
-   "tecnica": null
-  },
-  {
-   "tipo": "mania",
-   "titulo": "Frases que suenan a impaciencia o presión",
-   "queVimos": "Se repiten expresiones como «ya te mencioné», «es lo mismo», muletillas («en sí», «genial») o frases que el prospecto percibe como presión cuando muestra preocupación.",
-   "veces": "5 llamadas · 4 asesores · 3.ª semana seguida",
-   "asesores": [
-    "Jean Carlos Espinoza Atoc",
-    "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
     "Orlando Jesus Pintado Sandoval"
    ],
-   "ejemplo": "«Evita expresiones como «ya te mencioné», ya que pueden transmitir impaciencia o generar una percepción negativa en el prospecto» (calidad, 18/11).",
-   "porQueImporta": "El prospecto deja de preguntar y se cierra; una duda sin resolver termina en «lo voy a pensar».",
-   "accion": "Reemplazar por: «Buena pregunta, te lo explico de otra forma…» o «Entiendo que te preocupe, veámoslo juntos». Escuchar una grabación propia por semana para detectar la muletilla.",
-   "tecnica": null
-  },
-  {
-   "tipo": "buena_practica",
-   "titulo": "Nexus para resolver un miedo concreto",
-   "queVimos": "Ante el temor a no manejar herramientas digitales, se presentó Nexus como la forma de familiarizarse con el entorno virtual antes de empezar clases.",
-   "veces": "2 llamadas · María Alejandra (24/11) y Patricia (18/11) · 2.ª semana seguida",
-   "asesores": [
-    "Maria Alejandra Pino Contreras",
-    "Patricia Roxana Mercado Zacarias"
-   ],
-   "ejemplo": "«Identificaste una preocupación importante de la prospecto relacionada con el manejo de herramientas digitales y presentaste el ciclo Nexus como una alternativa» (calidad, 24/11).",
-   "porQueImporta": "Convierte un beneficio en la respuesta a una objeción real, no en un dato más de la lista.",
-   "accion": "Usarlo así: «Si te preocupa lo virtual, con Nexus empiezas un curso antes y llegas a marzo ya acostumbrada al campus, sin costo por matricularte».",
-   "tecnica": "tec_08"
-  },
-  {
-   "tipo": "buena_practica",
-   "titulo": "«Lo converso con mi esposo» sin presionar",
-   "queVimos": "Se entendió que la prospecta debía conversarlo en casa, se explicaron las alternativas de pago sin presionar y se acordó una hora concreta de respuesta.",
-   "veces": "1 llamada · Melissa (24/11)",
-   "asesores": [
-    "Melissa Leslie Fernadez Avalos"
-   ],
-   "ejemplo": "«Explicaste las alternativas de pago sin presionarla y conseguiste un compromiso de respuesta» (calidad, 24/11).",
-   "porQueImporta": "Mantiene el interés y deja un compromiso medible; el siguiente nivel es incluir a la pareja en la misma llamada o agendar la evaluación.",
-   "accion": "Sumar: «¿Puedes ponerlo en altavoz un minuto? Así le explico yo lo de la primera cuota y lo dejan decidido hoy».",
-   "tecnica": "tec_14"
+   "ejemplo": "«Consigues el compromiso de Elizabeth para enviarte su récord de notas en un par de horas» (calidad, 24/11).",
+   "porQueImporta": "Es un «sí» pequeño y medible que mantiene el interés; el siguiente nivel es amarrarlo a la fecha de la evaluación.",
+   "accion": "Sumar: «Apenas me envíes tu récord te hago la simulación referencial. Mientras tanto, ¿rindes tu evaluación hoy o mañana para no perder el beneficio?».",
+   "tecnica": "tec_10"
   }
  ],
  "acciones": [
-  "Conversar uno a uno los dos casos de llamada cortada y recordar que toda llamada se cierra con protocolo.",
-  "Objeción económica: primero preguntar cuánto y desde cuándo puede invertir; después explicar que hoy solo va la admisión (Forma D del guion).",
-  "Toda llamada termina con día y hora de la evaluación, nombre, Unidad CIE, WhatsApp y encuesta."
+  "Conversar uno a uno los 4 casos de llamada cortada a propósito: toda llamada se cierra con protocolo, aunque no avance.",
+  "Convalidación: nunca dar número de cursos ni duración; usar «simulación referencial, el número exacto lo da la evaluación de tus sílabos».",
+  "Objeción económica: primero preguntar cuánto y desde cuándo puede invertir, sin adelantar descuentos; luego Forma C o D y evaluación hoy o mañana."
  ]
 }

@@ -23476,5 +23476,551 @@
     "evidencia": "Además de pedir documentos por WhatsApp, concreta el siguiente paso del proceso."
    }
   }
+ },
+ "6e7081fb1fb3": {
+  "asesor": "Diana Carol Taipe Rojas",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Realizaste una presentación adecuada e identificaste el motivo de contacto."
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el uso del nombre del prospecto durante la conversación."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Consultaste sobre la formación técnica y experiencia laboral del prospecto."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus motivaciones, objetivos profesionales y razones para continuar estudiando."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Explora las expectativas del prospecto y cómo la carrera contribuye a sus objetivos."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Presentaste certificaciones progresivas, docentes internacionales, laboratorios y simuladores virtuales."
+   },
+   "paso3_3": {
+    "estado": "ok",
+    "evidencia": "Presentaste diferenciales como las certificaciones progresivas y simuladores virtuales."
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Gestionaste la objeción económica buscando alternativas para que evalúe su continuidad."
+   },
+   "paso3_6": {
+    "estado": "ok",
+    "evidencia": "Desarrollaste cierres parciales durante la conversación."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "242469e40c29": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Lograste presentarte de manera adecuada y generar un espacio de confianza."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Usaste el nombre de la prospecto durante la interacción."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Preguntaste por los antecedentes académicos y la situación de Lucy."
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "ok",
+    "evidencia": "Identificaste que busca un título universitario y mejorar sus oportunidades laborales."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Explora su capacidad de pago antes de ofrecer descuentos."
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ofreciste el 25 % sin que manifestara problemas económicos."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Al finalizar menciona tu nombre, la Unidad CIE y ofrece la encuesta."
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Concretaste un seguimiento para las 5:00 p. m."
+   }
+  }
+ },
+ "22fd4b5180d1": {
+  "asesor": "Jorge Luis Valencia Cardenas",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Realizaste una presentación adecuada."
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre del prospecto en diferentes momentos de la conversación."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Consultaste su formación en Biología, universidad de procedencia y experiencia."
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones y expectativas del prospecto."
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conocer qué objetivo profesional busca alcanzar con Educación."
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Destacaste horarios flexibles, clases grabadas, bloques y adelanto de cursos."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Presenta alternativas concretas y valida si responden a su necesidad."
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante la preocupación por la duración, profundiza en su disponibilidad de tiempo."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa el cierre mencionando tu nombre y la Unidad CIE."
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Concretaste seguimiento para el viernes desde las 5:00 p. m."
+   }
+  }
+ },
+ "a9ea6f6d2d41": {
+  "asesor": "Jimena del Rosario Vera Osores",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Mantén una presentación clara al inicio: quién contacta y de qué institución."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Usaste el nombre de Janet y su interés por retomar estudios."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Preguntaste por sus antecedentes académicos para comprender su situación."
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza cuándo estaría disponible, pues llevaba otro curso hasta diciembre."
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Explicaste la virtualidad, clases grabadas, horarios y frecuencia semanal."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Trabaja la objeción de no poder iniciar inmediatamente y genera compromisos."
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Procura realizar al menos dos cierres parciales."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Al finalizar menciona tu nombre, la Unidad CIE y ofrece la encuesta."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece fecha y hora específica para el seguimiento del récord de notas."
+   }
+  }
+ },
+ "57a4f60eb86e": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Usaste la información académica que el prospecto ya había compartido."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Presentaste clases grabadas, plataforma virtual y acompañamiento académico."
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Gestionaste su inquietud por horarios laborales en Inglaterra con alternativas."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Menciona nuevamente tu nombre e identifica a Unidad CIE antes de finalizar."
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "568bbafd16e0": {
+  "asesor": "Justyn Flores Solano",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Lograste una apertura adecuada, presentándote correctamente."
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Identificaste su interés por Administración y Finanzas."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las preguntas filtro para conocer mejor su perfil."
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Ante la comparación con UTP, profundiza en qué aspectos está evaluando."
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Gestionaste la inquietud comercial y ofreciste enviar costos por WhatsApp."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Cumple el cierre indicando tu nombre y la Unidad CIE."
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "43f8e65e0967": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Al finalizar usaste una identificación distinta a la de tu presentación inicial."
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Mencionaste un nombre diferente al de María."
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Consultaste universidad de procedencia, carrera y documentación disponible."
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste el interés de María por continuar sus estudios universitarios."
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Identifica primero una necesidad económica antes de presentar descuentos."
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ofreciste el 25 % territorial sin que manifestara dificultades económicas."
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Menciona correctamente tu nombre y la Unidad CIE antes de finalizar."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda fecha y hora concreta para retomar el contacto."
+   }
+  }
  }
 }
