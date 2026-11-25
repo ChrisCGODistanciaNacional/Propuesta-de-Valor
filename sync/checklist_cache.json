@@ -23398,5 +23398,83 @@
     "evidencia": "Establece fecha y hora específica en lugar de dejar el seguimiento abierto"
    }
   }
+ },
+ "7ccb415ebac4": {
+  "asesor": "Orlando Jesus Pintado Sandoval",
+  "fecha": "24/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar con una presentación completa: tu nombre y Universidad Continental."
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Realiza preguntas filtro sobre estudios previos, situación académica y objetivos."
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Reconoces sus dificultades para obtener el historial de notas por cambios en la plataforma."
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Explica alternativas para sus documentos y valida si responden a su necesidad."
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece los cierres parciales para conseguir compromisos concretos durante la llamada."
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa el protocolo de cierre indicando tu nombre y la Unidad CIE."
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Además de pedir documentos por WhatsApp, concreta el siguiente paso del proceso."
+   }
+  }
  }
 }
