@@ -24412,5 +24412,785 @@
     "evidencia": "Establece seguimiento con fecha y hora para verificar la documentación"
    }
   }
+ },
+ "cc97b7d5eb9b": {
+  "asesor": "Milagros Torres Santos",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte desde el inicio con tu nombre y el de la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Procura utilizar su nombre al menos dos veces; confirma la carrera que desea estudiar"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Realiza las preguntas filtro para confirmar la carrera y modalidad que desea estudiar"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones de Dina para retomar sus estudios"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las razones por las que interrumpió su formación"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Integra al menos dos diferenciales institucionales relacionados con sus necesidades"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza al menos dos cierres parciales para obtener compromisos concretos de avance"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda despedirte con tu nombre y el de la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda una fecha y hora específica de seguimiento para revisar los documentos"
+   }
+  }
+ },
+ "a1204e15bf5b": {
+  "asesor": "Lisette Valeria Blanco Chuco",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Mencionaste el nombre de la prospecto; identificaste interés en convalidar Contabilidad"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Indagaste sobre su formación, año de culminación y situación laboral"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Continúa profundizando en el perfil, identificando sus expectativas y condiciones actuales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Indaga sobre la capacidad económica del prospecto antes de ofrecer descuentos"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "ok",
+    "evidencia": "Generaste oportunidades de avance consultando si evaluaría iniciar en esta etapa"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el protocolo de cierre mencionando tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece seguimientos con fecha y hora específicas"
+   }
+  }
+ },
+ "2d924aa4acf2": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te identificas con tu nombre y Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Confirmas que Mercy solicitó información sobre Psicología y utilizas su nombre"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Confirma desde los primeros minutos la carrera y modalidad de interés"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conoce las expectativas de Mercy respecto a su formación profesional"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en el presupuesto disponible de Mercy"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Integra al menos dos diferenciales institucionales más allá del precio"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el manejo de objeciones frente a otras universidades con argumentos académicos"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza al menos dos cierres parciales; hiciste uno para validar presupuesto"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda despedirte mencionando tu nombre y el de la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Acuerdas seguimiento el sábado a las 5:00 p. m. y dejas abierto el canal"
+   }
+  }
+ },
+ "a3965ecc409f": {
+  "asesor": "Jorge Luis Valencia Cardenas",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Buena presentación inicial indicando tu nombre y el de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Realiza preguntas de sondeo: ¿Qué te motiva a estudiar esta carrera ahora?"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Pregunta qué busca lograr profesionalmente"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza los beneficios y atributos de la UC como argumentos persuasivos"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Conecta argumentos con lo que busca resolver, validando su interés en cada punto"
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Faltó aplicar cierres parciales a lo largo de la llamada"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda mencionar siempre tu nombre antes de transferir la llamada"
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "a792f02fb1c7": {
+  "asesor": "Jimena del Rosario Vera Osores",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar presentándote con tu nombre y el de la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de Maribel y confirmaste interés en Contabilidad y Finanzas"
+   },
+   "paso1_3": {
+    "estado": "pendiente",
+    "evidencia": "Atributos UC (SUNEDU, experiencia) se mencionaron tarde; preséntalos antes de costos"
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera y validaste si los horarios se acomodaban a su disponibilidad"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Consultaste su actividad laboral, pero faltó profundizar en sus motivaciones"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Pregunta qué busca conseguir profesionalmente con esta carrera"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Comunica nuestros diferenciales desde el inicio para generar valor"
+   },
+   "paso3_3": {
+    "estado": "ok",
+    "evidencia": "Explicaste beneficios de la modalidad a distancia y el taller de Excel certificado"
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Al presentar beneficios, pregunta: ¿Qué le parece este beneficio?"
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "No realizaste cierres parciales que condujeran a la preinscripción"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza la despedida mencionando tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Estableciste compromiso de seguimiento para el día siguiente a las 5:00 p. m."
+   }
+  }
+ },
+ "8c092a6da12a": {
+  "asesor": "Betsabeth Alexandra Rojas Palacios",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar cada llamada identificándote con tu nombre"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Usaste su nombre, pero mencionaste Administración cuando su interés era Ingeniería Industrial"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Valida correctamente la carrera de interés antes de desarrollar la conversación"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Explora primero su situación y disponibilidad ante sus motivos laborales"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las necesidades y expectativas del prospecto"
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Identifica qué factores están condicionando su decisión"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece la negociación consultiva e identifica sus objeciones sin presionar"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora al menos dos cierres parciales para validar el interés"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Antes de finalizar menciona tu nombre; ofrece enviar información por WhatsApp"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece una fecha y hora específica para retomar el contacto"
+   }
+  }
+ },
+ "f11bcedb37b0": {
+  "asesor": "Maria Alejandra Pino Contreras",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Usaste el nombre de la prospecto y confirmaste interés en Ingeniería de Sistemas"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste la carrera e indagaste situación académica, ubicación y horarios laborales"
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Indagaste sobre la situación académica del estudiante y sus horarios laborales"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en la capacidad económica; explora si la familia puede asumir los pagos"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Primero identifica la objeción económica y la capacidad de pago antes del descuento"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Confirma que la información esté siendo comprendida y valida dudas antes de avanzar"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el cierre institucional incluyendo tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Concretaste seguimiento para el día siguiente a las 10:00 a. m."
+   }
+  }
+ },
+ "25ff42ed5c46": {
+  "asesor": "Angelo Jaime Franco Sarmiento",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre del prospecto al menos dos veces durante la llamada"
+   },
+   "paso1_3": {
+    "estado": "pendiente",
+    "evidencia": "Fortalece la presentación de la propuesta de valor"
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Consultaste sobre su formación profesional y las carreras de su interés"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Menciona al menos dos diferenciales de la Universidad"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Gestiona las objeciones mediante una negociación consultiva"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora al menos dos cierres parciales para validar su interés"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Antes de finalizar, menciona correctamente tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece fecha y hora específicas, evitando expresiones generales como «mañana»"
+   }
+  }
+ },
+ "8e8a6ba4363a": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecto e indagaste su carrera anterior"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Explora primero qué espera conseguir antes de orientar la decisión"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora al menos dos cierres parciales para validar su interés"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Cumple el protocolo de cierre: menciona tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Estableciste un horario específico para retomar el contacto a las 4:00 p. m."
+   }
+  }
+ },
+ "760f7ac69100": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Te identificas como asesor de Universidad Continental; incorpora la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizas su nombre durante la interacción, favoreciendo una atención personalizada"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Realiza las preguntas filtro para confirmar la carrera y modalidad de interés"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Exploras su experiencia laboral; profundiza en sus motivaciones profesionales"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Planteas alternativa al traslado; profundiza en presupuesto y documentación"
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en su disponibilidad económica"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "ok",
+    "evidencia": "Presentas beneficios de la modalidad Distancia: clases grabadas y flexibilidad de horarios"
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza al menos dos cierres parciales para obtener compromisos concretos"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda despedirte con tu nombre y el de la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda una fecha y hora específica para retomar el contacto"
+   }
+  }
  }
 }
