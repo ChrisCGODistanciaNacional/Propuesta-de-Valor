@@ -24022,5 +24022,395 @@
     "evidencia": "Acuerda fecha y hora concreta para retomar el contacto."
    }
   }
+ },
+ "af25b7a22735": {
+  "asesor": "Milagros Torres Santos",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte desde el inicio con tu nombre y la Unidad CIE"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Procura usar el nombre de Dina al menos dos veces"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Realiza las preguntas filtro para confirmar carrera y modalidad que desea estudiar"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones de Dina para retomar sus estudios"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las razones por las que interrumpió su formación"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Integra al menos dos diferenciales institucionales relacionados con sus necesidades"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza al menos dos cierres parciales con compromisos concretos de avance"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Comunicas tu nombre antes de finalizar y ofreces continuar por WhatsApp"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda fecha y hora de seguimiento para revisar los documentos"
+   }
+  }
+ },
+ "f8b361754b0c": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te identificas con tu nombre y Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Confirmas que Mercy solicitó información sobre Psicología; usas su nombre"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Confirma desde los primeros minutos la carrera y modalidad de interés"
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conoce las expectativas de Mercy respecto a su formación profesional"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en el presupuesto disponible de Mercy"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Integra al menos dos diferenciales institucionales más allá del precio"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el manejo de objeciones frente a otras universidades con argumentos académicos"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza al menos dos cierres parciales hacia el proceso de admisión"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Acuerdas seguimiento el sábado a las 5:00 p. m.; dejas abierto el canal"
+   }
+  }
+ },
+ "9a4611f0b5fd": {
+  "asesor": "Melissa Leslie Fernadez Avalos",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Explicaste los pasos de admisión, convalidación y características de la evaluación"
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Presentaste clases grabadas, acceso a plataforma y acompañamiento de asesor virtual"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Orientaste cómo compatibilizar estudios con su trabajo en Inglaterra"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Antes de finalizar, menciona correctamente tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece fecha y hora concreta para retomar el contacto"
+   }
+  }
+ },
+ "da8dcc7294ae": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te identificas como asesor educativo de Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Haces referencia a la solicitud de Yesenia y usas su nombre"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "pendiente",
+    "evidencia": "Realiza las preguntas filtro para confirmar carrera y modalidad de interés"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en las motivaciones profesionales de Yesenia"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Exploras la disponibilidad de documentación académica y su experiencia laboral"
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en su disponibilidad económica"
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Presentas clases grabadas y flexibilidad de horarios según sus responsabilidades"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza al menos dos cierres parciales con compromisos concretos"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "ok",
+    "evidencia": "Mencionas el envío de información académica y económica por WhatsApp"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Acuerda fecha y hora específica para retomar el contacto"
+   }
+  }
+ },
+ "ce30a133a7ab": {
+  "asesor": "Ruth Alexandra Mauricio Verde",
+  "fecha": "25/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Identificaste el perfil de Luz Ester y su interés en Administración y Marketing"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Brindaste alternativas ante la dificultad de conseguir sílabos antiguos"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "Explica el proceso de admisión y los pasos para continuar con su evaluación"
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Presentaste clases dos o tres veces por semana y sesiones grabadas"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece seguimiento con fecha y hora para verificar la documentación"
+   }
+  }
  }
 }
