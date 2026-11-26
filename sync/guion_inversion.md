@@ -1,3 +1,5 @@
+> ⏸️ **EN STAND-BY desde el 26/11/2026 (Christopher):** no usar este guion para las conversaciones de ejemplo. Ningún ejemplo explica el precio; se motiva con ganchos (Ciclo Nexus, Taller de Excel certificado, Taller de Claude) y con que hay descuentos vigentes para decidir en la misma llamada. Se conserva solo como referencia hasta que Christopher lo reactive (como máximo UN ejemplo de precio).
+
 # Guion de inversión (cómo la explica el supervisor en llamada)
 
 Fuente: Christopher Huamán, 02/11/2026. Es el MODELO para las conversaciones de ejemplo cuando calidad

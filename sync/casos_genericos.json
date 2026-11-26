@@ -1,5 +1,5 @@
 {
- "_nota": "Situaciones frecuentes por etapa (se muestran cuando la etapa está < 75 % y calidad no dejó observación). 5 opciones: opción 1 en dialogo/speech/porQue/titulo y 4 en variantes; grupo 'resolver' (1–3: formas de resolver lo frecuente) y 'cerrar' (4–5: cómo continuar o cerrar la etapa).",
+ "_nota": "Situaciones frecuentes por etapa (se muestran cuando la etapa está < 75 % y calidad no dejó observación). 5 opciones: opción 1 en dialogo/speech/porQue/titulo y 4 en variantes; grupo 'resolver' (1–3: formas de resolver lo frecuente) y 'cerrar' (4–5: cómo continuar o cerrar la etapa). STAND-BY 26/11/2026 (Christopher): ninguna opción explica el precio; se motiva con ganchos y descuentos vigentes para decidir en la misma llamada.",
  "paso1": {
   "tecId": "tec_05",
   "titulo": "Presentarte y pedir dos minutos",
@@ -377,124 +377,116 @@
   "grupo": "resolver"
  },
  "paso3": {
-  "tecId": "tec_10",
-  "titulo": "De las cuotas hacia arriba",
-  "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es explicar la inversión de corrido, sin desglosar la primera cuota ni validar que el prospecto va entendiendo.",
+  "tecId": "tec_06",
+  "titulo": "Usar los ganchos para decidir hoy",
+  "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es no usar los beneficios vigentes (descuento, Ciclo Nexus, Taller de Excel) para que el prospecto decida en la misma llamada.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "¿Y cuánto es al mes?"
+    "texto": "Suena bien, pero ¿qué gano si me inscribo ahora y no el otro mes?"
    },
    {
     "quien": "asesor",
-    "texto": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?"
+    "texto": "Buena pregunta, [nombre]. Si te inscribes ahora entras al Ciclo Nexus: desde diciembre adelantas un curso de tu primer ciclo, una clase por semana en la noche. ¿Te sirve llegar a marzo con un curso avanzado?"
    },
    {
     "quien": "cliente",
-    "texto": "Ya. ¿Y la primera cuota también es así?"
+    "texto": "Sí, eso me ayudaría."
    },
    {
     "quien": "asesor",
-    "texto": "La primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?"
+    "texto": "Y además, solo por matricularte, te registro sin costo en el Taller de Excel certificado. Esos regalos y el descuento en la matrícula son de esta campaña."
    },
    {
     "quien": "cliente",
-    "texto": "Sí, ¿y con el descuento?"
+    "texto": "¿Hasta cuándo es?"
    },
    {
     "quien": "asesor",
-    "texto": "Hoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?"
+    "texto": "Hasta el cierre de la campaña vigente [confirma la fecha en la Biblioteca]. Por eso te propongo asegurarlo hoy con tu evaluación de admisión: es virtual, desde una laptop o computadora con cámara. ¿La rindes hoy o mañana?"
    },
    {
     "quien": "cliente",
-    "texto": "Ah ya, eso sí cambia."
+    "texto": "Mañana."
    },
    {
     "quien": "asesor",
-    "texto": "Y las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es."
+    "texto": "Perfecto, te dejo agendado para mañana y te mando los pasos por WhatsApp."
    }
   ],
-  "speech": "[nombre], la cuota de [carrera] normalmente es S/560. Hoy, con el 10 % de descuento en cuotas, te queda en S/504, y ese descuento lo tienes toda la carrera. ¿Vamos bien?\n\nLa primera es la única distinta, porque junta cuatro cosas: tus créditos, la matrícula de S/250, el seguro y el examen médico. Normalmente sería S/876. ¿Hasta ahí claro?\n\nHoy la matrícula te sale gratis y los créditos ya traen el 10 %, así que en lugar de S/876 pagas S/570, y recién 24 horas después de tu evaluación. ¿Cómo lo ves?\n\nY las otras cuatro cuotas son desde abril, de S/504. Sumando, este ciclo te ahorras S/530.\n\n¿Con esto queda resuelto lo del monto? Entonces el siguiente paso es tu evaluación de admisión, te cuento cómo es.",
-  "porQue": "Una cifra por idea y una validación distinta después de cada bloque: el prospecto dice «sí» tres veces antes de llegar al ahorro, y el cierre parcial abre el proceso de admisión. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
+  "speech": "Buena pregunta, [nombre]. Si te inscribes ahora entras al Ciclo Nexus: desde diciembre adelantas un curso de tu primer ciclo, una clase por semana en la noche. ¿Te sirve llegar a marzo con un curso avanzado?\n\nY además, solo por matricularte, te registro sin costo en el Taller de Excel certificado. Esos regalos y el descuento en la matrícula son de esta campaña.\n\nHasta el cierre de la campaña vigente [confirma la fecha en la Biblioteca]. Por eso te propongo asegurarlo hoy con tu evaluación de admisión: es virtual, desde una laptop o computadora con cámara. ¿La rindes hoy o mañana?\n\nPerfecto, te dejo agendado para mañana y te mando los pasos por WhatsApp.",
+  "porQue": "Respondes «¿qué gano si me inscribo ahora?» con beneficios reales de esta campaña (Nexus, Excel, descuento) y su fecha de cierre: la urgencia es verdadera y el siguiente paso queda en la misma llamada.",
   "variantes": [
    {
-    "titulo": "Paso a paso, en orden de pago",
+    "titulo": "Cuando dice que está caro",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "¿Qué tendría que pagar primero?"
+      "texto": "Está un poco caro."
      },
      {
       "quien": "asesor",
-      "texto": "Son tres pasos, [nombre]. Primero la admisión: normalmente S/200, hoy S/100, y con eso ya reservas tu vacante en [carrera]. ¿Te sirve así?"
+      "texto": "Te entiendo, [nombre]. Justo por eso te conviene decidir esta semana: tienes descuento en la matrícula y en tus cuotas, y eso no siempre está."
      },
      {
       "quien": "cliente",
-      "texto": "Sí. ¿Y después?"
+      "texto": "¿Y si espero al otro mes?"
      },
      {
       "quien": "asesor",
-      "texto": "Segundo, 24 horas después de tu evaluación, la primera cuota. Es la única un poco mayor porque incluye matrícula, seguro y examen médico: normalmente S/876, pero hoy la matrícula es gratis y queda en S/570. ¿Vamos bien?"
+      "texto": "Puedes, pero perderías el descuento y el Ciclo Nexus, que te deja adelantar un curso desde diciembre. Y cada mes que esperas es un mes más lejos de tu título."
      },
      {
       "quien": "cliente",
-      "texto": "Ya. ¿Y las demás?"
+      "texto": "Visto así, mejor ahora."
      },
      {
       "quien": "asesor",
-      "texto": "Tercero, las otras cuatro cuotas recién desde abril, de S/504 cada una en vez de S/560, porque el 10 % lo tienes toda la carrera. ¿Hasta aquí todo claro?"
+      "texto": "Te lo recomiendo. Y por matricularte te llevas también el Taller de Excel certificado sin costo adicional. ¿Damos el primer paso hoy con tu evaluación de admisión?"
      },
      {
       "quien": "cliente",
-      "texto": "Sí, ahora sí entiendo."
+      "texto": "Ya, ¿qué necesito?"
      },
      {
       "quien": "asesor",
-      "texto": "Entonces, [nombre], ya sabes qué pagas, cuándo y cuánto te ahorras: S/530 este ciclo. ¿Eso responde lo que te preocupaba del pago? Si es así, te explico cómo es la evaluación de admisión."
+      "texto": "Solo tu DNI y una laptop o computadora con cámara. ¿La rindes hoy en la noche o mañana temprano?"
      }
     ],
-    "speech": "Son tres pasos, [nombre]. Primero la admisión: normalmente S/200, hoy S/100, y con eso ya reservas tu vacante en [carrera]. ¿Te sirve así?\n\nSegundo, 24 horas después de tu evaluación, la primera cuota. Es la única un poco mayor porque incluye matrícula, seguro y examen médico: normalmente S/876, pero hoy la matrícula es gratis y queda en S/570. ¿Vamos bien?\n\nTercero, las otras cuatro cuotas recién desde abril, de S/504 cada una en vez de S/560, porque el 10 % lo tienes toda la carrera. ¿Hasta aquí todo claro?\n\nEntonces, [nombre], ya sabes qué pagas, cuándo y cuánto te ahorras: S/530 este ciclo. ¿Eso responde lo que te preocupaba del pago? Si es así, te explico cómo es la evaluación de admisión.",
-    "porQue": "El orden real de pago, un paso por turno y un «sí» tras cada uno: el prospecto llega al ahorro de S/530 entendiendo de dónde sale, y el cierre parcial abre la evaluación. Cifras de Administración; ajusta a la carrera con la Biblioteca.",
+    "speech": "Te entiendo, [nombre]. Justo por eso te conviene decidir esta semana: tienes descuento en la matrícula y en tus cuotas, y eso no siempre está.\n\nPuedes, pero perderías el descuento y el Ciclo Nexus, que te deja adelantar un curso desde diciembre. Y cada mes que esperas es un mes más lejos de tu título.\n\nTe lo recomiendo. Y por matricularte te llevas también el Taller de Excel certificado sin costo adicional. ¿Damos el primer paso hoy con tu evaluación de admisión?\n\nSolo tu DNI y una laptop o computadora con cámara. ¿La rindes hoy en la noche o mañana temprano?",
+    "porQue": "No entras a discutir montos: le muestras que esperar le cuesta el descuento, los regalos y tiempo hacia su título. Decidir hoy pasa a ser la opción conveniente.",
     "grupo": "resolver"
    },
    {
-    "titulo": "Primero el valor, luego el número",
+    "titulo": "Hablar de los beneficios como suyos",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Está un poco caro, lo voy a pensar."
+      "texto": "¿Y qué incluye además de la carrera?"
      },
      {
       "quien": "asesor",
-      "texto": "Te entiendo, [nombre], es una decisión importante. Antes de pensarlo, ¿me dices qué parte te pareció cara: la cuota del mes o el primer pago?"
+      "texto": "Bastante, [nombre]. Imagínate en diciembre ya llevando tu primer curso en el Ciclo Nexus, una noche por semana, sin esperar a marzo."
      },
      {
       "quien": "cliente",
-      "texto": "El primer pago, me parece mucho de golpe."
+      "texto": "¿Eso es aparte?"
      },
      {
       "quien": "asesor",
-      "texto": "Tiene sentido, porque la primera cuota junta créditos, matrícula, seguro y examen médico; por eso normalmente es S/876. Pero hoy la matrícula de S/250 te sale gratis, así que pagas S/570. ¿Hasta ahí claro?"
+      "texto": "No, te lo llevas sin costo adicional solo por matricularte, igual que el Taller de Excel certificado. Y esta semana además tienes descuento en la matrícula y en tus cuotas."
      },
      {
       "quien": "cliente",
-      "texto": "Sí, eso ya es menos."
+      "texto": "Ah, ya, eso está bueno."
      },
      {
       "quien": "asesor",
-      "texto": "Y ese pago no es hoy: hoy solo das S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Eso te ayudaría a organizarte?"
-     },
-     {
-      "quien": "cliente",
-      "texto": "Sí, así sí me cuadra."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Entonces lo que te parecía caro ya tiene nombre y descuento, [nombre]. Piensa que si lo dejas para el otro ciclo, son meses más sin avanzar hacia tu meta.\n\n¿Con esto queda resuelto lo del pago? Te cuento cómo es tu evaluación de admisión."
+      "texto": "Para que no lo pierdas, ¿te reservo la vacante hoy con tu evaluación de admisión? ¿Hoy o mañana te acomoda más?"
      }
     ],
-    "speech": "Te entiendo, [nombre], es una decisión importante. Antes de pensarlo, ¿me dices qué parte te pareció cara: la cuota del mes o el primer pago?\n\nTiene sentido, porque la primera cuota junta créditos, matrícula, seguro y examen médico; por eso normalmente es S/876. Pero hoy la matrícula de S/250 te sale gratis, así que pagas S/570. ¿Hasta ahí claro?\n\nY ese pago no es hoy: hoy solo das S/100 de admisión, y la primera cuota la das 24 horas después de tu evaluación. ¿Eso te ayudaría a organizarte?\n\nEntonces lo que te parecía caro ya tiene nombre y descuento, [nombre]. Piensa que si lo dejas para el otro ciclo, son meses más sin avanzar hacia tu meta.\n\n¿Con esto queda resuelto lo del pago? Te cuento cómo es tu evaluación de admisión.",
-    "porQue": "Ante el «lo voy a pensar» no suelta cifras de corrido: pregunta qué le pareció caro, desglosa solo eso y consigue pequeños «sí» con el primer paso de S/100 y el costo de perder un ciclo. Cifras de Administración; ajusta con la Biblioteca.",
+    "speech": "Bastante, [nombre]. Imagínate en diciembre ya llevando tu primer curso en el Ciclo Nexus, una noche por semana, sin esperar a marzo.\n\nNo, te lo llevas sin costo adicional solo por matricularte, igual que el Taller de Excel certificado. Y esta semana además tienes descuento en la matrícula y en tus cuotas.\n\nPara que no lo pierdas, ¿te reservo la vacante hoy con tu evaluación de admisión? ¿Hoy o mañana te acomoda más?",
+    "porQue": "Le haces imaginar los beneficios como si ya fueran suyos (Nexus en diciembre, Excel certificado) y recién después le recuerdas que son de esta campaña: la decisión se siente natural.",
     "grupo": "resolver"
    },
    {
@@ -538,88 +530,80 @@
     "porQue": "Resuelve la segunda objeción típica después del precio (miedo a no poder pagar una cuota) sin prometer nada que no exista y vuelve enseguida al cierre parcial."
    },
    {
-    "titulo": "Del «me convence» a la evaluación",
+    "titulo": "Cuando dice que está caro",
     "grupo": "cerrar",
     "dialogo": [
      {
       "quien": "cliente",
-      "texto": "Me parece bien, la verdad."
+      "texto": "Está un poco caro."
      },
      {
       "quien": "asesor",
-      "texto": "¡Qué bueno, [nombre]! Entonces ya resolvimos tu horario y el pago mensual. ¿Hay algo más que te frene para empezar?"
+      "texto": "Te entiendo, [nombre]. Justo por eso te conviene decidir esta semana: tienes descuento en la matrícula y en tus cuotas, y eso no siempre está."
      },
      {
       "quien": "cliente",
-      "texto": "No, creo que no."
+      "texto": "¿Y si espero al otro mes?"
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto. Te cuento cómo sigue: primero tu evaluación de admisión, que es virtual desde una computadora o laptop con cámara, y dura poco. No es de conocimientos. ¿Vamos bien?"
+      "texto": "Puedes, pero perderías el descuento y el Ciclo Nexus, que te deja adelantar un curso desde diciembre. Y cada mes que esperas es un mes más lejos de tu título."
      },
      {
       "quien": "cliente",
-      "texto": "Ya, ¿y qué necesito?"
+      "texto": "Visto así, mejor ahora."
      },
      {
       "quien": "asesor",
-      "texto": "Solo tu DNI, una laptop o computadora con cámara y un lugar tranquilo. La admisión hoy está a S/100 en lugar de S/200, y la matrícula te sale gratis."
+      "texto": "Te lo recomiendo. Y por matricularte te llevas también el Taller de Excel certificado sin costo adicional. ¿Damos el primer paso hoy con tu evaluación de admisión?"
      },
      {
       "quien": "cliente",
-      "texto": "Ah, bien."
+      "texto": "Ya, ¿qué necesito?"
      },
      {
       "quien": "asesor",
-      "texto": "Y por matricularte te registro sin costo en Nexus, para adelantar cursos antes de marzo, y en el Taller de Excel certificado. ¿Qué te acomoda más para la evaluación, hoy en la noche o mañana temprano?"
+      "texto": "Solo tu DNI y una laptop o computadora con cámara. ¿La rindes hoy en la noche o mañana temprano?"
      }
     ],
-    "speech": "¡Qué bueno, [nombre]! Entonces ya resolvimos tu horario y el pago mensual. ¿Hay algo más que te frene para empezar?\n\nPerfecto. Te cuento cómo sigue: primero tu evaluación de admisión, que es virtual desde una computadora o laptop con cámara, y dura poco. No es de conocimientos. ¿Vamos bien?\n\nSolo tu DNI, una laptop o computadora con cámara y un lugar tranquilo. La admisión hoy está a S/100 en lugar de S/200, y la matrícula te sale gratis.\n\nY por matricularte te registro sin costo en Nexus, para adelantar cursos antes de marzo, y en el Taller de Excel certificado. ¿Qué te acomoda más para la evaluación, hoy en la noche o mañana temprano?",
-    "porQue": "Cuando el cliente ya aceptó la solución, no se repite el precio: se confirma con un cierre parcial y se lleva al proceso con los regalos por matricularse."
+    "speech": "Te entiendo, [nombre]. Justo por eso te conviene decidir esta semana: tienes descuento en la matrícula y en tus cuotas, y eso no siempre está.\n\nPuedes, pero perderías el descuento y el Ciclo Nexus, que te deja adelantar un curso desde diciembre. Y cada mes que esperas es un mes más lejos de tu título.\n\nTe lo recomiendo. Y por matricularte te llevas también el Taller de Excel certificado sin costo adicional. ¿Damos el primer paso hoy con tu evaluación de admisión?\n\nSolo tu DNI y una laptop o computadora con cámara. ¿La rindes hoy en la noche o mañana temprano?",
+    "porQue": "No entras a discutir montos: le muestras que esperar le cuesta el descuento, los regalos y tiempo hacia su título. Decidir hoy pasa a ser la opción conveniente."
    }
   ],
   "grupo": "resolver"
  },
  "paso4": {
   "tecId": "tec_16",
-  "titulo": "Del «te aviso» a la evaluación",
+  "titulo": "Cerrar con los beneficios vigentes",
   "conclusion": "Calidad no dejó observación escrita de esta etapa en tu última llamada, pero tu puntaje está bajo. Lo más frecuente aquí es terminar con un «me avisas» en lugar de un cierre parcial, una fecha y hora concretas y la despedida con tu nombre.",
   "dialogo": [
    {
     "quien": "cliente",
-    "texto": "Ya, lo reviso y te aviso."
+    "texto": "Me interesa, pero lo veo la otra semana."
    },
    {
     "quien": "asesor",
-    "texto": "Perfecto, [nombre], pero dime una cosa con sinceridad: hasta aquí, ¿la carrera y la modalidad te convencen?"
+    "texto": "Te entiendo, [nombre]. Solo ten en cuenta que el descuento en la matrícula y tu registro sin costo en el Ciclo Nexus y el Taller de Excel son de esta campaña. ¿Qué te falta resolver para asegurarlos hoy?"
    },
    {
     "quien": "cliente",
-    "texto": "Sí, eso sí. Es más por organizarme."
+    "texto": "Nada, es más por organizarme."
    },
    {
     "quien": "asesor",
-    "texto": "Entonces la decisión ya está, solo falta el cómo. Tu evaluación es virtual, desde una computadora o laptop con cámara, y yo te acompaño. ¿La rindes hoy en la noche o mañana temprano?"
+    "texto": "Entonces la decisión ya está, solo falta el cómo. Tu evaluación es virtual, desde una computadora o laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?"
    },
    {
     "quien": "cliente",
-    "texto": "Mañana, en la noche no voy a poder."
+    "texto": "Mañana temprano."
    },
    {
     "quien": "asesor",
-    "texto": "Listo, mañana. ¿A las 10 de la mañana o a las 3 de la tarde? Al rendirla te queda la admisión en S/100 y te registro de regalo en Nexus y en el Taller de Excel certificado."
-   },
-   {
-    "quien": "cliente",
-    "texto": "A las 10 está bien."
-   },
-   {
-    "quien": "asesor",
-    "texto": "Quedamos mañana a las 10, [nombre]. Te mando ahora por WhatsApp el enlace y los pasos; soy [tu nombre], de la Universidad Continental, cualquier duda me escribes ahí.\n\nTe llega una encuesta corta sobre mi atención, te agradezco si la respondes."
+    "texto": "Listo, mañana. Te mando ahora por WhatsApp el enlace y los pasos. Soy [tu nombre], de la Universidad Continental; cualquier duda me escribes ahí."
    }
   ],
-  "speech": "Perfecto, [nombre], pero dime una cosa con sinceridad: hasta aquí, ¿la carrera y la modalidad te convencen?\n\nEntonces la decisión ya está, solo falta el cómo. Tu evaluación es virtual, desde una computadora o laptop con cámara, y yo te acompaño. ¿La rindes hoy en la noche o mañana temprano?\n\nListo, mañana. ¿A las 10 de la mañana o a las 3 de la tarde? Al rendirla te queda la admisión en S/100 y te registro de regalo en Nexus y en el Taller de Excel certificado.\n\nQuedamos mañana a las 10, [nombre]. Te mando ahora por WhatsApp el enlace y los pasos; soy [tu nombre], de la Universidad Continental, cualquier duda me escribes ahí.\n\nTe llega una encuesta corta sobre mi atención, te agradezco si la respondes.",
-  "porQue": "Convierte el «te aviso» en un sí pequeño (la carrera le convence) y en una fecha y hora de evaluación elegidas por él; solo después de agendar vienen el WhatsApp, tu nombre y la encuesta.",
+  "speech": "Te entiendo, [nombre]. Solo ten en cuenta que el descuento en la matrícula y tu registro sin costo en el Ciclo Nexus y el Taller de Excel son de esta campaña. ¿Qué te falta resolver para asegurarlos hoy?\n\nEntonces la decisión ya está, solo falta el cómo. Tu evaluación es virtual, desde una computadora o laptop con cámara. ¿La rindes hoy en la noche o mañana temprano?\n\nListo, mañana. Te mando ahora por WhatsApp el enlace y los pasos. Soy [tu nombre], de la Universidad Continental; cualquier duda me escribes ahí.",
+  "porQue": "Ante el «lo veo después» recuerdas lo que pierde (descuento y regalos de esta campaña), preguntas qué le falta y cierras con dos opciones de fecha para su evaluación.",
   "variantes": [
    {
     "titulo": "Cuando lo conversará con su familia",
@@ -751,35 +735,27 @@
      },
      {
       "quien": "asesor",
-      "texto": "Te entiendo, [nombre], y justo por eso te conviene asegurar hoy. Para empezar solo necesitas la admisión, que hoy está a S/100 en lugar de S/200. ¿Eso sí lo podrías ver?"
+      "texto": "Te entiendo, [nombre], y justo por eso te conviene asegurar hoy: rindiendo tu evaluación te quedas con el descuento de esta campaña y con tu registro en el Ciclo Nexus y el Taller de Excel."
      },
      {
       "quien": "cliente",
-      "texto": "Sí, eso sí."
+      "texto": "¿Y si lo dejo para fin de mes?"
      },
      {
       "quien": "asesor",
-      "texto": "Perfecto. Con esos S/100 aseguras tu vacante y el beneficio, y la primera cuota la pagas 24 horas después de tu evaluación, no hoy. ¿Vamos bien?"
+      "texto": "El riesgo es que la campaña cierre antes y pierdas esos beneficios. Lo de los pagos lo vemos con calma con tu resultado. ¿Rindes tu evaluación hoy o mañana?"
      },
      {
       "quien": "cliente",
-      "texto": "Ya, ¿y cuánto sería esa primera?"
+      "texto": "Mañana en la mañana."
      },
      {
       "quien": "asesor",
-      "texto": "Normalmente S/876, porque junta tus créditos, la matrícula, el seguro y el examen médico. Con la matrícula gratis y el 10 % en cuotas te queda en S/570. Por eso te conviene rendir la evaluación cerca de tu día de pago."
-     },
-     {
-      "quien": "cliente",
-      "texto": "Ah, ya, tiene sentido."
-     },
-     {
-      "quien": "asesor",
-      "texto": "Entonces separamos tu vacante hoy con la admisión y elegimos la fecha de tu evaluación. Además por matricularte tienes Nexus y el Taller de Excel sin costo. ¿Qué día cobras, para dejar tu evaluación agendada ese mismo día?"
+      "texto": "Perfecto. ¿A las 10 o a las 12? Te mando el enlace por WhatsApp para que lo tengas listo."
      }
     ],
-    "speech": "Te entiendo, [nombre], y justo por eso te conviene asegurar hoy. Para empezar solo necesitas la admisión, que hoy está a S/100 en lugar de S/200. ¿Eso sí lo podrías ver?\n\nPerfecto. Con esos S/100 aseguras tu vacante y el beneficio, y la primera cuota la pagas 24 horas después de tu evaluación, no hoy. ¿Vamos bien?\n\nNormalmente S/876, porque junta tus créditos, la matrícula, el seguro y el examen médico. Con la matrícula gratis y el 10 % en cuotas te queda en S/570. Por eso te conviene rendir la evaluación cerca de tu día de pago.\n\nEntonces separamos tu vacante hoy con la admisión y elegimos la fecha de tu evaluación. Además por matricularte tienes Nexus y el Taller de Excel sin costo. ¿Qué día cobras, para dejar tu evaluación agendada ese mismo día?",
-    "porQue": "Ante «cobro a fin de mes», se separa la evaluación del pago grande: hoy asegura el beneficio con la admisión y la primera cuota llega después, sin postergar la decisión."
+    "speech": "Te entiendo, [nombre], y justo por eso te conviene asegurar hoy: rindiendo tu evaluación te quedas con el descuento de esta campaña y con tu registro en el Ciclo Nexus y el Taller de Excel.\n\nEl riesgo es que la campaña cierre antes y pierdas esos beneficios. Lo de los pagos lo vemos con calma con tu resultado. ¿Rindes tu evaluación hoy o mañana?\n\nPerfecto. ¿A las 10 o a las 12? Te mando el enlace por WhatsApp para que lo tengas listo.",
+    "porQue": "No entras en montos ni fechas de pago: le muestras que lo importante es asegurar hoy el descuento y los regalos, y dejas la evaluación agendada con día y hora."
    }
   ],
   "grupo": "resolver"

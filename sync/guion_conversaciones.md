@@ -1,6 +1,6 @@
 # Guion de conversaciones de ejemplo (fondo y forma)
 
-Fuente: Christopher Huamán, 03/11/2026, tras revisar los ejemplos de la Estructura de Atención.
+Fuente: Christopher Huamán, 03/11/2026 (stand-by de precios desde el 26/11/2026, ver punto 7), tras revisar los ejemplos de la Estructura de Atención.
 Aplica a TODAS las conversaciones de ejemplo (`casos_cache.json`, `casos_genericos.json`) y manda sobre
 cualquier regla anterior que la contradiga. Se escribe como un gerente comercial que entrena asesores:
 cada turno del asesor tiene **fondo** (responde a lo que acaba de decir el cliente y a la observación de
@@ -41,7 +41,7 @@ calidad) y **forma** (se siente bien decirlo, implica la vida personal del clien
    - la vacante y la fecha de inicio real (escasez verdadera, nunca inventada).
    Validaciones para alternar: "¿te hace sentido?", "¿vamos bien?", "¿hasta ahí claro?", "¿cómo lo ves?",
    "¿te imaginas…?", "¿te sirve así?", "¿eso te ayudaría?", "¿cuál de las dos te acomoda?".
-7. **La inversión se explica con forma y fondo, no "volada".** Si un ejemplo habla de dinero, sigue
+7. **⏸️ PRECIOS EN STAND-BY (26/11/2026):** ningún ejemplo explica el precio, las cuotas ni montos en soles. Si el cliente pregunta el precio o dice que está caro, el asesor motiva con los ganchos (Ciclo Nexus, Taller de Excel certificado, Taller de Claude) y con que hay descuentos vigentes para decidir en la misma llamada. Lo que sigue en este punto queda suspendido hasta que Christopher lo reactive (máximo UN ejemplo de precio). _(Suspendido:)_ La inversión se explica con forma y fondo, no "volada". Si un ejemplo habla de dinero, sigue
    `guion_inversion.md`: primero el valor normal con sus conceptos, luego el beneficio y el monto final, una
    idea por frase, y el 10 % en cuotas aplica desde la primera cuota (concepto "pago por créditos") y toda la
    carrera. Una frase como "más de S/530 este ciclo y para empezar solo S/100" sin explicar de dónde sale no se
@@ -72,8 +72,8 @@ calidad) y **forma** (se siente bien decirlo, implica la vida personal del clien
 ### Paso 3 · Solucionar problemas (resolver lo que dijo, con valor antes que número)
 - Se responde exactamente a la necesidad u objeción nombrada: modalidad, tiempo, convalidación, inversión, miedo
   a lo virtual, decisión en familia.
-- Se usan los valores diferenciales reales de la carrera y las certificaciones progresivas; si hay dinero, se
-  explica como en `guion_inversion.md`.
+- Se usan los valores diferenciales reales de la carrera y las certificaciones progresivas; si sale el dinero,
+  NO se explica el precio (stand-by 26/11): se motiva con ganchos y descuentos vigentes para decidir hoy.
 - Termina con un cierre parcial que confirma y abre el proceso: "¿Con esto queda resuelto lo del horario? Entonces
   el siguiente paso es tu evaluación de admisión, te cuento cómo es…".
 - Prohibido: dejarle "para que lo piense" sin preguntar qué piensa; mandar a otra llamada.

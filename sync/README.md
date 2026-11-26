@@ -44,6 +44,8 @@ Cada archivo es el JSON tal cual lo devuelve el conector de Google Sheets (`{"ra
 
 ## Reglas de contenido (speeches de caso y textos de la página)
 
+- **Precios en STAND-BY (26/11/2026)**: ningún ejemplo, opción, práctica ni técnica explica el precio, las cuotas o montos en soles. En su lugar se motiva con los ganchos (Ciclo Nexus, Taller de Excel certificado, Taller de Claude) y con que hay descuentos vigentes, para crear urgencia y decidir en la misma llamada. Cuando Christopher lo reactive, como máximo UN ejemplo explicará el precio. Plantillas en `sync/casos_genericos.json` (opciones sin precio).
+
 - **Becas**: no se dan en el primer ciclo; desde el 2.º ciclo son concursables (semibeca por excelencia) solo si el alumno mantiene buen promedio. Nunca abrir ni preguntar por becas como gancho ("¿buscas una beca?") ni ofrecerlas como beneficio del primer ciclo: si el prospecto las menciona, responder con claridad y como motivación ("desde el segundo ciclo, si mantienes buen promedio, concursas a una semibeca"); si no, no tocar el tema.
 - Nunca inventar montos, descuentos, fechas concretas ni beneficios: solo datos de la observación del supervisor o reglas generales presentes en `index.html`.
 
