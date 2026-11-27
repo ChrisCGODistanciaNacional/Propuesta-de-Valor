@@ -1,43 +1,45 @@
 {
- "actualizado": "26/11/2026",
+ "actualizado": "27/11/2026",
  "periodo": {
-  "desde": "20/11/2026",
-  "hasta": "26/11/2026"
+  "desde": "21/11/2026",
+  "hasta": "27/11/2026"
  },
  "base": {
-  "llamadas": 64,
-  "asesores": 17
+  "llamadas": 67,
+  "asesores": 21
  },
- "titular": "Lo más repetido sigue siendo el cierre: 28 llamadas sin encuesta, 20 sin día y hora y 14 sin cierres parciales. Crece la información sin verificar (18 llamadas: convalidación, duración e importes). Lo bueno: alternativas cuando el documento no llega y el Ciclo Nexus para quitar el miedo a lo virtual.",
+ "titular": "El cierre sigue siendo el gran hueco: 42 llamadas sin encuesta, 33 sin cierres parciales y 12 cortadas o cerradas de golpe. Persisten datos sin verificar (convalidación, importes, condiciones). Lo bueno: cinco asesores ya dejan el seguimiento con día y hora.",
  "items": [
   {
    "tipo": "mala_practica",
    "titulo": "Llamadas cortadas o cerradas de golpe",
-   "queVimos": "Calidad sigue marcando llamadas que terminan antes de cerrar la atención: en 4 el asesor finalizó la comunicación a propósito y en el resto la llamada se cortó, se interrumpió o se cerró sin siguiente paso ni despedida.",
-   "veces": "12 llamadas · 10 asesores (4 cortadas a propósito) · 3.ª semana seguida",
+   "queVimos": "Calidad sigue marcando llamadas que terminan sin completar la atención: cortes intencionales, interrupciones o despedidas sin protocolo, incluso cuando el prospecto aún tenía dudas.",
+   "veces": "12 llamadas · 11 asesores · 4.ª semana seguida",
    "asesores": [
+    "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
+    "Diana Carol Taipe Rojas",
     "Edward Nelson Gonzales Villaneda",
+    "Jean Carlos Espinoza Atoc",
     "Jimena del Rosario Vera Osores",
     "Justyn Flores Solano",
-    "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Orlando Jesus Pintado Sandoval",
-    "Raul Aaron Manuel Ipanaque Escobar",
-    "Ruth Alexandra Mauricio Verde"
+    "Raul Aaron Manuel Ipanaque Escobar"
    ],
-   "ejemplo": "«Evita finalizar intencionalmente la comunicación. Es importante mantener una gestión adecuada hasta que corresponda cerrar la atención» (calidad, 24/11).",
-   "porQueImporta": "Es la falta más grave del reporte y ya van tres semanas: el prospecto ya contactado queda sin respuesta, se pierde la oportunidad y daña la imagen de la universidad. Una llamada caída por sistema no cuenta, pero una cortada a propósito sí.",
-   "accion": "Seguimiento uno a uno con los 4 casos a propósito y escucha de una llamada suya esta semana. Regla para todos: aunque la llamada no avance, se cierra con protocolo («Te dejo todo en este WhatsApp; ¿tu evaluación la rindes hoy o mañana?», nombre, Unidad CIE y encuesta). Si se cae por señal, se devuelve la llamada en el momento.",
+   "ejemplo": "«Evita finalizar intencionalmente la llamada. Mantén la comunicación hasta completar adecuadamente la atención» (calidad, 25/11/2026).",
+   "porQueImporta": "Una llamada cortada no solo pierde la venta: deja una mala experiencia que el prospecto recuerda cuando otro asesor lo vuelve a llamar.",
+   "accion": "Toda llamada se cierra con protocolo aunque no avance: «Gracias por tu tiempo, [nombre]. Te saluda [tu nombre] de la Unidad CIE; te dejo todo por WhatsApp y te paso a una breve encuesta».",
    "tecnica": null
   },
   {
    "tipo": "mala_practica",
-   "titulo": "Información sin verificar: convalidación, duración e importes",
-   "queVimos": "Se dan porcentajes o ciclos de convalidación, se dice que se empieza de cero o que la carrera termina en tres años y medio sin evaluación académica; y en otras llamadas los importes o las condiciones del descuento cambian a mitad de la conversación (por ejemplo, el promedio mínimo para mantenerlo dicho como 10.4 cuando es 10.5).",
-   "veces": "18 llamadas · 10 asesores (12 de convalidación o duración, 8 de importes o condiciones) · 2.ª semana seguida",
+   "titulo": "Información sin verificar: convalidación, importes y condiciones",
+   "queVimos": "Se aseguran cursos, ciclos o porcentajes de convalidación sin la evaluación de sílabos, y se dan importes o condiciones de descuento que luego se corrigen o no coinciden.",
+   "veces": "15 llamadas · 10 asesores · 3.ª semana seguida",
    "asesores": [
+    "Cecilia Esther Aliaga Lapa",
     "Edward Nelson Gonzales Villaneda",
     "Jean Carlos Espinoza Atoc",
     "Jimena del Rosario Vera Osores",
@@ -46,41 +48,20 @@
     "Lisette Valeria Blanco Chuco",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
-    "Milagros Torres Santos",
-    "Orlando Jesus Pintado Sandoval"
+    "Milagros Torres Santos"
    ],
-   "ejemplo": "«Al mencionar un porcentaje de reconocimiento entre el 50 % y 70 %, es necesario precisar que se trata de una estimación referencial sujeta a la evaluación de certificados, sílabos y equivalencias académicas» (calidad, 26/11).",
-   "porQueImporta": "Pasó de 8 a 18 llamadas. Si la convalidación real es menor o la condición del descuento era otra, el estudiante se siente engañado: reclamo, retiro y mala referencia; además resta puntos por información incorrecta.",
-   "accion": "Frase fija para convalidación: «Con tu récord de notas te hago una simulación referencial; el número exacto de cursos lo define la evaluación de tus sílabos». Para la duración: «Puedes adelantar cursos en verano, según la programación y tus prerrequisitos». En lo económico no improvisar cifras: «Hay descuentos vigentes; te confirmo las condiciones exactas por este WhatsApp ahora mismo».",
+   "ejemplo": "«Mencionaste que el promedio mínimo para mantener el descuento era de 10.4; sin embargo, la condición establecida es de 10.5» (calidad, 25/11/2026).",
+   "porQueImporta": "Un dato que se corrige en la misma llamada o que no se cumple después rompe la confianza de la familia y genera reclamos en la matrícula.",
+   "accion": "Convalidación siempre como «simulación referencial: el resultado lo da la evaluación de tus sílabos». Importes y condiciones solo desde la Biblioteca de Mensajes, nunca de memoria.",
    "tecnica": null
   },
   {
    "tipo": "mala_practica",
    "titulo": "Descuento por delante y objeción sin indagar",
-   "queVimos": "Se ofrece el descuento (en 3 llamadas el 25 % territorial, sin objeción económica o sin validar el DNI) antes de conocer la capacidad de pago, y cuando el prospecto dice que espera la quincena, un desembolso o empezar en enero, se acepta la fecha o se insiste en la pérdida del beneficio sin preguntar qué lo frena.",
-   "veces": "13 llamadas · 9 asesores · 3.ª semana seguida",
+   "queVimos": "Se ofrece el descuento o se insiste en que se pierde el beneficio antes de saber si hay una barrera económica, y cuando el prospecto dice «lo converso» o «empiezo en enero» no se pregunta qué lo frena.",
+   "veces": "15 llamadas · 11 asesores · 4.ª semana seguida",
    "asesores": [
-    "Angelo Jaime Franco Sarmiento",
-    "Betsabeth Alexandra Rojas Palacios",
-    "Edward Nelson Gonzales Villaneda",
-    "Jean Carlos Espinoza Atoc",
-    "Jimena del Rosario Vera Osores",
-    "Lisette Valeria Blanco Chuco",
-    "Maria Alejandra Pino Contreras",
-    "Orlando Jesus Pintado Sandoval",
-    "Raul Aaron Manuel Ipanaque Escobar"
-   ],
-   "ejemplo": "«Evita cerrar la conversación únicamente aceptando que vuelva a consultar en esa fecha. Profundiza en su situación, consulta cuánto podría invertir y desde cuándo tendría disponibilidad para iniciar» (calidad, 24/11).",
-   "porQueImporta": "El descuento dado al inicio deja de ser argumento cuando aparece la objeción real, y aceptar «después de la quincena» o «en enero» sin indagar manda la venta a otra campaña o a otra universidad.",
-   "accion": "Primero preguntar: «¿Qué es lo que más te hace dudar: el pago mensual o la fecha de inicio? ¿Qué necesitarías para empezar ahora?». Luego motivar con ganchos y no con cifras: «Si inicias en esta campaña entras al Ciclo Nexus y al Taller de Excel certificado, y aprovechas los descuentos vigentes. ¿Tu evaluación la rindes hoy o mañana?».",
-   "tecnica": "tec_14"
-  },
-  {
-   "tipo": "mala_costumbre",
-   "titulo": "Pasos que se saltan: presentación, cierres parciales, fecha y encuesta",
-   "queVimos": "Al inicio falta el nombre del asesor o la Unidad CIE y se usa poco el nombre del prospecto; durante la llamada se informa sin cierres parciales; al final no hay encuesta y el seguimiento queda en manos del prospecto («me confirma», «cuando tenga los documentos») sin día ni hora.",
-   "veces": "28 llamadas sin encuesta · 22 sin presentación completa o sin usar el nombre · 20 sin día y hora · 14 sin cierres parciales · 15 asesores · 28.ª semana seguida (presentación: 23.ª)",
-   "asesores": [
+    "Ana Maria Padilla Parra",
     "Angelo Jaime Franco Sarmiento",
     "Betsabeth Alexandra Rojas Palacios",
     "Diana Carol Taipe Rojas",
@@ -88,70 +69,97 @@
     "Jean Carlos Espinoza Atoc",
     "Jimena del Rosario Vera Osores",
     "Jorge Luis Valencia Cardenas",
+    "Lisette Valeria Blanco Chuco",
+    "Maria Alejandra Pino Contreras",
+    "Raul Aaron Manuel Ipanaque Escobar"
+   ],
+   "ejemplo": "«Comunicaste el beneficio del 25% sin que [la prospecta] manifestara dificultades para asumir los costos» (calidad, 25/11/2026).",
+   "porQueImporta": "El descuento usado como primer argumento pierde fuerza para cerrar y no resuelve lo que de verdad frena la decisión (tiempo, pareja, documentos).",
+   "accion": "Antes del descuento, preguntar: «¿Qué es lo que más te hace dudar para empezar ahora?». Resolver eso, motivar con Ciclo Nexus o Taller de Excel y recién usar el descuento vigente para decidir hoy.",
+   "tecnica": "tec_14"
+  },
+  {
+   "tipo": "mala_costumbre",
+   "titulo": "Pasos que se saltan: presentación, cierres parciales, fecha y encuesta",
+   "queVimos": "La presentación sigue sin nombre o sin Unidad CIE, la información se entrega en bloque sin cierres parciales, el seguimiento queda «para enero» o «para otra llamada» y la encuesta no se ofrece.",
+   "veces": "46 llamadas sin presentación completa o sin usar el nombre · 42 sin encuesta · 33 sin cierres parciales · 21 sin día y hora · 21 asesores · 29.ª semana seguida (presentación: 24.ª)",
+   "asesores": [
+    "Ana Maria Padilla Parra",
+    "Angelo Jaime Franco Sarmiento",
+    "Betsabeth Alexandra Rojas Palacios",
+    "Cecilia Esther Aliaga Lapa",
+    "Diana Carol Taipe Rojas",
+    "Edward Nelson Gonzales Villaneda",
+    "Isai Yuliño Mercado Bravo",
+    "Jean Carlos Espinoza Atoc",
+    "Jimena del Rosario Vera Osores",
+    "Jorge Luis Valencia Cardenas",
+    "Judith Rocio Vila Incaroca",
     "Justyn Flores Solano",
     "Lisette Valeria Blanco Chuco",
     "Maria Alejandra Pino Contreras",
     "Melissa Leslie Fernadez Avalos",
     "Milagros Torres Santos",
+    "Nicol Alisson Romero Espinoza",
     "Orlando Jesus Pintado Sandoval",
+    "Patricia Roxana Mercado Zacarias",
     "Raul Aaron Manuel Ipanaque Escobar",
     "Ruth Alexandra Mauricio Verde"
    ],
-   "ejemplo": "«Faltó aplicar cierres parciales a lo largo de la llamada para ir midiendo la temperatura del prospecto y conducirlo progresivamente hacia la preinscripción, en lugar de dejar que la conversación se enfríe» (calidad, 26/11).",
-   "porQueImporta": "Son puntos fáciles que se pierden en casi todas las evaluaciones, y sin cierres parciales ni fecha la llamada se queda en informar: el prospecto se enfría y la siguiente gestión empieza de cero.",
-   "accion": "Apertura: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental». Después de cada beneficio, un cierre parcial: «¿Esto te ayuda con tus horarios?». Cierre: «¿Tu evaluación la rindes hoy o mañana, desde tu laptop con cámara? Soy [nombre], de la Unidad CIE; te paso a una breve encuesta».",
+   "ejemplo": "«Cuando preguntaste si tenía alguna consulta adicional, la conversación quedó abierta y finalmente terminaste coordinando una nueva llamada» (calidad, 26/11/2026).",
+   "porQueImporta": "Son los pasos que más puntaje restan en cada evaluación y los que dejan enfriar al prospecto entre una llamada y otra.",
+   "accion": "Una pregunta de avance después de cada bloque («¿Qué te parece esta modalidad para tus tiempos?») y cerrar con «¿La rindes hoy en la noche o mañana temprano?». Presentación: «Hola, [nombre], te saluda [tu nombre] de la Unidad CIE de la Universidad Continental».",
    "tecnica": "tec_10"
   },
   {
-   "tipo": "mania",
-   "titulo": "Muletillas y frases que restan",
-   "queVimos": "Se repiten muletillas y expresiones coloquiales o que suenan a impaciencia: «en sí», «genial», «laburando», «mensajito», «es lo mismo» o «el proceso creo que no lo has comprendido».",
-   "veces": "6 llamadas · 5 asesores",
+   "tipo": "buena_practica",
+   "titulo": "Seguimiento cerrado con día y hora",
+   "queVimos": "Cuando el prospecto no decidió en la llamada, el asesor dejó acordada una hora concreta y la información por WhatsApp, en lugar de un «te llamo luego».",
+   "veces": "5 llamadas · Jorge (25/11), Edward (25/11), Melissa (26/11), Jimena (26/11) y Diana (27/11)",
    "asesores": [
+    "Jorge Luis Valencia Cardenas",
     "Edward Nelson Gonzales Villaneda",
-    "Jean Carlos Espinoza Atoc",
-    "Maria Alejandra Pino Contreras",
-    "Milagros Torres Santos",
-    "Orlando Jesus Pintado Sandoval"
-   ],
-   "ejemplo": "«Reduce el uso reiterado de muletillas como «en sí» y «genial», así como expresiones coloquiales como «laburando»» (calidad, 20/11).",
-   "porQueImporta": "Quitan seguridad y profesionalismo, y frases como «es lo mismo» o «no lo has comprendido» hacen sentir al prospecto que no se le escucha o que la culpa es suya.",
-   "accion": "Cada asesor escucha 2 minutos de una llamada suya y anota su muletilla. Reemplazos: «es lo mismo» → «entiendo que quieras estar segura; te cuento qué tiene igual y qué cambia»; «no lo has comprendido» → «permíteme explicarte cómo funciona cada etapa para que tengas claridad».",
-   "tecnica": null
-  },
-  {
-   "tipo": "buena_practica",
-   "titulo": "Alternativas cuando el documento no llega",
-   "queVimos": "Ante prospectos que no consiguen sílabos antiguos o no pueden viajar por su certificado, se ofreció un camino: evaluación por experiencia laboral con CV documentado, solicitar el documento a distancia o avanzar con el plazo de regularización y los cursos bandera.",
-   "veces": "3 llamadas · Orlando (24/11), Ruth (25/11) y Jean Carlos (26/11)",
-   "asesores": [
-    "Jean Carlos Espinoza Atoc",
-    "Orlando Jesus Pintado Sandoval",
-    "Ruth Alexandra Mauricio Verde"
-   ],
-   "ejemplo": "«Identificaste una alternativa frente a la dificultad de obtener documentación académica antigua, orientando a la prospecto sobre la posibilidad de una evaluación por experiencia laboral» (calidad, 25/11).",
-   "porQueImporta": "La falta de documentos es una de las trabas más comunes en convalidación; ofrecer un camino mantiene viva una venta que se habría ido «para cuando tenga los papeles».",
-   "accion": "Enseñarlo en la reunión y amarrarlo al siguiente paso sin prometer resultados: «Mientras consigues tu certificado, puedes rendir tu evaluación y regularizar los documentos en el plazo. ¿La rindes hoy o mañana?».",
-   "tecnica": "tec_08"
-  },
-  {
-   "tipo": "buena_practica",
-   "titulo": "Ciclo Nexus y Taller de Excel como respuesta, no como lista",
-   "queVimos": "Ante el miedo a manejar herramientas digitales, se presentó el Ciclo Nexus como la forma de adaptarse antes de empezar; en otra llamada se usó el Taller de Excel certificado y el adelanto de curso como beneficio concreto.",
-   "veces": "2 llamadas · María Alejandra (24/11) y Jimena (26/11)",
-   "asesores": [
+    "Melissa Leslie Fernadez Avalos",
     "Jimena del Rosario Vera Osores",
-    "Maria Alejandra Pino Contreras"
+    "Diana Carol Taipe Rojas"
    ],
-   "ejemplo": "«Identificaste una preocupación importante de la prospecto relacionada con el manejo de herramientas digitales y presentaste el ciclo Nexus como una alternativa para facilitar su adaptación» (calidad, 24/11).",
-   "porQueImporta": "Es justo el tipo de gancho que pide el stand-by de precios: responde a un temor real del prospecto y motiva a decidir sin hablar de montos.",
-   "accion": "Que cada gancho termine en un cierre parcial: «Con el Ciclo Nexus llegas a clases sabiendo usar la plataforma. ¿Eso te da más tranquilidad para empezar en esta campaña? Entonces, ¿tu evaluación la rindes hoy o mañana?».",
+   "ejemplo": "«Conseguiste establecer un compromiso de seguimiento para el día siguiente a las 5:00 p. m. Además, confirmaste el envío de la información por WhatsApp» (calidad, 26/11/2026).",
+   "porQueImporta": "Un siguiente paso con hora mantiene caliente la oportunidad y es el ítem de cierre que más falta en el resto del equipo.",
+   "accion": "Usarlo como modelo en el briefing: «¿Te parece mañana a las 5 p. m. para que la rindas conmigo en línea?»; mejor aún si el paso acordado es la evaluación de admisión y no otra llamada.",
+   "tecnica": "tec_16"
+  },
+  {
+   "tipo": "buena_practica",
+   "titulo": "Una alternativa concreta para la barrera",
+   "queVimos": "Ante una barrera real (documentos antiguos, miedo a lo digital, mala conexión) el asesor propuso una salida concreta en la misma llamada: evaluación por experiencia laboral, Ciclo Nexus o un momento y medio alternativo para la evaluación.",
+   "veces": "3 llamadas · María Alejandra (24/11), Ruth (25/11) y Jean Carlos (27/11)",
+   "asesores": [
+    "Maria Alejandra Pino Contreras",
+    "Ruth Alexandra Mauricio Verde",
+    "Jean Carlos Espinoza Atoc"
+   ],
+   "ejemplo": "«Identificaste una preocupación importante de la prospecto relacionada con el manejo de herramientas digitales y presentaste el ciclo Nexus como una alternativa para facilitar su adaptación» (calidad, 24/11/2026).",
+   "porQueImporta": "Responder la barrera con una solución (no con un descuento) mantiene el avance y deja lista la evaluación de admisión.",
+   "accion": "Antes de ofrecer beneficios, nombrar la barrera con las palabras del cliente y responder con la alternativa que la resuelve; validar con «¿eso te ayudaría?».",
    "tecnica": "tec_08"
+  },
+  {
+   "tipo": "nueva_tecnica",
+   "titulo": "Segunda oportunidad en la misma llamada",
+   "queVimos": "Al conversar con la prospecta, el asesor detectó que su hermana también estaba interesada en otra carrera y orientó a ambas en la misma atención, con WhatsApp para las dos.",
+   "veces": "1 llamada · Jimena (27/11)",
+   "asesores": [
+    "Jimena del Rosario Vera Osores"
+   ],
+   "ejemplo": "«Identificaste una oportunidad adicional de atención al conocer el interés de su hermana por Psicología» (calidad, 27/11/2026).",
+   "porQueImporta": "Un referido que llega dentro de la llamada ya trae confianza ganada y no cuesta un lead nuevo.",
+   "accion": "Al cerrar la indagación, preguntar: «¿Alguien más en tu casa o tu trabajo está pensando en estudiar?». Registrar al referido en el CRM y atenderlo con su propia indagación.",
+   "tecnica": null
   }
  ],
  "acciones": [
-  "Uno a uno con los 4 casos de llamada cortada a propósito: toda llamada se cierra con protocolo, aunque no avance.",
-  "Nada sin verificar: convalidación siempre «simulación referencial, el número exacto lo da la evaluación de tus sílabos», y cero cifras improvisadas.",
-  "Antes del descuento, preguntar qué frena; motivar con Ciclo Nexus, Taller de Excel o Taller de Claude, cerrar con cierres parciales y «¿la rindes hoy o mañana?»."
+  "Uno a uno con quienes cortaron llamadas: toda atención termina con protocolo (nombre, Unidad CIE, WhatsApp y encuesta) aunque no avance.",
+  "Cero datos de memoria: convalidación como simulación referencial e importes y condiciones solo desde la Biblioteca de Mensajes.",
+  "Antes del descuento, preguntar qué frena; cerrar cada bloque con un cierre parcial y terminar con «¿la rindes hoy o mañana?» o un seguimiento con día y hora."
  ]
 }

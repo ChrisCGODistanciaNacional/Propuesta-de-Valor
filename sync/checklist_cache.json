@@ -25192,5 +25192,1175 @@
     "evidencia": "Acuerda una fecha y hora específica para retomar el contacto"
    }
   }
+ },
+ "36a90b346e13": {
+  "asesor": "Diana Carol Taipe Rojas",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te presentaste correctamente y validaste el motivo de contacto"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Usar el nombre del prospecto al menos dos veces durante la interacción"
+   },
+   "paso1_3": {
+    "estado": "ok",
+    "evidencia": "Presentaste diferenciales de la universidad"
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Antes de ofrecer descuento, profundiza en la objeción económica y capacidad de pago"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora al menos dos cierres parciales"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Coordinaste el seguimiento a las 11:00 a. m."
+   }
+  }
+ },
+ "986dd32e1e41": {
+  "asesor": "Isai Yuliño Mercado Bravo",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Lograste iniciar oportunamente y presentarte correctamente"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste que necesitaba una carrera compatible con sus turnos rotativos"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Atendiste las consultas económicas y verificaste un posible convenio empresarial"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora al menos dos cierres parciales para validar el interés"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa el protocolo de cierre identificándote y mencionando la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Concreta fecha y hora específica para el seguimiento"
+   }
+  }
+ },
+ "00430754c6f5": {
+  "asesor": "Judith Rocio Vila Incaroca",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar presentándote con tu nombre y mencionando a la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Identificaste los antecedentes de Olga y su interés por Educación Primaria"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificaste sus antecedentes académicos y su formación en Contabilidad"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "pendiente",
+    "evidencia": "Explicar desde el inicio que Educación Primaria empieza desde el primer ciclo"
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Explicaste prácticas en su localidad, flexibilidad de estudio y empleabilidad"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Cuando dijo que necesitaba evaluar, debiste profundizar en sus dudas"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Realiza cierres parciales que permitan avanzar progresivamente"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda mencionar tu nombre y la Unidad CIE en el cierre"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece un seguimiento con fecha y hora específicas"
+   }
+  }
+ },
+ "539897126bf8": {
+  "asesor": "Ana Maria Padilla Parra",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Identificaste la carrera y modalidad de interés de Nathalie"
+   },
+   "paso1_3": {
+    "estado": "ok",
+    "evidencia": "Presentaste diferenciales: clases en vivo y grabadas, acompañamiento, certificaciones"
+   },
+   "paso1_4": {
+    "estado": "ok",
+    "evidencia": "Confirmaste si era su primera carrera y validaste su disponibilidad"
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en su situación laboral, motivaciones y objetivos profesionales"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Conocer qué busca Nathalie al estudiar Administración y Negocios Internacionales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "pendiente",
+    "evidencia": "Cuando dijo que lo conversaría con su pareja, era importante profundizar"
+   },
+   "paso3_1": {
+    "estado": "ok",
+    "evidencia": "Explicaste el proceso de admisión y la duración de los estudios"
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Clases en vivo y grabadas, acompañamiento y talleres de Excel"
+   },
+   "paso3_3": {
+    "estado": "ok",
+    "evidencia": "Mencionaste las certificaciones progresivas y los talleres de Excel"
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "No gestionaste la objeción de conversar con su pareja"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza el protocolo de cierre mencionando nuevamente tu nombre y la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "0089e087010e": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Buena presentación inicial indicando tu nombre y el de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Faltó indagar: qué te motiva a estudiar esta carrera hoy"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Preguntar qué objetivos profesionales busca alcanzar"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Conecta la urgencia con cierres parciales y preguntas de avance"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Al cerrar no mencionaste tu nombre ni el de la Universidad Continental"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Asegura un día y hora concretos de seguimiento"
+   }
+  }
+ },
+ "f4dbe757628f": {
+  "asesor": "Edward Nelson Gonzales Villaneda",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Buena presentación inicial indicando tu nombre y el de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundizar en la necesidad real: qué te motiva a estudiar esta carrera ahora"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Preguntar qué buscas lograr profesionalmente"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Conectar beneficios UC con lo que el cliente busca, validando su interés en cada punto"
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Faltó aplicar cierres parciales a lo largo de la llamada"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "77c720c903e2": {
+  "asesor": "Jorge Luis Valencia Cardenas",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar mencionando tu nombre y Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "pendiente",
+    "evidencia": "Utiliza el nombre del prospecto durante la interacción"
+   },
+   "paso1_3": {
+    "estado": "pendiente",
+    "evidencia": "Refuerza la propuesta de valor con al menos dos diferenciales"
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificaste sus estudios previos y sus limitaciones económicas"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "pendiente",
+    "evidencia": "Menciona al menos dos diferenciales de la universidad"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Ante dificultades económicas, profundiza en su objeción antes de insistir"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora cierres parciales para avanzar hacia la inscripción"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa el cierre mencionando tu nombre e identificando a la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "c0d808afd174": {
+  "asesor": "Jimena del Rosario Vera Osores",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Realizaste una presentación adecuada y validaste el motivo de contacto"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre de la prospecta durante la interacción"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste que Ingrid culminaba estudios técnicos y buscaba continuar"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en sus expectativas y objetivos académicos"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Clases en vivo y grabadas, horarios nocturnos y flexibilidad de estudio"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Si necesita consultar con su familia, profundiza en su objeción"
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Incorpora cierres parciales y compromisos concretos"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Completa el protocolo de cierre identificando a la Unidad CIE"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Establece una fecha y hora específica de seguimiento"
+   }
+  }
+ },
+ "ca1fba8d3bec": {
+  "asesor": "Jimena del Rosario Vera Osores",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Buena presentación inicial indicando tu nombre y el de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundizar en la necesidad real: qué te motiva a estudiar esta carrera ahora"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Preguntar qué buscas lograr profesionalmente"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Conectar beneficios UC con lo que el cliente busca, validando su interés en cada punto"
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Faltó aplicar cierres parciales a lo largo de la llamada"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "632fe3cbf64f": {
+  "asesor": "Patricia Roxana Mercado Zacarias",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Buena presentación inicial indicando tu nombre y el de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundizar en la necesidad real: qué te motiva a estudiar esta carrera ahora"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Preguntar qué buscas lograr profesionalmente"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Conectar beneficios UC con lo que el cliente busca, validando su interés en cada punto"
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Faltó aplicar cierres parciales a lo largo de la llamada"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "3261bbd60916": {
+  "asesor": "Betsabeth Alexandra Rojas Palacios",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Te identificaste como asesor de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Validaste el interés de Charles por Ingeniería Industrial"
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste particularidades de su trabajo en el sector minero"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificaste sus antecedentes académicos y su trabajo en minería"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "pendiente",
+    "evidencia": "Cuando pidió que fuera gratuito, profundiza en el motivo de su objeción"
+   },
+   "paso3_6": {
+    "estado": "ok",
+    "evidencia": "Realizaste cierres parciales"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Lograste establecer un compromiso de seguimiento para el día siguiente"
+   }
+  }
+ },
+ "93d2cd46bf74": {
+  "asesor": "Nicol Alisson Romero Espinoza",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Lograste iniciar oportunamente y presentarte correctamente"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Conociste su perfil laboral y su necesidad de flexibilidad por horarios"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Profundiza en preguntas de perfil para conocer sus expectativas"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Gestionaste las consultas sobre convalidación y horarios"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "ok",
+    "evidencia": "Coordinaste un seguimiento según la disponibilidad de la prospecto"
+   }
+  }
+ },
+ "c8e9318c2d1b": {
+  "asesor": "Cecilia Esther Aliaga Lapa",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda presentarte con tu nombre y Universidad Continental desde el inicio"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Identificaste por qué busca una modalidad a distancia"
+   },
+   "paso2_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_3": {
+    "estado": "ok",
+    "evidencia": "Identificaste sus estudios previos en Contabilidad"
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "ok",
+    "evidencia": "Flexibilidad horaria, clases grabadas y en vivo, adelantar cursos"
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Gestionaste la objeción sobre el momento de inicio de estudios"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda identificar expresamente a la Unidad CIE en el cierre"
+   },
+   "paso4_4": {
+    "estado": "pendiente",
+    "evidencia": "Concreta seguimiento con fecha y hora; evita «primeros días de enero»"
+   }
+  }
+ },
+ "d132b9764b9f": {
+  "asesor": "Jean Carlos Espinoza Atoc",
+  "fecha": "27/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "pendiente",
+    "evidencia": "Recuerda iniciar indicando tu nombre y mencionando Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "ok",
+    "evidencia": "Utilizaste el nombre del prospecto durante la llamada"
+   },
+   "paso1_3": {
+    "estado": "ok",
+    "evidencia": "Presentaste los diferenciales de la carrera"
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "ok",
+    "evidencia": "Exploraste su perfil como efectivo policial y su interés por Derecho"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Relaciona los beneficios con sus objetivos profesionales"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_5": {
+    "estado": "ok",
+    "evidencia": "Gestionaste su dificultad de conexión con una alternativa concreta"
+   },
+   "paso3_6": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
+ },
+ "66504aef9669": {
+  "asesor": "Raul Aaron Manuel Ipanaque Escobar",
+  "fecha": "26/11/2026",
+  "items": {
+   "paso1_1": {
+    "estado": "ok",
+    "evidencia": "Buena presentación inicial indicando tu nombre y el de la Universidad Continental"
+   },
+   "paso1_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso1_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_1": {
+    "estado": "pendiente",
+    "evidencia": "Profundizar en la necesidad real: qué te motiva a estudiar esta carrera ahora"
+   },
+   "paso2_2": {
+    "estado": "pendiente",
+    "evidencia": "Preguntar qué buscas lograr profesionalmente"
+   },
+   "paso2_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso2_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_4": {
+    "estado": "pendiente",
+    "evidencia": "Conectar beneficios UC con lo que el cliente busca, validando su interés en cada punto"
+   },
+   "paso3_5": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso3_6": {
+    "estado": "pendiente",
+    "evidencia": "Faltó aplicar cierres parciales a lo largo de la llamada"
+   },
+   "paso4_1": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_2": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_3": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   },
+   "paso4_4": {
+    "estado": "sin_evidencia",
+    "evidencia": null
+   }
+  }
  }
 }
