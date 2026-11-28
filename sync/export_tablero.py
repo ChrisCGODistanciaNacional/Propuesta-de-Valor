@@ -71,6 +71,8 @@ def main():
             's': pct_int(e.get('Score cualitativo')),
             'q': (e.get('Cuartil') or '').strip() or None,
             'foco': e.get('_foco'),
+            # v562 tablero: quién evaluó (C = Calidad C&C, S = Supervisor)
+            'ev': 'S' if 'supervisor' in str(e.get('Evaluador') or '').lower() else 'C',
         }
         hist.setdefault(n, []).append(row)
     for n in hist:
